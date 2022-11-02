@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython_stdlib.js">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body onload="brython()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<script type="text/python">
+from browser import document, alert, timer
+import time
+def mult(e):
+    s = str(document['line-input'].value)
+    cmd = s.split('\n')
+    for i in cmd:
+        exec(i)
+def exec(s):
+    if(s == "up"):
+        print("up")
+        timer.clear_timeout(timer.set_timeout(up, 1000, 1))
+    elif(s == "down"):
+        print("down")
+        timer.clear_timeout(timer.set_timeout(down, 1000, 1))
+        down(1)
+sq = document['move']
+def up(e):
+    s = int(sq.style.top[0:-2])
+    if(s == 0):
+       alert("dpnt move out of arena")
+    else:
+        sq.style.top = str(s - 10) + "px"
+def down(e):
+    s = int(sq.style.top[0:-2])
+    if(s == 300):
+       alert("dont move out of arena")
+    else:
+        sq.style.top = str(s + 10) + "px"
+document['button-addon2'].bind("click", mult)
+document['up'].bind("click", up)
+
+
+</script>
+<div class="input-group mb-3">
+    <textarea name="" id="line-input" cols="30" rows="10"></textarea>>
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Run</button>
+    <button class="btn btn-outline-secondary" type="button" id="up">up</button>
+    <button class="btn btn-outline-secondary" type="button" id="left">left</button>
+    <button class="btn btn-outline-secondary" type="button" id="right">right</button>
+    <button class="btn btn-outline-secondary" type="button" id="down">down</button>
+</div>
+
+  <div id="move" style="background-color: black; width: 10px; height: 10px; left: 0px; top: 20px; position: relative;" ></div>
+
+</body>
+<h2 id="output"></h2>
+</html>
