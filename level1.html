@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython_stdlib.js">
+    </script>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body onload="brython()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script type="text/python">
+from browser import document, alert, timer
+import time
+def mult(e):
+    s = str(document['line-input'].value)
+    cmd = s.split('\n')
+    for i in cmd:
+        exec(i)
+def exec(s):
+    if(s == "up()"):
+        print("up")
+        up(1)
+    elif(s == "down()"):
+        print("down")
+        down(1)
+    elif(s == "right()"):
+        print("down")
+        right(1)
+    elif(s[0:9] == "set_name("):
+        set_name(s[10:-2])
+sq = document['move']
+def up(e):
+    s = int(sq.style.top[0:-2])
+    if(s == -300):
+       alert("dont move out of arena")
+    else:
+        sq.style.top = str(s - 350) + "px"
+def down(e):
+    s = int(sq.style.top[0:-2])
+    if(s == 3000):
+       alert("dont move out of arena")
+    else:
+        sq.style.top = str(s + 350) + "px"
+def right(e):
+    s = int(sq.style.left[0:-2])
+    if(s == 5000):
+        alert("dont move out of arena")
+    else:
+        sq.style.left = str(s + 350) + "px"
+nm = document['war_name']
+res = document['result']        
+def set_name(s):
+    nm.innerHTML= s   
+def check(e):
+    p = int(sq.style.top[0:-2])
+    s = int(sq.style.left[0:-2])
+    if(nm.innerHTML=="ayush" and s ==1150 and p == 100 ):
+        res.innerHTML = "COORECT ANSWER"
+    else:
+        res.innerHTML = "TRY again"    
+
+
+document['button-addon2'].bind("click", mult)
+document['check'].bind("click",check)
+
+
+</script>
+    <div class="input-group mb-3">
+        <textarea name="" id="line-input" cols="30" rows="10"></textarea>>
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Run</button>
+        <!-- <button class="btn btn-outline-secondary" type="button" id="up">up</button>
+    <button class="btn btn-outline-secondary" type="button" id="left">left</button>
+    <button class="btn btn-outline-secondary" type="button" id="right">right</button>
+    <button class="btn btn-outline-secondary" type="button" id="down">down</button> -->
+    </div>
+    <div class="arena">
+        <div class="container">
+            <img id="r1" src="images/path2.jpeg" name="r1" />
+            <img id="r2" src="images/path.jpeg" />
+            <img id="r3" src="images/path2.jpeg" />
+            <div id="move"
+                style="background-color: black; width: 100px; height: 100px; left: 450px; top: -250px; position: relative;">
+                <div class="warrior"><img src="images/modal.jpg"
+                        style="width: 100px; height: 100px;object-position:center">
+                    <div class="centered" id ="war_name" style="color:aqua;">Avadhoot</div>
+                </div>
+            </div>
+        </div>
+
+        <p style="color:rgb(21, 0, 255);">Your task is to take warrior to other end of the path and change name of the warrior to "Ayush" </p>
+        <p style="color:rgb(21, 0, 255);"> you can use functions: right() up() down() set_name(s) where s is of type string. </p> 
+        <p style="color:rgb(21, 0, 255);">after completing code run the code and click the check solution button given below</p>
+        <button type="button" class="btn btn-outline-primary" id = "check">Check Solution</button>
+        <p id="result" style="color:rgb(255, 0, 0);"></p>
+
+</body>
+<h2 id="output"></h2>
+
+</html>

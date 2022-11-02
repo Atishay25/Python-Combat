@@ -1,0 +1,28 @@
+.arena{
+    background-color:rgb(249, 249, 249);
+}
+#r1{
+    position:fixed;
+    top: 0px;;
+    left: 550px;;
+    width: 10cm;
+    height: auto;
+    background-color:rgb(25, 236, 60);
+    
+}
+#r2{
+    position:fixed;
+    top:0px;
+    left:900px;
+    width: auto;
+    height:10cm;  
+    background-color:rgb(25, 236, 60);  
+}
+#r3{
+    position:fixed;
+    top:370px;
+    left:900px;
+    width: 10cm;
+    height:auto;  
+    background-color:rgb(25, 236, 60);    
+}
