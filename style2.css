@@ -1,28 +1,27 @@
-.arena{
-    background-color:rgb(249, 249, 249);
+body{
+    background-color: rgba(8, 8, 8, 0.988);
 }
-#r1{
-    position:fixed;
-    top: 0px;;
-    left: 550px;;
-    width: 10cm;
-    height: auto;
-    background-color:rgb(25, 236, 60);
-    
+#line-input{
+    height:550px;
+    background-color: rgba(154, 150, 150, 0.685);
+    color:white;
 }
-#r2{
-    position:fixed;
-    top:0px;
-    left:900px;
-    width: auto;
-    height:10cm;  
-    background-color:rgb(25, 236, 60);  
+#button-addon2{
+    background-color: blue;
+    color: red;
 }
-#r3{
-    position:fixed;
-    top:370px;
-    left:900px;
-    width: 10cm;
-    height:auto;  
-    background-color:rgb(25, 236, 60);    
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+#a1{
+    background-color: rgb(48, 11, 232);
+}
+h2{
+    background-color: rgb(225, 43, 11);
+}
+#a2{
+    background-color: rgb(13, 13, 13);
 }
