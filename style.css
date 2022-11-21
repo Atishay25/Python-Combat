@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
 body {
     background-image: url('images/bg.jpg');
     background-repeat: no-repeat;
@@ -31,4 +33,10 @@ h1{
 #bk-btn{
     background-color: black;
     color:aqua;
+}
+
+#heading{
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(252, 238, 231);
+    font-size: 90px;
 }
