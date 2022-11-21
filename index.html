@@ -14,9 +14,9 @@
 	<script src="codemirror/lib/codemirror.js"></script>
 	<link href="codemirror/lib/codemirror.css" rel="stylesheet">
 	<script src="codemirror/mode/python/python.js"></script>
-	<link href="codemirror/theme/dracula.css" rel="stylesheet">
+	<link href="codemirror/theme/monokai.css" rel="stylesheet">
 	<script src="codemirror/addon/hint/show-hint.js"></script>
-	<script src="codemirror/addon/hint/html-hint.js"></script>
+	<script src="codemirror/addon/hint/css-hint.js"></script>
 	<link href="codemirror/addon/hint/show-hint.css" rel="stylesheet">
 </head>
 
@@ -159,6 +159,7 @@
 				<div><textarea id="code">
 				</textarea>
 				</div>
+            <input id="myFile" type="file"/>
 			</section>
 			<div class="align-self-center m-3">
 				<button type="button" class="btn btn-success" id="button-addon2">
@@ -251,12 +252,15 @@
 			name: "python",
 			singleLineStringErrors: false
 		},
-		theme: "dracula",
+		theme: "monokai",
 		lineNumbers: true,
 		indentUnit: 4,
+        autoCloseBrackets: true,
 		matchBrackets: true,
 		extraKeys: {
           "'<'": completeAfter,
+          "'d'": completeAfter,
+
           "'/'": completeIfAfterLt,
           "' '": completeIfInTag,
           "'='": completeIfInTag,
@@ -266,12 +270,28 @@
 	});
 
 	editor.setSize("500","300");
-	editor.setValue(`down()`);
+	editor.setValue(``);
 	function showCode()
 	{
     	var text = editor.getValue();
     	alert(text);
 		return text
 	}
+    // var file = document.getElementById("myFile").files[0];
+    // console.log(file);
+    // var reader = new FileReader();
+    // reader.onload = function (e) {
+    //     var textArea = document.getElementById("code");
+    //     textArea.value = e.target.result;
+    // };
+    // reader.readAsText(file);
+    document.getElementById('myFile').addEventListener('change', function() {
+            var fr = new FileReader();
+            fr.onload = function(){
+                editor.setValue(fr.result);
+                
+            }
+            fr.readAsText(this.files[0]);
+        })
 	</script>
 </html>
