@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython_stdlib.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="l1.css">
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <link href="../codemirror/lib/codemirror.css" rel="stylesheet">
+    <script src="../codemirror/mode/python/python.js"></script>
+    <link href="../codemirror/theme/monokai.css" rel="stylesheet">
+    <script src="../codemirror/addon/hint/show-hint.js"></script>
+    <script src="../codemirror/addon/hint/css-hint.js"></script>
+    <link href="../codemirror/addon/hint/show-hint.css" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+</head>
+
+<body onload="brython()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script type="text/python">
+from browser import document, alert, timer, window
+import time
+import traceback
+import re
+jq = window.jQuery
+def mult(e):
+    s = str(window.showCode())
+    try:
+        exec(s, globals())
+    except Exception as e:
+        print(traceback.format_exc())
+        s1 = traceback.format_exc()
+        print(s1)
+        s = traceback.format_exc().split('last):')
+        error_msg = s[1].replace("File \"<string>\", ", '')
+        alert(error_msg)
+        #error_msg = 'line no : '
+        #for i in s:
+        #    print(i)
+        #number = s[3]
+        #error = s[-2]
+        #print(number, error)
+        #y = [s for s in re.findall(r'-?\d+\.?\d*', number)]
+        #error_msg += y[0]
+        #error_msg = error_msg + "\n" + error
+        #alert(error_msg)
+    
+
+def up():
+    v = window.change.surface(2)
+def down():
+    v = window.change.surface(1)
+def left():
+    v = window.change.surface(4)
+def right():
+    v = window.change.surface(3)
+
+document['button-addon2'].bind("click", mult)
+document['up'].bind("click", up)
+
+</script>
+<center>
+    <h1>
+        Level 1
+    </h1>
+</center>
+<div class="input-group mb-3">
+    <section class="input">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page">
+                    <h4>Code Editor</h4>
+                </a>
+            </li>
+        </ul>
+        <div>
+        <textarea id="line-input" name=""></textarea>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="file" id="myFile">
+        </div>
+        <div class="align-self-center m-3">
+            <button type="button" class="btn btn-success" id="button-addon2">
+                <h5>Run</h5>
+            </button>
+        </div>
+    </section>
+    <div id="arena">
+        <img id="player" style="left: 0cm; top: 0cm;" src="../images/warrior.png">
+        <!-- <div class="path horizontal" style="left:0cm; top:0cm"></div> -->
+    </div>
+    <br>
+</div>
+
+</body>
+<script>
+    var dummy = {
+        attrs: {
+          color: ["red", "green", "blue", "purple", "white", "black", "yellow"],
+          size: ["large", "medium", "small"],
+          description: null
+        },
+        children: []
+      };
+
+      var tags = {
+        "!top": ["top"],
+        "!attrs": {
+          id: null,
+          class: ["A", "B", "C"]
+        },
+        top: {
+          attrs: {
+            lang: ["en", "de", "fr", "nl"],
+            freeform: null
+          },
+          children: ["animal", "plant"]
+        },
+        animal: {
+          attrs: {
+            name: null,
+            isduck: ["yes", "no"]
+          },
+          children: ["wings", "feet", "body", "head", "tail"]
+        },
+        plant: {
+          attrs: {name: null},
+          children: ["leaves", "stem", "flowers"]
+        },
+        wings: dummy, feet: dummy, body: dummy, head: dummy, tail: dummy,
+        leaves: dummy, stem: dummy, flowers: dummy
+      };
+    function completeAfter(cm, pred) {
+            var cur = cm.getCursor();
+            if (!pred || pred()) setTimeout(function() {
+              if (!cm.state.completionActive)
+                cm.showHint({completeSingle: false});
+            }, 100);
+            return CodeMirror.Pass;
+          }
+    
+          function completeIfAfterLt(cm) {
+            return completeAfter(cm, function() {
+              var cur = cm.getCursor();
+              return cm.getRange(CodeMirror.Pos(cur.line, cur.ch - 1), cur) == "<";
+            });
+          }
+    
+          function completeIfInTag(cm) {
+            return completeAfter(cm, function() {
+              var tok = cm.getTokenAt(cm.getCursor());
+              if (tok.type == "string" && (!/['"]/.test(tok.string.charAt(tok.string.length - 1)) || tok.string.length == 1)) return false;
+              var inner = CodeMirror.innerMode(cm.getMode(), tok.state).state;
+              return inner.tagName;
+            });
+        }
+            var editor = CodeMirror.fromTextArea(document.getElementById('line-input'),{
+            mode: {
+                name: "python",
+                singleLineStringErrors: false
+            },
+            theme: "monokai",
+            lineNumbers: true,
+            indentUnit: 4,
+            autoCloseBrackets: true,
+            matchBrackets: true,
+            extraKeys: {
+              "'<'": completeAfter,
+              "'d'": completeAfter,
+    
+              "'/'": completeIfAfterLt,
+              "' '": completeIfInTag,
+              "'='": completeIfInTag,
+              "Ctrl-Space": "autocomplete"
+            },
+            hintOptions: {schemaInfo: tags}
+        });
+    
+        editor.setSize("500","300");
+        editor.setValue(``);
+        function showCode()
+        {
+            var text = editor.getValue();
+            return text
+        }
+        // var file = document.getElementById("myFile").files[0];
+        // console.log(file);
+        // var reader = new FileReader();
+        // reader.onload = function (e) {
+        //     var textArea = document.getElementById("code");
+        //     textArea.value = e.target.result;
+        // };
+        // reader.readAsText(file);
+        document.getElementById('myFile').addEventListener('change', function() {
+                var fr = new FileReader();
+                fr.onload = function(){
+                    editor.setValue(fr.result);
+                }
+                fr.readAsText(this.files[0]);
+    })
+    </script>
+<script src="level1.js"></script>
+</html>

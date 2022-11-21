@@ -1,0 +1,38 @@
+#arena{
+    background: url("../images/arr.jpg")no-repeat;
+    height:13.3cm;
+    width:13.3cm;
+    border: 5px solid black;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    top:10px;
+    left:50px;
+}
+.gems{
+    width: 1cm;
+    height: 1cm;
+    /* background: url("../../images/gems.png") no-repeat; */
+    z-index: 10;
+    position: absolute;
+}
+.vertical{
+    position:absolute;
+    width:1cm;
+    height: 3cm;
+    background: url("../images/vert.png") no-repeat;
+    z-index: 1;
+}
+.horizontal{
+    position: absolute;
+    width:3cm;
+    height:1cm;
+    background: url("../images/hor.png") no-repeat;
+    z-index: 1;
+}
+#player{
+    height: 1cm;
+    width: 1cm;
+    position: absolute;
+    z-index: 3;
+}
