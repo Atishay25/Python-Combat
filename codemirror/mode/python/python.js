@@ -31,7 +31,7 @@
                         "repr", "reversed", "round", "set", "setattr", "slice",
                         "sorted", "staticmethod", "str", "sum", "super", "tuple",
                         "type", "vars", "zip", "__import__", "NotImplemented",
-                        "Ellipsis", "__debug__","down()"];
+                        "Ellipsis", "__debug__","down()","right()","left()","up()"];
   CodeMirror.registerHelper("hintWords", "python", commonKeywords.concat(commonBuiltins).concat(["exec", "print"]));
 
   function top(state) {
