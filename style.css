@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nabla&display=swap');
+
+body {
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+}
+
+h1{
+    font-size: 55px;
+    color:rgb(255, 94, 0)
+}
+#start_button{
+    background-color: transparent;
+    border: transparent;
+    font-size: 60px;
+    font-family: 'Nabla', cursive;
+}
+.modal-body
+{ 
+    background-image:url('images/modal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal-header,
+.modal-footer{
+    background-color: black;
+    color:aqua
+}
+#bk-btn{
+    background-color: black;
+    color:aqua;
+}
+
+#heading{
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(252, 238, 231);
+    font-size: 90px;
+}
