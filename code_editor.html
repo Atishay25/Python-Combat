@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Python Combat</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython_stdlib.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="codemirror/lib/codemirror.js"></script>
+	<link href="codemirror/lib/codemirror.css" rel="stylesheet">
+	<script src="codemirror/mode/python/python.js"></script>
+	<link href="codemirror/theme/monokai.css" rel="stylesheet">
+	<script src="codemirror/addon/hint/show-hint.js"></script>
+	<script src="codemirror/addon/hint/css-hint.js"></script>
+	<link href="codemirror/addon/hint/show-hint.css" rel="stylesheet">
+</head>
+
+<body onload="brython()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		change = {surface: function(r, p){
+			if(r == 1){
+				var s = parseFloat($('#move').css("top"));
+				if(s >= 100){
+					alert('Dont move out of arena');
+					location.reload();
+					return -1;
+				}
+				else if(p == 0){
+					return 0;
+				}
+				else{
+					$('#move').animate({top: '+=10px'}, function(){change.surface(r,p-1)});
+					s = s + 10;
+					//console.log($('#move').queue.length)
+				}
+			}
+			if(r == 2){
+				var s = parseFloat($('#move').css("top"));
+				if(s <= 0){
+					alert('Dont move out of arena');
+					location.reload();
+					return -1;
+				}
+				else if(p == 0){
+					return 0;
+				}
+				else{
+					$('#move').animate({top: '-=10px'}, function(){change.surface(r,p-1)});
+					s = s - 10;
+					//console.log($('#move').queue.length)
+				}
+			}
+			if(r == 3){
+				var s = parseFloat($('#move').css("left"));
+				if(s >= 100){
+					alert('Dont move out of arena');
+					location.reload();
+					return -1;
+				}
+				else if(p == 0){
+					return 0;
+				}
+				else{
+					$('#move').animate({left: '+=10px'}, function(){change.surface(r,p-1)});
+					s = s + 10;
+					console.log($('#move').queue.length)
+				}
+				return 0;
+			}
+			if(r == 4){
+				var s = parseFloat($('#move').css("left"));
+				if(s <= 0){
+					alert('Dont move out of arena');
+					location.reload();
+					return -1;
+				}
+				else if(p == 0){
+					return 0;
+				}
+				else{
+					$('#move').animate({left: '-=10px'}, function(){change.surface(r,p-1)});
+					s = s - 10;
+					// console.log($('#move').queue.length)
+				}
+				return 0;
+			}
+		}}
+	</script>
+	<script type="text/python">
+	from browser import document, alert, timer, window
+	import time
+	import traceback
+	import re
+	jq = window.jQuery
+	def mult(e):
+		s = str(window.showCode())
+		print("working")
+		print(s)
+		try:
+			exec(s)
+		except Exception as e:
+			print(traceback.format_exc())
+			s1 = traceback.format_exc()
+			print(s1)
+			s = traceback.format_exc().split('last):')
+			error_msg = s[1].replace("File \"<string>\", ", '')
+			alert(error_msg)
+			#error_msg = 'line no : '
+			#for i in s:
+			#    print(i)
+			#number = s[3]
+			#error = s[-2]
+			#print(number, error)
+			#y = [s for s in re.findall(r'-?\d+\.?\d*', number)]
+			#error_msg += y[0]
+			#error_msg = error_msg + "\n" + error
+			#alert(error_msg)
+	
+	def up():
+		v = window.change.surface(2,1)
+		if(v == -1):
+			alert("I cant go there")
+			window.location.reload()
+	def down():
+		v = window.change.surface(1,1)
+		if(v == -1):
+			alert("I cant go there")
+			window.location.reload()
+	def left():
+		v = window.change.surface(4,1)
+		if(v == -1):
+			alert("I cant go there")
+			window.location.reload()
+	def right():
+		v = window.change.surface(3,1)
+		if(v == -1):
+			alert("I cant go there")
+			window.location.reload()
+	document['button-addon2'].bind("click", mult)
+	
+	</script>
+<h2 id="output"></h2>
+	<div class="container-fluid bg-light">
+		<div class="d-flex flex-column">
+			<section class="input">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page">
+							<h4>Code Editor</h4>
+						</a>
+					</li>
+				</ul>
+				<div><textarea id="code">
+				</textarea>
+				</div>
+                <!--div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="myFile"
+                        aria-describedby="inputGroupFileAddon01"/>
+                      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
+                  </div-->
+				  <div class="mb-3">
+					<input class="form-control" type="file" id="myFile">
+				  </div>
+			</section>
+			<div class="align-self-center m-3">
+				<button type="button" class="btn btn-success" id="button-addon2">
+					<h5>Run</h5>
+				</button>
+			</div>
+			<section class="output">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page">
+							<h4>Output</h4>
+						</a>
+					</li>
+				</ul>
+				<div>
+					<textarea id="output" name="output" class="w-100" rows="15">
+					</textarea>
+				</div>
+			</section>
+		</div>
+	
+	  <div id="move" style="background-color: black; width: 10px; height: 10px; left: 0px; top: 20px; position: absolute;" ></div>
+	
+	</body>
+	<script>
+
+	var dummy = {
+        attrs: {
+          color: ["red", "green", "blue", "purple", "white", "black", "yellow"],
+          size: ["large", "medium", "small"],
+          description: null
+        },
+        children: []
+      };
+
+      var tags = {
+        "!top": ["top"],
+        "!attrs": {
+          id: null,
+          class: ["A", "B", "C"]
+        },
+        top: {
+          attrs: {
+            lang: ["en", "de", "fr", "nl"],
+            freeform: null
+          },
+          children: ["animal", "plant"]
+        },
+        animal: {
+          attrs: {
+            name: null,
+            isduck: ["yes", "no"]
+          },
+          children: ["wings", "feet", "body", "head", "tail"]
+        },
+        plant: {
+          attrs: {name: null},
+          children: ["leaves", "stem", "flowers"]
+        },
+        wings: dummy, feet: dummy, body: dummy, head: dummy, tail: dummy,
+        leaves: dummy, stem: dummy, flowers: dummy
+      };
+
+      function completeAfter(cm, pred) {
+        var cur = cm.getCursor();
+        if (!pred || pred()) setTimeout(function() {
+          if (!cm.state.completionActive)
+            cm.showHint({completeSingle: false});
+        }, 100);
+        return CodeMirror.Pass;
+      }
+
+      function completeIfAfterLt(cm) {
+        return completeAfter(cm, function() {
+          var cur = cm.getCursor();
+          return cm.getRange(CodeMirror.Pos(cur.line, cur.ch - 1), cur) == "<";
+        });
+      }
+
+      function completeIfInTag(cm) {
+        return completeAfter(cm, function() {
+          var tok = cm.getTokenAt(cm.getCursor());
+          if (tok.type == "string" && (!/['"]/.test(tok.string.charAt(tok.string.length - 1)) || tok.string.length == 1)) return false;
+          var inner = CodeMirror.innerMode(cm.getMode(), tok.state).state;
+          return inner.tagName;
+        });
+	}
+		var editor = CodeMirror.fromTextArea(document.getElementById('code'),{
+		mode: {
+			name: "python",
+			singleLineStringErrors: false
+		},
+		theme: "monokai",
+		lineNumbers: true,
+		indentUnit: 4,
+        autoCloseBrackets: true,
+		matchBrackets: true,
+		extraKeys: {
+          "'<'": completeAfter,
+          "'d'": completeAfter,
+
+          "'/'": completeIfAfterLt,
+          "' '": completeIfInTag,
+          "'='": completeIfInTag,
+          "Ctrl-Space": "autocomplete"
+        },
+        hintOptions: {schemaInfo: tags}
+	});
+
+	editor.setSize("500","300");
+	editor.setValue(``);
+	function showCode()
+	{
+    	var text = editor.getValue();
+    	alert(text);
+		return text
+	}
+    // var file = document.getElementById("myFile").files[0];
+    // console.log(file);
+    // var reader = new FileReader();
+    // reader.onload = function (e) {
+    //     var textArea = document.getElementById("code");
+    //     textArea.value = e.target.result;
+    // };
+    // reader.readAsText(file);
+    document.getElementById('myFile').addEventListener('change', function() {
+            var fr = new FileReader();
+            fr.onload = function(){
+                editor.setValue(fr.result);
+            }
+            fr.readAsText(this.files[0]);
+        })
+	</script>
+</html>
