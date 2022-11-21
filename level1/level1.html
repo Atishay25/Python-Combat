@@ -16,6 +16,7 @@
     <script src="../codemirror/mode/python/python.js"></script>
     <link href="../codemirror/theme/monokai.css" rel="stylesheet">
     <script src="../codemirror/addon/hint/show-hint.js"></script>
+    <script src="../codemirror/addon/edit/closebrackets.js"></script>
     <script src="../codemirror/addon/hint/css-hint.js"></script>
     <link href="../codemirror/addon/hint/show-hint.css" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -69,7 +70,7 @@ document['up'].bind("click", up)
 
 </script>
 <center>
-    <h1>
+    <h1 id="heading">
         Level 1
     </h1>
 </center>
@@ -176,7 +177,9 @@ document['up'].bind("click", up)
             extraKeys: {
               "'<'": completeAfter,
               "'d'": completeAfter,
-    
+              "'r'": completeAfter,
+              "'u'": completeAfter,
+              "'l'": completeAfter,
               "'/'": completeIfAfterLt,
               "' '": completeIfInTag,
               "'='": completeIfInTag,

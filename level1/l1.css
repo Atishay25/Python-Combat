@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nabla&display=swap');
 #arena{
     background: url("../images/arr.jpg")no-repeat;
     height:13.3cm;
@@ -35,4 +36,18 @@
     width: 1cm;
     position: absolute;
     z-index: 3;
+}
+
+body {
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#heading{
+    font-family: 'Nabla', cursive;
+    color: rgb(252, 238, 231);
+    font-size: 90px;
+    margin-bottom: 50px;
 }
