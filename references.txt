@@ -2,3 +2,6 @@
 
 1.  Icons taken from
     - https://icons8.com/icon/
+
+2. Brython
+    - https://brython.info/static_doc/en/implem.html
