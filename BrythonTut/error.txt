@@ -1,0 +1,6 @@
+def solution(a,b):
+ return asdad
+def add(a, b):
+ return solution(a,b)
+
+print(add(3,4))
