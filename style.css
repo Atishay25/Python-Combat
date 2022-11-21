@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nabla&display=swap');
 
 body {
     background-image: url('images/bg.jpg');
@@ -13,11 +13,10 @@ h1{
     color:rgb(255, 94, 0)
 }
 #start_button{
-    color: rgb(17, 18, 17);
     background-color: transparent;
     border: transparent;
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 60px;
+    font-family: 'Nabla', cursive;
 }
 .modal-body
 { 
