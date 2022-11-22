@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Eagle+Lake&family=Nabla&display=swap');
+
+.carousel {
+    width:60%;
+    height:420px;
+    margin: 0 auto;
+}
+
+.imgSlide {
+    width: 100%;
+    margin: 0 auto;
+    height:420px;
+}
+
+body{
+    background-color: black;
+}
+
+.heading{
+    font-family: 'Eagle Lake', cursive;
+    font-size: 500%;
+    color: white;
+}
