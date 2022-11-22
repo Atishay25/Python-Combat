@@ -3,3 +3,5 @@
 *.aux
 *.idx
 *.toc
+
+/node_modules
