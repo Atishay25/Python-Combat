@@ -318,3 +318,49 @@ change = {
         console.log("posy : " + pos_y);
     }
 }
+function check_success(){
+    if(pos_x == 13 && pos_y == 13){
+        
+    }
+}
+function print_stat(){
+    (function () {
+        var old = console.log;
+        var logger = document.getElementById('log');
+        console.log = function (message) {
+            if (typeof message == 'object') {
+                logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+            }
+            else{
+                logger.innerHTML += message + '<br />'
+            }
+        }
+    })();
+}
+// (function () {
+//     var old = console.error;
+//     var logger = document.getElementById('log');
+//     console.error = function (message) {
+//         logger.innerHTML += "This is of type " + typeof(message) + '<br />';
+//         s = 
+//         error_msg = s[1].replace("File \"<string>\", ", '')
+//         res = document['log']
+//         res.innerHTML += error_msg;
+//     }
+// })();
+// (function () {
+//     var old = console.log;
+//     var logger = document.getElementById('log');
+//     console.log = function (message) {
+//         logger.innerHTML += "This is of type " + typeof(message) + '<br />';
+//         if(String(message).includes("level1/level1.html#__main__")){
+//             logger.innerHTML += "error" + '<br />';
+//         }
+//         else if (typeof message == 'object') {
+//             logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+//         }
+//         else{
+//             logger.innerHTML += message + '<br />'
+//         }
+//     }
+// })();

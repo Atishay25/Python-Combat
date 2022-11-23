@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nabla&display=swap');
+@import url('https://fonts.cdnfonts.com/css/nintendo-ds-bios');
 #arena{
     background: url("../images/arr.jpg")no-repeat;
     height:13.3cm;
@@ -23,6 +24,7 @@
     height: 3cm;
     background: url("../images/vert.png") no-repeat;
     z-index: 1;
+    border: 1.1px solid black;
 }
 .horizontal{
     position: absolute;
@@ -30,6 +32,7 @@
     height:1cm;
     background: url("../images/hor.png") no-repeat;
     z-index: 1;
+    border: 1.1px solid black;
 }
 #player{
     height: 1cm;
@@ -39,7 +42,7 @@
 }
 
 body {
-    background-image: url('../images/bg.jpg');
+    /* background-image: url('../images/bg.jpg'); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -50,4 +53,11 @@ body {
     color: rgb(252, 238, 231);
     font-size: 90px;
     margin-bottom: 50px;
+}
+.description{
+    font-family: 'Nintendo DS BIOS', sans-serif;
+    word-spacing: 5px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
 }
