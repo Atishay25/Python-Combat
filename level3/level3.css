@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nabla&display=swap');
+@import url('https://fonts.cdnfonts.com/css/nintendo-ds-bios');
+#arena{
+    background: url("../images/ice_arr.jpg")no-repeat;
+    background-size: cover;
+    height:13.3cm;
+    width:13.3cm;
+    border: 5px solid black;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    top:10px;
+    left:50px;
+}
+.gems{
+    width: 1cm;
+    height: 1cm;
+    /* background: url("../../images/gems.png") no-repeat; */
+    z-index: 10;
+    position: absolute;
+}
+.snowmens{
+    width: 1cm;
+    height: 1cm;
+    /* background: url("../../images/gems.png") no-repeat; */
+    z-index: 10;
+    position: absolute;
+}
+.vertical{
+    position:absolute;
+    width:1cm;
+    height: 3cm;
+    background: url("../images/ice_vert.png") no-repeat;
+    background-size: cover;
+    z-index: 1;
+    border: 1.1px solid black;
+}
+.horizontal{
+    position: absolute;
+    width:3cm;
+    height:1cm;
+    background: url("../images/ice_hor.png") no-repeat;
+    background-size: cover;
+    z-index: 1;
+    border: 1.1px solid black;
+}
+#player{
+    height: 1cm;
+    width: 1cm;
+    position: absolute;
+    z-index: 3;
+}
+
+body {
+    /* background-image: url('../images/bg.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#heading{
+    font-family: 'Nabla', cursive;
+    color: rgb(252, 238, 231);
+    font-size: 90px;
+    margin-bottom: 50px;
+}
+.description{
+    font-family: 'Nintendo DS BIOS', sans-serif;
+    word-spacing: 5px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+#log{
+    color:rgb(255, 255, 255);
+}
