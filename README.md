@@ -42,4 +42,4 @@ Description of Project can be found [here](https://docs.google.com/document/d/e/
 - Used **Sphinx** for Report and Documentation
 
 ***
-<p align="center">Created with :heart: by <a href="https://wncc-iitb.org/">Prolific Pythonists</a></p>
+<p align="center">Created with :heart: by <a href="http://www.cse.iitb.ac.in/~atishay">Atishay</a>, <a href="http://www.cse.iitb.ac.in/~meghgohil">Megh</a> & <a href="http://www.cse.iitb.ac.in/~avadhootjadhav"> Avadhoot</a></p>
