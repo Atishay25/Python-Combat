@@ -17,7 +17,7 @@
     width: 1cm;
     height: 1cm;
     /* background: url("../images/gems.png") no-repeat; */
-    z-index: 8;
+    z-index: 7;
     position: absolute;
 }
 .vertical{
@@ -40,7 +40,7 @@
     height: 1cm;
     width: 1cm;
     position: absolute;
-    z-index: 3;
+    z-index: 5;
 }
 
 body {

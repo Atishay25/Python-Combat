@@ -162,8 +162,6 @@ $(document).ready(function () {
 change = {
     surface: function (r) {
         if (r == 1) {
-            // var posx_ = parseFloat($('#player').css("top"));
-            // var posy_ = parseFloat($('#player').css("left"));
             var id_ = pos_x * 100 + pos_y;
             var next_id = pos_x * 100 + pos_y + 2;
             if (window.dict[id_].includes(next_id)) {
@@ -179,15 +177,13 @@ change = {
                 pos_y = pos_y + 2;
             }
             else if (reloaded) {
-                alert('Dont player out of arena')
+                alert('Dont move out of path')
                 window.location.reload();
                 reloaded = false;
                 return -1;
             }
         }
         if (r == 2) {
-            // var posx_ = parseFloat($('#player').css("top"));
-            // var posy_ = parseFloat($('#player').css("left"));
             var id_ = pos_x * 100 + pos_y;
             var next_id = pos_x * 100 + pos_y - 2;
             if (window.dict[id_].includes(next_id)) {
@@ -203,15 +199,16 @@ change = {
                 pos_y = pos_y - 2;
             }
             else if (reloaded) {
-                alert('Dont player out of arena')
-                window.location.reload();
+                $('#player').animate({ top: '-=0cm' },
+                function () {
+                    alert('Dont move out of path')
+                    window.location.reload();        
+                });
                 reloaded = false;
                 return -1;
             }
         }
         if (r == 3) {
-            // var posx_ = parseFloat($('#player').css("top"));
-            // var posy_ = parseFloat($('#player').css("left"));
             var id_ = pos_x * 100 + pos_y;
             var next_id = (pos_x + 2) * 100 + pos_y;
             if (window.dict[id_].includes(next_id)) {
@@ -227,15 +224,16 @@ change = {
                 pos_x = pos_x + 2;
             }
             else if (reloaded) {
-                alert('Dont move out of arena')
-                window.location.reload();
+                $('#player').animate({ top: '-=0cm' },
+                    function () {
+                    alert('Dont move out of path')
+                    window.location.reload();        
+                });
                 reloaded = false;
                 return -1;
             }
         }
         if (r == 4) {
-            // var posx_ = parseFloat($('#player').css("top"));
-            // var posy_ = parseFloat($('#player').css("left"));
             var id_ = pos_x * 100 + pos_y;
             var next_id = (pos_x - 2) * 100 + pos_y;
             if (window.dict[id_].includes(next_id)) {
@@ -251,8 +249,11 @@ change = {
                 pos_x = pos_x - 2;
             }
             else if (reloaded) {
-                alert('Dont player out of arena')
-                window.location.reload();
+                $('#player').animate({ top: '-=0cm' },
+                    function () {
+                    alert('Dont move out of path')
+                    window.location.reload();        
+                });
                 reloaded = false;
                 return -1;
             }

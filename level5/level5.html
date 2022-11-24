@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title>Level 5</title>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js">
@@ -78,11 +79,9 @@ def mult(e):
         #alert(error_msg)
 
 def success():
-    for i in coordinates:
-      if(window.check_success(i[0]*2, i[1]*2) == -1):
-        res = document['log_']
-        res.innerHTML += "TRY AGAIN" + "<br />";
-        break;
+    window.check_success()
+def collect_weapon():
+    window.weapon()
 def get_direction():
     return window.direction()
 def move_up():
@@ -97,20 +96,21 @@ def move_right():
 document['button-addon2'].bind("click", mult)
 
 </script>
-  <div class="container-fluid" style="width: 100%;">
+  <div class="container-fluid">
     <!-- row 1 -->
     <div class="row">
-      <div class="col-4">
+      <div class="col">
         <h1 id="heading" style="top: 50%; left: 50%;">
           Level 5
         </h1>
       </div>
-      <div class="col-8" style="background-color: black;">
+      <div class="col" style="background-color: black;">
         <!-- Level description -->
         <h4 class="description">Tasks</h4>
         <p class="description">1. Now there are no bounds to your paths. <br>
           2. But you have been given list named "coordinates" which contains another list which stores coordinates of the weapons. <br>
           3. But the twist is that you have to collect weapons in the order given in list else the task will fail. <br>
+          4. To collect weapon, reach the coordiante and use function collect_weapon() to collect it. <br>
         </p>
         <h4 class="description">Rules</h4>
         <p class="description">1. Ahh! One constraint, do not move out of the arena.<br>
@@ -120,14 +120,14 @@ document['button-addon2'].bind("click", mult)
     </div>
     <!-- row 2 -->
     <div class="row">
-      <div class="col-sm-3 col-md-7 col-lg-7">
+      <div class="col">
         <!-- <center> -->
         <div id="arena" width="630" height="390">
           <img id="player" style="left: 0cm; top: 0cm;" src="../images/warrior.png">
         </div>
         <!-- </center> -->
       </div>
-      <div class="col-sm-9 col-md-5 col-lg-5">
+      <div class="col">
         <section class="input">
           <ul class="nav nav-tabs">
             <li class="nav-item">
