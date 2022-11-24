@@ -1,0 +1,24 @@
+\hypertarget{classEventEmitter}{}\doxysection{Event\+Emitter Class Reference}
+\label{classEventEmitter}\index{EventEmitter@{EventEmitter}}
+
+
+Inheritance diagram for Event\+Emitter\+:
+% FIG 0
+
+
+Collaboration diagram for Event\+Emitter\+:
+% FIG 1
+
+
+\doxysubsection{Detailed Description}
+@alias module\+:jsdoc/src/parser.\+Parser \+:events.\+Event\+Emitter
+
+\+:events.\+Event\+Emitter \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/jsdoc/lib/jsdoc/src/parser.\+js\item 
+node\+\_\+modules/jsdoc/lib/jsdoc/src/scanner.\+js\end{DoxyCompactItemize}

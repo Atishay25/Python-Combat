@@ -2,6 +2,10 @@
 //gem_id == 30000 means wrong path taken
 //gem_id == 10000 means take above path
 //gem_id == 20000 means take below path
+
+/**
+ * @file level5.js
+ */
 var gem_found = [false, false, false, false, false];
 var total_gems = 0;
 var pos_x = 0;
@@ -14,6 +18,12 @@ window.dict = {};
 $(document).ready(function () {
     
 })
+/**
+ * @brief lmao function
+ * @param {*} px 
+ * @param {*} py 
+ * @param {*} n 
+ */
 function add_weapon(px, py, n){
     elem = document.createElement('img');
     elem.src = "../images/weapon.png";
@@ -101,6 +111,7 @@ change = {
         }
     }
 }
+
 
 function weapon(){
     i = 0;

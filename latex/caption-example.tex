@@ -1,0 +1,16 @@
+\hypertarget{caption-example}{}\doxysection{caption}
+Parse the given source files for J\+S\+Doc comments. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array.$<$string$>$\}} & source\+Files An array of filepaths to the Java\+Script sources. \\
+\hline
+{\em \{string\}} & \mbox{[}encoding\mbox{]}\\
+\hline
+\end{DoxyParams}
+@fires module\+:jsdoc/src/parser.\+Parser.\+parse\+Begin @fires module\+:jsdoc/src/parser.\+Parser.\+file\+Begin @fires module\+:jsdoc/src/parser.\+Parser.\+jsdoc\+Comment\+Found @fires module\+:jsdoc/src/parser.\+Parser.\+symbol\+Found @fires module\+:jsdoc/src/parser.\+Parser.\+new\+Doclet @fires module\+:jsdoc/src/parser.\+Parser.\+file\+Complete @fires module\+:jsdoc/src/parser.\+Parser.\+parse\+Complete
+
+$>$Parse two source files. var my\+Files = \mbox{[}\textquotesingle{}file1.\+js\textquotesingle{}, \textquotesingle{}file2.\+js\textquotesingle{}\mbox{]}; var docs = jsdoc\+Parser.\+parse(my\+Files);
+
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 

@@ -1,0 +1,44 @@
+
+\begin{DoxyItemize}
+\item \href{\#getting-help}{\texttt{ Getting help}}
+\item \href{\#submitting-bug-reports}{\texttt{ Submitting bug reports}}
+\item \href{\#contributing-code}{\texttt{ Contributing code}}
+\end{DoxyItemize}\hypertarget{md_codemirror_CONTRIBUTING_autotoc_md316}{}\doxysection{Getting help}\label{md_codemirror_CONTRIBUTING_autotoc_md316}
+Community discussion, questions, and informal bug reporting is done on the \href{http://discuss.codemirror.net}{\texttt{ discuss.\+Code\+Mirror forum}}.\hypertarget{md_codemirror_CONTRIBUTING_autotoc_md317}{}\doxysection{Submitting bug reports}\label{md_codemirror_CONTRIBUTING_autotoc_md317}
+The preferred way to report bugs is to use the \href{http://github.com/codemirror/CodeMirror/issues}{\texttt{ Git\+Hub issue tracker}}. Before reporting a bug, read these pointers.
+
+{\bfseries{Note\+:}} The issue tracker is for {\itshape bugs}, not requests for help. Questions should be asked on the \href{http://discuss.codemirror.net}{\texttt{ discuss.\+Code\+Mirror forum}} instead.\hypertarget{md_codemirror_CONTRIBUTING_autotoc_md318}{}\doxysubsection{Reporting bugs effectively}\label{md_codemirror_CONTRIBUTING_autotoc_md318}
+
+\begin{DoxyItemize}
+\item Code\+Mirror is maintained by volunteers. They don\textquotesingle{}t owe you anything, so be polite. Reports with an indignant or belligerent tone tend to be moved to the bottom of the pile.
+\item Include information about {\bfseries{the browser in which the problem occurred}}. Even if you tested several browsers, and the problem occurred in all of them, mention this fact in the bug report. Also include browser version numbers and the operating system that you\textquotesingle{}re on.
+\item Mention which release of Code\+Mirror you\textquotesingle{}re using. Preferably, try also with the current development snapshot, to ensure the problem has not already been fixed.
+\item Mention very precisely what went wrong. \char`\"{}\+X is broken\char`\"{} is not a good bug report. What did you expect to happen? What happened instead? Describe the exact steps a maintainer has to take to make the problem occur. We can not fix something that we can not observe.
+\item If the problem can not be reproduced in any of the demos included in the Code\+Mirror distribution, please provide an H\+T\+ML document that demonstrates the problem. The best way to do this is to go to \href{http://jsbin.com/ihunin/edit}{\texttt{ jsbin.\+com}}, enter it there, press save, and include the resulting link in your bug report.
+\end{DoxyItemize}\hypertarget{md_codemirror_CONTRIBUTING_autotoc_md319}{}\doxysection{Contributing code}\label{md_codemirror_CONTRIBUTING_autotoc_md319}
+Note that we are not accepting any new addons or modes into the main distribution. If you\textquotesingle{}ve written such a module, please distribute it as a separate N\+PM package.
+
+
+\begin{DoxyItemize}
+\item Make sure you have a \href{https://github.com/signup/free}{\texttt{ Git\+Hub Account}}
+\item Fork \href{https://github.com/codemirror/CodeMirror/}{\texttt{ Code\+Mirror}} (\href{https://help.github.com/articles/fork-a-repo}{\texttt{ how to fork a repo}})
+\item Make your changes
+\item If your changes are easy to test or likely to regress, add tests. Tests for the core go into {\ttfamily test/test.\+js}, some modes have their own test suite under {\ttfamily mode/\+X\+X\+X/test.\+js}. Feel free to add new test suites to modes that don\textquotesingle{}t have one yet (be sure to link the new tests into {\ttfamily test/index.\+html}).
+\item Follow the general code style of the rest of the project (see below). Run {\ttfamily bin/lint} to verify that the linter is happy.
+\item Make sure all tests pass. Visit {\ttfamily test/index.\+html} in your browser to run them.
+\item Submit a pull request (\href{https://help.github.com/articles/fork-a-repo}{\texttt{ how to create a pull request}}). Don\textquotesingle{}t put more than one feature/fix in a single pull request.
+\end{DoxyItemize}
+
+By contributing code to Code\+Mirror you
+
+
+\begin{DoxyItemize}
+\item agree to license the contributed code under Code\+Mirror\textquotesingle{}s \href{https://codemirror.net/5/LICENSE}{\texttt{ M\+IT license}}.
+\item confirm that you have the right to contribute and license the code in question. (Either you hold all rights on the code, or the rights holder has explicitly granted the right to use it like this, through a compatible open source license or through a direct agreement with you.)
+\end{DoxyItemize}\hypertarget{md_codemirror_CONTRIBUTING_autotoc_md320}{}\doxysubsection{Coding standards}\label{md_codemirror_CONTRIBUTING_autotoc_md320}
+
+\begin{DoxyItemize}
+\item 2 spaces per indentation level, no tabs.
+\item Note that the linter ({\ttfamily bin/lint}) which is run after each commit complains about unused variables and functions. Prefix their names with an underscore to muffle it.
+\item Code\+Mirror does {\itshape not} follow J\+S\+Hint or J\+S\+Lint prescribed style. Patches that try to \textquotesingle{}fix\textquotesingle{} code to pass one of these linters will be unceremoniously discarded. 
+\end{DoxyItemize}

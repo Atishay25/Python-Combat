@@ -1,9 +1,13 @@
+/**
+ * @file level4.js
+ */
 var total_gems = 0;
 var pos_x = 0;
 var pos_y = 0;
 var reloaded = true;
 var snowman_killed = 0;
 var arena_type = 0;
+
 $(document).ready(function () {
     total_gems = 0;
     window.dict = {};
