@@ -10,7 +10,7 @@
     box-sizing: border-box;
     position: relative;
     top:10px;
-    left:50px;
+    left:0px;
     z-index: 0;
 }
 .gems{
