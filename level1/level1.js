@@ -272,7 +272,7 @@ function check_success(gems_collected){
     }
     else{
         var res = document.getElementById('result');
-        res.innerHTML = " TRY AGAIN" + '<br />' + "gems collected not correct" + "total_gems = "+ total_gems +"gems_collected : "+ gems_collected;
+        res.innerHTML = " TRY AGAIN" + '<br />' + "gems collected not correct" + "total_gems = "+ total_gems;
         $("#result").css("color", "red");
     }
 }
