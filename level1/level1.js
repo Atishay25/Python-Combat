@@ -2,15 +2,6 @@ var total_gems = 0;
 var pos_x = 0;
 var pos_y = 0;
 var reloaded = true;
-let canvas = document.getElementById("player");
-const playerImage = new Image();
-playerImage.src = '../images/sprite.jpeg';
-function animate(){
-    ctx.clearRect(0,0,1,1);
-    ctx.drawImage(0,0,canvas.width,canvas.height);
-}
-let ctx = canvas.oncontextmenu('2d');
-
 $(document).ready(function () {
     total_gems = 0;
     window.dict = {};
