@@ -8,8 +8,8 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    top:10px;
     left:50px;
+    top:-50px;
     z-index: 0;
 }
 .gems{
@@ -43,22 +43,27 @@
 }
 
 body {
-    /* background-image: url('../images/bg.jpg'); */
+    background-image: url('../images/green_bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-color: forestgreen;
 }
 
 #heading{
     font-family: 'Nabla', cursive;
-    color: rgb(252, 238, 231);
+    color: rgb(243, 5, 5);
     font-size: 90px;
     margin-bottom: 50px;
 }
 .description{
     font-family: 'Nintendo DS BIOS', sans-serif;
     word-spacing: 5px;
-    color: white;
-    font-size: 25px;
+    color:rgb(48, 10, 36);
+    font-size: 22px;
     font-weight: 500;
+}
+
+.output{
+    background-color: rgb(48, 10, 36);
 }

@@ -1,163 +1,336 @@
+/**
+ * @file level1.js
+ * @author Atishay Jain (atishay@cse.iitb.ac.in)
+ * @brief Header file for Several Data Structures
+ * @version 0.1
+ * @date 2022-09-25
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 var total_gems = 0;
 var pos_x = 0;
 var pos_y = 0;
 var reloaded = true;
-$(document).ready(function () {
-    total_gems = 0;
-    window.dict = {};
-    reloaded = true;
-    pos_x = 0;
-    pos_y = 0;
-    var ver = 6;
-    var hori = 6;
-    var posx = 0;
-    var posy = 0;
-    while (ver != 0 || hori != 0) {
-        if (ver == 0) {
-            while (hori != 0) {
-                hori = hori - 1;
-                elem = document.createElement('div');
-                elem.id = 100 * posx + posy;
-                elem.className = "path horizontal";
-                elem.style.left = posx + "cm";
-                elem.style.top = posy + "cm";
-                posx = posx + 2;
-                if (Math.random() > 0.6) {
-                    gem = document.createElement('img');
-                    gem.src = "../images/gems.png"
-                    gem.id = 10000 + 100 * posx + posy;
-                    gem.className = "gems";
-                    gem.style.left = posx + "cm";
-                    gem.style.top = posy + "cm";
-                    $('#arena').append([gem]);
-                    total_gems = total_gems + 1;
+function create_arena(){
+    {
+        total_gems = 0;
+        window.dict = {};
+        reloaded = true;
+        pos_x = 0;
+        pos_y = 0;
+        var ver = 6;
+        var hori = 6;
+        var posx = 0;
+        var posy = 0;
+        while (ver != 0 || hori != 0) {
+            if (ver == 0) {
+                while (hori != 0) {
+                    hori = hori - 1;
+                    elem = document.createElement('div');
+                    elem.id = 100 * posx + posy;
+                    elem.className = "path horizontal";
+                    elem.style.left = posx + "cm";
+                    elem.style.top = posy + "cm";
+                    posx = posx + 2;
+                    if (Math.random() > 0.6) {
+                        gem = document.createElement('img');
+                        gem.src = "../images/gems.png"
+                        gem.id = 10000 + 100 * posx + posy;
+                        gem.className = "gems";
+                        gem.style.left = posx + "cm";
+                        gem.style.top = posy + "cm";
+                        $('#arena').append([gem]);
+                        total_gems = total_gems + 1;
+                    }
+                    var curr = 100 * (posx - 2) + posy;
+                    var next = 100 * posx + posy;
+                    if (curr in dict) {
+                        dict[curr].push(next);
+                    }
+                    else {
+                        dict[curr] = [next];
+                    }
+                    if (next in dict) {
+                        dict[next].append[curr];
+                    }
+                    else {
+                        dict[next] = [curr];
+                    }
+                    $('#arena').append([elem]);
                 }
-                var curr = 100 * (posx - 2) + posy;
-                var next = 100 * posx + posy;
-                if (curr in dict) {
-                    dict[curr].push(next);
-                }
-                else {
-                    dict[curr] = [next];
-                }
-                if (next in dict) {
-                    dict[next].append[curr];
-                }
-                else {
-                    dict[next] = [curr];
-                }
-                $('#arena').append([elem]);
             }
-        }
-        else if (hori == 0) {
-            while (ver != 0) {
-                ver = ver - 1;
-                elem = document.createElement('div');
-                elem.id = 100 * posx + posy;
-                elem.className = "path vertical";
-                elem.style.left = posx + "cm";
-                elem.style.top = posy + "cm";
-                posy = posy + 2;
-                if (Math.random() > 0.6) {
-                    gem = document.createElement('img');
-                    gem.src = "../images/gems.png";
-                    gem.id = 10000 + 100 * posx + posy;
-                    gem.className = "gems";
-                    gem.style.left = posx + "cm";
-                    gem.style.top = posy + "cm";
-                    $('#arena').append([gem]);
-                    total_gems = total_gems + 1;
+            else if (hori == 0) {
+                while (ver != 0) {
+                    ver = ver - 1;
+                    elem = document.createElement('div');
+                    elem.id = 100 * posx + posy;
+                    elem.className = "path vertical";
+                    elem.style.left = posx + "cm";
+                    elem.style.top = posy + "cm";
+                    posy = posy + 2;
+                    if (Math.random() > 0.6) {
+                        gem = document.createElement('img');
+                        gem.src = "../images/gems.png";
+                        gem.id = 10000 + 100 * posx + posy;
+                        gem.className = "gems";
+                        gem.style.left = posx + "cm";
+                        gem.style.top = posy + "cm";
+                        $('#arena').append([gem]);
+                        total_gems = total_gems + 1;
+                    }
+                    var curr = 100 * (posx) + posy - 2;
+                    var next = 100 * posx + posy;
+                    if (curr in dict) {
+                        dict[curr].push(next);
+                    }
+                    else {
+                        dict[curr] = [next];
+                    }
+                    if (next in dict) {
+                        dict[next].append[curr];
+                    }
+                    else {
+                        dict[next] = [curr];
+                    }
+                    $('#arena').append([elem]);
+                    
                 }
-                var curr = 100 * (posx) + posy - 2;
-                var next = 100 * posx + posy;
-                if (curr in dict) {
-                    dict[curr].push(next);
-                }
-                else {
-                    dict[curr] = [next];
-                }
-                if (next in dict) {
-                    dict[next].append[curr];
-                }
-                else {
-                    dict[next] = [curr];
-                }
-                $('#arena').append([elem]);
-                
-            }
-        }
-        else {
-            if (Math.random() < 0.5) {
-                ver = ver - 1;
-                elem = document.createElement('div');
-                elem.id = 100 * posx + posy;
-                elem.className = "path vertical";
-                elem.style.left = posx + "cm";
-                elem.style.top = posy + "cm";
-                posy = posy + 2;
-                if (Math.random() > 0.6) {
-                    gem = document.createElement('img');
-                    gem.src = "../images/gems.png";
-                    gem.id = 10000 + 100 * posx + posy;
-                    gem.className = "gems";
-                    gem.style.left = posx + "cm";
-                    gem.style.top = posy + "cm";
-                    $('#arena').append([gem]);
-                    total_gems = total_gems + 1;
-                }
-                var curr = 100 * (posx) + posy - 2;
-                var next = 100 * posx + posy;
-                if (curr in dict) {
-                    dict[curr].push(next);
-                }
-                else {
-                    dict[curr] = [next];
-                }
-                if (next in dict) {
-                    dict[next].append[curr];
-                }
-                else {
-                    dict[next] = [curr];
-                }
-                $('#arena').append([elem]);
             }
             else {
-                hori = hori - 1;
-                elem = document.createElement('div');
-                elem.id = 100 * posx + posy;
-                elem.className = "path horizontal";
-                elem.style.left = posx + "cm";
-                elem.style.top = posy + "cm";
-                posx = posx + 2;
-                if (Math.random() > 0.6) {
-                    gem = document.createElement('img');
-                    gem.src = "../images/gems.png"
-                    gem.id = 10000 + 100 * posx + posy;
-                    gem.className = "gems";
-                    gem.style.left = posx + "cm";
-                    gem.style.top = posy + "cm";
-                    $('#arena').append([gem]);
-                    total_gems = total_gems + 1;
-                }
-                var curr = 100 * (posx - 2) + posy;
-                var next = 100 * posx + posy;
-                if (curr in dict) {
-                    dict[curr].push(next);
+                if (Math.random() < 0.5) {
+                    ver = ver - 1;
+                    elem = document.createElement('div');
+                    elem.id = 100 * posx + posy;
+                    elem.className = "path vertical";
+                    elem.style.left = posx + "cm";
+                    elem.style.top = posy + "cm";
+                    posy = posy + 2;
+                    if (Math.random() > 0.6) {
+                        gem = document.createElement('img');
+                        gem.src = "../images/gems.png";
+                        gem.id = 10000 + 100 * posx + posy;
+                        gem.className = "gems";
+                        gem.style.left = posx + "cm";
+                        gem.style.top = posy + "cm";
+                        $('#arena').append([gem]);
+                        total_gems = total_gems + 1;
+                    }
+                    var curr = 100 * (posx) + posy - 2;
+                    var next = 100 * posx + posy;
+                    if (curr in dict) {
+                        dict[curr].push(next);
+                    }
+                    else {
+                        dict[curr] = [next];
+                    }
+                    if (next in dict) {
+                        dict[next].append[curr];
+                    }
+                    else {
+                        dict[next] = [curr];
+                    }
+                    $('#arena').append([elem]);
                 }
                 else {
-                    dict[curr] = [next];
+                    hori = hori - 1;
+                    elem = document.createElement('div');
+                    elem.id = 100 * posx + posy;
+                    elem.className = "path horizontal";
+                    elem.style.left = posx + "cm";
+                    elem.style.top = posy + "cm";
+                    posx = posx + 2;
+                    if (Math.random() > 0.6) {
+                        gem = document.createElement('img');
+                        gem.src = "../images/gems.png"
+                        gem.id = 10000 + 100 * posx + posy;
+                        gem.className = "gems";
+                        gem.style.left = posx + "cm";
+                        gem.style.top = posy + "cm";
+                        $('#arena').append([gem]);
+                        total_gems = total_gems + 1;
+                    }
+                    var curr = 100 * (posx - 2) + posy;
+                    var next = 100 * posx + posy;
+                    if (curr in dict) {
+                        dict[curr].push(next);
+                    }
+                    else {
+                        dict[curr] = [next];
+                    }
+                    if (next in dict) {
+                        dict[next].append[curr];
+                    }
+                    else {
+                        dict[next] = [curr];
+                    }
+                    $('#arena').append([elem]);
                 }
-                if (next in dict) {
-                    dict[next].append[curr];
-                }
-                else {
-                    dict[next] = [curr];
-                }
-                $('#arena').append([elem]);
             }
         }
     }
+}
+
+$(document).ready(function () {
+    create_arena()
 })
+// $(document).ready(function () {
+//     total_gems = 0;
+//     window.dict = {};
+//     reloaded = true;
+//     pos_x = 0;
+//     pos_y = 0;
+//     var ver = 6;
+//     var hori = 6;
+//     var posx = 0;
+//     var posy = 0;
+//     while (ver != 0 || hori != 0) {
+//         if (ver == 0) {
+//             while (hori != 0) {
+//                 hori = hori - 1;
+//                 elem = document.createElement('div');
+//                 elem.id = 100 * posx + posy;
+//                 elem.className = "path horizontal";
+//                 elem.style.left = posx + "cm";
+//                 elem.style.top = posy + "cm";
+//                 posx = posx + 2;
+//                 if (Math.random() > 0.6) {
+//                     gem = document.createElement('img');
+//                     gem.src = "../images/gems.png"
+//                     gem.id = 10000 + 100 * posx + posy;
+//                     gem.className = "gems";
+//                     gem.style.left = posx + "cm";
+//                     gem.style.top = posy + "cm";
+//                     $('#arena').append([gem]);
+//                     total_gems = total_gems + 1;
+//                 }
+//                 var curr = 100 * (posx - 2) + posy;
+//                 var next = 100 * posx + posy;
+//                 if (curr in dict) {
+//                     dict[curr].push(next);
+//                 }
+//                 else {
+//                     dict[curr] = [next];
+//                 }
+//                 if (next in dict) {
+//                     dict[next].append[curr];
+//                 }
+//                 else {
+//                     dict[next] = [curr];
+//                 }
+//                 $('#arena').append([elem]);
+//             }
+//         }
+//         else if (hori == 0) {
+//             while (ver != 0) {
+//                 ver = ver - 1;
+//                 elem = document.createElement('div');
+//                 elem.id = 100 * posx + posy;
+//                 elem.className = "path vertical";
+//                 elem.style.left = posx + "cm";
+//                 elem.style.top = posy + "cm";
+//                 posy = posy + 2;
+//                 if (Math.random() > 0.6) {
+//                     gem = document.createElement('img');
+//                     gem.src = "../images/gems.png";
+//                     gem.id = 10000 + 100 * posx + posy;
+//                     gem.className = "gems";
+//                     gem.style.left = posx + "cm";
+//                     gem.style.top = posy + "cm";
+//                     $('#arena').append([gem]);
+//                     total_gems = total_gems + 1;
+//                 }
+//                 var curr = 100 * (posx) + posy - 2;
+//                 var next = 100 * posx + posy;
+//                 if (curr in dict) {
+//                     dict[curr].push(next);
+//                 }
+//                 else {
+//                     dict[curr] = [next];
+//                 }
+//                 if (next in dict) {
+//                     dict[next].append[curr];
+//                 }
+//                 else {
+//                     dict[next] = [curr];
+//                 }
+//                 $('#arena').append([elem]);
+                
+//             }
+//         }
+//         else {
+//             if (Math.random() < 0.5) {
+//                 ver = ver - 1;
+//                 elem = document.createElement('div');
+//                 elem.id = 100 * posx + posy;
+//                 elem.className = "path vertical";
+//                 elem.style.left = posx + "cm";
+//                 elem.style.top = posy + "cm";
+//                 posy = posy + 2;
+//                 if (Math.random() > 0.6) {
+//                     gem = document.createElement('img');
+//                     gem.src = "../images/gems.png";
+//                     gem.id = 10000 + 100 * posx + posy;
+//                     gem.className = "gems";
+//                     gem.style.left = posx + "cm";
+//                     gem.style.top = posy + "cm";
+//                     $('#arena').append([gem]);
+//                     total_gems = total_gems + 1;
+//                 }
+//                 var curr = 100 * (posx) + posy - 2;
+//                 var next = 100 * posx + posy;
+//                 if (curr in dict) {
+//                     dict[curr].push(next);
+//                 }
+//                 else {
+//                     dict[curr] = [next];
+//                 }
+//                 if (next in dict) {
+//                     dict[next].append[curr];
+//                 }
+//                 else {
+//                     dict[next] = [curr];
+//                 }
+//                 $('#arena').append([elem]);
+//             }
+//             else {
+//                 hori = hori - 1;
+//                 elem = document.createElement('div');
+//                 elem.id = 100 * posx + posy;
+//                 elem.className = "path horizontal";
+//                 elem.style.left = posx + "cm";
+//                 elem.style.top = posy + "cm";
+//                 posx = posx + 2;
+//                 if (Math.random() > 0.6) {
+//                     gem = document.createElement('img');
+//                     gem.src = "../images/gems.png"
+//                     gem.id = 10000 + 100 * posx + posy;
+//                     gem.className = "gems";
+//                     gem.style.left = posx + "cm";
+//                     gem.style.top = posy + "cm";
+//                     $('#arena').append([gem]);
+//                     total_gems = total_gems + 1;
+//                 }
+//                 var curr = 100 * (posx - 2) + posy;
+//                 var next = 100 * posx + posy;
+//                 if (curr in dict) {
+//                     dict[curr].push(next);
+//                 }
+//                 else {
+//                     dict[curr] = [next];
+//                 }
+//                 if (next in dict) {
+//                     dict[next].append[curr];
+//                 }
+//                 else {
+//                     dict[next] = [curr];
+//                 }
+//                 $('#arena').append([elem]);
+//             }
+//         }
+//     }
+// })
 
 change = {
     surface: function (r) {
@@ -260,6 +433,10 @@ change = {
         }
     }
 }
+/**
+ * 
+ * @param {*} gems_collected 
+ */
 function check_success(gems_collected){
     if(pos_x == 12 && pos_y == 12 && total_gems == gems_collected){
         var res = document.getElementById('result');
