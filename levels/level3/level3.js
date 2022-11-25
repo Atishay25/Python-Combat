@@ -1,19 +1,62 @@
 /**
- * @file level3.js
- */
-
-var total_gems = 0;
+* @file level3.js
+* @brief JAVASCRIPT FOR LEVEL 3
+* @author Prolific Pythonists
+* @date 24-11-2022
+*/
+///stores the X-coordinate of warrior
 var pos_x = 0;
+///stores the Y-coordinate of warrior
 var pos_y = 0;
+///check if reloading was done before or not
 var reloaded = true;
-var snowman_killed = 0;
+///check if arena was of type 1 or 2
 var arena_type = 0;
-$(document).ready(function () {
+///For the animation speed of the player.
+var speed = 500;
+///maps speeds in milliseconds to the name corresponding to them.
+speed_dict = {250 : "fast", 500 : "medium", "750" : "slow"};
+///The element in which we have to show speed.
+const speed_show = document.getElementById("speed_");
+speed_show.innerHTML = speed_dict[speed];
+///The following var stores if info about status of snowman. <br> 0 menas alive <br> 1 means dead.
+var snowman_killed = 0;
+/**
+ * This function is bind to the increase button it decreases the value of var speed so that animation time is less and hence speed increases finally.
+ */
+ function speedup(){
+    if(speed == 500){
+        speed = 250;
+    }
+    else if(speed == 750){
+        speed = 500;
+    }
+    speed_show.innerHTML = speed_dict[speed];
+}
+/**
+ * This function is bind to the decrease button it increases the value of var speed so that animation time is more and hence speed decreases finally.
+ */
+function speeddown(){
+    if(speed == 500){
+        speed = 750;
+    }
+    else if(speed == 250){
+        speed = 500;
+    }
+    speed_show.innerHTML = speed_dict[speed];
+}
+/**
+ *This function creates the arena. There is code for two different arena we choose a random numberbetweeen 0 and 1 if number
+ is less than 0.5 we choose arena_type 1 else arena_type 2.<br> For sprite of each path we again choose a randon number and if this number is
+ greater than 0.6 we add a diamond at that point.
+ */
+function create_map() {
     total_gems = 0;
     window.dict = {};
     reloaded = true;
     pos_x = 0;
     pos_y = 0;
+    snowman_killed = 0;
     var ver = 6;
     var hori = 6;
     var posx = 0;
@@ -32,7 +75,7 @@ $(document).ready(function () {
                 posx = posx + 2;
                 if (Math.random() > 0.6) {
                     gem = document.createElement('img');
-                    gem.src = "../images/star.png"
+                    gem.src = "../images/level3/soul.png"
                     gem.id = 10000 + 100 * posx + posy;
                     gem.className = "gems";
                     gem.style.left = posx + "cm";
@@ -65,7 +108,7 @@ $(document).ready(function () {
             posy = posy + 2;
             if (Math.random() > 0.6) {
                 gem = document.createElement('img');
-                gem.src = "../images/star.png";
+                gem.src = "../images/level3/soul.png";
                 gem.id = 10000 + 100 * posx + posy;
                 gem.className = "gems";
                 gem.style.left = posx + "cm";
@@ -101,7 +144,7 @@ $(document).ready(function () {
                 posx = posx - 2;
                 if (Math.random() > 0.6) {
                     gem = document.createElement('img');
-                    gem.src = "../images/star.png"
+                    gem.src = "../images/level3/soul.png"
                     gem.id = 10000 + 100 * (posx + 2) + posy;
                     gem.className = "gems";
                     gem.style.left = posx + 2 + "cm";
@@ -136,7 +179,7 @@ $(document).ready(function () {
             posy = posy + 2;
             if (Math.random() > 0.6) {
                 gem = document.createElement('img');
-                gem.src = "../images/star.png";
+                gem.src = "../images/level3/soul.png";
                 gem.id = 10000 + 100 * posx + posy;
                 gem.className = "gems";
                 gem.style.left = posx + "cm";
@@ -161,21 +204,12 @@ $(document).ready(function () {
             $('#arena').append([elem]);
         }
         snowman = document.createElement('img');
-                snowman.src = "../images/snowman.png";
+                snowman.src = "../images/level3/snowman.png";
                 snowman.id = "sm";
                 snowman.className = "snowmens";
                 snowman.style.left = 1 + "cm";
                 snowman.style.top = 12 + "cm";
-                $('#arena').append([snowman]);
-
-                snowman_d = document.createElement('img');
-        snowman_d.src = "../images/snowman_dead.png";
-        snowman_d.id = "sm_d";
-        snowman_d.className = "snowmens";
-        snowman_d.style.left = 1 + "cm";
-        snowman_d.style.top = 12 + "cm";
-        // $('#arena').append([snowman_d]);
-        // $('#sm_d').animate({opacity:0}); 
+              	$('#arena').append([snowman]);
     }
 
 
@@ -192,7 +226,7 @@ $(document).ready(function () {
                 posy = posy + 2;
                 if (Math.random() > 0.6) {
                     gem = document.createElement('img');
-                    gem.src = "../images/star.png"
+                    gem.src = "../images/level3/soul.png"
                     gem.id = 10000 + 100 * posx + posy;
                     gem.className = "gems";
                     gem.style.left = posx + "cm";
@@ -225,7 +259,7 @@ $(document).ready(function () {
             posx = posx + 2;
             if (Math.random() > 0.6) {
                 gem = document.createElement('img');
-                gem.src = "../images/star.png";
+                gem.src = "../images/level3/soul.png";
                 gem.id = 10000 + 100 * posx + posy;
                 gem.className = "gems";
                 gem.style.left = posx + "cm";
@@ -261,7 +295,7 @@ $(document).ready(function () {
                 posy = posy - 2;
                 if (Math.random() > 0.6) {
                     gem = document.createElement('img');
-                    gem.src = "../images/star.png"
+                    gem.src = "../images/level3/soul.png"
                     gem.id = 10000 + 100 * (posx) + posy+2;
                     gem.className = "gems";
                     gem.style.left = posx + "cm";
@@ -296,7 +330,7 @@ $(document).ready(function () {
             posx = posx + 2;
             if (Math.random() > 0.6) {
                 gem = document.createElement('img');
-                gem.src = "../images/star.png";
+                gem.src = "../images/level3/soul.png";
                 gem.id = 10000 + 100 * posx + posy;
                 gem.className = "gems";
                 gem.style.left = posx + "cm";
@@ -322,353 +356,151 @@ $(document).ready(function () {
         }
 
         snowman = document.createElement('img');
-        snowman.src = "../images/snowman.png";
+        snowman.src = "../images/level3/snowman.png";
         snowman.id = "sm";
         snowman.className = "snowmens";
         snowman.style.left = 12 + "cm";
         snowman.style.top = 1 + "cm";
         $('#arena').append([snowman]);
-        snowman_d = document.createElement('img');
-        snowman_d.src = "../images/snowman_dead.png";
-        snowman_d.id = "sm_d";
-        snowman_d.className = "snowmens";
-        snowman_d.style.left = 12 + "cm";
-        snowman_d.style.top = 1 + "cm";
-        // $('#arena').append([snowman_d]);
-        // $('#sm_d').animate({opacity:0});     
     }
-    // else{
+}
+/**
+ * Kills the snowman and changes the value of snowman_killed to 1.
+ */
+function snowman_kill(){
+    if((arena_type == 1 && pos_x == 0 && pos_y==12) ||(arena_type == 2 && pos_x == 12 && pos_y ==0)){
+        $('#player').animate({left:'-=0cm'},speed,function(){
+            var image = $("#sm");
+            image.fadeOut('fast', function () {
+                image.attr('src', '../images/level3/snowman_dead.png');
+                image.fadeIn('fast');
+            });
+        
+        
+        });
+        snowman_killed = 1;
+    }
+}
+/**
+ * This function controls the movement of warrior based on the input given.<br>
+ * Exception handling is also done in this function as while moving if warrior steps out of arena alert box is shown
+ * @param {int} r integer determining direction of traversal. 1 => move_up, 2=>move_down() 3 => move_right() 4=> move_left  
+ */
+function walk(r) {
 
-    // }
-    // while (ver != 0 || hori != 0) {
-    //     if (ver == 0) {
-    //         while (hori != 0) {
-    //             hori = hori - 1;
-    //             elem = document.createElement('div');
-    //             elem.id = 100 * posx + posy;
-    //             elem.className = "path horizontal";
-    //             elem.style.left = posx + "cm";
-    //             elem.style.top = posy + "cm";
-    //             posx = posx + 2;
-    //             if (Math.random() > 0.6) {
-    //                 gem = document.createElement('img');
-    //                 gem.src = "../images/star.png"
-    //                 gem.id = 10000 + 100 * posx + posy;
-    //                 gem.className = "gems";
-    //                 gem.style.left = posx + "cm";
-    //                 gem.style.top = posy + "cm";
-    //                 $('#arena').append([gem]);
-    //                 total_gems = total_gems + 1;
-    //             }
-    //             var curr = 100 * (posx - 2) + posy;
-    //             var next = 100 * posx + posy;
-    //             if (curr in dict) {
-    //                 dict[curr].push(next);
-    //             }
-    //             else {
-    //                 dict[curr] = [next];
-    //             }
-    //             if (next in dict) {
-    //                 dict[next].append[curr];
-    //             }
-    //             else {
-    //                 dict[next] = [curr];
-    //             }
-    //             $('#arena').append([elem]);
-    //         }
-    //     }
-    //     else if (hori == 0) {
-    //         while (ver != 0) {
-    //             ver = ver - 1;
-    //             elem = document.createElement('div');
-    //             elem.id = 100 * posx + posy;
-    //             elem.className = "path vertical";
-    //             elem.style.left = posx + "cm";
-    //             elem.style.top = posy + "cm";
-    //             posy = posy + 2;
-    //             if (Math.random() > 0.6) {
-    //                 gem = document.createElement('img');
-    //                 gem.src = "../images/star.png";
-    //                 gem.id = 10000 + 100 * posx + posy;
-    //                 gem.className = "gems";
-    //                 gem.style.left = posx + "cm";
-    //                 gem.style.top = posy + "cm";
-    //                 $('#arena').append([gem]);
-    //                 total_gems = total_gems + 1;
-    //             }
-    //             var curr = 100 * (posx) + posy - 2;
-    //             var next = 100 * posx + posy;
-    //             if (curr in dict) {
-    //                 dict[curr].push(next);
-    //             }
-    //             else {
-    //                 dict[curr] = [next];
-    //             }
-    //             if (next in dict) {
-    //                 dict[next].append[curr];
-    //             }
-    //             else {
-    //                 dict[next] = [curr];
-    //             }
-    //             $('#arena').append([elem]);
-
-    //         }
-    //     }
-    //     else {
-    //         if (Math.random() < 0.5) {
-    //             ver = ver - 1;
-    //             elem = document.createElement('div');
-    //             elem.id = 100 * posx + posy;
-    //             elem.className = "path vertical";
-    //             elem.style.left = posx + "cm";
-    //             elem.style.top = posy + "cm";
-    //             posy = posy + 2;
-    //             if (Math.random() > 0.6) {
-    //                 gem = document.createElement('img');
-    //                 gem.src = "../images/star.png";
-    //                 gem.id = 10000 + 100 * posx + posy;
-    //                 gem.className = "gems";
-    //                 gem.style.left = posx + "cm";
-    //                 gem.style.top = posy + "cm";
-    //                 $('#arena').append([gem]);
-    //                 total_gems = total_gems + 1;
-    //             }
-    //             var curr = 100 * (posx) + posy - 2;
-    //             var next = 100 * posx + posy;
-    //             if (curr in dict) {
-    //                 dict[curr].push(next);
-    //             }
-    //             else {
-    //                 dict[curr] = [next];
-    //             }
-    //             if (next in dict) {
-    //                 dict[next].append[curr];
-    //             }
-    //             else {
-    //                 dict[next] = [curr];
-    //             }
-    //             $('#arena').append([elem]);
-    //         }
-    //         else {
-    //             hori = hori - 1;
-    //             elem = document.createElement('div');
-    //             elem.id = 100 * posx + posy;
-    //             elem.className = "path horizontal";
-    //             elem.style.left = posx + "cm";
-    //             elem.style.top = posy + "cm";
-    //             posx = posx + 2;
-    //             if (Math.random() > 0.6) {
-    //                 gem = document.createElement('img');
-    //                 gem.src = "../images/star.png"
-    //                 gem.id = 10000 + 100 * posx + posy;
-    //                 gem.className = "gems";
-    //                 gem.style.left = posx + "cm";
-    //                 gem.style.top = posy + "cm";
-    //                 $('#arena').append([gem]);
-    //                 total_gems = total_gems + 1;
-    //             }
-    //             var curr = 100 * (posx - 2) + posy;
-    //             var next = 100 * posx + posy;
-    //             if (curr in dict) {
-    //                 dict[curr].push(next);
-    //             }
-    //             else {
-    //                 dict[curr] = [next];
-    //             }
-    //             if (next in dict) {
-    //                 dict[next].append[curr];
-    //             }
-    //             else {
-    //                 dict[next] = [curr];
-    //             }
-    //             $('#arena').append([elem]);
-    //         }
-    //    }
-    //}
-    // console.log(window.dict)
-})
-
-change = {
-    surface: function (r) {
-        // console.log(window.dict)
-        // console.log("posx : " + pos_x);
-        // console.log("posy : " + pos_y);
-
-        if (r == 1) {
-            // var posx_ = parseFloat($('#player').css("top"));
-            // var posy_ = parseFloat($('#player').css("left"));
-            var id_ = pos_x * 100 + pos_y;
-            var next_id = pos_x * 100 + pos_y + 2;
-            if (window.dict[id_].includes(next_id)) {
-                var found = false;
-                $(".gems").each(function () {if (10000 + next_id == $(this).attr("id")) { found = true; } });
-                $('#player').animate({ top: '+=2cm' },
-                    function () {
-                        if (found) {
-                            gem_ = "#" + (10000 + next_id);
-                            $(gem_).css("z-index", "0");
-                        }
-                    });
-                pos_y = pos_y + 2;
-            }
-            else if (reloaded) {
-                $('#player').animate({left:'-=0cm'},function(){
-                    alert('Dont player out of arena')
-                    window.location.reload();
-                
-                
+    if (r == 1) {
+        var id_ = pos_x * 100 + pos_y;
+        var next_id = pos_x * 100 + pos_y + 2;
+        if (window.dict[id_].includes(next_id)) {
+            var found = false;
+            $(".gems").each(function () {if (10000 + next_id == $(this).attr("id")) { found = true; } });
+            $('#player').animate({ top: '+=2cm' },speed,
+                function () {
+                    if (found) {
+                        gem_ = "#" + (10000 + next_id);
+                        $(gem_).css("z-index", "0");
+                    }
                 });
-                reloaded = false;
-                return -1;
-            }
+            pos_y = pos_y + 2;
         }
-        if (r == 2) {
-            // var posx_ = parseFloat($('#player').css("top"));
-            // var posy_ = parseFloat($('#player').css("left"));
-            var id_ = pos_x * 100 + pos_y;
-            var next_id = pos_x * 100 + pos_y - 2;
-            if (window.dict[id_].includes(next_id)) {
-                var found = false;
-                $(".gems").each(function () {  if (10000 + next_id == $(this).attr("id")) { found = true; } });
-                $('#player').animate({ top: '-=2cm' },
-                    function () {
-                        if (found) {
-                            gem_ = "#" + (10000 + next_id);
-                            $(gem_).css("z-index", "0");
-                        }
-                    });
-                pos_y = pos_y - 2;
-                
-            }
-            else if (reloaded) {
-                $('#player').animate({left:'-=0cm'},function(){
-                    alert('Dont player out of arena')
-                    window.location.reload();
-                
-                
-                });
-                reloaded = false;
-                return -1;
-            }
-
-
-            // var s = parseFloat($('#player').css("top"));
-
-            // if(s <= 0){
-            //     alert('Dont player out of arena');
-            //     window.location.reload();
-            //     return -1;
-            // }
-            // else if(p == 0){
-            //     return 0;
-            // }
-            // else{
-            //     $('#player').animate({top: '-=10px'}, function(){change.surface(r,p-1)});
-            //     s = s - 10;
-            //     console.log($('#player').queue.length)
-            // }
+        else if (reloaded) {
+            $('#player').animate({left:'-=0cm'},speed,function(){
+                alert('Dont move out of arena')
+                window.location.reload();
+            
+            
+            });
+            reloaded = false;
+            return -1;
         }
-        if (r == 3) {
-            // var posx_ = parseFloat($('#player').css("top"));
-            // var posy_ = parseFloat($('#player').css("left"));
-            var id_ = pos_x * 100 + pos_y;
-            var next_id = (pos_x + 2) * 100 + pos_y;
-            if (window.dict[id_].includes(next_id)) {
-                var found = false;
-                $(".gems").each(function () {  if (10000 + next_id == $(this).attr("id")) { found = true; } });
-                $('#player').animate({ left: '+=2cm' },
-                    function () {
-                        if (found) {
-                            gem_ = "#" + (10000 + next_id);
-                            $(gem_).css("z-index", "0");
-                        }
-                    });
-                pos_x = pos_x + 2;
-            }
-            else if (reloaded) {
-                $('#player').animate({left:'-=0cm'},function(){
-                    alert('Dont player out of arena')
-                    window.location.reload();
-               
-                
+    }
+    if (r == 2) {
+        // var posx_ = parseFloat($('#player').css("top"));
+        // var posy_ = parseFloat($('#player').css("left"));
+        var id_ = pos_x * 100 + pos_y;
+        var next_id = pos_x * 100 + pos_y - 2;
+        if (window.dict[id_].includes(next_id)) {
+            var found = false;
+            $(".gems").each(function () {  if (10000 + next_id == $(this).attr("id")) { found = true; } });
+            $('#player').animate({ top: '-=2cm' },speed,
+                function () {
+                    if (found) {
+                        gem_ = "#" + (10000 + next_id);
+                        $(gem_).css("z-index", "0");
+                    }
                 });
-                reloaded  = false;
-                return -1;
-            }
-
-
-
-            // var s = parseFloat($('#player').css("left"));
-            // if(s >= 500){
-            //     alert('Dont player out of arena');
-            //     window.location.reload();
-            //     return -1;
-            // }
-            // else if(p == 0){
-            //     return 0;
-            // }
-            // else{
-            //     $('#player').animate({left: '+=10px'}, function(){change.surface(r,p-1)});
-            //     s = s + 10;
-            //     console.log($('#player').queue.length)
-            // }
-            // return 0;
+            pos_y = pos_y - 2;
+            
         }
-        if (r == 4) {
-            // var posx_ = parseFloat($('#player').css("top"));
-            // var posy_ = parseFloat($('#player').css("left"));
-            var id_ = pos_x * 100 + pos_y;
-            var next_id = (pos_x - 2) * 100 + pos_y;
-            if (window.dict[id_].includes(next_id)) {
-                var found = false;
-                $(".gems").each(function () {  if (10000 + next_id == $(this).attr("id")) { found = true; } });
-                $('#player').animate({ left: '-=2cm' },
-                    function () {
-                        if (found) {
-                            gem_ = "#" + (10000 + next_id);
-                            $(gem_).css("z-index", "0");
-                        }
-                    });
-                pos_x = pos_x - 2;
-            }
-            else if (reloaded) {
-                $('#player').animate({left:'-=0cm'},function(){
-                    alert('Dont player out of arena')
-                    window.location.reload();
-                
-                
-                });
-                reloaded = false;
-                return -1;
-            }
-
+        else if (reloaded) {
+            $('#player').animate({left:'-=0cm'},speed,function(){
+                alert('Dont move out of arena')
+                window.location.reload();
+            
+            
+            });
+            reloaded = false;
+            return -1;
         }
-        if(r == 5){
-            if((arena_type == 1 && pos_x == 0 && pos_y==12) ||(arena_type == 2 && pos_x == 12 && pos_y ==0)){
-                $('#player').animate({left:'-=0cm'},function(){
-                    var image = $("#sm");
-                    image.fadeOut('fast', function () {
-                        image.attr('src', '../images/snowman_dead.png');
-                        image.fadeIn('fast');
-                    });
-                
-                
+    }
+    if (r == 3) {
+        var id_ = pos_x * 100 + pos_y;
+        var next_id = (pos_x + 2) * 100 + pos_y;
+        if (window.dict[id_].includes(next_id)) {
+            var found = false;
+            $(".gems").each(function () {  if (10000 + next_id == $(this).attr("id")) { found = true; } });
+            $('#player').animate({ left: '+=2cm' },speed,
+                function () {
+                    if (found) {
+                        gem_ = "#" + (10000 + next_id);
+                        $(gem_).css("z-index", "0");
+                    }
                 });
-                snowman_killed = 1;
-                
-                // ,function(){
-                //     var image = $("#sm");
-                //     image.fadeOut('fast', function () {
-                //         image.attr('src', '../images/star.png');
-                //         image.fadeIn('fast');
-                //     });
-                
-                // });
-            }
+            pos_x = pos_x + 2;
+        }
+        else if (reloaded) {
+            $('#player').animate({left:'-=0cm'},speed,function(){
+                alert('Dont move out of arena')
+                window.location.reload();
+           
+            
+            });
+            reloaded  = false;
+            return -1;
+        }
+    }
+    if (r == 4) {
+        var id_ = pos_x * 100 + pos_y;
+        var next_id = (pos_x - 2) * 100 + pos_y;
+        if (window.dict[id_].includes(next_id)) {
+            var found = false;
+            $(".gems").each(function () {  if (10000 + next_id == $(this).attr("id")) { found = true; } });
+            $('#player').animate({ left: '-=2cm' },speed,
+                function () {
+                    if (found) {
+                        gem_ = "#" + (10000 + next_id);
+                        $(gem_).css("z-index", "0");
+                    }
+                });
+            pos_x = pos_x - 2;
+        }
+        else if (reloaded) {
+            $('#player').animate({left:'-=0cm'},speed,function(){
+                alert('Dont move out of arena')
+                window.location.reload();
+            
+            
+            });
+            reloaded = false;
             return -1;
         }
     }
 }
+/**
+ * This function is used for logger message of success or error.<br> final position of warrior and number of lines is checked in this function
+ * to check if user have successfully completed task or not.
+ * @param {string} code code written by user as a string. This is used to calculate number of lines
+ */
 function check_success(code) {
     var lines = code.split("\n");
     count = lines.length;
@@ -676,24 +508,37 @@ function check_success(code) {
         var res = document.getElementById('result');
         res.innerHTML = "line limit excedded. count: " +count + '<br />';
         $("#result").css("color", "blue");
+        $("#player").animate({top: "+=0cm"}, function(){
+            setTimeout(function(){reloaded = false;location.reload();}, 3000);
+        })
     }
     
     else if(((arena_type == 1 && pos_x == 0 && pos_y == 12) || (arena_type == 2 && pos_x == 12 && pos_y == 0)) && snowman_killed == 1){
         var res = document.getElementById('result');
-        res.innerHTML = "WELL DONE" + '<br />';
+        res.innerHTML = "WELL DONE, you own the Soul stone" + '<br />';
         $("#result").css("color", "green");
     }
     else if(snowman_killed == 0){
         var res = document.getElementById('result');
         res.innerHTML = "TRY AGAIN ..SNOWMAN NOT KILLED" + '<br />';
         $("#result").css("color", "red");
+        $("#player").animate({top: "+=0cm"}, function(){
+            setTimeout(function(){reloaded = false;location.reload();}, 3000);
+        })
     }
     else{
         var res = document.getElementById('result');
         res.innerHTML = "TRY AGAIN ..DESTINATION NOT REACHED" + '<br />';
         $("#result").css("color", "red");
+        $("#player").animate({top: "+=0cm"}, function(){
+            setTimeout(function(){reloaded = false;location.reload();}, 3000);
+        })
     }
 }
+/**
+ * This function is used to show print statement in the logger. <br> This function is implemented by overloading console.log function to show
+ * print statements on logger as well.
+ */
 function print_stat() {
     (function () {
         var old = console.log;
@@ -709,17 +554,6 @@ function print_stat() {
         }
     })();
 }
-// (function () {
-//     var old = console.error;
-//     var logger = document.getElementById('log');
-//     console.error = function (message) {
-//         logger.innerHTML += "This is of type " + typeof(message) + '<br />';
-
-//         error_msg = s[1].replace("File \"<string>\", ", '')
-//         res = document['log']
-//         res.innerHTML += error_msg;
-//     }
-// })();
 (function () {
     var old = console.log;
     var logger = document.getElementById('log');
@@ -736,3 +570,6 @@ function print_stat() {
         }
     }
 })();
+$(document).ready(function(){
+    create_map();
+})

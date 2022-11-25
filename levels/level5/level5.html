@@ -58,33 +58,62 @@ def mult(e):
     
     try:
         exec(s, globals())
+        window.check_success()
         window.print_stat()
-        success()
     except Exception as e:
         window.print_stat()
         s = traceback.format_exc().split('exec(s, globals())')
         error_msg = s[1]
         res = document['log_']
         res.innerHTML += error_msg + "<br />";
-
-def success():
-    window.check_success()
-def collect_weapon():
+def collect_stone():
     window.weapon()
 def get_direction():
     return window.direction()
 def move_up():
-    v = window.change.surface(2)
+    window.walk(2)
 def move_down():
-    v = window.change.surface(1)
+    window.walk(1)
 def move_left():
-    v = window.change.surface(4)
+    window.walk(4)
 def move_right():
-    v = window.change.surface(3)
+    window.walk(3)
 
 document['button-addon2'].bind("click", mult)
 
 </script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../images/python.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+      Python Combat
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../../index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="level5_tut.html">Tutorial</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="../level1/level1_tut.html">Level 1</a></li>
+            <li><a class="dropdown-item" href="../level2/level2_tut.html">Level 2</a></li>
+            <li><a class="dropdown-item" href="../level3/level3_tut.html">Level 3</a></li>
+            <li><a class="dropdown-item" href="../level4/level4_tut.html">Level 4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
   <div class="container-fluid">
     <!-- row 1 -->
     <div class="row">
@@ -99,9 +128,9 @@ document['button-addon2'].bind("click", mult)
         <!-- Level description -->
         <h2 style="font-family: 'Nintendo DS BIOS', sans-serif; font-weight: 600;">Tasks</h2>
         <p class="description">1. Now there are no bounds to your paths. <br>
-          2. But you have been given list named "coordinates" which contains another list which stores coordinates of the weapons. <br>
-          3. But the twist is that you have to collect weapons in the order given in list else the task will fail. <br>
-          4. To collect weapon, reach the coordiante and use function collect_weapon() to collect it. <br>
+          2. But you have been given list named "coordinates" which contains another list which stores coordinates of the stones. <br>
+          3. But the twist is that you have to collect stones in the order given in list else the task will fail. <br>
+          4. To collect weapon, reach the coordiante and use function collect_stone() to collect it. <br>
         </p>
         <h2 style="font-family: 'Nintendo DS BIOS', sans-serif; font-weight: 600;">Rules</h2>
         <p class="description">1. Ahh! One constraint, do not move out of the arena.<br>
@@ -181,15 +210,15 @@ document['button-addon2'].bind("click", mult)
         <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">SELECT LEVEL</h5>
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">HINT</h5>
                     </div>
                     <div id="change-hobbies" class="modal-body">
-                    <a type="button" id = "bk-btn" class="btn btn-danger" href="level1/level1_tut.html" role = "button">LEVEL 1</a><br><br>
-                    <a type="button" id = "bk-btn" class="btn btn-danger" href="level2/level2_tut.html" role = "button">LEVEL 2</a><br><br>
-                    <a type="button" id = "bk-btn" class="btn btn-danger" href="level3/level3_tut.html" role = "button">LEVEL 3</a><br><br>
-                    <a type="button" id = "bk-btn" class="btn btn-danger" href="level4/level4_tut.html" role = "button">LEVEL 4</a><br><br>
-                    <a type="button" id = "bk-btn" class="btn btn-danger" href="level5/level5_tut.html" role = "button">LEVEL 5</a><br><br> 
+                        <br><br><br>
+                    Traverse through the list from begining to end. <br>
+                    Get the coordinates of each weapon. Go to that position, collect gem and come back to origin!!. <br>
+                    Do the same process again!
+                    <br><br><br>
                     </div>
                     <div class="modal-footer">
                         <button type="button" id = "bk-btn" class="btn btn-success" data-bs-dismiss="modal">back</button>
@@ -212,9 +241,9 @@ document['button-addon2'].bind("click", mult)
         <div class ="output" style="overflow: scroll; height: 300px; background: rgb(67, 65, 65); border: 2px solid skyblue;">
           <br><br>
           
-          <h3 id="result"></h3>
-          <p class="description" id="log"></p>
-          <p class="descriptions" id="log_" style="color:white"></p>
+          <h3 id="result" style="color: white;"></h3>
+          <p class="description" id="log" style="color: white;"></p>
+          <p class="descriptions" id="log_" style="color: red;"></p>
           <br><br>
         </div>
       </div>
@@ -294,8 +323,32 @@ document['button-addon2'].bind("click", mult)
     autoCloseBrackets: true,
     matchBrackets: true,
     extraKeys: {
-      "'m'": completeAfter,
+      "'a'": completeAfter,
+      "'b'": completeAfter,
+      "'c'": completeAfter,
+      "'d'": completeAfter,
+      "'e'": completeAfter,
+      "'f'": completeAfter,
+      "'g'": completeAfter,
+      "'h'": completeAfter,
+      "'i'": completeAfter,
+      "'j'": completeAfter,
       "'k'": completeAfter,
+      "'l'": completeAfter,
+      "'m'": completeAfter,
+      "'n'": completeAfter,
+      "'o'": completeAfter,
+      "'p'": completeAfter,
+      "'q'": completeAfter,
+      "'r'": completeAfter,
+      "'s'": completeAfter,
+      "'t'": completeAfter,
+      "'u'": completeAfter,
+      "'v'": completeAfter,
+      "'w'": completeAfter,
+      "'x'": completeAfter,
+      "'y'": completeAfter,
+      "'z'": completeAfter,
       "'/'": completeIfAfterLt,
       "' '": completeIfInTag,
       "'='": completeIfInTag,

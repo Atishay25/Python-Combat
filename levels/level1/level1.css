@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nabla&display=swap');
 @import url('https://fonts.cdnfonts.com/css/nintendo-ds-bios');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 #arena{
     background: url("../images/level1/arena_bg.jpg")no-repeat;
     height:13.3cm;
@@ -66,4 +67,32 @@ body {
 
 .output{
     background-color: rgb(48, 10, 36);
+}
+
+.modal-body{
+    background-image: url(../images/hint.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.navbar{
+    background-image: url(../images/alert.png);
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.navbar-brand{
+    font-size: 38px !important;
+    font-weight: 700;
+    color: rgb(46, 28, 28);
+    margin-left: 0.5cm;
+    font-family: 'Squada One', cursive;
+}
+
+.nav-item{
+    font-size: 20px;
+    font-weight: 500;
 }

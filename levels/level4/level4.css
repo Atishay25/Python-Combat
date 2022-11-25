@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nabla&display=swap');
 @import url('https://fonts.cdnfonts.com/css/nintendo-ds-bios');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 #arena{
-    background: url("../images/rock.jpg")no-repeat;
+    background: url("../images/level4/arena_bg.jpg")no-repeat;
     background-size: cover;
     height:13.3cm;
     width:13.3cm;
@@ -10,7 +11,7 @@
     box-sizing: border-box;
     position: relative;
     top:10px;
-    left:50px;
+    left:0px;
 }
 .gems{
     width: 1cm;
@@ -30,7 +31,7 @@
     position:absolute;
     width:1cm;
     height: 3cm;
-    background: url("../images/tile.png") no-repeat;
+    background: url("../images/level4/vert.png") no-repeat;
     background-size: cover;
     z-index: 1;
     border: 1.1px solid black;
@@ -39,7 +40,7 @@
     position: absolute;
     width:3cm;
     height:1cm;
-    background: url("../images/tile_hor.png") no-repeat;
+    background: url("../images/level4/hor.png") no-repeat;
     background-size: cover;
     z-index: 1;
     border: 1.1px solid black;
@@ -52,7 +53,7 @@
 }
 
 body {
-    /* background-image: url('../images/bg.jpg'); */
+    background-image: url('../images/bg_arena_editor7.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -67,10 +68,37 @@ body {
 .description{
     font-family: 'Nintendo DS BIOS', sans-serif;
     word-spacing: 5px;
-    color: white;
+    color: rgb(84, 65, 51);
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
 }
 #log{
     color:rgb(255, 255, 255);
+}
+.modal-body{
+    background-image: url(../images/hint.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.navbar{
+    background-image: url(../images/alert.png);
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.navbar-brand{
+    font-size: 38px !important;
+    font-weight: 700;
+    color: rgb(46, 28, 28);
+    margin-left: 0.5cm;
+    font-family: 'Squada One', cursive;
+}
+
+.nav-item{
+    font-size: 20px;
+    font-weight: 500;
 }
