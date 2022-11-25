@@ -1,20 +1,24 @@
 # Python-Combat
-A Web Platform that allows individuals to learn python programming in an enjoyable way, made as Course Project for CS251 - Software Systems Laboratory. 
+A Web Platform that allows individuals to learn python programming in an enjoyable way, made as Course Project for CS251 - Software Systems Laboratory. The Project is inspired by [Code Combat](https://codecombat.com/play/dungeon). More detailed description of Project can be found [here](https://docs.google.com/document/d/e/2PACX-1vSx5huRGWfYWPCLd9tG8xWMgfQwq6fPA-G2t3hrG_t6BA4vLyQ9DQSUnBIiPoFhfZHcY4Sg8r98gL0U/pub).
 
-Description of Project can be found [here](https://docs.google.com/document/d/e/2PACX-1vSx5huRGWfYWPCLd9tG8xWMgfQwq6fPA-G2t3hrG_t6BA4vLyQ9DQSUnBIiPoFhfZHcY4Sg8r98gL0U/pub)
+The Combat is hosted at https://prolific-pythonists.netlify.app/
 
 ## Instructions
-- Click on **Start** button on the home page to start *Combat*
+- Click on **Start** button on the home page to start the **Combat**
 - Choose the level which you want to play. There are 5 levels in the game
 - You will see a tutorial about the programming concepts of **python** which are being used in the level
-- Click on **Play Now** -> **Start Combat** to play in that Level
-- Instructions and Logger will be displayed along the arena and code editor
-- You have to follow the instructions and help our *Warrior* achieve his goal!
-
+- Click on **Play Now** -> **Start Combat** to play that Level
+- Instructions and Logger will be displayed along with the arena
+- Follow the instructions and write your code in code editor provided
+- You have to help our *Warrior* using your Coding Skills to achieve his goal!
+## Theme
+The warrior has decided to repeat the history of his ancestor **Thanos**. He is on his way to collect all the Six [Infinity Stones](https://marvelcinematicuniverse.fandom.com/wiki/Infinity_Stones) and become the Supreme Power in Universe. But, He is intelligent and calm. He is not going to wipe out half the Universe, instead use the stones powers for well being of it. You are his friend from Earth to help him in his Journey. Each level awaits a infinity stone on success. You along with the warrior already have the mind stone with you. So, use it to collect the rest of the 5 stones and help the warrior for achieveing his aim.
 ## Levels
-### Level 1 - Collect the Diamonds
-- Python Variables
-- Training Arena
+### Level 1 - Moving Across Time
+| S.N.        | Topic                        |
+| ------------- | ------------- |
+| 1           | HTML,CSS and Java Script     |
+| 2           | Bash Basics, Git, Markdown   |
 
 ### Level 2 - Key to Success
 - Conditional statements in Python
