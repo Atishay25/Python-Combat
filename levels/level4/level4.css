@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nabla&display=swap');
 @import url('https://fonts.cdnfonts.com/css/nintendo-ds-bios');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Eagle+Lake&family=Nabla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 #arena{
     background: url("../images/level4/arena_bg.jpg")no-repeat;
@@ -53,17 +54,18 @@
 }
 
 body {
-    background-image: url('../images/play-bg.png');
+    background-image: url('../images/play-bg.png') !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 #heading{
-    font-family: 'Squada One', cursive;
-    color: rgb(0, 0, 0);
-    font-size: 90px;
-    margin-bottom: 50px;
+    font-family: 'Eagle Lake', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    margin-bottom: 30px;
+    padding-top: 10px;
 }
 .description{
     font-family: 'Nintendo DS BIOS', sans-serif;

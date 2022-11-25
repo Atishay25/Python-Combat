@@ -116,7 +116,10 @@ function speeddown(){
     var res = document.getElementById('result');
     res.innerHTML = "WELL DONE, you have collected the Space stone." + '<br />';
     $("#result").css("color", "green");
-    
+    $("#player").animate({top : "+=0cm"},function(){
+        $("#congrats").modal("show");
+    })
+         
 }
 
 /**
