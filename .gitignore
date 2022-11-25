@@ -3,6 +3,7 @@
 *.aux
 *.idx
 *.toc
+*.Identifier
 
 node_modules/
 doxygen-awesome-css/
