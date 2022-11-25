@@ -19,46 +19,50 @@ The warrior has decided to repeat the history of his ancestor **Thanos**. He is 
 | ------------- | ------------- |
 | Programming Concept      | Python Variables     |
 | Infinity Stone           | Time Stone   |
-| Arena  | Traning/Grassy Arena |
+| Arena  | Grassy Arena |
 
-### Level 2 - Key to Success
+### Level 2 - Key To Success
 |    Level 2   | Key To Success                       |
 | ------------- | ------------- |
 | Programming Concept      | Conditional Statements     |
 | Infinity Stone           | Reality Stone   |
 | Arena  | Fire Arena :fire: |
-### Level 3 - Loop made easy
+### Level 3 - A Soul, For A Soul
 |    Level 3   | A Soul, For A Soul                       |
 | ------------- | ------------- |
 | Programming Concept      | Loops in Python     |
 | Infinity Stone           | Soul Stone   |
 | Arena  | Icy Arena :snowflake: |
-### Level 4 - 
+### Level 4 - Power Of Functions
 |    Level 4   | Power Of Functions                     |
 | ------------- | ------------- |
 | Programming Concept      | Functions in Python     |
 | Infinity Stone           | Power Stone   |
 | Arena  | Rock Arena |
 
-### Level 5 - 
+### Level 5 - Traverse The Space
 |    Level 5   | Traverse The Space                |
 | ------------- | ------------- |
-| Programming Concept      | Lists Data Structure in Python     |
+| Programming Concept      | List Data Structure in Python     |
 | Infinity Stone           | Space Stone   |
-| Arena  | Space Arena |
+| Arena  | Universe Arena |
 
 ## Features 
 - 5 Levels with different programming concepts to battle 
 - **Logger** with success/failure messages and ``print`` statements for debugging
+- **Hint** Button at every level to assist the user with some help
+- A **Tutorial** at start of every level to teach some basic part of Programming concept that is being used in the level
+- A Modal Box at start of each level to fascinate user through an underlying story theme so as to keep the user's interest along with Coding 
 - **Code Editor**
-  - Syntax highlighting
-  - Able to get code from uploaded file
-  - Suggestions/Auto-completions
+  - Used [Code Mirror](https://codemirror.net/) Library for creating a Code editor
+  - Syntax highlighting using Code Mirror Themes, modes and several Addons for different Programming languages
+  - Ability to get code from uploaded file using JavaScript Function
+  - Suggestions/Auto-completions using CodeMirror Hints 
 - **Arena**
-  - Dynamic Configuration
-  - Each battle sets up a different placements of objects on reloading
-  - Each Battle fought on different arena settings
-- Used **Sphinx** for Report and Documentation
+  - Dynamic Configuration of Arena at each level
+  - Each battle sets up a different placements of objects on reloading, that is it is Dynamically sets itself
+  - Each Battle fought on different arena settings with a unique Theme and underlying Programming concept
+- Used **Doxygen** for Report and Documentation
 
 ***
 <p align="center">Created with :heart: by <a href="http://www.cse.iitb.ac.in/~atishay">Atishay</a>, <a href="http://www.cse.iitb.ac.in/~meghgohil">Megh</a> & <a href="http://www.cse.iitb.ac.in/~avadhootjadhav"> Avadhoot</a></p>
