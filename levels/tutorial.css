@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Eagle+Lake&family=Nabla&display=swap');
+.carousel {
+    width:60%;
+    height:420px;
+    margin: 0 auto;
+}
+
+.imgSlide {
+    width: 100%;
+    margin: 0 auto;
+    height:420px;
+}
+
+body{
+    background-color: black;
+}
+
+.heading1{
+    font-family: 'Eagle Lake', cursive;
+    font-size: 500%;
+    color: white;
+}
+
+.heading3{
+    font-family: 'Eagle Lake', cursive;
+    font-size: 300%;
+    color: white;
+}
+
+/* Thick red border */
+hr{
+    border: 4px solid white;
+}
+
+h1{
+    color: rgb(1, 254, 1);
+    background-color: transparent;
+    border: transparent;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.modal-body
+{ 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.modal-image{
+    max-height: 250px;
+}
+
+.modal-header,
+.modal-footer{
+    background-color: black;
+    color:aqua
+}
+#bk-btn{
+    background-color: black;
+    color:aqua;
+}
+li{
+    color:blueviolet;
+    font-size: large;
+}
+
+.line-numbers{
+    color:rgb(200, 255, 0);
+}
