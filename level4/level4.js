@@ -7,7 +7,6 @@ var pos_y = 0;
 var reloaded = true;
 var snowman_killed = 0;
 var arena_type = 0;
-
 $(document).ready(function () {
     total_gems = 0;
     window.dict = {};
@@ -36,10 +35,10 @@ $(document).ready(function () {
                 if (Math.random() > 0.6) {
                     gem = document.createElement('img');
                     gem.src = "../images/diamond.png"
-                    gem.id = 10000 + 100 * posx + posy;
+                    gem.id = 10000 + 100 * x + y;
                     gem.className = "gems";
-                    gem.style.left = posx + "cm";
-                    gem.style.top = posy + "cm";
+                    gem.style.left = x + "cm";
+                    gem.style.top = y + "cm";
                     $('#arena').append([gem]);
                     total_gems = total_gems + 1;
                 }
@@ -68,11 +67,11 @@ $(document).ready(function () {
             posy = posy + 2;
             if (Math.random() > 0.6) {
                 gem = document.createElement('img');
-                gem.src = "../images/diamond.png";
-                gem.id = 10000 + 100 * posx + posy;
+                gem.src = "../images/diamond.png"
+                gem.id = 10000 + 100 * x + y;
                 gem.className = "gems";
-                gem.style.left = posx + "cm";
-                gem.style.top = posy + "cm";
+                gem.style.left = x + "cm";
+                gem.style.top = y + "cm";
                 $('#arena').append([gem]);
                 total_gems = total_gems + 1;
             }
@@ -105,10 +104,10 @@ $(document).ready(function () {
                 if (Math.random() > 0.6) {
                     gem = document.createElement('img');
                     gem.src = "../images/diamond.png"
-                    gem.id = 10000 + 100 * (posx + 2) + posy;
+                    gem.id = 10000 + 100 * x + y;
                     gem.className = "gems";
-                    gem.style.left = posx + 2 + "cm";
-                    gem.style.top = posy + "cm";
+                    gem.style.left = x + "cm";
+                    gem.style.top = y + "cm";
                     $('#arena').append([gem]);
                     total_gems = total_gems + 1;
                 }
@@ -139,11 +138,11 @@ $(document).ready(function () {
             posy = posy + 2;
             if (Math.random() > 0.6) {
                 gem = document.createElement('img');
-                gem.src = "../images/diamond.png";
-                gem.id = 10000 + 100 * posx + posy;
+                gem.src = "../images/diamond.png"
+                gem.id = 10000 + 100 * x + y;
                 gem.className = "gems";
-                gem.style.left = posx + "cm";
-                gem.style.top = posy + "cm";
+                gem.style.left = x + "cm";
+                gem.style.top = y + "cm";
                 $('#arena').append([gem]);
                 total_gems = total_gems + 1;
             }
@@ -163,29 +162,12 @@ $(document).ready(function () {
             }
             $('#arena').append([elem]);
         }
-        // snowman = document.createElement('img');
-        //         snowman.src = "../images/snowman.png";
-        //         snowman.id = "sm";
-        //         snowman.className = "snowmens";
-        //         snowman.style.left = 1 + "cm";
-        //         snowman.style.top = 12 + "cm";
-        //         $('#arena').append([snowman]);
-
-        //         snowman_d = document.createElement('img');
-        // snowman_d.src = "../images/snowman_dead.png";
-        // snowman_d.id = "sm_d";
-        // snowman_d.className = "snowmens";
-        // snowman_d.style.left = 1 + "cm";
-        // snowman_d.style.top = 12 + "cm";
-        // $('#arena').append([snowman_d]);
-        // $('#sm_d').animate({opacity:0}); 
     }
-
 
     else if(num > 0.5){
         arena_type = 2;
         while (hori != 0) {
-            i = i +2;
+            i = i + 2;
             ver = i;
             while (ver != 0) {
                 ver = ver - 1;
@@ -198,10 +180,10 @@ $(document).ready(function () {
                 if (Math.random() > 0.6) {
                     gem = document.createElement('img');
                     gem.src = "../images/diamond.png"
-                    gem.id = 10000 + 100 * posx + posy;
+                    gem.id = 10000 + 100 * x + y;
                     gem.className = "gems";
-                    gem.style.left = posx + "cm";
-                    gem.style.top = posy + "cm";
+                    gem.style.left = x + "cm";
+                    gem.style.top = y + "cm";
                     $('#arena').append([gem]);
                     total_gems = total_gems + 1;
                 }
@@ -230,11 +212,11 @@ $(document).ready(function () {
             posx = posx + 2;
             if (Math.random() > 0.6) {
                 gem = document.createElement('img');
-                gem.src = "../images/diamond.png";
-                gem.id = 10000 + 100 * posx + posy;
+                gem.src = "../images/diamond.png"
+                gem.id = 10000 + 100 * x + y;
                 gem.className = "gems";
-                gem.style.left = posx + "cm";
-                gem.style.top = posy + "cm";
+                gem.style.left = x + "cm";
+                gem.style.top = y + "cm";
                 $('#arena').append([gem]);
                 total_gems = total_gems + 1;
             }
@@ -267,10 +249,10 @@ $(document).ready(function () {
                 if (Math.random() > 0.6) {
                     gem = document.createElement('img');
                     gem.src = "../images/diamond.png"
-                    gem.id = 10000 + 100 * (posx) + posy+2;
+                    gem.id = 10000 + 100 * x + y;
                     gem.className = "gems";
-                    gem.style.left = posx + "cm";
-                    gem.style.top = posy + 2+ "cm";
+                    gem.style.left = x + "cm";
+                    gem.style.top = y + "cm";
                     $('#arena').append([gem]);
                     total_gems = total_gems + 1;
                 }
@@ -300,11 +282,11 @@ $(document).ready(function () {
             posx = posx + 2;
             if (Math.random() > 0.6) {
                 gem = document.createElement('img');
-                gem.src = "../images/diamond.png";
-                gem.id = 10000 + 100 * posx + posy;
+                gem.src = "../images/diamond.png"
+                gem.id = 10000 + 100 * x + y;
                 gem.className = "gems";
-                gem.style.left = posx + "cm";
-                gem.style.top = posy + "cm";
+                gem.style.left = x + "cm";
+                gem.style.top = y + "cm";
                 $('#arena').append([gem]);
                 total_gems = total_gems + 1;
             }
@@ -324,172 +306,7 @@ $(document).ready(function () {
             }
             $('#arena').append([elem]);
         }
-
-        // snowman = document.createElement('img');
-        // snowman.src = "../images/snowman.png";
-        // snowman.id = "sm";
-        // snowman.className = "snowmens";
-        // snowman.style.left = 12 + "cm";
-        // snowman.style.top = 1 + "cm";
-        // $('#arena').append([snowman]);
-        // snowman_d = document.createElement('img');
-        // snowman_d.src = "../images/snowman_dead.png";
-        // snowman_d.id = "sm_d";
-        // snowman_d.className = "snowmens";
-        // snowman_d.style.left = 12 + "cm";
-        // snowman_d.style.top = 1 + "cm";
-        // $('#arena').append([snowman_d]);
-        // $('#sm_d').animate({opacity:0});     
     }
-    // else{
-
-    // }
-    // while (ver != 0 || hori != 0) {
-    //     if (ver == 0) {
-    //         while (hori != 0) {
-    //             hori = hori - 1;
-    //             elem = document.createElement('div');
-    //             elem.id = 100 * posx + posy;
-    //             elem.className = "path horizontal";
-    //             elem.style.left = posx + "cm";
-    //             elem.style.top = posy + "cm";
-    //             posx = posx + 2;
-    //             if (Math.random() > 0.6) {
-    //                 gem = document.createElement('img');
-    //                 gem.src = "../images/diamond.png"
-    //                 gem.id = 10000 + 100 * posx + posy;
-    //                 gem.className = "gems";
-    //                 gem.style.left = posx + "cm";
-    //                 gem.style.top = posy + "cm";
-    //                 $('#arena').append([gem]);
-    //                 total_gems = total_gems + 1;
-    //             }
-    //             var curr = 100 * (posx - 2) + posy;
-    //             var next = 100 * posx + posy;
-    //             if (curr in dict) {
-    //                 dict[curr].push(next);
-    //             }
-    //             else {
-    //                 dict[curr] = [next];
-    //             }
-    //             if (next in dict) {
-    //                 dict[next].append[curr];
-    //             }
-    //             else {
-    //                 dict[next] = [curr];
-    //             }
-    //             $('#arena').append([elem]);
-    //         }
-    //     }
-    //     else if (hori == 0) {
-    //         while (ver != 0) {
-    //             ver = ver - 1;
-    //             elem = document.createElement('div');
-    //             elem.id = 100 * posx + posy;
-    //             elem.className = "path vertical";
-    //             elem.style.left = posx + "cm";
-    //             elem.style.top = posy + "cm";
-    //             posy = posy + 2;
-    //             if (Math.random() > 0.6) {
-    //                 gem = document.createElement('img');
-    //                 gem.src = "../images/diamond.png";
-    //                 gem.id = 10000 + 100 * posx + posy;
-    //                 gem.className = "gems";
-    //                 gem.style.left = posx + "cm";
-    //                 gem.style.top = posy + "cm";
-    //                 $('#arena').append([gem]);
-    //                 total_gems = total_gems + 1;
-    //             }
-    //             var curr = 100 * (posx) + posy - 2;
-    //             var next = 100 * posx + posy;
-    //             if (curr in dict) {
-    //                 dict[curr].push(next);
-    //             }
-    //             else {
-    //                 dict[curr] = [next];
-    //             }
-    //             if (next in dict) {
-    //                 dict[next].append[curr];
-    //             }
-    //             else {
-    //                 dict[next] = [curr];
-    //             }
-    //             $('#arena').append([elem]);
-
-    //         }
-    //     }
-    //     else {
-    //         if (Math.random() < 0.5) {
-    //             ver = ver - 1;
-    //             elem = document.createElement('div');
-    //             elem.id = 100 * posx + posy;
-    //             elem.className = "path vertical";
-    //             elem.style.left = posx + "cm";
-    //             elem.style.top = posy + "cm";
-    //             posy = posy + 2;
-    //             if (Math.random() > 0.6) {
-    //                 gem = document.createElement('img');
-    //                 gem.src = "../images/diamond.png";
-    //                 gem.id = 10000 + 100 * posx + posy;
-    //                 gem.className = "gems";
-    //                 gem.style.left = posx + "cm";
-    //                 gem.style.top = posy + "cm";
-    //                 $('#arena').append([gem]);
-    //                 total_gems = total_gems + 1;
-    //             }
-    //             var curr = 100 * (posx) + posy - 2;
-    //             var next = 100 * posx + posy;
-    //             if (curr in dict) {
-    //                 dict[curr].push(next);
-    //             }
-    //             else {
-    //                 dict[curr] = [next];
-    //             }
-    //             if (next in dict) {
-    //                 dict[next].append[curr];
-    //             }
-    //             else {
-    //                 dict[next] = [curr];
-    //             }
-    //             $('#arena').append([elem]);
-    //         }
-    //         else {
-    //             hori = hori - 1;
-    //             elem = document.createElement('div');
-    //             elem.id = 100 * posx + posy;
-    //             elem.className = "path horizontal";
-    //             elem.style.left = posx + "cm";
-    //             elem.style.top = posy + "cm";
-    //             posx = posx + 2;
-    //             if (Math.random() > 0.6) {
-    //                 gem = document.createElement('img');
-    //                 gem.src = "../images/diamond.png"
-    //                 gem.id = 10000 + 100 * posx + posy;
-    //                 gem.className = "gems";
-    //                 gem.style.left = posx + "cm";
-    //                 gem.style.top = posy + "cm";
-    //                 $('#arena').append([gem]);
-    //                 total_gems = total_gems + 1;
-    //             }
-    //             var curr = 100 * (posx - 2) + posy;
-    //             var next = 100 * posx + posy;
-    //             if (curr in dict) {
-    //                 dict[curr].push(next);
-    //             }
-    //             else {
-    //                 dict[curr] = [next];
-    //             }
-    //             if (next in dict) {
-    //                 dict[next].append[curr];
-    //             }
-    //             else {
-    //                 dict[next] = [curr];
-    //             }
-    //             $('#arena').append([elem]);
-    //         }
-    //    }
-    //}
-    // console.log(window.dict)
 })
 
 change = {
