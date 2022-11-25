@@ -22,16 +22,30 @@ The warrior has decided to repeat the history of his ancestor **Thanos**. He is 
 | Arena  | Traning/Grassy Arena |
 
 ### Level 2 - Key to Success
-- Conditional statements in Python
-- Fire Arena :fire:
+|    Level 2   | Key To Success                       |
+| ------------- | ------------- |
+| Programming Concept      | Conditional Statements     |
+| Infinity Stone           | Reality Stone   |
+| Arena  | Fire Arena :fire: |
 ### Level 3 - Loop made easy
-- Loops in Python
-- Icy Arena :snowflake:
+|    Level 3   | A Soul, For A Soul                       |
+| ------------- | ------------- |
+| Programming Concept      | Loops in Python     |
+| Infinity Stone           | Soul Stone   |
+| Arena  | Icy Arena :snowflake: |
 ### Level 4 - 
-- Functions
+|    Level 4   | Power Of Functions                     |
+| ------------- | ------------- |
+| Programming Concept      | Functions in Python     |
+| Infinity Stone           | Power Stone   |
+| Arena  | Rock Arena |
 
 ### Level 5 - 
-- Lists
+|    Level 5   | Traverse The Space                |
+| ------------- | ------------- |
+| Programming Concept      | Lists Data Structure in Python     |
+| Infinity Stone           | Space Stone   |
+| Arena  | Space Arena |
 
 ## Features 
 - 5 Levels with different programming concepts to battle 
