@@ -1,0 +1,188 @@
+\hypertarget{classChangeSet}{}\doxysection{Change\+Set Class Reference}
+\label{classChangeSet}\index{ChangeSet@{ChangeSet}}
+
+
+A change set represents a group of modifications to a document.  
+
+
+
+
+Inheritance diagram for Change\+Set\+:
+% FIG 0
+
+
+Collaboration diagram for Change\+Set\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChangeSet_a30432da6878f56af8435efe9833d0d18}{constructor}} (sections, inserted)
+\item 
+\mbox{\hyperlink{classChangeSet_ac40e691e004ff2f8246734924413c82c}{apply}} (\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a705b54f2abede2e6bc78eb5c96b903aa}{doc}})
+\begin{DoxyCompactList}\small\item\em Apply the changes to a document, returning the modified document. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChangeSet_aef211f3569ba399256c8011287ec125b}{map\+Desc}} (other, \mbox{\hyperlink{underscore-esm-min_8js_a38713f21a521f85af75aa009acbf066d}{before}}=false)
+\item 
+\mbox{\hyperlink{classChangeSet_a871e3829136a0c58b7f0d179a599ca96}{invert}} (\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a705b54f2abede2e6bc78eb5c96b903aa}{doc}})
+\begin{DoxyCompactList}\small\item\em Given the document as it existed {\itshape before} the changes, return a change set that represents the inverse of this set, which could be used to go from the document created by the changes back to the document as it existed before the changes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChangeSet_ab9249b4aecb7cb54f22e47dbfeac99c5}{compose}} (other)
+\begin{DoxyCompactList}\small\item\em Combine two subsequent change sets into a single set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChangeSet_a455168275a5c452e7df9ff47e5a0c571}{map}} (other, \mbox{\hyperlink{underscore-esm-min_8js_a38713f21a521f85af75aa009acbf066d}{before}}=false)
+\begin{DoxyCompactList}\small\item\em Given another change set starting in the same document, maps this change set over the other, producing a new change set that can be applied to the document produced by applying {\ttfamily other}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChangeSet_ad3b672445929b7cbe021551aa14526c4}{iter\+Changes}} (\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}}, individual=false)
+\begin{DoxyCompactList}\small\item\em Iterate over the changed ranges in the document, calling {\ttfamily f} for each, with the range in the original document ({\ttfamily fromA}-\/{\ttfamily toA}) and the range that replaces it in the new document ({\ttfamily fromB}-\/{\ttfamily toB}). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classChangeSet_a00212909feaeda03ed91bbb6b03546d8}{desc}} ()
+\begin{DoxyCompactList}\small\item\em Get a \href{https://codemirror.net/6/docs/ref/\#state.ChangeDesc}{\texttt{ change description}} for this change set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChangeSet_a93cc77b7df5f8e0cb6f354a1306aab7c}{filter}} (ranges)
+\item 
+\mbox{\hyperlink{classChangeSet_ac968431a6408eaa582ea55e333e02f77}{to\+J\+S\+ON}} ()
+\begin{DoxyCompactList}\small\item\em Serialize this change set to a J\+S\+O\+N-\/representable value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classChangeSet_afba8d41a35b4b99484a7e7d2f41d379c}{of}} (changes, \mbox{\hyperlink{classChangeDesc_ad46550dcfec1a1b8a5f2f7fc13b59d1c}{length}}, line\+Sep)
+\begin{DoxyCompactList}\small\item\em Create a change set for the given changes, for a document of the given length, using {\ttfamily line\+Sep} as line separator. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classChangeSet_a2a4c75b07838b8a308e86a6b967d7ce0}{empty}} (\mbox{\hyperlink{classChangeDesc_ad46550dcfec1a1b8a5f2f7fc13b59d1c}{length}})
+\begin{DoxyCompactList}\small\item\em Create an empty changeset of the given length. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classChangeSet_a8e1ebae6bdf348dc645964b3525153a7}{from\+J\+S\+ON}} (json)
+\begin{DoxyCompactList}\small\item\em Create a changeset from its J\+S\+ON representation (as produced by \href{https://codemirror.net/6/docs/ref/\#state.ChangeSet.toJSON}{\texttt{ {\ttfamily to\+J\+S\+ON}}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classChangeSet_ae4adc36b06c941fc5769bf7df3337c2c}{create\+Set}} (sections, inserted)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A change set represents a group of modifications to a document. 
+
+It stores the document length, and can only be applied to documents with exactly that length. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChangeSet_ac40e691e004ff2f8246734924413c82c}\label{classChangeSet_ac40e691e004ff2f8246734924413c82c}} 
+\index{ChangeSet@{ChangeSet}!apply@{apply}}
+\index{apply@{apply}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily Change\+Set\+::apply (\begin{DoxyParamCaption}\item[{}]{doc }\end{DoxyParamCaption})}
+
+
+
+Apply the changes to a document, returning the modified document. 
+
+\mbox{\Hypertarget{classChangeSet_ab9249b4aecb7cb54f22e47dbfeac99c5}\label{classChangeSet_ab9249b4aecb7cb54f22e47dbfeac99c5}} 
+\index{ChangeSet@{ChangeSet}!compose@{compose}}
+\index{compose@{compose}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{compose()}{compose()}}
+{\footnotesize\ttfamily Change\+Set\+::compose (\begin{DoxyParamCaption}\item[{}]{other }\end{DoxyParamCaption})}
+
+
+
+Combine two subsequent change sets into a single set. 
+
+{\ttfamily other} must start in the document produced by {\ttfamily this}. If {\ttfamily this} goes {\ttfamily docA} → {\ttfamily docB} and {\ttfamily other} represents {\ttfamily docB} → {\ttfamily docC}, the returned value will represent the change {\ttfamily docA} → {\ttfamily docC}. \mbox{\Hypertarget{classChangeSet_a30432da6878f56af8435efe9833d0d18}\label{classChangeSet_a30432da6878f56af8435efe9833d0d18}} 
+\index{ChangeSet@{ChangeSet}!constructor@{constructor}}
+\index{constructor@{constructor}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Change\+Set\+::constructor (\begin{DoxyParamCaption}\item[{}]{sections,  }\item[{}]{inserted }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChangeSet_ae4adc36b06c941fc5769bf7df3337c2c}\label{classChangeSet_ae4adc36b06c941fc5769bf7df3337c2c}} 
+\index{ChangeSet@{ChangeSet}!createSet@{createSet}}
+\index{createSet@{createSet}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{createSet()}{createSet()}}
+{\footnotesize\ttfamily static Change\+Set\+::create\+Set (\begin{DoxyParamCaption}\item[{}]{sections,  }\item[{}]{inserted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classChangeSet_a00212909feaeda03ed91bbb6b03546d8}\label{classChangeSet_a00212909feaeda03ed91bbb6b03546d8}} 
+\index{ChangeSet@{ChangeSet}!desc@{desc}}
+\index{desc@{desc}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{desc()}{desc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Change\+Set\+::desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a \href{https://codemirror.net/6/docs/ref/\#state.ChangeDesc}{\texttt{ change description}} for this change set. 
+
+\mbox{\Hypertarget{classChangeSet_a2a4c75b07838b8a308e86a6b967d7ce0}\label{classChangeSet_a2a4c75b07838b8a308e86a6b967d7ce0}} 
+\index{ChangeSet@{ChangeSet}!empty@{empty}}
+\index{empty@{empty}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily static Change\+Set\+::empty (\begin{DoxyParamCaption}\item[{}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create an empty changeset of the given length. 
+
+\mbox{\Hypertarget{classChangeSet_a93cc77b7df5f8e0cb6f354a1306aab7c}\label{classChangeSet_a93cc77b7df5f8e0cb6f354a1306aab7c}} 
+\index{ChangeSet@{ChangeSet}!filter@{filter}}
+\index{filter@{filter}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily Change\+Set\+::filter (\begin{DoxyParamCaption}\item[{}]{ranges }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChangeSet_a8e1ebae6bdf348dc645964b3525153a7}\label{classChangeSet_a8e1ebae6bdf348dc645964b3525153a7}} 
+\index{ChangeSet@{ChangeSet}!fromJSON@{fromJSON}}
+\index{fromJSON@{fromJSON}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{fromJSON()}{fromJSON()}}
+{\footnotesize\ttfamily static Change\+Set\+::from\+J\+S\+ON (\begin{DoxyParamCaption}\item[{}]{json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a changeset from its J\+S\+ON representation (as produced by \href{https://codemirror.net/6/docs/ref/\#state.ChangeSet.toJSON}{\texttt{ {\ttfamily to\+J\+S\+ON}}}. 
+
+\mbox{\Hypertarget{classChangeSet_a871e3829136a0c58b7f0d179a599ca96}\label{classChangeSet_a871e3829136a0c58b7f0d179a599ca96}} 
+\index{ChangeSet@{ChangeSet}!invert@{invert}}
+\index{invert@{invert}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{invert()}{invert()}}
+{\footnotesize\ttfamily Change\+Set\+::invert (\begin{DoxyParamCaption}\item[{}]{doc }\end{DoxyParamCaption})}
+
+
+
+Given the document as it existed {\itshape before} the changes, return a change set that represents the inverse of this set, which could be used to go from the document created by the changes back to the document as it existed before the changes. 
+
+\mbox{\Hypertarget{classChangeSet_ad3b672445929b7cbe021551aa14526c4}\label{classChangeSet_ad3b672445929b7cbe021551aa14526c4}} 
+\index{ChangeSet@{ChangeSet}!iterChanges@{iterChanges}}
+\index{iterChanges@{iterChanges}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{iterChanges()}{iterChanges()}}
+{\footnotesize\ttfamily Change\+Set\+::iter\+Changes (\begin{DoxyParamCaption}\item[{}]{f,  }\item[{}]{individual = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Iterate over the changed ranges in the document, calling {\ttfamily f} for each, with the range in the original document ({\ttfamily fromA}-\/{\ttfamily toA}) and the range that replaces it in the new document ({\ttfamily fromB}-\/{\ttfamily toB}). 
+
+When {\ttfamily individual} is true, adjacent changes are reported separately. \mbox{\Hypertarget{classChangeSet_a455168275a5c452e7df9ff47e5a0c571}\label{classChangeSet_a455168275a5c452e7df9ff47e5a0c571}} 
+\index{ChangeSet@{ChangeSet}!map@{map}}
+\index{map@{map}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily Change\+Set\+::map (\begin{DoxyParamCaption}\item[{}]{other,  }\item[{}]{before = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Given another change set starting in the same document, maps this change set over the other, producing a new change set that can be applied to the document produced by applying {\ttfamily other}. 
+
+When {\ttfamily before} is {\ttfamily true}, order changes as if {\ttfamily this} comes before {\ttfamily other}, otherwise (the default) treat {\ttfamily other} as coming first.
+
+Given two changes {\ttfamily A} and {\ttfamily B}, {\ttfamily A.\+compose(B.\+map(\+A))} and {\ttfamily B.\+compose(A.\+map(\+B, true))} will produce the same document. This provides a basic form of \href{https://en.wikipedia.org/wiki/Operational_transformation}{\texttt{ operational transformation}}, and can be used for collaborative editing. \mbox{\Hypertarget{classChangeSet_aef211f3569ba399256c8011287ec125b}\label{classChangeSet_aef211f3569ba399256c8011287ec125b}} 
+\index{ChangeSet@{ChangeSet}!mapDesc@{mapDesc}}
+\index{mapDesc@{mapDesc}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{mapDesc()}{mapDesc()}}
+{\footnotesize\ttfamily Change\+Set\+::map\+Desc (\begin{DoxyParamCaption}\item[{}]{other,  }\item[{}]{before = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChangeSet_afba8d41a35b4b99484a7e7d2f41d379c}\label{classChangeSet_afba8d41a35b4b99484a7e7d2f41d379c}} 
+\index{ChangeSet@{ChangeSet}!of@{of}}
+\index{of@{of}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{of()}{of()}}
+{\footnotesize\ttfamily static Change\+Set\+::of (\begin{DoxyParamCaption}\item[{}]{changes,  }\item[{}]{length,  }\item[{}]{line\+Sep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a change set for the given changes, for a document of the given length, using {\ttfamily line\+Sep} as line separator. 
+
+\mbox{\Hypertarget{classChangeSet_ac968431a6408eaa582ea55e333e02f77}\label{classChangeSet_ac968431a6408eaa582ea55e333e02f77}} 
+\index{ChangeSet@{ChangeSet}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!ChangeSet@{ChangeSet}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily Change\+Set\+::to\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Serialize this change set to a J\+S\+O\+N-\/representable value. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/state/dist/\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

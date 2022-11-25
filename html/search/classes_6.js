@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['node_111',['Node',['../classNode.html',1,'']]],
-  ['nodeutils_112',['NodeUtils',['../classNodeUtils.html',1,'']]]
+  ['gutterelement_6294',['GutterElement',['../classGutterElement.html',1,'']]],
+  ['guttermarker_6295',['GutterMarker',['../classGutterMarker.html',1,'']]]
 ];

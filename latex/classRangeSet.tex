@@ -1,0 +1,198 @@
+\hypertarget{classRangeSet}{}\doxysection{Range\+Set Class Reference}
+\label{classRangeSet}\index{RangeSet@{RangeSet}}
+
+
+A range set stores a collection of \href{https://codemirror.net/6/docs/ref/\#state.Range}{\texttt{ ranges}} in a way that makes them efficient to \href{https://codemirror.net/6/docs/ref/\#state.RangeSet.map}{\texttt{ map}} and \href{https://codemirror.net/6/docs/ref/\#state.RangeSet.update}{\texttt{ update}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRangeSet_ab53a03fe8674a7ab5c05bc43b8858104}{constructor}} (chunk\+Pos, \mbox{\hyperlink{underscore-esm-min_8js_a90bcf36c592a6853b18f25360e1ddbb0}{chunk}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_acc3209889ba9d09a3790bc6bedf0c72d}{next\+Layer}}, max\+Point)
+\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classRangeSet_a601e8191f8860e9b4de148d8bd967f11}{length}} ()
+\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classRangeSet_a19f1aa5afdff5e8b7918cec3644447fb}{size}} ()
+\begin{DoxyCompactList}\small\item\em The number of ranges in the set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRangeSet_a493f2cf007f4977d7bf9f386d4989b84}{chunk\+End}} (\mbox{\hyperlink{cjs_2index-default_8js_ae4b896af19aae26b1e5317acf4126807}{index}})
+\item 
+\mbox{\hyperlink{classRangeSet_a6f29d7a4576f5de4367e1a6b9d391013}{update}} (update\+Spec)
+\begin{DoxyCompactList}\small\item\em Update the range set, optionally adding new ranges or filtering out existing ones. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRangeSet_a7d9fa893342d61e039dcb8f906eac99a}{map}} (changes)
+\begin{DoxyCompactList}\small\item\em Map this range set through a set of changes, return the new set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRangeSet_aa20ebbc6269655c7b1d794e01e1fb695}{between}} (from, to, \mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}})
+\begin{DoxyCompactList}\small\item\em Iterate over the ranges that touch the region {\ttfamily from} to {\ttfamily to}, calling {\ttfamily f} for each. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRangeSet_a65e287e3ddb15ffec6fd9370945a2173}{iter}} (from=0)
+\begin{DoxyCompactList}\small\item\em Iterate over the ranges in this set, in order, including all ranges that end at or after {\ttfamily from}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classRangeSet_a549f558c3f3935523136ef7064b891d4}{is\+Empty}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classRangeSet_a223cc7facff16e03f5c1030e94ac570b}{create}} (chunk\+Pos, \mbox{\hyperlink{underscore-esm-min_8js_a90bcf36c592a6853b18f25360e1ddbb0}{chunk}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_acc3209889ba9d09a3790bc6bedf0c72d}{next\+Layer}}, max\+Point)
+\item 
+static \mbox{\hyperlink{classRangeSet_a9fbb975c7459f6dc2581f2ea0e59537c}{iter}} (sets, from=0)
+\begin{DoxyCompactList}\small\item\em Iterate over the ranges in a collection of sets, in order, starting from {\ttfamily from}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classRangeSet_a1e996a1c10a6b07bb9f6b26328fb519a}{compare}} (old\+Sets, new\+Sets, text\+Diff, comparator, min\+Point\+Size=-\/1)
+\begin{DoxyCompactList}\small\item\em Iterate over two groups of sets, calling methods on {\ttfamily comparator} to notify it of possible differences. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classRangeSet_a098850568547f826a3f5a1da5a03bc16}{eq}} (old\+Sets, new\+Sets, from=0, to)
+\begin{DoxyCompactList}\small\item\em Compare the contents of two groups of range sets, returning true if they are equivalent in the given range. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classRangeSet_ab44668a33f4c83ca8a708c5178c0024a}{spans}} (sets, from, to, iterator, min\+Point\+Size=-\/1)
+\begin{DoxyCompactList}\small\item\em Iterate over a group of range sets at the same time, notifying the iterator about the ranges covering every given piece of content. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classRangeSet_ac45bbf97c8f8d51cc7f6f9cf1d55b2fc}{of}} (ranges, \mbox{\hyperlink{augment_8js_a8c083e75cf25b8a728f7f1a7a270a74c}{sort}}=false)
+\begin{DoxyCompactList}\small\item\em Create a range set for the given range or array of ranges. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A range set stores a collection of \href{https://codemirror.net/6/docs/ref/\#state.Range}{\texttt{ ranges}} in a way that makes them efficient to \href{https://codemirror.net/6/docs/ref/\#state.RangeSet.map}{\texttt{ map}} and \href{https://codemirror.net/6/docs/ref/\#state.RangeSet.update}{\texttt{ update}}. 
+
+This is an immutable data structure. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRangeSet_aa20ebbc6269655c7b1d794e01e1fb695}\label{classRangeSet_aa20ebbc6269655c7b1d794e01e1fb695}} 
+\index{RangeSet@{RangeSet}!between@{between}}
+\index{between@{between}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{between()}{between()}}
+{\footnotesize\ttfamily Range\+Set\+::between (\begin{DoxyParamCaption}\item[{}]{from,  }\item[{}]{to,  }\item[{}]{f }\end{DoxyParamCaption})}
+
+
+
+Iterate over the ranges that touch the region {\ttfamily from} to {\ttfamily to}, calling {\ttfamily f} for each. 
+
+There is no guarantee that the ranges will be reported in any specific order. When the callback returns {\ttfamily false}, iteration stops. \mbox{\Hypertarget{classRangeSet_a493f2cf007f4977d7bf9f386d4989b84}\label{classRangeSet_a493f2cf007f4977d7bf9f386d4989b84}} 
+\index{RangeSet@{RangeSet}!chunkEnd@{chunkEnd}}
+\index{chunkEnd@{chunkEnd}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{chunkEnd()}{chunkEnd()}}
+{\footnotesize\ttfamily Range\+Set\+::chunk\+End (\begin{DoxyParamCaption}\item[{}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRangeSet_a1e996a1c10a6b07bb9f6b26328fb519a}\label{classRangeSet_a1e996a1c10a6b07bb9f6b26328fb519a}} 
+\index{RangeSet@{RangeSet}!compare@{compare}}
+\index{compare@{compare}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily static Range\+Set\+::compare (\begin{DoxyParamCaption}\item[{}]{old\+Sets,  }\item[{}]{new\+Sets,  }\item[{}]{text\+Diff,  }\item[{}]{comparator,  }\item[{}]{min\+Point\+Size = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Iterate over two groups of sets, calling methods on {\ttfamily comparator} to notify it of possible differences. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Diff} & This indicates how the underlying data changed between these ranges, and is needed to synchronize the iteration. \`{}from\`{} and \`{}to\`{} are coordinates in the \+\_\+new\+\_\+ space, after these changes. \\
+\hline
+{\em min\+Point\+Size} & Can be used to ignore all non-\/point ranges, and points below the given size. When -\/1, all ranges are compared. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRangeSet_ab53a03fe8674a7ab5c05bc43b8858104}\label{classRangeSet_ab53a03fe8674a7ab5c05bc43b8858104}} 
+\index{RangeSet@{RangeSet}!constructor@{constructor}}
+\index{constructor@{constructor}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Range\+Set\+::constructor (\begin{DoxyParamCaption}\item[{}]{chunk\+Pos,  }\item[{}]{chunk,  }\item[{}]{next\+Layer,  }\item[{}]{max\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRangeSet_a223cc7facff16e03f5c1030e94ac570b}\label{classRangeSet_a223cc7facff16e03f5c1030e94ac570b}} 
+\index{RangeSet@{RangeSet}!create@{create}}
+\index{create@{create}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static Range\+Set\+::create (\begin{DoxyParamCaption}\item[{}]{chunk\+Pos,  }\item[{}]{chunk,  }\item[{}]{next\+Layer,  }\item[{}]{max\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classRangeSet_a098850568547f826a3f5a1da5a03bc16}\label{classRangeSet_a098850568547f826a3f5a1da5a03bc16}} 
+\index{RangeSet@{RangeSet}!eq@{eq}}
+\index{eq@{eq}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{eq()}{eq()}}
+{\footnotesize\ttfamily static Range\+Set\+::eq (\begin{DoxyParamCaption}\item[{}]{old\+Sets,  }\item[{}]{new\+Sets,  }\item[{}]{from = {\ttfamily 0},  }\item[{}]{to }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compare the contents of two groups of range sets, returning true if they are equivalent in the given range. 
+
+\mbox{\Hypertarget{classRangeSet_a549f558c3f3935523136ef7064b891d4}\label{classRangeSet_a549f558c3f3935523136ef7064b891d4}} 
+\index{RangeSet@{RangeSet}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Range\+Set\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRangeSet_a65e287e3ddb15ffec6fd9370945a2173}\label{classRangeSet_a65e287e3ddb15ffec6fd9370945a2173}} 
+\index{RangeSet@{RangeSet}!iter@{iter}}
+\index{iter@{iter}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{iter()}{iter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Range\+Set\+::iter (\begin{DoxyParamCaption}\item[{}]{from = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Iterate over the ranges in this set, in order, including all ranges that end at or after {\ttfamily from}. 
+
+\mbox{\Hypertarget{classRangeSet_a9fbb975c7459f6dc2581f2ea0e59537c}\label{classRangeSet_a9fbb975c7459f6dc2581f2ea0e59537c}} 
+\index{RangeSet@{RangeSet}!iter@{iter}}
+\index{iter@{iter}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{iter()}{iter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Range\+Set\+::iter (\begin{DoxyParamCaption}\item[{}]{sets,  }\item[{}]{from = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Iterate over the ranges in a collection of sets, in order, starting from {\ttfamily from}. 
+
+\mbox{\Hypertarget{classRangeSet_a601e8191f8860e9b4de148d8bd967f11}\label{classRangeSet_a601e8191f8860e9b4de148d8bd967f11}} 
+\index{RangeSet@{RangeSet}!length@{length}}
+\index{length@{length}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Range\+Set\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRangeSet_a7d9fa893342d61e039dcb8f906eac99a}\label{classRangeSet_a7d9fa893342d61e039dcb8f906eac99a}} 
+\index{RangeSet@{RangeSet}!map@{map}}
+\index{map@{map}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily Range\+Set\+::map (\begin{DoxyParamCaption}\item[{}]{changes }\end{DoxyParamCaption})}
+
+
+
+Map this range set through a set of changes, return the new set. 
+
+\mbox{\Hypertarget{classRangeSet_ac45bbf97c8f8d51cc7f6f9cf1d55b2fc}\label{classRangeSet_ac45bbf97c8f8d51cc7f6f9cf1d55b2fc}} 
+\index{RangeSet@{RangeSet}!of@{of}}
+\index{of@{of}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{of()}{of()}}
+{\footnotesize\ttfamily static Range\+Set\+::of (\begin{DoxyParamCaption}\item[{}]{ranges,  }\item[{}]{sort = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a range set for the given range or array of ranges. 
+
+By default, this expects the ranges to be {\itshape sorted} (by start position and, if two start at the same position, {\ttfamily value.\+start\+Side}). You can pass {\ttfamily true} as second argument to cause the method to sort them. \mbox{\Hypertarget{classRangeSet_a19f1aa5afdff5e8b7918cec3644447fb}\label{classRangeSet_a19f1aa5afdff5e8b7918cec3644447fb}} 
+\index{RangeSet@{RangeSet}!size@{size}}
+\index{size@{size}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Range\+Set\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The number of ranges in the set. 
+
+\mbox{\Hypertarget{classRangeSet_ab44668a33f4c83ca8a708c5178c0024a}\label{classRangeSet_ab44668a33f4c83ca8a708c5178c0024a}} 
+\index{RangeSet@{RangeSet}!spans@{spans}}
+\index{spans@{spans}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{spans()}{spans()}}
+{\footnotesize\ttfamily static Range\+Set\+::spans (\begin{DoxyParamCaption}\item[{}]{sets,  }\item[{}]{from,  }\item[{}]{to,  }\item[{}]{iterator,  }\item[{}]{min\+Point\+Size = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Iterate over a group of range sets at the same time, notifying the iterator about the ranges covering every given piece of content. 
+
+Returns the open count (see \href{https://codemirror.net/6/docs/ref/\#state.SpanIterator.span}{\texttt{ {\ttfamily Span\+Iterator.\+span}}}) at the end of the iteration. 
+\begin{DoxyParams}{Parameters}
+{\em min\+Point\+Size} & When given and greater than -\/1, only points of at least this size are taken into account. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRangeSet_a6f29d7a4576f5de4367e1a6b9d391013}\label{classRangeSet_a6f29d7a4576f5de4367e1a6b9d391013}} 
+\index{RangeSet@{RangeSet}!update@{update}}
+\index{update@{update}!RangeSet@{RangeSet}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily Range\+Set\+::update (\begin{DoxyParamCaption}\item[{}]{update\+Spec }\end{DoxyParamCaption})}
+
+
+
+Update the range set, optionally adding new ranges or filtering out existing ones. 
+
+(Note\+: The type parameter is just there as a kludge to work around Type\+Script variance issues that prevented {\ttfamily \mbox{\hyperlink{classRangeSet}{Range\+Set}}$<$X$>$} from being a subtype of {\ttfamily \mbox{\hyperlink{classRangeSet}{Range\+Set}}$<$Y$>$} when {\ttfamily X} is a subtype of {\ttfamily Y}.) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/state/dist/\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

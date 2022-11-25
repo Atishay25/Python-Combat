@@ -1,40 +1,176 @@
-\hypertarget{level2_8js}{}\doxysection{level2/level2.js File Reference}
-\label{level2_8js}\index{level2/level2.js@{level2/level2.js}}
+\hypertarget{level2_8js}{}\doxysection{levels/level2/level2.js File Reference}
+\label{level2_8js}\index{levels/level2/level2.js@{levels/level2/level2.js}}
+
+
+J\+A\+V\+A\+S\+C\+R\+I\+PT F\+OR L\+E\+V\+EL 2.  
+
+
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+function \mbox{\hyperlink{level2_8js_a09a17e55f6e99aeca0ca34f45e3686fa}{speedup}} ()
+\begin{DoxyCompactList}\small\item\em This function is bind to the increase button it decreases the value of var speed so that animation time is less and hence speed increases finally. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level2_8js_aa04411e336425f2c0ee06a3e0cffd002}{speeddown}} ()
+\begin{DoxyCompactList}\small\item\em This function is bind to the decrease button it increases the value of var speed so that animation time is more and hence speed decreases finally. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level2_8js_af1a71bc0271588ea642af88b0e616a64}{create\+\_\+arena}} ()
+\begin{DoxyCompactList}\small\item\em The function creates the arena using recursion of create\+\_\+map. \end{DoxyCompactList}\item 
 function \mbox{\hyperlink{level2_8js_a6277d2b1fe8535ca71fd5c16cad55034}{create\+\_\+map}} (x, y, n, val)
-\item 
-document \mbox{\hyperlink{level2_8js_abb89d31fdd39dfa5614d6b1c964fee18}{ready}} (function() \{ if(Math.\+random() $>$ 0.\+5)\{ \mbox{\hyperlink{level2_8js_a6277d2b1fe8535ca71fd5c16cad55034}{create\+\_\+map}}(0, 14, 3, 1);\} else\{ \mbox{\hyperlink{level2_8js_a6277d2b1fe8535ca71fd5c16cad55034}{create\+\_\+map}}(0, 14, 3, 2);\} \}) \mbox{\hyperlink{level5_8js_ab41b0e12179ea31b35698fa48399e8d8}{change}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function first creates a horizontal path and two vertical paths one above and one below.\+Assigns the values to the stones and then recalls itself. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level2_8js_a5ecb5fb68a67bf16cfc16d6a6bd6fcf9}{walk}} (r)
+\begin{DoxyCompactList}\small\item\em This function controls the movement of warrior based on the input given. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level2_8js_a65258d85fd907276f0a55c839ed5d356}{direction}} ()
+\begin{DoxyCompactList}\small\item\em At each junction the value of each stone will be returned. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level2_8js_a9aa99c9dbb8de7809a3697733d09a852}{check\+\_\+success}} ()
+\begin{DoxyCompactList}\small\item\em The function checks if the players code is correct or not. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level2_8js_a0c9c3c48752efaf54b967cfd55c821f5}{print\+\_\+stat}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to show print statement in the logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 var \mbox{\hyperlink{level2_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em stores the total number of gems in the path \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level2_8js_a33f858d8b6bfb266df7f78612b2bde85}{pos\+\_\+x}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em stores the X-\/coordinate of warrior \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level2_8js_ac257f49b93d90b30e9936fd62b833609}{pos\+\_\+y}} = 14
-\item 
+\begin{DoxyCompactList}\small\item\em stores the Y-\/coordinate of warrior \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level2_8js_a4bac0901fe7708f10d107a766fa3a0f5}{reloaded}} = true
+\begin{DoxyCompactList}\small\item\em check if reloading was done before or not \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{level2_8js_a2670abc5bb40c78d003183e0cb263877}{speed}} = 500
+\begin{DoxyCompactList}\small\item\em For the animation speed of the player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{level2_8js_ab2342bebd5d76586819359f53e99339a}{speed\+\_\+dict}} = \{250 \+: \char`\"{}fast\char`\"{}, 500 \+: \char`\"{}medium\char`\"{}, \char`\"{}750\char`\"{} \+: \char`\"{}slow\char`\"{}\}
+\begin{DoxyCompactList}\small\item\em maps speeds in milliseconds to the name corresponding to them. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{level2_8js_ac4188891dcf62e1bb5c5a24e1a709261}{speed\+\_\+show}} = document.\+get\+Element\+By\+Id(\char`\"{}speed\+\_\+\char`\"{})
+\begin{DoxyCompactList}\small\item\em The element in which we have to show speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{level5_8js_ac4188891dcf62e1bb5c5a24e1a709261}{speed\+\_\+show}} \mbox{\hyperlink{level2_8js_aa4bc26b2aa5a0e4bd90ce6931f49e18e}{inner\+H\+T\+ML}} = \mbox{\hyperlink{level5_8js_ab2342bebd5d76586819359f53e99339a}{speed\+\_\+dict}}\mbox{[}\mbox{\hyperlink{welcome_8js_a2670abc5bb40c78d003183e0cb263877}{speed}}\mbox{]}
 \item 
 window \mbox{\hyperlink{level2_8js_a37bf353e1618cbf53638b1219eddd197}{dict}} = \{\}
+\begin{DoxyCompactList}\small\item\em stores relation between paths i.\+e. which path to be followed after a certain path. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{level2_8js_acc69707810d1669872f8199f16a0da20}{logger}} = document.\+get\+Element\+By\+Id(\textquotesingle{}\mbox{\hyperlink{level5_8js_a0bdea26f5c183c3dcb8d5501fa452991}{log}}\textquotesingle{})
+\item 
+console \mbox{\hyperlink{level2_8js_a0bdea26f5c183c3dcb8d5501fa452991}{log}}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+J\+A\+V\+A\+S\+C\+R\+I\+PT F\+OR L\+E\+V\+EL 2. 
+
+\begin{DoxyAuthor}{Author}
+Prolific Pythonists 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2022 
+\end{DoxyDate}
+
+
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{level2_8js_a6277d2b1fe8535ca71fd5c16cad55034}\label{level2_8js_a6277d2b1fe8535ca71fd5c16cad55034}} 
+\mbox{\Hypertarget{level2_8js_a9aa99c9dbb8de7809a3697733d09a852}\label{level2_8js_a9aa99c9dbb8de7809a3697733d09a852}} 
+\index{level2.js@{level2.js}!check\_success@{check\_success}}
+\index{check\_success@{check\_success}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{check\_success()}{check\_success()}}
+{\footnotesize\ttfamily function check\+\_\+success (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function checks if the players code is correct or not. 
+
+~\newline
+ If it is correct then it prints the message and if it is not, it will reload page after 3 second. \mbox{\Hypertarget{level2_8js_af1a71bc0271588ea642af88b0e616a64}\label{level2_8js_af1a71bc0271588ea642af88b0e616a64}} 
+\index{level2.js@{level2.js}!create\_arena@{create\_arena}}
+\index{create\_arena@{create\_arena}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{create\_arena()}{create\_arena()}}
+{\footnotesize\ttfamily function create\+\_\+arena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function creates the arena using recursion of create\+\_\+map. 
+
+~\newline
+ It also restores the values of global variables. \mbox{\Hypertarget{level2_8js_a6277d2b1fe8535ca71fd5c16cad55034}\label{level2_8js_a6277d2b1fe8535ca71fd5c16cad55034}} 
 \index{level2.js@{level2.js}!create\_map@{create\_map}}
 \index{create\_map@{create\_map}!level2.js@{level2.js}}
 \doxysubsubsection{\texorpdfstring{create\_map()}{create\_map()}}
 {\footnotesize\ttfamily function create\+\_\+map (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{n,  }\item[{}]{val }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{level2_8js_abb89d31fdd39dfa5614d6b1c964fee18}\label{level2_8js_abb89d31fdd39dfa5614d6b1c964fee18}} 
-\index{level2.js@{level2.js}!ready@{ready}}
-\index{ready@{ready}!level2.js@{level2.js}}
-\doxysubsubsection{\texorpdfstring{ready()}{ready()}}
-{\footnotesize\ttfamily document ready (\begin{DoxyParamCaption}\item[{function() \{ if(Math.\+random() $>$ 0.\+5)\{ \mbox{\hyperlink{level2_8js_a6277d2b1fe8535ca71fd5c16cad55034}{create\+\_\+map}}(0, 14, 3, 1);\} else\{ \mbox{\hyperlink{level2_8js_a6277d2b1fe8535ca71fd5c16cad55034}{create\+\_\+map}}(0, 14, 3, 2);\} \}}]{ }\end{DoxyParamCaption})}
 
+
+This function first creates a horizontal path and two vertical paths one above and one below.\+Assigns the values to the stones and then recalls itself. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & x x coordinate at which recursion should start \\
+\hline
+{\em \{int\}} & y y coordinate at which recursion should start \\
+\hline
+{\em \{int\}} & n total paths to be added to make the path symmetric. \\
+\hline
+{\em \{int\}} & val the value to be assigned to each stone for direction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{level2_8js_a65258d85fd907276f0a55c839ed5d356}\label{level2_8js_a65258d85fd907276f0a55c839ed5d356}} 
+\index{level2.js@{level2.js}!direction@{direction}}
+\index{direction@{direction}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{direction()}{direction()}}
+{\footnotesize\ttfamily function direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+At each junction the value of each stone will be returned. 
+
+~\newline
+ If value is 1 then go above. If value is 2 then go below If value is 3 then you are on wrong path. If value is -\/1 then there are no gems at that position. \begin{DoxyReturn}{Returns}
+the direction values and data type is int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{level2_8js_a0c9c3c48752efaf54b967cfd55c821f5}\label{level2_8js_a0c9c3c48752efaf54b967cfd55c821f5}} 
+\index{level2.js@{level2.js}!print\_stat@{print\_stat}}
+\index{print\_stat@{print\_stat}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{print\_stat()}{print\_stat()}}
+{\footnotesize\ttfamily function print\+\_\+stat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to show print statement in the logger. 
+
+~\newline
+ This function is implemented by overloading console.\+log function to show print statements on logger as well. \mbox{\Hypertarget{level2_8js_aa04411e336425f2c0ee06a3e0cffd002}\label{level2_8js_aa04411e336425f2c0ee06a3e0cffd002}} 
+\index{level2.js@{level2.js}!speeddown@{speeddown}}
+\index{speeddown@{speeddown}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{speeddown()}{speeddown()}}
+{\footnotesize\ttfamily function speeddown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is bind to the decrease button it increases the value of var speed so that animation time is more and hence speed decreases finally. 
+
+\mbox{\Hypertarget{level2_8js_a09a17e55f6e99aeca0ca34f45e3686fa}\label{level2_8js_a09a17e55f6e99aeca0ca34f45e3686fa}} 
+\index{level2.js@{level2.js}!speedup@{speedup}}
+\index{speedup@{speedup}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{speedup()}{speedup()}}
+{\footnotesize\ttfamily function speedup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is bind to the increase button it decreases the value of var speed so that animation time is less and hence speed increases finally. 
+
+\mbox{\Hypertarget{level2_8js_a5ecb5fb68a67bf16cfc16d6a6bd6fcf9}\label{level2_8js_a5ecb5fb68a67bf16cfc16d6a6bd6fcf9}} 
+\index{level2.js@{level2.js}!walk@{walk}}
+\index{walk@{walk}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{walk()}{walk()}}
+{\footnotesize\ttfamily function walk (\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+
+
+This function controls the movement of warrior based on the input given. 
+
+~\newline
+ Exception handling is also done in this function as while moving if warrior steps out of arena alert box is shown 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & r integer determining direction of traversal. 1 =$>$ move\+\_\+up, 2=$>$move\+\_\+down() 3 =$>$ move\+\_\+right() 4=$>$ move\+\_\+left ~\newline
+ \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Variable Documentation}
@@ -44,11 +180,53 @@ window \mbox{\hyperlink{level2_8js_a37bf353e1618cbf53638b1219eddd197}{dict}} = \
 \doxysubsubsection{\texorpdfstring{dict}{dict}}
 {\footnotesize\ttfamily window dict = \{\}}
 
+
+
+stores relation between paths i.\+e. which path to be followed after a certain path. 
+
+\mbox{\Hypertarget{level2_8js_aa4bc26b2aa5a0e4bd90ce6931f49e18e}\label{level2_8js_aa4bc26b2aa5a0e4bd90ce6931f49e18e}} 
+\index{level2.js@{level2.js}!innerHTML@{innerHTML}}
+\index{innerHTML@{innerHTML}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{innerHTML}{innerHTML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{level5_8js_ac4188891dcf62e1bb5c5a24e1a709261}{speed\+\_\+show}} inner\+H\+T\+ML = \mbox{\hyperlink{level5_8js_ab2342bebd5d76586819359f53e99339a}{speed\+\_\+dict}}\mbox{[}\mbox{\hyperlink{welcome_8js_a2670abc5bb40c78d003183e0cb263877}{speed}}\mbox{]}}
+
+\mbox{\Hypertarget{level2_8js_a0bdea26f5c183c3dcb8d5501fa452991}\label{level2_8js_a0bdea26f5c183c3dcb8d5501fa452991}} 
+\index{level2.js@{level2.js}!log@{log}}
+\index{log@{log}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily console log}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (message) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if}(String(message).includes(\textcolor{stringliteral}{"level1/level1.html\#\_\_main\_\_"}))\{}
+\DoxyCodeLine{            \mbox{\hyperlink{level2_8js_acc69707810d1669872f8199f16a0da20}{logger}}.innerHTML += \textcolor{stringliteral}{"error"} + \textcolor{stringliteral}{'<br />'};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (typeof message == \textcolor{stringliteral}{'object'}) \{}
+\DoxyCodeLine{            \mbox{\hyperlink{level2_8js_acc69707810d1669872f8199f16a0da20}{logger}}.innerHTML += (JSON \&\& JSON.stringify ? JSON.stringify(message) : message) + \textcolor{stringliteral}{'<br />'};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{            \mbox{\hyperlink{level2_8js_acc69707810d1669872f8199f16a0da20}{logger}}.innerHTML += message + \textcolor{stringliteral}{'<br />'}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\})()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{level2_8js_acc69707810d1669872f8199f16a0da20}\label{level2_8js_acc69707810d1669872f8199f16a0da20}} 
+\index{level2.js@{level2.js}!logger@{logger}}
+\index{logger@{logger}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily var logger = document.\+get\+Element\+By\+Id(\textquotesingle{}\mbox{\hyperlink{level5_8js_a0bdea26f5c183c3dcb8d5501fa452991}{log}}\textquotesingle{})}
+
 \mbox{\Hypertarget{level2_8js_a33f858d8b6bfb266df7f78612b2bde85}\label{level2_8js_a33f858d8b6bfb266df7f78612b2bde85}} 
 \index{level2.js@{level2.js}!pos\_x@{pos\_x}}
 \index{pos\_x@{pos\_x}!level2.js@{level2.js}}
 \doxysubsubsection{\texorpdfstring{pos\_x}{pos\_x}}
 {\footnotesize\ttfamily var pos\+\_\+x = 0}
+
+
+
+stores the X-\/coordinate of warrior 
 
 \mbox{\Hypertarget{level2_8js_ac257f49b93d90b30e9936fd62b833609}\label{level2_8js_ac257f49b93d90b30e9936fd62b833609}} 
 \index{level2.js@{level2.js}!pos\_y@{pos\_y}}
@@ -56,15 +234,57 @@ window \mbox{\hyperlink{level2_8js_a37bf353e1618cbf53638b1219eddd197}{dict}} = \
 \doxysubsubsection{\texorpdfstring{pos\_y}{pos\_y}}
 {\footnotesize\ttfamily var pos\+\_\+y = 14}
 
+
+
+stores the Y-\/coordinate of warrior 
+
 \mbox{\Hypertarget{level2_8js_a4bac0901fe7708f10d107a766fa3a0f5}\label{level2_8js_a4bac0901fe7708f10d107a766fa3a0f5}} 
 \index{level2.js@{level2.js}!reloaded@{reloaded}}
 \index{reloaded@{reloaded}!level2.js@{level2.js}}
 \doxysubsubsection{\texorpdfstring{reloaded}{reloaded}}
 {\footnotesize\ttfamily var reloaded = true}
 
+
+
+check if reloading was done before or not 
+
+\mbox{\Hypertarget{level2_8js_a2670abc5bb40c78d003183e0cb263877}\label{level2_8js_a2670abc5bb40c78d003183e0cb263877}} 
+\index{level2.js@{level2.js}!speed@{speed}}
+\index{speed@{speed}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily var speed = 500}
+
+
+
+For the animation speed of the player. 
+
+\mbox{\Hypertarget{level2_8js_ab2342bebd5d76586819359f53e99339a}\label{level2_8js_ab2342bebd5d76586819359f53e99339a}} 
+\index{level2.js@{level2.js}!speed\_dict@{speed\_dict}}
+\index{speed\_dict@{speed\_dict}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{speed\_dict}{speed\_dict}}
+{\footnotesize\ttfamily speed\+\_\+dict = \{250 \+: \char`\"{}fast\char`\"{}, 500 \+: \char`\"{}medium\char`\"{}, \char`\"{}750\char`\"{} \+: \char`\"{}slow\char`\"{}\}}
+
+
+
+maps speeds in milliseconds to the name corresponding to them. 
+
+\mbox{\Hypertarget{level2_8js_ac4188891dcf62e1bb5c5a24e1a709261}\label{level2_8js_ac4188891dcf62e1bb5c5a24e1a709261}} 
+\index{level2.js@{level2.js}!speed\_show@{speed\_show}}
+\index{speed\_show@{speed\_show}!level2.js@{level2.js}}
+\doxysubsubsection{\texorpdfstring{speed\_show}{speed\_show}}
+{\footnotesize\ttfamily const speed\+\_\+show = document.\+get\+Element\+By\+Id(\char`\"{}speed\+\_\+\char`\"{})}
+
+
+
+The element in which we have to show speed. 
+
 \mbox{\Hypertarget{level2_8js_a2bef55933b6664b1d7d760a9334d6c7e}\label{level2_8js_a2bef55933b6664b1d7d760a9334d6c7e}} 
 \index{level2.js@{level2.js}!total\_gems@{total\_gems}}
 \index{total\_gems@{total\_gems}!level2.js@{level2.js}}
 \doxysubsubsection{\texorpdfstring{total\_gems}{total\_gems}}
 {\footnotesize\ttfamily var total\+\_\+gems = 0}
+
+
+
+stores the total number of gems in the path 
 

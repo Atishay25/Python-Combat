@@ -62,16 +62,88 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classPackage-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Package Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Information about a JavaScript package.  
+ <a href="classPackage.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a386279eb66b49b8ae1b3baecab9c7ba4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPackage.html#a386279eb66b49b8ae1b3baecab9c7ba4">constructor</a> (json)</td></tr>
+<tr class="separator:a386279eb66b49b8ae1b3baecab9c7ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Information about a JavaScript package. JSDoc can extract package information from <code>package.json</code> files that follow the <a href="https://www.npmjs.org/doc/files/package.json.html">npm specification</a>.</p>
-<p><b>Note</b>: JSDoc does not validate or normalize the contents of <code>package.json</code> files. If your <code>package.json</code> file does not follow the npm specification, some properties of the <code><a class="el" href="classPackage.html">Package</a></code> object may not use the format documented here. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>node_modules/jsdoc/lib/jsdoc/package.js</li>
+<div class="textblock"><p>Information about a JavaScript package. </p>
+<p>JSDoc can extract package information from <code>package.json</code> files that follow the <a href="https://www.npmjs.org/doc/files/package.json.html">npm specification</a>.</p>
+<p><b>Note</b>: JSDoc does not validate or normalize the contents of <code>package.json</code> files. If your <code>package.json</code> file does not follow the npm specification, some properties of the <code><a class="el" href="classPackage.html" title="Information about a JavaScript package.">Package</a></code> object may not use the format documented here. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a386279eb66b49b8ae1b3baecab9c7ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386279eb66b49b8ae1b3baecab9c7ba4">&#9670;&nbsp;</a></span>constructor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Package::constructor </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>json</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{string}</td><td>json - The contents of the <code>package.json</code> file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The string identifier that is shared by all <code><a class="el" href="classPackage.html" title="Information about a JavaScript package.">Package</a></code> objects.</p>
+<p>@readonly @default @type {string}</p>
+<p>The package name.</p>
+<p>@type {string}</p>
+<p>The unique longname for this <code><a class="el" href="classPackage.html" title="Information about a JavaScript package.">Package</a></code> object.</p>
+<p>@type {string}</p>
+<p>The author of this package. Contains either a <a class="el" href="">PersonInfo</a> object or a string with information about the author.</p>
+<p>@type {(module:jsdoc/package.Package~PersonInfo|string)} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>Information about where to report bugs in the project. May contain a URL, a string, or an object with more detailed information.</p>
+<p>@type {(string|module:jsdoc/package.Package~BugInfo)} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>The contributors to this package.</p>
+<p>@type {Array.&lt;(module:jsdoc/package.Package~PersonInfo|string)&gt;} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>The dependencies for this package.</p>
+<p>@type {Object} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>A brief description of the package.</p>
+<p>@type {string}</p>
+<p>The development dependencies for this package.</p>
+<p>@type {Object} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>The JavaScript engines that this package supports. Each key is a string that identifies the engine (for example, <code>node</code>). Each value is a <a href="https://www.npmjs.org/doc/misc/semver.html">semver</a>-compliant version number for the engine.</p>
+<p>@type {Object} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>The source files associated with the package.</p>
+<p>New <code><a class="el" href="classPackage.html" title="Information about a JavaScript package.">Package</a></code> objects always contain an empty array, regardless of whether the <code>package.json</code> file includes a <code>files</code> property.</p>
+<p>After JSDoc parses your input files, it sets this property to a list of paths to your input files.</p>
+<p>@type {Array.&lt;string&gt;}</p>
+<p>The URL for the package's homepage.</p>
+<p>@type {string} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>Keywords to help users find the package.</p>
+<p>@type {Array.&lt;string&gt;} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>The licenses used by this package. Combines information from the <code>package.json</code> file's <code>license</code> property and the deprecated <code>licenses</code> property.</p>
+<p>@type {Array.&lt;module:jsdoc/package.Package~LicenseInfo&gt;}</p>
+<p>The module ID that provides the primary entry point to the package. For example, if your package is a CommonJS module, and the value of this property is <code>foo</code>, users should be able to load your module with &lsquo;require('foo&rsquo;)`.</p>
+<p>@type {string} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>The version-control repository for the package.</p>
+<p>@type {module:jsdoc/package.Package~RepositoryInfo} </p><dl class="section since"><dt>Since</dt><dd>3.3.0</dd></dl>
+<p>The <a href="https://www.npmjs.org/doc/misc/semver.html">semver</a>-compliant version number of the package.</p>
+<p>@type {string} </p><dl class="section since"><dt>Since</dt><dd>3.2.0</dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>node_modules/jsdoc/lib/jsdoc/<a class="el" href="package_8js.html">package.js</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

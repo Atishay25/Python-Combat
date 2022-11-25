@@ -1,0 +1,63 @@
+\hypertarget{emphasis_8js}{}\doxysection{node\+\_\+modules/markdown-\/it/lib/rules\+\_\+inline/emphasis.js File Reference}
+\label{emphasis_8js}\index{node\_modules/markdown-\/it/lib/rules\_inline/emphasis.js@{node\_modules/markdown-\/it/lib/rules\_inline/emphasis.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{emphasis_8js_a069718262470ef1d30e25235e695dc29}{post\+Process}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, delimiters)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{emphasis_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{emphasis_8js_af37cc16144f8f767f57334df7cd7cd12}{tokenize}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{emphasis_8js_ae68a73ea73b452addbc574e13cf354dc}{post\+Process}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{emphasis_8js_a069718262470ef1d30e25235e695dc29}\label{emphasis_8js_a069718262470ef1d30e25235e695dc29}} 
+\index{emphasis.js@{emphasis.js}!postProcess@{postProcess}}
+\index{postProcess@{postProcess}!emphasis.js@{emphasis.js}}
+\doxysubsubsection{\texorpdfstring{postProcess()}{postProcess()}}
+{\footnotesize\ttfamily function post\+Process (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{delimiters }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{emphasis_8js_ae68a73ea73b452addbc574e13cf354dc}\label{emphasis_8js_ae68a73ea73b452addbc574e13cf354dc}} 
+\index{emphasis.js@{emphasis.js}!postProcess@{postProcess}}
+\index{postProcess@{postProcess}!emphasis.js@{emphasis.js}}
+\doxysubsubsection{\texorpdfstring{postProcess}{postProcess}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} post\+Process}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} emphasis(\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}) \{}
+\DoxyCodeLine{  var curr,}
+\DoxyCodeLine{      tokens\_meta = \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.tokens\_meta,}
+\DoxyCodeLine{      \mbox{\hyperlink{lodash_2core_8js_a2af6481e8d02218064702cc796ef97ef}{max}} = \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.tokens\_meta.length;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{emphasis_8js_ae68a73ea73b452addbc574e13cf354dc}{postProcess}}(\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}, \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.delimiters);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{for} (curr = 0; curr < \mbox{\hyperlink{lodash_2core_8js_a2af6481e8d02218064702cc796ef97ef}{max}}; curr++) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (tokens\_meta[curr] \&\& tokens\_meta[curr].delimiters) \{}
+\DoxyCodeLine{      \mbox{\hyperlink{emphasis_8js_ae68a73ea73b452addbc574e13cf354dc}{postProcess}}(\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}, tokens\_meta[curr].delimiters);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{emphasis_8js_ae2475e10618961c050dcba04e8c42331}\label{emphasis_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{emphasis.js@{emphasis.js}!strict@{strict}}
+\index{strict@{strict}!emphasis.js@{emphasis.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+
+\mbox{\Hypertarget{emphasis_8js_af37cc16144f8f767f57334df7cd7cd12}\label{emphasis_8js_af37cc16144f8f767f57334df7cd7cd12}} 
+\index{emphasis.js@{emphasis.js}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!emphasis.js@{emphasis.js}}
+\doxysubsubsection{\texorpdfstring{tokenize}{tokenize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} tokenize}
+

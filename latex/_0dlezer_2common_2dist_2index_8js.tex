@@ -1,0 +1,395 @@
+\hypertarget{_0dlezer_2common_2dist_2index_8js}{}\doxysection{node\+\_\+modules/@lezer/common/dist/index.js File Reference}
+\label{_0dlezer_2common_2dist_2index_8js}\index{node\_modules/"@lezer/common/dist/index.js@{node\_modules/"@lezer/common/dist/index.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classRange}{Range}}
+\begin{DoxyCompactList}\small\item\em A range associates a value with a range of positions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classNodeProp}{Node\+Prop}}
+\begin{DoxyCompactList}\small\item\em Each \href{\#common.NodeType}{\texttt{ node type}} or \href{\#common.Tree}{\texttt{ individual tree}} can have metadata associated with it in props. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classMountedTree}{Mounted\+Tree}}
+\begin{DoxyCompactList}\small\item\em A mounted tree, which can be \href{\#common.NodeProp^mounted}{\texttt{ stored}} on a tree node to indicate that parts of its content are represented by another tree. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classNodeType}{Node\+Type}}
+\begin{DoxyCompactList}\small\item\em Each node in a syntax tree has a node type associated with it. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classNodeSet}{Node\+Set}}
+\begin{DoxyCompactList}\small\item\em A node set holds a collection of node types. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTree}{Tree}}
+\begin{DoxyCompactList}\small\item\em A piece of syntax tree. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classFlatBufferCursor}{Flat\+Buffer\+Cursor}}
+\item 
+class \mbox{\hyperlink{classTreeBuffer}{Tree\+Buffer}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classTree}{Tree}} buffers contain (type, start, end, end\+Index) quads for each node. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTreeNode}{Tree\+Node}}
+\item 
+class \mbox{\hyperlink{classBufferContext}{Buffer\+Context}}
+\item 
+class \mbox{\hyperlink{classBufferNode}{Buffer\+Node}}
+\item 
+class \mbox{\hyperlink{classTreeCursor}{Tree\+Cursor}}
+\begin{DoxyCompactList}\small\item\em A tree cursor object focuses on a given node in a syntax tree, and allows you to move to adjacent nodes. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classNodeWeakMap}{Node\+Weak\+Map}}
+\begin{DoxyCompactList}\small\item\em Provides a way to associate values with pieces of trees. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTreeFragment}{Tree\+Fragment}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classTree}{Tree}} fragments are used during \href{\#common.Parser.startParse}{\texttt{ incremental parsing}} to track parts of old trees that can be reused in a new parse. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classParser}{Parser}}
+\begin{DoxyCompactList}\small\item\em A superclass that parsers should extend. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classStringInput}{String\+Input}}
+\item 
+class \mbox{\hyperlink{classInnerParse}{Inner\+Parse}}
+\item 
+class \mbox{\hyperlink{classActiveOverlay}{Active\+Overlay}}
+\item 
+class \mbox{\hyperlink{classMixedParse}{Mixed\+Parse}}
+\item 
+class \mbox{\hyperlink{classStructureCursor}{Structure\+Cursor}}
+\item 
+class \mbox{\hyperlink{classFragmentCursor}{Fragment\+Cursor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_af5ede30197e25de69116d63d5b1580a6}{Iter\+Mode}} (Iter\+Mode=\{\}))
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a9aff4df652cb27d26fd7ecfd5438da2a}{check\+Side}} (side, pos, from, to)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a18ceae3f64a02b4cfb4d5b3809f96cb5}{enter\+Unfinished\+Nodes\+Before}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, pos)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_ad39ad6c1d6ef28da0eb20a5f72a1df45}{resolve\+Node}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, pos, side, overlays)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a1254eba1d458e4df64f2331e6a494195}{get\+Children}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, type, \mbox{\hyperlink{underscore-esm-min_8js_a38713f21a521f85af75aa009acbf066d}{before}}, \mbox{\hyperlink{underscore-esm-min_8js_a2c468e06e40b53d836b22d1dd951f719}{after}})
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_af98f27462d214b006ac2082039c7796c}{match\+Node\+Context}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, context, \mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}}=\mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{context.\+length}} -\/ 1)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a701fc14a974316988b2a320df13a4d6f}{has\+Child}} (tree)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_afdf9a46dd2d9a1d30ffbe41374483e3a}{build\+Tree}} (\mbox{\hyperlink{resolve_2lib_2core_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_abfc5a79db0c18a16d6156e5be21fba30}{node\+Size}} (balance\+Type, \mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}})
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a8ae188baa3fa4bb342cf6a7152c6d701}{balance\+Range}} (balance\+Type, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a3d39b54c85bcc7631ea2caeab07822bd}{children}}, positions, from, to, start, \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}}, mk\+Top, mk\+Tree)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_aa34334fd7febf0f45eff04a887ece9bf}{parse\+Mixed}} (\mbox{\hyperlink{shared_2loadConfigFile_8js_ac729f75065006eae6b3d66f3e44cc117}{nest}})
+\begin{DoxyCompactList}\small\item\em Create a parse wrapper that, after the inner parse completes, scans its tree for mixed language regions with the {\ttfamily nest} function, runs the resulting \href{\#common.NestedParse}{\texttt{ inner parses}}, and then \href{\#common.NodeProp^mounted}{\texttt{ mounts}} their results onto the tree. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a48d8f072d7f63d4533a9a9283aba434c}{check\+Cover}} (covered, from, to)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a25ebc9b1f1d41648a453c6b52518efb9}{slice\+Buf}} (buf, startI, endI, nodes, positions, off)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a165bed4f2feb96070438c36ad05c2d1d}{materialize}} (cursor)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a4c42445d7118d87bd4bf0373346986bf}{punch\+Ranges}} (outer, ranges)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a275935824526fa10bd6cf443b637e395}{find\+Cover\+Changes}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}}, from, to)
+\item 
+function \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a74734d33a961da53491f3544d4f88039}{enter\+Fragments}} (mounts, ranges)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_afafc602d9a27069f7033ed3932a6f86c}{Default\+Buffer\+Length}} = 1024
+\begin{DoxyCompactList}\small\item\em The default maximum length of a {\ttfamily \mbox{\hyperlink{classTreeBuffer}{Tree\+Buffer}}} node. \end{DoxyCompactList}\item 
+let \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a19ba246a0f81c08610473f815598c07c}{next\+Prop\+ID}} = 0
+\item 
+\mbox{\hyperlink{classNodeProp}{Node\+Prop}} \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a73142514960d5df0f94bba655dae745e}{closed\+By}} = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ deserialize\+: \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}} =$>$ \mbox{\hyperlink{markdown-it_2lib_2rules__inline_2escape_8js_aef677576741e9a1de84a3cb76f80f32f}{str.\+split}}(\char`\"{} \char`\"{}) \})
+\begin{DoxyCompactList}\small\item\em Prop that is used to describe matching delimiters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNodeProp}{Node\+Prop}} \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_ad4d4aceae05b18e4335be303ed753d8b}{opened\+By}} = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ deserialize\+: \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}} =$>$ \mbox{\hyperlink{markdown-it_2lib_2rules__inline_2escape_8js_aef677576741e9a1de84a3cb76f80f32f}{str.\+split}}(\char`\"{} \char`\"{}) \})
+\begin{DoxyCompactList}\small\item\em The inverse of \href{\#common.NodeProp^closedBy}{\texttt{ {\ttfamily closed\+By}}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNodeProp}{Node\+Prop}} \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a0b452a3fe71035687dd93d32137c3290}{group}} = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ deserialize\+: \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}} =$>$ \mbox{\hyperlink{markdown-it_2lib_2rules__inline_2escape_8js_aef677576741e9a1de84a3cb76f80f32f}{str.\+split}}(\char`\"{} \char`\"{}) \})
+\begin{DoxyCompactList}\small\item\em Used to assign node types to groups (for example, all node types that represent an expression could be tagged with an {\ttfamily \char`\"{}\+Expression\char`\"{}} group). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNodeProp}{Node\+Prop}} \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a7bc41d4193ad99f29f2da92f65d6df89}{context\+Hash}} = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ per\+Node\+: true \})
+\begin{DoxyCompactList}\small\item\em The hash of the \href{\#lr.ContextTracker.constructor}{\texttt{ context}} that the node was parsed in, if any. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNodeProp}{Node\+Prop}} \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a39783b126ca0bd22fadbfa18d505a554}{look\+Ahead}} = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ per\+Node\+: true \})
+\begin{DoxyCompactList}\small\item\em The distance beyond the end of the node that the tokenizer looked ahead for any of the tokens inside the node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNodeProp}{Node\+Prop}} \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a6196ae2d49e4103da0add797b201a406}{mounted}} = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ per\+Node\+: true \})
+\begin{DoxyCompactList}\small\item\em This per-\/node prop is used to replace a given node, or part of a node, with another tree. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_aec3ed49de64a2e2de337fa39156001c3}{no\+Props}} = \mbox{\hyperlink{underscore_2underscore_8js_a7e27775d60be340b738c18a2c40a7f9e}{Object.\+create}}(\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}})
+\item 
+\mbox{\hyperlink{classNodeType}{Node\+Type}} \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_ad78a6ccdf82708e96b0975dd9c4684f3}{none}} = new \mbox{\hyperlink{classNodeType}{Node\+Type}}(\char`\"{}\char`\"{}, \mbox{\hyperlink{underscore_2underscore_8js_a7e27775d60be340b738c18a2c40a7f9e}{Object.\+create}}(\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}), 0, 8 )
+\begin{DoxyCompactList}\small\item\em An empty dummy node type to use when no actual type is available. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_af633d0c4b76ab894cef8b497375d893a}{Cached\+Node}} = new \mbox{\hyperlink{__WeakMap_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()
+\item 
+const \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a55b4aecc5c97e13a8e2e42b0bd944738}{Cached\+Inner\+Node}} = new \mbox{\hyperlink{__WeakMap_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()
+\item 
+var \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_aeecaa578fc686887d683e9c5f9221349}{Iter\+Mode}}
+\begin{DoxyCompactList}\small\item\em Options that control iteration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTree}{Tree}} \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_aab170dd680e5132dc912ba6ad98d6cad}{empty}} = new \mbox{\hyperlink{classTree}{Tree}}(\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_ad78a6ccdf82708e96b0975dd9c4684f3}{Node\+Type.\+none}}, \mbox{[}$\,$\mbox{]}, \mbox{[}$\,$\mbox{]}, 0)
+\begin{DoxyCompactList}\small\item\em The empty tree. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_ae17aa0281258d104a1cf92e173d1ec55}{node\+Size\+Cache}} = new \mbox{\hyperlink{__WeakMap_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}
+\item 
+const \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a68410d04104a98ba409a9d95908eefa1}{stopped\+Inner}} = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ per\+Node\+: true \})
+\item 
+\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}{export}} \{ \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_afafc602d9a27069f7033ed3932a6f86c}{Default\+Buffer\+Length}}, \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_af5ede30197e25de69116d63d5b1580a6}{Iter\+Mode}}, \mbox{\hyperlink{classMountedTree}{Mounted\+Tree}}, \mbox{\hyperlink{classNodeProp}{Node\+Prop}}, \mbox{\hyperlink{classNodeSet}{Node\+Set}}, \mbox{\hyperlink{classNodeType}{Node\+Type}}, \mbox{\hyperlink{classNodeWeakMap}{Node\+Weak\+Map}}, \mbox{\hyperlink{classParser}{Parser}}, \mbox{\hyperlink{classTree}{Tree}}, \mbox{\hyperlink{classTreeBuffer}{Tree\+Buffer}}, \mbox{\hyperlink{classTreeCursor}{Tree\+Cursor}}, \mbox{\hyperlink{classTreeFragment}{Tree\+Fragment}}, \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_aa34334fd7febf0f45eff04a887ece9bf}{parse\+Mixed}} \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a8ae188baa3fa4bb342cf6a7152c6d701}\label{_0dlezer_2common_2dist_2index_8js_a8ae188baa3fa4bb342cf6a7152c6d701}} 
+\index{index.js@{index.js}!balanceRange@{balanceRange}}
+\index{balanceRange@{balanceRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{balanceRange()}{balanceRange()}}
+{\footnotesize\ttfamily function balance\+Range (\begin{DoxyParamCaption}\item[{}]{balance\+Type,  }\item[{}]{children,  }\item[{}]{positions,  }\item[{}]{from,  }\item[{}]{to,  }\item[{}]{start,  }\item[{}]{length,  }\item[{}]{mk\+Top,  }\item[{}]{mk\+Tree }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_afdf9a46dd2d9a1d30ffbe41374483e3a}\label{_0dlezer_2common_2dist_2index_8js_afdf9a46dd2d9a1d30ffbe41374483e3a}} 
+\index{index.js@{index.js}!buildTree@{buildTree}}
+\index{buildTree@{buildTree}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{buildTree()}{buildTree()}}
+{\footnotesize\ttfamily function build\+Tree (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a48d8f072d7f63d4533a9a9283aba434c}\label{_0dlezer_2common_2dist_2index_8js_a48d8f072d7f63d4533a9a9283aba434c}} 
+\index{index.js@{index.js}!checkCover@{checkCover}}
+\index{checkCover@{checkCover}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{checkCover()}{checkCover()}}
+{\footnotesize\ttfamily function check\+Cover (\begin{DoxyParamCaption}\item[{}]{covered,  }\item[{}]{from,  }\item[{}]{to }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a9aff4df652cb27d26fd7ecfd5438da2a}\label{_0dlezer_2common_2dist_2index_8js_a9aff4df652cb27d26fd7ecfd5438da2a}} 
+\index{index.js@{index.js}!checkSide@{checkSide}}
+\index{checkSide@{checkSide}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{checkSide()}{checkSide()}}
+{\footnotesize\ttfamily function check\+Side (\begin{DoxyParamCaption}\item[{}]{side,  }\item[{}]{pos,  }\item[{}]{from,  }\item[{}]{to }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a74734d33a961da53491f3544d4f88039}\label{_0dlezer_2common_2dist_2index_8js_a74734d33a961da53491f3544d4f88039}} 
+\index{index.js@{index.js}!enterFragments@{enterFragments}}
+\index{enterFragments@{enterFragments}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{enterFragments()}{enterFragments()}}
+{\footnotesize\ttfamily function enter\+Fragments (\begin{DoxyParamCaption}\item[{}]{mounts,  }\item[{}]{ranges }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a18ceae3f64a02b4cfb4d5b3809f96cb5}\label{_0dlezer_2common_2dist_2index_8js_a18ceae3f64a02b4cfb4d5b3809f96cb5}} 
+\index{index.js@{index.js}!enterUnfinishedNodesBefore@{enterUnfinishedNodesBefore}}
+\index{enterUnfinishedNodesBefore@{enterUnfinishedNodesBefore}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{enterUnfinishedNodesBefore()}{enterUnfinishedNodesBefore()}}
+{\footnotesize\ttfamily function enter\+Unfinished\+Nodes\+Before (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a275935824526fa10bd6cf443b637e395}\label{_0dlezer_2common_2dist_2index_8js_a275935824526fa10bd6cf443b637e395}} 
+\index{index.js@{index.js}!findCoverChanges@{findCoverChanges}}
+\index{findCoverChanges@{findCoverChanges}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{findCoverChanges()}{findCoverChanges()}}
+{\footnotesize\ttfamily function find\+Cover\+Changes (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{from,  }\item[{}]{to }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a1254eba1d458e4df64f2331e6a494195}\label{_0dlezer_2common_2dist_2index_8js_a1254eba1d458e4df64f2331e6a494195}} 
+\index{index.js@{index.js}!getChildren@{getChildren}}
+\index{getChildren@{getChildren}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getChildren()}{getChildren()}}
+{\footnotesize\ttfamily function get\+Children (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{type,  }\item[{}]{before,  }\item[{}]{after }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a701fc14a974316988b2a320df13a4d6f}\label{_0dlezer_2common_2dist_2index_8js_a701fc14a974316988b2a320df13a4d6f}} 
+\index{index.js@{index.js}!hasChild@{hasChild}}
+\index{hasChild@{hasChild}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{hasChild()}{hasChild()}}
+{\footnotesize\ttfamily function has\+Child (\begin{DoxyParamCaption}\item[{}]{tree }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_af5ede30197e25de69116d63d5b1580a6}\label{_0dlezer_2common_2dist_2index_8js_af5ede30197e25de69116d63d5b1580a6}} 
+\index{index.js@{index.js}!IterMode@{IterMode}}
+\index{IterMode@{IterMode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{IterMode()}{IterMode()}}
+{\footnotesize\ttfamily Iter\+Mode (\begin{DoxyParamCaption}\item[{Iter\+Mode}]{ = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_af98f27462d214b006ac2082039c7796c}\label{_0dlezer_2common_2dist_2index_8js_af98f27462d214b006ac2082039c7796c}} 
+\index{index.js@{index.js}!matchNodeContext@{matchNodeContext}}
+\index{matchNodeContext@{matchNodeContext}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{matchNodeContext()}{matchNodeContext()}}
+{\footnotesize\ttfamily function match\+Node\+Context (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{context,  }\item[{}]{i = {\ttfamily \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{context.\+length}}~-\/~1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a165bed4f2feb96070438c36ad05c2d1d}\label{_0dlezer_2common_2dist_2index_8js_a165bed4f2feb96070438c36ad05c2d1d}} 
+\index{index.js@{index.js}!materialize@{materialize}}
+\index{materialize@{materialize}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{materialize()}{materialize()}}
+{\footnotesize\ttfamily function materialize (\begin{DoxyParamCaption}\item[{}]{cursor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_abfc5a79db0c18a16d6156e5be21fba30}\label{_0dlezer_2common_2dist_2index_8js_abfc5a79db0c18a16d6156e5be21fba30}} 
+\index{index.js@{index.js}!nodeSize@{nodeSize}}
+\index{nodeSize@{nodeSize}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nodeSize()}{nodeSize()}}
+{\footnotesize\ttfamily function node\+Size (\begin{DoxyParamCaption}\item[{}]{balance\+Type,  }\item[{}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_aa34334fd7febf0f45eff04a887ece9bf}\label{_0dlezer_2common_2dist_2index_8js_aa34334fd7febf0f45eff04a887ece9bf}} 
+\index{index.js@{index.js}!parseMixed@{parseMixed}}
+\index{parseMixed@{parseMixed}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{parseMixed()}{parseMixed()}}
+{\footnotesize\ttfamily function parse\+Mixed (\begin{DoxyParamCaption}\item[{}]{nest }\end{DoxyParamCaption})}
+
+
+
+Create a parse wrapper that, after the inner parse completes, scans its tree for mixed language regions with the {\ttfamily nest} function, runs the resulting \href{\#common.NestedParse}{\texttt{ inner parses}}, and then \href{\#common.NodeProp^mounted}{\texttt{ mounts}} their results onto the tree. 
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a4c42445d7118d87bd4bf0373346986bf}\label{_0dlezer_2common_2dist_2index_8js_a4c42445d7118d87bd4bf0373346986bf}} 
+\index{index.js@{index.js}!punchRanges@{punchRanges}}
+\index{punchRanges@{punchRanges}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{punchRanges()}{punchRanges()}}
+{\footnotesize\ttfamily function punch\+Ranges (\begin{DoxyParamCaption}\item[{}]{outer,  }\item[{}]{ranges }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_ad39ad6c1d6ef28da0eb20a5f72a1df45}\label{_0dlezer_2common_2dist_2index_8js_ad39ad6c1d6ef28da0eb20a5f72a1df45}} 
+\index{index.js@{index.js}!resolveNode@{resolveNode}}
+\index{resolveNode@{resolveNode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{resolveNode()}{resolveNode()}}
+{\footnotesize\ttfamily function resolve\+Node (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{pos,  }\item[{}]{side,  }\item[{}]{overlays }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a25ebc9b1f1d41648a453c6b52518efb9}\label{_0dlezer_2common_2dist_2index_8js_a25ebc9b1f1d41648a453c6b52518efb9}} 
+\index{index.js@{index.js}!sliceBuf@{sliceBuf}}
+\index{sliceBuf@{sliceBuf}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{sliceBuf()}{sliceBuf()}}
+{\footnotesize\ttfamily function slice\+Buf (\begin{DoxyParamCaption}\item[{}]{buf,  }\item[{}]{startI,  }\item[{}]{endI,  }\item[{}]{nodes,  }\item[{}]{positions,  }\item[{}]{off }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a55b4aecc5c97e13a8e2e42b0bd944738}\label{_0dlezer_2common_2dist_2index_8js_a55b4aecc5c97e13a8e2e42b0bd944738}} 
+\index{index.js@{index.js}!CachedInnerNode@{CachedInnerNode}}
+\index{CachedInnerNode@{CachedInnerNode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{CachedInnerNode}{CachedInnerNode}}
+{\footnotesize\ttfamily const Cached\+Inner\+Node = new \mbox{\hyperlink{__WeakMap_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_af633d0c4b76ab894cef8b497375d893a}\label{_0dlezer_2common_2dist_2index_8js_af633d0c4b76ab894cef8b497375d893a}} 
+\index{index.js@{index.js}!CachedNode@{CachedNode}}
+\index{CachedNode@{CachedNode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{CachedNode}{CachedNode}}
+{\footnotesize\ttfamily const Cached\+Node = new \mbox{\hyperlink{__WeakMap_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a73142514960d5df0f94bba655dae745e}\label{_0dlezer_2common_2dist_2index_8js_a73142514960d5df0f94bba655dae745e}} 
+\index{index.js@{index.js}!closedBy@{closedBy}}
+\index{closedBy@{closedBy}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{closedBy}{closedBy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNodeProp}{Node\+Prop}} closed\+By = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ deserialize\+: \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}} =$>$ \mbox{\hyperlink{markdown-it_2lib_2rules__inline_2escape_8js_aef677576741e9a1de84a3cb76f80f32f}{str.\+split}}(\char`\"{} \char`\"{}) \})}
+
+
+
+Prop that is used to describe matching delimiters. 
+
+For opening delimiters, this holds an array of node names (written as a space-\/separated string when declaring this prop in a grammar) for the node types of closing delimiters that match it. \mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a7bc41d4193ad99f29f2da92f65d6df89}\label{_0dlezer_2common_2dist_2index_8js_a7bc41d4193ad99f29f2da92f65d6df89}} 
+\index{index.js@{index.js}!contextHash@{contextHash}}
+\index{contextHash@{contextHash}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{contextHash}{contextHash}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNodeProp}{Node\+Prop}} context\+Hash = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ per\+Node\+: true \})}
+
+
+
+The hash of the \href{\#lr.ContextTracker.constructor}{\texttt{ context}} that the node was parsed in, if any. 
+
+Used to limit reuse of contextual nodes. \mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_afafc602d9a27069f7033ed3932a6f86c}\label{_0dlezer_2common_2dist_2index_8js_afafc602d9a27069f7033ed3932a6f86c}} 
+\index{index.js@{index.js}!DefaultBufferLength@{DefaultBufferLength}}
+\index{DefaultBufferLength@{DefaultBufferLength}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{DefaultBufferLength}{DefaultBufferLength}}
+{\footnotesize\ttfamily const Default\+Buffer\+Length = 1024}
+
+
+
+The default maximum length of a {\ttfamily \mbox{\hyperlink{classTreeBuffer}{Tree\+Buffer}}} node. 
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_aab170dd680e5132dc912ba6ad98d6cad}\label{_0dlezer_2common_2dist_2index_8js_aab170dd680e5132dc912ba6ad98d6cad}} 
+\index{index.js@{index.js}!empty@{empty}}
+\index{empty@{empty}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{empty}{empty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTree}{Tree}} empty = new \mbox{\hyperlink{classTree}{Tree}}(\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_ad78a6ccdf82708e96b0975dd9c4684f3}{Node\+Type.\+none}}, \mbox{[}$\,$\mbox{]}, \mbox{[}$\,$\mbox{]}, 0)}
+
+
+
+The empty tree. 
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}\label{_0dlezer_2common_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}} 
+\index{index.js@{index.js}!export@{export}}
+\index{export@{export}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{export}{export}}
+{\footnotesize\ttfamily export \{ \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_afafc602d9a27069f7033ed3932a6f86c}{Default\+Buffer\+Length}}, \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_af5ede30197e25de69116d63d5b1580a6}{Iter\+Mode}}, \mbox{\hyperlink{classMountedTree}{Mounted\+Tree}}, \mbox{\hyperlink{classNodeProp}{Node\+Prop}}, \mbox{\hyperlink{classNodeSet}{Node\+Set}}, \mbox{\hyperlink{classNodeType}{Node\+Type}}, \mbox{\hyperlink{classNodeWeakMap}{Node\+Weak\+Map}}, \mbox{\hyperlink{classParser}{Parser}}, \mbox{\hyperlink{classTree}{Tree}}, \mbox{\hyperlink{classTreeBuffer}{Tree\+Buffer}}, \mbox{\hyperlink{classTreeCursor}{Tree\+Cursor}}, \mbox{\hyperlink{classTreeFragment}{Tree\+Fragment}}, \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_aa34334fd7febf0f45eff04a887ece9bf}{parse\+Mixed}} \}}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a0b452a3fe71035687dd93d32137c3290}\label{_0dlezer_2common_2dist_2index_8js_a0b452a3fe71035687dd93d32137c3290}} 
+\index{index.js@{index.js}!group@{group}}
+\index{group@{group}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{group}{group}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNodeProp}{Node\+Prop}} group = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ deserialize\+: \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}} =$>$ \mbox{\hyperlink{markdown-it_2lib_2rules__inline_2escape_8js_aef677576741e9a1de84a3cb76f80f32f}{str.\+split}}(\char`\"{} \char`\"{}) \})}
+
+
+
+Used to assign node types to groups (for example, all node types that represent an expression could be tagged with an {\ttfamily \char`\"{}\+Expression\char`\"{}} group). 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2unzip_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/unzip.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2unzipWith_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/unzip\+With.\+js}}.\end{Desc}
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_aeecaa578fc686887d683e9c5f9221349}\label{_0dlezer_2common_2dist_2index_8js_aeecaa578fc686887d683e9c5f9221349}} 
+\index{index.js@{index.js}!IterMode@{IterMode}}
+\index{IterMode@{IterMode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{IterMode}{IterMode}}
+{\footnotesize\ttfamily function Iter\+Mode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_aeecaa578fc686887d683e9c5f9221349}{IterMode}}[\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_aeecaa578fc686887d683e9c5f9221349}{IterMode}}[\textcolor{stringliteral}{"ExcludeBuffers"}] = 1] = \textcolor{stringliteral}{"ExcludeBuffers"}}
+
+\end{DoxyCode}
+
+
+Options that control iteration. 
+
+This option only applies in \href{\#common.SyntaxNode.enter}{\texttt{ {\ttfamily enter}}}-\/style methods.
+
+By default, regular \href{\#common.NodeProp^mounted}{\texttt{ mounted}} nodes replace their base node in iteration.
+
+Enable this to make iteration include anonymous nodes (such as the nodes that wrap repeated grammar constructs into a balanced tree).
+
+Can be combined with the {\ttfamily $\vert$} operator to enable multiple ones.
+
+Enable this to ignore them instead.
+
+It tells the library to not enter mounted overlays if one covers the given position. \mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a39783b126ca0bd22fadbfa18d505a554}\label{_0dlezer_2common_2dist_2index_8js_a39783b126ca0bd22fadbfa18d505a554}} 
+\index{index.js@{index.js}!lookAhead@{lookAhead}}
+\index{lookAhead@{lookAhead}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lookAhead}{lookAhead}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNodeProp}{Node\+Prop}} look\+Ahead = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ per\+Node\+: true \})}
+
+
+
+The distance beyond the end of the node that the tokenizer looked ahead for any of the tokens inside the node. 
+
+(The LR parser only stores this when it is larger than 25, for efficiency reasons.) \mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a6196ae2d49e4103da0add797b201a406}\label{_0dlezer_2common_2dist_2index_8js_a6196ae2d49e4103da0add797b201a406}} 
+\index{index.js@{index.js}!mounted@{mounted}}
+\index{mounted@{mounted}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{mounted}{mounted}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNodeProp}{Node\+Prop}} mounted = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ per\+Node\+: true \})}
+
+
+
+This per-\/node prop is used to replace a given node, or part of a node, with another tree. 
+
+This is useful to include trees from different languages in mixed-\/language parsers. \mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a19ba246a0f81c08610473f815598c07c}\label{_0dlezer_2common_2dist_2index_8js_a19ba246a0f81c08610473f815598c07c}} 
+\index{index.js@{index.js}!nextPropID@{nextPropID}}
+\index{nextPropID@{nextPropID}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nextPropID}{nextPropID}}
+{\footnotesize\ttfamily let next\+Prop\+ID = 0}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_ae17aa0281258d104a1cf92e173d1ec55}\label{_0dlezer_2common_2dist_2index_8js_ae17aa0281258d104a1cf92e173d1ec55}} 
+\index{index.js@{index.js}!nodeSizeCache@{nodeSizeCache}}
+\index{nodeSizeCache@{nodeSizeCache}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nodeSizeCache}{nodeSizeCache}}
+{\footnotesize\ttfamily const node\+Size\+Cache = new \mbox{\hyperlink{__WeakMap_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_ad78a6ccdf82708e96b0975dd9c4684f3}\label{_0dlezer_2common_2dist_2index_8js_ad78a6ccdf82708e96b0975dd9c4684f3}} 
+\index{index.js@{index.js}!none@{none}}
+\index{none@{none}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{none}{none}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNodeType}{Node\+Type}} none = new \mbox{\hyperlink{classNodeType}{Node\+Type}}(\char`\"{}\char`\"{}, \mbox{\hyperlink{underscore_2underscore_8js_a7e27775d60be340b738c18a2c40a7f9e}{Object.\+create}}(\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}), 0, 8 )}
+
+
+
+An empty dummy node type to use when no actual type is available. 
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_aec3ed49de64a2e2de337fa39156001c3}\label{_0dlezer_2common_2dist_2index_8js_aec3ed49de64a2e2de337fa39156001c3}} 
+\index{index.js@{index.js}!noProps@{noProps}}
+\index{noProps@{noProps}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{noProps}{noProps}}
+{\footnotesize\ttfamily const no\+Props = \mbox{\hyperlink{underscore_2underscore_8js_a7e27775d60be340b738c18a2c40a7f9e}{Object.\+create}}(\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}})}
+
+\mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_ad4d4aceae05b18e4335be303ed753d8b}\label{_0dlezer_2common_2dist_2index_8js_ad4d4aceae05b18e4335be303ed753d8b}} 
+\index{index.js@{index.js}!openedBy@{openedBy}}
+\index{openedBy@{openedBy}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{openedBy}{openedBy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNodeProp}{Node\+Prop}} opened\+By = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ deserialize\+: \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}} =$>$ \mbox{\hyperlink{markdown-it_2lib_2rules__inline_2escape_8js_aef677576741e9a1de84a3cb76f80f32f}{str.\+split}}(\char`\"{} \char`\"{}) \})}
+
+
+
+The inverse of \href{\#common.NodeProp^closedBy}{\texttt{ {\ttfamily closed\+By}}}. 
+
+This is attached to closing delimiters, holding an array of node names of types of matching opening delimiters. \mbox{\Hypertarget{_0dlezer_2common_2dist_2index_8js_a68410d04104a98ba409a9d95908eefa1}\label{_0dlezer_2common_2dist_2index_8js_a68410d04104a98ba409a9d95908eefa1}} 
+\index{index.js@{index.js}!stoppedInner@{stoppedInner}}
+\index{stoppedInner@{stoppedInner}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{stoppedInner}{stoppedInner}}
+{\footnotesize\ttfamily const stopped\+Inner = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}(\{ per\+Node\+: true \})}
+

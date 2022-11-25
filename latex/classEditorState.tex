@@ -1,0 +1,268 @@
+\hypertarget{classEditorState}{}\doxysection{Editor\+State Class Reference}
+\label{classEditorState}\index{EditorState@{EditorState}}
+
+
+The editor state class is a persistent (immutable) data structure.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEditorState_a40d7cd6035c72b025cd0a64c3f5defa0}{constructor}} (\mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a705b54f2abede2e6bc78eb5c96b903aa}{doc}}, selection, \mbox{\hyperlink{underscore_2underscore_8js_af19aa221cc4a953ad6addb0b03162a1c}{values}}, compute\+Slot, \mbox{\hyperlink{underscore-umd-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}})
+\item 
+\mbox{\hyperlink{classEditorState_a9d1b892bb6239a925114f31b4da8a759}{field}} (field, \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}=true)
+\item 
+\mbox{\hyperlink{classEditorState_af1a06788e9a7fe7d6e0f0cb677b31ea6}{update}} (...specs)
+\begin{DoxyCompactList}\small\item\em Create a \href{https://codemirror.net/6/docs/ref/\#state.Transaction}{\texttt{ transaction}} that updates this state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_a24dbb994631e689dc75a0372e48b9f47}{apply\+Transaction}} (\mbox{\hyperlink{underscore-umd-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}})
+\item 
+\mbox{\hyperlink{classEditorState_aec68906cb728e812a70d4990a2d936a1}{replace\+Selection}} (\mbox{\hyperlink{marked_8min_8js_ace5c8ef4245d8bce80497d1580f59a0a}{text}})
+\begin{DoxyCompactList}\small\item\em Create a \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec}{\texttt{ transaction spec}} that replaces every selection range with the given content. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_a44d0f8e58844a7b8950f204755c883c6}{change\+By\+Range}} (\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}})
+\begin{DoxyCompactList}\small\item\em Create a set of changes and a new selection by running the given function for each range in the active selection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_a33778e3a8f291f0f45e0e1f18f63f92c}{changes}} (spec=\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Create a \href{https://codemirror.net/6/docs/ref/\#state.ChangeSet}{\texttt{ change set}} from the given change description, taking the state\textquotesingle{}s document length and line separator into account. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_aaf2f037b5ffa5c77a6816f4e9c306255}{to\+Text}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}})
+\begin{DoxyCompactList}\small\item\em Using the state\textquotesingle{}s \href{https://codemirror.net/6/docs/ref/\#state.EditorState^lineSeparator}{\texttt{ line separator}}, create a \href{https://codemirror.net/6/docs/ref/\#state.Text}{\texttt{ {\ttfamily Text}}} instance from the given string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_aa395dfb5261e46f97e58ce0e2a1a81da}{slice\+Doc}} (from=0, to=\mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{this.\+doc.\+length}})
+\begin{DoxyCompactList}\small\item\em Return the given range of the document as a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_a11f76a9eff0226cad071490621872d32}{facet}} (facet)
+\begin{DoxyCompactList}\small\item\em Get the value of a state \href{https://codemirror.net/6/docs/ref/\#state.Facet}{\texttt{ facet}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_a17e865b93d290cd39d99acfd9b1b8ef7}{to\+J\+S\+ON}} (fields)
+\begin{DoxyCompactList}\small\item\em Convert this state to a J\+S\+O\+N-\/serializable object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorState_a55d1713d655bc31e518451a43324c607}{tab\+Size}} ()
+\begin{DoxyCompactList}\small\item\em The size (in columns) of a tab in the document, determined by the \href{https://codemirror.net/6/docs/ref/\#state.EditorState^tabSize}{\texttt{ {\ttfamily tab\+Size}}} facet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorState_a6f01043176785f337e052446eeb27258}{line\+Break}} ()
+\begin{DoxyCompactList}\small\item\em Get the proper \href{https://codemirror.net/6/docs/ref/\#state.EditorState^lineSeparator}{\texttt{ line-\/break}} string for this state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorState_a98a0f957b861c95c9223e70385afb152}{read\+Only}} ()
+\begin{DoxyCompactList}\small\item\em Returns true when the editor is \href{https://codemirror.net/6/docs/ref/\#state.EditorState^readOnly}{\texttt{ configured}} to be read-\/only. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_a06b6402186176e6b33628f1ef472449d}{phrase}} (phrase,...\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ad4ca67171e2f298e80ec475c4288cca5}{insert}})
+\begin{DoxyCompactList}\small\item\em Look up a translation for the given phrase (via the \href{https://codemirror.net/6/docs/ref/\#state.EditorState^phrases}{\texttt{ {\ttfamily phrases}}} facet), or return the original string if no translation is found. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_a415c87153e412a2fbf539454f260b7d8}{language\+Data\+At}} (\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, pos, side=-\/1)
+\begin{DoxyCompactList}\small\item\em Find the values for a given language data field, provided by the the \href{https://codemirror.net/6/docs/ref/\#state.EditorState^languageData}{\texttt{ {\ttfamily language\+Data}}} facet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_a9ad4f4cd48126572d8852457292fbc20}{char\+Categorizer}} (\mbox{\hyperlink{ruler_8js_a36e526e7d9d36f1ee814010ea75f669d}{at}})
+\begin{DoxyCompactList}\small\item\em Return a function that can categorize strings (expected to represent a single \href{https://codemirror.net/6/docs/ref/\#state.findClusterBreak}{\texttt{ grapheme cluster}}) into one of\+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState_aa2172da60d7418958ab9669e6abffe15}{word\+At}} (pos)
+\begin{DoxyCompactList}\small\item\em Find the word at the given position, meaning the range containing all \href{https://codemirror.net/6/docs/ref/\#state.CharCategory.Word}{\texttt{ word}} characters around it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classEditorState_a2af974246a8f51bfd5554d5881a0fccb}{from\+J\+S\+ON}} (json, \mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}}=\{\}, fields)
+\begin{DoxyCompactList}\small\item\em Deserialize a state from its J\+S\+ON representation. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classEditorState_a6fbc1f0bbddf2dd40307849595b4f0c9}{create}} (\mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}}=\{\})
+\begin{DoxyCompactList}\small\item\em Create a new state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The editor state class is a persistent (immutable) data structure. 
+
+To update a state, you \href{https://codemirror.net/6/docs/ref/\#state.EditorState.update}{\texttt{ create}} a \href{https://codemirror.net/6/docs/ref/\#state.Transaction}{\texttt{ transaction}}, which produces a {\itshape new} state instance, without modifying the original object.
+
+As such, {\itshape never} mutate properties of a state directly. That\textquotesingle{}ll just break things. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEditorState_a24dbb994631e689dc75a0372e48b9f47}\label{classEditorState_a24dbb994631e689dc75a0372e48b9f47}} 
+\index{EditorState@{EditorState}!applyTransaction@{applyTransaction}}
+\index{applyTransaction@{applyTransaction}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{applyTransaction()}{applyTransaction()}}
+{\footnotesize\ttfamily Editor\+State\+::apply\+Transaction (\begin{DoxyParamCaption}\item[{}]{tr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorState_a44d0f8e58844a7b8950f204755c883c6}\label{classEditorState_a44d0f8e58844a7b8950f204755c883c6}} 
+\index{EditorState@{EditorState}!changeByRange@{changeByRange}}
+\index{changeByRange@{changeByRange}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{changeByRange()}{changeByRange()}}
+{\footnotesize\ttfamily Editor\+State\+::change\+By\+Range (\begin{DoxyParamCaption}\item[{}]{f }\end{DoxyParamCaption})}
+
+
+
+Create a set of changes and a new selection by running the given function for each range in the active selection. 
+
+The function can return an optional set of changes (in the coordinate space of the start document), plus an updated range (in the coordinate space of the document produced by the call\textquotesingle{}s own changes). This method will merge all the changes and ranges into a single changeset and selection, and return it as a \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec}{\texttt{ transaction spec}}, which can be passed to \href{https://codemirror.net/6/docs/ref/\#state.EditorState.update}{\texttt{ {\ttfamily update}}}. \mbox{\Hypertarget{classEditorState_a33778e3a8f291f0f45e0e1f18f63f92c}\label{classEditorState_a33778e3a8f291f0f45e0e1f18f63f92c}} 
+\index{EditorState@{EditorState}!changes@{changes}}
+\index{changes@{changes}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{changes()}{changes()}}
+{\footnotesize\ttfamily Editor\+State\+::changes (\begin{DoxyParamCaption}\item[{}]{spec = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+
+
+Create a \href{https://codemirror.net/6/docs/ref/\#state.ChangeSet}{\texttt{ change set}} from the given change description, taking the state\textquotesingle{}s document length and line separator into account. 
+
+\mbox{\Hypertarget{classEditorState_a9ad4f4cd48126572d8852457292fbc20}\label{classEditorState_a9ad4f4cd48126572d8852457292fbc20}} 
+\index{EditorState@{EditorState}!charCategorizer@{charCategorizer}}
+\index{charCategorizer@{charCategorizer}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{charCategorizer()}{charCategorizer()}}
+{\footnotesize\ttfamily Editor\+State\+::char\+Categorizer (\begin{DoxyParamCaption}\item[{}]{at }\end{DoxyParamCaption})}
+
+
+
+Return a function that can categorize strings (expected to represent a single \href{https://codemirror.net/6/docs/ref/\#state.findClusterBreak}{\texttt{ grapheme cluster}}) into one of\+: 
+
+
+\begin{DoxyItemize}
+\item Word (contains an alphanumeric character or a character explicitly listed in the local language\textquotesingle{}s {\ttfamily \char`\"{}word\+Chars\char`\"{}} language data, which should be a string)
+\item Space (contains only whitespace)
+\item Other (anything else) 
+\end{DoxyItemize}\mbox{\Hypertarget{classEditorState_a40d7cd6035c72b025cd0a64c3f5defa0}\label{classEditorState_a40d7cd6035c72b025cd0a64c3f5defa0}} 
+\index{EditorState@{EditorState}!constructor@{constructor}}
+\index{constructor@{constructor}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Editor\+State\+::constructor (\begin{DoxyParamCaption}\item[{}]{config,  }\item[{}]{doc,  }\item[{}]{selection,  }\item[{}]{values,  }\item[{}]{compute\+Slot,  }\item[{}]{tr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc} & The current document. \\
+\hline
+{\em selection} & The current selection. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEditorState_a6fbc1f0bbddf2dd40307849595b4f0c9}\label{classEditorState_a6fbc1f0bbddf2dd40307849595b4f0c9}} 
+\index{EditorState@{EditorState}!create@{create}}
+\index{create@{create}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static Editor\+State\+::create (\begin{DoxyParamCaption}\item[{}]{config = {\ttfamily \{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new state. 
+
+You\textquotesingle{}ll usually only need this when initializing an editor—updated states are created by applying transactions. \mbox{\Hypertarget{classEditorState_a11f76a9eff0226cad071490621872d32}\label{classEditorState_a11f76a9eff0226cad071490621872d32}} 
+\index{EditorState@{EditorState}!facet@{facet}}
+\index{facet@{facet}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{facet()}{facet()}}
+{\footnotesize\ttfamily Editor\+State\+::facet (\begin{DoxyParamCaption}\item[{}]{facet }\end{DoxyParamCaption})}
+
+
+
+Get the value of a state \href{https://codemirror.net/6/docs/ref/\#state.Facet}{\texttt{ facet}}. 
+
+\mbox{\Hypertarget{classEditorState_a9d1b892bb6239a925114f31b4da8a759}\label{classEditorState_a9d1b892bb6239a925114f31b4da8a759}} 
+\index{EditorState@{EditorState}!field@{field}}
+\index{field@{field}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{field()}{field()}}
+{\footnotesize\ttfamily Editor\+State\+::field (\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{require = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorState_a2af974246a8f51bfd5554d5881a0fccb}\label{classEditorState_a2af974246a8f51bfd5554d5881a0fccb}} 
+\index{EditorState@{EditorState}!fromJSON@{fromJSON}}
+\index{fromJSON@{fromJSON}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{fromJSON()}{fromJSON()}}
+{\footnotesize\ttfamily static Editor\+State\+::from\+J\+S\+ON (\begin{DoxyParamCaption}\item[{}]{json,  }\item[{}]{config = {\ttfamily \{\}},  }\item[{}]{fields }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deserialize a state from its J\+S\+ON representation. 
+
+When custom fields should be deserialized, pass the same object you passed to \href{https://codemirror.net/6/docs/ref/\#state.EditorState.toJSON}{\texttt{ {\ttfamily to\+J\+S\+ON}}} when serializing as third argument. \mbox{\Hypertarget{classEditorState_a415c87153e412a2fbf539454f260b7d8}\label{classEditorState_a415c87153e412a2fbf539454f260b7d8}} 
+\index{EditorState@{EditorState}!languageDataAt@{languageDataAt}}
+\index{languageDataAt@{languageDataAt}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{languageDataAt()}{languageDataAt()}}
+{\footnotesize\ttfamily Editor\+State\+::language\+Data\+At (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{pos,  }\item[{}]{side = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Find the values for a given language data field, provided by the the \href{https://codemirror.net/6/docs/ref/\#state.EditorState^languageData}{\texttt{ {\ttfamily language\+Data}}} facet. 
+
+\mbox{\Hypertarget{classEditorState_a6f01043176785f337e052446eeb27258}\label{classEditorState_a6f01043176785f337e052446eeb27258}} 
+\index{EditorState@{EditorState}!lineBreak@{lineBreak}}
+\index{lineBreak@{lineBreak}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{lineBreak()}{lineBreak()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+State\+::line\+Break (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the proper \href{https://codemirror.net/6/docs/ref/\#state.EditorState^lineSeparator}{\texttt{ line-\/break}} string for this state. 
+
+\mbox{\Hypertarget{classEditorState_a06b6402186176e6b33628f1ef472449d}\label{classEditorState_a06b6402186176e6b33628f1ef472449d}} 
+\index{EditorState@{EditorState}!phrase@{phrase}}
+\index{phrase@{phrase}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{phrase()}{phrase()}}
+{\footnotesize\ttfamily Editor\+State\+::phrase (\begin{DoxyParamCaption}\item[{}]{phrase,  }\item[{}]{insert }\end{DoxyParamCaption})}
+
+
+
+Look up a translation for the given phrase (via the \href{https://codemirror.net/6/docs/ref/\#state.EditorState^phrases}{\texttt{ {\ttfamily phrases}}} facet), or return the original string if no translation is found. 
+
+If additional arguments are passed, they will be inserted in place of markers like {\ttfamily \$1} (for the first value) and {\ttfamily \$2}, etc. A single {\ttfamily \$} is equivalent to {\ttfamily \$1}, and {\ttfamily \$\$} will produce a literal dollar sign. \mbox{\Hypertarget{classEditorState_a98a0f957b861c95c9223e70385afb152}\label{classEditorState_a98a0f957b861c95c9223e70385afb152}} 
+\index{EditorState@{EditorState}!readOnly@{readOnly}}
+\index{readOnly@{readOnly}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{readOnly()}{readOnly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+State\+::read\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true when the editor is \href{https://codemirror.net/6/docs/ref/\#state.EditorState^readOnly}{\texttt{ configured}} to be read-\/only. 
+
+\mbox{\Hypertarget{classEditorState_aec68906cb728e812a70d4990a2d936a1}\label{classEditorState_aec68906cb728e812a70d4990a2d936a1}} 
+\index{EditorState@{EditorState}!replaceSelection@{replaceSelection}}
+\index{replaceSelection@{replaceSelection}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{replaceSelection()}{replaceSelection()}}
+{\footnotesize\ttfamily Editor\+State\+::replace\+Selection (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Create a \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec}{\texttt{ transaction spec}} that replaces every selection range with the given content. 
+
+\mbox{\Hypertarget{classEditorState_aa395dfb5261e46f97e58ce0e2a1a81da}\label{classEditorState_aa395dfb5261e46f97e58ce0e2a1a81da}} 
+\index{EditorState@{EditorState}!sliceDoc@{sliceDoc}}
+\index{sliceDoc@{sliceDoc}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{sliceDoc()}{sliceDoc()}}
+{\footnotesize\ttfamily Editor\+State\+::slice\+Doc (\begin{DoxyParamCaption}\item[{}]{from = {\ttfamily 0},  }\item[{}]{to = {\ttfamily \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{this.\+doc.\+length}}} }\end{DoxyParamCaption})}
+
+
+
+Return the given range of the document as a string. 
+
+\mbox{\Hypertarget{classEditorState_a55d1713d655bc31e518451a43324c607}\label{classEditorState_a55d1713d655bc31e518451a43324c607}} 
+\index{EditorState@{EditorState}!tabSize@{tabSize}}
+\index{tabSize@{tabSize}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{tabSize()}{tabSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+State\+::tab\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The size (in columns) of a tab in the document, determined by the \href{https://codemirror.net/6/docs/ref/\#state.EditorState^tabSize}{\texttt{ {\ttfamily tab\+Size}}} facet. 
+
+\mbox{\Hypertarget{classEditorState_a17e865b93d290cd39d99acfd9b1b8ef7}\label{classEditorState_a17e865b93d290cd39d99acfd9b1b8ef7}} 
+\index{EditorState@{EditorState}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily Editor\+State\+::to\+J\+S\+ON (\begin{DoxyParamCaption}\item[{}]{fields }\end{DoxyParamCaption})}
+
+
+
+Convert this state to a J\+S\+O\+N-\/serializable object. 
+
+When custom fields should be serialized, you can pass them in as an object mapping property names (in the resulting object, which should not use {\ttfamily doc} or {\ttfamily selection}) to fields. \mbox{\Hypertarget{classEditorState_aaf2f037b5ffa5c77a6816f4e9c306255}\label{classEditorState_aaf2f037b5ffa5c77a6816f4e9c306255}} 
+\index{EditorState@{EditorState}!toText@{toText}}
+\index{toText@{toText}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{toText()}{toText()}}
+{\footnotesize\ttfamily Editor\+State\+::to\+Text (\begin{DoxyParamCaption}\item[{}]{string }\end{DoxyParamCaption})}
+
+
+
+Using the state\textquotesingle{}s \href{https://codemirror.net/6/docs/ref/\#state.EditorState^lineSeparator}{\texttt{ line separator}}, create a \href{https://codemirror.net/6/docs/ref/\#state.Text}{\texttt{ {\ttfamily Text}}} instance from the given string. 
+
+\mbox{\Hypertarget{classEditorState_af1a06788e9a7fe7d6e0f0cb677b31ea6}\label{classEditorState_af1a06788e9a7fe7d6e0f0cb677b31ea6}} 
+\index{EditorState@{EditorState}!update@{update}}
+\index{update@{update}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily Editor\+State\+::update (\begin{DoxyParamCaption}\item[{}]{specs }\end{DoxyParamCaption})}
+
+
+
+Create a \href{https://codemirror.net/6/docs/ref/\#state.Transaction}{\texttt{ transaction}} that updates this state. 
+
+Any number of \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec}{\texttt{ transaction specs}} can be passed. Unless \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.sequential}{\texttt{ {\ttfamily sequential}}} is set, the \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.changes}{\texttt{ changes}} (if any) of each spec are assumed to start in the {\itshape current} document (not the document produced by previous specs), and its \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.selection}{\texttt{ selection}} and \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.effects}{\texttt{ effects}} are assumed to refer to the document created by its {\itshape own} changes. The resulting transaction contains the combined effect of all the different specs. For \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.selection}{\texttt{ selection}}, later specs take precedence over earlier ones. \mbox{\Hypertarget{classEditorState_aa2172da60d7418958ab9669e6abffe15}\label{classEditorState_aa2172da60d7418958ab9669e6abffe15}} 
+\index{EditorState@{EditorState}!wordAt@{wordAt}}
+\index{wordAt@{wordAt}!EditorState@{EditorState}}
+\doxysubsubsection{\texorpdfstring{wordAt()}{wordAt()}}
+{\footnotesize\ttfamily Editor\+State\+::word\+At (\begin{DoxyParamCaption}\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Find the word at the given position, meaning the range containing all \href{https://codemirror.net/6/docs/ref/\#state.CharCategory.Word}{\texttt{ word}} characters around it. 
+
+If no word characters are adjacent to the position, this returns null. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/state/dist/\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

@@ -1,0 +1,363 @@
+\hypertarget{_0dlezer_2highlight_2dist_2index_8js}{}\doxysection{node\+\_\+modules/@lezer/highlight/dist/index.js File Reference}
+\label{_0dlezer_2highlight_2dist_2index_8js}\index{node\_modules/"@lezer/highlight/dist/index.js@{node\_modules/"@lezer/highlight/dist/index.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTag}{Tag}}
+\begin{DoxyCompactList}\small\item\em Highlighting tags are markers that denote a highlighting category. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classModifier}{Modifier}}
+\item 
+class \mbox{\hyperlink{classRule}{Rule}}
+\item 
+class \mbox{\hyperlink{classHighlightBuilder}{Highlight\+Builder}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_adfd3a9054be56ecb009c918d29fcc61f}{same\+Array}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}})
+\item 
+function \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_acecb882e1686208ca5ed272d19aabe58}{power\+Set}} (array)
+\item 
+function \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a5092488b69067b4d7830bb733c48bf94}{style\+Tags}} (spec)
+\begin{DoxyCompactList}\small\item\em This function is used to add a set of tags to a language syntax via \href{\#common.NodeSet.extend}{\texttt{ {\ttfamily Node\+Set.\+extend}}} or \href{\#lr.LRParser.configure}{\texttt{ {\ttfamily L\+R\+Parser.\+configure}}}. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_af10eb146c4c0d59eb4b683bddf30f688}{tag\+Highlighter}} (\mbox{\hyperlink{plugins_2markdown_8js_ad93a97eb0834600ed3e14b1fe6beadc7}{tags}}, \mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}})
+\begin{DoxyCompactList}\small\item\em Define a \href{\#highlight.Highlighter}{\texttt{ highlighter}} from an array of tag/class pairs. Classes associated with more specific tags will take precedence. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a961227a15674776a2c530604141325cb}{highlight\+Tags}} (highlighters, \mbox{\hyperlink{plugins_2markdown_8js_ad93a97eb0834600ed3e14b1fe6beadc7}{tags}})
+\item 
+function \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a220b4fa45a953deca9029957c0172b65}{highlight\+Tree}} (tree, highlighter, put\+Style, from=0, to=\mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{tree.\+length}})
+\begin{DoxyCompactList}\small\item\em Highlight the given \href{\#common.Tree}{\texttt{ tree}} with the given \href{\#highlight.Highlighter}{\texttt{ highlighter}}. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_acc178e164c90da8ce326a0b520890d53}{get\+Style\+Tags}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}})
+\begin{DoxyCompactList}\small\item\em Match a syntax node\textquotesingle{}s \href{\#highlight.styleTags}{\texttt{ highlight rules}}. If. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a3efa7060862315285399660971115254}{operator=t}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{classNodeProp}{Node\+Prop}} \} from \textquotesingle{}@lezer/common\textquotesingle{}
+\item 
+let \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a9c3674abf89d6b53bdf6b1abafd03e6f}{next\+Tag\+ID}} = 0
+\item 
+let \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a9e8eba528fb227881993e441363fa365}{next\+Modifier\+ID}} = 0
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a5d270dac7b349378b5c15748cb541bae}{rule\+Node\+Prop}} = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}()
+\item 
+\mbox{\hyperlink{classRule}{Rule}} \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a181aaefb7da28a7e2abfab11eb54b503}{empty}} = new \mbox{\hyperlink{classRule}{Rule}}(\mbox{[}$\,$\mbox{]}, 2 , \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}})
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a52b119099ad76203f6bf69c0ab4cc17e}{t}} = \mbox{\hyperlink{classTag_aff2f493f1e3acb57a04aa9468a0c2ae3}{Tag.\+define}}
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aa4f959ffc63d22c5f91c29e06266fe14}{comment}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a92e2393a84cebeebac966b4f900292b3}{type\+Name}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a6e9be5601dd7853c834bce7388285c4f}{property\+Name}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aaa3be9b88dbcfdd6d6b483b3a590b3c6}{literal}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aaa3be9b88dbcfdd6d6b483b3a590b3c6}{literal}})
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a626d8619bab6bd69dea33b5cf140fab3}{number}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aaa3be9b88dbcfdd6d6b483b3a590b3c6}{literal}})
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}{content}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a5b8182951fc2b309b87f3268fa70abe0}{heading}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}{content}})
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a01507f1ae45bdb4315a590df9b0ed8ad}{keyword}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_abd84601efbcbf0fe2c658626ac5a115f}{punctuation}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_acd4bdbbdf8e46a0d3b19ba6d68bfc604}{bracket}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_abd84601efbcbf0fe2c658626ac5a115f}{punctuation}})
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a7f4f20a4a61c5cfa4668cb55bc9fd67f}{meta}} = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()
+\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aa7c4e5a86e05e636357c26c839d89dae}{tags}}
+\begin{DoxyCompactList}\small\item\em The default set of highlighting \href{\#highlight.Tag}{\texttt{ tags}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a22d14de851a4278ee9a4a2c10baba750}{class\+Highlighter}}
+\begin{DoxyCompactList}\small\item\em This is a highlighter that adds stable, predictable classes to tokens, for styling with external C\+SS. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}{export}} \{ \mbox{\hyperlink{classTag}{Tag}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a22d14de851a4278ee9a4a2c10baba750}{class\+Highlighter}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_acc178e164c90da8ce326a0b520890d53}{get\+Style\+Tags}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a220b4fa45a953deca9029957c0172b65}{highlight\+Tree}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a5092488b69067b4d7830bb733c48bf94}{style\+Tags}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_af10eb146c4c0d59eb4b683bddf30f688}{tag\+Highlighter}}, \mbox{\hyperlink{plugins_2markdown_8js_ad93a97eb0834600ed3e14b1fe6beadc7}{tags}} \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_acc178e164c90da8ce326a0b520890d53}\label{_0dlezer_2highlight_2dist_2index_8js_acc178e164c90da8ce326a0b520890d53}} 
+\index{index.js@{index.js}!getStyleTags@{getStyleTags}}
+\index{getStyleTags@{getStyleTags}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getStyleTags()}{getStyleTags()}}
+{\footnotesize\ttfamily function get\+Style\+Tags (\begin{DoxyParamCaption}\item[{}]{node }\end{DoxyParamCaption})}
+
+
+
+Match a syntax node\textquotesingle{}s \href{\#highlight.styleTags}{\texttt{ highlight rules}}. If. 
+
+there\textquotesingle{}s a match, return its set of tags, and whether it is opaque (uses a {\ttfamily !}) or applies to all child nodes ({\ttfamily /...}). \mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a961227a15674776a2c530604141325cb}\label{_0dlezer_2highlight_2dist_2index_8js_a961227a15674776a2c530604141325cb}} 
+\index{index.js@{index.js}!highlightTags@{highlightTags}}
+\index{highlightTags@{highlightTags}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{highlightTags()}{highlightTags()}}
+{\footnotesize\ttfamily function highlight\+Tags (\begin{DoxyParamCaption}\item[{}]{highlighters,  }\item[{}]{tags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a220b4fa45a953deca9029957c0172b65}\label{_0dlezer_2highlight_2dist_2index_8js_a220b4fa45a953deca9029957c0172b65}} 
+\index{index.js@{index.js}!highlightTree@{highlightTree}}
+\index{highlightTree@{highlightTree}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{highlightTree()}{highlightTree()}}
+{\footnotesize\ttfamily function highlight\+Tree (\begin{DoxyParamCaption}\item[{}]{tree,  }\item[{}]{highlighter,  }\item[{}]{put\+Style,  }\item[{}]{from = {\ttfamily 0},  }\item[{}]{to = {\ttfamily \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{tree.\+length}}} }\end{DoxyParamCaption})}
+
+
+
+Highlight the given \href{\#common.Tree}{\texttt{ tree}} with the given \href{\#highlight.Highlighter}{\texttt{ highlighter}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em put\+Style} & Assign styling to a region of the text. Will be called, in order of position, for any ranges where more than zero classes apply. \`{}classes\`{} is a space separated string of C\+SS classes. \\
+\hline
+{\em from} & The start of the range to highlight. \\
+\hline
+{\em to} & The end of the range. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a3efa7060862315285399660971115254}\label{_0dlezer_2highlight_2dist_2index_8js_a3efa7060862315285399660971115254}} 
+\index{index.js@{index.js}!operator=t@{operator=t}}
+\index{operator=t@{operator=t}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{operator=t()}{operator=t()}}
+{\footnotesize\ttfamily const operator=\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_acecb882e1686208ca5ed272d19aabe58}\label{_0dlezer_2highlight_2dist_2index_8js_acecb882e1686208ca5ed272d19aabe58}} 
+\index{index.js@{index.js}!powerSet@{powerSet}}
+\index{powerSet@{powerSet}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{powerSet()}{powerSet()}}
+{\footnotesize\ttfamily function power\+Set (\begin{DoxyParamCaption}\item[{}]{array }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_adfd3a9054be56ecb009c918d29fcc61f}\label{_0dlezer_2highlight_2dist_2index_8js_adfd3a9054be56ecb009c918d29fcc61f}} 
+\index{index.js@{index.js}!sameArray@{sameArray}}
+\index{sameArray@{sameArray}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{sameArray()}{sameArray()}}
+{\footnotesize\ttfamily function same\+Array (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a5092488b69067b4d7830bb733c48bf94}\label{_0dlezer_2highlight_2dist_2index_8js_a5092488b69067b4d7830bb733c48bf94}} 
+\index{index.js@{index.js}!styleTags@{styleTags}}
+\index{styleTags@{styleTags}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{styleTags()}{styleTags()}}
+{\footnotesize\ttfamily function style\+Tags (\begin{DoxyParamCaption}\item[{}]{spec }\end{DoxyParamCaption})}
+
+
+
+This function is used to add a set of tags to a language syntax via \href{\#common.NodeSet.extend}{\texttt{ {\ttfamily Node\+Set.\+extend}}} or \href{\#lr.LRParser.configure}{\texttt{ {\ttfamily L\+R\+Parser.\+configure}}}. 
+
+The argument object maps node selectors to \href{\#highlight.Tag}{\texttt{ highlighting tags}} or arrays of tags.
+
+\mbox{\hyperlink{classNode}{Node}} selectors may hold one or more (space-\/separated) node paths. Such a path can be a \href{\#common.NodeType.name}{\texttt{ node name}}, or multiple node names (or {\ttfamily $\ast$} wildcards) separated by slash characters, as in {\ttfamily \char`\"{}\+Block/\+Declaration/\+Variable\+Name\char`\"{}}. Such a path matches the final node but only if its direct parent nodes are the other nodes mentioned. A {\ttfamily $\ast$} in such a path matches any parent, but only a single level—wildcards that match multiple parents aren\textquotesingle{}t supported, both for efficiency reasons and because Lezer trees make it rather hard to reason about what they would match.)
+
+A path can be ended with {\ttfamily /...} to indicate that the tag assigned to the node should also apply to all child nodes, even if they match their own style (by default, only the innermost style is used).
+
+When a path ends in {\ttfamily !}, as in {\ttfamily Attribute!}, no further matching happens for the node\textquotesingle{}s child nodes, and the entire node gets the given style.
+
+In this notation, node names that contain {\ttfamily /}, {\ttfamily !}, {\ttfamily $\ast$}, or {\ttfamily ...} must be quoted as J\+S\+ON strings.
+
+For example\+:
+
+\`{}\`{}\`{}javascript parser.\+with\+Props( style\+Tags(\{ // Style Number and Big\+Number nodes \char`\"{}\+Number Big\+Number\char`\"{}\+: tags.\+number, // Style Escape nodes whose parent is String \char`\"{}\+String/\+Escape\char`\"{}\+: tags.\+escape, // Style anything inside Attributes nodes \char`\"{}\+Attributes!\char`\"{}\+: tags.\+meta, // Add a style to all content inside Italic nodes \char`\"{}\+Italic/...\char`\"{}\+: tags.\+emphasis, // Style Invalid\+String nodes as both {\ttfamily string} and {\ttfamily invalid} \char`\"{}\+Invalid\+String\char`\"{}\+: \mbox{[}tags.\+string, tags.\+invalid\mbox{]}, // Style the node named \char`\"{}/\char`\"{} as punctuation \textquotesingle{}\char`\"{}/\char`\"{}\textquotesingle{}\+: tags.\+punctuation \}) ) \`{}\`{}\`{} \mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_af10eb146c4c0d59eb4b683bddf30f688}\label{_0dlezer_2highlight_2dist_2index_8js_af10eb146c4c0d59eb4b683bddf30f688}} 
+\index{index.js@{index.js}!tagHighlighter@{tagHighlighter}}
+\index{tagHighlighter@{tagHighlighter}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{tagHighlighter()}{tagHighlighter()}}
+{\footnotesize\ttfamily function tag\+Highlighter (\begin{DoxyParamCaption}\item[{}]{tags,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+
+
+Define a \href{\#highlight.Highlighter}{\texttt{ highlighter}} from an array of tag/class pairs. Classes associated with more specific tags will take precedence. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_acd4bdbbdf8e46a0d3b19ba6d68bfc604}\label{_0dlezer_2highlight_2dist_2index_8js_acd4bdbbdf8e46a0d3b19ba6d68bfc604}} 
+\index{index.js@{index.js}!bracket@{bracket}}
+\index{bracket@{bracket}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{bracket}{bracket}}
+{\footnotesize\ttfamily const bracket = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_abd84601efbcbf0fe2c658626ac5a115f}{punctuation}})}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a22d14de851a4278ee9a4a2c10baba750}\label{_0dlezer_2highlight_2dist_2index_8js_a22d14de851a4278ee9a4a2c10baba750}} 
+\index{index.js@{index.js}!classHighlighter@{classHighlighter}}
+\index{classHighlighter@{classHighlighter}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{classHighlighter}{classHighlighter}}
+{\footnotesize\ttfamily const class\+Highlighter}
+
+
+
+This is a highlighter that adds stable, predictable classes to tokens, for styling with external C\+SS. 
+
+The following tags are mapped to their name prefixed with {\ttfamily \char`\"{}tok-\/\char`\"{}} (for example {\ttfamily \char`\"{}tok-\/comment\char`\"{}})\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#highlight.tags.link}{\texttt{ {\ttfamily link}}}
+\item \href{\#highlight.tags.heading}{\texttt{ {\ttfamily heading}}}
+\item \href{\#highlight.tags.emphasis}{\texttt{ {\ttfamily emphasis}}}
+\item \href{\#highlight.tags.strong}{\texttt{ {\ttfamily strong}}}
+\item \href{\#highlight.tags.keyword}{\texttt{ {\ttfamily keyword}}}
+\item \href{\#highlight.tags.atom}{\texttt{ {\ttfamily atom}}}
+\item \href{\#highlight.tags.bool}{\texttt{ {\ttfamily bool}}}
+\item \href{\#highlight.tags.url}{\texttt{ {\ttfamily url}}}
+\item \href{\#highlight.tags.labelName}{\texttt{ {\ttfamily label\+Name}}}
+\item \href{\#highlight.tags.inserted}{\texttt{ {\ttfamily inserted}}}
+\item \href{\#highlight.tags.deleted}{\texttt{ {\ttfamily deleted}}}
+\item \href{\#highlight.tags.literal}{\texttt{ {\ttfamily literal}}}
+\item \href{\#highlight.tags.string}{\texttt{ {\ttfamily string}}}
+\item \href{\#highlight.tags.number}{\texttt{ {\ttfamily number}}}
+\item \href{\#highlight.tags.variableName}{\texttt{ {\ttfamily variable\+Name}}}
+\item \href{\#highlight.tags.typeName}{\texttt{ {\ttfamily type\+Name}}}
+\item \href{\#highlight.tags.namespace}{\texttt{ {\ttfamily namespace}}}
+\item \href{\#highlight.tags.className}{\texttt{ {\ttfamily class\+Name}}}
+\item \href{\#highlight.tags.macroName}{\texttt{ {\ttfamily macro\+Name}}}
+\item \href{\#highlight.tags.propertyName}{\texttt{ {\ttfamily property\+Name}}}
+\item \href{\#highlight.tags.operator}{\texttt{ {\ttfamily operator}}}
+\item \href{\#highlight.tags.comment}{\texttt{ {\ttfamily comment}}}
+\item \href{\#highlight.tags.meta}{\texttt{ {\ttfamily meta}}}
+\item \href{\#highlight.tags.punctuation}{\texttt{ {\ttfamily punctuation}}}
+\item \href{\#highlight.tags.invalid}{\texttt{ {\ttfamily invalid}}}
+\end{DoxyItemize}
+
+In addition, these mappings are provided\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#highlight.tags.regexp}{\texttt{ {\ttfamily regexp}}}, \href{\#highlight.tags.escape}{\texttt{ {\ttfamily escape}}}, and \href{\#highlight.tags.special}{\texttt{ {\ttfamily special}}}\href{\#highlight.tags.string}{\texttt{ {\ttfamily (string)}}} are mapped to {\ttfamily \char`\"{}tok-\/string2\char`\"{}}
+\item \href{\#highlight.tags.special}{\texttt{ {\ttfamily special}}}\href{\#highlight.tags.variableName}{\texttt{ {\ttfamily (variable\+Name)}}} to {\ttfamily \char`\"{}tok-\/variable\+Name2\char`\"{}}
+\item \href{\#highlight.tags.local}{\texttt{ {\ttfamily local}}}\href{\#highlight.tags.variableName}{\texttt{ {\ttfamily (variable\+Name)}}} to {\ttfamily \char`\"{}tok-\/variable\+Name tok-\/local\char`\"{}}
+\item \href{\#highlight.tags.definition}{\texttt{ {\ttfamily definition}}}\href{\#highlight.tags.variableName}{\texttt{ {\ttfamily (variable\+Name)}}} to {\ttfamily \char`\"{}tok-\/variable\+Name tok-\/definition\char`\"{}}
+\item \href{\#highlight.tags.definition}{\texttt{ {\ttfamily definition}}}\href{\#highlight.tags.propertyName}{\texttt{ {\ttfamily (property\+Name)}}} to {\ttfamily \char`\"{}tok-\/property\+Name tok-\/definition\char`\"{}} 
+\end{DoxyItemize}\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_aa4f959ffc63d22c5f91c29e06266fe14}\label{_0dlezer_2highlight_2dist_2index_8js_aa4f959ffc63d22c5f91c29e06266fe14}} 
+\index{index.js@{index.js}!comment@{comment}}
+\index{comment@{comment}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{comment}{comment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}} \mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}} The file \mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}} associated with the found comment = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}\label{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}} 
+\index{index.js@{index.js}!content@{content}}
+\index{content@{content}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily const content = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a181aaefb7da28a7e2abfab11eb54b503}\label{_0dlezer_2highlight_2dist_2index_8js_a181aaefb7da28a7e2abfab11eb54b503}} 
+\index{index.js@{index.js}!empty@{empty}}
+\index{empty@{empty}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{empty}{empty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRule}{Rule}} empty = new \mbox{\hyperlink{classRule}{Rule}}(\mbox{[}$\,$\mbox{]}, 2 , \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}})}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}\label{_0dlezer_2highlight_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}} 
+\index{index.js@{index.js}!export@{export}}
+\index{export@{export}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{export}{export}}
+{\footnotesize\ttfamily export \{ \mbox{\hyperlink{classTag}{Tag}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a22d14de851a4278ee9a4a2c10baba750}{class\+Highlighter}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_acc178e164c90da8ce326a0b520890d53}{get\+Style\+Tags}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a220b4fa45a953deca9029957c0172b65}{highlight\+Tree}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a5092488b69067b4d7830bb733c48bf94}{style\+Tags}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_af10eb146c4c0d59eb4b683bddf30f688}{tag\+Highlighter}}, \mbox{\hyperlink{plugins_2markdown_8js_ad93a97eb0834600ed3e14b1fe6beadc7}{tags}} \}}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a5b8182951fc2b309b87f3268fa70abe0}\label{_0dlezer_2highlight_2dist_2index_8js_a5b8182951fc2b309b87f3268fa70abe0}} 
+\index{index.js@{index.js}!heading@{heading}}
+\index{heading@{heading}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{heading}{heading}}
+{\footnotesize\ttfamily const heading = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}{content}})}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a59be084da8908b7d77ff34b25cd84488}\label{_0dlezer_2highlight_2dist_2index_8js_a59be084da8908b7d77ff34b25cd84488}} 
+\index{index.js@{index.js}!import@{import}}
+\index{import@{import}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily import \{ \mbox{\hyperlink{classNodeProp}{Node\+Prop}} \} from \textquotesingle{}@lezer/common\textquotesingle{}}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a01507f1ae45bdb4315a590df9b0ed8ad}\label{_0dlezer_2highlight_2dist_2index_8js_a01507f1ae45bdb4315a590df9b0ed8ad}} 
+\index{index.js@{index.js}!keyword@{keyword}}
+\index{keyword@{keyword}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{keyword}{keyword}}
+{\footnotesize\ttfamily const keyword = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_aaa3be9b88dbcfdd6d6b483b3a590b3c6}\label{_0dlezer_2highlight_2dist_2index_8js_aaa3be9b88dbcfdd6d6b483b3a590b3c6}} 
+\index{index.js@{index.js}!literal@{literal}}
+\index{literal@{literal}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{literal}{literal}}
+{\footnotesize\ttfamily const literal = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a7f4f20a4a61c5cfa4668cb55bc9fd67f}\label{_0dlezer_2highlight_2dist_2index_8js_a7f4f20a4a61c5cfa4668cb55bc9fd67f}} 
+\index{index.js@{index.js}!meta@{meta}}
+\index{meta@{meta}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{meta}{meta}}
+{\footnotesize\ttfamily const meta = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}\label{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}} 
+\index{index.js@{index.js}!name@{name}}
+\index{name@{name}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}} name The person \mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}} full name = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a9e8eba528fb227881993e441363fa365}\label{_0dlezer_2highlight_2dist_2index_8js_a9e8eba528fb227881993e441363fa365}} 
+\index{index.js@{index.js}!nextModifierID@{nextModifierID}}
+\index{nextModifierID@{nextModifierID}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nextModifierID}{nextModifierID}}
+{\footnotesize\ttfamily let next\+Modifier\+ID = 0}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a9c3674abf89d6b53bdf6b1abafd03e6f}\label{_0dlezer_2highlight_2dist_2index_8js_a9c3674abf89d6b53bdf6b1abafd03e6f}} 
+\index{index.js@{index.js}!nextTagID@{nextTagID}}
+\index{nextTagID@{nextTagID}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nextTagID}{nextTagID}}
+{\footnotesize\ttfamily let next\+Tag\+ID = 0}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a626d8619bab6bd69dea33b5cf140fab3}\label{_0dlezer_2highlight_2dist_2index_8js_a626d8619bab6bd69dea33b5cf140fab3}} 
+\index{index.js@{index.js}!number@{number}}
+\index{number@{number}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{number}{number}}
+{\footnotesize\ttfamily const number = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aaa3be9b88dbcfdd6d6b483b3a590b3c6}{literal}})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2clamp_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/clamp.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2inRange_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/in\+Range.\+js}}.\end{Desc}
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a6e9be5601dd7853c834bce7388285c4f}\label{_0dlezer_2highlight_2dist_2index_8js_a6e9be5601dd7853c834bce7388285c4f}} 
+\index{index.js@{index.js}!propertyName@{propertyName}}
+\index{propertyName@{propertyName}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{propertyName}{propertyName}}
+{\footnotesize\ttfamily const property\+Name = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}})}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_abd84601efbcbf0fe2c658626ac5a115f}\label{_0dlezer_2highlight_2dist_2index_8js_abd84601efbcbf0fe2c658626ac5a115f}} 
+\index{index.js@{index.js}!punctuation@{punctuation}}
+\index{punctuation@{punctuation}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{punctuation}{punctuation}}
+{\footnotesize\ttfamily const punctuation = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}()}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a5d270dac7b349378b5c15748cb541bae}\label{_0dlezer_2highlight_2dist_2index_8js_a5d270dac7b349378b5c15748cb541bae}} 
+\index{index.js@{index.js}!ruleNodeProp@{ruleNodeProp}}
+\index{ruleNodeProp@{ruleNodeProp}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ruleNodeProp}{ruleNodeProp}}
+{\footnotesize\ttfamily const rule\+Node\+Prop = new \mbox{\hyperlink{classNodeProp}{Node\+Prop}}()}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}\label{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}} 
+\index{index.js@{index.js}!string@{string}}
+\index{string@{string}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{string}{string}}
+{\footnotesize\ttfamily const string = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aaa3be9b88dbcfdd6d6b483b3a590b3c6}{literal}})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2escapeRegExp_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/escape\+Reg\+Exp.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2pad_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/pad.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2padStart_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/pad\+Start.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2replace_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/replace.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2trim_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/trim.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2trimEnd_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/trim\+End.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2trimStart_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/trim\+Start.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2truncate_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/truncate.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2unescape_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/unescape.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2words_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/words.\+js}}.\end{Desc}
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a52b119099ad76203f6bf69c0ab4cc17e}\label{_0dlezer_2highlight_2dist_2index_8js_a52b119099ad76203f6bf69c0ab4cc17e}} 
+\index{index.js@{index.js}!t@{t}}
+\index{t@{t}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily const t = \mbox{\hyperlink{classTag_aff2f493f1e3acb57a04aa9468a0c2ae3}{Tag.\+define}}}
+
+\mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_aa7c4e5a86e05e636357c26c839d89dae}\label{_0dlezer_2highlight_2dist_2index_8js_aa7c4e5a86e05e636357c26c839d89dae}} 
+\index{index.js@{index.js}!tags@{tags}}
+\index{tags@{tags}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{tags}{tags}}
+{\footnotesize\ttfamily const tags}
+
+
+
+The default set of highlighting \href{\#highlight.Tag}{\texttt{ tags}}. 
+
+This collection is heavily biased towards programming languages, and necessarily incomplete. A full ontology of syntactic constructs would fill a stack of books, and be impractical to write themes for. So try to make do with this set. If all else fails, \href{https://github.com/codemirror/codemirror.next}{\texttt{ open an issue}} to propose a new tag, or \href{\#highlight.Tag^define}{\texttt{ define}} a local custom tag for your use case.
+
+Note that it is not obligatory to always attach the most specific tag possible to an element—if your grammar can\textquotesingle{}t easily distinguish a certain type of element (such as a local variable), it is okay to style it as its more general variant (a variable).
+
+For tags that extend some parent tag, the documentation links to the parent. \mbox{\Hypertarget{_0dlezer_2highlight_2dist_2index_8js_a92e2393a84cebeebac966b4f900292b3}\label{_0dlezer_2highlight_2dist_2index_8js_a92e2393a84cebeebac966b4f900292b3}} 
+\index{index.js@{index.js}!typeName@{typeName}}
+\index{typeName@{typeName}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{typeName}{typeName}}
+{\footnotesize\ttfamily const type\+Name = \mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}(\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}})}
+

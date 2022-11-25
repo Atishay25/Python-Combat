@@ -1,0 +1,1002 @@
+\hypertarget{_0dcodemirror_2state_2dist_2index_8js}{}\doxysection{node\+\_\+modules/@codemirror/state/dist/index.js File Reference}
+\label{_0dcodemirror_2state_2dist_2index_8js}\index{node\_modules/"@codemirror/state/dist/index.js@{node\_modules/"@codemirror/state/dist/index.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classText}{Text}}
+\begin{DoxyCompactList}\small\item\em The data structure for documents. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTextLeaf}{Text\+Leaf}}
+\item 
+class \mbox{\hyperlink{classTextNode}{Text\+Node}}
+\item 
+class \mbox{\hyperlink{classRawTextCursor}{Raw\+Text\+Cursor}}
+\item 
+class \mbox{\hyperlink{classPartialTextCursor}{Partial\+Text\+Cursor}}
+\item 
+class \mbox{\hyperlink{classLineCursor}{Line\+Cursor}}
+\item 
+class \mbox{\hyperlink{classLine}{Line}}
+\begin{DoxyCompactList}\small\item\em This type describes a line in the document. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChangeDesc}{Change\+Desc}}
+\begin{DoxyCompactList}\small\item\em A change description is a variant of \href{https://codemirror.net/6/docs/ref/\#state.ChangeSet}{\texttt{ change set}} that doesn\textquotesingle{}t store the inserted text. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChangeSet}{Change\+Set}}
+\begin{DoxyCompactList}\small\item\em A change set represents a group of modifications to a document. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classSectionIter}{Section\+Iter}}
+\item 
+class \mbox{\hyperlink{classSelectionRange}{Selection\+Range}}
+\begin{DoxyCompactList}\small\item\em A single selection range. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classEditorSelection}{Editor\+Selection}}
+\begin{DoxyCompactList}\small\item\em An editor selection holds one or more selection ranges. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classFacet}{Facet}}
+\begin{DoxyCompactList}\small\item\em A facet is a labeled value that is associated with an editor state. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classFacetProvider}{Facet\+Provider}}
+\item 
+class \mbox{\hyperlink{classStateField}{State\+Field}}
+\begin{DoxyCompactList}\small\item\em Fields can store additional information in an editor state, and keep it in sync with the rest of the state. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classPrecExtension}{Prec\+Extension}}
+\item 
+class \mbox{\hyperlink{classCompartment}{Compartment}}
+\begin{DoxyCompactList}\small\item\em Extension compartments can be used to make a configuration dynamic. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classCompartmentInstance}{Compartment\+Instance}}
+\item 
+class \mbox{\hyperlink{classConfiguration}{Configuration}}
+\item 
+class \mbox{\hyperlink{classAnnotation}{Annotation}}
+\begin{DoxyCompactList}\small\item\em Annotations are tagged values that are used to add metadata to transactions in an extensible way. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classAnnotationType}{Annotation\+Type}}
+\begin{DoxyCompactList}\small\item\em Marker that identifies a type of \href{https://codemirror.net/6/docs/ref/\#state.Annotation}{\texttt{ annotation}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classStateEffectType}{State\+Effect\+Type}}
+\begin{DoxyCompactList}\small\item\em Representation of a type of state effect. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classStateEffect}{State\+Effect}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classState}{State}} effects can be used to represent additional effects associated with a \href{https://codemirror.net/6/docs/ref/\#state.Transaction.effects}{\texttt{ transaction}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTransaction}{Transaction}}
+\begin{DoxyCompactList}\small\item\em Changes to the editor state are grouped into transactions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classEditorState}{Editor\+State}}
+\begin{DoxyCompactList}\small\item\em The editor state class is a persistent (immutable) data structure. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classRangeValue}{Range\+Value}}
+\begin{DoxyCompactList}\small\item\em Each range is associated with a value, which must inherit from this class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classRange}{Range}}
+\begin{DoxyCompactList}\small\item\em A range associates a value with a range of positions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classChunk}{Chunk}}
+\item 
+class \mbox{\hyperlink{classRangeSet}{Range\+Set}}
+\begin{DoxyCompactList}\small\item\em A range set stores a collection of \href{https://codemirror.net/6/docs/ref/\#state.Range}{\texttt{ ranges}} in a way that makes them efficient to \href{https://codemirror.net/6/docs/ref/\#state.RangeSet.map}{\texttt{ map}} and \href{https://codemirror.net/6/docs/ref/\#state.RangeSet.update}{\texttt{ update}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classRangeSetBuilder}{Range\+Set\+Builder}}
+\begin{DoxyCompactList}\small\item\em A range set builder is a data structure that helps build up a \href{https://codemirror.net/6/docs/ref/\#state.RangeSet}{\texttt{ range set}} directly, without first allocating an array of \href{https://codemirror.net/6/docs/ref/\#state.Range}{\texttt{ {\ttfamily Range}}} objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classLayerCursor}{Layer\+Cursor}}
+\item 
+class \mbox{\hyperlink{classHeapCursor}{Heap\+Cursor}}
+\item 
+class \mbox{\hyperlink{classSpanCursor}{Span\+Cursor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_aada72daf43777200ef7b3b36876a0bf0}{text\+Length}} (\mbox{\hyperlink{marked_8min_8js_ace5c8ef4245d8bce80497d1580f59a0a}{text}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ad143eec4d61775b88aa062f5626c82d0}{append\+Text}} (\mbox{\hyperlink{marked_8min_8js_ace5c8ef4245d8bce80497d1580f59a0a}{text}}, target, from=0, to=1e9)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_aca26601bac17cb5cc642a0988b6fd39d}{slice\+Text}} (\mbox{\hyperlink{marked_8min_8js_ace5c8ef4245d8bce80497d1580f59a0a}{text}}, from, to)
+\item 
+\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ab9e4f653c523c23654e20bbca7705e29}{if}} (typeof \mbox{\hyperlink{lodash_2toArray_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}} !=\char`\"{}undefined\char`\"{})
+\item 
+\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a1141658e36d7c8601dfb4334a0a8a72b}{for}} (let \mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}}=1;\mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}}$<$ \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{extend.\+length}};\mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}}++) \mbox{\hyperlink{underscore_2underscore_8js_a7daa357c44494b3474456f05769921a7}{extend}}\mbox{[}\mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}}\mbox{]}+
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7ed3dd1b532e3b458eb5687dc02e3ea6}{is\+Extending\+Char}} (code)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a575ea6b21f9fa052e3e49ed1cf69cc2b}{is\+Regional\+Indicator}} (code)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a548242d3ad88754e49b6643e7679fb31}{find\+Cluster\+Break}} (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, pos, forward=true, include\+Extending=true)
+\begin{DoxyCompactList}\small\item\em Returns a next grapheme cluster break {\itshape after} (not equal to) {\ttfamily pos}, if {\ttfamily forward} is true, or before otherwise. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ad47a4bf624c5a1c566ae119014dc15d1}{next\+Cluster\+Break}} (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, pos, include\+Extending)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a67dba387b904d4ff36568841f36fb91c}{prev\+Cluster\+Break}} (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, pos, include\+Extending)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ad2a8c33be8f33ad813050fab65b14497}{surrogate\+Low}} (ch)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ab2ad11de93461ccb6677f239e8769252}{surrogate\+High}} (ch)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7d27f12aab196a3daf396b42ac81dd54}{code\+Point\+At}} (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, pos)
+\begin{DoxyCompactList}\small\item\em Find the code point at the given position in a string (like the \href{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt}{\texttt{ {\ttfamily code\+Point\+At}}} string method). \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ad6663414a14180fe63545d0ac7a5f650}{from\+Code\+Point}} (code)
+\begin{DoxyCompactList}\small\item\em Given a Unicode codepoint, return the Java\+Script string that respresents it (like \href{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint}{\texttt{ {\ttfamily String.\+from\+Code\+Point}}}). \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a092ba569668edbbd063c72c2c9b545c2}{code\+Point\+Size}} (code)
+\begin{DoxyCompactList}\small\item\em The amount of positions a character takes up a Java\+Script string. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ad12844f77646a9fb33d992b1e9dc27a2}{add\+Section}} (sections, len, ins, force\+Join=false)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a9241cc4ca18ba61321df305fcf18eb5c}{add\+Insert}} (\mbox{\hyperlink{underscore_2underscore_8js_af19aa221cc4a953ad6addb0b03162a1c}{values}}, sections, \mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ac2d9eedb508d563f6db8ca50e1270d9d}{iter\+Changes}} (desc, \mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}}, individual)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a39abda4ee727f105b0493608ffaf258b}{map\+Set}} (setA, setB, \mbox{\hyperlink{underscore-esm-min_8js_a38713f21a521f85af75aa009acbf066d}{before}}, mk\+Set=false)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a8b3d362627e0b971e8c0cb9e8ad448a1}{compose\+Sets}} (setA, setB, mk\+Set=false)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_afda88ec77866b352829db959b7fb6cef}{check\+Selection}} (selection, doc\+Length)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_adfd3a9054be56ecb009c918d29fcc61f}{same\+Array}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a68f08ade56c579045569844756f733f2}{compare\+Array}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}}, \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a71bed6675de942b805a8db042033a0c9}{compare}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a65562369c4040a1d758cd2992445d6b8}{ensure\+All}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, addrs)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7b47449fdc7f4c7d4475f244a20c82bf}{dynamic\+Facet\+Slot}} (addresses, facet, providers)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a1697d75b30ad103104bb8b8cb06cb447}{prec}} (\mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a80cb96be4d40e026c243c76e85f109bc}{flatten}} (extension, compartments, new\+Compartments)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_aae0e0183485d2f41c7523640cbc4c946}{ensure\+Addr}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, addr)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a534b548c5bd146770a02dc8cc95ffdd4}{get\+Addr}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, addr)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a46e647aa395518d359e3e3e648aedf48}{join\+Ranges}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ac534d64e7fe98880332666f33adf418a}{merge\+Transaction}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}}, sequential)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_aaa90ff8c22775ce6591a29b5e0997ffa}{resolve\+Transaction\+Inner}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, spec, doc\+Size)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ac938db2a91a9a09cc13cde04c2ab8ace}{resolve\+Transaction}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, specs, \mbox{\hyperlink{underscore-esm-min_8js_a9aaa69c6dc12b577c16ceb4ff7a686ae}{filter}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a3e416a3825b771389dd1523e02742317}{filter\+Transaction}} (\mbox{\hyperlink{underscore-umd-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a2ea5faf21f6634ffb4115b2fa4647c23}{extend\+Transaction}} (\mbox{\hyperlink{underscore-umd-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_afc17298b116b1ab3d4e6de1b60c714f8}{as\+Array}} (\mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}})
+\item 
+\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ad1b585ae06c04047e3e43f4c73525a26}{catch}} (\mbox{\hyperlink{underscore_2underscore_8js_ae3076f4e40a390af658ebfb04b9d9dae}{\+\_\+}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_abec416a745d42032ce5b2692a0fbdf59}{has\+Word\+Char}} (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a841e45b570a2cc1b88cfa078c96b13bf}{make\+Categorizer}} (word\+Chars)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a5fb017965ea522622f83e6cb88ece6e4}{combine\+Config}} (configs, \mbox{\hyperlink{underscore_2underscore_8js_a25652520ac081f98103987b0e68544cf}{defaults}}, \mbox{\hyperlink{name_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}=\{\})
+\begin{DoxyCompactList}\small\item\em Utility function for combining behaviors to fill in a config object from an array of provided configs. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_af466f45a4ae0eeed9688e524823d4cff}{cmp\+Range}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a1645a16745b4851fc252b12643d81719}{lazy\+Sort}} (ranges)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ab0c2273464d4b8c1e36b5eeae426f4eb}{find\+Shared\+Chunks}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}}, text\+Diff)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a411a7863e0f8378dc3a40c72f96d185e}{heap\+Bubble}} (heap, \mbox{\hyperlink{cjs_2index-default_8js_ae4b896af19aae26b1e5317acf4126807}{index}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a6e41b263a94c394aa3bacfe31aeebd2e}{compare}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, startA, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}}, startB, \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}}, comparator)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a1337d41c81b044117b0380970f124b0b}{same\+Values}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}, \mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ac7e9ef6f325a9eb756e323c8cc6168e8}{remove}} (array, \mbox{\hyperlink{cjs_2index-default_8js_ae4b896af19aae26b1e5317acf4126807}{index}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ad4ca67171e2f298e80ec475c4288cca5}{insert}} (array, \mbox{\hyperlink{cjs_2index-default_8js_ae4b896af19aae26b1e5317acf4126807}{index}}, \mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a765c19fefb942874549e989835d54e94}{find\+Min\+Index}} (\mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}, array)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a14f78d7c4b7d35b8caf8845d40b5468d}{count\+Column}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ae0e827532d037c9821e1e025c224879b}{tab\+Size}}, to=\mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{string.\+length}})
+\begin{DoxyCompactList}\small\item\em Count the column position at the given offset into the string, taking extending characters and tab size into account. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a6ed21659c5cef18253c1f874a7bf8e8a}{find\+Column}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, col, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ae0e827532d037c9821e1e025c224879b}{tab\+Size}}, \mbox{\hyperlink{validate_8js_ae2475e10618961c050dcba04e8c42331}{strict}})
+\begin{DoxyCompactList}\small\item\em Find the offset that corresponds to the given column position in a string, taking extending characters and tab size into account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classText}{Text}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ac8d15e53892cd3f767529db4ae3eb7a1}{empty}} = new \mbox{\hyperlink{classTextLeaf}{Text\+Leaf}}(\mbox{[}\char`\"{}\char`\"{}\mbox{]}, 0)
+\begin{DoxyCompactList}\small\item\em The empty set of ranges. \end{DoxyCompactList}\item 
+let \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ad38308eef4a0360cb5fd61db96f43683}{extend}} = \char`\"{}lc,34,7\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},7,7\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},19,,,,2,,2,,,20,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},1\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},,2\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},7,2,6,2,2,,4,\mbox{\hyperlink{underscore-umd-min_8js_a4a73770ab69578dc29ec14afeaf50228}{z}},,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},2\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},9,9,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}},4,,9,,3,,5,17,3,3\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},,\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},1\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},,,,4,8,4,,3,7,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,,,2,4,8,,9,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},,2,2,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},,4,2,4,2,2,3,3,,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},2,3,,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},2,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},,4,5,,2,4,,\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},2,\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},6,,,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,,2,,4,8,,7,3,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},,1\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},,,,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},,9,,14,,3,,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},3,5,3,,4,7,2,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},2,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,2,,2,,3,,5,2,7,2,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},2,\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}},2,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},2,,,2,4,8,,9,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},,20,,4,,2,3,,,8,,29,,2,7,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},8,2\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},,2,9,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},6,22,2,\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},,,,,,1\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},,5,,2,5,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},,10,9,,2\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},4,,6,,2,2,2,\mbox{\hyperlink{marked_8min_8js_a8a8fdd616bc8e35b3664895f2affb775}{p}},2,4,3,\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},4,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},,2,2,6,,\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},,jj,3,qa,3,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},3,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},2,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},2,1\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}},2,,7,8,,2,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},9,,19,3,3\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},2,\mbox{\hyperlink{marked_8min_8js_a8c7fb642844aadd95125b4e557795fa8}{y}},,3\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},3,4,2,9,,6,3,63,2,2,,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,,7,,,,,2,8,6,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,,1\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\mbox{\hyperlink{marked_8min_8js_a79fe0eb780a2a4b5543b4dddf8b6188a}{h}},1\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},4,1\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},7,,,5,,14,9,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},2,\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},4,2,2,,3,1\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},,,2,3,,,3,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},8,2,2,48,3,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},,7,4,,6,,3,2,5\mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}},1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,5,ek,,5\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},\mbox{\hyperlink{underscore-umd-min_8js_a6b5cd860425887a45ad6f9af9a34ada6}{x}},2da,3,3\mbox{\hyperlink{underscore-umd-min_8js_a6b5cd860425887a45ad6f9af9a34ada6}{x}},,2\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}},\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},fe,6,2\mbox{\hyperlink{underscore-umd-min_8js_a6b5cd860425887a45ad6f9af9a34ada6}{x}},2,n9w,4,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},2,28,2,7\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},,3,,4,,\mbox{\hyperlink{marked_8min_8js_a8a8fdd616bc8e35b3664895f2affb775}{p}},2,5,,47,2,\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},\mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}},\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},,12,8,\mbox{\hyperlink{marked_8min_8js_a8a8fdd616bc8e35b3664895f2affb775}{p}},\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},1\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},3,1\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},,2,4,2,2,13,,1\mbox{\hyperlink{marked_8min_8js_a04f81acaf03681ae51355601026861f4}{v}},6,2,2,2,2,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},,8,,1\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},,1\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},,,3,2,2,5,2,,,16,2,8,,6\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,2,,4,,fn4,,kh,\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},a6,2,\mbox{\hyperlink{lodash_8min_8js_a82a0449c1858146e65b6dd7e0e81ea17}{gt}},,6\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},,45,5,1ae,3,,2,5,4,14,3,4,,4\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},2,fx,4,\mbox{\hyperlink{underscore-umd-min_8js_afb6e34b978bb17308bb738e0bd15412e}{ar}},2,49,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},4\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},,1\mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}},\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},1\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},3,1\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},4,2,2,1\mbox{\hyperlink{underscore-umd-min_8js_a6b5cd860425887a45ad6f9af9a34ada6}{x}},3,10,5,,8,1\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},2,1\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},9,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},4,2,,2\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},3,2,,,2,6,,4\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},,3,8,\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},2,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},2,,,,,\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},7,3,5,5\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},8,2,3,,,\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},,29,,2,6,,,2,,,2,,2,6\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},,2,4,6,2,,2,\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},2,2\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},8,2,,,2,2\mbox{\hyperlink{marked_8min_8js_a8c7fb642844aadd95125b4e557795fa8}{y}},,,,2,6,,,2\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},3,2,4,,5,77,9,,2,6\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,,,4,,40,4,2,2,4,,\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},14,6,2,4,8,,9,6,2,3,1\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},,2,ba,7,,6,,,2\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},2,7,,2,,2,3\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},6,3,,,2,,7,,,20,2,3,,,,9\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},2,f0b,5,1\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},7,t4,,1\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},4,29,,f5k,2,43\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},,,3,4,5,8,8,2,7,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},4,44,3,1iz,1\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},4,1\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},8,,\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},,\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},5,,\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},11\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}},7,,\mbox{\hyperlink{marked_8min_8js_a79fe0eb780a2a4b5543b4dddf8b6188a}{h}},2,7,,2,,5,79,7,c5,4,15\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}},7,31,7,240,5,gx7k,2\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}},3\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},6\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}}\char`\"{}.split(\char`\"{},\char`\"{}).\mbox{\hyperlink{underscore-esm-min_8js_aa1f15c71840ad923914464b49062e000}{map}}(\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}} =$>$ \mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}} ? \mbox{\hyperlink{parseInt_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int}}(\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}, 36) \+: 1)
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_af2100a65f0682a21b5f012e820fb9fa4}{Z\+WJ}} = 0x200d
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a047d921a9d0886af91d44cc0218d6529}{Default\+Split}} = /\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{r\textbackslash{}n}}?$\vert$\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}/
+\item 
+var \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{Map\+Mode}}
+\begin{DoxyCompactList}\small\item\em Distinguishes different ways in which positions can be mapped. \end{DoxyCompactList}\item 
+let \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7bb664496bf379d79858a32da34219a3}{next\+ID}} = 0
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a550cd90904c08fea7c9c43ab95573ad9}{init\+Field}} = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}(\{ static\+: true \})
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7806ab62feeed8145eeebfda88ed467f}{Prec\+\_\+}} = \{ lowest\+: 4, low\+: 3, default\+: 2, high\+: 1, highest\+: 0 \}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_af012aff00752b8be0810a53ae99abbad}{Prec}}
+\begin{DoxyCompactList}\small\item\em By default extensions are registered in the order they are found in the flattened form of nested array that was provided. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_aba7b6c7c98c1a1fe128773e65ca2d684}{language\+Data}} = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}()
+\begin{DoxyCompactList}\small\item\em A facet used to register \href{https://codemirror.net/6/docs/ref/\#state.EditorState.languageDataAt}{\texttt{ language data}} providers. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_addb36f6507bc18bb58882986bef68722}{allow\+Multiple\+Selections}}
+\begin{DoxyCompactList}\small\item\em A facet that, when enabled, causes the editor to allow multiple ranges to be selected. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a2713e3ab52fb5dd40f305f5b2c224b97}{line\+Separator}}
+\begin{DoxyCompactList}\small\item\em The line separator to use. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a6ad98196581e762bb2488b0f45c472ce}{change\+Filter}} = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classFacet}{Facet}} used to register change filters, which are called for each transaction (unless explicitly \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.filter}{\texttt{ disabled}}), and can suppress part of the transaction\textquotesingle{}s changes. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ae3cb8a91b5ad2cef6ed42b196ae3a9fc}{transaction\+Filter}} = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classFacet}{Facet}} used to register a hook that gets a chance to update or replace transaction specs before they are applied. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a816a80fd72123fdee871c65c7a83ea0e}{transaction\+Extender}} = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}()
+\begin{DoxyCompactList}\small\item\em This is a more limited form of \href{https://codemirror.net/6/docs/ref/\#state.EditorState^transactionFilter}{\texttt{ {\ttfamily transaction\+Filter}}}, which can only add \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.annotations}{\texttt{ annotations}} and \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.effects}{\texttt{ effects}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a61de365b7017128cf4db87189ccadf9e}{read\+Only}}
+\begin{DoxyCompactList}\small\item\em This facet controls the value of the \href{https://codemirror.net/6/docs/ref/\#state.EditorState.readOnly}{\texttt{ {\ttfamily read\+Only}}} getter, which is consulted by commands and extensions that implement editing functionality to determine whether they should apply. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStateEffect}{State\+Effect}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_aace72958c50675efb2a962bffc91296e}{reconfigure}} = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()
+\begin{DoxyCompactList}\small\item\em This effect can be used to reconfigure the root extensions of the editor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStateEffect}{State\+Effect}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a2efb99ddf82f68aeb80455453095f983}{append\+Config}} = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()
+\begin{DoxyCompactList}\small\item\em Append extensions to the top-\/level configuration of the editor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransaction}{Transaction}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a0495e5fae82951d2ad94ba578c5c087b}{time}} = \mbox{\hyperlink{classAnnotation_ae50507c0109a9afd9538801d63a1398d}{Annotation.\+define}}()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAnnotation}{Annotation}} used to store transaction timestamps. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransaction}{Transaction}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a0fa7410f2d63e36675f02b05a18fa1a3}{user\+Event}} = \mbox{\hyperlink{classAnnotation_ae50507c0109a9afd9538801d63a1398d}{Annotation.\+define}}()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAnnotation}{Annotation}} used to associate a transaction with a user interface event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransaction}{Transaction}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a08140789431135e7979be9c237219bed}{add\+To\+History}} = \mbox{\hyperlink{classAnnotation_ae50507c0109a9afd9538801d63a1398d}{Annotation.\+define}}()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAnnotation}{Annotation}} indicating whether a transaction should be added to the undo history or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransaction}{Transaction}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a73fedf9c5f94daaea5b0c88fa81b3aa1}{remote}} = \mbox{\hyperlink{classAnnotation_ae50507c0109a9afd9538801d63a1398d}{Annotation.\+define}}()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAnnotation}{Annotation}} indicating (when present and true) that a transaction represents a change made by some other actor, not the user. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a515aba49ec397b24af3ce780590e4e26}{none}} = \mbox{[}$\,$\mbox{]}
+\item 
+var \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{Char\+Category}}
+\begin{DoxyCompactList}\small\item\em The categories produced by a \href{https://codemirror.net/6/docs/ref/\#state.EditorState.charCategorizer}{\texttt{ character categorizer}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a9b00fed2d472a00586e054a2a219110c}{non\+A\+S\+C\+I\+I\+Single\+Case\+Word\+Char}} = /\mbox{[}\textbackslash{}u00df\textbackslash{}u0587\textbackslash{}u0590-\/\textbackslash{}u05f4\textbackslash{}u0600-\/\textbackslash{}u06ff\textbackslash{}u3040-\/\textbackslash{}u309f\textbackslash{}u30a0-\/\textbackslash{}u30ff\textbackslash{}u3400-\/\textbackslash{}u4db5\textbackslash{}u4e00-\/\textbackslash{}u9fcc\textbackslash{}uac00-\/\textbackslash{}ud7af\mbox{]}/
+\item 
+let \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a4f397f0e05c101f760d50be65e907b79}{word\+Char}}
+\item 
+\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_abe4cc9788f52e49485473dc699537388}{try}}
+\item 
+\mbox{\hyperlink{classEditorState}{Editor\+State}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ae0e827532d037c9821e1e025c224879b}{tab\+Size}}
+\begin{DoxyCompactList}\small\item\em Configures the tab size to use in this state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorState}{Editor\+State}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_acf4f86fda74c47a547c2c62e23b87af9}{phrases}}
+\begin{DoxyCompactList}\small\item\em Registers translation phrases. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRangeValue}{Range\+Value}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ab2b45feb79439fb774550178cd8639c8}{start\+Side}} = Range\+Value.\+prototype.\+end\+Side = 0
+\item 
+\mbox{\hyperlink{classRangeValue}{Range\+Value}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a59c52ff081129d0c3d93c3bafdf79c0a}{point}} = false
+\item 
+\mbox{\hyperlink{classRangeValue}{Range\+Value}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a74c1202cdfb0c665483108d8b545cb0a}{map\+Mode}} = Map\+Mode.\+Track\+Del
+\item 
+\mbox{\hyperlink{classRangeSet}{Range\+Set}} \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a181aaefb7da28a7e2abfab11eb54b503}{empty}} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_acc3209889ba9d09a3790bc6bedf0c72d}{next\+Layer}} = \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a181aaefb7da28a7e2abfab11eb54b503}{Range\+Set.\+empty}}
+\item 
+\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}{export}} \{ \mbox{\hyperlink{classAnnotation}{Annotation}}, \mbox{\hyperlink{classAnnotationType}{Annotation\+Type}}, \mbox{\hyperlink{classChangeDesc}{Change\+Desc}}, \mbox{\hyperlink{classChangeSet}{Change\+Set}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{Char\+Category}}, \mbox{\hyperlink{classCompartment}{Compartment}}, \mbox{\hyperlink{classEditorSelection}{Editor\+Selection}}, \mbox{\hyperlink{classEditorState}{Editor\+State}}, \mbox{\hyperlink{classFacet}{Facet}}, \mbox{\hyperlink{classLine}{Line}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{Map\+Mode}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_af012aff00752b8be0810a53ae99abbad}{Prec}}, \mbox{\hyperlink{classRange}{Range}}, \mbox{\hyperlink{classRangeSet}{Range\+Set}}, \mbox{\hyperlink{classRangeSetBuilder}{Range\+Set\+Builder}}, \mbox{\hyperlink{classRangeValue}{Range\+Value}}, \mbox{\hyperlink{classSelectionRange}{Selection\+Range}}, \mbox{\hyperlink{classStateEffect}{State\+Effect}}, \mbox{\hyperlink{classStateEffectType}{State\+Effect\+Type}}, \mbox{\hyperlink{classStateField}{State\+Field}}, \mbox{\hyperlink{classText}{Text}}, \mbox{\hyperlink{classTransaction}{Transaction}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7d27f12aab196a3daf396b42ac81dd54}{code\+Point\+At}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a092ba569668edbbd063c72c2c9b545c2}{code\+Point\+Size}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a5fb017965ea522622f83e6cb88ece6e4}{combine\+Config}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a14f78d7c4b7d35b8caf8845d40b5468d}{count\+Column}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a548242d3ad88754e49b6643e7679fb31}{find\+Cluster\+Break}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a6ed21659c5cef18253c1f874a7bf8e8a}{find\+Column}}, \mbox{\hyperlink{markdown-it_2lib_2common_2utils_8js_aa5a1a71d29d9bb5db0e6c10cad3821fa}{from\+Code\+Point}} \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a9241cc4ca18ba61321df305fcf18eb5c}\label{_0dcodemirror_2state_2dist_2index_8js_a9241cc4ca18ba61321df305fcf18eb5c}} 
+\index{index.js@{index.js}!addInsert@{addInsert}}
+\index{addInsert@{addInsert}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{addInsert()}{addInsert()}}
+{\footnotesize\ttfamily function add\+Insert (\begin{DoxyParamCaption}\item[{}]{values,  }\item[{}]{sections,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ad12844f77646a9fb33d992b1e9dc27a2}\label{_0dcodemirror_2state_2dist_2index_8js_ad12844f77646a9fb33d992b1e9dc27a2}} 
+\index{index.js@{index.js}!addSection@{addSection}}
+\index{addSection@{addSection}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{addSection()}{addSection()}}
+{\footnotesize\ttfamily function add\+Section (\begin{DoxyParamCaption}\item[{}]{sections,  }\item[{}]{len,  }\item[{}]{ins,  }\item[{}]{force\+Join = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ad143eec4d61775b88aa062f5626c82d0}\label{_0dcodemirror_2state_2dist_2index_8js_ad143eec4d61775b88aa062f5626c82d0}} 
+\index{index.js@{index.js}!appendText@{appendText}}
+\index{appendText@{appendText}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{appendText()}{appendText()}}
+{\footnotesize\ttfamily function append\+Text (\begin{DoxyParamCaption}\item[{}]{text,  }\item[{}]{target,  }\item[{}]{from = {\ttfamily 0},  }\item[{}]{to = {\ttfamily 1e9} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_afc17298b116b1ab3d4e6de1b60c714f8}\label{_0dcodemirror_2state_2dist_2index_8js_afc17298b116b1ab3d4e6de1b60c714f8}} 
+\index{index.js@{index.js}!asArray@{asArray}}
+\index{asArray@{asArray}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{asArray()}{asArray()}}
+{\footnotesize\ttfamily function as\+Array (\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ad1b585ae06c04047e3e43f4c73525a26}\label{_0dcodemirror_2state_2dist_2index_8js_ad1b585ae06c04047e3e43f4c73525a26}} 
+\index{index.js@{index.js}!catch@{catch}}
+\index{catch@{catch}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{catch()}{catch()}}
+{\footnotesize\ttfamily catch (\begin{DoxyParamCaption}\item[{}]{\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_afda88ec77866b352829db959b7fb6cef}\label{_0dcodemirror_2state_2dist_2index_8js_afda88ec77866b352829db959b7fb6cef}} 
+\index{index.js@{index.js}!checkSelection@{checkSelection}}
+\index{checkSelection@{checkSelection}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{checkSelection()}{checkSelection()}}
+{\footnotesize\ttfamily function check\+Selection (\begin{DoxyParamCaption}\item[{}]{selection,  }\item[{}]{doc\+Length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_af466f45a4ae0eeed9688e524823d4cff}\label{_0dcodemirror_2state_2dist_2index_8js_af466f45a4ae0eeed9688e524823d4cff}} 
+\index{index.js@{index.js}!cmpRange@{cmpRange}}
+\index{cmpRange@{cmpRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{cmpRange()}{cmpRange()}}
+{\footnotesize\ttfamily function cmp\+Range (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a7d27f12aab196a3daf396b42ac81dd54}\label{_0dcodemirror_2state_2dist_2index_8js_a7d27f12aab196a3daf396b42ac81dd54}} 
+\index{index.js@{index.js}!codePointAt@{codePointAt}}
+\index{codePointAt@{codePointAt}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{codePointAt()}{codePointAt()}}
+{\footnotesize\ttfamily function code\+Point\+At (\begin{DoxyParamCaption}\item[{}]{str,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Find the code point at the given position in a string (like the \href{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt}{\texttt{ {\ttfamily code\+Point\+At}}} string method). 
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a092ba569668edbbd063c72c2c9b545c2}\label{_0dcodemirror_2state_2dist_2index_8js_a092ba569668edbbd063c72c2c9b545c2}} 
+\index{index.js@{index.js}!codePointSize@{codePointSize}}
+\index{codePointSize@{codePointSize}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{codePointSize()}{codePointSize()}}
+{\footnotesize\ttfamily function code\+Point\+Size (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+
+
+The amount of positions a character takes up a Java\+Script string. 
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a5fb017965ea522622f83e6cb88ece6e4}\label{_0dcodemirror_2state_2dist_2index_8js_a5fb017965ea522622f83e6cb88ece6e4}} 
+\index{index.js@{index.js}!combineConfig@{combineConfig}}
+\index{combineConfig@{combineConfig}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{combineConfig()}{combineConfig()}}
+{\footnotesize\ttfamily function combine\+Config (\begin{DoxyParamCaption}\item[{}]{configs,  }\item[{}]{defaults,  }\item[{}]{combine = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+Utility function for combining behaviors to fill in a config object from an array of provided configs. 
+
+{\ttfamily defaults} should hold default values for all optional fields in {\ttfamily \mbox{\hyperlink{classConfig}{Config}}}.
+
+The function will, by default, error when a field gets two values that aren\textquotesingle{}t {\ttfamily ===}-\/equal, but you can provide combine functions per field to do something else. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a6e41b263a94c394aa3bacfe31aeebd2e}\label{_0dcodemirror_2state_2dist_2index_8js_a6e41b263a94c394aa3bacfe31aeebd2e}} 
+\index{index.js@{index.js}!compare@{compare}}
+\index{compare@{compare}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily function compare (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{startA,  }\item[{}]{b,  }\item[{}]{startB,  }\item[{}]{length,  }\item[{}]{comparator }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a68f08ade56c579045569844756f733f2}\label{_0dcodemirror_2state_2dist_2index_8js_a68f08ade56c579045569844756f733f2}} 
+\index{index.js@{index.js}!compareArray@{compareArray}}
+\index{compareArray@{compareArray}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{compareArray()}{compareArray()}}
+{\footnotesize\ttfamily function compare\+Array (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{compare }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a8b3d362627e0b971e8c0cb9e8ad448a1}\label{_0dcodemirror_2state_2dist_2index_8js_a8b3d362627e0b971e8c0cb9e8ad448a1}} 
+\index{index.js@{index.js}!composeSets@{composeSets}}
+\index{composeSets@{composeSets}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{composeSets()}{composeSets()}}
+{\footnotesize\ttfamily function compose\+Sets (\begin{DoxyParamCaption}\item[{}]{setA,  }\item[{}]{setB,  }\item[{}]{mk\+Set = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a14f78d7c4b7d35b8caf8845d40b5468d}\label{_0dcodemirror_2state_2dist_2index_8js_a14f78d7c4b7d35b8caf8845d40b5468d}} 
+\index{index.js@{index.js}!countColumn@{countColumn}}
+\index{countColumn@{countColumn}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{countColumn()}{countColumn()}}
+{\footnotesize\ttfamily function count\+Column (\begin{DoxyParamCaption}\item[{}]{string,  }\item[{}]{tab\+Size,  }\item[{}]{to = {\ttfamily \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{string.\+length}}} }\end{DoxyParamCaption})}
+
+
+
+Count the column position at the given offset into the string, taking extending characters and tab size into account. 
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a7b47449fdc7f4c7d4475f244a20c82bf}\label{_0dcodemirror_2state_2dist_2index_8js_a7b47449fdc7f4c7d4475f244a20c82bf}} 
+\index{index.js@{index.js}!dynamicFacetSlot@{dynamicFacetSlot}}
+\index{dynamicFacetSlot@{dynamicFacetSlot}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{dynamicFacetSlot()}{dynamicFacetSlot()}}
+{\footnotesize\ttfamily function dynamic\+Facet\+Slot (\begin{DoxyParamCaption}\item[{}]{addresses,  }\item[{}]{facet,  }\item[{}]{providers }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_aae0e0183485d2f41c7523640cbc4c946}\label{_0dcodemirror_2state_2dist_2index_8js_aae0e0183485d2f41c7523640cbc4c946}} 
+\index{index.js@{index.js}!ensureAddr@{ensureAddr}}
+\index{ensureAddr@{ensureAddr}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ensureAddr()}{ensureAddr()}}
+{\footnotesize\ttfamily function ensure\+Addr (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a65562369c4040a1d758cd2992445d6b8}\label{_0dcodemirror_2state_2dist_2index_8js_a65562369c4040a1d758cd2992445d6b8}} 
+\index{index.js@{index.js}!ensureAll@{ensureAll}}
+\index{ensureAll@{ensureAll}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ensureAll()}{ensureAll()}}
+{\footnotesize\ttfamily function ensure\+All (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{addrs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a2ea5faf21f6634ffb4115b2fa4647c23}\label{_0dcodemirror_2state_2dist_2index_8js_a2ea5faf21f6634ffb4115b2fa4647c23}} 
+\index{index.js@{index.js}!extendTransaction@{extendTransaction}}
+\index{extendTransaction@{extendTransaction}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{extendTransaction()}{extendTransaction()}}
+{\footnotesize\ttfamily function extend\+Transaction (\begin{DoxyParamCaption}\item[{}]{tr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a3e416a3825b771389dd1523e02742317}\label{_0dcodemirror_2state_2dist_2index_8js_a3e416a3825b771389dd1523e02742317}} 
+\index{index.js@{index.js}!filterTransaction@{filterTransaction}}
+\index{filterTransaction@{filterTransaction}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{filterTransaction()}{filterTransaction()}}
+{\footnotesize\ttfamily function filter\+Transaction (\begin{DoxyParamCaption}\item[{}]{tr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a548242d3ad88754e49b6643e7679fb31}\label{_0dcodemirror_2state_2dist_2index_8js_a548242d3ad88754e49b6643e7679fb31}} 
+\index{index.js@{index.js}!findClusterBreak@{findClusterBreak}}
+\index{findClusterBreak@{findClusterBreak}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{findClusterBreak()}{findClusterBreak()}}
+{\footnotesize\ttfamily function find\+Cluster\+Break (\begin{DoxyParamCaption}\item[{}]{str,  }\item[{}]{pos,  }\item[{}]{forward = {\ttfamily true},  }\item[{}]{include\+Extending = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Returns a next grapheme cluster break {\itshape after} (not equal to) {\ttfamily pos}, if {\ttfamily forward} is true, or before otherwise. 
+
+Returns {\ttfamily pos} itself if no further cluster break is available in the string. Moves across surrogate pairs, extending characters (when {\ttfamily include\+Extending} is true), characters joined with zero-\/width joiners, and flag emoji. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a6ed21659c5cef18253c1f874a7bf8e8a}\label{_0dcodemirror_2state_2dist_2index_8js_a6ed21659c5cef18253c1f874a7bf8e8a}} 
+\index{index.js@{index.js}!findColumn@{findColumn}}
+\index{findColumn@{findColumn}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{findColumn()}{findColumn()}}
+{\footnotesize\ttfamily function find\+Column (\begin{DoxyParamCaption}\item[{}]{string,  }\item[{}]{col,  }\item[{}]{tab\+Size,  }\item[{}]{strict }\end{DoxyParamCaption})}
+
+
+
+Find the offset that corresponds to the given column position in a string, taking extending characters and tab size into account. 
+
+By default, the string length is returned when it is too short to reach the column. Pass {\ttfamily strict} true to make it return -\/1 in that situation. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a765c19fefb942874549e989835d54e94}\label{_0dcodemirror_2state_2dist_2index_8js_a765c19fefb942874549e989835d54e94}} 
+\index{index.js@{index.js}!findMinIndex@{findMinIndex}}
+\index{findMinIndex@{findMinIndex}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{findMinIndex()}{findMinIndex()}}
+{\footnotesize\ttfamily function find\+Min\+Index (\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{array }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ab0c2273464d4b8c1e36b5eeae426f4eb}\label{_0dcodemirror_2state_2dist_2index_8js_ab0c2273464d4b8c1e36b5eeae426f4eb}} 
+\index{index.js@{index.js}!findSharedChunks@{findSharedChunks}}
+\index{findSharedChunks@{findSharedChunks}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{findSharedChunks()}{findSharedChunks()}}
+{\footnotesize\ttfamily function find\+Shared\+Chunks (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{text\+Diff }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a80cb96be4d40e026c243c76e85f109bc}\label{_0dcodemirror_2state_2dist_2index_8js_a80cb96be4d40e026c243c76e85f109bc}} 
+\index{index.js@{index.js}!flatten@{flatten}}
+\index{flatten@{flatten}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily function flatten (\begin{DoxyParamCaption}\item[{}]{extension,  }\item[{}]{compartments,  }\item[{}]{new\+Compartments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a1141658e36d7c8601dfb4334a0a8a72b}\label{_0dcodemirror_2state_2dist_2index_8js_a1141658e36d7c8601dfb4334a0a8a72b}} 
+\index{index.js@{index.js}!for@{for}}
+\index{for@{for}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{for()}{for()}}
+{\footnotesize\ttfamily for (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ad6663414a14180fe63545d0ac7a5f650}\label{_0dcodemirror_2state_2dist_2index_8js_ad6663414a14180fe63545d0ac7a5f650}} 
+\index{index.js@{index.js}!fromCodePoint@{fromCodePoint}}
+\index{fromCodePoint@{fromCodePoint}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromCodePoint()}{fromCodePoint()}}
+{\footnotesize\ttfamily function from\+Code\+Point (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+
+
+Given a Unicode codepoint, return the Java\+Script string that respresents it (like \href{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint}{\texttt{ {\ttfamily String.\+from\+Code\+Point}}}). 
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a534b548c5bd146770a02dc8cc95ffdd4}\label{_0dcodemirror_2state_2dist_2index_8js_a534b548c5bd146770a02dc8cc95ffdd4}} 
+\index{index.js@{index.js}!getAddr@{getAddr}}
+\index{getAddr@{getAddr}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getAddr()}{getAddr()}}
+{\footnotesize\ttfamily function get\+Addr (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_abec416a745d42032ce5b2692a0fbdf59}\label{_0dcodemirror_2state_2dist_2index_8js_abec416a745d42032ce5b2692a0fbdf59}} 
+\index{index.js@{index.js}!hasWordChar@{hasWordChar}}
+\index{hasWordChar@{hasWordChar}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{hasWordChar()}{hasWordChar()}}
+{\footnotesize\ttfamily function has\+Word\+Char (\begin{DoxyParamCaption}\item[{}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a411a7863e0f8378dc3a40c72f96d185e}\label{_0dcodemirror_2state_2dist_2index_8js_a411a7863e0f8378dc3a40c72f96d185e}} 
+\index{index.js@{index.js}!heapBubble@{heapBubble}}
+\index{heapBubble@{heapBubble}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{heapBubble()}{heapBubble()}}
+{\footnotesize\ttfamily function heap\+Bubble (\begin{DoxyParamCaption}\item[{}]{heap,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ab9e4f653c523c23654e20bbca7705e29}\label{_0dcodemirror_2state_2dist_2index_8js_ab9e4f653c523c23654e20bbca7705e29}} 
+\index{index.js@{index.js}!if@{if}}
+\index{if@{if}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{}]{typeof Symbol ! = {\ttfamily \char`\"{}undefined\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ad4ca67171e2f298e80ec475c4288cca5}\label{_0dcodemirror_2state_2dist_2index_8js_ad4ca67171e2f298e80ec475c4288cca5}} 
+\index{index.js@{index.js}!insert@{insert}}
+\index{insert@{insert}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily function insert (\begin{DoxyParamCaption}\item[{}]{array,  }\item[{}]{index,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a7ed3dd1b532e3b458eb5687dc02e3ea6}\label{_0dcodemirror_2state_2dist_2index_8js_a7ed3dd1b532e3b458eb5687dc02e3ea6}} 
+\index{index.js@{index.js}!isExtendingChar@{isExtendingChar}}
+\index{isExtendingChar@{isExtendingChar}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isExtendingChar()}{isExtendingChar()}}
+{\footnotesize\ttfamily function is\+Extending\+Char (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a575ea6b21f9fa052e3e49ed1cf69cc2b}\label{_0dcodemirror_2state_2dist_2index_8js_a575ea6b21f9fa052e3e49ed1cf69cc2b}} 
+\index{index.js@{index.js}!isRegionalIndicator@{isRegionalIndicator}}
+\index{isRegionalIndicator@{isRegionalIndicator}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isRegionalIndicator()}{isRegionalIndicator()}}
+{\footnotesize\ttfamily function is\+Regional\+Indicator (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ac2d9eedb508d563f6db8ca50e1270d9d}\label{_0dcodemirror_2state_2dist_2index_8js_ac2d9eedb508d563f6db8ca50e1270d9d}} 
+\index{index.js@{index.js}!iterChanges@{iterChanges}}
+\index{iterChanges@{iterChanges}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{iterChanges()}{iterChanges()}}
+{\footnotesize\ttfamily function iter\+Changes (\begin{DoxyParamCaption}\item[{}]{desc,  }\item[{}]{f,  }\item[{}]{individual }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a46e647aa395518d359e3e3e648aedf48}\label{_0dcodemirror_2state_2dist_2index_8js_a46e647aa395518d359e3e3e648aedf48}} 
+\index{index.js@{index.js}!joinRanges@{joinRanges}}
+\index{joinRanges@{joinRanges}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{joinRanges()}{joinRanges()}}
+{\footnotesize\ttfamily function join\+Ranges (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a1645a16745b4851fc252b12643d81719}\label{_0dcodemirror_2state_2dist_2index_8js_a1645a16745b4851fc252b12643d81719}} 
+\index{index.js@{index.js}!lazySort@{lazySort}}
+\index{lazySort@{lazySort}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lazySort()}{lazySort()}}
+{\footnotesize\ttfamily function lazy\+Sort (\begin{DoxyParamCaption}\item[{}]{ranges }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a841e45b570a2cc1b88cfa078c96b13bf}\label{_0dcodemirror_2state_2dist_2index_8js_a841e45b570a2cc1b88cfa078c96b13bf}} 
+\index{index.js@{index.js}!makeCategorizer@{makeCategorizer}}
+\index{makeCategorizer@{makeCategorizer}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{makeCategorizer()}{makeCategorizer()}}
+{\footnotesize\ttfamily function make\+Categorizer (\begin{DoxyParamCaption}\item[{}]{word\+Chars }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a39abda4ee727f105b0493608ffaf258b}\label{_0dcodemirror_2state_2dist_2index_8js_a39abda4ee727f105b0493608ffaf258b}} 
+\index{index.js@{index.js}!mapSet@{mapSet}}
+\index{mapSet@{mapSet}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{mapSet()}{mapSet()}}
+{\footnotesize\ttfamily function map\+Set (\begin{DoxyParamCaption}\item[{}]{setA,  }\item[{}]{setB,  }\item[{}]{before,  }\item[{}]{mk\+Set = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ac534d64e7fe98880332666f33adf418a}\label{_0dcodemirror_2state_2dist_2index_8js_ac534d64e7fe98880332666f33adf418a}} 
+\index{index.js@{index.js}!mergeTransaction@{mergeTransaction}}
+\index{mergeTransaction@{mergeTransaction}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{mergeTransaction()}{mergeTransaction()}}
+{\footnotesize\ttfamily function merge\+Transaction (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{sequential }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ad47a4bf624c5a1c566ae119014dc15d1}\label{_0dcodemirror_2state_2dist_2index_8js_ad47a4bf624c5a1c566ae119014dc15d1}} 
+\index{index.js@{index.js}!nextClusterBreak@{nextClusterBreak}}
+\index{nextClusterBreak@{nextClusterBreak}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nextClusterBreak()}{nextClusterBreak()}}
+{\footnotesize\ttfamily function next\+Cluster\+Break (\begin{DoxyParamCaption}\item[{}]{str,  }\item[{}]{pos,  }\item[{}]{include\+Extending }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a1697d75b30ad103104bb8b8cb06cb447}\label{_0dcodemirror_2state_2dist_2index_8js_a1697d75b30ad103104bb8b8cb06cb447}} 
+\index{index.js@{index.js}!prec@{prec}}
+\index{prec@{prec}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{prec()}{prec()}}
+{\footnotesize\ttfamily function prec (\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a67dba387b904d4ff36568841f36fb91c}\label{_0dcodemirror_2state_2dist_2index_8js_a67dba387b904d4ff36568841f36fb91c}} 
+\index{index.js@{index.js}!prevClusterBreak@{prevClusterBreak}}
+\index{prevClusterBreak@{prevClusterBreak}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{prevClusterBreak()}{prevClusterBreak()}}
+{\footnotesize\ttfamily function prev\+Cluster\+Break (\begin{DoxyParamCaption}\item[{}]{str,  }\item[{}]{pos,  }\item[{}]{include\+Extending }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ac7e9ef6f325a9eb756e323c8cc6168e8}\label{_0dcodemirror_2state_2dist_2index_8js_ac7e9ef6f325a9eb756e323c8cc6168e8}} 
+\index{index.js@{index.js}!remove@{remove}}
+\index{remove@{remove}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily function remove (\begin{DoxyParamCaption}\item[{}]{array,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ac938db2a91a9a09cc13cde04c2ab8ace}\label{_0dcodemirror_2state_2dist_2index_8js_ac938db2a91a9a09cc13cde04c2ab8ace}} 
+\index{index.js@{index.js}!resolveTransaction@{resolveTransaction}}
+\index{resolveTransaction@{resolveTransaction}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{resolveTransaction()}{resolveTransaction()}}
+{\footnotesize\ttfamily function resolve\+Transaction (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{specs,  }\item[{}]{filter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_aaa90ff8c22775ce6591a29b5e0997ffa}\label{_0dcodemirror_2state_2dist_2index_8js_aaa90ff8c22775ce6591a29b5e0997ffa}} 
+\index{index.js@{index.js}!resolveTransactionInner@{resolveTransactionInner}}
+\index{resolveTransactionInner@{resolveTransactionInner}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{resolveTransactionInner()}{resolveTransactionInner()}}
+{\footnotesize\ttfamily function resolve\+Transaction\+Inner (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{spec,  }\item[{}]{doc\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_adfd3a9054be56ecb009c918d29fcc61f}\label{_0dcodemirror_2state_2dist_2index_8js_adfd3a9054be56ecb009c918d29fcc61f}} 
+\index{index.js@{index.js}!sameArray@{sameArray}}
+\index{sameArray@{sameArray}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{sameArray()}{sameArray()}}
+{\footnotesize\ttfamily function same\+Array (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a1337d41c81b044117b0380970f124b0b}\label{_0dcodemirror_2state_2dist_2index_8js_a1337d41c81b044117b0380970f124b0b}} 
+\index{index.js@{index.js}!sameValues@{sameValues}}
+\index{sameValues@{sameValues}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{sameValues()}{sameValues()}}
+{\footnotesize\ttfamily function same\+Values (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_aca26601bac17cb5cc642a0988b6fd39d}\label{_0dcodemirror_2state_2dist_2index_8js_aca26601bac17cb5cc642a0988b6fd39d}} 
+\index{index.js@{index.js}!sliceText@{sliceText}}
+\index{sliceText@{sliceText}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{sliceText()}{sliceText()}}
+{\footnotesize\ttfamily function slice\+Text (\begin{DoxyParamCaption}\item[{}]{text,  }\item[{}]{from,  }\item[{}]{to }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ab2ad11de93461ccb6677f239e8769252}\label{_0dcodemirror_2state_2dist_2index_8js_ab2ad11de93461ccb6677f239e8769252}} 
+\index{index.js@{index.js}!surrogateHigh@{surrogateHigh}}
+\index{surrogateHigh@{surrogateHigh}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{surrogateHigh()}{surrogateHigh()}}
+{\footnotesize\ttfamily function surrogate\+High (\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ad2a8c33be8f33ad813050fab65b14497}\label{_0dcodemirror_2state_2dist_2index_8js_ad2a8c33be8f33ad813050fab65b14497}} 
+\index{index.js@{index.js}!surrogateLow@{surrogateLow}}
+\index{surrogateLow@{surrogateLow}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{surrogateLow()}{surrogateLow()}}
+{\footnotesize\ttfamily function surrogate\+Low (\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_aada72daf43777200ef7b3b36876a0bf0}\label{_0dcodemirror_2state_2dist_2index_8js_aada72daf43777200ef7b3b36876a0bf0}} 
+\index{index.js@{index.js}!textLength@{textLength}}
+\index{textLength@{textLength}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{textLength()}{textLength()}}
+{\footnotesize\ttfamily function text\+Length (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a08140789431135e7979be9c237219bed}\label{_0dcodemirror_2state_2dist_2index_8js_a08140789431135e7979be9c237219bed}} 
+\index{index.js@{index.js}!addToHistory@{addToHistory}}
+\index{addToHistory@{addToHistory}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{addToHistory}{addToHistory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransaction}{Transaction}} add\+To\+History = \mbox{\hyperlink{classAnnotation_ae50507c0109a9afd9538801d63a1398d}{Annotation.\+define}}()}
+
+
+
+\mbox{\hyperlink{classAnnotation}{Annotation}} indicating whether a transaction should be added to the undo history or not. 
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_addb36f6507bc18bb58882986bef68722}\label{_0dcodemirror_2state_2dist_2index_8js_addb36f6507bc18bb58882986bef68722}} 
+\index{index.js@{index.js}!allowMultipleSelections@{allowMultipleSelections}}
+\index{allowMultipleSelections@{allowMultipleSelections}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{allowMultipleSelections}{allowMultipleSelections}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEditorState}{Editor\+State}} allow\+Multiple\+Selections}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classFacet}{Facet}}.\mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}: \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}} => \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}}.some(\mbox{\hyperlink{markdown-it_8min_8js_afc3dd12de12777f6e20b4c93b7e7cb96}{v}} => \mbox{\hyperlink{markdown-it_8min_8js_afc3dd12de12777f6e20b4c93b7e7cb96}{v}}),}
+\DoxyCodeLine{    \textcolor{keyword}{static}: \textcolor{keyword}{true}}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+
+
+A facet that, when enabled, causes the editor to allow multiple ranges to be selected. 
+
+Be careful though, because by default the editor relies on the native D\+OM selection, which cannot handle multiple selections. An extension like \href{https://codemirror.net/6/docs/ref/\#view.drawSelection}{\texttt{ {\ttfamily draw\+Selection}}} can be used to make secondary selections visible to the user. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a2efb99ddf82f68aeb80455453095f983}\label{_0dcodemirror_2state_2dist_2index_8js_a2efb99ddf82f68aeb80455453095f983}} 
+\index{index.js@{index.js}!appendConfig@{appendConfig}}
+\index{appendConfig@{appendConfig}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{appendConfig}{appendConfig}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStateEffect}{State\+Effect}} append\+Config = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()}
+
+
+
+Append extensions to the top-\/level configuration of the editor. 
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a6ad98196581e762bb2488b0f45c472ce}\label{_0dcodemirror_2state_2dist_2index_8js_a6ad98196581e762bb2488b0f45c472ce}} 
+\index{index.js@{index.js}!changeFilter@{changeFilter}}
+\index{changeFilter@{changeFilter}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{changeFilter}{changeFilter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEditorState}{Editor\+State}} change\+Filter = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}()}
+
+
+
+\mbox{\hyperlink{classFacet}{Facet}} used to register change filters, which are called for each transaction (unless explicitly \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.filter}{\texttt{ disabled}}), and can suppress part of the transaction\textquotesingle{}s changes. 
+
+Such a function can return {\ttfamily true} to indicate that it doesn\textquotesingle{}t want to do anything, {\ttfamily false} to completely stop the changes in the transaction, or a set of ranges in which changes should be suppressed. Such ranges are represented as an array of numbers, with each pair of two numbers indicating the start and end of a range. So for example {\ttfamily \mbox{[}10, 20, 100, 110\mbox{]}} suppresses changes between 10 and 20, and between 100 and 110. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}\label{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}} 
+\index{index.js@{index.js}!CharCategory@{CharCategory}}
+\index{CharCategory@{CharCategory}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{CharCategory}{CharCategory}}
+{\footnotesize\ttfamily var Char\+Category}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (\textcolor{keyword}{function} (\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}}) \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}}[\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}}[\textcolor{stringliteral}{"Word"}] = 0] = \textcolor{stringliteral}{"Word"};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}}[\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}}[\textcolor{stringliteral}{"Space"}] = 1] = \textcolor{stringliteral}{"Space"};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}}[\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}}[\textcolor{stringliteral}{"Other"}] = 2] = \textcolor{stringliteral}{"Other"};}
+\DoxyCodeLine{\textcolor{keywordflow}{return} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}}\})(\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}} || (\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{CharCategory}} = \{\}))}
+
+\end{DoxyCode}
+
+
+The categories produced by a \href{https://codemirror.net/6/docs/ref/\#state.EditorState.charCategorizer}{\texttt{ character categorizer}}. 
+
+These are used do things like selecting by word. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a047d921a9d0886af91d44cc0218d6529}\label{_0dcodemirror_2state_2dist_2index_8js_a047d921a9d0886af91d44cc0218d6529}} 
+\index{index.js@{index.js}!DefaultSplit@{DefaultSplit}}
+\index{DefaultSplit@{DefaultSplit}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{DefaultSplit}{DefaultSplit}}
+{\footnotesize\ttfamily const Default\+Split = /\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{r\textbackslash{}n}}?$\vert$\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}/}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ac8d15e53892cd3f767529db4ae3eb7a1}\label{_0dcodemirror_2state_2dist_2index_8js_ac8d15e53892cd3f767529db4ae3eb7a1}} 
+\index{index.js@{index.js}!empty@{empty}}
+\index{empty@{empty}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{empty}{empty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRangeSet}{Range\+Set}} empty = new \mbox{\hyperlink{classTextLeaf}{Text\+Leaf}}(\mbox{[}\char`\"{}\char`\"{}\mbox{]}, 0)}
+
+
+
+The empty set of ranges. 
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}\label{_0dcodemirror_2state_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}} 
+\index{index.js@{index.js}!export@{export}}
+\index{export@{export}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{export}{export}}
+{\footnotesize\ttfamily export \{ \mbox{\hyperlink{classAnnotation}{Annotation}}, \mbox{\hyperlink{classAnnotationType}{Annotation\+Type}}, \mbox{\hyperlink{classChangeDesc}{Change\+Desc}}, \mbox{\hyperlink{classChangeSet}{Change\+Set}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_affe7305d7c8cf2ad64056f135aa572a5}{Char\+Category}}, \mbox{\hyperlink{classCompartment}{Compartment}}, \mbox{\hyperlink{classEditorSelection}{Editor\+Selection}}, \mbox{\hyperlink{classEditorState}{Editor\+State}}, \mbox{\hyperlink{classFacet}{Facet}}, \mbox{\hyperlink{classLine}{Line}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{Map\+Mode}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_af012aff00752b8be0810a53ae99abbad}{Prec}}, \mbox{\hyperlink{classRange}{Range}}, \mbox{\hyperlink{classRangeSet}{Range\+Set}}, \mbox{\hyperlink{classRangeSetBuilder}{Range\+Set\+Builder}}, \mbox{\hyperlink{classRangeValue}{Range\+Value}}, \mbox{\hyperlink{classSelectionRange}{Selection\+Range}}, \mbox{\hyperlink{classStateEffect}{State\+Effect}}, \mbox{\hyperlink{classStateEffectType}{State\+Effect\+Type}}, \mbox{\hyperlink{classStateField}{State\+Field}}, \mbox{\hyperlink{classText}{Text}}, \mbox{\hyperlink{classTransaction}{Transaction}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7d27f12aab196a3daf396b42ac81dd54}{code\+Point\+At}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a092ba569668edbbd063c72c2c9b545c2}{code\+Point\+Size}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a5fb017965ea522622f83e6cb88ece6e4}{combine\+Config}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a14f78d7c4b7d35b8caf8845d40b5468d}{count\+Column}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a548242d3ad88754e49b6643e7679fb31}{find\+Cluster\+Break}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a6ed21659c5cef18253c1f874a7bf8e8a}{find\+Column}}, \mbox{\hyperlink{markdown-it_2lib_2common_2utils_8js_aa5a1a71d29d9bb5db0e6c10cad3821fa}{from\+Code\+Point}} \}}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ad38308eef4a0360cb5fd61db96f43683}\label{_0dcodemirror_2state_2dist_2index_8js_ad38308eef4a0360cb5fd61db96f43683}} 
+\index{index.js@{index.js}!extend@{extend}}
+\index{extend@{extend}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{extend}{extend}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} extend = \char`\"{}lc,34,7\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},7,7\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},19,,,,2,,2,,,20,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},1\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},,2\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},7,2,6,2,2,,4,\mbox{\hyperlink{underscore-umd-min_8js_a4a73770ab69578dc29ec14afeaf50228}{z}},,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},2\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},9,9,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}},4,,9,,3,,5,17,3,3\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},,\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},1\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},,,,4,8,4,,3,7,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,,,2,4,8,,9,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},,2,2,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},,4,2,4,2,2,3,3,,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},2,3,,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},2,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},,4,5,,2,4,,\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},2,\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},6,,,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,,2,,4,8,,7,3,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},,1\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},,,,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},,9,,14,,3,,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},3,5,3,,4,7,2,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},2,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,2,,2,,3,,5,2,7,2,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},2,\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}},2,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},2,,,2,4,8,,9,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},,20,,4,,2,3,,,8,,29,,2,7,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},8,2\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},,2,9,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},6,22,2,\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},,,,,,1\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},,5,,2,5,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},,10,9,,2\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},4,,6,,2,2,2,\mbox{\hyperlink{marked_8min_8js_a8a8fdd616bc8e35b3664895f2affb775}{p}},2,4,3,\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},4,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},,2,2,6,,\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},,jj,3,qa,3,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},3,\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},2,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},2,1\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}},2,,7,8,,2,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},9,,19,3,3\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},2,\mbox{\hyperlink{marked_8min_8js_a8c7fb642844aadd95125b4e557795fa8}{y}},,3\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},3,4,2,9,,6,3,63,2,2,,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,,7,,,,,2,8,6,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,,1\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\mbox{\hyperlink{marked_8min_8js_a79fe0eb780a2a4b5543b4dddf8b6188a}{h}},1\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},4,1\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},7,,,5,,14,9,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},2,\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},4,2,2,,3,1\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},,,2,3,,,3,1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},8,2,2,48,3,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},,7,4,,6,,3,2,5\mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}},1\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,5,ek,,5\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},\mbox{\hyperlink{underscore-umd-min_8js_a6b5cd860425887a45ad6f9af9a34ada6}{x}},2da,3,3\mbox{\hyperlink{underscore-umd-min_8js_a6b5cd860425887a45ad6f9af9a34ada6}{x}},,2\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}},\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},fe,6,2\mbox{\hyperlink{underscore-umd-min_8js_a6b5cd860425887a45ad6f9af9a34ada6}{x}},2,n9w,4,,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},2,28,2,7\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},,3,,4,,\mbox{\hyperlink{marked_8min_8js_a8a8fdd616bc8e35b3664895f2affb775}{p}},2,5,,47,2,\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},\mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}},\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},,12,8,\mbox{\hyperlink{marked_8min_8js_a8a8fdd616bc8e35b3664895f2affb775}{p}},\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},1\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},3,1\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},,2,4,2,2,13,,1\mbox{\hyperlink{marked_8min_8js_a04f81acaf03681ae51355601026861f4}{v}},6,2,2,2,2,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},,8,,1\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},,1\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},,,3,2,2,5,2,,,16,2,8,,6\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,2,,4,,fn4,,kh,\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},a6,2,\mbox{\hyperlink{lodash_8min_8js_a82a0449c1858146e65b6dd7e0e81ea17}{gt}},,6\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},,45,5,1ae,3,,2,5,4,14,3,4,,4\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},2,fx,4,\mbox{\hyperlink{underscore-umd-min_8js_afb6e34b978bb17308bb738e0bd15412e}{ar}},2,49,\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}},4\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},,1\mbox{\hyperlink{marked_8min_8js_a31757b66d441fa4ecc2a08ef109a6954}{i}},\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},1\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},3,1\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},4,2,2,1\mbox{\hyperlink{underscore-umd-min_8js_a6b5cd860425887a45ad6f9af9a34ada6}{x}},3,10,5,,8,1\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},,\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}},2,1\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},9,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},4,2,,2\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},3,2,,,2,6,,4\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}},,3,8,\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},2,1\mbox{\hyperlink{markdown-it_8min_8js_a74b732dcdc10393b1f99f70d508d6f9f}{l}},2,,,,,\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},,\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},7,3,5,5\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},8,2,3,,,\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},,29,,2,6,,,2,,,2,,2,6\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},,2,4,6,2,,2,\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},2,2\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},8,2,,,2,2\mbox{\hyperlink{marked_8min_8js_a8c7fb642844aadd95125b4e557795fa8}{y}},,,,2,6,,,2\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},3,2,4,,5,77,9,,2,6\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}},,\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},2,,,4,,40,4,2,2,4,,\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}},\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},14,6,2,4,8,,9,6,2,3,1\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},\mbox{\hyperlink{markdownItAnchor_8umd_8js_a0059b43d777be4fd80d6809861ef506c}{d}},,2,ba,7,,6,,,2\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}},\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},2,7,,2,,2,3\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},6,3,,,2,,7,,,20,2,3,,,,9\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},2,f0b,5,1\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},7,t4,,1\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}},4,29,,f5k,2,43\mbox{\hyperlink{underscore-umd-min_8js_aee3046c01d22ccd1efcb944608aec125}{q}},,,3,4,5,8,8,2,7,\mbox{\hyperlink{marked_8min_8js_a4f847f865416e12fac744515fa0ca9ca}{u}},4,44,3,1iz,1\mbox{\hyperlink{underscore-umd-min_8js_a72674727ab3e024aa250c5c98f9c9629}{j}},4,1\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},8,,\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}},,\mbox{\hyperlink{markdown-it_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},5,,\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}},11\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}},7,,\mbox{\hyperlink{marked_8min_8js_a79fe0eb780a2a4b5543b4dddf8b6188a}{h}},2,7,,2,,5,79,7,c5,4,15\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}},7,31,7,240,5,gx7k,2\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}},3\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2prettify_8js_ac0f5b018c200154a83b6e6126ba14d91}{k}},6\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}}\char`\"{}.split(\char`\"{},\char`\"{}).\mbox{\hyperlink{underscore-esm-min_8js_aa1f15c71840ad923914464b49062e000}{map}}(\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}} =$>$ \mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}} ? \mbox{\hyperlink{parseInt_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int}}(\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}, 36) \+: 1)}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a550cd90904c08fea7c9c43ab95573ad9}\label{_0dcodemirror_2state_2dist_2index_8js_a550cd90904c08fea7c9c43ab95573ad9}} 
+\index{index.js@{index.js}!initField@{initField}}
+\index{initField@{initField}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{initField}{initField}}
+{\footnotesize\ttfamily const init\+Field = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}(\{ static\+: true \})}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_aba7b6c7c98c1a1fe128773e65ca2d684}\label{_0dcodemirror_2state_2dist_2index_8js_aba7b6c7c98c1a1fe128773e65ca2d684}} 
+\index{index.js@{index.js}!languageData@{languageData}}
+\index{languageData@{languageData}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{languageData}{languageData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEditorState}{Editor\+State}} language\+Data = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}()}
+
+
+
+A facet used to register \href{https://codemirror.net/6/docs/ref/\#state.EditorState.languageDataAt}{\texttt{ language data}} providers. 
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a2713e3ab52fb5dd40f305f5b2c224b97}\label{_0dcodemirror_2state_2dist_2index_8js_a2713e3ab52fb5dd40f305f5b2c224b97}} 
+\index{index.js@{index.js}!lineSeparator@{lineSeparator}}
+\index{lineSeparator@{lineSeparator}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lineSeparator}{lineSeparator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEditorState}{Editor\+State}} line\+Separator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classFacet}{Facet}}.\mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}: \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}} => \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}}.length ? \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}}[0] : \mbox{\hyperlink{bluebird_8core_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}},}
+\DoxyCodeLine{    \textcolor{keyword}{static}: \textcolor{keyword}{true}}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+
+
+The line separator to use. 
+
+By default, any of {\ttfamily \char`\"{}\textbackslash{}n\char`\"{}}, {\ttfamily \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}} and {\ttfamily \char`\"{}\textbackslash{}r\char`\"{}} is treated as a separator when splitting lines, and lines are joined with {\ttfamily \char`\"{}\textbackslash{}n\char`\"{}}.
+
+When you configure a value here, only that precise separator will be used, allowing you to round-\/trip documents through the editor without normalizing line separators. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}\label{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}} 
+\index{index.js@{index.js}!MapMode@{MapMode}}
+\index{MapMode@{MapMode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MapMode}{MapMode}}
+{\footnotesize\ttfamily var Map\+Mode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (\textcolor{keyword}{function} (\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}) \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}[\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}[\textcolor{stringliteral}{"Simple"}] = 0] = \textcolor{stringliteral}{"Simple"};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}[\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}[\textcolor{stringliteral}{"TrackDel"}] = 1] = \textcolor{stringliteral}{"TrackDel"};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}[\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}[\textcolor{stringliteral}{"TrackBefore"}] = 2] = \textcolor{stringliteral}{"TrackBefore"};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}[\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}[\textcolor{stringliteral}{"TrackAfter"}] = 3] = \textcolor{stringliteral}{"TrackAfter"};}
+\DoxyCodeLine{\textcolor{keywordflow}{return} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}}\})(\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}} || (\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a97431b8de79d12207f121c79fba6184a}{MapMode}} = \{\}))}
+
+\end{DoxyCode}
+
+
+Distinguishes different ways in which positions can be mapped. 
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a74c1202cdfb0c665483108d8b545cb0a}\label{_0dcodemirror_2state_2dist_2index_8js_a74c1202cdfb0c665483108d8b545cb0a}} 
+\index{index.js@{index.js}!mapMode@{mapMode}}
+\index{mapMode@{mapMode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{mapMode}{mapMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGutterMarker}{Gutter\+Marker}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} map\+Mode = Map\+Mode.\+Track\+Del}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a7bb664496bf379d79858a32da34219a3}\label{_0dcodemirror_2state_2dist_2index_8js_a7bb664496bf379d79858a32da34219a3}} 
+\index{index.js@{index.js}!nextID@{nextID}}
+\index{nextID@{nextID}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nextID}{nextID}}
+{\footnotesize\ttfamily let next\+ID = 0}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_acc3209889ba9d09a3790bc6bedf0c72d}\label{_0dcodemirror_2state_2dist_2index_8js_acc3209889ba9d09a3790bc6bedf0c72d}} 
+\index{index.js@{index.js}!nextLayer@{nextLayer}}
+\index{nextLayer@{nextLayer}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nextLayer}{nextLayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRangeSet}{Range\+Set}} \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a181aaefb7da28a7e2abfab11eb54b503}{empty}} next\+Layer = \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a181aaefb7da28a7e2abfab11eb54b503}{Range\+Set.\+empty}}}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a9b00fed2d472a00586e054a2a219110c}\label{_0dcodemirror_2state_2dist_2index_8js_a9b00fed2d472a00586e054a2a219110c}} 
+\index{index.js@{index.js}!nonASCIISingleCaseWordChar@{nonASCIISingleCaseWordChar}}
+\index{nonASCIISingleCaseWordChar@{nonASCIISingleCaseWordChar}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nonASCIISingleCaseWordChar}{nonASCIISingleCaseWordChar}}
+{\footnotesize\ttfamily const non\+A\+S\+C\+I\+I\+Single\+Case\+Word\+Char = /\mbox{[}\textbackslash{}u00df\textbackslash{}u0587\textbackslash{}u0590-\/\textbackslash{}u05f4\textbackslash{}u0600-\/\textbackslash{}u06ff\textbackslash{}u3040-\/\textbackslash{}u309f\textbackslash{}u30a0-\/\textbackslash{}u30ff\textbackslash{}u3400-\/\textbackslash{}u4db5\textbackslash{}u4e00-\/\textbackslash{}u9fcc\textbackslash{}uac00-\/\textbackslash{}ud7af\mbox{]}/}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a515aba49ec397b24af3ce780590e4e26}\label{_0dcodemirror_2state_2dist_2index_8js_a515aba49ec397b24af3ce780590e4e26}} 
+\index{index.js@{index.js}!none@{none}}
+\index{none@{none}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{none}{none}}
+{\footnotesize\ttfamily const none = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_acf4f86fda74c47a547c2c62e23b87af9}\label{_0dcodemirror_2state_2dist_2index_8js_acf4f86fda74c47a547c2c62e23b87af9}} 
+\index{index.js@{index.js}!phrases@{phrases}}
+\index{phrases@{phrases}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{phrases}{phrases}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEditorState}{Editor\+State}} phrases}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classFacet}{Facet}}.\mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a6e41b263a94c394aa3bacfe31aeebd2e}{compare}}(\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2async_8js_a82ca4ee5dd63e58a2bb967077dc8b8fb}{a}}, \mbox{\hyperlink{markdown-it_8min_8js_aa4026ad5544b958e54ce5e106fa1c805}{b}}) \{}
+\DoxyCodeLine{        let kA = Object.keys(\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2async_8js_a82ca4ee5dd63e58a2bb967077dc8b8fb}{a}}), kB = Object.keys(\mbox{\hyperlink{markdown-it_8min_8js_aa4026ad5544b958e54ce5e106fa1c805}{b}});}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} kA.length == kB.length \&\& kA.every(\mbox{\hyperlink{markdown-it_8min_8js_adc468c70fb574ebd07287b38d0d0676d}{k}} => \mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2async_8js_a82ca4ee5dd63e58a2bb967077dc8b8fb}{a}}[\mbox{\hyperlink{markdown-it_8min_8js_adc468c70fb574ebd07287b38d0d0676d}{k}}] == \mbox{\hyperlink{markdown-it_8min_8js_aa4026ad5544b958e54ce5e106fa1c805}{b}}[\mbox{\hyperlink{markdown-it_8min_8js_adc468c70fb574ebd07287b38d0d0676d}{k}}]);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+
+
+Registers translation phrases. 
+
+The \href{https://codemirror.net/6/docs/ref/\#state.EditorState.phrase}{\texttt{ {\ttfamily phrase}}} method will look through all objects registered with this facet to find translations for its argument. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a59c52ff081129d0c3d93c3bafdf79c0a}\label{_0dcodemirror_2state_2dist_2index_8js_a59c52ff081129d0c3d93c3bafdf79c0a}} 
+\index{index.js@{index.js}!point@{point}}
+\index{point@{point}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{point}{point}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGutterMarker}{Gutter\+Marker}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} point = false}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_af012aff00752b8be0810a53ae99abbad}\label{_0dcodemirror_2state_2dist_2index_8js_af012aff00752b8be0810a53ae99abbad}} 
+\index{index.js@{index.js}!Prec@{Prec}}
+\index{Prec@{Prec}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{Prec}{Prec}}
+{\footnotesize\ttfamily const Prec}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    highest: \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a1697d75b30ad103104bb8b8cb06cb447}{prec}}(\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7806ab62feeed8145eeebfda88ed467f}{Prec\_}}.highest),}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    high: \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a1697d75b30ad103104bb8b8cb06cb447}{prec}}(\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7806ab62feeed8145eeebfda88ed467f}{Prec\_}}.high),}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{default}: \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a1697d75b30ad103104bb8b8cb06cb447}{prec}}(\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7806ab62feeed8145eeebfda88ed467f}{Prec\_}}.default),}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    low: \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a1697d75b30ad103104bb8b8cb06cb447}{prec}}(\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7806ab62feeed8145eeebfda88ed467f}{Prec\_}}.low),}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    lowest: \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a1697d75b30ad103104bb8b8cb06cb447}{prec}}(\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a7806ab62feeed8145eeebfda88ed467f}{Prec\_}}.lowest)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+By default extensions are registered in the order they are found in the flattened form of nested array that was provided. 
+
+Individual extension values can be assigned a precedence to override this. Extensions that do not have a precedence set get the precedence of the nearest parent with a precedence, or \href{https://codemirror.net/6/docs/ref/\#state.Prec.default}{\texttt{ {\ttfamily default}}} if there is no such parent. The final ordering of extensions is determined by first sorting by precedence and then by order within each precedence. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a7806ab62feeed8145eeebfda88ed467f}\label{_0dcodemirror_2state_2dist_2index_8js_a7806ab62feeed8145eeebfda88ed467f}} 
+\index{index.js@{index.js}!Prec\_@{Prec\_}}
+\index{Prec\_@{Prec\_}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{Prec\_}{Prec\_}}
+{\footnotesize\ttfamily const Prec\+\_\+ = \{ lowest\+: 4, low\+: 3, default\+: 2, high\+: 1, highest\+: 0 \}}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a61de365b7017128cf4db87189ccadf9e}\label{_0dcodemirror_2state_2dist_2index_8js_a61de365b7017128cf4db87189ccadf9e}} 
+\index{index.js@{index.js}!readOnly@{readOnly}}
+\index{readOnly@{readOnly}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{readOnly}{readOnly}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEditorState}{Editor\+State}} read\+Only}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classFacet}{Facet}}.\mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}: \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}} => \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}}.length ? \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}}[0] : \textcolor{keyword}{false}}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+
+
+This facet controls the value of the \href{https://codemirror.net/6/docs/ref/\#state.EditorState.readOnly}{\texttt{ {\ttfamily read\+Only}}} getter, which is consulted by commands and extensions that implement editing functionality to determine whether they should apply. 
+
+It defaults to false, but when its highest-\/precedence value is {\ttfamily true}, such functionality disables itself.
+
+Not to be confused with \href{https://codemirror.net/6/docs/ref/\#view.EditorView^editable}{\texttt{ {\ttfamily Editor\+View.\+editable}}}, which controls whether the editor\textquotesingle{}s D\+OM is set to be editable (and thus focusable). \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_aace72958c50675efb2a962bffc91296e}\label{_0dcodemirror_2state_2dist_2index_8js_aace72958c50675efb2a962bffc91296e}} 
+\index{index.js@{index.js}!reconfigure@{reconfigure}}
+\index{reconfigure@{reconfigure}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reconfigure}{reconfigure}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCompartment}{Compartment}} reconfigure = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()}
+
+
+
+This effect can be used to reconfigure the root extensions of the editor. 
+
+Doing this will discard any extensions \href{https://codemirror.net/6/docs/ref/\#state.StateEffect^appendConfig}{\texttt{ appended}}, but does not reset the content of \href{https://codemirror.net/6/docs/ref/\#state.Compartment.reconfigure}{\texttt{ reconfigured}} compartments. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a73fedf9c5f94daaea5b0c88fa81b3aa1}\label{_0dcodemirror_2state_2dist_2index_8js_a73fedf9c5f94daaea5b0c88fa81b3aa1}} 
+\index{index.js@{index.js}!remote@{remote}}
+\index{remote@{remote}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{remote}{remote}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransaction}{Transaction}} remote = \mbox{\hyperlink{classAnnotation_ae50507c0109a9afd9538801d63a1398d}{Annotation.\+define}}()}
+
+
+
+\mbox{\hyperlink{classAnnotation}{Annotation}} indicating (when present and true) that a transaction represents a change made by some other actor, not the user. 
+
+This is used, for example, to tag other people\textquotesingle{}s changes in collaborative editing. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ab2b45feb79439fb774550178cd8639c8}\label{_0dcodemirror_2state_2dist_2index_8js_ab2b45feb79439fb774550178cd8639c8}} 
+\index{index.js@{index.js}!startSide@{startSide}}
+\index{startSide@{startSide}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{startSide}{startSide}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRangeValue}{Range\+Value}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} start\+Side = Range\+Value.\+prototype.\+end\+Side = 0}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ae0e827532d037c9821e1e025c224879b}\label{_0dcodemirror_2state_2dist_2index_8js_ae0e827532d037c9821e1e025c224879b}} 
+\index{index.js@{index.js}!tabSize@{tabSize}}
+\index{tabSize@{tabSize}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{tabSize}{tabSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEditorState}{Editor\+State}} tab\+Size}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classFacet}{Facet}}.\mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}: \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}} => \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}}.length ? \mbox{\hyperlink{underscore_2cjs_2index_8js_ae935004e8b7eb102b90eaf791a9fe37b}{values}}[0] : 4}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+
+
+Configures the tab size to use in this state. 
+
+The first (highest-\/precedence) value of the facet is used. If no value is given, this defaults to 4. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a0495e5fae82951d2ad94ba578c5c087b}\label{_0dcodemirror_2state_2dist_2index_8js_a0495e5fae82951d2ad94ba578c5c087b}} 
+\index{index.js@{index.js}!time@{time}}
+\index{time@{time}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransaction}{Transaction}} time = \mbox{\hyperlink{classAnnotation_ae50507c0109a9afd9538801d63a1398d}{Annotation.\+define}}()}
+
+
+
+\mbox{\hyperlink{classAnnotation}{Annotation}} used to store transaction timestamps. 
+
+Automatically added to every transaction, holding {\ttfamily Date.\+now()}. \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2debounce_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/debounce.\+js}}.\end{Desc}
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a816a80fd72123fdee871c65c7a83ea0e}\label{_0dcodemirror_2state_2dist_2index_8js_a816a80fd72123fdee871c65c7a83ea0e}} 
+\index{index.js@{index.js}!transactionExtender@{transactionExtender}}
+\index{transactionExtender@{transactionExtender}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{transactionExtender}{transactionExtender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEditorState}{Editor\+State}} transaction\+Extender = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}()}
+
+
+
+This is a more limited form of \href{https://codemirror.net/6/docs/ref/\#state.EditorState^transactionFilter}{\texttt{ {\ttfamily transaction\+Filter}}}, which can only add \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.annotations}{\texttt{ annotations}} and \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.effects}{\texttt{ effects}}. 
+
+{\itshape But}, this type of filter runs even if the transaction has disabled regular \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.filter}{\texttt{ filtering}}, making it suitable for effects that don\textquotesingle{}t need to touch the changes or selection, but do want to process every transaction.
+
+Extenders run {\itshape after} filters, when both are present. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_ae3cb8a91b5ad2cef6ed42b196ae3a9fc}\label{_0dcodemirror_2state_2dist_2index_8js_ae3cb8a91b5ad2cef6ed42b196ae3a9fc}} 
+\index{index.js@{index.js}!transactionFilter@{transactionFilter}}
+\index{transactionFilter@{transactionFilter}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{transactionFilter}{transactionFilter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEditorState}{Editor\+State}} transaction\+Filter = \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{Facet.\+define}}()}
+
+
+
+\mbox{\hyperlink{classFacet}{Facet}} used to register a hook that gets a chance to update or replace transaction specs before they are applied. 
+
+This will only be applied for transactions that don\textquotesingle{}t have \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.filter}{\texttt{ {\ttfamily filter}}} set to {\ttfamily false}. You can either return a single transaction spec (possibly the input transaction), or an array of specs (which will be combined in the same way as the arguments to \href{https://codemirror.net/6/docs/ref/\#state.EditorState.update}{\texttt{ {\ttfamily Editor\+State.\+update}}}).
+
+When possible, it is recommended to avoid accessing \href{https://codemirror.net/6/docs/ref/\#state.Transaction.state}{\texttt{ {\ttfamily Transaction.\+state}}} in a filter, since it will force creation of a state that will then be discarded again, if the transaction is actually filtered.
+
+(This functionality should be used with care. Indiscriminately modifying transaction is likely to break something or degrade the user experience.) \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_abe4cc9788f52e49485473dc699537388}\label{_0dcodemirror_2state_2dist_2index_8js_abe4cc9788f52e49485473dc699537388}} 
+\index{index.js@{index.js}!try@{try}}
+\index{try@{try}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily try}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a4f397f0e05c101f760d50be65e907b79}{wordChar}} = \textcolor{keyword}{new} RegExp(\textcolor{stringliteral}{"[\(\backslash\)\(\backslash\)p\{Alphabetic\}\(\backslash\)\(\backslash\)p\{Number\}\_]"}, \textcolor{stringliteral}{"u"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a0fa7410f2d63e36675f02b05a18fa1a3}\label{_0dcodemirror_2state_2dist_2index_8js_a0fa7410f2d63e36675f02b05a18fa1a3}} 
+\index{index.js@{index.js}!userEvent@{userEvent}}
+\index{userEvent@{userEvent}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{userEvent}{userEvent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransaction}{Transaction}} user\+Event = \mbox{\hyperlink{classAnnotation_ae50507c0109a9afd9538801d63a1398d}{Annotation.\+define}}()}
+
+
+
+\mbox{\hyperlink{classAnnotation}{Annotation}} used to associate a transaction with a user interface event. 
+
+Holds a string identifying the event, using a dot-\/separated format to support attaching more specific information. The events used by the core libraries are\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \char`\"{}input\char`\"{}} when content is entered
+\begin{DoxyItemize}
+\item {\ttfamily \char`\"{}input.\+type\char`\"{}} for typed input
+\begin{DoxyItemize}
+\item {\ttfamily \char`\"{}input.\+type.\+compose\char`\"{}} for composition
+\end{DoxyItemize}
+\item {\ttfamily \char`\"{}input.\+paste\char`\"{}} for pasted input
+\item {\ttfamily \char`\"{}input.\+drop\char`\"{}} when adding content with drag-\/and-\/drop
+\item {\ttfamily \char`\"{}input.\+complete\char`\"{}} when autocompleting
+\end{DoxyItemize}
+\item {\ttfamily \char`\"{}delete\char`\"{}} when the user deletes content
+\begin{DoxyItemize}
+\item {\ttfamily \char`\"{}delete.\+selection\char`\"{}} when deleting the selection
+\item {\ttfamily \char`\"{}delete.\+forward\char`\"{}} when deleting forward from the selection
+\item {\ttfamily \char`\"{}delete.\+backward\char`\"{}} when deleting backward from the selection
+\item {\ttfamily \char`\"{}delete.\+cut\char`\"{}} when cutting to the clipboard
+\end{DoxyItemize}
+\item {\ttfamily \char`\"{}move\char`\"{}} when content is moved
+\begin{DoxyItemize}
+\item {\ttfamily \char`\"{}move.\+drop\char`\"{}} when content is moved within the editor through drag-\/and-\/drop
+\end{DoxyItemize}
+\item {\ttfamily \char`\"{}select\char`\"{}} when explicitly changing the selection
+\begin{DoxyItemize}
+\item {\ttfamily \char`\"{}select.\+pointer\char`\"{}} when selecting with a mouse or other pointing device
+\end{DoxyItemize}
+\item {\ttfamily \char`\"{}undo\char`\"{}} and {\ttfamily \char`\"{}redo\char`\"{}} for history actions
+\end{DoxyItemize}
+
+Use \href{https://codemirror.net/6/docs/ref/\#state.Transaction.isUserEvent}{\texttt{ {\ttfamily is\+User\+Event}}} to check whether the annotation matches a given event. \mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_a4f397f0e05c101f760d50be65e907b79}\label{_0dcodemirror_2state_2dist_2index_8js_a4f397f0e05c101f760d50be65e907b79}} 
+\index{index.js@{index.js}!wordChar@{wordChar}}
+\index{wordChar@{wordChar}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{wordChar}{wordChar}}
+{\footnotesize\ttfamily let word\+Char}
+
+\mbox{\Hypertarget{_0dcodemirror_2state_2dist_2index_8js_af2100a65f0682a21b5f012e820fb9fa4}\label{_0dcodemirror_2state_2dist_2index_8js_af2100a65f0682a21b5f012e820fb9fa4}} 
+\index{index.js@{index.js}!ZWJ@{ZWJ}}
+\index{ZWJ@{ZWJ}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ZWJ}{ZWJ}}
+{\footnotesize\ttfamily const Z\+WJ = 0x200d}
+

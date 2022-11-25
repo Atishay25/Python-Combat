@@ -1,0 +1,55 @@
+\hypertarget{normalize_8js}{}\doxysection{node\+\_\+modules/markdown-\/it/lib/rules\+\_\+core/normalize.js File Reference}
+\label{normalize_8js}\index{node\_modules/markdown-\/it/lib/rules\_core/normalize.js@{node\_modules/markdown-\/it/lib/rules\_core/normalize.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{normalize_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{normalize_8js_a955191a3d44a9bd8d5cdc992fbcee027}{N\+E\+W\+L\+I\+N\+E\+S\+\_\+\+RE}} = /\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{r\textbackslash{}n}}?$\vert$\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}
+\item 
+var \mbox{\hyperlink{normalize_8js_a3e3d6837492089953b24cc310321a227}{N\+U\+L\+L\+\_\+\+RE}} = /\textbackslash{}0/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{normalize_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{normalize_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{normalize_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{normalize.js@{normalize.js}!exports@{exports}}
+\index{exports@{exports}!normalize.js@{normalize.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{dist_2markdown-it_8js_a3b5c06243bf1ed0dfd819f819c046ab6}{normalize}}(\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}) \{}
+\DoxyCodeLine{  var \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}} = \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.src.replace(\mbox{\hyperlink{normalize_8js_a955191a3d44a9bd8d5cdc992fbcee027}{NEWLINES\_RE}}, \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}} = \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}.replace(\mbox{\hyperlink{normalize_8js_a3e3d6837492089953b24cc310321a227}{NULL\_RE}}, \textcolor{stringliteral}{'\(\backslash\)uFFFD'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.src = \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{normalize_8js_a955191a3d44a9bd8d5cdc992fbcee027}\label{normalize_8js_a955191a3d44a9bd8d5cdc992fbcee027}} 
+\index{normalize.js@{normalize.js}!NEWLINES\_RE@{NEWLINES\_RE}}
+\index{NEWLINES\_RE@{NEWLINES\_RE}!normalize.js@{normalize.js}}
+\doxysubsubsection{\texorpdfstring{NEWLINES\_RE}{NEWLINES\_RE}}
+{\footnotesize\ttfamily var N\+E\+W\+L\+I\+N\+E\+S\+\_\+\+RE = /\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{r\textbackslash{}n}}?$\vert$\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}}
+
+\mbox{\Hypertarget{normalize_8js_a3e3d6837492089953b24cc310321a227}\label{normalize_8js_a3e3d6837492089953b24cc310321a227}} 
+\index{normalize.js@{normalize.js}!NULL\_RE@{NULL\_RE}}
+\index{NULL\_RE@{NULL\_RE}!normalize.js@{normalize.js}}
+\doxysubsubsection{\texorpdfstring{NULL\_RE}{NULL\_RE}}
+{\footnotesize\ttfamily var N\+U\+L\+L\+\_\+\+RE = /\textbackslash{}0/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}}
+
+\mbox{\Hypertarget{normalize_8js_ae2475e10618961c050dcba04e8c42331}\label{normalize_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{normalize.js@{normalize.js}!strict@{strict}}
+\index{strict@{strict}!normalize.js@{normalize.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+

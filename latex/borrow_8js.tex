@@ -1,0 +1,66 @@
+\hypertarget{borrow_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/borrow.js File Reference}
+\label{borrow_8js}\index{node\_modules/jsdoc/lib/jsdoc/borrow.js@{node\_modules/jsdoc/lib/jsdoc/borrow.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{borrow_8js_adddc6698195213f3c91d2934a3078c85}{clone\+Borrowed\+Doclets}} (\{borrowed, longname\}, doclets)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{borrow_8js_a13f65f2f8b7af67764958f9ca1765cf1}{doop}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/doop\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em A collection of functions relating to resolving @borrows tags in J\+S\+Doc symbols. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{borrow_8js_a98a1ffb09ff8784af7b767bd0d76204c}{S\+C\+O\+PE}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}}\textquotesingle{}).S\+C\+O\+PE
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{borrow_8js_a82d4e37ab35160bfb7d3588191d55345}{resolve\+Borrows}}
+\begin{DoxyCompactList}\small\item\em Take a copy of the docs for borrowed symbols and attach them to the docs for the borrowing symbol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{borrow_8js_adddc6698195213f3c91d2934a3078c85}\label{borrow_8js_adddc6698195213f3c91d2934a3078c85}} 
+\index{borrow.js@{borrow.js}!cloneBorrowedDoclets@{cloneBorrowedDoclets}}
+\index{cloneBorrowedDoclets@{cloneBorrowedDoclets}!borrow.js@{borrow.js}}
+\doxysubsubsection{\texorpdfstring{cloneBorrowedDoclets()}{cloneBorrowedDoclets()}}
+{\footnotesize\ttfamily function clone\+Borrowed\+Doclets (\begin{DoxyParamCaption}\item[{}]{\{borrowed, longname\},  }\item[{}]{doclets }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{borrow_8js_a13f65f2f8b7af67764958f9ca1765cf1}\label{borrow_8js_a13f65f2f8b7af67764958f9ca1765cf1}} 
+\index{borrow.js@{borrow.js}!doop@{doop}}
+\index{doop@{doop}!borrow.js@{borrow.js}}
+\doxysubsubsection{\texorpdfstring{doop}{doop}}
+{\footnotesize\ttfamily const doop = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/doop\textquotesingle{})}
+
+
+
+A collection of functions relating to resolving @borrows tags in J\+S\+Doc symbols. 
+
+@module jsdoc/borrow \mbox{\Hypertarget{borrow_8js_a82d4e37ab35160bfb7d3588191d55345}\label{borrow_8js_a82d4e37ab35160bfb7d3588191d55345}} 
+\index{borrow.js@{borrow.js}!resolveBorrows@{resolveBorrows}}
+\index{resolveBorrows@{resolveBorrows}!borrow.js@{borrow.js}}
+\doxysubsubsection{\texorpdfstring{resolveBorrows}{resolveBorrows}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} resolve\+Borrows}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= doclets => \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (let doclet of doclets.index.borrowed) \{}
+\DoxyCodeLine{        \mbox{\hyperlink{borrow_8js_adddc6698195213f3c91d2934a3078c85}{cloneBorrowedDoclets}}(doclet, doclets);}
+\DoxyCodeLine{        \textcolor{keyword}{delete} doclet.borrowed;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    doclets.index.borrowed = [];}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Take a copy of the docs for borrowed symbols and attach them to the docs for the borrowing symbol. 
+
+This process changes the symbols involved, moving docs from the \char`\"{}borrowed\char`\"{} array and into the general docs, then deleting the \char`\"{}borrowed\char`\"{} array. \mbox{\Hypertarget{borrow_8js_a98a1ffb09ff8784af7b767bd0d76204c}\label{borrow_8js_a98a1ffb09ff8784af7b767bd0d76204c}} 
+\index{borrow.js@{borrow.js}!SCOPE@{SCOPE}}
+\index{SCOPE@{SCOPE}!borrow.js@{borrow.js}}
+\doxysubsubsection{\texorpdfstring{SCOPE}{SCOPE}}
+{\footnotesize\ttfamily const S\+C\+O\+PE = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}}\textquotesingle{}).S\+C\+O\+PE}
+

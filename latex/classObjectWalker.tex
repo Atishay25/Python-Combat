@@ -1,7 +1,85 @@
 \hypertarget{classObjectWalker}{}\doxysection{Object\+Walker Class Reference}
 \label{classObjectWalker}\index{ObjectWalker@{ObjectWalker}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classObjectWalker_a67a96eb9ff6cb7234eb47ec091e08dd2}{constructor}} ()
+\item 
+\mbox{\hyperlink{classObjectWalker_ab91b819015949c9fad6850e3486cd1d0}{seen}} (\mbox{\hyperlink{underscore-esm-min_8js_a943d8486390292c169e81c23653a2d50}{object}})
+\item 
+\mbox{\hyperlink{classObjectWalker_aa9bbac69bf8dbf2d9ff4f33915697af9}{mark\+As\+Seen}} (\mbox{\hyperlink{underscore-esm-min_8js_a943d8486390292c169e81c23653a2d50}{object}})
+\item 
+\mbox{\hyperlink{classObjectWalker_ada38cdd826cb3cc66a29f86133423ba2}{remove\+Seen\+Flag}} (obj)
+\item 
+\mbox{\hyperlink{classObjectWalker_a343e9931b52475a142bed7a8473e7854}{is\+Unwalkable}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}})
+\item 
+\mbox{\hyperlink{classObjectWalker_a5088620d2b0bf2ff0a627481ef9c4028}{is\+Function}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}})
+\item 
+\mbox{\hyperlink{classObjectWalker_a37a2dcf86ff12c42bea511f331f1c9ad}{is\+Object}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}})
+\item 
+\mbox{\hyperlink{classObjectWalker_aa1f0b2c4d1409138a994cef3737b8dfe}{check\+Circular\+Refs}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}}, \mbox{\hyperlink{fp_2zipWith_8js_a1ba8e806628b2f512d93819d64d86db9}{func}})
+\item 
+\mbox{\hyperlink{classObjectWalker_a52b520a0021b3535fed3e167484c2295}{walk}} (\mbox{\hyperlink{markdownItAnchor_8umd_8js_ae64b81d227ca59199ed408b43ab1b6d3}{o}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classObjectWalker_aa1f0b2c4d1409138a994cef3737b8dfe}\label{classObjectWalker_aa1f0b2c4d1409138a994cef3737b8dfe}} 
+\index{ObjectWalker@{ObjectWalker}!checkCircularRefs@{checkCircularRefs}}
+\index{checkCircularRefs@{checkCircularRefs}!ObjectWalker@{ObjectWalker}}
+\doxysubsubsection{\texorpdfstring{checkCircularRefs()}{checkCircularRefs()}}
+{\footnotesize\ttfamily Object\+Walker\+::check\+Circular\+Refs (\begin{DoxyParamCaption}\item[{}]{o,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObjectWalker_a67a96eb9ff6cb7234eb47ec091e08dd2}\label{classObjectWalker_a67a96eb9ff6cb7234eb47ec091e08dd2}} 
+\index{ObjectWalker@{ObjectWalker}!constructor@{constructor}}
+\index{constructor@{constructor}!ObjectWalker@{ObjectWalker}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Object\+Walker\+::constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObjectWalker_a5088620d2b0bf2ff0a627481ef9c4028}\label{classObjectWalker_a5088620d2b0bf2ff0a627481ef9c4028}} 
+\index{ObjectWalker@{ObjectWalker}!isFunction@{isFunction}}
+\index{isFunction@{isFunction}!ObjectWalker@{ObjectWalker}}
+\doxysubsubsection{\texorpdfstring{isFunction()}{isFunction()}}
+{\footnotesize\ttfamily Object\+Walker\+::is\+Function (\begin{DoxyParamCaption}\item[{}]{o }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObjectWalker_a37a2dcf86ff12c42bea511f331f1c9ad}\label{classObjectWalker_a37a2dcf86ff12c42bea511f331f1c9ad}} 
+\index{ObjectWalker@{ObjectWalker}!isObject@{isObject}}
+\index{isObject@{isObject}!ObjectWalker@{ObjectWalker}}
+\doxysubsubsection{\texorpdfstring{isObject()}{isObject()}}
+{\footnotesize\ttfamily Object\+Walker\+::is\+Object (\begin{DoxyParamCaption}\item[{}]{o }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObjectWalker_a343e9931b52475a142bed7a8473e7854}\label{classObjectWalker_a343e9931b52475a142bed7a8473e7854}} 
+\index{ObjectWalker@{ObjectWalker}!isUnwalkable@{isUnwalkable}}
+\index{isUnwalkable@{isUnwalkable}!ObjectWalker@{ObjectWalker}}
+\doxysubsubsection{\texorpdfstring{isUnwalkable()}{isUnwalkable()}}
+{\footnotesize\ttfamily Object\+Walker\+::is\+Unwalkable (\begin{DoxyParamCaption}\item[{}]{o }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObjectWalker_aa9bbac69bf8dbf2d9ff4f33915697af9}\label{classObjectWalker_aa9bbac69bf8dbf2d9ff4f33915697af9}} 
+\index{ObjectWalker@{ObjectWalker}!markAsSeen@{markAsSeen}}
+\index{markAsSeen@{markAsSeen}!ObjectWalker@{ObjectWalker}}
+\doxysubsubsection{\texorpdfstring{markAsSeen()}{markAsSeen()}}
+{\footnotesize\ttfamily Object\+Walker\+::mark\+As\+Seen (\begin{DoxyParamCaption}\item[{}]{object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObjectWalker_ada38cdd826cb3cc66a29f86133423ba2}\label{classObjectWalker_ada38cdd826cb3cc66a29f86133423ba2}} 
+\index{ObjectWalker@{ObjectWalker}!removeSeenFlag@{removeSeenFlag}}
+\index{removeSeenFlag@{removeSeenFlag}!ObjectWalker@{ObjectWalker}}
+\doxysubsubsection{\texorpdfstring{removeSeenFlag()}{removeSeenFlag()}}
+{\footnotesize\ttfamily Object\+Walker\+::remove\+Seen\+Flag (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObjectWalker_ab91b819015949c9fad6850e3486cd1d0}\label{classObjectWalker_ab91b819015949c9fad6850e3486cd1d0}} 
+\index{ObjectWalker@{ObjectWalker}!seen@{seen}}
+\index{seen@{seen}!ObjectWalker@{ObjectWalker}}
+\doxysubsubsection{\texorpdfstring{seen()}{seen()}}
+{\footnotesize\ttfamily Object\+Walker\+::seen (\begin{DoxyParamCaption}\item[{}]{object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObjectWalker_a52b520a0021b3535fed3e167484c2295}\label{classObjectWalker_a52b520a0021b3535fed3e167484c2295}} 
+\index{ObjectWalker@{ObjectWalker}!walk@{walk}}
+\index{walk@{walk}!ObjectWalker@{ObjectWalker}}
+\doxysubsubsection{\texorpdfstring{walk()}{walk()}}
+{\footnotesize\ttfamily Object\+Walker\+::walk (\begin{DoxyParamCaption}\item[{}]{o }\end{DoxyParamCaption})}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-node\+\_\+modules/jsdoc/lib/jsdoc/util/dumper.\+js\end{DoxyCompactItemize}
+node\+\_\+modules/jsdoc/lib/jsdoc/util/\mbox{\hyperlink{dumper_8js}{dumper.\+js}}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\hypertarget{__updateWrapDetails_8js}{}\doxysection{node\+\_\+modules/lodash/\+\_\+update\+Wrap\+Details.js File Reference}
+\label{__updateWrapDetails_8js}\index{node\_modules/lodash/\_updateWrapDetails.js@{node\_modules/lodash/\_updateWrapDetails.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__updateWrapDetails_8js_a7835df7edc03e38e7c859b510fedf3e7}{update\+Wrap\+Details}} (details, bitmask)
+\begin{DoxyCompactList}\small\item\em Updates wrapper {\ttfamily details} based on {\ttfamily bitmask} flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_ad6238f819b3842b2ecc922c4eea45f08}{array\+Each}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+array\+Each\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_a2e2665f5f9664325f1d979c2a9236094}{array\+Includes}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+array\+Includes\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_ab98eb5e7eed254945468646b5f58dd7b}{W\+R\+A\+P\+\_\+\+B\+I\+N\+D\+\_\+\+F\+L\+AG}} = 1
+\begin{DoxyCompactList}\small\item\em Used to compose bitmasks for function metadata. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_a259833d85de00fb18f81f28827ad5805}{W\+R\+A\+P\+\_\+\+B\+I\+N\+D\+\_\+\+K\+E\+Y\+\_\+\+F\+L\+AG}} = 2
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_a350fa23c4209353fbb29a8377a4c864b}{W\+R\+A\+P\+\_\+\+C\+U\+R\+R\+Y\+\_\+\+F\+L\+AG}} = 8
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_a23c7af293d7d27fac2d71b1f3110ff23}{W\+R\+A\+P\+\_\+\+C\+U\+R\+R\+Y\+\_\+\+R\+I\+G\+H\+T\+\_\+\+F\+L\+AG}} = 16
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}{W\+R\+A\+P\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+AG}} = 32
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_aee953a3ff9c04ce2b1ebba4060551599}{W\+R\+A\+P\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+R\+I\+G\+H\+T\+\_\+\+F\+L\+AG}} = 64
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_a0185dc8955e27f0944206348b9221caa}{W\+R\+A\+P\+\_\+\+A\+R\+Y\+\_\+\+F\+L\+AG}} = 128
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_a74cfa1901d15e8c1c445badf4c1d4216}{W\+R\+A\+P\+\_\+\+R\+E\+A\+R\+G\+\_\+\+F\+L\+AG}} = 256
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_a5699f088d33f2459e9400e562620308d}{W\+R\+A\+P\+\_\+\+F\+L\+I\+P\+\_\+\+F\+L\+AG}} = 512
+\item 
+var \mbox{\hyperlink{__updateWrapDetails_8js_adee35caa6a1e4a7c5e0f6d616ef2fd35}{wrap\+Flags}}
+\begin{DoxyCompactList}\small\item\em Used to associate wrap methods with their bit flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__updateWrapDetails_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__updateWrapDetails_8js_a7835df7edc03e38e7c859b510fedf3e7}{update\+Wrap\+Details}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__updateWrapDetails_8js_a7835df7edc03e38e7c859b510fedf3e7}\label{__updateWrapDetails_8js_a7835df7edc03e38e7c859b510fedf3e7}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!updateWrapDetails@{updateWrapDetails}}
+\index{updateWrapDetails@{updateWrapDetails}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{updateWrapDetails()}{updateWrapDetails()}}
+{\footnotesize\ttfamily function update\+Wrap\+Details (\begin{DoxyParamCaption}\item[{}]{details,  }\item[{}]{bitmask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates wrapper {\ttfamily details} based on {\ttfamily bitmask} flags. 
+
+\begin{DoxyReturn}{Returns}
+\{Array\} details The details to modify. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & bitmask The bitmask flags. See {\ttfamily create\+Wrap} for more details. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns {\ttfamily details}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__updateWrapDetails_8js_ad6238f819b3842b2ecc922c4eea45f08}\label{__updateWrapDetails_8js_ad6238f819b3842b2ecc922c4eea45f08}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!arrayEach@{arrayEach}}
+\index{arrayEach@{arrayEach}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{arrayEach}{arrayEach}}
+{\footnotesize\ttfamily var array\+Each = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+array\+Each\textquotesingle{})}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_a2e2665f5f9664325f1d979c2a9236094}\label{__updateWrapDetails_8js_a2e2665f5f9664325f1d979c2a9236094}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!arrayIncludes@{arrayIncludes}}
+\index{arrayIncludes@{arrayIncludes}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{arrayIncludes}{arrayIncludes}}
+{\footnotesize\ttfamily var array\+Includes = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+array\+Includes\textquotesingle{})}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{__updateWrapDetails_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!exports@{exports}}
+\index{exports@{exports}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__updateWrapDetails_8js_a7835df7edc03e38e7c859b510fedf3e7}{update\+Wrap\+Details}}}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_a0185dc8955e27f0944206348b9221caa}\label{__updateWrapDetails_8js_a0185dc8955e27f0944206348b9221caa}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!WRAP\_ARY\_FLAG@{WRAP\_ARY\_FLAG}}
+\index{WRAP\_ARY\_FLAG@{WRAP\_ARY\_FLAG}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_ARY\_FLAG}{WRAP\_ARY\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+A\+R\+Y\+\_\+\+F\+L\+AG = 128}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_ab98eb5e7eed254945468646b5f58dd7b}\label{__updateWrapDetails_8js_ab98eb5e7eed254945468646b5f58dd7b}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!WRAP\_BIND\_FLAG@{WRAP\_BIND\_FLAG}}
+\index{WRAP\_BIND\_FLAG@{WRAP\_BIND\_FLAG}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_BIND\_FLAG}{WRAP\_BIND\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+B\+I\+N\+D\+\_\+\+F\+L\+AG = 1}
+
+
+
+Used to compose bitmasks for function metadata. 
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_a259833d85de00fb18f81f28827ad5805}\label{__updateWrapDetails_8js_a259833d85de00fb18f81f28827ad5805}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!WRAP\_BIND\_KEY\_FLAG@{WRAP\_BIND\_KEY\_FLAG}}
+\index{WRAP\_BIND\_KEY\_FLAG@{WRAP\_BIND\_KEY\_FLAG}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_BIND\_KEY\_FLAG}{WRAP\_BIND\_KEY\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+B\+I\+N\+D\+\_\+\+K\+E\+Y\+\_\+\+F\+L\+AG = 2}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_a350fa23c4209353fbb29a8377a4c864b}\label{__updateWrapDetails_8js_a350fa23c4209353fbb29a8377a4c864b}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!WRAP\_CURRY\_FLAG@{WRAP\_CURRY\_FLAG}}
+\index{WRAP\_CURRY\_FLAG@{WRAP\_CURRY\_FLAG}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_CURRY\_FLAG}{WRAP\_CURRY\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+C\+U\+R\+R\+Y\+\_\+\+F\+L\+AG = 8}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_a23c7af293d7d27fac2d71b1f3110ff23}\label{__updateWrapDetails_8js_a23c7af293d7d27fac2d71b1f3110ff23}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!WRAP\_CURRY\_RIGHT\_FLAG@{WRAP\_CURRY\_RIGHT\_FLAG}}
+\index{WRAP\_CURRY\_RIGHT\_FLAG@{WRAP\_CURRY\_RIGHT\_FLAG}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_CURRY\_RIGHT\_FLAG}{WRAP\_CURRY\_RIGHT\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+C\+U\+R\+R\+Y\+\_\+\+R\+I\+G\+H\+T\+\_\+\+F\+L\+AG = 16}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_a5699f088d33f2459e9400e562620308d}\label{__updateWrapDetails_8js_a5699f088d33f2459e9400e562620308d}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!WRAP\_FLIP\_FLAG@{WRAP\_FLIP\_FLAG}}
+\index{WRAP\_FLIP\_FLAG@{WRAP\_FLIP\_FLAG}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_FLIP\_FLAG}{WRAP\_FLIP\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+F\+L\+I\+P\+\_\+\+F\+L\+AG = 512}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}\label{__updateWrapDetails_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!WRAP\_PARTIAL\_FLAG@{WRAP\_PARTIAL\_FLAG}}
+\index{WRAP\_PARTIAL\_FLAG@{WRAP\_PARTIAL\_FLAG}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_PARTIAL\_FLAG}{WRAP\_PARTIAL\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+AG = 32}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_aee953a3ff9c04ce2b1ebba4060551599}\label{__updateWrapDetails_8js_aee953a3ff9c04ce2b1ebba4060551599}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!WRAP\_PARTIAL\_RIGHT\_FLAG@{WRAP\_PARTIAL\_RIGHT\_FLAG}}
+\index{WRAP\_PARTIAL\_RIGHT\_FLAG@{WRAP\_PARTIAL\_RIGHT\_FLAG}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_PARTIAL\_RIGHT\_FLAG}{WRAP\_PARTIAL\_RIGHT\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+R\+I\+G\+H\+T\+\_\+\+F\+L\+AG = 64}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_a74cfa1901d15e8c1c445badf4c1d4216}\label{__updateWrapDetails_8js_a74cfa1901d15e8c1c445badf4c1d4216}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!WRAP\_REARG\_FLAG@{WRAP\_REARG\_FLAG}}
+\index{WRAP\_REARG\_FLAG@{WRAP\_REARG\_FLAG}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_REARG\_FLAG}{WRAP\_REARG\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+R\+E\+A\+R\+G\+\_\+\+F\+L\+AG = 256}
+
+\mbox{\Hypertarget{__updateWrapDetails_8js_adee35caa6a1e4a7c5e0f6d616ef2fd35}\label{__updateWrapDetails_8js_adee35caa6a1e4a7c5e0f6d616ef2fd35}} 
+\index{\_updateWrapDetails.js@{\_updateWrapDetails.js}!wrapFlags@{wrapFlags}}
+\index{wrapFlags@{wrapFlags}!\_updateWrapDetails.js@{\_updateWrapDetails.js}}
+\doxysubsubsection{\texorpdfstring{wrapFlags}{wrapFlags}}
+{\footnotesize\ttfamily var wrap\+Flags}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{  [\textcolor{stringliteral}{'ary'}, \mbox{\hyperlink{__updateWrapDetails_8js_a0185dc8955e27f0944206348b9221caa}{WRAP\_ARY\_FLAG}}],}
+\DoxyCodeLine{  [\textcolor{stringliteral}{'bind'}, \mbox{\hyperlink{__updateWrapDetails_8js_ab98eb5e7eed254945468646b5f58dd7b}{WRAP\_BIND\_FLAG}}],}
+\DoxyCodeLine{  [\textcolor{stringliteral}{'bindKey'}, \mbox{\hyperlink{__updateWrapDetails_8js_a259833d85de00fb18f81f28827ad5805}{WRAP\_BIND\_KEY\_FLAG}}],}
+\DoxyCodeLine{  [\textcolor{stringliteral}{'curry'}, \mbox{\hyperlink{__updateWrapDetails_8js_a350fa23c4209353fbb29a8377a4c864b}{WRAP\_CURRY\_FLAG}}],}
+\DoxyCodeLine{  [\textcolor{stringliteral}{'curryRight'}, \mbox{\hyperlink{__updateWrapDetails_8js_a23c7af293d7d27fac2d71b1f3110ff23}{WRAP\_CURRY\_RIGHT\_FLAG}}],}
+\DoxyCodeLine{  [\textcolor{stringliteral}{'flip'}, \mbox{\hyperlink{__updateWrapDetails_8js_a5699f088d33f2459e9400e562620308d}{WRAP\_FLIP\_FLAG}}],}
+\DoxyCodeLine{  [\textcolor{stringliteral}{'partial'}, \mbox{\hyperlink{__updateWrapDetails_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}{WRAP\_PARTIAL\_FLAG}}],}
+\DoxyCodeLine{  [\textcolor{stringliteral}{'partialRight'}, \mbox{\hyperlink{__updateWrapDetails_8js_aee953a3ff9c04ce2b1ebba4060551599}{WRAP\_PARTIAL\_RIGHT\_FLAG}}],}
+\DoxyCodeLine{  [\textcolor{stringliteral}{'rearg'}, \mbox{\hyperlink{__updateWrapDetails_8js_a74cfa1901d15e8c1c445badf4c1d4216}{WRAP\_REARG\_FLAG}}]}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+
+
+Used to associate wrap methods with their bit flags. 
+

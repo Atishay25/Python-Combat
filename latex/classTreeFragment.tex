@@ -1,0 +1,97 @@
+\hypertarget{classTreeFragment}{}\doxysection{Tree\+Fragment Class Reference}
+\label{classTreeFragment}\index{TreeFragment@{TreeFragment}}
+
+
+\mbox{\hyperlink{classTree}{Tree}} fragments are used during \href{\#common.Parser.startParse}{\texttt{ incremental parsing}} to track parts of old trees that can be reused in a new parse.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTreeFragment_aaf3ac394f5f1ff5671a060b10656a7fe}{constructor}} (from, to, tree, offset, \mbox{\hyperlink{classTreeFragment_ac912170b10ff4281fe9fec42c34af345}{open\+Start}}=false, \mbox{\hyperlink{classTreeFragment_a0351a69fb0d79f4048044a58068fe5db}{open\+End}}=false)
+\begin{DoxyCompactList}\small\item\em Construct a tree fragment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classTreeFragment_ac912170b10ff4281fe9fec42c34af345}{open\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Whether the start of the fragment represents the start of a parse, or the end of a change. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classTreeFragment_a0351a69fb0d79f4048044a58068fe5db}{open\+End}} ()
+\begin{DoxyCompactList}\small\item\em Whether the end of the fragment represents the end of a full-\/document parse, or the start of a change. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTreeFragment_a277e66e789cb54443b089f77e47a92be}{add\+Tree}} (tree, fragments=\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{underscore_2modules_2once_8js_a65e24e7410fa168396ea35e9044a2819}{partial}}=false)
+\begin{DoxyCompactList}\small\item\em Create a set of fragments from a freshly parsed tree, or update an existing set of fragments by replacing the ones that overlap with a tree with content from the new tree. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classTreeFragment_a8ba0447e1b206ea9bf812891d6be16d6}{apply\+Changes}} (fragments, changes, min\+Gap=128)
+\begin{DoxyCompactList}\small\item\em Apply a set of edits to an array of fragments, removing or splitting fragments as necessary to remove edited ranges, and adjusting offsets for fragments that moved. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classTree}{Tree}} fragments are used during \href{\#common.Parser.startParse}{\texttt{ incremental parsing}} to track parts of old trees that can be reused in a new parse. 
+
+An array of fragments is used to track regions of an old tree whose nodes might be reused in new parses. Use the static \href{\#common.TreeFragment^applyChanges}{\texttt{ {\ttfamily apply\+Changes}}} method to update fragments for document changes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTreeFragment_a277e66e789cb54443b089f77e47a92be}\label{classTreeFragment_a277e66e789cb54443b089f77e47a92be}} 
+\index{TreeFragment@{TreeFragment}!addTree@{addTree}}
+\index{addTree@{addTree}!TreeFragment@{TreeFragment}}
+\doxysubsubsection{\texorpdfstring{addTree()}{addTree()}}
+{\footnotesize\ttfamily static Tree\+Fragment\+::add\+Tree (\begin{DoxyParamCaption}\item[{}]{tree,  }\item[{}]{fragments = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{partial = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a set of fragments from a freshly parsed tree, or update an existing set of fragments by replacing the ones that overlap with a tree with content from the new tree. 
+
+When {\ttfamily partial} is true, the parse is treated as incomplete, and the resulting fragment has \href{\#common.TreeFragment.openEnd}{\texttt{ {\ttfamily open\+End}}} set to true. \mbox{\Hypertarget{classTreeFragment_a8ba0447e1b206ea9bf812891d6be16d6}\label{classTreeFragment_a8ba0447e1b206ea9bf812891d6be16d6}} 
+\index{TreeFragment@{TreeFragment}!applyChanges@{applyChanges}}
+\index{applyChanges@{applyChanges}!TreeFragment@{TreeFragment}}
+\doxysubsubsection{\texorpdfstring{applyChanges()}{applyChanges()}}
+{\footnotesize\ttfamily static Tree\+Fragment\+::apply\+Changes (\begin{DoxyParamCaption}\item[{}]{fragments,  }\item[{}]{changes,  }\item[{}]{min\+Gap = {\ttfamily 128} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apply a set of edits to an array of fragments, removing or splitting fragments as necessary to remove edited ranges, and adjusting offsets for fragments that moved. 
+
+\mbox{\Hypertarget{classTreeFragment_aaf3ac394f5f1ff5671a060b10656a7fe}\label{classTreeFragment_aaf3ac394f5f1ff5671a060b10656a7fe}} 
+\index{TreeFragment@{TreeFragment}!constructor@{constructor}}
+\index{constructor@{constructor}!TreeFragment@{TreeFragment}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Tree\+Fragment\+::constructor (\begin{DoxyParamCaption}\item[{}]{from,  }\item[{}]{to,  }\item[{}]{tree,  }\item[{}]{offset,  }\item[{}]{open\+Start = {\ttfamily false},  }\item[{}]{open\+End = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Construct a tree fragment. 
+
+You\textquotesingle{}ll usually want to use \href{\#common.TreeFragment^addTree}{\texttt{ {\ttfamily add\+Tree}}} and \href{\#common.TreeFragment^applyChanges}{\texttt{ {\ttfamily apply\+Changes}}} instead of calling this directly. 
+\begin{DoxyParams}{Parameters}
+{\em from} & The start of the unchanged range pointed to by this fragment. This refers to an offset in the \+\_\+updated\+\_\+ document (as opposed to the original tree). \\
+\hline
+{\em to} & The end of the unchanged range. \\
+\hline
+{\em tree} & The tree that this fragment is based on. \\
+\hline
+{\em offset} & The offset between the fragment\textquotesingle{}s tree and the document that this fragment can be used against. Add this when going from document to tree positions, subtract it to go from tree to document positions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTreeFragment_a0351a69fb0d79f4048044a58068fe5db}\label{classTreeFragment_a0351a69fb0d79f4048044a58068fe5db}} 
+\index{TreeFragment@{TreeFragment}!openEnd@{openEnd}}
+\index{openEnd@{openEnd}!TreeFragment@{TreeFragment}}
+\doxysubsubsection{\texorpdfstring{openEnd()}{openEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Tree\+Fragment\+::open\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Whether the end of the fragment represents the end of a full-\/document parse, or the start of a change. 
+
+\mbox{\Hypertarget{classTreeFragment_ac912170b10ff4281fe9fec42c34af345}\label{classTreeFragment_ac912170b10ff4281fe9fec42c34af345}} 
+\index{TreeFragment@{TreeFragment}!openStart@{openStart}}
+\index{openStart@{openStart}!TreeFragment@{TreeFragment}}
+\doxysubsubsection{\texorpdfstring{openStart()}{openStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Tree\+Fragment\+::open\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Whether the start of the fragment represents the start of a parse, or the end of a change. 
+
+(In the second case, it may not be safe to reuse some nodes at the start, depending on the parsing algorithm.) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@lezer/common/dist/\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

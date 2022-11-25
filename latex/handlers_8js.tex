@@ -1,0 +1,206 @@
+\hypertarget{handlers_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/src/handlers.js File Reference}
+\label{handlers_8js}\index{node\_modules/jsdoc/lib/jsdoc/src/handlers.js@{node\_modules/jsdoc/lib/jsdoc/src/handlers.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCurrentModule}{Current\+Module}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{handlers_8js_ac44473e158366bf6037de322b3c345f3}{filter\+By\+Longname}} (\{longname\})
+\item 
+function \mbox{\hyperlink{handlers_8js_aeef4472f23140ec3f24da66749ebdaa4}{create\+Doclet}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aa4f959ffc63d22c5f91c29e06266fe14}{comment}}, \mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}})
+\item 
+function \mbox{\hyperlink{handlers_8js_a542e8aefc25299a8455cd9bb3d03a7bd}{create\+Symbol\+Doclet}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aa4f959ffc63d22c5f91c29e06266fe14}{comment}}, \mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}})
+\begin{DoxyCompactList}\small\item\em Create a doclet for a {\ttfamily symbol\+Found} event. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{handlers_8js_a8af83f3326e19509a060595b69ae6c3d}{set\+Current\+Module}} (doclet)
+\item 
+function \mbox{\hyperlink{handlers_8js_a0e3894ce0227d34ba34943f11dc102fc}{set\+Module\+Scope\+Member\+Of}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, doclet)
+\item 
+function \mbox{\hyperlink{handlers_8js_a9e89f7a927182e04559ba89aeace8254}{set\+Default\+Scope}} (doclet)
+\item 
+function \mbox{\hyperlink{handlers_8js_ab2f743522d5bad3299ea3350500fa58a}{add\+Doclet}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, new\+Doclet)
+\item 
+function \mbox{\hyperlink{handlers_8js_a9b6987974f4c4238bd595f42e66be321}{process\+Alias}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, doclet, ast\+Node)
+\item 
+function \mbox{\hyperlink{handlers_8js_ac851a0cfcd11ec774818b762975887cc}{find\+Symbol\+Memberof}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, doclet, ast\+Node, name\+Starts\+With, trailing\+Punc)
+\item 
+function \mbox{\hyperlink{handlers_8js_ac03142c4fcca610ad52df7aaa63ca3fe}{add\+Symbol\+Memberof}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, doclet, ast\+Node)
+\item 
+function \mbox{\hyperlink{handlers_8js_a93090d15d1767aeb85febd06b99fe9f5}{new\+Symbol\+Doclet}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, doclet\+Src, \mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{handlers_8js_aacc390e870480ecae3fed3e79ff64be5}{escape}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}escape-\/\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}-\/regexp\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em @module jsdoc/src/handlers \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{handlers_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}
+\item 
+let \mbox{\hyperlink{handlers_8js_a42bf987c3f0fbf3f24dcf14a1b9dc84e}{current\+Module}} = \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}
+\item 
+const \mbox{\hyperlink{handlers_8js_a977652a3510eb02282dfefe884c1ca81}{S\+C\+O\+P\+E\+\_\+\+N\+A\+M\+ES}} = jsdoc.\+name.\+S\+C\+O\+P\+E.\+N\+A\+M\+ES
+\item 
+const \mbox{\hyperlink{handlers_8js_ab098e06514318b336e6031888d253afc}{S\+C\+O\+P\+E\+\_\+\+P\+U\+NC}} = jsdoc.\+name.\+S\+C\+O\+P\+E.\+P\+U\+NC
+\item 
+const \mbox{\hyperlink{handlers_8js_a00a15eea64e6c06826721371906c1870}{Syntax}} = jsdoc.\+src.\+syntax.\+Syntax
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{handlers_8js_a3515b7541d7b875d4cd5ef4e97a30df3}{attach\+To}}
+\begin{DoxyCompactList}\small\item\em Attach these event handlers to a particular instance of a parser. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{handlers_8js_ab2f743522d5bad3299ea3350500fa58a}\label{handlers_8js_ab2f743522d5bad3299ea3350500fa58a}} 
+\index{handlers.js@{handlers.js}!addDoclet@{addDoclet}}
+\index{addDoclet@{addDoclet}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{addDoclet()}{addDoclet()}}
+{\footnotesize\ttfamily function add\+Doclet (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{new\+Doclet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{handlers_8js_ac03142c4fcca610ad52df7aaa63ca3fe}\label{handlers_8js_ac03142c4fcca610ad52df7aaa63ca3fe}} 
+\index{handlers.js@{handlers.js}!addSymbolMemberof@{addSymbolMemberof}}
+\index{addSymbolMemberof@{addSymbolMemberof}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{addSymbolMemberof()}{addSymbolMemberof()}}
+{\footnotesize\ttfamily function add\+Symbol\+Memberof (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{doclet,  }\item[{}]{ast\+Node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{handlers_8js_aeef4472f23140ec3f24da66749ebdaa4}\label{handlers_8js_aeef4472f23140ec3f24da66749ebdaa4}} 
+\index{handlers.js@{handlers.js}!createDoclet@{createDoclet}}
+\index{createDoclet@{createDoclet}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{createDoclet()}{createDoclet()}}
+{\footnotesize\ttfamily function create\+Doclet (\begin{DoxyParamCaption}\item[{}]{comment,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{handlers_8js_a542e8aefc25299a8455cd9bb3d03a7bd}\label{handlers_8js_a542e8aefc25299a8455cd9bb3d03a7bd}} 
+\index{handlers.js@{handlers.js}!createSymbolDoclet@{createSymbolDoclet}}
+\index{createSymbolDoclet@{createSymbolDoclet}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{createSymbolDoclet()}{createSymbolDoclet()}}
+{\footnotesize\ttfamily function create\+Symbol\+Doclet (\begin{DoxyParamCaption}\item[{}]{comment,  }\item[{}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a doclet for a {\ttfamily symbol\+Found} event. 
+
+The doclet represents an actual symbol that is defined in the code.
+
+Here\textquotesingle{}s why this function is useful. A J\+S\+Doc comment can define a symbol name by including\+:
+
+
+\begin{DoxyItemize}
+\item A {\ttfamily @name} tag
+\item Another tag that accepts a name, such as {\ttfamily @function}
+\end{DoxyItemize}
+
+When the J\+S\+Doc comment defines a symbol name, we treat it as a \char`\"{}virtual comment\char`\"{} for a symbol that isn\textquotesingle{}t actually present in the code. And if a virtual comment is attached to a symbol, it\textquotesingle{}s possible that the comment and symbol have nothing to do with one another.
+
+To handle this case, this function checks the new doclet to see if we\textquotesingle{}ve already added a name property by parsing the J\+S\+Doc comment. If so, this method creates a replacement doclet that ignores the attached J\+S\+Doc comment and only looks at the code. \mbox{\Hypertarget{handlers_8js_ac44473e158366bf6037de322b3c345f3}\label{handlers_8js_ac44473e158366bf6037de322b3c345f3}} 
+\index{handlers.js@{handlers.js}!filterByLongname@{filterByLongname}}
+\index{filterByLongname@{filterByLongname}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{filterByLongname()}{filterByLongname()}}
+{\footnotesize\ttfamily function filter\+By\+Longname (\begin{DoxyParamCaption}\item[{}]{\{longname\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{handlers_8js_ac851a0cfcd11ec774818b762975887cc}\label{handlers_8js_ac851a0cfcd11ec774818b762975887cc}} 
+\index{handlers.js@{handlers.js}!findSymbolMemberof@{findSymbolMemberof}}
+\index{findSymbolMemberof@{findSymbolMemberof}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{findSymbolMemberof()}{findSymbolMemberof()}}
+{\footnotesize\ttfamily function find\+Symbol\+Memberof (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{doclet,  }\item[{}]{ast\+Node,  }\item[{}]{name\+Starts\+With,  }\item[{}]{trailing\+Punc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{handlers_8js_a93090d15d1767aeb85febd06b99fe9f5}\label{handlers_8js_a93090d15d1767aeb85febd06b99fe9f5}} 
+\index{handlers.js@{handlers.js}!newSymbolDoclet@{newSymbolDoclet}}
+\index{newSymbolDoclet@{newSymbolDoclet}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{newSymbolDoclet()}{newSymbolDoclet()}}
+{\footnotesize\ttfamily function new\+Symbol\+Doclet (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{doclet\+Src,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{handlers_8js_a9b6987974f4c4238bd595f42e66be321}\label{handlers_8js_a9b6987974f4c4238bd595f42e66be321}} 
+\index{handlers.js@{handlers.js}!processAlias@{processAlias}}
+\index{processAlias@{processAlias}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{processAlias()}{processAlias()}}
+{\footnotesize\ttfamily function process\+Alias (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{doclet,  }\item[{}]{ast\+Node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{handlers_8js_a8af83f3326e19509a060595b69ae6c3d}\label{handlers_8js_a8af83f3326e19509a060595b69ae6c3d}} 
+\index{handlers.js@{handlers.js}!setCurrentModule@{setCurrentModule}}
+\index{setCurrentModule@{setCurrentModule}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{setCurrentModule()}{setCurrentModule()}}
+{\footnotesize\ttfamily function set\+Current\+Module (\begin{DoxyParamCaption}\item[{}]{doclet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{handlers_8js_a9e89f7a927182e04559ba89aeace8254}\label{handlers_8js_a9e89f7a927182e04559ba89aeace8254}} 
+\index{handlers.js@{handlers.js}!setDefaultScope@{setDefaultScope}}
+\index{setDefaultScope@{setDefaultScope}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{setDefaultScope()}{setDefaultScope()}}
+{\footnotesize\ttfamily function set\+Default\+Scope (\begin{DoxyParamCaption}\item[{}]{doclet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{handlers_8js_a0e3894ce0227d34ba34943f11dc102fc}\label{handlers_8js_a0e3894ce0227d34ba34943f11dc102fc}} 
+\index{handlers.js@{handlers.js}!setModuleScopeMemberOf@{setModuleScopeMemberOf}}
+\index{setModuleScopeMemberOf@{setModuleScopeMemberOf}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{setModuleScopeMemberOf()}{setModuleScopeMemberOf()}}
+{\footnotesize\ttfamily function set\+Module\+Scope\+Member\+Of (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{doclet }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{handlers_8js_a3515b7541d7b875d4cd5ef4e97a30df3}\label{handlers_8js_a3515b7541d7b875d4cd5ef4e97a30df3}} 
+\index{handlers.js@{handlers.js}!attachTo@{attachTo}}
+\index{attachTo@{attachTo}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{attachTo}{attachTo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} attach\+To}
+
+
+
+Attach these event handlers to a particular instance of a parser. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parser} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{handlers_8js_a42bf987c3f0fbf3f24dcf14a1b9dc84e}\label{handlers_8js_a42bf987c3f0fbf3f24dcf14a1b9dc84e}} 
+\index{handlers.js@{handlers.js}!currentModule@{currentModule}}
+\index{currentModule@{currentModule}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{currentModule}{currentModule}}
+{\footnotesize\ttfamily let current\+Module = \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}}
+
+\mbox{\Hypertarget{handlers_8js_aacc390e870480ecae3fed3e79ff64be5}\label{handlers_8js_aacc390e870480ecae3fed3e79ff64be5}} 
+\index{handlers.js@{handlers.js}!escape@{escape}}
+\index{escape@{escape}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{escape}{escape}}
+{\footnotesize\ttfamily const escape = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}escape-\/\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}-\/regexp\textquotesingle{})}
+
+
+
+@module jsdoc/src/handlers 
+
+\mbox{\Hypertarget{handlers_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}\label{handlers_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}} 
+\index{handlers.js@{handlers.js}!jsdoc@{jsdoc}}
+\index{jsdoc@{jsdoc}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{jsdoc}{jsdoc}}
+{\footnotesize\ttfamily const jsdoc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    doclet: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/doclet'}),}
+\DoxyCodeLine{    \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/name'}),}
+\DoxyCodeLine{    src: \{}
+\DoxyCodeLine{        syntax: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/src/syntax'})}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{level1_8js_acc69707810d1669872f8199f16a0da20}{logger}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/util/logger'})}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{handlers_8js_a977652a3510eb02282dfefe884c1ca81}\label{handlers_8js_a977652a3510eb02282dfefe884c1ca81}} 
+\index{handlers.js@{handlers.js}!SCOPE\_NAMES@{SCOPE\_NAMES}}
+\index{SCOPE\_NAMES@{SCOPE\_NAMES}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{SCOPE\_NAMES}{SCOPE\_NAMES}}
+{\footnotesize\ttfamily const S\+C\+O\+P\+E\+\_\+\+N\+A\+M\+ES = jsdoc.\+name.\+S\+C\+O\+P\+E.\+N\+A\+M\+ES}
+
+\mbox{\Hypertarget{handlers_8js_ab098e06514318b336e6031888d253afc}\label{handlers_8js_ab098e06514318b336e6031888d253afc}} 
+\index{handlers.js@{handlers.js}!SCOPE\_PUNC@{SCOPE\_PUNC}}
+\index{SCOPE\_PUNC@{SCOPE\_PUNC}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{SCOPE\_PUNC}{SCOPE\_PUNC}}
+{\footnotesize\ttfamily const S\+C\+O\+P\+E\+\_\+\+P\+U\+NC = jsdoc.\+name.\+S\+C\+O\+P\+E.\+P\+U\+NC}
+
+\mbox{\Hypertarget{handlers_8js_a00a15eea64e6c06826721371906c1870}\label{handlers_8js_a00a15eea64e6c06826721371906c1870}} 
+\index{handlers.js@{handlers.js}!Syntax@{Syntax}}
+\index{Syntax@{Syntax}!handlers.js@{handlers.js}}
+\doxysubsubsection{\texorpdfstring{Syntax}{Syntax}}
+{\footnotesize\ttfamily const Syntax = jsdoc.\+src.\+syntax.\+Syntax}
+

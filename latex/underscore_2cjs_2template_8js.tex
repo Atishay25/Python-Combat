@@ -1,0 +1,101 @@
+\hypertarget{underscore_2cjs_2template_8js}{}\doxysection{node\+\_\+modules/underscore/cjs/template.js File Reference}
+\label{underscore_2cjs_2template_8js}\index{node\_modules/underscore/cjs/template.js@{node\_modules/underscore/cjs/template.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}} (\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{template\+Settings.\+js}}\textquotesingle{})
+\item 
+function \mbox{\hyperlink{underscore_2cjs_2template_8js_ac3bbc5ab6a245c7bdab24863395ea91c}{escape\+Char}} (\mbox{\hyperlink{dist_2markdown-it_8js_aa9709f631a6baa3e6637446437f84651}{match}})
+\item 
+function \mbox{\hyperlink{underscore_2cjs_2template_8js_a52a9696ca26dca3b977a3c9bf70d7955}{template}} (\mbox{\hyperlink{marked_8min_8js_ace5c8ef4245d8bce80497d1580f59a0a}{text}}, settings, old\+Settings)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{underscore_2cjs_2template_8js_a25652520ac081f98103987b0e68544cf}{defaults}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{defaults.\+js}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{underscore_2cjs_2template_8js_a1f9d2946a42d502ce0e8a04b3f6bd1cb}{underscore}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{underscore.\+js}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{underscore_2cjs_2template_8js_a8481cee339681c7fa77b15bce0c79d87}{no\+Match}} = /(.)$^\wedge$/
+\item 
+var \mbox{\hyperlink{underscore_2cjs_2template_8js_a97668fdc8cfe75ee6a8af4496ad3a24f}{escapes}}
+\item 
+var \mbox{\hyperlink{underscore_2cjs_2template_8js_aa8b718bb146ff2afd67ef3bc2fd9327a}{escape\+Reg\+Exp}} = /\textbackslash{}\textbackslash{}$\vert$\textquotesingle{}$\vert$\textbackslash{}\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}}$\vert$\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}$\vert$\textbackslash{}u2028$\vert$\textbackslash{}u2029/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}
+\item 
+var \mbox{\hyperlink{underscore_2cjs_2template_8js_a6b39022fece261a0bf73fd8f9a1f10e9}{bare\+Identifier}} = /$^\wedge$\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}$\ast$(\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}}$\vert$\textbackslash{}\$)+\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}$\ast$\$/
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{underscore_2cjs_2template_8js_ac3bbc5ab6a245c7bdab24863395ea91c}\label{underscore_2cjs_2template_8js_ac3bbc5ab6a245c7bdab24863395ea91c}} 
+\index{template.js@{template.js}!escapeChar@{escapeChar}}
+\index{escapeChar@{escapeChar}!template.js@{template.js}}
+\doxysubsubsection{\texorpdfstring{escapeChar()}{escapeChar()}}
+{\footnotesize\ttfamily function escape\+Char (\begin{DoxyParamCaption}\item[{}]{match }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}\label{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}} 
+\index{template.js@{template.js}!require@{require}}
+\index{require@{require}!template.js@{template.js}}
+\doxysubsubsection{\texorpdfstring{require()}{require()}}
+{\footnotesize\ttfamily require (\begin{DoxyParamCaption}\item[{\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{template\+Settings.\+js}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{underscore_2cjs_2template_8js_a52a9696ca26dca3b977a3c9bf70d7955}\label{underscore_2cjs_2template_8js_a52a9696ca26dca3b977a3c9bf70d7955}} 
+\index{template.js@{template.js}!template@{template}}
+\index{template@{template}!template.js@{template.js}}
+\doxysubsubsection{\texorpdfstring{template()}{template()}}
+{\footnotesize\ttfamily function template (\begin{DoxyParamCaption}\item[{}]{text,  }\item[{}]{settings,  }\item[{}]{old\+Settings }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{underscore_2cjs_2template_8js_a6b39022fece261a0bf73fd8f9a1f10e9}\label{underscore_2cjs_2template_8js_a6b39022fece261a0bf73fd8f9a1f10e9}} 
+\index{template.js@{template.js}!bareIdentifier@{bareIdentifier}}
+\index{bareIdentifier@{bareIdentifier}!template.js@{template.js}}
+\doxysubsubsection{\texorpdfstring{bareIdentifier}{bareIdentifier}}
+{\footnotesize\ttfamily var bare\+Identifier = /$^\wedge$\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}$\ast$(\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}}$\vert$\textbackslash{}\$)+\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}$\ast$\$/}
+
+\mbox{\Hypertarget{underscore_2cjs_2template_8js_a25652520ac081f98103987b0e68544cf}\label{underscore_2cjs_2template_8js_a25652520ac081f98103987b0e68544cf}} 
+\index{template.js@{template.js}!defaults@{defaults}}
+\index{defaults@{defaults}!template.js@{template.js}}
+\doxysubsubsection{\texorpdfstring{defaults}{defaults}}
+{\footnotesize\ttfamily var defaults = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{defaults.\+js}}\textquotesingle{})}
+
+\mbox{\Hypertarget{underscore_2cjs_2template_8js_aa8b718bb146ff2afd67ef3bc2fd9327a}\label{underscore_2cjs_2template_8js_aa8b718bb146ff2afd67ef3bc2fd9327a}} 
+\index{template.js@{template.js}!escapeRegExp@{escapeRegExp}}
+\index{escapeRegExp@{escapeRegExp}!template.js@{template.js}}
+\doxysubsubsection{\texorpdfstring{escapeRegExp}{escapeRegExp}}
+{\footnotesize\ttfamily var escape\+Reg\+Exp = /\textbackslash{}\textbackslash{}$\vert$\textquotesingle{}$\vert$\textbackslash{}\mbox{\hyperlink{markdownItAnchor_8umd_8js_acbaa97f24b3bd7754f2f3e638cba70ab}{r}}$\vert$\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}$\vert$\textbackslash{}u2028$\vert$\textbackslash{}u2029/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2escapeRegExp_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/escape\+Reg\+Exp.\+js}}.\end{Desc}
+\mbox{\Hypertarget{underscore_2cjs_2template_8js_a97668fdc8cfe75ee6a8af4496ad3a24f}\label{underscore_2cjs_2template_8js_a97668fdc8cfe75ee6a8af4496ad3a24f}} 
+\index{template.js@{template.js}!escapes@{escapes}}
+\index{escapes@{escapes}!template.js@{template.js}}
+\doxysubsubsection{\texorpdfstring{escapes}{escapes}}
+{\footnotesize\ttfamily var escapes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  \textcolor{stringliteral}{"'"}: \textcolor{stringliteral}{"'"},}
+\DoxyCodeLine{  \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}: \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'},}
+\DoxyCodeLine{  \textcolor{charliteral}{'\(\backslash\)r'}: \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{  \textcolor{charliteral}{'\(\backslash\)n'}: \textcolor{charliteral}{'n'},}
+\DoxyCodeLine{  \textcolor{stringliteral}{'\(\backslash\)u2028'}: \textcolor{stringliteral}{'u2028'},}
+\DoxyCodeLine{  \textcolor{stringliteral}{'\(\backslash\)u2029'}: \textcolor{stringliteral}{'u2029'}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{underscore_2cjs_2template_8js_a8481cee339681c7fa77b15bce0c79d87}\label{underscore_2cjs_2template_8js_a8481cee339681c7fa77b15bce0c79d87}} 
+\index{template.js@{template.js}!noMatch@{noMatch}}
+\index{noMatch@{noMatch}!template.js@{template.js}}
+\doxysubsubsection{\texorpdfstring{noMatch}{noMatch}}
+{\footnotesize\ttfamily var no\+Match = /(.)$^\wedge$/}
+
+\mbox{\Hypertarget{underscore_2cjs_2template_8js_a1f9d2946a42d502ce0e8a04b3f6bd1cb}\label{underscore_2cjs_2template_8js_a1f9d2946a42d502ce0e8a04b3f6bd1cb}} 
+\index{template.js@{template.js}!underscore@{underscore}}
+\index{underscore@{underscore}!template.js@{template.js}}
+\doxysubsubsection{\texorpdfstring{underscore}{underscore}}
+{\footnotesize\ttfamily var underscore = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{underscore.\+js}}\textquotesingle{})}
+

@@ -1,12 +1,6 @@
 var searchData=
 [
-  ['i_238',['i',['../level1_2out_2scripts_2prettify_2lang-css_8js.html#aa9f639ad441faa68bcc131d5ee61a787',1,'i():&#160;lang-css.js'],['../level1_2out_2scripts_2prettify_2prettify_8js.html#a7e98b8a17c0aad30ba64d47b74e2a6c1',1,'i():&#160;prettify.js'],['../out_2scripts_2prettify_2lang-css_8js.html#aa9f639ad441faa68bcc131d5ee61a787',1,'i():&#160;lang-css.js'],['../out_2scripts_2prettify_2prettify_8js.html#a7e98b8a17c0aad30ba64d47b74e2a6c1',1,'i():&#160;prettify.js'],['../welcome_8js.html#a5e25b1d1bed9ab5f3174b76d6a722180',1,'i():&#160;welcome.js']]],
-  ['id_5forder_239',['id_order',['../level5_8js.html#aeaa663a00ea51b99464a4b5f0f6643c2',1,'level5.js']]],
-  ['implied_240',['implied',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a69ced181b1f23b5e9b7b46437f0f007b',1,'implied():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a69ced181b1f23b5e9b7b46437f0f007b',1,'implied():&#160;Apache-License-2.0.txt']]],
-  ['import_241',['import',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a7b048ab2f6ed167157c1be2096d6cfd0',1,'import():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a7b048ab2f6ed167157c1be2096d6cfd0',1,'import():&#160;Apache-License-2.0.txt']]],
-  ['including_242',['including',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#aedd7527b8c358849126955d4145ca17c',1,'including():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#aedd7527b8c358849126955d4145ca17c',1,'including():&#160;Apache-License-2.0.txt']]],
-  ['index_243',['index',['../level5_8js.html#ae4b896af19aae26b1e5317acf4126807',1,'level5.js']]],
-  ['indirect_244',['indirect',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a23c7eafa2834379b852f6d8e56cad33b',1,'indirect():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a23c7eafa2834379b852f6d8e56cad33b',1,'indirect():&#160;Apache-License-2.0.txt']]],
-  ['infringement_245',['INFRINGEMENT',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a0fc96cc453846a8056f01e918a533768',1,'INFRINGEMENT():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a0fc96cc453846a8056f01e918a533768',1,'INFRINGEMENT():&#160;Apache-License-2.0.txt']]],
-  ['insequence_246',['insequence',['../level5_8js.html#a985fd6403acb067dc86c6a271426ae89',1,'level5.js']]]
+  ['title_76',['title',['../welcome_8js.html#aa5a506cf1e53b91549e35a5d3bc3dc06',1,'welcome.js']]],
+  ['total_5fgems_77',['total_gems',['../level1_8js.html#a2bef55933b6664b1d7d760a9334d6c7e',1,'total_gems():&#160;level1.js'],['../level2_8js.html#a2bef55933b6664b1d7d760a9334d6c7e',1,'total_gems():&#160;level2.js']]],
+  ['total_5fstones_78',['total_stones',['../level4_8js.html#a3135c549a994c3ddd161e694053e6af8',1,'level4.js']]]
 ];

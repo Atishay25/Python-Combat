@@ -1,0 +1,94 @@
+\hypertarget{classFacet}{}\doxysection{Facet Class Reference}
+\label{classFacet}\index{Facet@{Facet}}
+
+
+A facet is a labeled value that is associated with an editor state.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFacet_aac5e52ffe7b1290a1ab1c36c216c67f3}{constructor}} (\mbox{\hyperlink{name_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}, compare\+Input, \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a71bed6675de942b805a8db042033a0c9}{compare}}, is\+Static, enables)
+\item 
+\mbox{\hyperlink{classFacet_a740faee345c9b43802c0f5b126e0f46f}{of}} (\mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}})
+\begin{DoxyCompactList}\small\item\em Returns an extension that adds the given value to this facet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFacet_a2d5111d83842e467d01cf4d13399c934}{compute}} (deps, \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}})
+\begin{DoxyCompactList}\small\item\em Create an extension that computes a value for the facet from a state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFacet_a7b667acd65ef71217d537a5975407ea8}{computeN}} (deps, \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}})
+\begin{DoxyCompactList}\small\item\em Create an extension that computes zero or more values for this facet from a state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFacet_a8a1b91350fa3d95b9191db14dc7d1e56}{from}} (field, \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{define}} (\mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}}=\{\})
+\begin{DoxyCompactList}\small\item\em Define a new facet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A facet is a labeled value that is associated with an editor state. 
+
+It takes inputs from any number of extensions, and combines those into a single output value.
+
+Examples of uses of facets are the \href{https://codemirror.net/6/docs/ref/\#state.EditorState^tabSize}{\texttt{ tab size}}, \href{https://codemirror.net/6/docs/ref/\#view.EditorView^editorAttributes}{\texttt{ editor attributes}}, and \href{https://codemirror.net/6/docs/ref/\#view.EditorView^updateListener}{\texttt{ update listeners}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFacet_a2d5111d83842e467d01cf4d13399c934}\label{classFacet_a2d5111d83842e467d01cf4d13399c934}} 
+\index{Facet@{Facet}!compute@{compute}}
+\index{compute@{compute}!Facet@{Facet}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily Facet\+::compute (\begin{DoxyParamCaption}\item[{}]{deps,  }\item[{}]{get }\end{DoxyParamCaption})}
+
+
+
+Create an extension that computes a value for the facet from a state. 
+
+You must take care to declare the parts of the state that this value depends on, since your function is only called again for a new state when one of those parts changed.
+
+In cases where your value depends only on a single field, you\textquotesingle{}ll want to use the \href{https://codemirror.net/6/docs/ref/\#state.Facet.from}{\texttt{ {\ttfamily from}}} method instead. \mbox{\Hypertarget{classFacet_a7b667acd65ef71217d537a5975407ea8}\label{classFacet_a7b667acd65ef71217d537a5975407ea8}} 
+\index{Facet@{Facet}!computeN@{computeN}}
+\index{computeN@{computeN}!Facet@{Facet}}
+\doxysubsubsection{\texorpdfstring{computeN()}{computeN()}}
+{\footnotesize\ttfamily Facet\+::computeN (\begin{DoxyParamCaption}\item[{}]{deps,  }\item[{}]{get }\end{DoxyParamCaption})}
+
+
+
+Create an extension that computes zero or more values for this facet from a state. 
+
+\mbox{\Hypertarget{classFacet_aac5e52ffe7b1290a1ab1c36c216c67f3}\label{classFacet_aac5e52ffe7b1290a1ab1c36c216c67f3}} 
+\index{Facet@{Facet}!constructor@{constructor}}
+\index{constructor@{constructor}!Facet@{Facet}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Facet\+::constructor (\begin{DoxyParamCaption}\item[{}]{combine,  }\item[{}]{compare\+Input,  }\item[{}]{compare,  }\item[{}]{is\+Static,  }\item[{}]{enables }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}\label{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}} 
+\index{Facet@{Facet}!define@{define}}
+\index{define@{define}!Facet@{Facet}}
+\doxysubsubsection{\texorpdfstring{define()}{define()}}
+{\footnotesize\ttfamily static Facet\+::define (\begin{DoxyParamCaption}\item[{}]{config = {\ttfamily \{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Define a new facet. 
+
+\mbox{\Hypertarget{classFacet_a8a1b91350fa3d95b9191db14dc7d1e56}\label{classFacet_a8a1b91350fa3d95b9191db14dc7d1e56}} 
+\index{Facet@{Facet}!from@{from}}
+\index{from@{from}!Facet@{Facet}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}}
+{\footnotesize\ttfamily Facet\+::from (\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{get }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFacet_a740faee345c9b43802c0f5b126e0f46f}\label{classFacet_a740faee345c9b43802c0f5b126e0f46f}} 
+\index{Facet@{Facet}!of@{of}}
+\index{of@{of}!Facet@{Facet}}
+\doxysubsubsection{\texorpdfstring{of()}{of()}}
+{\footnotesize\ttfamily Facet\+::of (\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns an extension that adds the given value to this facet. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/state/dist/\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

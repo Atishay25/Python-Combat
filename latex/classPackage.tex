@@ -2,11 +2,120 @@
 \label{classPackage}\index{Package@{Package}}
 
 
+Information about a Java\+Script package.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPackage_a386279eb66b49b8ae1b3baecab9c7ba4}{constructor}} (json)
+\end{DoxyCompactItemize}
+
+
 \doxysubsection{Detailed Description}
-Information about a Java\+Script package. J\+S\+Doc can extract package information from {\ttfamily package.\+json} files that follow the \href{https://www.npmjs.org/doc/files/package.json.html}{\texttt{ npm specification}}.
+Information about a Java\+Script package. 
+
+J\+S\+Doc can extract package information from {\ttfamily package.\+json} files that follow the \href{https://www.npmjs.org/doc/files/package.json.html}{\texttt{ npm specification}}.
 
 {\bfseries{Note}}\+: J\+S\+Doc does not validate or normalize the contents of {\ttfamily package.\+json} files. If your {\ttfamily package.\+json} file does not follow the npm specification, some properties of the {\ttfamily \mbox{\hyperlink{classPackage}{Package}}} object may not use the format documented here. 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPackage_a386279eb66b49b8ae1b3baecab9c7ba4}\label{classPackage_a386279eb66b49b8ae1b3baecab9c7ba4}} 
+\index{Package@{Package}!constructor@{constructor}}
+\index{constructor@{constructor}!Package@{Package}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Package\+::constructor (\begin{DoxyParamCaption}\item[{}]{json }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & json -\/ The contents of the {\ttfamily package.\+json} file. \\
+\hline
+\end{DoxyParams}
+The string identifier that is shared by all {\ttfamily \mbox{\hyperlink{classPackage}{Package}}} objects.
+
+@readonly @default @type \{string\}
+
+The package name.
+
+@type \{string\}
+
+The unique longname for this {\ttfamily \mbox{\hyperlink{classPackage}{Package}}} object.
+
+@type \{string\}
+
+The author of this package. Contains either a \mbox{\hyperlink{}{Person\+Info}} object or a string with information about the author.
+
+@type \{(module\+:jsdoc/package.\+Package$\sim$\+Person\+Info$\vert$string)\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+Information about where to report bugs in the project. May contain a U\+RL, a string, or an object with more detailed information.
+
+@type \{(string$\vert$module\+:jsdoc/package.\+Package$\sim$\+Bug\+Info)\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+The contributors to this package.
+
+@type \{Array.$<$(module\+:jsdoc/package.\+Package$\sim$\+Person\+Info$\vert$string)$>$\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+The dependencies for this package.
+
+@type \{Object\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+A brief description of the package.
+
+@type \{string\}
+
+The development dependencies for this package.
+
+@type \{Object\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+The Java\+Script engines that this package supports. Each key is a string that identifies the engine (for example, {\ttfamily node}). Each value is a \href{https://www.npmjs.org/doc/misc/semver.html}{\texttt{ semver}}-\/compliant version number for the engine.
+
+@type \{Object\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+The source files associated with the package.
+
+New {\ttfamily \mbox{\hyperlink{classPackage}{Package}}} objects always contain an empty array, regardless of whether the {\ttfamily package.\+json} file includes a {\ttfamily files} property.
+
+After J\+S\+Doc parses your input files, it sets this property to a list of paths to your input files.
+
+@type \{Array.$<$string$>$\}
+
+The U\+RL for the package\textquotesingle{}s homepage.
+
+@type \{string\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+Keywords to help users find the package.
+
+@type \{Array.$<$string$>$\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+The licenses used by this package. Combines information from the {\ttfamily package.\+json} file\textquotesingle{}s {\ttfamily license} property and the deprecated {\ttfamily licenses} property.
+
+@type \{Array.$<$module\+:jsdoc/package.\+Package$\sim$\+License\+Info$>$\}
+
+The module ID that provides the primary entry point to the package. For example, if your package is a Common\+JS module, and the value of this property is {\ttfamily foo}, users should be able to load your module with `require(\textquotesingle{}foo')\`{}.
+
+@type \{string\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+The version-\/control repository for the package.
+
+@type \{module\+:jsdoc/package.\+Package$\sim$\+Repository\+Info\} \begin{DoxySince}{Since}
+3.\+3.\+0
+\end{DoxySince}
+The \href{https://www.npmjs.org/doc/misc/semver.html}{\texttt{ semver}}-\/compliant version number of the package.
+
+@type \{string\} \begin{DoxySince}{Since}
+3.\+2.\+0
+\end{DoxySince}
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-node\+\_\+modules/jsdoc/lib/jsdoc/package.\+js\end{DoxyCompactItemize}
+node\+\_\+modules/jsdoc/lib/jsdoc/\mbox{\hyperlink{package_8js}{package.\+js}}\end{DoxyCompactItemize}

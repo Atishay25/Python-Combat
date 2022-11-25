@@ -1,0 +1,59 @@
+\hypertarget{classCompartment}{}\doxysection{Compartment Class Reference}
+\label{classCompartment}\index{Compartment@{Compartment}}
+
+
+Extension compartments can be used to make a configuration dynamic.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCompartment_a5c34b359cee01f873c94641c8652284c}{of}} (ext)
+\begin{DoxyCompactList}\small\item\em Create an instance of this compartment to add to your \href{https://codemirror.net/6/docs/ref/\#state.EditorStateConfig.extensions}{\texttt{ state configuration}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCompartment_ab5f1b316fb7e94c08e1cbaafccd6ded1}{reconfigure}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}{content}})
+\begin{DoxyCompactList}\small\item\em Create an \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.effects}{\texttt{ effect}} that reconfigures this compartment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCompartment_add0d9cb624f492e154f517b22387e680}{get}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}})
+\begin{DoxyCompactList}\small\item\em Get the current content of the compartment in the state, or {\ttfamily undefined} if it isn\textquotesingle{}t present. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Extension compartments can be used to make a configuration dynamic. 
+
+By \href{https://codemirror.net/6/docs/ref/\#state.Compartment.of}{\texttt{ wrapping}} part of your configuration in a compartment, you can later \href{https://codemirror.net/6/docs/ref/\#state.Compartment.reconfigure}{\texttt{ replace}} that part through a transaction. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCompartment_add0d9cb624f492e154f517b22387e680}\label{classCompartment_add0d9cb624f492e154f517b22387e680}} 
+\index{Compartment@{Compartment}!get@{get}}
+\index{get@{get}!Compartment@{Compartment}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Compartment\+::get (\begin{DoxyParamCaption}\item[{}]{state }\end{DoxyParamCaption})}
+
+
+
+Get the current content of the compartment in the state, or {\ttfamily undefined} if it isn\textquotesingle{}t present. 
+
+\mbox{\Hypertarget{classCompartment_a5c34b359cee01f873c94641c8652284c}\label{classCompartment_a5c34b359cee01f873c94641c8652284c}} 
+\index{Compartment@{Compartment}!of@{of}}
+\index{of@{of}!Compartment@{Compartment}}
+\doxysubsubsection{\texorpdfstring{of()}{of()}}
+{\footnotesize\ttfamily Compartment\+::of (\begin{DoxyParamCaption}\item[{}]{ext }\end{DoxyParamCaption})}
+
+
+
+Create an instance of this compartment to add to your \href{https://codemirror.net/6/docs/ref/\#state.EditorStateConfig.extensions}{\texttt{ state configuration}}. 
+
+\mbox{\Hypertarget{classCompartment_ab5f1b316fb7e94c08e1cbaafccd6ded1}\label{classCompartment_ab5f1b316fb7e94c08e1cbaafccd6ded1}} 
+\index{Compartment@{Compartment}!reconfigure@{reconfigure}}
+\index{reconfigure@{reconfigure}!Compartment@{Compartment}}
+\doxysubsubsection{\texorpdfstring{reconfigure()}{reconfigure()}}
+{\footnotesize\ttfamily Compartment\+::reconfigure (\begin{DoxyParamCaption}\item[{}]{content }\end{DoxyParamCaption})}
+
+
+
+Create an \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.effects}{\texttt{ effect}} that reconfigures this compartment. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/state/dist/\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

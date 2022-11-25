@@ -1,0 +1,127 @@
+\hypertarget{classInputStream}{}\doxysection{Input\+Stream Class Reference}
+\label{classInputStream}\index{InputStream@{InputStream}}
+
+
+\href{\#lr.ExternalTokenizer}{\texttt{ Tokenizers}} interact with the input through this interface.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInputStream_a8f29288c9ad5c0a4333ef86e7d478e69}{constructor}} (input, ranges)
+\item 
+\mbox{\hyperlink{classInputStream_ac8c31dec6984e42485b5eda6cfa76392}{resolve\+Offset}} (offset, assoc)
+\item 
+\mbox{\hyperlink{classInputStream_a9b90ac5a18dbd30569a3517b287c1552}{clip\+Pos}} (pos)
+\item 
+\mbox{\hyperlink{classInputStream_a85f6bf90b2a24d782cee9a0ff9a24d47}{peek}} (offset)
+\begin{DoxyCompactList}\small\item\em Look at a code unit near the stream position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInputStream_a6a3ac038107e23649998655e7ecd7ffe}{accept\+Token}} (token, end\+Offset=0)
+\begin{DoxyCompactList}\small\item\em Accept a token. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInputStream_a2f721bf070fc6f4edadd43b3be311957}{get\+Chunk}} ()
+\item 
+\mbox{\hyperlink{classInputStream_a0f80d81406e2fc567d1e4a1efa46ef04}{read\+Next}} ()
+\item 
+\mbox{\hyperlink{classInputStream_a5d848f2f959ef770ccc02389e5b01f87}{advance}} (\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}=1)
+\begin{DoxyCompactList}\small\item\em Move the stream forward N (defaults to 1) code units. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInputStream_a2214e9805461a5ef2a580b27c7556550}{set\+Done}} ()
+\item 
+\mbox{\hyperlink{classInputStream_aae05d354d3eed9fffdd9b8baf59af58f}{reset}} (pos, token)
+\item 
+\mbox{\hyperlink{classInputStream_af956f585bdc83e5bd65b10af1df23450}{read}} (from, to)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\href{\#lr.ExternalTokenizer}{\texttt{ Tokenizers}} interact with the input through this interface. 
+
+It presents the input as a stream of characters, tracking lookahead and hiding the complexity of \href{\#common.Parser.parse^ranges}{\texttt{ ranges}} from tokenizer code. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInputStream_a6a3ac038107e23649998655e7ecd7ffe}\label{classInputStream_a6a3ac038107e23649998655e7ecd7ffe}} 
+\index{InputStream@{InputStream}!acceptToken@{acceptToken}}
+\index{acceptToken@{acceptToken}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{acceptToken()}{acceptToken()}}
+{\footnotesize\ttfamily Input\+Stream\+::accept\+Token (\begin{DoxyParamCaption}\item[{}]{token,  }\item[{}]{end\+Offset = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Accept a token. 
+
+By default, the end of the token is set to the current stream position, but you can pass an offset (relative to the stream position) to change that. \mbox{\Hypertarget{classInputStream_a5d848f2f959ef770ccc02389e5b01f87}\label{classInputStream_a5d848f2f959ef770ccc02389e5b01f87}} 
+\index{InputStream@{InputStream}!advance@{advance}}
+\index{advance@{advance}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{advance()}{advance()}}
+{\footnotesize\ttfamily Input\+Stream\+::advance (\begin{DoxyParamCaption}\item[{}]{n = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Move the stream forward N (defaults to 1) code units. 
+
+Returns the new value of \href{\#lr.InputStream.next}{\texttt{ {\ttfamily next}}}. \mbox{\Hypertarget{classInputStream_a9b90ac5a18dbd30569a3517b287c1552}\label{classInputStream_a9b90ac5a18dbd30569a3517b287c1552}} 
+\index{InputStream@{InputStream}!clipPos@{clipPos}}
+\index{clipPos@{clipPos}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{clipPos()}{clipPos()}}
+{\footnotesize\ttfamily Input\+Stream\+::clip\+Pos (\begin{DoxyParamCaption}\item[{}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInputStream_a8f29288c9ad5c0a4333ef86e7d478e69}\label{classInputStream_a8f29288c9ad5c0a4333ef86e7d478e69}} 
+\index{InputStream@{InputStream}!constructor@{constructor}}
+\index{constructor@{constructor}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Input\+Stream\+::constructor (\begin{DoxyParamCaption}\item[{}]{input,  }\item[{}]{ranges }\end{DoxyParamCaption})}
+
+Backup chunk
+
+The character code of the next code unit in the input, or -\/1 when the stream is at the end of the input.\mbox{\Hypertarget{classInputStream_a2f721bf070fc6f4edadd43b3be311957}\label{classInputStream_a2f721bf070fc6f4edadd43b3be311957}} 
+\index{InputStream@{InputStream}!getChunk@{getChunk}}
+\index{getChunk@{getChunk}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{getChunk()}{getChunk()}}
+{\footnotesize\ttfamily Input\+Stream\+::get\+Chunk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInputStream_a85f6bf90b2a24d782cee9a0ff9a24d47}\label{classInputStream_a85f6bf90b2a24d782cee9a0ff9a24d47}} 
+\index{InputStream@{InputStream}!peek@{peek}}
+\index{peek@{peek}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily Input\+Stream\+::peek (\begin{DoxyParamCaption}\item[{}]{offset }\end{DoxyParamCaption})}
+
+
+
+Look at a code unit near the stream position. 
+
+{\ttfamily .peek(0)} equals {\ttfamily .next}, {\ttfamily .peek(-\/1)} gives you the previous character, and so on.
+
+Note that looking around during tokenizing creates dependencies on potentially far-\/away content, which may reduce the effectiveness incremental parsing—when looking forward—or even cause invalid reparses when looking backward more than 25 code units, since the library does not track lookbehind. \mbox{\Hypertarget{classInputStream_af956f585bdc83e5bd65b10af1df23450}\label{classInputStream_af956f585bdc83e5bd65b10af1df23450}} 
+\index{InputStream@{InputStream}!read@{read}}
+\index{read@{read}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily Input\+Stream\+::read (\begin{DoxyParamCaption}\item[{}]{from,  }\item[{}]{to }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInputStream_a0f80d81406e2fc567d1e4a1efa46ef04}\label{classInputStream_a0f80d81406e2fc567d1e4a1efa46ef04}} 
+\index{InputStream@{InputStream}!readNext@{readNext}}
+\index{readNext@{readNext}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{readNext()}{readNext()}}
+{\footnotesize\ttfamily Input\+Stream\+::read\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInputStream_aae05d354d3eed9fffdd9b8baf59af58f}\label{classInputStream_aae05d354d3eed9fffdd9b8baf59af58f}} 
+\index{InputStream@{InputStream}!reset@{reset}}
+\index{reset@{reset}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily Input\+Stream\+::reset (\begin{DoxyParamCaption}\item[{}]{pos,  }\item[{}]{token }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInputStream_ac8c31dec6984e42485b5eda6cfa76392}\label{classInputStream_ac8c31dec6984e42485b5eda6cfa76392}} 
+\index{InputStream@{InputStream}!resolveOffset@{resolveOffset}}
+\index{resolveOffset@{resolveOffset}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{resolveOffset()}{resolveOffset()}}
+{\footnotesize\ttfamily Input\+Stream\+::resolve\+Offset (\begin{DoxyParamCaption}\item[{}]{offset,  }\item[{}]{assoc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInputStream_a2214e9805461a5ef2a580b27c7556550}\label{classInputStream_a2214e9805461a5ef2a580b27c7556550}} 
+\index{InputStream@{InputStream}!setDone@{setDone}}
+\index{setDone@{setDone}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{setDone()}{setDone()}}
+{\footnotesize\ttfamily Input\+Stream\+::set\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@lezer/lr/dist/\mbox{\hyperlink{_0dlezer_2lr_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

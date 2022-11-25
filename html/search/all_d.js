@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['names_89',['names',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a30594132172b3373a0a76459eed4796e',1,'names():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a30594132172b3373a0a76459eed4796e',1,'names():&#160;Apache-License-2.0.txt']]],
-  ['null_90',['null',['../level1_2out_2scripts_2prettify_2lang-css_8js.html#a712f068179549a1823d12e2a3f517001',1,'null():&#160;lang-css.js'],['../out_2scripts_2prettify_2lang-css_8js.html#a712f068179549a1823d12e2a3f517001',1,'null():&#160;lang-css.js']]]
+  ['walk_48',['walk',['../level1_8js.html#a5ecb5fb68a67bf16cfc16d6a6bd6fcf9',1,'walk(r):&#160;level1.js'],['../level2_8js.html#a5ecb5fb68a67bf16cfc16d6a6bd6fcf9',1,'walk(r):&#160;level2.js'],['../level3_8js.html#a5ecb5fb68a67bf16cfc16d6a6bd6fcf9',1,'walk(r):&#160;level3.js'],['../level4_8js.html#a5ecb5fb68a67bf16cfc16d6a6bd6fcf9',1,'walk(r):&#160;level4.js'],['../level5_8js.html#a5ecb5fb68a67bf16cfc16d6a6bd6fcf9',1,'walk(r):&#160;level5.js']]],
+  ['weapon_49',['weapon',['../level5_8js.html#a54600586351a080b43155fee6e80e8aa',1,'level5.js']]],
+  ['welcome_2ejs_50',['welcome.js',['../welcome_8js.html',1,'']]]
 ];

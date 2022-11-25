@@ -1,0 +1,269 @@
+\hypertarget{templateHelper_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/util/template\+Helper.js File Reference}
+\label{templateHelper_8js}\index{node\_modules/jsdoc/lib/jsdoc/util/templateHelper.js@{node\_modules/jsdoc/lib/jsdoc/util/templateHelper.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{templateHelper_8js_a189429a8fca10d9fb9e340e2c50b7ed1}{get\+Namespace}} (kind)
+\item 
+function \mbox{\hyperlink{templateHelper_8js_a25fc2a3cb5a0f80957f440c9e71f4be2}{format\+Name\+For\+Link}} (doclet)
+\item 
+function \mbox{\hyperlink{templateHelper_8js_a7607be93554804634885199f4c55069a}{make\+Unique\+Filename}} (\mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}}, \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a02290082f0074cd615c6249e515d3f58}{catharsis}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}catharsis\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em @module jsdoc/util/template\+Helper \end{DoxyCompactList}\item 
+let \mbox{\hyperlink{templateHelper_8js_a2efc43ef47130c765e0389345ef4c81d}{dictionary}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rules_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}/dictionary\textquotesingle{})
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a27a60859f9b15587b2bffa4aa6780723}{env}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/env\textquotesingle{})
+\item 
+const const \mbox{\hyperlink{templateHelper_8js_a3eeb882d4c8b8f72f70d07d121b46f3e}{logger}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/logger\textquotesingle{})
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/name\textquotesingle{})
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a5003cc3d54412fd1173126a720e10180}{has\+Own\+Prop}} = \mbox{\hyperlink{underscore_2underscore_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}
+\item 
+const \mbox{\hyperlink{templateHelper_8js_ac5fb6ed9bb69409375e27c498f7c198b}{M\+O\+D\+U\+L\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}} = \textquotesingle{}module\+:\textquotesingle{}
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a44a1593121fc0af9668b715d42aa3a57}{files}} = \{\}
+\item 
+const \mbox{\hyperlink{templateHelper_8js_acf1c3a7536ab22ef224ee20e85cf61ae}{ids}} = \{\}
+\item 
+const \mbox{\hyperlink{templateHelper_8js_ae38ed8880d08216a06257475f7301054}{containers}} = \mbox{[}\textquotesingle{}class\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}}\textquotesingle{}, \textquotesingle{}external\textquotesingle{}, \textquotesingle{}namespace\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{underscore-esm-min_8js_a1342308641e16d69631541f1d9248029}{mixin}}\textquotesingle{}, \textquotesingle{}interface\textquotesingle{}\mbox{]}
+\item 
+let \mbox{\hyperlink{templateHelper_8js_a46d54f7de077187bf66d2a421d27ebd3}{tutorials}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{templateHelper_8js_a7161573457fb2046288b37b09ffd9a9e}{set\+Tutorials}}
+\begin{DoxyCompactList}\small\item\em Sets tutorials map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{templateHelper_8js_a1b338974d323f6416eaa7fe4da364f55}{global\+Name}} = name.\+S\+C\+O\+P\+E.\+N\+A\+M\+E\+S.\+G\+L\+O\+B\+AL
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{templateHelper_8js_a57baa108629e469cc19746b25fe5ed32}{file\+Extension}} = \textquotesingle{}.html\textquotesingle{}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{templateHelper_8js_a128129ca9456c46c5163d5c6e826d178}{scope\+To\+Punc}} = name.\+scope\+To\+Punc
+\item 
+const \mbox{\hyperlink{templateHelper_8js_aac028e75928860fd58754d030598e200}{link\+Map}}
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a2598a7bfd81b76c39db692b2778a86ad}{tutorial\+Link\+Map}}
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a0be0ebdf24d7d1a3aaea71987c3b69c7}{longname\+To\+Url}} = exports.\+longname\+To\+Url = link\+Map.\+longname\+To\+Url
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a55ac47c6e9c963701dc273cdf59c8f1a}{longname\+To\+Id}} = exports.\+longname\+To\+Id = link\+Map.\+longname\+To\+Id
+\item 
+const \mbox{\hyperlink{templateHelper_8js_ae8b3f9d62fc5070f8642f2924a2d006a}{register\+Link}}
+\item 
+const \mbox{\hyperlink{templateHelper_8js_a7901379ac976fb0d01e67a88f3f16f92}{register\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{templateHelper_8js_a25fc2a3cb5a0f80957f440c9e71f4be2}\label{templateHelper_8js_a25fc2a3cb5a0f80957f440c9e71f4be2}} 
+\index{templateHelper.js@{templateHelper.js}!formatNameForLink@{formatNameForLink}}
+\index{formatNameForLink@{formatNameForLink}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{formatNameForLink()}{formatNameForLink()}}
+{\footnotesize\ttfamily function format\+Name\+For\+Link (\begin{DoxyParamCaption}\item[{}]{doclet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{templateHelper_8js_a189429a8fca10d9fb9e340e2c50b7ed1}\label{templateHelper_8js_a189429a8fca10d9fb9e340e2c50b7ed1}} 
+\index{templateHelper.js@{templateHelper.js}!getNamespace@{getNamespace}}
+\index{getNamespace@{getNamespace}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{getNamespace()}{getNamespace()}}
+{\footnotesize\ttfamily function get\+Namespace (\begin{DoxyParamCaption}\item[{}]{kind }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{templateHelper_8js_a7607be93554804634885199f4c55069a}\label{templateHelper_8js_a7607be93554804634885199f4c55069a}} 
+\index{templateHelper.js@{templateHelper.js}!makeUniqueFilename@{makeUniqueFilename}}
+\index{makeUniqueFilename@{makeUniqueFilename}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{makeUniqueFilename()}{makeUniqueFilename()}}
+{\footnotesize\ttfamily function make\+Unique\+Filename (\begin{DoxyParamCaption}\item[{}]{filename,  }\item[{}]{str }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{templateHelper_8js_a02290082f0074cd615c6249e515d3f58}\label{templateHelper_8js_a02290082f0074cd615c6249e515d3f58}} 
+\index{templateHelper.js@{templateHelper.js}!catharsis@{catharsis}}
+\index{catharsis@{catharsis}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{catharsis}{catharsis}}
+{\footnotesize\ttfamily const catharsis = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}catharsis\textquotesingle{})}
+
+
+
+@module jsdoc/util/template\+Helper 
+
+\mbox{\Hypertarget{templateHelper_8js_ae38ed8880d08216a06257475f7301054}\label{templateHelper_8js_ae38ed8880d08216a06257475f7301054}} 
+\index{templateHelper.js@{templateHelper.js}!containers@{containers}}
+\index{containers@{containers}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{containers}{containers}}
+{\footnotesize\ttfamily const containers = \mbox{[}\textquotesingle{}class\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}}\textquotesingle{}, \textquotesingle{}external\textquotesingle{}, \textquotesingle{}namespace\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{underscore-esm-min_8js_a1342308641e16d69631541f1d9248029}{mixin}}\textquotesingle{}, \textquotesingle{}interface\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{templateHelper_8js_a2efc43ef47130c765e0389345ef4c81d}\label{templateHelper_8js_a2efc43ef47130c765e0389345ef4c81d}} 
+\index{templateHelper.js@{templateHelper.js}!dictionary@{dictionary}}
+\index{dictionary@{dictionary}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{dictionary}{dictionary}}
+{\footnotesize\ttfamily let dictionary = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rules_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}/dictionary\textquotesingle{})}
+
+\mbox{\Hypertarget{templateHelper_8js_a27a60859f9b15587b2bffa4aa6780723}\label{templateHelper_8js_a27a60859f9b15587b2bffa4aa6780723}} 
+\index{templateHelper.js@{templateHelper.js}!env@{env}}
+\index{env@{env}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{env}{env}}
+{\footnotesize\ttfamily const env = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/env\textquotesingle{})}
+
+\mbox{\Hypertarget{templateHelper_8js_a57baa108629e469cc19746b25fe5ed32}\label{templateHelper_8js_a57baa108629e469cc19746b25fe5ed32}} 
+\index{templateHelper.js@{templateHelper.js}!fileExtension@{fileExtension}}
+\index{fileExtension@{fileExtension}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{fileExtension}{fileExtension}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} file\+Extension = \textquotesingle{}.html\textquotesingle{}}
+
+\mbox{\Hypertarget{templateHelper_8js_a44a1593121fc0af9668b715d42aa3a57}\label{templateHelper_8js_a44a1593121fc0af9668b715d42aa3a57}} 
+\index{templateHelper.js@{templateHelper.js}!files@{files}}
+\index{files@{files}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily const files = \{\}}
+
+\mbox{\Hypertarget{templateHelper_8js_a1b338974d323f6416eaa7fe4da364f55}\label{templateHelper_8js_a1b338974d323f6416eaa7fe4da364f55}} 
+\index{templateHelper.js@{templateHelper.js}!globalName@{globalName}}
+\index{globalName@{globalName}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{globalName}{globalName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} global\+Name = name.\+S\+C\+O\+P\+E.\+N\+A\+M\+E\+S.\+G\+L\+O\+B\+AL}
+
+\mbox{\Hypertarget{templateHelper_8js_a5003cc3d54412fd1173126a720e10180}\label{templateHelper_8js_a5003cc3d54412fd1173126a720e10180}} 
+\index{templateHelper.js@{templateHelper.js}!hasOwnProp@{hasOwnProp}}
+\index{hasOwnProp@{hasOwnProp}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{hasOwnProp}{hasOwnProp}}
+{\footnotesize\ttfamily const has\+Own\+Prop = \mbox{\hyperlink{underscore_2underscore_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}}
+
+\mbox{\Hypertarget{templateHelper_8js_acf1c3a7536ab22ef224ee20e85cf61ae}\label{templateHelper_8js_acf1c3a7536ab22ef224ee20e85cf61ae}} 
+\index{templateHelper.js@{templateHelper.js}!ids@{ids}}
+\index{ids@{ids}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{ids}{ids}}
+{\footnotesize\ttfamily const ids = \{\}}
+
+\mbox{\Hypertarget{templateHelper_8js_aac028e75928860fd58754d030598e200}\label{templateHelper_8js_aac028e75928860fd58754d030598e200}} 
+\index{templateHelper.js@{templateHelper.js}!linkMap@{linkMap}}
+\index{linkMap@{linkMap}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{linkMap}{linkMap}}
+{\footnotesize\ttfamily const link\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{templateHelper_8js_a0be0ebdf24d7d1a3aaea71987c3b69c7}{longnameToUrl}}: \{\},}
+\DoxyCodeLine{    urlToLongname: \{\},}
+\DoxyCodeLine{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{templateHelper_8js_a55ac47c6e9c963701dc273cdf59c8f1a}{longnameToId}}: \{\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{templateHelper_8js_a3eeb882d4c8b8f72f70d07d121b46f3e}\label{templateHelper_8js_a3eeb882d4c8b8f72f70d07d121b46f3e}} 
+\index{templateHelper.js@{templateHelper.js}!logger@{logger}}
+\index{logger@{logger}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily const const logger = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/logger\textquotesingle{})}
+
+\mbox{\Hypertarget{templateHelper_8js_a55ac47c6e9c963701dc273cdf59c8f1a}\label{templateHelper_8js_a55ac47c6e9c963701dc273cdf59c8f1a}} 
+\index{templateHelper.js@{templateHelper.js}!longnameToId@{longnameToId}}
+\index{longnameToId@{longnameToId}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{longnameToId}{longnameToId}}
+{\footnotesize\ttfamily const longname\+To\+Id = exports.\+longname\+To\+Id = link\+Map.\+longname\+To\+Id}
+
+\mbox{\Hypertarget{templateHelper_8js_a0be0ebdf24d7d1a3aaea71987c3b69c7}\label{templateHelper_8js_a0be0ebdf24d7d1a3aaea71987c3b69c7}} 
+\index{templateHelper.js@{templateHelper.js}!longnameToUrl@{longnameToUrl}}
+\index{longnameToUrl@{longnameToUrl}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{longnameToUrl}{longnameToUrl}}
+{\footnotesize\ttfamily const longname\+To\+Url = exports.\+longname\+To\+Url = link\+Map.\+longname\+To\+Url}
+
+\mbox{\Hypertarget{templateHelper_8js_ac5fb6ed9bb69409375e27c498f7c198b}\label{templateHelper_8js_ac5fb6ed9bb69409375e27c498f7c198b}} 
+\index{templateHelper.js@{templateHelper.js}!MODULE\_NAMESPACE@{MODULE\_NAMESPACE}}
+\index{MODULE\_NAMESPACE@{MODULE\_NAMESPACE}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{MODULE\_NAMESPACE}{MODULE\_NAMESPACE}}
+{\footnotesize\ttfamily const M\+O\+D\+U\+L\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE = \textquotesingle{}module\+:\textquotesingle{}}
+
+\mbox{\Hypertarget{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}\label{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}} 
+\index{templateHelper.js@{templateHelper.js}!name@{name}}
+\index{name@{name}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily const name = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/name\textquotesingle{})}
+
+\mbox{\Hypertarget{templateHelper_8js_a7901379ac976fb0d01e67a88f3f16f92}\label{templateHelper_8js_a7901379ac976fb0d01e67a88f3f16f92}} 
+\index{templateHelper.js@{templateHelper.js}!registerId@{registerId}}
+\index{registerId@{registerId}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{registerId}{registerId}}
+{\footnotesize\ttfamily const register\+Id}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.registerId = (longname, fragment) => \{}
+\DoxyCodeLine{    \mbox{\hyperlink{templateHelper_8js_aac028e75928860fd58754d030598e200}{linkMap}}.longnameToId[longname] = fragment;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{templateHelper_8js_ae8b3f9d62fc5070f8642f2924a2d006a}\label{templateHelper_8js_ae8b3f9d62fc5070f8642f2924a2d006a}} 
+\index{templateHelper.js@{templateHelper.js}!registerLink@{registerLink}}
+\index{registerLink@{registerLink}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{registerLink}{registerLink}}
+{\footnotesize\ttfamily const register\+Link}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.registerLink = (longname, fileUrl) => \{}
+\DoxyCodeLine{    \mbox{\hyperlink{templateHelper_8js_aac028e75928860fd58754d030598e200}{linkMap}}.longnameToUrl[longname] = fileUrl;}
+\DoxyCodeLine{    \mbox{\hyperlink{templateHelper_8js_aac028e75928860fd58754d030598e200}{linkMap}}.urlToLongname[fileUrl] = longname;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{templateHelper_8js_a128129ca9456c46c5163d5c6e826d178}\label{templateHelper_8js_a128129ca9456c46c5163d5c6e826d178}} 
+\index{templateHelper.js@{templateHelper.js}!scopeToPunc@{scopeToPunc}}
+\index{scopeToPunc@{scopeToPunc}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{scopeToPunc}{scopeToPunc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} scope\+To\+Punc = name.\+scope\+To\+Punc}
+
+\mbox{\Hypertarget{templateHelper_8js_a7161573457fb2046288b37b09ffd9a9e}\label{templateHelper_8js_a7161573457fb2046288b37b09ffd9a9e}} 
+\index{templateHelper.js@{templateHelper.js}!setTutorials@{setTutorials}}
+\index{setTutorials@{setTutorials}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{setTutorials}{setTutorials}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} set\+Tutorials}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tutorial_2resolver_8js_a1917dba82d52102cb73547b43e77f7ec}{root}} => \{}
+\DoxyCodeLine{    \mbox{\hyperlink{templateHelper_8js_a46d54f7de077187bf66d2a421d27ebd3}{tutorials}} = \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tutorial_2resolver_8js_a1917dba82d52102cb73547b43e77f7ec}{root}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Sets tutorials map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{jsdoc.\+tutorial.\+Tutorial\}} & root -\/ Root tutorial node. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{templateHelper_8js_a2598a7bfd81b76c39db692b2778a86ad}\label{templateHelper_8js_a2598a7bfd81b76c39db692b2778a86ad}} 
+\index{templateHelper.js@{templateHelper.js}!tutorialLinkMap@{tutorialLinkMap}}
+\index{tutorialLinkMap@{tutorialLinkMap}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{tutorialLinkMap}{tutorialLinkMap}}
+{\footnotesize\ttfamily const tutorial\+Link\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    nameToUrl: \{\},}
+\DoxyCodeLine{    urlToName: \{\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{templateHelper_8js_a46d54f7de077187bf66d2a421d27ebd3}\label{templateHelper_8js_a46d54f7de077187bf66d2a421d27ebd3}} 
+\index{templateHelper.js@{templateHelper.js}!tutorials@{tutorials}}
+\index{tutorials@{tutorials}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{tutorials}{tutorials}}
+{\footnotesize\ttfamily let tutorials}
+
+\mbox{\Hypertarget{templateHelper_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}\label{templateHelper_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}} 
+\index{templateHelper.js@{templateHelper.js}!util@{util}}
+\index{util@{util}!templateHelper.js@{templateHelper.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily const util = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})}
+

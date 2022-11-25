@@ -1,0 +1,156 @@
+\hypertarget{parser__inline_8js}{}\doxysection{node\+\_\+modules/markdown-\/it/lib/parser\+\_\+inline.js File Reference}
+\label{parser__inline_8js}\index{node\_modules/markdown-\/it/lib/parser\_inline.js@{node\_modules/markdown-\/it/lib/parser\_inline.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}} ()
+\begin{DoxyCompactList}\small\item\em new \mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{parser__inline_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\begin{DoxyCompactList}\small\item\em internal class Parser\+Inline \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{parser__inline_8js_ae52b224cca585cb5ce6279585569b790}{Ruler}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./ruler\textquotesingle{})
+\item 
+var \mbox{\hyperlink{parser__inline_8js_a6dc78dee3da987ae2c506086d1086e81}{\+\_\+rules}}
+\item 
+var \mbox{\hyperlink{parser__inline_8js_a0d542fbcf363df1ac1a900e2fdc75d17}{\+\_\+rules2}}
+\item 
+\mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{parser__inline_8js_aa8fe6084f4c4ec0a1c1f37f612f05bb1}{skip\+Token}}
+\item 
+\mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{parser__inline_8js_aca797c5e10868c7ba11f01d0019fefda}{tokenize}}
+\item 
+\mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{parser__inline_8js_ac993e7c098ff60f9908b21beb47451ad}{parse}}
+\begin{DoxyCompactList}\small\item\em Parser\+Inline.\+parse(str, md, env, out\+Tokens) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{parser__inline_8js_a62a62afdecbdb1fc2e3343d9a56e8a12}{State}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./rules\+\_\+inline/state\+\_\+inline\textquotesingle{})
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{parser__inline_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}\label{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}} 
+\index{parser\_inline.js@{parser\_inline.js}!ParserInline@{ParserInline}}
+\index{ParserInline@{ParserInline}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{ParserInline()}{ParserInline()}}
+{\footnotesize\ttfamily function Parser\+Inline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+new \mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline()}} 
+
+Parser\+Inline\+::ruler -\/$>$ Ruler
+
+\mbox{[}\mbox{[}Ruler\mbox{]}\mbox{]} instance. Keep configuration of inline rules.
+
+Parser\+Inline\+::ruler2 -\/$>$ Ruler
+
+\mbox{[}\mbox{[}Ruler\mbox{]}\mbox{]} instance. Second ruler used for post-\/processing (e.\+g. in emphasis-\/like rules).
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{parser__inline_8js_a6dc78dee3da987ae2c506086d1086e81}\label{parser__inline_8js_a6dc78dee3da987ae2c506086d1086e81}} 
+\index{parser\_inline.js@{parser\_inline.js}!\_rules@{\_rules}}
+\index{\_rules@{\_rules}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{\_rules}{\_rules}}
+{\footnotesize\ttfamily var \+\_\+rules}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'text'},            \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/text'}) ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'newline'},         \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/newline'}) ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'escape'},          \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/escape'}) ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'backticks'},       \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/backticks'}) ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'strikethrough'},   \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/strikethrough'}).tokenize ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'emphasis'},        \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/emphasis'}).tokenize ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'link'},            \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/link'}) ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'image'},           \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/image'}) ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'autolink'},        \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/autolink'}) ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'html\_inline'},     \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/html\_inline'}) ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'entity'},          \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/entity'}) ]}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{parser__inline_8js_a0d542fbcf363df1ac1a900e2fdc75d17}\label{parser__inline_8js_a0d542fbcf363df1ac1a900e2fdc75d17}} 
+\index{parser\_inline.js@{parser\_inline.js}!\_rules2@{\_rules2}}
+\index{\_rules2@{\_rules2}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{\_rules2}{\_rules2}}
+{\footnotesize\ttfamily var \+\_\+rules2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'balance\_pairs'},   \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/balance\_pairs'}) ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'strikethrough'},   \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/strikethrough'}).postProcess ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'emphasis'},        \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/emphasis'}).postProcess ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'text\_collapse'},   \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_inline/text\_collapse'}) ]}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{parser__inline_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{parser__inline_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{parser\_inline.js@{parser\_inline.js}!exports@{exports}}
+\index{exports@{exports}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}}}
+
+\mbox{\Hypertarget{parser__inline_8js_ac993e7c098ff60f9908b21beb47451ad}\label{parser__inline_8js_ac993e7c098ff60f9908b21beb47451ad}} 
+\index{parser\_inline.js@{parser\_inline.js}!parse@{parse}}
+\index{parse@{parse}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{parse}{parse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} parse}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, md, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}, outTokens) \{}
+\DoxyCodeLine{  var \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}, rules, len;}
+\DoxyCodeLine{  var \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}} = \textcolor{keyword}{new} this.\mbox{\hyperlink{parser__inline_8js_a62a62afdecbdb1fc2e3343d9a56e8a12}{State}}(\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, md, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}, outTokens);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  this.\mbox{\hyperlink{parser__inline_8js_aca797c5e10868c7ba11f01d0019fefda}{tokenize}}(state);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  rules = this.ruler2.getRules(\textcolor{stringliteral}{''});}
+\DoxyCodeLine{  len = rules.length;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{for} (\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} = 0; \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} < len; \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}++) \{}
+\DoxyCodeLine{    rules[\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}](\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}});}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Parser\+Inline.\+parse(str, md, env, out\+Tokens) 
+
+Process input string and push inline tokens into {\ttfamily out\+Tokens} \mbox{\Hypertarget{parser__inline_8js_ae52b224cca585cb5ce6279585569b790}\label{parser__inline_8js_ae52b224cca585cb5ce6279585569b790}} 
+\index{parser\_inline.js@{parser\_inline.js}!Ruler@{Ruler}}
+\index{Ruler@{Ruler}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{Ruler}{Ruler}}
+{\footnotesize\ttfamily var Ruler = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./ruler\textquotesingle{})}
+
+\mbox{\Hypertarget{parser__inline_8js_aa8fe6084f4c4ec0a1c1f37f612f05bb1}\label{parser__inline_8js_aa8fe6084f4c4ec0a1c1f37f612f05bb1}} 
+\index{parser\_inline.js@{parser\_inline.js}!skipToken@{skipToken}}
+\index{skipToken@{skipToken}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{skipToken}{skipToken}}
+{\footnotesize\ttfamily \mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} skip\+Token}
+
+\mbox{\Hypertarget{parser__inline_8js_a62a62afdecbdb1fc2e3343d9a56e8a12}\label{parser__inline_8js_a62a62afdecbdb1fc2e3343d9a56e8a12}} 
+\index{parser\_inline.js@{parser\_inline.js}!State@{State}}
+\index{State@{State}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily \mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{classState}{State}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./rules\+\_\+inline/state\+\_\+inline\textquotesingle{})}
+
+\mbox{\Hypertarget{parser__inline_8js_ae2475e10618961c050dcba04e8c42331}\label{parser__inline_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{parser\_inline.js@{parser\_inline.js}!strict@{strict}}
+\index{strict@{strict}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+
+
+
+internal class Parser\+Inline 
+
+Tokenizes paragraph content. \mbox{\Hypertarget{parser__inline_8js_aca797c5e10868c7ba11f01d0019fefda}\label{parser__inline_8js_aca797c5e10868c7ba11f01d0019fefda}} 
+\index{parser\_inline.js@{parser\_inline.js}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!parser\_inline.js@{parser\_inline.js}}
+\doxysubsubsection{\texorpdfstring{tokenize}{tokenize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{parser__inline_8js_a5d68fcf6e869ea9e675c5c2b5b5acb71}{Parser\+Inline}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} tokenize}
+

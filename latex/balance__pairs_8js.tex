@@ -1,0 +1,55 @@
+\hypertarget{balance__pairs_8js}{}\doxysection{node\+\_\+modules/markdown-\/it/lib/rules\+\_\+inline/balance\+\_\+pairs.js File Reference}
+\label{balance__pairs_8js}\index{node\_modules/markdown-\/it/lib/rules\_inline/balance\_pairs.js@{node\_modules/markdown-\/it/lib/rules\_inline/balance\_pairs.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{balance__pairs_8js_a4f8cf36c32c1a12f16c1fabb7ef142e3}{process\+Delimiters}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, delimiters)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{balance__pairs_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{balance__pairs_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{balance__pairs_8js_a4f8cf36c32c1a12f16c1fabb7ef142e3}\label{balance__pairs_8js_a4f8cf36c32c1a12f16c1fabb7ef142e3}} 
+\index{balance\_pairs.js@{balance\_pairs.js}!processDelimiters@{processDelimiters}}
+\index{processDelimiters@{processDelimiters}!balance\_pairs.js@{balance\_pairs.js}}
+\doxysubsubsection{\texorpdfstring{processDelimiters()}{processDelimiters()}}
+{\footnotesize\ttfamily function process\+Delimiters (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{delimiters }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{balance__pairs_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{balance__pairs_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{balance\_pairs.js@{balance\_pairs.js}!exports@{exports}}
+\index{exports@{exports}!balance\_pairs.js@{balance\_pairs.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} link\_pairs(\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}) \{}
+\DoxyCodeLine{  var curr,}
+\DoxyCodeLine{      tokens\_meta = \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.tokens\_meta,}
+\DoxyCodeLine{      \mbox{\hyperlink{lodash_2core_8js_a2af6481e8d02218064702cc796ef97ef}{max}} = \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.tokens\_meta.length;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{balance__pairs_8js_a4f8cf36c32c1a12f16c1fabb7ef142e3}{processDelimiters}}(\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}, \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.delimiters);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{for} (curr = 0; curr < \mbox{\hyperlink{lodash_2core_8js_a2af6481e8d02218064702cc796ef97ef}{max}}; curr++) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (tokens\_meta[curr] \&\& tokens\_meta[curr].delimiters) \{}
+\DoxyCodeLine{      \mbox{\hyperlink{balance__pairs_8js_a4f8cf36c32c1a12f16c1fabb7ef142e3}{processDelimiters}}(\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}, tokens\_meta[curr].delimiters);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{balance__pairs_8js_ae2475e10618961c050dcba04e8c42331}\label{balance__pairs_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{balance\_pairs.js@{balance\_pairs.js}!strict@{strict}}
+\index{strict@{strict}!balance\_pairs.js@{balance\_pairs.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+

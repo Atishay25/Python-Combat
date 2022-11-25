@@ -1,0 +1,181 @@
+\hypertarget{classSelectionRange}{}\doxysection{Selection\+Range Class Reference}
+\label{classSelectionRange}\index{SelectionRange@{SelectionRange}}
+
+
+A single selection range.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSelectionRange_ad6d150c08c07991b56157a3befc3265d}{constructor}} (from, to, flags)
+\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classSelectionRange_a9c259741cb4efde64013bbac106227a1}{anchor}} ()
+\begin{DoxyCompactList}\small\item\em The anchor of the range—the side that doesn\textquotesingle{}t move when you extend it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classSelectionRange_a948a0ec7bd53074be4b7598fb6ef6129}{head}} ()
+\begin{DoxyCompactList}\small\item\em The head of the range, which is moved when the range is \href{https://codemirror.net/6/docs/ref/\#state.SelectionRange.extend}{\texttt{ extended}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classSelectionRange_ad859be04ee28e09a674b5b0d206ad115}{empty}} ()
+\begin{DoxyCompactList}\small\item\em True when {\ttfamily anchor} and {\ttfamily head} are at the same position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classSelectionRange_ac3ebfe020dd2fbfa8456d8380435ef2b}{assoc}} ()
+\begin{DoxyCompactList}\small\item\em If this is a cursor that is explicitly associated with the character on one of its sides, this returns the side. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classSelectionRange_afddfc2be984f5f4745196595b126cc56}{bidi\+Level}} ()
+\begin{DoxyCompactList}\small\item\em The bidirectional text level associated with this cursor, if any. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classSelectionRange_aa214c5e53bd1758e24429dd68971be1a}{goal\+Column}} ()
+\begin{DoxyCompactList}\small\item\em The goal column (stored vertical offset) associated with a cursor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSelectionRange_a927ea6463e50ef9c484251cfda57c0e5}{map}} (change, \mbox{\hyperlink{classSelectionRange_ac3ebfe020dd2fbfa8456d8380435ef2b}{assoc}}=-\/1)
+\begin{DoxyCompactList}\small\item\em Map this range through a change, producing a valid range in the updated document. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSelectionRange_a017d49668da0370d30e3c4243295439a}{extend}} (from, to=from)
+\begin{DoxyCompactList}\small\item\em Extend this range to cover at least {\ttfamily from} to {\ttfamily to}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSelectionRange_a7b65119b35e16f9b077b85877ace137d}{eq}} (other)
+\begin{DoxyCompactList}\small\item\em Compare this range to another range. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSelectionRange_aecd3f5ee3baa83e6dcf1aea350a383b8}{to\+J\+S\+ON}} ()
+\begin{DoxyCompactList}\small\item\em Return a J\+S\+O\+N-\/serializable object representing the range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSelectionRange_ae7690630eb13dcd297dcbc8bd886e9f4}{from\+J\+S\+ON}} (json)
+\begin{DoxyCompactList}\small\item\em Convert a J\+S\+ON representation of a range to a {\ttfamily \mbox{\hyperlink{classSelectionRange}{Selection\+Range}}} instance. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classSelectionRange_ab961d43a2e68efa732a4928ca9d4ea90}{create}} (from, to, flags)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A single selection range. 
+
+When \href{https://codemirror.net/6/docs/ref/\#state.EditorState^allowMultipleSelections}{\texttt{ {\ttfamily allow\+Multiple\+Selections}}} is enabled, a \href{https://codemirror.net/6/docs/ref/\#state.EditorSelection}{\texttt{ selection}} may hold multiple ranges. By default, selections hold exactly one range. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSelectionRange_a9c259741cb4efde64013bbac106227a1}\label{classSelectionRange_a9c259741cb4efde64013bbac106227a1}} 
+\index{SelectionRange@{SelectionRange}!anchor@{anchor}}
+\index{anchor@{anchor}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{anchor()}{anchor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Selection\+Range\+::anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The anchor of the range—the side that doesn\textquotesingle{}t move when you extend it. 
+
+\mbox{\Hypertarget{classSelectionRange_ac3ebfe020dd2fbfa8456d8380435ef2b}\label{classSelectionRange_ac3ebfe020dd2fbfa8456d8380435ef2b}} 
+\index{SelectionRange@{SelectionRange}!assoc@{assoc}}
+\index{assoc@{assoc}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{assoc()}{assoc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Selection\+Range\+::assoc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If this is a cursor that is explicitly associated with the character on one of its sides, this returns the side. 
+
+-\/1 means the character before its position, 1 the character after, and 0 means no association. \mbox{\Hypertarget{classSelectionRange_afddfc2be984f5f4745196595b126cc56}\label{classSelectionRange_afddfc2be984f5f4745196595b126cc56}} 
+\index{SelectionRange@{SelectionRange}!bidiLevel@{bidiLevel}}
+\index{bidiLevel@{bidiLevel}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{bidiLevel()}{bidiLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Selection\+Range\+::bidi\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The bidirectional text level associated with this cursor, if any. 
+
+\mbox{\Hypertarget{classSelectionRange_ad6d150c08c07991b56157a3befc3265d}\label{classSelectionRange_ad6d150c08c07991b56157a3befc3265d}} 
+\index{SelectionRange@{SelectionRange}!constructor@{constructor}}
+\index{constructor@{constructor}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Selection\+Range\+::constructor (\begin{DoxyParamCaption}\item[{}]{from,  }\item[{}]{to,  }\item[{}]{flags }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The lower boundary of the range. \\
+\hline
+{\em to} & The upper boundary of the range. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSelectionRange_ab961d43a2e68efa732a4928ca9d4ea90}\label{classSelectionRange_ab961d43a2e68efa732a4928ca9d4ea90}} 
+\index{SelectionRange@{SelectionRange}!create@{create}}
+\index{create@{create}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static Selection\+Range\+::create (\begin{DoxyParamCaption}\item[{}]{from,  }\item[{}]{to,  }\item[{}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classSelectionRange_ad859be04ee28e09a674b5b0d206ad115}\label{classSelectionRange_ad859be04ee28e09a674b5b0d206ad115}} 
+\index{SelectionRange@{SelectionRange}!empty@{empty}}
+\index{empty@{empty}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Selection\+Range\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+True when {\ttfamily anchor} and {\ttfamily head} are at the same position. 
+
+\mbox{\Hypertarget{classSelectionRange_a7b65119b35e16f9b077b85877ace137d}\label{classSelectionRange_a7b65119b35e16f9b077b85877ace137d}} 
+\index{SelectionRange@{SelectionRange}!eq@{eq}}
+\index{eq@{eq}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{eq()}{eq()}}
+{\footnotesize\ttfamily Selection\+Range\+::eq (\begin{DoxyParamCaption}\item[{}]{other }\end{DoxyParamCaption})}
+
+
+
+Compare this range to another range. 
+
+\mbox{\Hypertarget{classSelectionRange_a017d49668da0370d30e3c4243295439a}\label{classSelectionRange_a017d49668da0370d30e3c4243295439a}} 
+\index{SelectionRange@{SelectionRange}!extend@{extend}}
+\index{extend@{extend}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily Selection\+Range\+::extend (\begin{DoxyParamCaption}\item[{}]{from,  }\item[{}]{to = {\ttfamily from} }\end{DoxyParamCaption})}
+
+
+
+Extend this range to cover at least {\ttfamily from} to {\ttfamily to}. 
+
+\mbox{\Hypertarget{classSelectionRange_ae7690630eb13dcd297dcbc8bd886e9f4}\label{classSelectionRange_ae7690630eb13dcd297dcbc8bd886e9f4}} 
+\index{SelectionRange@{SelectionRange}!fromJSON@{fromJSON}}
+\index{fromJSON@{fromJSON}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{fromJSON()}{fromJSON()}}
+{\footnotesize\ttfamily static Selection\+Range\+::from\+J\+S\+ON (\begin{DoxyParamCaption}\item[{}]{json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert a J\+S\+ON representation of a range to a {\ttfamily \mbox{\hyperlink{classSelectionRange}{Selection\+Range}}} instance. 
+
+\mbox{\Hypertarget{classSelectionRange_aa214c5e53bd1758e24429dd68971be1a}\label{classSelectionRange_aa214c5e53bd1758e24429dd68971be1a}} 
+\index{SelectionRange@{SelectionRange}!goalColumn@{goalColumn}}
+\index{goalColumn@{goalColumn}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{goalColumn()}{goalColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Selection\+Range\+::goal\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The goal column (stored vertical offset) associated with a cursor. 
+
+This is used to preserve the vertical position when \href{https://codemirror.net/6/docs/ref/\#view.EditorView.moveVertically}{\texttt{ moving}} across lines of different length. \mbox{\Hypertarget{classSelectionRange_a948a0ec7bd53074be4b7598fb6ef6129}\label{classSelectionRange_a948a0ec7bd53074be4b7598fb6ef6129}} 
+\index{SelectionRange@{SelectionRange}!head@{head}}
+\index{head@{head}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{head()}{head()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Selection\+Range\+::head (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The head of the range, which is moved when the range is \href{https://codemirror.net/6/docs/ref/\#state.SelectionRange.extend}{\texttt{ extended}}. 
+
+\mbox{\Hypertarget{classSelectionRange_a927ea6463e50ef9c484251cfda57c0e5}\label{classSelectionRange_a927ea6463e50ef9c484251cfda57c0e5}} 
+\index{SelectionRange@{SelectionRange}!map@{map}}
+\index{map@{map}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily Selection\+Range\+::map (\begin{DoxyParamCaption}\item[{}]{change,  }\item[{}]{assoc = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Map this range through a change, producing a valid range in the updated document. 
+
+\mbox{\Hypertarget{classSelectionRange_aecd3f5ee3baa83e6dcf1aea350a383b8}\label{classSelectionRange_aecd3f5ee3baa83e6dcf1aea350a383b8}} 
+\index{SelectionRange@{SelectionRange}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!SelectionRange@{SelectionRange}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily Selection\+Range\+::to\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return a J\+S\+O\+N-\/serializable object representing the range. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/state/dist/\mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

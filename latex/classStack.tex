@@ -1,0 +1,287 @@
+\hypertarget{classStack}{}\doxysection{Stack Class Reference}
+\label{classStack}\index{Stack@{Stack}}
+
+
+A parse stack.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStack_a79de0035fcfed09c04ad5a2e0ef1fbb4}{constructor}} (\mbox{\hyperlink{marked_8min_8js_a8a8fdd616bc8e35b3664895f2affb775}{p}}, stack, \mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, reduce\+Pos, pos, \mbox{\hyperlink{_0dcodemirror_2autocomplete_2dist_2index_8js_a9a7b70f32b75cf06260f5296553ff57e}{score}}, buffer, buffer\+Base, cur\+Context, \mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a39783b126ca0bd22fadbfa18d505a554}{look\+Ahead}}=0, \mbox{\hyperlink{__parent_8js_ac7ea7836d8d3128c6fcf2725bc233801}{parent}})
+\item 
+\mbox{\hyperlink{classStack_a7479095e6be56504093814fd99b0d43a}{to\+String}} ()
+\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classStack_a5865eb4e92a0d0bd205edb97dd4b0648}{context}} ()
+\begin{DoxyCompactList}\small\item\em The stack\textquotesingle{}s current \href{\#lr.ContextTracker}{\texttt{ context}} value, if any. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStack_aeb1046e9584adee2bde0dc69779465bc}{push\+State}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, \mbox{\hyperlink{classStack_af07b4c85eb66c1319ffedecd9399b372}{start}})
+\item 
+\mbox{\hyperlink{classStack_a316f5fada5a44b3813eb0ddce34f5fe7}{reduce}} (action)
+\item 
+\mbox{\hyperlink{classStack_a1cc1a1ed9be659eec314a26265b0aa9c}{store\+Node}} (term, \mbox{\hyperlink{classStack_af07b4c85eb66c1319ffedecd9399b372}{start}}, end, \mbox{\hyperlink{underscore-esm-min_8js_a35c142fb6cd5831ec0b28b5ec6d520d6}{size}}=4, is\+Reduce=false)
+\item 
+\mbox{\hyperlink{classStack_a2aa002683c4772cba6b878e7f1f06fb5}{shift}} (action, next, next\+End)
+\item 
+\mbox{\hyperlink{classStack_a9bdb9d7ead98c315fa7c9e76c8383c03}{apply}} (action, next, next\+End)
+\item 
+\mbox{\hyperlink{classStack_aa088c0e3103570663c2a3463e55256e1}{use\+Node}} (\mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}, next)
+\item 
+\mbox{\hyperlink{classStack_a0a21198b4e9976a069d6dea7e55ae73c}{split}} ()
+\item 
+\mbox{\hyperlink{classStack_a06e4c95f737efb703a076577e6aa18a7}{recover\+By\+Delete}} (next, next\+End)
+\item 
+\mbox{\hyperlink{classStack_a83e36466cd7a9513e8a485e425579fbd}{can\+Shift}} (term)
+\begin{DoxyCompactList}\small\item\em Check if the given term would be able to be shifted (optionally after some reductions) on this stack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStack_a9edf16a55dc39d45136bc9c53ab335b9}{recover\+By\+Insert}} (next)
+\item 
+\mbox{\hyperlink{classStack_add96dbca1e3367c5a2364f93f457245d}{force\+Reduce}} ()
+\item 
+\mbox{\hyperlink{classStack_a0da98c2247675292f40569f131c13efe}{force\+All}} ()
+\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classStack_a3e048d49451b747a4014ac2304c70249}{dead\+End}} ()
+\begin{DoxyCompactList}\small\item\em Check whether this state has no further actions (assumed to be a direct descendant of the top state, since any other states must be able to continue somehow). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStack_a5d3824ad28769be26eaa64c7db1d4baa}{restart}} ()
+\begin{DoxyCompactList}\small\item\em Restart the stack (put it back in its start state). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStack_af3b0f55ff6d88c86b134d849b8af603a}{same\+State}} (other)
+\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classStack_aa183eeaae6596dce4f44322e60efc426}{parser}} ()
+\begin{DoxyCompactList}\small\item\em Get the parser used by this stack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStack_a9bb1c6db04ef35ec4ecc65006d89d656}{dialect\+Enabled}} (dialect\+ID)
+\begin{DoxyCompactList}\small\item\em Test whether a given dialect (by numeric ID, as exported from the terms file) is enabled. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStack_aa02a5f2a60d620ee013babc03f4eddaf}{shift\+Context}} (term, \mbox{\hyperlink{classStack_af07b4c85eb66c1319ffedecd9399b372}{start}})
+\item 
+\mbox{\hyperlink{classStack_a04fd2c30d2b443f9a0c81c80b627bca5}{reduce\+Context}} (term, \mbox{\hyperlink{classStack_af07b4c85eb66c1319ffedecd9399b372}{start}})
+\item 
+\mbox{\hyperlink{classStack_a22a5df59726bb84148418abd4cc68af1}{emit\+Context}} ()
+\item 
+\mbox{\hyperlink{classStack_a2724c60307d0a546af43b7377054b779}{emit\+Look\+Ahead}} ()
+\item 
+\mbox{\hyperlink{classStack_ab98d91d90191abd6852c9b77335c03f1}{update\+Context}} (\mbox{\hyperlink{classStack_a5865eb4e92a0d0bd205edb97dd4b0648}{context}})
+\item 
+\mbox{\hyperlink{classStack_afe17eb478394ba2afea1451ed4d5f2e8}{set\+Look\+Ahead}} (\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js_a39783b126ca0bd22fadbfa18d505a554}{look\+Ahead}})
+\item 
+\mbox{\hyperlink{classStack_a85006a85be21a4e2859c714ce9bbf611}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classStack_af07b4c85eb66c1319ffedecd9399b372}{start}} (\mbox{\hyperlink{marked_8min_8js_a8a8fdd616bc8e35b3664895f2affb775}{p}}, \mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, pos=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A parse stack. 
+
+These are used internally by the parser to track parsing progress. They also provide some properties and methods that external code such as a tokenizer can use to get information about the parse state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStack_a9bdb9d7ead98c315fa7c9e76c8383c03}\label{classStack_a9bdb9d7ead98c315fa7c9e76c8383c03}} 
+\index{Stack@{Stack}!apply@{apply}}
+\index{apply@{apply}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily Stack\+::apply (\begin{DoxyParamCaption}\item[{}]{action,  }\item[{}]{next,  }\item[{}]{next\+End }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a83e36466cd7a9513e8a485e425579fbd}\label{classStack_a83e36466cd7a9513e8a485e425579fbd}} 
+\index{Stack@{Stack}!canShift@{canShift}}
+\index{canShift@{canShift}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{canShift()}{canShift()}}
+{\footnotesize\ttfamily Stack\+::can\+Shift (\begin{DoxyParamCaption}\item[{}]{term }\end{DoxyParamCaption})}
+
+
+
+Check if the given term would be able to be shifted (optionally after some reductions) on this stack. 
+
+This can be useful for external tokenizers that want to make sure they only provide a given token when it applies. \mbox{\Hypertarget{classStack_a85006a85be21a4e2859c714ce9bbf611}\label{classStack_a85006a85be21a4e2859c714ce9bbf611}} 
+\index{Stack@{Stack}!close@{close}}
+\index{close@{close}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily Stack\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a79de0035fcfed09c04ad5a2e0ef1fbb4}\label{classStack_a79de0035fcfed09c04ad5a2e0ef1fbb4}} 
+\index{Stack@{Stack}!constructor@{constructor}}
+\index{constructor@{constructor}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Stack\+::constructor (\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{stack,  }\item[{}]{state,  }\item[{}]{reduce\+Pos,  }\item[{}]{pos,  }\item[{}]{score,  }\item[{}]{buffer,  }\item[{}]{buffer\+Base,  }\item[{}]{cur\+Context,  }\item[{}]{look\+Ahead = {\ttfamily 0},  }\item[{}]{parent }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The parse that this stack is part of\\
+\hline
+{\em stack} & Holds state, input pos, buffer index triplets for all but the top state\\
+\hline
+{\em state} & The current parse state\\
+\hline
+{\em pos} & The input position up to which this stack has parsed. \\
+\hline
+{\em score} & The dynamic score of the stack, including dynamic precedence and error-\/recovery penalties \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStack_a5865eb4e92a0d0bd205edb97dd4b0648}\label{classStack_a5865eb4e92a0d0bd205edb97dd4b0648}} 
+\index{Stack@{Stack}!context@{context}}
+\index{context@{context}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{context()}{context()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Stack\+::context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The stack\textquotesingle{}s current \href{\#lr.ContextTracker}{\texttt{ context}} value, if any. 
+
+Its type will depend on the context tracker\textquotesingle{}s type parameter, or it will be {\ttfamily null} if there is no context tracker. \mbox{\Hypertarget{classStack_a3e048d49451b747a4014ac2304c70249}\label{classStack_a3e048d49451b747a4014ac2304c70249}} 
+\index{Stack@{Stack}!deadEnd@{deadEnd}}
+\index{deadEnd@{deadEnd}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{deadEnd()}{deadEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Stack\+::dead\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check whether this state has no further actions (assumed to be a direct descendant of the top state, since any other states must be able to continue somehow). 
+
+\mbox{\Hypertarget{classStack_a9bb1c6db04ef35ec4ecc65006d89d656}\label{classStack_a9bb1c6db04ef35ec4ecc65006d89d656}} 
+\index{Stack@{Stack}!dialectEnabled@{dialectEnabled}}
+\index{dialectEnabled@{dialectEnabled}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{dialectEnabled()}{dialectEnabled()}}
+{\footnotesize\ttfamily Stack\+::dialect\+Enabled (\begin{DoxyParamCaption}\item[{}]{dialect\+ID }\end{DoxyParamCaption})}
+
+
+
+Test whether a given dialect (by numeric ID, as exported from the terms file) is enabled. 
+
+\mbox{\Hypertarget{classStack_a22a5df59726bb84148418abd4cc68af1}\label{classStack_a22a5df59726bb84148418abd4cc68af1}} 
+\index{Stack@{Stack}!emitContext@{emitContext}}
+\index{emitContext@{emitContext}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{emitContext()}{emitContext()}}
+{\footnotesize\ttfamily Stack\+::emit\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a2724c60307d0a546af43b7377054b779}\label{classStack_a2724c60307d0a546af43b7377054b779}} 
+\index{Stack@{Stack}!emitLookAhead@{emitLookAhead}}
+\index{emitLookAhead@{emitLookAhead}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{emitLookAhead()}{emitLookAhead()}}
+{\footnotesize\ttfamily Stack\+::emit\+Look\+Ahead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a0da98c2247675292f40569f131c13efe}\label{classStack_a0da98c2247675292f40569f131c13efe}} 
+\index{Stack@{Stack}!forceAll@{forceAll}}
+\index{forceAll@{forceAll}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{forceAll()}{forceAll()}}
+{\footnotesize\ttfamily Stack\+::force\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_add96dbca1e3367c5a2364f93f457245d}\label{classStack_add96dbca1e3367c5a2364f93f457245d}} 
+\index{Stack@{Stack}!forceReduce@{forceReduce}}
+\index{forceReduce@{forceReduce}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{forceReduce()}{forceReduce()}}
+{\footnotesize\ttfamily Stack\+::force\+Reduce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_aa183eeaae6596dce4f44322e60efc426}\label{classStack_aa183eeaae6596dce4f44322e60efc426}} 
+\index{Stack@{Stack}!parser@{parser}}
+\index{parser@{parser}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{parser()}{parser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Stack\+::parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the parser used by this stack. 
+
+\mbox{\Hypertarget{classStack_aeb1046e9584adee2bde0dc69779465bc}\label{classStack_aeb1046e9584adee2bde0dc69779465bc}} 
+\index{Stack@{Stack}!pushState@{pushState}}
+\index{pushState@{pushState}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{pushState()}{pushState()}}
+{\footnotesize\ttfamily Stack\+::push\+State (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{start }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a06e4c95f737efb703a076577e6aa18a7}\label{classStack_a06e4c95f737efb703a076577e6aa18a7}} 
+\index{Stack@{Stack}!recoverByDelete@{recoverByDelete}}
+\index{recoverByDelete@{recoverByDelete}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{recoverByDelete()}{recoverByDelete()}}
+{\footnotesize\ttfamily Stack\+::recover\+By\+Delete (\begin{DoxyParamCaption}\item[{}]{next,  }\item[{}]{next\+End }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a9edf16a55dc39d45136bc9c53ab335b9}\label{classStack_a9edf16a55dc39d45136bc9c53ab335b9}} 
+\index{Stack@{Stack}!recoverByInsert@{recoverByInsert}}
+\index{recoverByInsert@{recoverByInsert}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{recoverByInsert()}{recoverByInsert()}}
+{\footnotesize\ttfamily Stack\+::recover\+By\+Insert (\begin{DoxyParamCaption}\item[{}]{next }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a316f5fada5a44b3813eb0ddce34f5fe7}\label{classStack_a316f5fada5a44b3813eb0ddce34f5fe7}} 
+\index{Stack@{Stack}!reduce@{reduce}}
+\index{reduce@{reduce}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily Stack\+::reduce (\begin{DoxyParamCaption}\item[{}]{action }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a04fd2c30d2b443f9a0c81c80b627bca5}\label{classStack_a04fd2c30d2b443f9a0c81c80b627bca5}} 
+\index{Stack@{Stack}!reduceContext@{reduceContext}}
+\index{reduceContext@{reduceContext}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{reduceContext()}{reduceContext()}}
+{\footnotesize\ttfamily Stack\+::reduce\+Context (\begin{DoxyParamCaption}\item[{}]{term,  }\item[{}]{start }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a5d3824ad28769be26eaa64c7db1d4baa}\label{classStack_a5d3824ad28769be26eaa64c7db1d4baa}} 
+\index{Stack@{Stack}!restart@{restart}}
+\index{restart@{restart}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily Stack\+::restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restart the stack (put it back in its start state). 
+
+Only safe when this.\+stack.\+length == 3 (state is directly below the top state). \mbox{\Hypertarget{classStack_af3b0f55ff6d88c86b134d849b8af603a}\label{classStack_af3b0f55ff6d88c86b134d849b8af603a}} 
+\index{Stack@{Stack}!sameState@{sameState}}
+\index{sameState@{sameState}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{sameState()}{sameState()}}
+{\footnotesize\ttfamily Stack\+::same\+State (\begin{DoxyParamCaption}\item[{}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_afe17eb478394ba2afea1451ed4d5f2e8}\label{classStack_afe17eb478394ba2afea1451ed4d5f2e8}} 
+\index{Stack@{Stack}!setLookAhead@{setLookAhead}}
+\index{setLookAhead@{setLookAhead}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{setLookAhead()}{setLookAhead()}}
+{\footnotesize\ttfamily Stack\+::set\+Look\+Ahead (\begin{DoxyParamCaption}\item[{}]{look\+Ahead }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a2aa002683c4772cba6b878e7f1f06fb5}\label{classStack_a2aa002683c4772cba6b878e7f1f06fb5}} 
+\index{Stack@{Stack}!shift@{shift}}
+\index{shift@{shift}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{shift()}{shift()}}
+{\footnotesize\ttfamily Stack\+::shift (\begin{DoxyParamCaption}\item[{}]{action,  }\item[{}]{next,  }\item[{}]{next\+End }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_aa02a5f2a60d620ee013babc03f4eddaf}\label{classStack_aa02a5f2a60d620ee013babc03f4eddaf}} 
+\index{Stack@{Stack}!shiftContext@{shiftContext}}
+\index{shiftContext@{shiftContext}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{shiftContext()}{shiftContext()}}
+{\footnotesize\ttfamily Stack\+::shift\+Context (\begin{DoxyParamCaption}\item[{}]{term,  }\item[{}]{start }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a0a21198b4e9976a069d6dea7e55ae73c}\label{classStack_a0a21198b4e9976a069d6dea7e55ae73c}} 
+\index{Stack@{Stack}!split@{split}}
+\index{split@{split}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily Stack\+::split (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_af07b4c85eb66c1319ffedecd9399b372}\label{classStack_af07b4c85eb66c1319ffedecd9399b372}} 
+\index{Stack@{Stack}!start@{start}}
+\index{start@{start}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily static Stack\+::start (\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{state,  }\item[{}]{pos = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStack_a1cc1a1ed9be659eec314a26265b0aa9c}\label{classStack_a1cc1a1ed9be659eec314a26265b0aa9c}} 
+\index{Stack@{Stack}!storeNode@{storeNode}}
+\index{storeNode@{storeNode}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{storeNode()}{storeNode()}}
+{\footnotesize\ttfamily Stack\+::store\+Node (\begin{DoxyParamCaption}\item[{}]{term,  }\item[{}]{start,  }\item[{}]{end,  }\item[{}]{size = {\ttfamily 4},  }\item[{}]{is\+Reduce = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_a7479095e6be56504093814fd99b0d43a}\label{classStack_a7479095e6be56504093814fd99b0d43a}} 
+\index{Stack@{Stack}!toString@{toString}}
+\index{toString@{toString}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily Stack\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_ab98d91d90191abd6852c9b77335c03f1}\label{classStack_ab98d91d90191abd6852c9b77335c03f1}} 
+\index{Stack@{Stack}!updateContext@{updateContext}}
+\index{updateContext@{updateContext}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{updateContext()}{updateContext()}}
+{\footnotesize\ttfamily Stack\+::update\+Context (\begin{DoxyParamCaption}\item[{}]{context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStack_aa088c0e3103570663c2a3463e55256e1}\label{classStack_aa088c0e3103570663c2a3463e55256e1}} 
+\index{Stack@{Stack}!useNode@{useNode}}
+\index{useNode@{useNode}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{useNode()}{useNode()}}
+{\footnotesize\ttfamily Stack\+::use\+Node (\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{next }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@lezer/lr/dist/\mbox{\hyperlink{_0dlezer_2lr_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js}{}\doxysection{node\+\_\+modules/resolve/test/resolver/multirepo/packages/package-\/a/index.js File Reference}
+\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js}\index{node\_modules/resolve/test/resolver/multirepo/packages/package-\/a/index.js@{node\_modules/resolve/test/resolver/multirepo/packages/package-\/a/index.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}} \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a2533c1b62e0255d932fb353c162836af}{equal}} (\mbox{\hyperlink{resolver__sync_8js_a631c297c380e65aaf17097f0e7f0cefa}{resolve.\+sync}}(\textquotesingle{}jquery\textquotesingle{}, \{ basedir\+:basedir, preserve\+Symlinks\+:false \}), \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}{expected}})
+\item 
+\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}} \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_ab6f6d71593d0e7b5f84122f13568483b}{equal}} (\mbox{\hyperlink{resolver__sync_8js_a631c297c380e65aaf17097f0e7f0cefa}{resolve.\+sync}}(\textquotesingle{}../../node\+\_\+modules/jquery\textquotesingle{}, \{ basedir\+:basedir, preserve\+Symlinks\+:false \}), \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}{expected}})
+\item 
+\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}} \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_aa59da05b44c5a22c98f0ab539e294fe4}{equal}} (\mbox{\hyperlink{resolver__sync_8js_a631c297c380e65aaf17097f0e7f0cefa}{resolve.\+sync}}(\textquotesingle{}jquery\textquotesingle{}, \{ basedir\+:basedir, preserve\+Symlinks\+:true \}), \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}{expected}})
+\item 
+\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}} \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_ab51b1e7b438d58e5ed11253d0a841955}{equal}} (\mbox{\hyperlink{resolver__sync_8js_a631c297c380e65aaf17097f0e7f0cefa}{resolve.\+sync}}(\textquotesingle{}../../../../../node\+\_\+modules/jquery\textquotesingle{}, \{ basedir\+:basedir, preserve\+Symlinks\+:true \}), \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}{expected}})
+\item 
+console \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a83e13f4d18292eebe222793098ebc787}{log}} (\textquotesingle{} $\ast$\mbox{\hyperlink{underscore_2cjs_2index_8js_af17f4f607d5a7b4d372434e740f604ea}{all}} monorepo paths successfully resolved through symlinks\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a5e95655c9188700b16a5488897cecb90}{assert}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}assert\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_aebedbf53ce9a15014605e527aec0a6ec}{resolve}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}resolve\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a580514f9d76ea6f5356a2e9dfe4d1c68}{basedir}} = \+\_\+\+\_\+dirname + \textquotesingle{}/node\+\_\+modules/@my-\/\mbox{\hyperlink{name_8js_aae4c7cf5e60875cb519538b3569b823f}{scope}}/package-\/\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}{expected}} = \mbox{\hyperlink{lodash_2join_8js_a8b104c3729df79a982df1d67749e8858}{path.\+join}}(\+\_\+\+\_\+dirname, \textquotesingle{}../../node\+\_\+modules/jquery/dist/\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{jquery.\+js}}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_ab51b1e7b438d58e5ed11253d0a841955}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_ab51b1e7b438d58e5ed11253d0a841955}} 
+\index{index.js@{index.js}!equal@{equal}}
+\index{equal@{equal}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{equal()}{equal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}} equal (\begin{DoxyParamCaption}\item[{resolve.}]{sync\textquotesingle{}../../../../../node\+\_\+modules/jquery\textquotesingle{}, \{ basedir\+:basedir, preserve\+Symlinks\+:true \},  }\item[{\mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}{expected}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_ab6f6d71593d0e7b5f84122f13568483b}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_ab6f6d71593d0e7b5f84122f13568483b}} 
+\index{index.js@{index.js}!equal@{equal}}
+\index{equal@{equal}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{equal()}{equal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}} equal (\begin{DoxyParamCaption}\item[{resolve.}]{sync\textquotesingle{}../../node\+\_\+modules/jquery\textquotesingle{}, \{ basedir\+:basedir, preserve\+Symlinks\+:false \},  }\item[{\mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}{expected}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a2533c1b62e0255d932fb353c162836af}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a2533c1b62e0255d932fb353c162836af}} 
+\index{index.js@{index.js}!equal@{equal}}
+\index{equal@{equal}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{equal()}{equal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}} equal (\begin{DoxyParamCaption}\item[{resolve.}]{sync \textquotesingle{}jquery\textquotesingle{}, \{ basedir\+:basedir, preserve\+Symlinks\+:false \},  }\item[{\mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}{expected}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_aa59da05b44c5a22c98f0ab539e294fe4}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_aa59da05b44c5a22c98f0ab539e294fe4}} 
+\index{index.js@{index.js}!equal@{equal}}
+\index{equal@{equal}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{equal()}{equal()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}} equal (\begin{DoxyParamCaption}\item[{resolve.}]{sync \textquotesingle{}jquery\textquotesingle{}, \{ basedir\+:basedir, preserve\+Symlinks\+:true \},  }\item[{\mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}{expected}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a83e13f4d18292eebe222793098ebc787}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a83e13f4d18292eebe222793098ebc787}} 
+\index{index.js@{index.js}!log@{log}}
+\index{log@{log}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily console log (\begin{DoxyParamCaption}\item[{\textquotesingle{} $\ast$\mbox{\hyperlink{underscore_2cjs_2index_8js_af17f4f607d5a7b4d372434e740f604ea}{all}} monorepo paths successfully resolved through symlinks\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a5e95655c9188700b16a5488897cecb90}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a5e95655c9188700b16a5488897cecb90}} 
+\index{index.js@{index.js}!assert@{assert}}
+\index{assert@{assert}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{assert}{assert}}
+{\footnotesize\ttfamily var assert = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}assert\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a580514f9d76ea6f5356a2e9dfe4d1c68}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a580514f9d76ea6f5356a2e9dfe4d1c68}} 
+\index{index.js@{index.js}!basedir@{basedir}}
+\index{basedir@{basedir}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{basedir}{basedir}}
+{\footnotesize\ttfamily var basedir = \+\_\+\+\_\+dirname + \textquotesingle{}/node\+\_\+modules/@my-\/\mbox{\hyperlink{name_8js_aae4c7cf5e60875cb519538b3569b823f}{scope}}/package-\/\mbox{\hyperlink{markdownItAnchor_8js_af77421ec951df647f510dc7827a56dd2}{b}}\textquotesingle{}}
+
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a758587d8718823d0194f29b3b8442863}} 
+\index{index.js@{index.js}!expected@{expected}}
+\index{expected@{expected}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{expected}{expected}}
+{\footnotesize\ttfamily var expected = \mbox{\hyperlink{lodash_2join_8js_a8b104c3729df79a982df1d67749e8858}{path.\+join}}(\+\_\+\+\_\+dirname, \textquotesingle{}../../node\+\_\+modules/jquery/dist/\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{jquery.\+js}}\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_aa72e0c8a20e6bcc571d3a1c51846e627}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_aa72e0c8a20e6bcc571d3a1c51846e627}} 
+\index{index.js@{index.js}!path@{path}}
+\index{path@{path}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily var path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_aebedbf53ce9a15014605e527aec0a6ec}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_aebedbf53ce9a15014605e527aec0a6ec}} 
+\index{index.js@{index.js}!resolve@{resolve}}
+\index{resolve@{resolve}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{resolve}{resolve}}
+{\footnotesize\ttfamily var resolve = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}resolve\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_ae2475e10618961c050dcba04e8c42331}\label{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+

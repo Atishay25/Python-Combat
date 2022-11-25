@@ -1,0 +1,278 @@
+\hypertarget{lib_2jsdoc_2util_2markdown_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/util/markdown.js File Reference}
+\label{lib_2jsdoc_2util_2markdown_8js}\index{node\_modules/jsdoc/lib/jsdoc/util/markdown.js@{node\_modules/jsdoc/lib/jsdoc/util/markdown.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a949cf4c565540960d1af9620119ca03d}{escape\+Underscores}} (source)
+\begin{DoxyCompactList}\small\item\em Escape underscores that occur within an inline tag in order to protect them from the {\ttfamily marked} parser. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_af3d8a12c168e343f7da26a842b8e46e8}{escape\+Urls}} (source)
+\begin{DoxyCompactList}\small\item\em Escape H\+T\+T\+P/\+H\+T\+T\+PS U\+R\+Ls so that they are not automatically converted to H\+T\+ML links. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a2061fbc125972903ef1ad1e72ae19da3}{unescape\+Urls}} (source)
+\begin{DoxyCompactList}\small\item\em Unescape H\+T\+T\+P/\+H\+T\+T\+PS U\+R\+Ls after Markdown parsing is complete. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a49a2e6dd0bd5a22fb0eead9c9cb0baab}{escape\+Inline\+Tag\+Backslashes}} (source)
+\begin{DoxyCompactList}\small\item\em Escape backslashes within inline tags so that they are not stripped. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_ad26e553e8ce3de42ef831c63ccb4e0db}{escape\+Code}} (source)
+\begin{DoxyCompactList}\small\item\em Escape characters in text within a code block. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a559335d525643a96fb3cf4efb30d471e}{get\+Highlighter}} (\mbox{\hyperlink{eventDumper_8js_a24920844fa3853137f1c58ebdf37a37d}{conf}})
+\begin{DoxyCompactList}\small\item\em Get the appropriate function for applying syntax highlighting to text, based on the user\textquotesingle{}s Markdown configuration settings. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a668275e7dea225163c66c22b52b9dd96}{get\+Parse\+Function}} (parser\+Name, \mbox{\hyperlink{eventDumper_8js_a24920844fa3853137f1c58ebdf37a37d}{conf}})
+\begin{DoxyCompactList}\small\item\em Retrieve a function that accepts a single parameter containing Markdown source. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a27a60859f9b15587b2bffa4aa6780723}{env}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/env\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Provides access to Markdown-\/related functions. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/logger\textquotesingle{})
+\item 
+const \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a9bb038ec346f24c740de74494c96126b}{Markdown\+It}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tutorial_8js_a1f2a5a833c7c6434ca1f1e5ad66188c9}{markdown}}-\/\mbox{\hyperlink{lodash_8min_8js_a53bb00c7767c3df3cdef39d2863ce11f}{it}}\textquotesingle{})
+\item 
+const const \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_ad010f2aff51dc3ca0dd3bbbf22ba530e}{mda}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tutorial_8js_a1f2a5a833c7c6434ca1f1e5ad66188c9}{markdown}}-\/\mbox{\hyperlink{lodash_8min_8js_a53bb00c7767c3df3cdef39d2863ce11f}{it}}-\/anchor\textquotesingle{})
+\item 
+const \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/path\textquotesingle{})
+\item 
+const \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+const \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a7a1a0c714df7eaa1fc2182763f2e9acb}{parser\+Names}}
+\item 
+\mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a73c18c59a39b18382081ec00bb456d43}{g}}
+\item 
+\mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a546f03f70c7e4e6e9adccaf37d8f708a}{whole\+Match}} =$>$ \mbox{\hyperlink{lodash_2replace_8js_ac8a88090eb903cccf7fd218d14f8a918}{whole\+Match.\+replace}}(/($^\wedge$$\vert$\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}\mbox{]})\mbox{\hyperlink{underscore_2underscore_8js_ae3076f4e40a390af658ebfb04b9d9dae}{\+\_\+}}/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}, \textquotesingle{}\$1\textbackslash{}\textbackslash{}\mbox{\hyperlink{underscore_2underscore_8js_ae3076f4e40a390af658ebfb04b9d9dae}{\+\_\+}}\textquotesingle{}))
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a1afada7d83109b6565ce9515aaee8378}{get\+Parser}}
+\begin{DoxyCompactList}\small\item\em Retrieve a Markdown parsing function based on the value of the {\ttfamily conf.\+json} file\textquotesingle{}s {\ttfamily env.\+conf.\+markdown} property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_ad26e553e8ce3de42ef831c63ccb4e0db}\label{lib_2jsdoc_2util_2markdown_8js_ad26e553e8ce3de42ef831c63ccb4e0db}} 
+\index{markdown.js@{markdown.js}!escapeCode@{escapeCode}}
+\index{escapeCode@{escapeCode}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{escapeCode()}{escapeCode()}}
+{\footnotesize\ttfamily function escape\+Code (\begin{DoxyParamCaption}\item[{}]{source }\end{DoxyParamCaption})}
+
+
+
+Escape characters in text within a code block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & source -\/ The source text to escape. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} The escaped source text. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a49a2e6dd0bd5a22fb0eead9c9cb0baab}\label{lib_2jsdoc_2util_2markdown_8js_a49a2e6dd0bd5a22fb0eead9c9cb0baab}} 
+\index{markdown.js@{markdown.js}!escapeInlineTagBackslashes@{escapeInlineTagBackslashes}}
+\index{escapeInlineTagBackslashes@{escapeInlineTagBackslashes}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{escapeInlineTagBackslashes()}{escapeInlineTagBackslashes()}}
+{\footnotesize\ttfamily function escape\+Inline\+Tag\+Backslashes (\begin{DoxyParamCaption}\item[{}]{source }\end{DoxyParamCaption})}
+
+
+
+Escape backslashes within inline tags so that they are not stripped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & source -\/ The source text to escape. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} The source text with backslashes escaped within inline tags. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a949cf4c565540960d1af9620119ca03d}\label{lib_2jsdoc_2util_2markdown_8js_a949cf4c565540960d1af9620119ca03d}} 
+\index{markdown.js@{markdown.js}!escapeUnderscores@{escapeUnderscores}}
+\index{escapeUnderscores@{escapeUnderscores}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{escapeUnderscores()}{escapeUnderscores()}}
+{\footnotesize\ttfamily function escape\+Underscores (\begin{DoxyParamCaption}\item[{}]{source }\end{DoxyParamCaption})}
+
+
+
+Escape underscores that occur within an inline tag in order to protect them from the {\ttfamily marked} parser. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & source -\/ The source text to sanitize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} The source text, where underscores within inline tags have been protected with a preceding backslash (e.\+g., {\ttfamily \textbackslash{}\+\_\+}). The {\ttfamily marked} parser will strip the backslash and protect the underscore. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_af3d8a12c168e343f7da26a842b8e46e8}\label{lib_2jsdoc_2util_2markdown_8js_af3d8a12c168e343f7da26a842b8e46e8}} 
+\index{markdown.js@{markdown.js}!escapeUrls@{escapeUrls}}
+\index{escapeUrls@{escapeUrls}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{escapeUrls()}{escapeUrls()}}
+{\footnotesize\ttfamily function escape\+Urls (\begin{DoxyParamCaption}\item[{}]{source }\end{DoxyParamCaption})}
+
+
+
+Escape H\+T\+T\+P/\+H\+T\+T\+PS U\+R\+Ls so that they are not automatically converted to H\+T\+ML links. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & source -\/ The source text to escape. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} The source text with escape characters added to H\+T\+T\+P/\+H\+T\+T\+PS U\+R\+Ls. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a559335d525643a96fb3cf4efb30d471e}\label{lib_2jsdoc_2util_2markdown_8js_a559335d525643a96fb3cf4efb30d471e}} 
+\index{markdown.js@{markdown.js}!getHighlighter@{getHighlighter}}
+\index{getHighlighter@{getHighlighter}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{getHighlighter()}{getHighlighter()}}
+{\footnotesize\ttfamily function get\+Highlighter (\begin{DoxyParamCaption}\item[{}]{conf }\end{DoxyParamCaption})}
+
+
+
+Get the appropriate function for applying syntax highlighting to text, based on the user\textquotesingle{}s Markdown configuration settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & conf -\/ The user\textquotesingle{}s Markdown configuration settings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{function\} The highlighter function. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a668275e7dea225163c66c22b52b9dd96}\label{lib_2jsdoc_2util_2markdown_8js_a668275e7dea225163c66c22b52b9dd96}} 
+\index{markdown.js@{markdown.js}!getParseFunction@{getParseFunction}}
+\index{getParseFunction@{getParseFunction}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{getParseFunction()}{getParseFunction()}}
+{\footnotesize\ttfamily function get\+Parse\+Function (\begin{DoxyParamCaption}\item[{}]{parser\+Name,  }\item[{}]{conf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retrieve a function that accepts a single parameter containing Markdown source. 
+
+The function uses the specified parser to transform the Markdown source to H\+T\+ML, then returns the H\+T\+ML as a string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & parser\+Name The name of the selected parser. \\
+\hline
+{\em \{\+Object\}} & \mbox{[}conf\mbox{]} \mbox{\hyperlink{classConfiguration}{Configuration}} for the selected parser, if any. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} A function that accepts Markdown source, feeds it to the selected parser, and returns the resulting H\+T\+ML. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a2061fbc125972903ef1ad1e72ae19da3}\label{lib_2jsdoc_2util_2markdown_8js_a2061fbc125972903ef1ad1e72ae19da3}} 
+\index{markdown.js@{markdown.js}!unescapeUrls@{unescapeUrls}}
+\index{unescapeUrls@{unescapeUrls}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{unescapeUrls()}{unescapeUrls()}}
+{\footnotesize\ttfamily function unescape\+Urls (\begin{DoxyParamCaption}\item[{}]{source }\end{DoxyParamCaption})}
+
+
+
+Unescape H\+T\+T\+P/\+H\+T\+T\+PS U\+R\+Ls after Markdown parsing is complete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & source -\/ The source text to unescape. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} The source text with escape characters removed from H\+T\+T\+P/\+H\+T\+T\+PS U\+R\+Ls. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a27a60859f9b15587b2bffa4aa6780723}\label{lib_2jsdoc_2util_2markdown_8js_a27a60859f9b15587b2bffa4aa6780723}} 
+\index{markdown.js@{markdown.js}!env@{env}}
+\index{env@{env}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{env}{env}}
+{\footnotesize\ttfamily const env = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/env\textquotesingle{})}
+
+
+
+Provides access to Markdown-\/related functions. 
+
+@module jsdoc/util/markdown \mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a73c18c59a39b18382081ec00bb456d43}\label{lib_2jsdoc_2util_2markdown_8js_a73c18c59a39b18382081ec00bb456d43}} 
+\index{markdown.js@{markdown.js}!g@{g}}
+\index{g@{g}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily g}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2deburr_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/deburr.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2escapeRegExp_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/escape\+Reg\+Exp.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2template_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/template.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2unescape_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/unescape.\+js}}.\end{Desc}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a1afada7d83109b6565ce9515aaee8378}\label{lib_2jsdoc_2util_2markdown_8js_a1afada7d83109b6565ce9515aaee8378}} 
+\index{markdown.js@{markdown.js}!getParser@{getParser}}
+\index{getParser@{getParser}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{getParser}{getParser}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Parser}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= () => \{}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tutorial_2resolver_8js_a24920844fa3853137f1c58ebdf37a37d}{conf}} = \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a27a60859f9b15587b2bffa4aa6780723}{env}}.conf.markdown;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{babel-parser_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}} = (\mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tutorial_2resolver_8js_a24920844fa3853137f1c58ebdf37a37d}{conf}} \&\& \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tutorial_2resolver_8js_a24920844fa3853137f1c58ebdf37a37d}{conf}}.parser) ? \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a7a1a0c714df7eaa1fc2182763f2e9acb}{parserNames}}[\mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tutorial_2resolver_8js_a24920844fa3853137f1c58ebdf37a37d}{conf}}.parser] : \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a7a1a0c714df7eaa1fc2182763f2e9acb}{parserNames}}.markdownit;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a668275e7dea225163c66c22b52b9dd96}{getParseFunction}}(\mbox{\hyperlink{babel-parser_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tutorial_2resolver_8js_a24920844fa3853137f1c58ebdf37a37d}{conf}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Retrieve a Markdown parsing function based on the value of the {\ttfamily conf.\+json} file\textquotesingle{}s {\ttfamily env.\+conf.\+markdown} property. 
+
+The parsing function accepts a single parameter containing Markdown source. The function uses the parser specified in {\ttfamily conf.\+json} to transform the Markdown source to H\+T\+ML, then returns the H\+T\+ML as a string.
+
+\begin{DoxyReturn}{Returns}
+\{function\} A function that accepts Markdown source, feeds it to the selected parser, and returns the resulting H\+T\+ML. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a7343f0c6712bd65d3d51282ddbf80fe2}\label{lib_2jsdoc_2util_2markdown_8js_a7343f0c6712bd65d3d51282ddbf80fe2}} 
+\index{markdown.js@{markdown.js}!logger@{logger}}
+\index{logger@{logger}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily const logger = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/logger\textquotesingle{})}
+
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a9bb038ec346f24c740de74494c96126b}\label{lib_2jsdoc_2util_2markdown_8js_a9bb038ec346f24c740de74494c96126b}} 
+\index{markdown.js@{markdown.js}!MarkdownIt@{MarkdownIt}}
+\index{MarkdownIt@{MarkdownIt}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{MarkdownIt}{MarkdownIt}}
+{\footnotesize\ttfamily const Markdown\+It = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tutorial_8js_a1f2a5a833c7c6434ca1f1e5ad66188c9}{markdown}}-\/\mbox{\hyperlink{lodash_8min_8js_a53bb00c7767c3df3cdef39d2863ce11f}{it}}\textquotesingle{})}
+
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_ad010f2aff51dc3ca0dd3bbbf22ba530e}\label{lib_2jsdoc_2util_2markdown_8js_ad010f2aff51dc3ca0dd3bbbf22ba530e}} 
+\index{markdown.js@{markdown.js}!mda@{mda}}
+\index{mda@{mda}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{mda}{mda}}
+{\footnotesize\ttfamily const const mda = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tutorial_8js_a1f2a5a833c7c6434ca1f1e5ad66188c9}{markdown}}-\/\mbox{\hyperlink{lodash_8min_8js_a53bb00c7767c3df3cdef39d2863ce11f}{it}}-\/anchor\textquotesingle{})}
+
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a7a1a0c714df7eaa1fc2182763f2e9acb}\label{lib_2jsdoc_2util_2markdown_8js_a7a1a0c714df7eaa1fc2182763f2e9acb}} 
+\index{markdown.js@{markdown.js}!parserNames@{parserNames}}
+\index{parserNames@{parserNames}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{parserNames}{parserNames}}
+{\footnotesize\ttfamily const parser\+Names}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    evilstreak: \textcolor{stringliteral}{'markdownit'},}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{marked_8esm_8js_a99fa8dcdb27f2a2f563e2d83e067a7c7}{gfm}}: \textcolor{stringliteral}{'markdownit'},}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    markdownit: \textcolor{stringliteral}{'markdownit'},}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{src_2marked_8js_ae05527da16d46bd4dee1933859771f24}{marked}}: \textcolor{stringliteral}{'marked'}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a1fdc7709faf62dce60620fb3f9d3453c}\label{lib_2jsdoc_2util_2markdown_8js_a1fdc7709faf62dce60620fb3f9d3453c}} 
+\index{markdown.js@{markdown.js}!path@{path}}
+\index{path@{path}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily const path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/path\textquotesingle{})}
+
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}\label{lib_2jsdoc_2util_2markdown_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}} 
+\index{markdown.js@{markdown.js}!util@{util}}
+\index{util@{util}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily const util = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})}
+
+\mbox{\Hypertarget{lib_2jsdoc_2util_2markdown_8js_a546f03f70c7e4e6e9adccaf37d8f708a}\label{lib_2jsdoc_2util_2markdown_8js_a546f03f70c7e4e6e9adccaf37d8f708a}} 
+\index{markdown.js@{markdown.js}!wholeMatch@{wholeMatch}}
+\index{wholeMatch@{wholeMatch}!markdown.js@{markdown.js}}
+\doxysubsubsection{\texorpdfstring{wholeMatch}{wholeMatch}}
+{\footnotesize\ttfamily whole\+Match =$>$ \mbox{\hyperlink{lodash_2replace_8js_ac8a88090eb903cccf7fd218d14f8a918}{whole\+Match.\+replace}}(/($^\wedge$$\vert$\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}\mbox{]})\mbox{\hyperlink{underscore_2underscore_8js_ae3076f4e40a390af658ebfb04b9d9dae}{\+\_\+}}/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}, \textquotesingle{}\$1\textbackslash{}\textbackslash{}\mbox{\hyperlink{underscore_2underscore_8js_ae3076f4e40a390af658ebfb04b9d9dae}{\+\_\+}}\textquotesingle{}))}
+

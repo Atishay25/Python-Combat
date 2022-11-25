@@ -1,0 +1,173 @@
+\hypertarget{entities_2lib_2encode_8js}{}\doxysection{node\+\_\+modules/entities/lib/encode.js File Reference}
+\label{entities_2lib_2encode_8js}\index{node\_modules/entities/lib/encode.js@{node\_modules/entities/lib/encode.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{entities_2lib_2encode_8js_a28b393256d5d3dc5b7d5940192da33e5}{define\+Property}} (\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \char`\"{}\+\_\+\+\_\+es\+Module\char`\"{}, \{ value\+:true \})
+\item 
+function \mbox{\hyperlink{entities_2lib_2encode_8js_a3c2c163723fbf5ed69791a3e3247d2b5}{get\+Inverse\+Obj}} (obj)
+\item 
+function \mbox{\hyperlink{entities_2lib_2encode_8js_a0f762e097ffedafe8d0921ed1bc0f2bf}{get\+Inverse\+Replacer}} (inverse)
+\item 
+function \mbox{\hyperlink{entities_2lib_2encode_8js_a0812ae92186bbb7293c576c6e39415f4}{single\+Char\+Replacer}} (\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2sync_8js_abce695e0af988ece0826d9ad59b8160d}{c}})
+\item 
+function \mbox{\hyperlink{entities_2lib_2encode_8js_adb0169f9047c87d7c776fa24a0f0471e}{get\+Inverse}} (inverse, re)
+\item 
+function \mbox{\hyperlink{entities_2lib_2encode_8js_a76f0487fc43ecf1c1a3e8b6e1f5ee4b8}{escape}} (\mbox{\hyperlink{resolve_2lib_2core_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{entities_2lib_2encode_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{entities_2lib_2encode_8js_aa77bab964373eb2917ab7e271138d9aa}{\+\_\+\+\_\+import\+Default}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{entities_2lib_2encode_8js_a5185c2e0b8e6a5224458b2e5e6ed26e8}{escape}} = \mbox{\hyperlink{entities_2lib_2encode_8js_a860f54bc63917529e16057d0f495dedc}{exports.\+encode\+H\+T\+ML}} = \mbox{\hyperlink{entities_2lib_2encode_8js_ab250e1dc69981b4c4b0c4a6ec358fffa}{exports.\+encode\+X\+ML}} = void 0
+\item 
+var \mbox{\hyperlink{entities_2lib_2encode_8js_a12a7fa9c5a6bfbefc9871d51b580c9aa}{xml\+\_\+json\+\_\+1}} = \mbox{\hyperlink{XmlElement_8js_aa77bab964373eb2917ab7e271138d9aa}{\+\_\+\+\_\+import\+Default}}(\mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\char`\"{}./maps/xml.\+json\char`\"{}))
+\item 
+var \mbox{\hyperlink{entities_2lib_2encode_8js_ad501e7a4e961ab1845ae3c4d3d91f522}{inverse\+X\+ML}} = \mbox{\hyperlink{entities_2lib_2encode_8js_a3c2c163723fbf5ed69791a3e3247d2b5}{get\+Inverse\+Obj}}(\mbox{\hyperlink{modules_2isDataView_8js_aaf00c3ccd15289aa82c7ca696e51a950}{xml\+\_\+json\+\_\+1.\+default}})
+\item 
+var \mbox{\hyperlink{entities_2lib_2encode_8js_ae77357c9411f3ea67a5c0dd3cbc0d809}{xml\+Replacer}} = \mbox{\hyperlink{entities_2lib_2encode_8js_a0f762e097ffedafe8d0921ed1bc0f2bf}{get\+Inverse\+Replacer}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad501e7a4e961ab1845ae3c4d3d91f522}{inverse\+X\+ML}})
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{entities_2lib_2encode_8js_ab250e1dc69981b4c4b0c4a6ec358fffa}{encode\+X\+ML}} = \mbox{\hyperlink{entities_2lib_2encode_8js_adb0169f9047c87d7c776fa24a0f0471e}{get\+Inverse}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad501e7a4e961ab1845ae3c4d3d91f522}{inverse\+X\+ML}}, \mbox{\hyperlink{entities_2lib_2encode_8js_ae77357c9411f3ea67a5c0dd3cbc0d809}{xml\+Replacer}})
+\item 
+var \mbox{\hyperlink{entities_2lib_2encode_8js_a3a55d6f2f950f9eeddfbd86b05d40c92}{entities\+\_\+json\+\_\+1}} = \mbox{\hyperlink{XmlElement_8js_aa77bab964373eb2917ab7e271138d9aa}{\+\_\+\+\_\+import\+Default}}(\mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\char`\"{}./maps/entities.\+json\char`\"{}))
+\item 
+var \mbox{\hyperlink{entities_2lib_2encode_8js_ad3ec7ef0282a120ed7d8dad9cfbcf2ec}{inverse\+H\+T\+ML}} = \mbox{\hyperlink{entities_2lib_2encode_8js_a3c2c163723fbf5ed69791a3e3247d2b5}{get\+Inverse\+Obj}}(\mbox{\hyperlink{modules_2isDataView_8js_aaf00c3ccd15289aa82c7ca696e51a950}{entities\+\_\+json\+\_\+1.\+default}})
+\item 
+var \mbox{\hyperlink{entities_2lib_2encode_8js_af4474f9fdeb69a1fd05362ca230df96b}{html\+Replacer}} = \mbox{\hyperlink{entities_2lib_2encode_8js_a0f762e097ffedafe8d0921ed1bc0f2bf}{get\+Inverse\+Replacer}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad3ec7ef0282a120ed7d8dad9cfbcf2ec}{inverse\+H\+T\+ML}})
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{entities_2lib_2encode_8js_a860f54bc63917529e16057d0f495dedc}{encode\+H\+T\+ML}} = \mbox{\hyperlink{entities_2lib_2encode_8js_adb0169f9047c87d7c776fa24a0f0471e}{get\+Inverse}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad3ec7ef0282a120ed7d8dad9cfbcf2ec}{inverse\+H\+T\+ML}}, \mbox{\hyperlink{entities_2lib_2encode_8js_af4474f9fdeb69a1fd05362ca230df96b}{html\+Replacer}})
+\item 
+var \mbox{\hyperlink{entities_2lib_2encode_8js_a35c2ebc817a1493a315ef4d3b627ecca}{re\+Non\+A\+S\+C\+II}} = /(?\+:\mbox{[}\textbackslash{}x80-\/\textbackslash{}u\+D7\+F\+F\textbackslash{}u\+E000-\/\textbackslash{}u\+F\+F\+FF\mbox{]}$\vert$\mbox{[}\textbackslash{}u\+D800-\/\textbackslash{}u\+D\+B\+FF\mbox{]}\mbox{[}\textbackslash{}u\+D\+C00-\/\textbackslash{}u\+D\+F\+FF\mbox{]}$\vert$\mbox{[}\textbackslash{}u\+D800-\/\textbackslash{}u\+D\+B\+FF\mbox{]}(?!\mbox{[}\textbackslash{}u\+D\+C00-\/\textbackslash{}u\+D\+F\+FF\mbox{]})$\vert$(?\+:\mbox{[}$^\wedge$\textbackslash{}u\+D800-\/\textbackslash{}u\+D\+B\+FF\mbox{]}$\vert$$^\wedge$)\mbox{[}\textbackslash{}u\+D\+C00-\/\textbackslash{}u\+D\+F\+FF\mbox{]})/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}
+\item 
+var \mbox{\hyperlink{entities_2lib_2encode_8js_a5412113a3a51e07e1f9ae546d39bd79b}{re\+Xml\+Chars}} = \mbox{\hyperlink{entities_2lib_2encode_8js_a0f762e097ffedafe8d0921ed1bc0f2bf}{get\+Inverse\+Replacer}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad501e7a4e961ab1845ae3c4d3d91f522}{inverse\+X\+ML}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a28b393256d5d3dc5b7d5940192da33e5}\label{entities_2lib_2encode_8js_a28b393256d5d3dc5b7d5940192da33e5}} 
+\index{encode.js@{encode.js}!defineProperty@{defineProperty}}
+\index{defineProperty@{defineProperty}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{defineProperty()}{defineProperty()}}
+{\footnotesize\ttfamily Object define\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}}]{,  }\item[{\char`\"{}\+\_\+\+\_\+es\+Module\char`\"{}}]{,  }\item[{\{ value\+:true \}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a76f0487fc43ecf1c1a3e8b6e1f5ee4b8}\label{entities_2lib_2encode_8js_a76f0487fc43ecf1c1a3e8b6e1f5ee4b8}} 
+\index{encode.js@{encode.js}!escape@{escape}}
+\index{escape@{escape}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{escape()}{escape()}}
+{\footnotesize\ttfamily function escape (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_adb0169f9047c87d7c776fa24a0f0471e}\label{entities_2lib_2encode_8js_adb0169f9047c87d7c776fa24a0f0471e}} 
+\index{encode.js@{encode.js}!getInverse@{getInverse}}
+\index{getInverse@{getInverse}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{getInverse()}{getInverse()}}
+{\footnotesize\ttfamily function get\+Inverse (\begin{DoxyParamCaption}\item[{}]{inverse,  }\item[{}]{re }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a3c2c163723fbf5ed69791a3e3247d2b5}\label{entities_2lib_2encode_8js_a3c2c163723fbf5ed69791a3e3247d2b5}} 
+\index{encode.js@{encode.js}!getInverseObj@{getInverseObj}}
+\index{getInverseObj@{getInverseObj}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{getInverseObj()}{getInverseObj()}}
+{\footnotesize\ttfamily function get\+Inverse\+Obj (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a0f762e097ffedafe8d0921ed1bc0f2bf}\label{entities_2lib_2encode_8js_a0f762e097ffedafe8d0921ed1bc0f2bf}} 
+\index{encode.js@{encode.js}!getInverseReplacer@{getInverseReplacer}}
+\index{getInverseReplacer@{getInverseReplacer}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{getInverseReplacer()}{getInverseReplacer()}}
+{\footnotesize\ttfamily function get\+Inverse\+Replacer (\begin{DoxyParamCaption}\item[{}]{inverse }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a0812ae92186bbb7293c576c6e39415f4}\label{entities_2lib_2encode_8js_a0812ae92186bbb7293c576c6e39415f4}} 
+\index{encode.js@{encode.js}!singleCharReplacer@{singleCharReplacer}}
+\index{singleCharReplacer@{singleCharReplacer}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{singleCharReplacer()}{singleCharReplacer()}}
+{\footnotesize\ttfamily function single\+Char\+Replacer (\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{entities_2lib_2encode_8js_aa77bab964373eb2917ab7e271138d9aa}\label{entities_2lib_2encode_8js_aa77bab964373eb2917ab7e271138d9aa}} 
+\index{encode.js@{encode.js}!\_\_importDefault@{\_\_importDefault}}
+\index{\_\_importDefault@{\_\_importDefault}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{\_\_importDefault}{\_\_importDefault}}
+{\footnotesize\ttfamily var \+\_\+\+\_\+import\+Default}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (\textcolor{keyword}{this} \&\& this.\mbox{\hyperlink{entities_2lib_2encode_8js_aa77bab964373eb2917ab7e271138d9aa}{\_\_importDefault}}) || \textcolor{keyword}{function} (mod) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} (mod \&\& mod.\_\_esModule) ? mod : \{ \textcolor{stringliteral}{"default"}: mod \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a860f54bc63917529e16057d0f495dedc}\label{entities_2lib_2encode_8js_a860f54bc63917529e16057d0f495dedc}} 
+\index{encode.js@{encode.js}!encodeHTML@{encodeHTML}}
+\index{encodeHTML@{encodeHTML}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{encodeHTML}{encodeHTML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} encode\+H\+T\+ML = \mbox{\hyperlink{entities_2lib_2encode_8js_adb0169f9047c87d7c776fa24a0f0471e}{get\+Inverse}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad3ec7ef0282a120ed7d8dad9cfbcf2ec}{inverse\+H\+T\+ML}}, \mbox{\hyperlink{entities_2lib_2encode_8js_af4474f9fdeb69a1fd05362ca230df96b}{html\+Replacer}})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_ab250e1dc69981b4c4b0c4a6ec358fffa}\label{entities_2lib_2encode_8js_ab250e1dc69981b4c4b0c4a6ec358fffa}} 
+\index{encode.js@{encode.js}!encodeXML@{encodeXML}}
+\index{encodeXML@{encodeXML}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{encodeXML}{encodeXML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} encode\+X\+ML = \mbox{\hyperlink{entities_2lib_2encode_8js_adb0169f9047c87d7c776fa24a0f0471e}{get\+Inverse}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad501e7a4e961ab1845ae3c4d3d91f522}{inverse\+X\+ML}}, \mbox{\hyperlink{entities_2lib_2encode_8js_ae77357c9411f3ea67a5c0dd3cbc0d809}{xml\+Replacer}})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a3a55d6f2f950f9eeddfbd86b05d40c92}\label{entities_2lib_2encode_8js_a3a55d6f2f950f9eeddfbd86b05d40c92}} 
+\index{encode.js@{encode.js}!entities\_json\_1@{entities\_json\_1}}
+\index{entities\_json\_1@{entities\_json\_1}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{entities\_json\_1}{entities\_json\_1}}
+{\footnotesize\ttfamily var entities\+\_\+json\+\_\+1 = \mbox{\hyperlink{XmlElement_8js_aa77bab964373eb2917ab7e271138d9aa}{\+\_\+\+\_\+import\+Default}}(\mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\char`\"{}./maps/entities.\+json\char`\"{}))}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a5185c2e0b8e6a5224458b2e5e6ed26e8}\label{entities_2lib_2encode_8js_a5185c2e0b8e6a5224458b2e5e6ed26e8}} 
+\index{encode.js@{encode.js}!escape@{escape}}
+\index{escape@{escape}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{escape}{escape}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} escape = \mbox{\hyperlink{entities_2lib_2encode_8js_a860f54bc63917529e16057d0f495dedc}{exports.\+encode\+H\+T\+ML}} = \mbox{\hyperlink{entities_2lib_2encode_8js_ab250e1dc69981b4c4b0c4a6ec358fffa}{exports.\+encode\+X\+ML}} = void 0}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_af4474f9fdeb69a1fd05362ca230df96b}\label{entities_2lib_2encode_8js_af4474f9fdeb69a1fd05362ca230df96b}} 
+\index{encode.js@{encode.js}!htmlReplacer@{htmlReplacer}}
+\index{htmlReplacer@{htmlReplacer}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{htmlReplacer}{htmlReplacer}}
+{\footnotesize\ttfamily var html\+Replacer = \mbox{\hyperlink{entities_2lib_2encode_8js_a0f762e097ffedafe8d0921ed1bc0f2bf}{get\+Inverse\+Replacer}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad3ec7ef0282a120ed7d8dad9cfbcf2ec}{inverse\+H\+T\+ML}})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_ad3ec7ef0282a120ed7d8dad9cfbcf2ec}\label{entities_2lib_2encode_8js_ad3ec7ef0282a120ed7d8dad9cfbcf2ec}} 
+\index{encode.js@{encode.js}!inverseHTML@{inverseHTML}}
+\index{inverseHTML@{inverseHTML}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{inverseHTML}{inverseHTML}}
+{\footnotesize\ttfamily var inverse\+H\+T\+ML = \mbox{\hyperlink{entities_2lib_2encode_8js_a3c2c163723fbf5ed69791a3e3247d2b5}{get\+Inverse\+Obj}}(\mbox{\hyperlink{modules_2isDataView_8js_aaf00c3ccd15289aa82c7ca696e51a950}{entities\+\_\+json\+\_\+1.\+default}})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_ad501e7a4e961ab1845ae3c4d3d91f522}\label{entities_2lib_2encode_8js_ad501e7a4e961ab1845ae3c4d3d91f522}} 
+\index{encode.js@{encode.js}!inverseXML@{inverseXML}}
+\index{inverseXML@{inverseXML}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{inverseXML}{inverseXML}}
+{\footnotesize\ttfamily var inverse\+X\+ML = \mbox{\hyperlink{entities_2lib_2encode_8js_a3c2c163723fbf5ed69791a3e3247d2b5}{get\+Inverse\+Obj}}(\mbox{\hyperlink{modules_2isDataView_8js_aaf00c3ccd15289aa82c7ca696e51a950}{xml\+\_\+json\+\_\+1.\+default}})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a35c2ebc817a1493a315ef4d3b627ecca}\label{entities_2lib_2encode_8js_a35c2ebc817a1493a315ef4d3b627ecca}} 
+\index{encode.js@{encode.js}!reNonASCII@{reNonASCII}}
+\index{reNonASCII@{reNonASCII}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{reNonASCII}{reNonASCII}}
+{\footnotesize\ttfamily var re\+Non\+A\+S\+C\+II = /(?\+:\mbox{[}\textbackslash{}x80-\/\textbackslash{}u\+D7\+F\+F\textbackslash{}u\+E000-\/\textbackslash{}u\+F\+F\+FF\mbox{]}$\vert$\mbox{[}\textbackslash{}u\+D800-\/\textbackslash{}u\+D\+B\+FF\mbox{]}\mbox{[}\textbackslash{}u\+D\+C00-\/\textbackslash{}u\+D\+F\+FF\mbox{]}$\vert$\mbox{[}\textbackslash{}u\+D800-\/\textbackslash{}u\+D\+B\+FF\mbox{]}(?!\mbox{[}\textbackslash{}u\+D\+C00-\/\textbackslash{}u\+D\+F\+FF\mbox{]})$\vert$(?\+:\mbox{[}$^\wedge$\textbackslash{}u\+D800-\/\textbackslash{}u\+D\+B\+FF\mbox{]}$\vert$$^\wedge$)\mbox{[}\textbackslash{}u\+D\+C00-\/\textbackslash{}u\+D\+F\+FF\mbox{]})/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a5412113a3a51e07e1f9ae546d39bd79b}\label{entities_2lib_2encode_8js_a5412113a3a51e07e1f9ae546d39bd79b}} 
+\index{encode.js@{encode.js}!reXmlChars@{reXmlChars}}
+\index{reXmlChars@{reXmlChars}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{reXmlChars}{reXmlChars}}
+{\footnotesize\ttfamily var re\+Xml\+Chars = \mbox{\hyperlink{entities_2lib_2encode_8js_a0f762e097ffedafe8d0921ed1bc0f2bf}{get\+Inverse\+Replacer}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad501e7a4e961ab1845ae3c4d3d91f522}{inverse\+X\+ML}})}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_ae2475e10618961c050dcba04e8c42331}\label{entities_2lib_2encode_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{encode.js@{encode.js}!strict@{strict}}
+\index{strict@{strict}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_a12a7fa9c5a6bfbefc9871d51b580c9aa}\label{entities_2lib_2encode_8js_a12a7fa9c5a6bfbefc9871d51b580c9aa}} 
+\index{encode.js@{encode.js}!xml\_json\_1@{xml\_json\_1}}
+\index{xml\_json\_1@{xml\_json\_1}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{xml\_json\_1}{xml\_json\_1}}
+{\footnotesize\ttfamily var xml\+\_\+json\+\_\+1 = \mbox{\hyperlink{XmlElement_8js_aa77bab964373eb2917ab7e271138d9aa}{\+\_\+\+\_\+import\+Default}}(\mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\char`\"{}./maps/xml.\+json\char`\"{}))}
+
+\mbox{\Hypertarget{entities_2lib_2encode_8js_ae77357c9411f3ea67a5c0dd3cbc0d809}\label{entities_2lib_2encode_8js_ae77357c9411f3ea67a5c0dd3cbc0d809}} 
+\index{encode.js@{encode.js}!xmlReplacer@{xmlReplacer}}
+\index{xmlReplacer@{xmlReplacer}!encode.js@{encode.js}}
+\doxysubsubsection{\texorpdfstring{xmlReplacer}{xmlReplacer}}
+{\footnotesize\ttfamily var xml\+Replacer = \mbox{\hyperlink{entities_2lib_2encode_8js_a0f762e097ffedafe8d0921ed1bc0f2bf}{get\+Inverse\+Replacer}}(\mbox{\hyperlink{entities_2lib_2encode_8js_ad501e7a4e961ab1845ae3c4d3d91f522}{inverse\+X\+ML}})}
+

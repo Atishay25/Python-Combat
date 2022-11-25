@@ -1,0 +1,94 @@
+\hypertarget{__baseSortedIndexBy_8js}{}\doxysection{node\+\_\+modules/lodash/\+\_\+base\+Sorted\+Index\+By.js File Reference}
+\label{__baseSortedIndexBy_8js}\index{node\_modules/lodash/\_baseSortedIndexBy.js@{node\_modules/lodash/\_baseSortedIndexBy.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__baseSortedIndexBy_8js_aa9b79de7a2babef1b8d268028ba60ee4}{base\+Sorted\+Index\+By}} (array, \mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}, \mbox{\hyperlink{underscore_2underscore_8js_a5b7ee2e5a558c36fedb1ce158d5d83d1}{iteratee}}, ret\+Highest)
+\begin{DoxyCompactList}\small\item\em The base implementation of {\ttfamily \+\_\+.\+sorted\+Index\+By} and {\ttfamily \+\_\+.\+sorted\+Last\+Index\+By} which invokes {\ttfamily iteratee} for {\ttfamily value} and each element of {\ttfamily array} to compute their sort ranking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__baseSortedIndexBy_8js_aae74ac29da691b4f64bb859af2903277}{is\+Symbol}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./is\+Symbol\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__baseSortedIndexBy_8js_af788477398d69673b8b976da854f6583}{M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+L\+E\+N\+G\+TH}} = 4294967295
+\begin{DoxyCompactList}\small\item\em Used as references for the maximum length and index of an array. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__baseSortedIndexBy_8js_ae0e4a3406fa3e602512230a4d6405b88}{M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+I\+N\+D\+EX}} = \mbox{\hyperlink{toLength_8js_af788477398d69673b8b976da854f6583}{M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+L\+E\+N\+G\+TH}} -\/ 1
+\item 
+var \mbox{\hyperlink{__baseSortedIndexBy_8js_a03a37cc52c59179429758df03123c84b}{native\+Floor}} = \mbox{\hyperlink{dist_2markdown-it_8js_a87888e6ebaeda48ea98b35e3ef693726}{Math.\+floor}}
+\item 
+var \mbox{\hyperlink{__baseSortedIndexBy_8js_ad5c2a8404a49d6437835b22dd9dd37c8}{native\+Min}} = \mbox{\hyperlink{underscore-esm-min_8js_acba5242b829e6bcf001dee9be91506ab}{Math.\+min}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__baseSortedIndexBy_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__baseSortedIndexBy_8js_aa9b79de7a2babef1b8d268028ba60ee4}{base\+Sorted\+Index\+By}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__baseSortedIndexBy_8js_aa9b79de7a2babef1b8d268028ba60ee4}\label{__baseSortedIndexBy_8js_aa9b79de7a2babef1b8d268028ba60ee4}} 
+\index{\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}!baseSortedIndexBy@{baseSortedIndexBy}}
+\index{baseSortedIndexBy@{baseSortedIndexBy}!\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}}
+\doxysubsubsection{\texorpdfstring{baseSortedIndexBy()}{baseSortedIndexBy()}}
+{\footnotesize\ttfamily function base\+Sorted\+Index\+By (\begin{DoxyParamCaption}\item[{}]{array,  }\item[{}]{value,  }\item[{}]{iteratee,  }\item[{}]{ret\+Highest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The base implementation of {\ttfamily \+\_\+.\+sorted\+Index\+By} and {\ttfamily \+\_\+.\+sorted\+Last\+Index\+By} which invokes {\ttfamily iteratee} for {\ttfamily value} and each element of {\ttfamily array} to compute their sort ranking. 
+
+The iteratee is invoked with one argument; (value).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & array The sorted array to inspect. \\
+\hline
+{\em \{$\ast$\}} & value The value to evaluate. \\
+\hline
+{\em \{\+Function\}} & iteratee The iteratee invoked per element. \\
+\hline
+{\em \{boolean\}} & \mbox{[}ret\+Highest\mbox{]} Specify returning the highest qualified index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} Returns the index at which {\ttfamily value} should be inserted into {\ttfamily array}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__baseSortedIndexBy_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{__baseSortedIndexBy_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}!exports@{exports}}
+\index{exports@{exports}!\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__baseSortedIndexBy_8js_aa9b79de7a2babef1b8d268028ba60ee4}{base\+Sorted\+Index\+By}}}
+
+\mbox{\Hypertarget{__baseSortedIndexBy_8js_aae74ac29da691b4f64bb859af2903277}\label{__baseSortedIndexBy_8js_aae74ac29da691b4f64bb859af2903277}} 
+\index{\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}!isSymbol@{isSymbol}}
+\index{isSymbol@{isSymbol}!\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}}
+\doxysubsubsection{\texorpdfstring{isSymbol}{isSymbol}}
+{\footnotesize\ttfamily var is\+Symbol = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./is\+Symbol\textquotesingle{})}
+
+\mbox{\Hypertarget{__baseSortedIndexBy_8js_ae0e4a3406fa3e602512230a4d6405b88}\label{__baseSortedIndexBy_8js_ae0e4a3406fa3e602512230a4d6405b88}} 
+\index{\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}!MAX\_ARRAY\_INDEX@{MAX\_ARRAY\_INDEX}}
+\index{MAX\_ARRAY\_INDEX@{MAX\_ARRAY\_INDEX}!\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_ARRAY\_INDEX}{MAX\_ARRAY\_INDEX}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+I\+N\+D\+EX = \mbox{\hyperlink{toLength_8js_af788477398d69673b8b976da854f6583}{M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+L\+E\+N\+G\+TH}} -\/ 1}
+
+\mbox{\Hypertarget{__baseSortedIndexBy_8js_af788477398d69673b8b976da854f6583}\label{__baseSortedIndexBy_8js_af788477398d69673b8b976da854f6583}} 
+\index{\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}!MAX\_ARRAY\_LENGTH@{MAX\_ARRAY\_LENGTH}}
+\index{MAX\_ARRAY\_LENGTH@{MAX\_ARRAY\_LENGTH}!\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_ARRAY\_LENGTH}{MAX\_ARRAY\_LENGTH}}
+{\footnotesize\ttfamily var M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+L\+E\+N\+G\+TH = 4294967295}
+
+
+
+Used as references for the maximum length and index of an array. 
+
+\mbox{\Hypertarget{__baseSortedIndexBy_8js_a03a37cc52c59179429758df03123c84b}\label{__baseSortedIndexBy_8js_a03a37cc52c59179429758df03123c84b}} 
+\index{\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}!nativeFloor@{nativeFloor}}
+\index{nativeFloor@{nativeFloor}!\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}}
+\doxysubsubsection{\texorpdfstring{nativeFloor}{nativeFloor}}
+{\footnotesize\ttfamily var native\+Floor = \mbox{\hyperlink{dist_2markdown-it_8js_a87888e6ebaeda48ea98b35e3ef693726}{Math.\+floor}}}
+
+\mbox{\Hypertarget{__baseSortedIndexBy_8js_ad5c2a8404a49d6437835b22dd9dd37c8}\label{__baseSortedIndexBy_8js_ad5c2a8404a49d6437835b22dd9dd37c8}} 
+\index{\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}!nativeMin@{nativeMin}}
+\index{nativeMin@{nativeMin}!\_baseSortedIndexBy.js@{\_baseSortedIndexBy.js}}
+\doxysubsubsection{\texorpdfstring{nativeMin}{nativeMin}}
+{\footnotesize\ttfamily var native\+Min = \mbox{\hyperlink{underscore-esm-min_8js_acba5242b829e6bcf001dee9be91506ab}{Math.\+min}}}
+

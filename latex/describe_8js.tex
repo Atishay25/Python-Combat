@@ -1,0 +1,250 @@
+\hypertarget{describe_8js}{}\doxysection{node\+\_\+modules/catharsis/lib/describe.js File Reference}
+\label{describe_8js}\index{node\_modules/catharsis/lib/describe.js@{node\_modules/catharsis/lib/describe.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classResult}{Result}}
+\item 
+class \mbox{\hyperlink{classContext}{Context}}
+\item 
+class \mbox{\hyperlink{classDescriber}{Describer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{describe_8js_a04169242d8647a754046eafc75baf053}{make\+Tag\+Open}} (code\+Tag, code\+Class)
+\item 
+function \mbox{\hyperlink{describe_8js_aae6226d7f6c9b93ca22f721902c708e3}{make\+Tag\+Close}} (code\+Tag)
+\item 
+function \mbox{\hyperlink{describe_8js_adf9417ab108eb4835234df4f969d3161}{reduce\+Multiple}} (context, key\+Name, context\+Name, translate, previous, \mbox{\hyperlink{resolve_2lib_2core_8js_a9c1527d447aa62220d3b64e20fc5ce74}{current}}, \mbox{\hyperlink{cjs_2index-default_8js_ae4b896af19aae26b1e5317acf4126807}{index}}, items)
+\item 
+function \mbox{\hyperlink{describe_8js_acb1c0d8310ee549733ccbc4a6b90f75d}{modifier\+Kind}} (use\+Long\+Format)
+\item 
+function \mbox{\hyperlink{describe_8js_aea4195f456cd550655a679d1e9f8bc2f}{build\+Modifier\+Strings}} (describer, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_adaf7debfe513154a2fa2a2d799d255a4}{modifiers}}, type, use\+Long\+Format)
+\item 
+function \mbox{\hyperlink{describe_8js_ab4a336c2018fe331b2cc6153d79a1af7}{add\+Modifiers}} (describer, context, \mbox{\hyperlink{underscore-esm-min_8js_ae774bd822405d3684019dc2ce4325579}{result}}, type, use\+Long\+Format)
+\item 
+function \mbox{\hyperlink{describe_8js_aeeb77d151b524cc9c58dd7b78b0309a5}{add\+Function\+Modifiers}} (describer, context, \{\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_adaf7debfe513154a2fa2a2d799d255a4}{modifiers}}\}, type, use\+Long\+Format)
+\item 
+function \mbox{\hyperlink{describe_8js_aac06f0468ff4a6f0794bb95ba6154004}{collapse\+Spaces}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}})
+\item 
+function \mbox{\hyperlink{describe_8js_aa0c98d098a68473ac625f656f5104037}{get\+Application\+Key}} (\{expression\}, applications)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{describe_8js_af093e5fb34c1cb891e06da9bf98af093}{\+\_\+}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{wrapperLodash_8js_aec7e0d4bcde1f5dfdf1ae3c26c2c4c83}{lodash}}\textquotesingle{})
+\item 
+const \mbox{\hyperlink{describe_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}fs\textquotesingle{})
+\item 
+const \mbox{\hyperlink{describe_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})
+\item 
+const \mbox{\hyperlink{describe_8js_a3208f7df1f521d03aaa93599031d0245}{stringify}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./stringify\textquotesingle{})
+\item 
+const \mbox{\hyperlink{describe_8js_acb7e0e89b59629f5d62ba2f3ecd63029}{Types}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a5802f014ed8e96d3a513f114faa91d12}{types}}\textquotesingle{})
+\item 
+const \mbox{\hyperlink{describe_8js_a4088c4c0882c9f30e0eea94872387d79}{D\+E\+F\+A\+U\+L\+T\+\_\+\+O\+P\+T\+I\+O\+NS}}
+\item 
+const \mbox{\hyperlink{describe_8js_a415b885523dd44b16c6a2f7988598da9}{F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+T\+A\+I\+LS}} = \mbox{[}\textquotesingle{}new\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{underscore_2underscore_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}}\textquotesingle{}\mbox{]}
+\item 
+const \mbox{\hyperlink{describe_8js_ac419ff1ddaf08b2725dfab1ff8d35ad2}{F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+T\+A\+I\+L\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+ES}} = \mbox{[}\textquotesingle{}function\+New\textquotesingle{}, \textquotesingle{}function\+This\textquotesingle{}\mbox{]}
+\item 
+const \mbox{\hyperlink{describe_8js_abc9c75ec5ecae33807740eb4775159a0}{M\+O\+D\+I\+F\+I\+E\+RS}} = \mbox{[}\textquotesingle{}optional\textquotesingle{}, \textquotesingle{}nullable\textquotesingle{}, \textquotesingle{}repeatable\textquotesingle{}\mbox{]}
+\item 
+const \mbox{\hyperlink{describe_8js_ae84af67d618bd6cf44b5ecc9612e8fac}{T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+V\+A\+R\+I\+A\+B\+L\+ES}}
+\item 
+const \mbox{\hyperlink{describe_8js_a54fcaf82a18f43e5294f3d6da4146e69}{F\+O\+R\+M\+A\+TS}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{describe_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{describe_8js_aeeb77d151b524cc9c58dd7b78b0309a5}\label{describe_8js_aeeb77d151b524cc9c58dd7b78b0309a5}} 
+\index{describe.js@{describe.js}!addFunctionModifiers@{addFunctionModifiers}}
+\index{addFunctionModifiers@{addFunctionModifiers}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{addFunctionModifiers()}{addFunctionModifiers()}}
+{\footnotesize\ttfamily function add\+Function\+Modifiers (\begin{DoxyParamCaption}\item[{}]{describer,  }\item[{}]{context,  }\item[{}]{\{modifiers\},  }\item[{}]{type,  }\item[{}]{use\+Long\+Format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{describe_8js_ab4a336c2018fe331b2cc6153d79a1af7}\label{describe_8js_ab4a336c2018fe331b2cc6153d79a1af7}} 
+\index{describe.js@{describe.js}!addModifiers@{addModifiers}}
+\index{addModifiers@{addModifiers}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{addModifiers()}{addModifiers()}}
+{\footnotesize\ttfamily function add\+Modifiers (\begin{DoxyParamCaption}\item[{}]{describer,  }\item[{}]{context,  }\item[{}]{result,  }\item[{}]{type,  }\item[{}]{use\+Long\+Format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{describe_8js_aea4195f456cd550655a679d1e9f8bc2f}\label{describe_8js_aea4195f456cd550655a679d1e9f8bc2f}} 
+\index{describe.js@{describe.js}!buildModifierStrings@{buildModifierStrings}}
+\index{buildModifierStrings@{buildModifierStrings}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{buildModifierStrings()}{buildModifierStrings()}}
+{\footnotesize\ttfamily function build\+Modifier\+Strings (\begin{DoxyParamCaption}\item[{}]{describer,  }\item[{}]{modifiers,  }\item[{}]{type,  }\item[{}]{use\+Long\+Format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{describe_8js_aac06f0468ff4a6f0794bb95ba6154004}\label{describe_8js_aac06f0468ff4a6f0794bb95ba6154004}} 
+\index{describe.js@{describe.js}!collapseSpaces@{collapseSpaces}}
+\index{collapseSpaces@{collapseSpaces}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{collapseSpaces()}{collapseSpaces()}}
+{\footnotesize\ttfamily function collapse\+Spaces (\begin{DoxyParamCaption}\item[{}]{string }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{describe_8js_aa0c98d098a68473ac625f656f5104037}\label{describe_8js_aa0c98d098a68473ac625f656f5104037}} 
+\index{describe.js@{describe.js}!getApplicationKey@{getApplicationKey}}
+\index{getApplicationKey@{getApplicationKey}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{getApplicationKey()}{getApplicationKey()}}
+{\footnotesize\ttfamily function get\+Application\+Key (\begin{DoxyParamCaption}\item[{}]{\{expression\},  }\item[{}]{applications }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{describe_8js_aae6226d7f6c9b93ca22f721902c708e3}\label{describe_8js_aae6226d7f6c9b93ca22f721902c708e3}} 
+\index{describe.js@{describe.js}!makeTagClose@{makeTagClose}}
+\index{makeTagClose@{makeTagClose}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{makeTagClose()}{makeTagClose()}}
+{\footnotesize\ttfamily function make\+Tag\+Close (\begin{DoxyParamCaption}\item[{}]{code\+Tag }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{describe_8js_a04169242d8647a754046eafc75baf053}\label{describe_8js_a04169242d8647a754046eafc75baf053}} 
+\index{describe.js@{describe.js}!makeTagOpen@{makeTagOpen}}
+\index{makeTagOpen@{makeTagOpen}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{makeTagOpen()}{makeTagOpen()}}
+{\footnotesize\ttfamily function make\+Tag\+Open (\begin{DoxyParamCaption}\item[{}]{code\+Tag,  }\item[{}]{code\+Class }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{describe_8js_acb1c0d8310ee549733ccbc4a6b90f75d}\label{describe_8js_acb1c0d8310ee549733ccbc4a6b90f75d}} 
+\index{describe.js@{describe.js}!modifierKind@{modifierKind}}
+\index{modifierKind@{modifierKind}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{modifierKind()}{modifierKind()}}
+{\footnotesize\ttfamily function modifier\+Kind (\begin{DoxyParamCaption}\item[{}]{use\+Long\+Format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{describe_8js_adf9417ab108eb4835234df4f969d3161}\label{describe_8js_adf9417ab108eb4835234df4f969d3161}} 
+\index{describe.js@{describe.js}!reduceMultiple@{reduceMultiple}}
+\index{reduceMultiple@{reduceMultiple}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{reduceMultiple()}{reduceMultiple()}}
+{\footnotesize\ttfamily function reduce\+Multiple (\begin{DoxyParamCaption}\item[{}]{context,  }\item[{}]{key\+Name,  }\item[{}]{context\+Name,  }\item[{}]{translate,  }\item[{}]{previous,  }\item[{}]{current,  }\item[{}]{index,  }\item[{}]{items }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{describe_8js_af093e5fb34c1cb891e06da9bf98af093}\label{describe_8js_af093e5fb34c1cb891e06da9bf98af093}} 
+\index{describe.js@{describe.js}!\_@{\_}}
+\index{\_@{\_}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{\_}{\_}}
+{\footnotesize\ttfamily const \+\_\+ = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{wrapperLodash_8js_aec7e0d4bcde1f5dfdf1ae3c26c2c4c83}{lodash}}\textquotesingle{})}
+
+\mbox{\Hypertarget{describe_8js_a4088c4c0882c9f30e0eea94872387d79}\label{describe_8js_a4088c4c0882c9f30e0eea94872387d79}} 
+\index{describe.js@{describe.js}!DEFAULT\_OPTIONS@{DEFAULT\_OPTIONS}}
+\index{DEFAULT\_OPTIONS@{DEFAULT\_OPTIONS}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_OPTIONS}{DEFAULT\_OPTIONS}}
+{\footnotesize\ttfamily const D\+E\+F\+A\+U\+L\+T\+\_\+\+O\+P\+T\+I\+O\+NS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a8e3024ff2e483bdb2873c89354bba85a}{language}}: \textcolor{stringliteral}{'en'},}
+\DoxyCodeLine{    resources: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{underscore-min_8js_a37cf946a87c1d2b782b290d31eb4c772}{en}}: JSON.parse(\mbox{\hyperlink{describe_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}}.readFileSync(\mbox{\hyperlink{describe_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}.join(\_\_dirname, \textcolor{stringliteral}{'../res/en.json'}), \textcolor{stringliteral}{'utf8'}))}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{describe_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{describe_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{describe.js@{describe.js}!exports@{exports}}
+\index{exports@{exports}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (type, \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}) => \{}
+\DoxyCodeLine{    \textcolor{keyword}{const} simple = \textcolor{keyword}{new} \mbox{\hyperlink{classDescriber}{Describer}}(\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}).\mbox{\hyperlink{classDescriber_adb7c575d2bbf36e9b41e5bccd54747f2}{type}}(type, \textcolor{keyword}{false});}
+\DoxyCodeLine{    \textcolor{keyword}{const} extended = \textcolor{keyword}{new} \mbox{\hyperlink{classDescriber}{Describer}}(\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}).\mbox{\hyperlink{classDescriber_adb7c575d2bbf36e9b41e5bccd54747f2}{type}}(type);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    [simple, extended].forEach(\mbox{\hyperlink{lodash_2core_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} => \{}
+\DoxyCodeLine{        \mbox{\hyperlink{lodash_2core_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}}.description = \mbox{\hyperlink{describe_8js_aac06f0468ff4a6f0794bb95ba6154004}{collapseSpaces}}(\mbox{\hyperlink{lodash_2core_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}}.description.trim());}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{        simple: simple.description,}
+\DoxyCodeLine{        extended}
+\DoxyCodeLine{    \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{describe_8js_a54fcaf82a18f43e5294f3d6da4146e69}\label{describe_8js_a54fcaf82a18f43e5294f3d6da4146e69}} 
+\index{describe.js@{describe.js}!FORMATS@{FORMATS}}
+\index{FORMATS@{FORMATS}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{FORMATS}{FORMATS}}
+{\footnotesize\ttfamily const F\+O\+R\+M\+A\+TS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    EXTENDED: \textcolor{stringliteral}{'extended'},}
+\DoxyCodeLine{    SIMPLE: \textcolor{stringliteral}{'simple'}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{describe_8js_a2e47e1f004220675d0fa39b8255bd78f}\label{describe_8js_a2e47e1f004220675d0fa39b8255bd78f}} 
+\index{describe.js@{describe.js}!fs@{fs}}
+\index{fs@{fs}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily const fs = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}fs\textquotesingle{})}
+
+\mbox{\Hypertarget{describe_8js_a415b885523dd44b16c6a2f7988598da9}\label{describe_8js_a415b885523dd44b16c6a2f7988598da9}} 
+\index{describe.js@{describe.js}!FUNCTION\_DETAILS@{FUNCTION\_DETAILS}}
+\index{FUNCTION\_DETAILS@{FUNCTION\_DETAILS}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{FUNCTION\_DETAILS}{FUNCTION\_DETAILS}}
+{\footnotesize\ttfamily const F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+T\+A\+I\+LS = \mbox{[}\textquotesingle{}new\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{underscore_2underscore_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}}\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{describe_8js_ac419ff1ddaf08b2725dfab1ff8d35ad2}\label{describe_8js_ac419ff1ddaf08b2725dfab1ff8d35ad2}} 
+\index{describe.js@{describe.js}!FUNCTION\_DETAILS\_VARIABLES@{FUNCTION\_DETAILS\_VARIABLES}}
+\index{FUNCTION\_DETAILS\_VARIABLES@{FUNCTION\_DETAILS\_VARIABLES}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{FUNCTION\_DETAILS\_VARIABLES}{FUNCTION\_DETAILS\_VARIABLES}}
+{\footnotesize\ttfamily const F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+T\+A\+I\+L\+S\+\_\+\+V\+A\+R\+I\+A\+B\+L\+ES = \mbox{[}\textquotesingle{}function\+New\textquotesingle{}, \textquotesingle{}function\+This\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{describe_8js_abc9c75ec5ecae33807740eb4775159a0}\label{describe_8js_abc9c75ec5ecae33807740eb4775159a0}} 
+\index{describe.js@{describe.js}!MODIFIERS@{MODIFIERS}}
+\index{MODIFIERS@{MODIFIERS}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{MODIFIERS}{MODIFIERS}}
+{\footnotesize\ttfamily const M\+O\+D\+I\+F\+I\+E\+RS = \mbox{[}\textquotesingle{}optional\textquotesingle{}, \textquotesingle{}nullable\textquotesingle{}, \textquotesingle{}repeatable\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{describe_8js_a1fdc7709faf62dce60620fb3f9d3453c}\label{describe_8js_a1fdc7709faf62dce60620fb3f9d3453c}} 
+\index{describe.js@{describe.js}!path@{path}}
+\index{path@{path}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily const path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})}
+
+\mbox{\Hypertarget{describe_8js_a3208f7df1f521d03aaa93599031d0245}\label{describe_8js_a3208f7df1f521d03aaa93599031d0245}} 
+\index{describe.js@{describe.js}!stringify@{stringify}}
+\index{stringify@{stringify}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{stringify}{stringify}}
+{\footnotesize\ttfamily const stringify = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./stringify\textquotesingle{})}
+
+\mbox{\Hypertarget{describe_8js_ae84af67d618bd6cf44b5ecc9612e8fac}\label{describe_8js_ae84af67d618bd6cf44b5ecc9612e8fac}} 
+\index{describe.js@{describe.js}!TEMPLATE\_VARIABLES@{TEMPLATE\_VARIABLES}}
+\index{TEMPLATE\_VARIABLES@{TEMPLATE\_VARIABLES}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{TEMPLATE\_VARIABLES}{TEMPLATE\_VARIABLES}}
+{\footnotesize\ttfamily const T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+V\+A\+R\+I\+A\+B\+L\+ES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{    \textcolor{stringliteral}{'application'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'codeTagClose'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'codeTagOpen'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'element'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'field'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'functionNew'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'functionParams'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'functionReturns'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'functionThis'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'keyApplication'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'name'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'nullable'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'optional'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'param'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'prefix'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'repeatable'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'suffix'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'type'}}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{describe_8js_acb7e0e89b59629f5d62ba2f3ecd63029}\label{describe_8js_acb7e0e89b59629f5d62ba2f3ecd63029}} 
+\index{describe.js@{describe.js}!Types@{Types}}
+\index{Types@{Types}!describe.js@{describe.js}}
+\doxysubsubsection{\texorpdfstring{Types}{Types}}
+{\footnotesize\ttfamily const Types = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a5802f014ed8e96d3a513f114faa91d12}{types}}\textquotesingle{})}
+

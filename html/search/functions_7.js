@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['print_5fstat_188',['print_stat',['../level5_8js.html#a0c9c3c48752efaf54b967cfd55c821f5',1,'level5.js']]]
+  ['typewriter_72',['typeWriter',['../welcome_8js.html#a91d5bfa65bb11565dd2c4fb23b16a510',1,'welcome.js']]]
 ];

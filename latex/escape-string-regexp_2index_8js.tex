@@ -1,0 +1,43 @@
+\hypertarget{escape-string-regexp_2index_8js}{}\doxysection{node\+\_\+modules/escape-\/string-\/regexp/index.js File Reference}
+\label{escape-string-regexp_2index_8js}\index{node\_modules/escape-\/string-\/regexp/index.js@{node\_modules/escape-\/string-\/regexp/index.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{escape-string-regexp_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+const \mbox{\hyperlink{escape-string-regexp_2index_8js_a18d502a70df6cf194271b8ec5c87405b}{match\+Operators\+Regex}} = /\mbox{[}$\vert$\textbackslash{}\textbackslash{}\{\}()\mbox{[}\textbackslash{}\mbox{]}$^\wedge$\$+$\ast$?.-\/\mbox{]}/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{escape-string-regexp_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{escape-string-regexp_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{escape-string-regexp_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keywordtype}{string} => \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (typeof \textcolor{keywordtype}{string} !== \textcolor{stringliteral}{'string'}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{throw} \textcolor{keyword}{new} TypeError(\textcolor{stringliteral}{'Expected a string'});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \textcolor{keywordtype}{string}.replace(\mbox{\hyperlink{escape-string-regexp_2index_8js_a18d502a70df6cf194271b8ec5c87405b}{matchOperatorsRegex}}, \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)\$\&'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{escape-string-regexp_2index_8js_a18d502a70df6cf194271b8ec5c87405b}\label{escape-string-regexp_2index_8js_a18d502a70df6cf194271b8ec5c87405b}} 
+\index{index.js@{index.js}!matchOperatorsRegex@{matchOperatorsRegex}}
+\index{matchOperatorsRegex@{matchOperatorsRegex}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{matchOperatorsRegex}{matchOperatorsRegex}}
+{\footnotesize\ttfamily const match\+Operators\+Regex = /\mbox{[}$\vert$\textbackslash{}\textbackslash{}\{\}()\mbox{[}\textbackslash{}\mbox{]}$^\wedge$\$+$\ast$?.-\/\mbox{]}/\mbox{\hyperlink{marked_8min_8js_a264d5601202e1217a9c44287ceba4b27}{g}}}
+
+\mbox{\Hypertarget{escape-string-regexp_2index_8js_ae2475e10618961c050dcba04e8c42331}\label{escape-string-regexp_2index_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+

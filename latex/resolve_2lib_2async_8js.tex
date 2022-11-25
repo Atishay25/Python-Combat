@@ -1,0 +1,229 @@
+\hypertarget{resolve_2lib_2async_8js}{}\doxysection{node\+\_\+modules/resolve/lib/async.js File Reference}
+\label{resolve_2lib_2async_8js}\index{node\_modules/resolve/lib/async.js@{node\_modules/resolve/lib/async.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}fs\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_a44f49acb08f0704f5fa8bc389fc29870}{get\+Homedir}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{home__paths__sync_8js_ab70480df9fb92886cf61f758fac96c75}{homedir}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_ac06eea5866ddd0b9fe73ec96ecd3353c}{caller}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./caller\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_a637d8512fddec0febf486a11669e20ca}{node\+Modules\+Paths}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}-\/modules-\/paths\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_a897032317f99e3f33dafb0ef6ba40892}{normalize\+Options}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{shared_2rollup_8js_a1c4dd9b87b62d7828be52e364194e14b}{normalize}}-\/\mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_a4760e861f09372b5bcc39fa6e9242442}{is\+Core}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}is-\/\mbox{\hyperlink{resolve_2lib_2core_8js_a09402cc166f16e596a79ea32ac79eabf}{core}}-\/\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_a01ececdb017d4f758fdc117c7e21e352}{realpath\+FS}} = process.\+platform !== \textquotesingle{}\mbox{\hyperlink{shared_2rollup_8js_a046b7f2c195c921b62f2c82d2bd27244}{win32}}\textquotesingle{} \&\& \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a5c4f355815eaf19fc78830dc9c2eb753}{fs.\+realpath}} \&\& typeof fs.\+realpath.\+native === \textquotesingle{}function\textquotesingle{} ? fs.\+realpath.\+native \+: \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a5c4f355815eaf19fc78830dc9c2eb753}{fs.\+realpath}}
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_ab70480df9fb92886cf61f758fac96c75}{homedir}} = \mbox{\hyperlink{resolve_2lib_2sync_8js_a44f49acb08f0704f5fa8bc389fc29870}{get\+Homedir}}()
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_aaf1d2972486f3b483337ab9913dc2289}{default\+Paths}}
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_ad00510ffd0c09f0871c5a75cafdb2108}{default\+Is\+File}}
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_a612193b9597a12bc94ed3a33ac763ae3}{default\+Is\+Dir}}
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_a351471dec91a09041e658355db51855e}{default\+Realpath}}
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_a59648441b4a6892b6c90d0ea6b2d3ae8}{maybe\+Realpath}}
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_a7a49995a0d5b6f5b7b422b8a33c22dfd}{default\+Read\+Package}}
+\item 
+var \mbox{\hyperlink{resolve_2lib_2async_8js_af6258342b46497b4a61a27243d42b382}{get\+Package\+Candidates}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{resolve_2lib_2async_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{resolve_2lib_2async_8js_ac06eea5866ddd0b9fe73ec96ecd3353c}\label{resolve_2lib_2async_8js_ac06eea5866ddd0b9fe73ec96ecd3353c}} 
+\index{async.js@{async.js}!caller@{caller}}
+\index{caller@{caller}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{caller}{caller}}
+{\footnotesize\ttfamily var caller = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./caller\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2lib_2async_8js_a612193b9597a12bc94ed3a33ac763ae3}\label{resolve_2lib_2async_8js_a612193b9597a12bc94ed3a33ac763ae3}} 
+\index{async.js@{async.js}!defaultIsDir@{defaultIsDir}}
+\index{defaultIsDir@{defaultIsDir}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{defaultIsDir}{defaultIsDir}}
+{\footnotesize\ttfamily var default\+Is\+Dir}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} isDirectory(dir, \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{resolve_2lib_2async_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs}}.stat(dir, \textcolor{keyword}{function} (err, \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a3a278b4c3124502e0f7cad4e2a581d41}{stat}}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (!err) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(\textcolor{keyword}{null}, \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a3a278b4c3124502e0f7cad4e2a581d41}{stat}}.isDirectory());}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (err.code === \textcolor{stringliteral}{'ENOENT'} || err.code === \textcolor{stringliteral}{'ENOTDIR'}) \textcolor{keywordflow}{return} \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(\textcolor{keyword}{null}, \textcolor{keyword}{false});}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(err);}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{resolve_2lib_2async_8js_ad00510ffd0c09f0871c5a75cafdb2108}\label{resolve_2lib_2async_8js_ad00510ffd0c09f0871c5a75cafdb2108}} 
+\index{async.js@{async.js}!defaultIsFile@{defaultIsFile}}
+\index{defaultIsFile@{defaultIsFile}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{defaultIsFile}{defaultIsFile}}
+{\footnotesize\ttfamily var default\+Is\+File}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} isFile(file, \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{resolve_2lib_2async_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs}}.stat(file, \textcolor{keyword}{function} (err, \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a3a278b4c3124502e0f7cad4e2a581d41}{stat}}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (!err) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(\textcolor{keyword}{null}, \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a3a278b4c3124502e0f7cad4e2a581d41}{stat}}.isFile() || \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a3a278b4c3124502e0f7cad4e2a581d41}{stat}}.isFIFO());}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (err.code === \textcolor{stringliteral}{'ENOENT'} || err.code === \textcolor{stringliteral}{'ENOTDIR'}) \textcolor{keywordflow}{return} \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(\textcolor{keyword}{null}, \textcolor{keyword}{false});}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(err);}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{resolve_2lib_2async_8js_aaf1d2972486f3b483337ab9913dc2289}\label{resolve_2lib_2async_8js_aaf1d2972486f3b483337ab9913dc2289}} 
+\index{async.js@{async.js}!defaultPaths@{defaultPaths}}
+\index{defaultPaths@{defaultPaths}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{defaultPaths}{defaultPaths}}
+{\footnotesize\ttfamily var default\+Paths}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} () \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} [}
+\DoxyCodeLine{        \mbox{\hyperlink{resolve_2lib_2async_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}}.join(\mbox{\hyperlink{resolve_2lib_2async_8js_ab70480df9fb92886cf61f758fac96c75}{homedir}}, \textcolor{stringliteral}{'.node\_modules'}),}
+\DoxyCodeLine{        \mbox{\hyperlink{resolve_2lib_2async_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}}.join(\mbox{\hyperlink{resolve_2lib_2async_8js_ab70480df9fb92886cf61f758fac96c75}{homedir}}, \textcolor{stringliteral}{'.node\_libraries'})}
+\DoxyCodeLine{    ];}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{resolve_2lib_2async_8js_a7a49995a0d5b6f5b7b422b8a33c22dfd}\label{resolve_2lib_2async_8js_a7a49995a0d5b6f5b7b422b8a33c22dfd}} 
+\index{async.js@{async.js}!defaultReadPackage@{defaultReadPackage}}
+\index{defaultReadPackage@{defaultReadPackage}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{defaultReadPackage}{defaultReadPackage}}
+{\footnotesize\ttfamily var default\+Read\+Package}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{resolve_2lib_2async_8js_a7a49995a0d5b6f5b7b422b8a33c22dfd}{defaultReadPackage}}(\mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_ac7f1256fb214bfbdb2a447738eb5f473}{readFile}}, pkgfile, \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_ac7f1256fb214bfbdb2a447738eb5f473}{readFile}}(pkgfile, \textcolor{keyword}{function} (readFileErr, body) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (readFileErr) \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(readFileErr);}
+\DoxyCodeLine{        \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{                var pkg = JSON.parse(body);}
+\DoxyCodeLine{                \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(\textcolor{keyword}{null}, pkg);}
+\DoxyCodeLine{            \} \textcolor{keywordflow}{catch} (jsonErr) \{}
+\DoxyCodeLine{                \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(\textcolor{keyword}{null});}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{resolve_2lib_2async_8js_a351471dec91a09041e658355db51855e}\label{resolve_2lib_2async_8js_a351471dec91a09041e658355db51855e}} 
+\index{async.js@{async.js}!defaultRealpath@{defaultRealpath}}
+\index{defaultRealpath@{defaultRealpath}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{defaultRealpath}{defaultRealpath}}
+{\footnotesize\ttfamily var default\+Realpath}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a5c4f355815eaf19fc78830dc9c2eb753}{realpath}}(\mbox{\hyperlink{markdown-it_8min_8js_a81e910173af87b1161e719a504d52407}{x}}, \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{resolve_2lib_2async_8js_a01ececdb017d4f758fdc117c7e21e352}{realpathFS}}(\mbox{\hyperlink{markdown-it_8min_8js_a81e910173af87b1161e719a504d52407}{x}}, \textcolor{keyword}{function} (realpathErr, realPath) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (realpathErr \&\& realpathErr.code !== \textcolor{stringliteral}{'ENOENT'}) \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(realpathErr);}
+\DoxyCodeLine{        \textcolor{keywordflow}{else} \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(\textcolor{keyword}{null}, realpathErr ? \mbox{\hyperlink{markdown-it_8min_8js_a81e910173af87b1161e719a504d52407}{x}} : realPath);}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{resolve_2lib_2async_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{resolve_2lib_2async_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{async.js@{async.js}!exports@{exports}}
+\index{exports@{exports}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+\mbox{\Hypertarget{resolve_2lib_2async_8js_aebcdd70130f7e0b00b39cc981ab0bab0}\label{resolve_2lib_2async_8js_aebcdd70130f7e0b00b39cc981ab0bab0}} 
+\index{async.js@{async.js}!fs@{fs}}
+\index{fs@{fs}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily var fs = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}fs\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2lib_2async_8js_a44f49acb08f0704f5fa8bc389fc29870}\label{resolve_2lib_2async_8js_a44f49acb08f0704f5fa8bc389fc29870}} 
+\index{async.js@{async.js}!getHomedir@{getHomedir}}
+\index{getHomedir@{getHomedir}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{getHomedir}{getHomedir}}
+{\footnotesize\ttfamily var get\+Homedir = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{home__paths__sync_8js_ab70480df9fb92886cf61f758fac96c75}{homedir}}\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2lib_2async_8js_af6258342b46497b4a61a27243d42b382}\label{resolve_2lib_2async_8js_af6258342b46497b4a61a27243d42b382}} 
+\index{async.js@{async.js}!getPackageCandidates@{getPackageCandidates}}
+\index{getPackageCandidates@{getPackageCandidates}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{getPackageCandidates}{getPackageCandidates}}
+{\footnotesize\ttfamily var get\+Package\+Candidates}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{resolve_2lib_2async_8js_af6258342b46497b4a61a27243d42b382}{getPackageCandidates}}(\mbox{\hyperlink{markdown-it_8min_8js_a81e910173af87b1161e719a504d52407}{x}}, start, \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}) \{}
+\DoxyCodeLine{    var dirs = \mbox{\hyperlink{resolve_2lib_2async_8js_a637d8512fddec0febf486a11669e20ca}{nodeModulesPaths}}(start, \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}, \mbox{\hyperlink{markdown-it_8min_8js_a81e910173af87b1161e719a504d52407}{x}});}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (var \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} = 0; \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} < dirs.length; \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}++) \{}
+\DoxyCodeLine{        dirs[\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}] = \mbox{\hyperlink{resolve_2lib_2async_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}}.join(dirs[\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}], \mbox{\hyperlink{markdown-it_8min_8js_a81e910173af87b1161e719a504d52407}{x}});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} dirs;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{resolve_2lib_2async_8js_ab70480df9fb92886cf61f758fac96c75}\label{resolve_2lib_2async_8js_ab70480df9fb92886cf61f758fac96c75}} 
+\index{async.js@{async.js}!homedir@{homedir}}
+\index{homedir@{homedir}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{homedir}{homedir}}
+{\footnotesize\ttfamily var homedir = \mbox{\hyperlink{resolve_2lib_2sync_8js_a44f49acb08f0704f5fa8bc389fc29870}{get\+Homedir}}()}
+
+\mbox{\Hypertarget{resolve_2lib_2async_8js_a4760e861f09372b5bcc39fa6e9242442}\label{resolve_2lib_2async_8js_a4760e861f09372b5bcc39fa6e9242442}} 
+\index{async.js@{async.js}!isCore@{isCore}}
+\index{isCore@{isCore}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{isCore}{isCore}}
+{\footnotesize\ttfamily var is\+Core = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}is-\/\mbox{\hyperlink{resolve_2lib_2core_8js_a09402cc166f16e596a79ea32ac79eabf}{core}}-\/\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}}\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2lib_2async_8js_a59648441b4a6892b6c90d0ea6b2d3ae8}\label{resolve_2lib_2async_8js_a59648441b4a6892b6c90d0ea6b2d3ae8}} 
+\index{async.js@{async.js}!maybeRealpath@{maybeRealpath}}
+\index{maybeRealpath@{maybeRealpath}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{maybeRealpath}{maybeRealpath}}
+{\footnotesize\ttfamily var maybe\+Realpath}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{resolve_2lib_2async_8js_a59648441b4a6892b6c90d0ea6b2d3ae8}{maybeRealpath}}(\mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a5c4f355815eaf19fc78830dc9c2eb753}{realpath}}, \mbox{\hyperlink{markdown-it_8min_8js_a81e910173af87b1161e719a504d52407}{x}}, \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}, \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (\mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}} \&\& \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}.preserveSymlinks === \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{        \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a5c4f355815eaf19fc78830dc9c2eb753}{realpath}}(\mbox{\hyperlink{markdown-it_8min_8js_a81e910173af87b1161e719a504d52407}{x}}, \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}});}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{        \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}(\textcolor{keyword}{null}, \mbox{\hyperlink{markdown-it_8min_8js_a81e910173af87b1161e719a504d52407}{x}});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{resolve_2lib_2async_8js_a637d8512fddec0febf486a11669e20ca}\label{resolve_2lib_2async_8js_a637d8512fddec0febf486a11669e20ca}} 
+\index{async.js@{async.js}!nodeModulesPaths@{nodeModulesPaths}}
+\index{nodeModulesPaths@{nodeModulesPaths}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{nodeModulesPaths}{nodeModulesPaths}}
+{\footnotesize\ttfamily var node\+Modules\+Paths = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}-\/modules-\/paths\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2lib_2async_8js_a897032317f99e3f33dafb0ef6ba40892}\label{resolve_2lib_2async_8js_a897032317f99e3f33dafb0ef6ba40892}} 
+\index{async.js@{async.js}!normalizeOptions@{normalizeOptions}}
+\index{normalizeOptions@{normalizeOptions}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{normalizeOptions}{normalizeOptions}}
+{\footnotesize\ttfamily var normalize\+Options = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{shared_2rollup_8js_a1c4dd9b87b62d7828be52e364194e14b}{normalize}}-\/\mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2lib_2async_8js_aa72e0c8a20e6bcc571d3a1c51846e627}\label{resolve_2lib_2async_8js_aa72e0c8a20e6bcc571d3a1c51846e627}} 
+\index{async.js@{async.js}!path@{path}}
+\index{path@{path}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily var path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})}
+
+\mbox{\Hypertarget{resolve_2lib_2async_8js_a01ececdb017d4f758fdc117c7e21e352}\label{resolve_2lib_2async_8js_a01ececdb017d4f758fdc117c7e21e352}} 
+\index{async.js@{async.js}!realpathFS@{realpathFS}}
+\index{realpathFS@{realpathFS}!async.js@{async.js}}
+\doxysubsubsection{\texorpdfstring{realpathFS}{realpathFS}}
+{\footnotesize\ttfamily var realpath\+FS = process.\+platform !== \textquotesingle{}\mbox{\hyperlink{shared_2rollup_8js_a046b7f2c195c921b62f2c82d2bd27244}{win32}}\textquotesingle{} \&\& \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a5c4f355815eaf19fc78830dc9c2eb753}{fs.\+realpath}} \&\& typeof fs.\+realpath.\+native === \textquotesingle{}function\textquotesingle{} ? fs.\+realpath.\+native \+: \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a5c4f355815eaf19fc78830dc9c2eb753}{fs.\+realpath}}}
+

@@ -1,0 +1,216 @@
+\hypertarget{classStringStream}{}\doxysection{String\+Stream Class Reference}
+\label{classStringStream}\index{StringStream@{StringStream}}
+
+
+Encapsulates a single line of input.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStringStream_a7f801b673aed877dfd007e6f33660d87}{constructor}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_ae0e827532d037c9821e1e025c224879b}{tab\+Size}}, \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a2ef6da65f58e8ac8ef6cf6723ca1b7af}{indent\+Unit}})
+\begin{DoxyCompactList}\small\item\em Create a stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_adb6b666f533c2a72b0a5d458b02e40fe}{eol}} ()
+\begin{DoxyCompactList}\small\item\em True if we are at the end of the line. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a359e0ce3e9031471cd0d2f721275df72}{sol}} ()
+\begin{DoxyCompactList}\small\item\em True if we are at the start of the line. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a31daa4a4a1f337560a8f4f731fd5ec6b}{peek}} ()
+\begin{DoxyCompactList}\small\item\em Get the next code unit after the current position, or undefined if we\textquotesingle{}re at the end of the line. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a9ec41629e303e18f9a6d4fcf0c3f5bc3}{next}} ()
+\begin{DoxyCompactList}\small\item\em Read the next code unit and advance {\ttfamily this.\+pos}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a802404990a81379cd22df4917dc579c2}{eat}} (\mbox{\hyperlink{classStringStream_a2aedc647b5c6f02db1d16b2bca65df8a}{match}})
+\begin{DoxyCompactList}\small\item\em Match the next character against the given string, regular expression, or predicate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_aab17fc4c6ca9d72a60fb744a61bcdcb5}{eat\+While}} (\mbox{\hyperlink{classStringStream_a2aedc647b5c6f02db1d16b2bca65df8a}{match}})
+\begin{DoxyCompactList}\small\item\em Continue matching characters that match the given string, regular expression, or predicate function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a661cd1b2821029cedf9a13de2b7a9e9a}{eat\+Space}} ()
+\begin{DoxyCompactList}\small\item\em Consume whitespace ahead of {\ttfamily this.\+pos}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_acbe8924b8121c008bfa6452d3fa70b1c}{skip\+To\+End}} ()
+\begin{DoxyCompactList}\small\item\em Move to the end of the line. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a99474bf2e8927eed9e199441e0489cb7}{skip\+To}} (ch)
+\begin{DoxyCompactList}\small\item\em Move to directly before the given character, if found on the current line. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a173cada95a119fbd66ecea3802ce9a51}{back\+Up}} (\mbox{\hyperlink{underscore-umd-min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})
+\begin{DoxyCompactList}\small\item\em Move back {\ttfamily n} characters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a8d906bba503d00d09ca268c9724e502d}{column}} ()
+\begin{DoxyCompactList}\small\item\em Get the column position at {\ttfamily this.\+pos}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a39c2394d10a0ac4968224270be2e0fd3}{indentation}} ()
+\begin{DoxyCompactList}\small\item\em Get the indentation column of the current line. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a2aedc647b5c6f02db1d16b2bca65df8a}{match}} (pattern, consume, case\+Insensitive)
+\begin{DoxyCompactList}\small\item\em Match the input against the given string or regular expression (which should start with a {\ttfamily $^\wedge$}). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStringStream_a1e723b784c796beee9b07f4493fe15f5}{current}} ()
+\begin{DoxyCompactList}\small\item\em Get the current token. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encapsulates a single line of input. 
+
+Given to stream syntax code, which uses it to tokenize the content. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStringStream_a173cada95a119fbd66ecea3802ce9a51}\label{classStringStream_a173cada95a119fbd66ecea3802ce9a51}} 
+\index{StringStream@{StringStream}!backUp@{backUp}}
+\index{backUp@{backUp}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{backUp()}{backUp()}}
+{\footnotesize\ttfamily String\+Stream\+::back\+Up (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+
+
+Move back {\ttfamily n} characters. 
+
+\mbox{\Hypertarget{classStringStream_a8d906bba503d00d09ca268c9724e502d}\label{classStringStream_a8d906bba503d00d09ca268c9724e502d}} 
+\index{StringStream@{StringStream}!column@{column}}
+\index{column@{column}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{column()}{column()}}
+{\footnotesize\ttfamily String\+Stream\+::column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the column position at {\ttfamily this.\+pos}. 
+
+\mbox{\Hypertarget{classStringStream_a7f801b673aed877dfd007e6f33660d87}\label{classStringStream_a7f801b673aed877dfd007e6f33660d87}} 
+\index{StringStream@{StringStream}!constructor@{constructor}}
+\index{constructor@{constructor}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily String\+Stream\+::constructor (\begin{DoxyParamCaption}\item[{}]{string,  }\item[{}]{tab\+Size,  }\item[{}]{indent\+Unit }\end{DoxyParamCaption})}
+
+
+
+Create a stream. 
+
+The current position on the line.
+
+The start position of the current token.
+\begin{DoxyParams}{Parameters}
+{\em string} & The line. \\
+\hline
+{\em indent\+Unit} & The current indent unit size. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStringStream_a1e723b784c796beee9b07f4493fe15f5}\label{classStringStream_a1e723b784c796beee9b07f4493fe15f5}} 
+\index{StringStream@{StringStream}!current@{current}}
+\index{current@{current}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily String\+Stream\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current token. 
+
+\mbox{\Hypertarget{classStringStream_a802404990a81379cd22df4917dc579c2}\label{classStringStream_a802404990a81379cd22df4917dc579c2}} 
+\index{StringStream@{StringStream}!eat@{eat}}
+\index{eat@{eat}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{eat()}{eat()}}
+{\footnotesize\ttfamily String\+Stream\+::eat (\begin{DoxyParamCaption}\item[{}]{match }\end{DoxyParamCaption})}
+
+
+
+Match the next character against the given string, regular expression, or predicate. 
+
+Consume and return it if it matches. \mbox{\Hypertarget{classStringStream_a661cd1b2821029cedf9a13de2b7a9e9a}\label{classStringStream_a661cd1b2821029cedf9a13de2b7a9e9a}} 
+\index{StringStream@{StringStream}!eatSpace@{eatSpace}}
+\index{eatSpace@{eatSpace}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{eatSpace()}{eatSpace()}}
+{\footnotesize\ttfamily String\+Stream\+::eat\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consume whitespace ahead of {\ttfamily this.\+pos}. 
+
+Return true if any was found. \mbox{\Hypertarget{classStringStream_aab17fc4c6ca9d72a60fb744a61bcdcb5}\label{classStringStream_aab17fc4c6ca9d72a60fb744a61bcdcb5}} 
+\index{StringStream@{StringStream}!eatWhile@{eatWhile}}
+\index{eatWhile@{eatWhile}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{eatWhile()}{eatWhile()}}
+{\footnotesize\ttfamily String\+Stream\+::eat\+While (\begin{DoxyParamCaption}\item[{}]{match }\end{DoxyParamCaption})}
+
+
+
+Continue matching characters that match the given string, regular expression, or predicate function. 
+
+Return true if any characters were consumed. \mbox{\Hypertarget{classStringStream_adb6b666f533c2a72b0a5d458b02e40fe}\label{classStringStream_adb6b666f533c2a72b0a5d458b02e40fe}} 
+\index{StringStream@{StringStream}!eol@{eol}}
+\index{eol@{eol}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{eol()}{eol()}}
+{\footnotesize\ttfamily String\+Stream\+::eol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+True if we are at the end of the line. 
+
+\mbox{\Hypertarget{classStringStream_a39c2394d10a0ac4968224270be2e0fd3}\label{classStringStream_a39c2394d10a0ac4968224270be2e0fd3}} 
+\index{StringStream@{StringStream}!indentation@{indentation}}
+\index{indentation@{indentation}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{indentation()}{indentation()}}
+{\footnotesize\ttfamily String\+Stream\+::indentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the indentation column of the current line. 
+
+\mbox{\Hypertarget{classStringStream_a2aedc647b5c6f02db1d16b2bca65df8a}\label{classStringStream_a2aedc647b5c6f02db1d16b2bca65df8a}} 
+\index{StringStream@{StringStream}!match@{match}}
+\index{match@{match}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily String\+Stream\+::match (\begin{DoxyParamCaption}\item[{}]{pattern,  }\item[{}]{consume,  }\item[{}]{case\+Insensitive }\end{DoxyParamCaption})}
+
+
+
+Match the input against the given string or regular expression (which should start with a {\ttfamily $^\wedge$}). 
+
+Return true or the regexp match if it matches.
+
+Unless {\ttfamily consume} is set to {\ttfamily false}, this will move {\ttfamily this.\+pos} past the matched text.
+
+When matching a string {\ttfamily case\+Insensitive} can be set to true to make the match case-\/insensitive. \mbox{\Hypertarget{classStringStream_a9ec41629e303e18f9a6d4fcf0c3f5bc3}\label{classStringStream_a9ec41629e303e18f9a6d4fcf0c3f5bc3}} 
+\index{StringStream@{StringStream}!next@{next}}
+\index{next@{next}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily String\+Stream\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read the next code unit and advance {\ttfamily this.\+pos}. 
+
+\mbox{\Hypertarget{classStringStream_a31daa4a4a1f337560a8f4f731fd5ec6b}\label{classStringStream_a31daa4a4a1f337560a8f4f731fd5ec6b}} 
+\index{StringStream@{StringStream}!peek@{peek}}
+\index{peek@{peek}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily String\+Stream\+::peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the next code unit after the current position, or undefined if we\textquotesingle{}re at the end of the line. 
+
+\mbox{\Hypertarget{classStringStream_a99474bf2e8927eed9e199441e0489cb7}\label{classStringStream_a99474bf2e8927eed9e199441e0489cb7}} 
+\index{StringStream@{StringStream}!skipTo@{skipTo}}
+\index{skipTo@{skipTo}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{skipTo()}{skipTo()}}
+{\footnotesize\ttfamily String\+Stream\+::skip\+To (\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})}
+
+
+
+Move to directly before the given character, if found on the current line. 
+
+\mbox{\Hypertarget{classStringStream_acbe8924b8121c008bfa6452d3fa70b1c}\label{classStringStream_acbe8924b8121c008bfa6452d3fa70b1c}} 
+\index{StringStream@{StringStream}!skipToEnd@{skipToEnd}}
+\index{skipToEnd@{skipToEnd}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{skipToEnd()}{skipToEnd()}}
+{\footnotesize\ttfamily String\+Stream\+::skip\+To\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Move to the end of the line. 
+
+\mbox{\Hypertarget{classStringStream_a359e0ce3e9031471cd0d2f721275df72}\label{classStringStream_a359e0ce3e9031471cd0d2f721275df72}} 
+\index{StringStream@{StringStream}!sol@{sol}}
+\index{sol@{sol}!StringStream@{StringStream}}
+\doxysubsubsection{\texorpdfstring{sol()}{sol()}}
+{\footnotesize\ttfamily String\+Stream\+::sol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+True if we are at the start of the line. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/language/dist/\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

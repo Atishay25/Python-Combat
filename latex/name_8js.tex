@@ -1,0 +1,595 @@
+\hypertarget{name_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/name.js File Reference}
+\label{name_8js}\index{node\_modules/jsdoc/lib/jsdoc/name.js@{node\_modules/jsdoc/lib/jsdoc/name.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{name_8js_a624461228396081cf893c5f954473db7}{name\+Is\+Longname}} (\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, memberof)
+\item 
+function \mbox{\hyperlink{name_8js_a617415e174a5ebfd5bee7739079ba3b0}{prototype\+To\+Punc}} (\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+function \mbox{\hyperlink{name_8js_a5157c7db07a59fec448348497d438f09}{atomize}} (longname, slice\+Chars, forced\+Memberof)
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} variation \mbox{\hyperlink{name_8js_acb68a44dffe56c3aaf7c07b586e865b0}{join}} (\textquotesingle{}\textquotesingle{})
+\item 
+function \mbox{\hyperlink{name_8js_a1287ecfbaff57f4f17d9cb717d878d20}{split\+Longname}} (longname, \mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}})
+\item 
+function \mbox{\hyperlink{name_8js_acf782b9427648d2f2b200ba7c2f90048}{split\+Name\+Matching\+Brackets}} (name\+Desc)
+\begin{DoxyCompactList}\small\item\em Split a string that starts with a name and ends with a description into its parts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{name_8js_af093e5fb34c1cb891e06da9bf98af093}{\+\_\+}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2underscore-array-methods_8js_a1f9d2946a42d502ce0e8a04b3f6bd1cb}{underscore}}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em A collection of functions relating to J\+S\+Doc symbol name manipulation. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{name_8js_aacc390e870480ecae3fed3e79ff64be5}{escape}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}escape-\/\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}-\/regexp\textquotesingle{})
+\item 
+const \mbox{\hyperlink{name_8js_a5003cc3d54412fd1173126a720e10180}{has\+Own\+Prop}} = \mbox{\hyperlink{underscore_2underscore_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}
+\item 
+const \mbox{\hyperlink{name_8js_a7cb47cc28b305a150f6d0a4ee8d1bb0e}{L\+O\+N\+G\+N\+A\+M\+ES}}
+\item 
+const \mbox{\hyperlink{name_8js_ac5fb6ed9bb69409375e27c498f7c198b}{M\+O\+D\+U\+L\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}} = \textquotesingle{}module\+:\textquotesingle{}
+\item 
+const \mbox{\hyperlink{name_8js_a98a1ffb09ff8784af7b767bd0d76204c}{S\+C\+O\+PE}}
+\item 
+const \mbox{\hyperlink{name_8js_a20301bad88b367067b382cf139e27423}{scope\+To\+Punc}}
+\item 
+const \mbox{\hyperlink{name_8js_ac9cb293e8c9ba7064568464e16409fb8}{punc\+To\+Scope}} = exports.\+punc\+To\+Scope = \mbox{\hyperlink{underscore_2underscore_8js_a0c3dd5bfce00c671721cc1b9f46ef80a}{\+\_\+.\+invert}}(\mbox{\hyperlink{templateHelper_8js_a128129ca9456c46c5163d5c6e826d178}{scope\+To\+Punc}})
+\item 
+const \mbox{\hyperlink{name_8js_a57b936a124754754bcf3f34412119915}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+O\+PE}} = S\+C\+O\+P\+E.\+N\+A\+M\+E\+S.\+S\+T\+A\+T\+IC
+\item 
+const \mbox{\hyperlink{name_8js_ab098e06514318b336e6031888d253afc}{S\+C\+O\+P\+E\+\_\+\+P\+U\+NC}} = \mbox{\hyperlink{underscore_2underscore_8js_af19aa221cc4a953ad6addb0b03162a1c}{\+\_\+.\+values}}(S\+C\+O\+P\+E.\+P\+U\+NC)
+\item 
+const \mbox{\hyperlink{name_8js_a1417c9c24a4db386e370b9a34976ab20}{S\+C\+O\+P\+E\+\_\+\+P\+U\+N\+C\+\_\+\+S\+T\+R\+I\+NG}} = \`{}\mbox{[}\$\{\mbox{\hyperlink{lodash_2join_8js_a8b104c3729df79a982df1d67749e8858}{S\+C\+O\+P\+E\+\_\+\+P\+U\+N\+C.\+join}}()\}\mbox{]}\`{}
+\item 
+const \mbox{\hyperlink{name_8js_ac90c74c1636df5fd50a604567b59ae08}{R\+E\+G\+E\+X\+P\+\_\+\+L\+E\+A\+D\+I\+N\+G\+\_\+\+S\+C\+O\+PE}} = new Reg\+Exp(\`{}$^\wedge$(\$\{\mbox{\hyperlink{name_8js_a1417c9c24a4db386e370b9a34976ab20}{S\+C\+O\+P\+E\+\_\+\+P\+U\+N\+C\+\_\+\+S\+T\+R\+I\+NG}}\})\`{})
+\item 
+const \mbox{\hyperlink{name_8js_a870bf94b69b3e40578b8387510fb5a7a}{R\+E\+G\+E\+X\+P\+\_\+\+T\+R\+A\+I\+L\+I\+N\+G\+\_\+\+S\+C\+O\+PE}} = new Reg\+Exp(\`{}(\$\{\mbox{\hyperlink{name_8js_a1417c9c24a4db386e370b9a34976ab20}{S\+C\+O\+P\+E\+\_\+\+P\+U\+N\+C\+\_\+\+S\+T\+R\+I\+NG}}\})\$\`{})
+\item 
+const \mbox{\hyperlink{name_8js_ab671ac7d59c238a582c0e78841c6f4c6}{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}} = \textquotesingle{}(?\+:(?\+:\mbox{[} \textbackslash{}\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\mbox{]}$\ast$\textbackslash{}\textbackslash{}-\/\textbackslash{}\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}$\ast$$\vert$\textbackslash{}\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}+)(\textbackslash{}\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_a8bab16140cede5f71c657e8dc46c1887}{S}}\mbox{[}\textbackslash{}\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_a8bab16140cede5f71c657e8dc46c1887}{s\textbackslash{}\textbackslash{}S}}\mbox{]}$\ast$))?\$\textquotesingle{}
+\item 
+const \mbox{\hyperlink{name_8js_ad29efb4749e176a00619776ef1eb6d27}{R\+E\+G\+E\+X\+P\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}} = new Reg\+Exp(\mbox{\hyperlink{name_8js_ab671ac7d59c238a582c0e78841c6f4c6}{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}})
+\item 
+const \mbox{\hyperlink{name_8js_a235a90b356184899461a8ac396113126}{R\+E\+G\+E\+X\+P\+\_\+\+N\+A\+M\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}} = new Reg\+Exp(\`{}$^\wedge$(\textbackslash{}\textbackslash{}\mbox{[}\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}\mbox{]}\mbox{]}+\textbackslash{}\textbackslash{}\mbox{]}$\vert$\textbackslash{}\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_a8bab16140cede5f71c657e8dc46c1887}{S}}+)\$\{\mbox{\hyperlink{name_8js_ab671ac7d59c238a582c0e78841c6f4c6}{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}}\}\`{})
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_a6100a3c04a72d966f2ab45c96f5f7e28}{get\+Basename}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_a66effdfa7ca77e99cb780166fdb957ca}{resolve}}
+\begin{DoxyCompactList}\small\item\em Resolves the longname, memberof, variation and name values of the given doclet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_abeca4dafd09df11d84800590bc288a42}{apply\+Namespace}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_a3ad143de677f1697e6c326e3c0c76fba}{strip\+Namespace}} = longname =$>$ \mbox{\hyperlink{lodash_2replace_8js_ac8a88090eb903cccf7fd218d14f8a918}{longname.\+replace}}(/$^\wedge$\mbox{[}\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}-\/zA-\/\mbox{\hyperlink{underscore-umd-min_8js_ab3edd76ab9050fb76085de1801906b41}{Z}}\mbox{]}+\+:/, \textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_a8cdd7fa485a3b404ea7593afc9f1b81e}{has\+Ancestor}}
+\begin{DoxyCompactList}\small\item\em Check whether a parent longname is an ancestor of a child longname. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_a0477373dd29013dc9d3de72992a8589e}{shorten}} = (longname, forced\+Memberof) =$>$ \mbox{\hyperlink{name_8js_a5157c7db07a59fec448348497d438f09}{atomize}}(longname, \mbox{\hyperlink{handlers_8js_ab098e06514318b336e6031888d253afc}{S\+C\+O\+P\+E\+\_\+\+P\+U\+NC}}, forced\+Memberof)
+\begin{DoxyCompactList}\small\item\em Given a longname like \char`\"{}a.\+b\#c(2)\char`\"{}, slice it up into an object containing the memberof, the scope, the name, and variation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_aae4c7cf5e60875cb519538b3569b823f}{scope}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_abeb3ba007279d538e31ccc0fc9555b86}{strip\+Variation}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_aa6a519b311b03cace606610856aca753}{longnames\+To\+Tree}}
+\begin{DoxyCompactList}\small\item\em Convert an array of doclet longnames into a tree structure, optionally attaching doclets to the tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{name_8js_a7964ca358cb36c19282085df549a7392}{split\+Name}}
+\begin{DoxyCompactList}\small\item\em Split a string that starts with a name and ends with a description into its parts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{name_8js_a5157c7db07a59fec448348497d438f09}\label{name_8js_a5157c7db07a59fec448348497d438f09}} 
+\index{name.js@{name.js}!atomize@{atomize}}
+\index{atomize@{atomize}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{atomize()}{atomize()}}
+{\footnotesize\ttfamily function atomize (\begin{DoxyParamCaption}\item[{}]{longname,  }\item[{}]{slice\+Chars,  }\item[{}]{forced\+Memberof }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{name_8js_acb68a44dffe56c3aaf7c07b586e865b0}\label{name_8js_acb68a44dffe56c3aaf7c07b586e865b0}} 
+\index{name.js@{name.js}!join@{join}}
+\index{join@{join}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} variation join (\begin{DoxyParamCaption}\item[{\textquotesingle{}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2join_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/join.\+js}}.\end{Desc}
+\mbox{\Hypertarget{name_8js_a624461228396081cf893c5f954473db7}\label{name_8js_a624461228396081cf893c5f954473db7}} 
+\index{name.js@{name.js}!nameIsLongname@{nameIsLongname}}
+\index{nameIsLongname@{nameIsLongname}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{nameIsLongname()}{nameIsLongname()}}
+{\footnotesize\ttfamily function name\+Is\+Longname (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{memberof }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{name_8js_a617415e174a5ebfd5bee7739079ba3b0}\label{name_8js_a617415e174a5ebfd5bee7739079ba3b0}} 
+\index{name.js@{name.js}!prototypeToPunc@{prototypeToPunc}}
+\index{prototypeToPunc@{prototypeToPunc}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{prototypeToPunc()}{prototypeToPunc()}}
+{\footnotesize\ttfamily function prototype\+To\+Punc (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{name_8js_a1287ecfbaff57f4f17d9cb717d878d20}\label{name_8js_a1287ecfbaff57f4f17d9cb717d878d20}} 
+\index{name.js@{name.js}!splitLongname@{splitLongname}}
+\index{splitLongname@{splitLongname}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{splitLongname()}{splitLongname()}}
+{\footnotesize\ttfamily function split\+Longname (\begin{DoxyParamCaption}\item[{}]{longname,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{name_8js_acf782b9427648d2f2b200ba7c2f90048}\label{name_8js_acf782b9427648d2f2b200ba7c2f90048}} 
+\index{name.js@{name.js}!splitNameMatchingBrackets@{splitNameMatchingBrackets}}
+\index{splitNameMatchingBrackets@{splitNameMatchingBrackets}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{splitNameMatchingBrackets()}{splitNameMatchingBrackets()}}
+{\footnotesize\ttfamily function split\+Name\+Matching\+Brackets (\begin{DoxyParamCaption}\item[{}]{name\+Desc }\end{DoxyParamCaption})}
+
+
+
+Split a string that starts with a name and ends with a description into its parts. 
+
+Allows the defaultvalue (if present) to contain brackets. If the name is found to have mismatched brackets, null is returned. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name\+Desc \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{object\} Hash with \char`\"{}name\char`\"{} and \char`\"{}description\char`\"{} properties. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{name_8js_af093e5fb34c1cb891e06da9bf98af093}\label{name_8js_af093e5fb34c1cb891e06da9bf98af093}} 
+\index{name.js@{name.js}!\_@{\_}}
+\index{\_@{\_}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{\_}{\_}}
+{\footnotesize\ttfamily const \+\_\+ = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2underscore-array-methods_8js_a1f9d2946a42d502ce0e8a04b3f6bd1cb}{underscore}}\textquotesingle{})}
+
+
+
+A collection of functions relating to J\+S\+Doc symbol name manipulation. 
+
+@module jsdoc/name \mbox{\Hypertarget{name_8js_abeca4dafd09df11d84800590bc288a42}\label{name_8js_abeca4dafd09df11d84800590bc288a42}} 
+\index{name.js@{name.js}!applyNamespace@{applyNamespace}}
+\index{applyNamespace@{applyNamespace}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{applyNamespace}{applyNamespace}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} apply\+Namespace}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (longname, ns) => \{}
+\DoxyCodeLine{    \textcolor{keyword}{const} nameParts = \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.shorten(longname);}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}} = nameParts.name;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    longname = nameParts.longname;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} ( !/\string^[\mbox{\hyperlink{resolve_2test_2resolver_2nested__symlinks_2mylib_2async_8js_a82ca4ee5dd63e58a2bb967077dc8b8fb}{a}}-\/zA-\/\mbox{\hyperlink{dist_2markdown-it_8js_a0e13cb15ff3d6fbe4b9cd26ef446070e}{Z}}]+?:.+\$/\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}.test(\mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}}) ) \{}
+\DoxyCodeLine{        longname = longname.replace( \textcolor{keyword}{new} RegExp(`\$\{\mbox{\hyperlink{name_8js_aacc390e870480ecae3fed3e79ff64be5}{escape}}(\mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}})\}\$`), `\$\{ns\}:\$\{\mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}}\}` );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} longname;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & longname The full longname of the symbol. \\
+\hline
+{\em \{string\}} & ns The namespace to be applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} The longname with the namespace applied. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{name_8js_ac151836247b84a9bdc5660b331e996b1}\label{name_8js_ac151836247b84a9bdc5660b331e996b1}} 
+\index{name.js@{name.js}!combine@{combine}}
+\index{combine@{combine}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{combine}{combine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} combine}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (\{memberof, \mbox{\hyperlink{name_8js_aae4c7cf5e60875cb519538b3569b823f}{scope}}, \mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}}, variation\}) => [}
+\DoxyCodeLine{    (memberof || \textcolor{stringliteral}{''})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{name_8js_a57b936a124754754bcf3f34412119915}\label{name_8js_a57b936a124754754bcf3f34412119915}} 
+\index{name.js@{name.js}!DEFAULT\_SCOPE@{DEFAULT\_SCOPE}}
+\index{DEFAULT\_SCOPE@{DEFAULT\_SCOPE}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SCOPE}{DEFAULT\_SCOPE}}
+{\footnotesize\ttfamily const D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+O\+PE = S\+C\+O\+P\+E.\+N\+A\+M\+E\+S.\+S\+T\+A\+T\+IC}
+
+\mbox{\Hypertarget{name_8js_ab671ac7d59c238a582c0e78841c6f4c6}\label{name_8js_ab671ac7d59c238a582c0e78841c6f4c6}} 
+\index{name.js@{name.js}!DESCRIPTION@{DESCRIPTION}}
+\index{DESCRIPTION@{DESCRIPTION}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{DESCRIPTION}{DESCRIPTION}}
+{\footnotesize\ttfamily const D\+E\+S\+C\+R\+I\+P\+T\+I\+ON = \textquotesingle{}(?\+:(?\+:\mbox{[} \textbackslash{}\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\mbox{]}$\ast$\textbackslash{}\textbackslash{}-\/\textbackslash{}\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}$\ast$$\vert$\textbackslash{}\textbackslash{}\mbox{\hyperlink{marked_8min_8js_a651ae9fdbd993e2a90af9a0e21054c77}{s}}+)(\textbackslash{}\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_a8bab16140cede5f71c657e8dc46c1887}{S}}\mbox{[}\textbackslash{}\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_a8bab16140cede5f71c657e8dc46c1887}{s\textbackslash{}\textbackslash{}S}}\mbox{]}$\ast$))?\$\textquotesingle{}}
+
+\mbox{\Hypertarget{name_8js_aacc390e870480ecae3fed3e79ff64be5}\label{name_8js_aacc390e870480ecae3fed3e79ff64be5}} 
+\index{name.js@{name.js}!escape@{escape}}
+\index{escape@{escape}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{escape}{escape}}
+{\footnotesize\ttfamily const escape = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}escape-\/\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}-\/regexp\textquotesingle{})}
+
+\mbox{\Hypertarget{name_8js_a6100a3c04a72d966f2ab45c96f5f7e28}\label{name_8js_a6100a3c04a72d966f2ab45c96f5f7e28}} 
+\index{name.js@{name.js}!getBasename@{getBasename}}
+\index{getBasename@{getBasename}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{getBasename}{getBasename}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Basename}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}} => \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (\mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}} !== \mbox{\hyperlink{bluebird_8core_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}}.replace(/\string^([\$a-\/z\_][\$a-\/z\_0-\/9]*).*?\$/\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}, \textcolor{stringliteral}{'\$1'});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{bluebird_8core_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name -\/ The symbol\textquotesingle{}s longname. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} The symbol\textquotesingle{}s basename. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{name_8js_a8cdd7fa485a3b404ea7593afc9f1b81e}\label{name_8js_a8cdd7fa485a3b404ea7593afc9f1b81e}} 
+\index{name.js@{name.js}!hasAncestor@{hasAncestor}}
+\index{hasAncestor@{hasAncestor}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{hasAncestor}{hasAncestor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} has\+Ancestor}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (\mbox{\hyperlink{__baseInvoke_8js_a59d32f85785b3aa30e5e3ec34144a928}{parent}}, child) => \{}
+\DoxyCodeLine{    let \mbox{\hyperlink{name_8js_a8cdd7fa485a3b404ea7593afc9f1b81e}{hasAncestor}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{    let memberof = child;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!\mbox{\hyperlink{__baseInvoke_8js_a59d32f85785b3aa30e5e3ec34144a928}{parent}} || !child) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{name_8js_a8cdd7fa485a3b404ea7593afc9f1b81e}{hasAncestor}};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (child.indexOf(\mbox{\hyperlink{__baseInvoke_8js_a59d32f85785b3aa30e5e3ec34144a928}{parent}}) !== 0) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{name_8js_a8cdd7fa485a3b404ea7593afc9f1b81e}{hasAncestor}};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{        memberof = \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.shorten(memberof).memberof;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (memberof === \mbox{\hyperlink{__baseInvoke_8js_a59d32f85785b3aa30e5e3ec34144a928}{parent}}) \{}
+\DoxyCodeLine{            \mbox{\hyperlink{name_8js_a8cdd7fa485a3b404ea7593afc9f1b81e}{hasAncestor}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (!\mbox{\hyperlink{name_8js_a8cdd7fa485a3b404ea7593afc9f1b81e}{hasAncestor}} \&\& memberof);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{name_8js_a8cdd7fa485a3b404ea7593afc9f1b81e}{hasAncestor}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Check whether a parent longname is an ancestor of a child longname. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & parent -\/ The parent longname. \\
+\hline
+{\em \{string\}} & child -\/ The child longname. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the parent is an ancestor of the child; otherwise, {\ttfamily false}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{name_8js_a5003cc3d54412fd1173126a720e10180}\label{name_8js_a5003cc3d54412fd1173126a720e10180}} 
+\index{name.js@{name.js}!hasOwnProp@{hasOwnProp}}
+\index{hasOwnProp@{hasOwnProp}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{hasOwnProp}{hasOwnProp}}
+{\footnotesize\ttfamily const has\+Own\+Prop = \mbox{\hyperlink{underscore_2underscore_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}}
+
+\mbox{\Hypertarget{name_8js_a7cb47cc28b305a150f6d0a4ee8d1bb0e}\label{name_8js_a7cb47cc28b305a150f6d0a4ee8d1bb0e}} 
+\index{name.js@{name.js}!LONGNAMES@{LONGNAMES}}
+\index{LONGNAMES@{LONGNAMES}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{LONGNAMES}{LONGNAMES}}
+{\footnotesize\ttfamily const L\+O\+N\+G\+N\+A\+M\+ES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.LONGNAMES = \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    ANONYMOUS: \textcolor{stringliteral}{'<anonymous>'},}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    GLOBAL: \textcolor{stringliteral}{'<global>'}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{name_8js_aa6a519b311b03cace606610856aca753}\label{name_8js_aa6a519b311b03cace606610856aca753}} 
+\index{name.js@{name.js}!longnamesToTree@{longnamesToTree}}
+\index{longnamesToTree@{longnamesToTree}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{longnamesToTree}{longnamesToTree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} longnames\+To\+Tree}
+
+
+
+Convert an array of doclet longnames into a tree structure, optionally attaching doclets to the tree. 
+
+Each level of the tree is an object with the following properties\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily longname \{string\}}\+: The longname.
+\item {\ttfamily memberof \{string?\}}\+: The memberof.
+\item {\ttfamily scope \{string?\}}\+: The longname\textquotesingle{}s scope, represented as a punctuation mark (for example, {\ttfamily \#} for instance and {\ttfamily .} for static).
+\item {\ttfamily name \{string\}}\+: The short name.
+\item {\ttfamily doclet \{Object?\}}\+: The doclet associated with the longname, or {\ttfamily null} if the doclet was not provided.
+\item {\ttfamily children \{Object?\}}\+: The children of the current longname. Not present if there are no children.
+\end{DoxyItemize}
+
+For example, suppose you have the following array of doclet longnames\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[}
+\DoxyCodeLine{  \textcolor{stringliteral}{"module:a"},}
+\DoxyCodeLine{  \textcolor{stringliteral}{"module:a/b"},}
+\DoxyCodeLine{  \textcolor{stringliteral}{"myNamespace"},}
+\DoxyCodeLine{  \textcolor{stringliteral}{"myNamespace.Foo"},}
+\DoxyCodeLine{  \textcolor{stringliteral}{"myNamespace.Foo\#bar"}}
+\DoxyCodeLine{]}
+\end{DoxyCode}
+
+
+This method converts these longnames to the following tree\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{stringliteral}{"module:a"}: \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{"longname"}: \textcolor{stringliteral}{"module:a"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"memberof"}: \textcolor{stringliteral}{""},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"scope"}: \textcolor{stringliteral}{""},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"name"}: \textcolor{stringliteral}{"module:a"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"doclet"}: \textcolor{keyword}{null},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"children"}: \{}
+\DoxyCodeLine{      \textcolor{stringliteral}{"/b"}: \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"longname"}: \textcolor{stringliteral}{"module:a/b"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"memberof"}: \textcolor{stringliteral}{"module:a"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"scope"}: \textcolor{stringliteral}{"/"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"name"}: \textcolor{stringliteral}{"b"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"doclet"}: \textcolor{keyword}{null}}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{  \},}
+\DoxyCodeLine{  \textcolor{stringliteral}{"myNamespace"}: \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{"longname"}: \textcolor{stringliteral}{"myNamespace"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"memberof"}: \textcolor{stringliteral}{""},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"scope"}: \textcolor{stringliteral}{""},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"name"}: \textcolor{stringliteral}{"myNamespace"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"doclet"}: \textcolor{keyword}{null},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"children"}: \{}
+\DoxyCodeLine{      \textcolor{stringliteral}{".Foo"}: \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"longname"}: \textcolor{stringliteral}{"myNamespace.Foo"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"memberof"}: \textcolor{stringliteral}{"myNamespace"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"scope"}: \textcolor{stringliteral}{"."},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"name"}: \textcolor{stringliteral}{"Foo"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"doclet"}: \textcolor{keyword}{null},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"children"}: \{}
+\DoxyCodeLine{          \textcolor{stringliteral}{"\#bar"}: \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"longname"}: \textcolor{stringliteral}{"myNamespace.Foo\#bar"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"memberof"}: \textcolor{stringliteral}{"myNamespace.Foo"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"scope"}: \textcolor{stringliteral}{"\#"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"name"}: \textcolor{stringliteral}{"bar"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"doclet"}: \textcolor{keyword}{null}}
+\DoxyCodeLine{          \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array$<$string$>$\}} & longnames -\/ The longnames to convert into a tree. \\
+\hline
+{\em \{\+Object$<$string,module\+:jsdoc/doclet.\+Doclet$>$\}} & doclets -\/ The doclets to attach to a tree. Each property should be the longname of a doclet, and each value should be the doclet for that longname. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} A tree with information about each longname in the format shown above. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{name_8js_ac5fb6ed9bb69409375e27c498f7c198b}\label{name_8js_ac5fb6ed9bb69409375e27c498f7c198b}} 
+\index{name.js@{name.js}!MODULE\_NAMESPACE@{MODULE\_NAMESPACE}}
+\index{MODULE\_NAMESPACE@{MODULE\_NAMESPACE}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{MODULE\_NAMESPACE}{MODULE\_NAMESPACE}}
+{\footnotesize\ttfamily const M\+O\+D\+U\+L\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE = \textquotesingle{}module\+:\textquotesingle{}}
+
+\mbox{\Hypertarget{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}\label{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}} 
+\index{name.js@{name.js}!name@{name}}
+\index{name@{name}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} name}
+
+\mbox{\Hypertarget{name_8js_ac9cb293e8c9ba7064568464e16409fb8}\label{name_8js_ac9cb293e8c9ba7064568464e16409fb8}} 
+\index{name.js@{name.js}!puncToScope@{puncToScope}}
+\index{puncToScope@{puncToScope}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{puncToScope}{puncToScope}}
+{\footnotesize\ttfamily const punc\+To\+Scope = exports.\+punc\+To\+Scope = \mbox{\hyperlink{underscore_2underscore_8js_a0c3dd5bfce00c671721cc1b9f46ef80a}{\+\_\+.\+invert}}(\mbox{\hyperlink{templateHelper_8js_a128129ca9456c46c5163d5c6e826d178}{scope\+To\+Punc}})}
+
+\mbox{\Hypertarget{name_8js_ad29efb4749e176a00619776ef1eb6d27}\label{name_8js_ad29efb4749e176a00619776ef1eb6d27}} 
+\index{name.js@{name.js}!REGEXP\_DESCRIPTION@{REGEXP\_DESCRIPTION}}
+\index{REGEXP\_DESCRIPTION@{REGEXP\_DESCRIPTION}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{REGEXP\_DESCRIPTION}{REGEXP\_DESCRIPTION}}
+{\footnotesize\ttfamily const R\+E\+G\+E\+X\+P\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+ON = new Reg\+Exp(\mbox{\hyperlink{name_8js_ab671ac7d59c238a582c0e78841c6f4c6}{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}})}
+
+\mbox{\Hypertarget{name_8js_ac90c74c1636df5fd50a604567b59ae08}\label{name_8js_ac90c74c1636df5fd50a604567b59ae08}} 
+\index{name.js@{name.js}!REGEXP\_LEADING\_SCOPE@{REGEXP\_LEADING\_SCOPE}}
+\index{REGEXP\_LEADING\_SCOPE@{REGEXP\_LEADING\_SCOPE}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{REGEXP\_LEADING\_SCOPE}{REGEXP\_LEADING\_SCOPE}}
+{\footnotesize\ttfamily const R\+E\+G\+E\+X\+P\+\_\+\+L\+E\+A\+D\+I\+N\+G\+\_\+\+S\+C\+O\+PE = new Reg\+Exp(\`{}$^\wedge$(\$\{\mbox{\hyperlink{name_8js_a1417c9c24a4db386e370b9a34976ab20}{S\+C\+O\+P\+E\+\_\+\+P\+U\+N\+C\+\_\+\+S\+T\+R\+I\+NG}}\})\`{})}
+
+\mbox{\Hypertarget{name_8js_a235a90b356184899461a8ac396113126}\label{name_8js_a235a90b356184899461a8ac396113126}} 
+\index{name.js@{name.js}!REGEXP\_NAME\_DESCRIPTION@{REGEXP\_NAME\_DESCRIPTION}}
+\index{REGEXP\_NAME\_DESCRIPTION@{REGEXP\_NAME\_DESCRIPTION}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{REGEXP\_NAME\_DESCRIPTION}{REGEXP\_NAME\_DESCRIPTION}}
+{\footnotesize\ttfamily const R\+E\+G\+E\+X\+P\+\_\+\+N\+A\+M\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+ON = new Reg\+Exp(\`{}$^\wedge$(\textbackslash{}\textbackslash{}\mbox{[}\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}\mbox{]}\mbox{]}+\textbackslash{}\textbackslash{}\mbox{]}$\vert$\textbackslash{}\textbackslash{}\mbox{\hyperlink{underscore-umd-min_8js_a8bab16140cede5f71c657e8dc46c1887}{S}}+)\$\{\mbox{\hyperlink{name_8js_ab671ac7d59c238a582c0e78841c6f4c6}{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}}\}\`{})}
+
+\mbox{\Hypertarget{name_8js_a870bf94b69b3e40578b8387510fb5a7a}\label{name_8js_a870bf94b69b3e40578b8387510fb5a7a}} 
+\index{name.js@{name.js}!REGEXP\_TRAILING\_SCOPE@{REGEXP\_TRAILING\_SCOPE}}
+\index{REGEXP\_TRAILING\_SCOPE@{REGEXP\_TRAILING\_SCOPE}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{REGEXP\_TRAILING\_SCOPE}{REGEXP\_TRAILING\_SCOPE}}
+{\footnotesize\ttfamily const R\+E\+G\+E\+X\+P\+\_\+\+T\+R\+A\+I\+L\+I\+N\+G\+\_\+\+S\+C\+O\+PE = new Reg\+Exp(\`{}(\$\{\mbox{\hyperlink{name_8js_a1417c9c24a4db386e370b9a34976ab20}{S\+C\+O\+P\+E\+\_\+\+P\+U\+N\+C\+\_\+\+S\+T\+R\+I\+NG}}\})\$\`{})}
+
+\mbox{\Hypertarget{name_8js_a66effdfa7ca77e99cb780166fdb957ca}\label{name_8js_a66effdfa7ca77e99cb780166fdb957ca}} 
+\index{name.js@{name.js}!resolve@{resolve}}
+\index{resolve@{resolve}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{resolve}{resolve}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} resolve}
+
+
+
+Resolves the longname, memberof, variation and name values of the given doclet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & doclet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{name_8js_a98a1ffb09ff8784af7b767bd0d76204c}\label{name_8js_a98a1ffb09ff8784af7b767bd0d76204c}} 
+\index{name.js@{name.js}!SCOPE@{SCOPE}}
+\index{SCOPE@{SCOPE}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{SCOPE}{SCOPE}}
+{\footnotesize\ttfamily const S\+C\+O\+PE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.SCOPE = \{}
+\DoxyCodeLine{    NAMES: \{}
+\DoxyCodeLine{        GLOBAL: \textcolor{stringliteral}{'global'},}
+\DoxyCodeLine{        INNER: \textcolor{stringliteral}{'inner'},}
+\DoxyCodeLine{        INSTANCE: \textcolor{stringliteral}{'instance'},}
+\DoxyCodeLine{        STATIC: \textcolor{stringliteral}{'static'}}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    PUNC: \{}
+\DoxyCodeLine{        INNER: \textcolor{charliteral}{'\string~'},}
+\DoxyCodeLine{        INSTANCE: \textcolor{charliteral}{'\#'},}
+\DoxyCodeLine{        STATIC: \textcolor{charliteral}{'.'}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{name_8js_aae4c7cf5e60875cb519538b3569b823f}\label{name_8js_aae4c7cf5e60875cb519538b3569b823f}} 
+\index{name.js@{name.js}!scope@{scope}}
+\index{scope@{scope}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{scope}{scope}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} scope}
+
+\mbox{\Hypertarget{name_8js_ab098e06514318b336e6031888d253afc}\label{name_8js_ab098e06514318b336e6031888d253afc}} 
+\index{name.js@{name.js}!SCOPE\_PUNC@{SCOPE\_PUNC}}
+\index{SCOPE\_PUNC@{SCOPE\_PUNC}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{SCOPE\_PUNC}{SCOPE\_PUNC}}
+{\footnotesize\ttfamily const S\+C\+O\+P\+E\+\_\+\+P\+U\+NC = \mbox{\hyperlink{underscore_2underscore_8js_af19aa221cc4a953ad6addb0b03162a1c}{\+\_\+.\+values}}(S\+C\+O\+P\+E.\+P\+U\+NC)}
+
+\mbox{\Hypertarget{name_8js_a1417c9c24a4db386e370b9a34976ab20}\label{name_8js_a1417c9c24a4db386e370b9a34976ab20}} 
+\index{name.js@{name.js}!SCOPE\_PUNC\_STRING@{SCOPE\_PUNC\_STRING}}
+\index{SCOPE\_PUNC\_STRING@{SCOPE\_PUNC\_STRING}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{SCOPE\_PUNC\_STRING}{SCOPE\_PUNC\_STRING}}
+{\footnotesize\ttfamily const S\+C\+O\+P\+E\+\_\+\+P\+U\+N\+C\+\_\+\+S\+T\+R\+I\+NG = \`{}\mbox{[}\$\{\mbox{\hyperlink{lodash_2join_8js_a8b104c3729df79a982df1d67749e8858}{S\+C\+O\+P\+E\+\_\+\+P\+U\+N\+C.\+join}}()\}\mbox{]}\`{}}
+
+\mbox{\Hypertarget{name_8js_a20301bad88b367067b382cf139e27423}\label{name_8js_a20301bad88b367067b382cf139e27423}} 
+\index{name.js@{name.js}!scopeToPunc@{scopeToPunc}}
+\index{scopeToPunc@{scopeToPunc}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{scopeToPunc}{scopeToPunc}}
+{\footnotesize\ttfamily const scope\+To\+Punc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.scopeToPunc = \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{'inner'}: \mbox{\hyperlink{name_8js_a98a1ffb09ff8784af7b767bd0d76204c}{SCOPE}}.PUNC.INNER,}
+\DoxyCodeLine{    \textcolor{stringliteral}{'instance'}: \mbox{\hyperlink{name_8js_a98a1ffb09ff8784af7b767bd0d76204c}{SCOPE}}.PUNC.INSTANCE,}
+\DoxyCodeLine{    \textcolor{stringliteral}{'static'}: \mbox{\hyperlink{name_8js_a98a1ffb09ff8784af7b767bd0d76204c}{SCOPE}}.PUNC.STATIC}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{name_8js_a0477373dd29013dc9d3de72992a8589e}\label{name_8js_a0477373dd29013dc9d3de72992a8589e}} 
+\index{name.js@{name.js}!shorten@{shorten}}
+\index{shorten@{shorten}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{shorten}{shorten}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} shorten = (longname, forced\+Memberof) =$>$ \mbox{\hyperlink{name_8js_a5157c7db07a59fec448348497d438f09}{atomize}}(longname, \mbox{\hyperlink{handlers_8js_ab098e06514318b336e6031888d253afc}{S\+C\+O\+P\+E\+\_\+\+P\+U\+NC}}, forced\+Memberof)}
+
+
+
+Given a longname like \char`\"{}a.\+b\#c(2)\char`\"{}, slice it up into an object containing the memberof, the scope, the name, and variation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & longname \\
+\hline
+{\em \{string\}} & forced\+Memberof \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{object\} Representing the properties of the given name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{name_8js_a7964ca358cb36c19282085df549a7392}\label{name_8js_a7964ca358cb36c19282085df549a7392}} 
+\index{name.js@{name.js}!splitName@{splitName}}
+\index{splitName@{splitName}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{splitName}{splitName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} split\+Name}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= nameDesc => \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    }
+\DoxyCodeLine{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    let \mbox{\hyperlink{lodash_2core_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (nameDesc[0] === \textcolor{charliteral}{'['}) \{}
+\DoxyCodeLine{        \mbox{\hyperlink{lodash_2core_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} = \mbox{\hyperlink{name_8js_acf782b9427648d2f2b200ba7c2f90048}{splitNameMatchingBrackets}}(nameDesc);}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\mbox{\hyperlink{lodash_2core_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} !== \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \mbox{\hyperlink{lodash_2core_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    nameDesc.match(\mbox{\hyperlink{name_8js_a235a90b356184899461a8ac396113126}{REGEXP\_NAME\_DESCRIPTION}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{        \mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}}: RegExp.\$1,}
+\DoxyCodeLine{        description: RegExp.\$2}
+\DoxyCodeLine{    \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Split a string that starts with a name and ends with a description into its parts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name\+Desc \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{object\} Hash with \char`\"{}name\char`\"{} and \char`\"{}description\char`\"{} properties. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{name_8js_a3ad143de677f1697e6c326e3c0c76fba}\label{name_8js_a3ad143de677f1697e6c326e3c0c76fba}} 
+\index{name.js@{name.js}!stripNamespace@{stripNamespace}}
+\index{stripNamespace@{stripNamespace}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{stripNamespace}{stripNamespace}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} strip\+Namespace = longname =$>$ \mbox{\hyperlink{lodash_2replace_8js_ac8a88090eb903cccf7fd218d14f8a918}{longname.\+replace}}(/$^\wedge$\mbox{[}\mbox{\hyperlink{markdownItAnchor_8umd_8js_a87d0b3ee5ce4f71ef9b9792777925f40}{a}}-\/zA-\/\mbox{\hyperlink{underscore-umd-min_8js_ab3edd76ab9050fb76085de1801906b41}{Z}}\mbox{]}+\+:/, \textquotesingle{}\textquotesingle{})}
+
+\mbox{\Hypertarget{name_8js_abeb3ba007279d538e31ccc0fc9555b86}\label{name_8js_abeb3ba007279d538e31ccc0fc9555b86}} 
+\index{name.js@{name.js}!stripVariation@{stripVariation}}
+\index{stripVariation@{stripVariation}!name.js@{name.js}}
+\doxysubsubsection{\texorpdfstring{stripVariation}{stripVariation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} strip\+Variation}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}} => \{}
+\DoxyCodeLine{    \textcolor{keyword}{const} parts = \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.shorten(\mbox{\hyperlink{name_8js_af8bdd985b9c4174ab7b3fa37ae753dce}{name}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    parts.variation = \textcolor{stringliteral}{''};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.combine(parts);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

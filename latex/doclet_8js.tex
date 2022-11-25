@@ -1,0 +1,307 @@
+\hypertarget{doclet_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/doclet.js File Reference}
+\label{doclet_8js}\index{node\_modules/jsdoc/lib/jsdoc/doclet.js@{node\_modules/jsdoc/lib/jsdoc/doclet.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classDoclet}{Doclet}}
+\begin{DoxyCompactList}\small\item\em Represents a single J\+S\+Doc comment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesetMeta}{set\+Meta}}
+\begin{DoxyCompactList}\small\item\em Set the {\ttfamily meta} property of this doclet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{doclet_8js_af674ab65e291f5852f15e0b8d914e018}{apply\+Tag}} (doclet, \{\mbox{\hyperlink{shared_2loadConfigFile_8js_a800161b5e9992c293d1e5ec084128074}{title}}, \mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}\})
+\item 
+function \mbox{\hyperlink{doclet_8js_a472cd457448fe06a59bd108a2107c44c}{fake\+Meta}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}})
+\item 
+function \mbox{\hyperlink{doclet_8js_a3159c79d7a9228e6776da2308be17d93}{code\+To\+Kind}} (code)
+\item 
+function \mbox{\hyperlink{doclet_8js_ad78ee5ebdb651327b784f8cac8ad1435}{unwrap}} (doclet\+Src)
+\item 
+function \mbox{\hyperlink{doclet_8js_a8eb9c74ee48244b4aade8dfb12987250}{to\+Tags}} (doclet\+Src)
+\begin{DoxyCompactList}\small\item\em Convert the raw source of the doclet comment into an array of pseudo-\/\+Tag objects. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{doclet_8js_aa6bc61a27522934e3db152c09de640ba}{fix\+Description}} (doclet\+Src, \{code\})
+\item 
+function \mbox{\hyperlink{doclet_8js_ac333149f7493518f20cce9691844a6a9}{remove\+Global}} (longname)
+\item 
+function \mbox{\hyperlink{doclet_8js_adf9898cfaaea5fe8b2fd991315cbd4a6}{get\+Filepath}} (doclet)
+\begin{DoxyCompactList}\small\item\em Get the full path to the source file that is associated with a doclet. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{doclet_8js_ac072db1862220f09ecfbf81976e575c7}{dooper}} (source, target, properties)
+\item 
+function \mbox{\hyperlink{doclet_8js_afbcc26d3f33592484b5d1417b873ee0a}{copy\+Most\+Properties}} (primary, secondary, target, exclude)
+\begin{DoxyCompactList}\small\item\em Copy all but a list of excluded properties from one of two doclets onto a target doclet. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{doclet_8js_ad4188339e3a30e9f1ad575392b46b4d0}{copy\+Specific\+Properties}} (primary, secondary, target, \mbox{\hyperlink{underscore_2cjs_2index_8js_a3a605656f2aa44abee4383e26fbb5973}{include}})
+\begin{DoxyCompactList}\small\item\em Copy specific properties from one of two doclets onto a target doclet, as long as the property has a non-\/falsy value and a length greater than 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{doclet_8js_af093e5fb34c1cb891e06da9bf98af093}{\+\_\+}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2underscore-array-methods_8js_a1f9d2946a42d502ce0e8a04b3f6bd1cb}{underscore}}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em @module jsdoc/doclet \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{doclet_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}
+\item 
+const \mbox{\hyperlink{doclet_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/path\textquotesingle{})
+\item 
+const \mbox{\hyperlink{doclet_8js_a00a15eea64e6c06826721371906c1870}{Syntax}} = jsdoc.\+src.\+Syntax
+\item 
+const \mbox{\hyperlink{doclet_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{doclet_8js_a1d923cde1d68a3fbde782aa79bb2c4b0}{\+\_\+replace\+Dictionary}}
+\begin{DoxyCompactList}\small\item\em Replace the existing tag dictionary with a new tag dictionary. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{doclet_8js_a07b8aafa3f6a54ba90c33bc73c3ae950}{Doclet}} = \mbox{\hyperlink{classDoclet}{Doclet}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{doclet_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}
+\begin{DoxyCompactList}\small\item\em Combine two doclets into a new doclet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{doclet_8js_af674ab65e291f5852f15e0b8d914e018}\label{doclet_8js_af674ab65e291f5852f15e0b8d914e018}} 
+\index{doclet.js@{doclet.js}!applyTag@{applyTag}}
+\index{applyTag@{applyTag}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{applyTag()}{applyTag()}}
+{\footnotesize\ttfamily function apply\+Tag (\begin{DoxyParamCaption}\item[{}]{doclet,  }\item[{}]{\{title, value\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doclet_8js_a3159c79d7a9228e6776da2308be17d93}\label{doclet_8js_a3159c79d7a9228e6776da2308be17d93}} 
+\index{doclet.js@{doclet.js}!codeToKind@{codeToKind}}
+\index{codeToKind@{codeToKind}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{codeToKind()}{codeToKind()}}
+{\footnotesize\ttfamily function code\+To\+Kind (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doclet_8js_afbcc26d3f33592484b5d1417b873ee0a}\label{doclet_8js_afbcc26d3f33592484b5d1417b873ee0a}} 
+\index{doclet.js@{doclet.js}!copyMostProperties@{copyMostProperties}}
+\index{copyMostProperties@{copyMostProperties}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{copyMostProperties()}{copyMostProperties()}}
+{\footnotesize\ttfamily function copy\+Most\+Properties (\begin{DoxyParamCaption}\item[{}]{primary,  }\item[{}]{secondary,  }\item[{}]{target,  }\item[{}]{exclude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy all but a list of excluded properties from one of two doclets onto a target doclet. 
+
+Prefers the primary doclet over the secondary doclet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & primary -\/ The primary doclet. \\
+\hline
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & secondary -\/ The secondary doclet. \\
+\hline
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & target -\/ The doclet to which properties will be copied. \\
+\hline
+{\em \{\+Array.$<$string$>$\}} & exclude -\/ The names of properties to exclude from copying. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{doclet_8js_ad4188339e3a30e9f1ad575392b46b4d0}\label{doclet_8js_ad4188339e3a30e9f1ad575392b46b4d0}} 
+\index{doclet.js@{doclet.js}!copySpecificProperties@{copySpecificProperties}}
+\index{copySpecificProperties@{copySpecificProperties}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{copySpecificProperties()}{copySpecificProperties()}}
+{\footnotesize\ttfamily function copy\+Specific\+Properties (\begin{DoxyParamCaption}\item[{}]{primary,  }\item[{}]{secondary,  }\item[{}]{target,  }\item[{}]{include }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy specific properties from one of two doclets onto a target doclet, as long as the property has a non-\/falsy value and a length greater than 0. 
+
+Prefers the primary doclet over the secondary doclet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & primary -\/ The primary doclet. \\
+\hline
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & secondary -\/ The secondary doclet. \\
+\hline
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & target -\/ The doclet to which properties will be copied. \\
+\hline
+{\em \{\+Array.$<$string$>$\}} & include -\/ The names of properties to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{doclet_8js_ac072db1862220f09ecfbf81976e575c7}\label{doclet_8js_ac072db1862220f09ecfbf81976e575c7}} 
+\index{doclet.js@{doclet.js}!dooper@{dooper}}
+\index{dooper@{dooper}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{dooper()}{dooper()}}
+{\footnotesize\ttfamily function dooper (\begin{DoxyParamCaption}\item[{}]{source,  }\item[{}]{target,  }\item[{}]{properties }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doclet_8js_a472cd457448fe06a59bd108a2107c44c}\label{doclet_8js_a472cd457448fe06a59bd108a2107c44c}} 
+\index{doclet.js@{doclet.js}!fakeMeta@{fakeMeta}}
+\index{fakeMeta@{fakeMeta}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{fakeMeta()}{fakeMeta()}}
+{\footnotesize\ttfamily function fake\+Meta (\begin{DoxyParamCaption}\item[{}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doclet_8js_aa6bc61a27522934e3db152c09de640ba}\label{doclet_8js_aa6bc61a27522934e3db152c09de640ba}} 
+\index{doclet.js@{doclet.js}!fixDescription@{fixDescription}}
+\index{fixDescription@{fixDescription}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{fixDescription()}{fixDescription()}}
+{\footnotesize\ttfamily function fix\+Description (\begin{DoxyParamCaption}\item[{}]{doclet\+Src,  }\item[{}]{\{code\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doclet_8js_adf9898cfaaea5fe8b2fd991315cbd4a6}\label{doclet_8js_adf9898cfaaea5fe8b2fd991315cbd4a6}} 
+\index{doclet.js@{doclet.js}!getFilepath@{getFilepath}}
+\index{getFilepath@{getFilepath}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{getFilepath()}{getFilepath()}}
+{\footnotesize\ttfamily function get\+Filepath (\begin{DoxyParamCaption}\item[{}]{doclet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get the full path to the source file that is associated with a doclet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & The doclet to check for a filepath. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} The path to the doclet\textquotesingle{}s source file, or an empty string if the path is not available. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{doclet_8js_ac333149f7493518f20cce9691844a6a9}\label{doclet_8js_ac333149f7493518f20cce9691844a6a9}} 
+\index{doclet.js@{doclet.js}!removeGlobal@{removeGlobal}}
+\index{removeGlobal@{removeGlobal}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{removeGlobal()}{removeGlobal()}}
+{\footnotesize\ttfamily function remove\+Global (\begin{DoxyParamCaption}\item[{}]{longname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doclet_8js_a8eb9c74ee48244b4aade8dfb12987250}\label{doclet_8js_a8eb9c74ee48244b4aade8dfb12987250}} 
+\index{doclet.js@{doclet.js}!toTags@{toTags}}
+\index{toTags@{toTags}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{toTags()}{toTags()}}
+{\footnotesize\ttfamily function to\+Tags (\begin{DoxyParamCaption}\item[{}]{doclet\+Src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Convert the raw source of the doclet comment into an array of pseudo-\/\+Tag objects. 
+
+\mbox{\Hypertarget{doclet_8js_ad78ee5ebdb651327b784f8cac8ad1435}\label{doclet_8js_ad78ee5ebdb651327b784f8cac8ad1435}} 
+\index{doclet.js@{doclet.js}!unwrap@{unwrap}}
+\index{unwrap@{unwrap}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{unwrap()}{unwrap()}}
+{\footnotesize\ttfamily function unwrap (\begin{DoxyParamCaption}\item[{}]{doclet\+Src }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{doclet_8js_af093e5fb34c1cb891e06da9bf98af093}\label{doclet_8js_af093e5fb34c1cb891e06da9bf98af093}} 
+\index{doclet.js@{doclet.js}!\_@{\_}}
+\index{\_@{\_}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{\_}{\_}}
+{\footnotesize\ttfamily const \+\_\+ = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2underscore-array-methods_8js_a1f9d2946a42d502ce0e8a04b3f6bd1cb}{underscore}}\textquotesingle{})}
+
+
+
+@module jsdoc/doclet 
+
+\mbox{\Hypertarget{doclet_8js_a1d923cde1d68a3fbde782aa79bb2c4b0}\label{doclet_8js_a1d923cde1d68a3fbde782aa79bb2c4b0}} 
+\index{doclet.js@{doclet.js}!\_replaceDictionary@{\_replaceDictionary}}
+\index{\_replaceDictionary@{\_replaceDictionary}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{\_replaceDictionary}{\_replaceDictionary}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \+\_\+replace\+Dictionary\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{doclet_8js_a1d923cde1d68a3fbde782aa79bb2c4b0}{\_replaceDictionary}}(\mbox{\hyperlink{level2_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}.tag.dictionary = \mbox{\hyperlink{level2_8js_a37bf353e1618cbf53638b1219eddd197}{dict}};}
+\DoxyCodeLine{    \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/tag'}).\_replaceDictionary(\mbox{\hyperlink{level2_8js_a37bf353e1618cbf53638b1219eddd197}{dict}});}
+\DoxyCodeLine{    \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/util/templateHelper'}).\_replaceDictionary(\mbox{\hyperlink{level2_8js_a37bf353e1618cbf53638b1219eddd197}{dict}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Replace the existing tag dictionary with a new tag dictionary. 
+
+Used for testing only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/tag/dictionary.\+Dictionary\}} & dict -\/ The new tag dictionary. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{doclet_8js_ac151836247b84a9bdc5660b331e996b1}\label{doclet_8js_ac151836247b84a9bdc5660b331e996b1}} 
+\index{doclet.js@{doclet.js}!combine@{combine}}
+\index{combine@{combine}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{combine}{combine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} combine}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (primary, secondary) => \{}
+\DoxyCodeLine{    \textcolor{keyword}{const} copyMostPropertiesExclude = [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'params'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'properties'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'undocumented'}}
+\DoxyCodeLine{    ];}
+\DoxyCodeLine{    \textcolor{keyword}{const} copySpecificPropertiesInclude = [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'params'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'properties'}}
+\DoxyCodeLine{    ];}
+\DoxyCodeLine{    \textcolor{keyword}{const} target = \textcolor{keyword}{new} \mbox{\hyperlink{doclet_8js_a07b8aafa3f6a54ba90c33bc73c3ae950}{Doclet}}(\textcolor{stringliteral}{''});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_afbcc26d3f33592484b5d1417b873ee0a}{copyMostProperties}}(primary, secondary, target, copyMostPropertiesExclude);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_ad4188339e3a30e9f1ad575392b46b4d0}{copySpecificProperties}}(primary, secondary, target, copySpecificPropertiesInclude);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} target;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Combine two doclets into a new doclet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & primary -\/ The doclet whose properties will be used. \\
+\hline
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & secondary -\/ The doclet to use as a fallback for properties that the primary doclet does not have. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{module\+:jsdoc/doclet.\+Doclet\} A new doclet that combines the primary and secondary doclets. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{doclet_8js_a07b8aafa3f6a54ba90c33bc73c3ae950}\label{doclet_8js_a07b8aafa3f6a54ba90c33bc73c3ae950}} 
+\index{doclet.js@{doclet.js}!Doclet@{Doclet}}
+\index{Doclet@{Doclet}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{Doclet}{Doclet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{classDoclet}{Doclet}} = \mbox{\hyperlink{classDoclet}{Doclet}}}
+
+\mbox{\Hypertarget{doclet_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}\label{doclet_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}} 
+\index{doclet.js@{doclet.js}!jsdoc@{jsdoc}}
+\index{jsdoc@{jsdoc}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{jsdoc}{jsdoc}}
+{\footnotesize\ttfamily const jsdoc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/env'}),}
+\DoxyCodeLine{    \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/name'}),}
+\DoxyCodeLine{    src: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_a074155f38b7fd150360f6ae12216c040}{astnode}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/src/astnode'}),}
+\DoxyCodeLine{        \mbox{\hyperlink{doclet_8js_a00a15eea64e6c06826721371906c1870}{Syntax}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/src/syntax'}).Syntax}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{marked_8esm_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{tag_8js_a19c70f54d17b717960040f59bc6d7f6b}{Tag}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/tag'}).Tag,}
+\DoxyCodeLine{        \mbox{\hyperlink{plugins_8js_a671c474c4db71ff679e6e322565d6b14}{dictionary}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/tag/dictionary'})}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{augment_8js_a13f65f2f8b7af67764958f9ca1765cf1}{doop}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/util/doop'})}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doclet_8js_a1fdc7709faf62dce60620fb3f9d3453c}\label{doclet_8js_a1fdc7709faf62dce60620fb3f9d3453c}} 
+\index{doclet.js@{doclet.js}!path@{path}}
+\index{path@{path}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily const path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/path\textquotesingle{})}
+
+\mbox{\Hypertarget{doclet_8js_a00a15eea64e6c06826721371906c1870}\label{doclet_8js_a00a15eea64e6c06826721371906c1870}} 
+\index{doclet.js@{doclet.js}!Syntax@{Syntax}}
+\index{Syntax@{Syntax}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{Syntax}{Syntax}}
+{\footnotesize\ttfamily const Syntax = jsdoc.\+src.\+Syntax}
+
+\mbox{\Hypertarget{doclet_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}\label{doclet_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}} 
+\index{doclet.js@{doclet.js}!util@{util}}
+\index{util@{util}!doclet.js@{doclet.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily const util = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})}
+

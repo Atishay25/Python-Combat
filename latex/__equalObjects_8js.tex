@@ -1,0 +1,96 @@
+\hypertarget{__equalObjects_8js}{}\doxysection{node\+\_\+modules/lodash/\+\_\+equal\+Objects.js File Reference}
+\label{__equalObjects_8js}\index{node\_modules/lodash/\_equalObjects.js@{node\_modules/lodash/\_equalObjects.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__equalObjects_8js_a8beb91548d69a16d1400c21bfa32d926}{equal\+Objects}} (\mbox{\hyperlink{underscore-esm-min_8js_a943d8486390292c169e81c23653a2d50}{object}}, other, bitmask, customizer, equal\+Func, stack)
+\begin{DoxyCompactList}\small\item\em A specialized version of {\ttfamily base\+Is\+Equal\+Deep} for objects with support for partial deep comparisons. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__equalObjects_8js_a2b004954614bcffc671c37663f952294}{get\+All\+Keys}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+get\+All\+Keys\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__equalObjects_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}{C\+O\+M\+P\+A\+R\+E\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+AG}} = 1
+\begin{DoxyCompactList}\small\item\em Used to compose bitmasks for value comparisons. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__equalObjects_8js_a562e1facef2ded1e56f0505c1942fa1b}{object\+Proto}} = \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{Object.\+prototype}}
+\begin{DoxyCompactList}\small\item\em Used for built-\/in method references. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__equalObjects_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{has\+Own\+Property}} = object\+Proto.\+has\+Own\+Property
+\begin{DoxyCompactList}\small\item\em Used to check objects for own properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__equalObjects_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{lodash_2core_8js_a8beb91548d69a16d1400c21bfa32d926}{equal\+Objects}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__equalObjects_8js_a8beb91548d69a16d1400c21bfa32d926}\label{__equalObjects_8js_a8beb91548d69a16d1400c21bfa32d926}} 
+\index{\_equalObjects.js@{\_equalObjects.js}!equalObjects@{equalObjects}}
+\index{equalObjects@{equalObjects}!\_equalObjects.js@{\_equalObjects.js}}
+\doxysubsubsection{\texorpdfstring{equalObjects()}{equalObjects()}}
+{\footnotesize\ttfamily function equal\+Objects (\begin{DoxyParamCaption}\item[{}]{object,  }\item[{}]{other,  }\item[{}]{bitmask,  }\item[{}]{customizer,  }\item[{}]{equal\+Func,  }\item[{}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A specialized version of {\ttfamily base\+Is\+Equal\+Deep} for objects with support for partial deep comparisons. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to compare. \\
+\hline
+{\em \{\+Object\}} & other The other object to compare. \\
+\hline
+{\em \{number\}} & bitmask The bitmask flags. See {\ttfamily base\+Is\+Equal} for more details. \\
+\hline
+{\em \{\+Function\}} & customizer The function to customize comparisons. \\
+\hline
+{\em \{\+Function\}} & equal\+Func The function to determine equivalents of values. \\
+\hline
+{\em \{\+Object\}} & stack Tracks traversed {\ttfamily object} and {\ttfamily other} objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} Returns {\ttfamily true} if the objects are equivalent, else {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__equalObjects_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}\label{__equalObjects_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}} 
+\index{\_equalObjects.js@{\_equalObjects.js}!COMPARE\_PARTIAL\_FLAG@{COMPARE\_PARTIAL\_FLAG}}
+\index{COMPARE\_PARTIAL\_FLAG@{COMPARE\_PARTIAL\_FLAG}!\_equalObjects.js@{\_equalObjects.js}}
+\doxysubsubsection{\texorpdfstring{COMPARE\_PARTIAL\_FLAG}{COMPARE\_PARTIAL\_FLAG}}
+{\footnotesize\ttfamily var C\+O\+M\+P\+A\+R\+E\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+AG = 1}
+
+
+
+Used to compose bitmasks for value comparisons. 
+
+\mbox{\Hypertarget{__equalObjects_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{__equalObjects_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{\_equalObjects.js@{\_equalObjects.js}!exports@{exports}}
+\index{exports@{exports}!\_equalObjects.js@{\_equalObjects.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{lodash_2core_8js_a8beb91548d69a16d1400c21bfa32d926}{equal\+Objects}}}
+
+\mbox{\Hypertarget{__equalObjects_8js_a2b004954614bcffc671c37663f952294}\label{__equalObjects_8js_a2b004954614bcffc671c37663f952294}} 
+\index{\_equalObjects.js@{\_equalObjects.js}!getAllKeys@{getAllKeys}}
+\index{getAllKeys@{getAllKeys}!\_equalObjects.js@{\_equalObjects.js}}
+\doxysubsubsection{\texorpdfstring{getAllKeys}{getAllKeys}}
+{\footnotesize\ttfamily var get\+All\+Keys = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+get\+All\+Keys\textquotesingle{})}
+
+\mbox{\Hypertarget{__equalObjects_8js_a70e9fba663e9e2e297e34ddce97d6fb7}\label{__equalObjects_8js_a70e9fba663e9e2e297e34ddce97d6fb7}} 
+\index{\_equalObjects.js@{\_equalObjects.js}!hasOwnProperty@{hasOwnProperty}}
+\index{hasOwnProperty@{hasOwnProperty}!\_equalObjects.js@{\_equalObjects.js}}
+\doxysubsubsection{\texorpdfstring{hasOwnProperty}{hasOwnProperty}}
+{\footnotesize\ttfamily var has\+Own\+Property = object\+Proto.\+has\+Own\+Property}
+
+
+
+Used to check objects for own properties. 
+
+\mbox{\Hypertarget{__equalObjects_8js_a562e1facef2ded1e56f0505c1942fa1b}\label{__equalObjects_8js_a562e1facef2ded1e56f0505c1942fa1b}} 
+\index{\_equalObjects.js@{\_equalObjects.js}!objectProto@{objectProto}}
+\index{objectProto@{objectProto}!\_equalObjects.js@{\_equalObjects.js}}
+\doxysubsubsection{\texorpdfstring{objectProto}{objectProto}}
+{\footnotesize\ttfamily var object\+Proto = \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{Object.\+prototype}}}
+
+
+
+Used for built-\/in method references. 
+

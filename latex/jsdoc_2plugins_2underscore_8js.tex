@@ -1,0 +1,35 @@
+\hypertarget{jsdoc_2plugins_2underscore_8js}{}\doxysection{node\+\_\+modules/jsdoc/plugins/underscore.js File Reference}
+\label{jsdoc_2plugins_2underscore_8js}\index{node\_modules/jsdoc/plugins/underscore.js@{node\_modules/jsdoc/plugins/underscore.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{jsdoc_2plugins_2underscore_8js_a961bd2a6da67c5f825a66f814dac02b8}{handlers}}
+\begin{DoxyCompactList}\small\item\em Removes all symbols that begin with an underscore from the doc output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{jsdoc_2plugins_2underscore_8js_a961bd2a6da67c5f825a66f814dac02b8}\label{jsdoc_2plugins_2underscore_8js_a961bd2a6da67c5f825a66f814dac02b8}} 
+\index{underscore.js@{underscore.js}!handlers@{handlers}}
+\index{handlers@{handlers}!underscore.js@{underscore.js}}
+\doxysubsubsection{\texorpdfstring{handlers}{handlers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} handlers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    newDoclet(\{doclet\}) \{}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (doclet.name.charAt(0) === \textcolor{charliteral}{'\_'} || doclet.name.substr(0, 6) === \textcolor{stringliteral}{'this.\_'}) \{}
+\DoxyCodeLine{            doclet.access = \textcolor{stringliteral}{'private'};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Removes all symbols that begin with an underscore from the doc output. 
+
+If you\textquotesingle{}re using underscores to denote private variables in modules, this automatically hides them.
+
+@module plugins/underscore 

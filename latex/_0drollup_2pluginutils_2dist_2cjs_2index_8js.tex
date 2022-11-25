@@ -1,0 +1,320 @@
+\hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js}{}\doxysection{node\+\_\+modules/@rollup/pluginutils/dist/cjs/index.js File Reference}
+\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js}\index{node\_modules/"@rollup/pluginutils/dist/cjs/index.js@{node\_modules/"@rollup/pluginutils/dist/cjs/index.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classScope}{Scope}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ac6238e9d31916d3a637688672be7aab9}{define\+Property}} (\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \textquotesingle{}\+\_\+\+\_\+es\+Module\textquotesingle{}, \{ value\+:true \})
+\item 
+function \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_af8549066bfc60f4fb8c6a8e7c6e331aa}{is\+Array}} (arg)
+\item 
+function \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a617c025d0ac76900cb855d50c2c29a50}{get\+Matcher\+String}} (\mbox{\hyperlink{_0dlezer_2lr_2dist_2index_8js_a3b31f632ae5bcc4580bfdd132f77fd68}{id}}, resolution\+Base)
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_aca1701edd57a0d53c1e3e6356f3ac980}{forbidden\+Identifiers}} \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_af67f8ade0356d33c8d7ec5338531bcbb}{add}} (\textquotesingle{}\textquotesingle{})
+\item 
+function \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a8b2db3c002bbbd5ecc0fd6b08e6daa5d}{stringify}} (obj)
+\item 
+function \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_afedd8ffe2df5e80ac30a804958dfbde4}{serialize\+Array}} (arr, \mbox{\hyperlink{_0dlezer_2python_2dist_2index_8es_8js_a05513f6e77dc4c23105af6dd982439e6}{indent}}, base\+Indent)
+\item 
+function \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a1383bad7ff065fbaa32d2aa6771dff75}{serialize\+Object}} (obj, \mbox{\hyperlink{_0dlezer_2python_2dist_2index_8es_8js_a05513f6e77dc4c23105af6dd982439e6}{indent}}, base\+Indent)
+\item 
+function \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a0168fdef1b89a0b05518871e7612b36d}{serialize}} (obj, \mbox{\hyperlink{_0dlezer_2python_2dist_2index_8es_8js_a05513f6e77dc4c23105af6dd982439e6}{indent}}, base\+Indent)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ picomatch}\par
+{\em Creates a matcher function from one or more glob patterns.
+
+The returned function takes a string to match as its first argument, and returns true if the string is a match. The returned matcher function also takes a boolean as the second argument that, when true, returns an object with additional information.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{const} \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2es_2index_8js_a320c9c394b662237be25653cf0ecf4f4}{picomatch}} = \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'picomatch'});}
+\DoxyCodeLine{\textcolor{comment}{// picomatch(glob[, options]);}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{const} \mbox{\hyperlink{picomatch_8js_aeb1e16ab84300f77d76bd3841ce712f6}{isMatch}} = \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2es_2index_8js_a320c9c394b662237be25653cf0ecf4f4}{picomatch}}(\textcolor{stringliteral}{'*.!(*a)'});}
+\DoxyCodeLine{console.log(\mbox{\hyperlink{picomatch_8js_aeb1e16ab84300f77d76bd3841ce712f6}{isMatch}}(\textcolor{stringliteral}{'a.a'})); \textcolor{comment}{//=> false}}
+\DoxyCodeLine{console.log(\mbox{\hyperlink{picomatch_8js_aeb1e16ab84300f77d76bd3841ce712f6}{isMatch}}(\textcolor{stringliteral}{'a.b'})); \textcolor{comment}{//=> true}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String$\vert$\+Array\}} & {\ttfamily globs} One or more glob patterns. \\
+\hline
+{\em \{\+Object=\}} & {\ttfamily options} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function=\} Returns a matcher function. @api public 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a760c09ec35e90bf6cc2a75de6c612930}{ensure\+Array}} (thing)
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})
+\item 
+var \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ab7959560c0b540766164d5a6a6106fc9}{estree\+Walker}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ad3eade18d20b8889e35d0afcab73bcfc}{estree}}-\/walker\textquotesingle{})
+\item 
+var \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a2e84d077bde0d4fe30f2d4afd9bf0473}{pm}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{shared_2rollup_8js_ab94e0a6507d6af3464617b932a6a041a}{picomatch}}\textquotesingle{})
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a4be27501e28afba012dd511d91944301}{add\+Extension}}
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a5f5dc61327ae1645e4095d059f48cef8}{extractors}}
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ab5b7a5cf6e0d1d325ed981c756529ac6}{extract\+Assigned\+Names}}
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ad660d4acd70548b75fe24b3664cb2056}{block\+Declarations}}
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a84f071e55d0dbd052120879d6655a4f2}{attach\+Scopes}}
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a206f087c73412b9cf81fe743c888c23c}{normalize\+Path}}
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aa29fcce0ddd5cc4cce13d5ab1fc57611}{create\+Filter}}
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_abd8068042e3414cd839a7b3e178c6c6c}{reserved\+Words}} = \textquotesingle{}break case class \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a01f0810671e29d79cd35814fa97d3d55}{catch}} const continue debugger \mbox{\hyperlink{modules_2isDataView_8js_aaf00c3ccd15289aa82c7ca696e51a950}{default}} delete do \mbox{\hyperlink{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{underscore-esm-min_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}{export}} extends finally \mbox{\hyperlink{shared_2rollup_8js_aaae048622a923582aa06cdf3bbad2ec9}{for}} function \mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}} \mbox{\hyperlink{underscore_2modules_2underscore_8js_a59be084da8908b7d77ff34b25cd84488}{import}} in instanceof let new \mbox{\hyperlink{browser_2bluebird_8js_a9ba8580b1b7db88f23242b38d0a0ce93}{return}} super switch \mbox{\hyperlink{underscore_2underscore_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}} throw \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_abe4cc9788f52e49485473dc699537388}{try}} typeof var void while with yield enum await implements package protected static interface private public\textquotesingle{}
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a05e9c0205a12ba9154de79ec3c07dd1d}{builtins}} = \textquotesingle{}arguments Infinity NaN \mbox{\hyperlink{bluebird_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}} \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}} true false eval uneval \mbox{\hyperlink{underscore_2underscore_8js_abced012dfcd745c6a85b444a248bd7ca}{is\+Finite}} \mbox{\hyperlink{underscore_2underscore_8js_aa955e48ea0dae6ebf4cc608d886863b3}{is\+NaN}} parse\+Float \mbox{\hyperlink{parseInt_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int}} decode\+U\+RI decode\+U\+R\+I\+Component encode\+U\+RI encode\+U\+R\+I\+Component \mbox{\hyperlink{helpers_8js_aa71a9eeac07ee465de4a819eebef88f3}{escape}} \mbox{\hyperlink{helpers_8js_a1ad69e1a95575bddefe7318c0ec34a16}{unescape}} Object \mbox{\hyperlink{shared_2rollup_8js_aa06ea43cf54513222069a6ea4a098d7c}{Function}} Boolean \mbox{\hyperlink{lodash_2toArray_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}} Error Eval\+Error Internal\+Error Range\+Error Reference\+Error Syntax\+Error Type\+Error U\+R\+I\+Error Number Math Date String Reg\+Exp Array Int8\+Array \mbox{\hyperlink{__Uint8Array_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}} Uint8\+Clamped\+Array Int16\+Array Uint16\+Array Int32\+Array Uint32\+Array Float32\+Array Float64\+Array \mbox{\hyperlink{__stackSet_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}} \mbox{\hyperlink{__Set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}} \mbox{\hyperlink{__WeakMap_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}} Weak\+Set S\+I\+MD Array\+Buffer \mbox{\hyperlink{__getTag_8js_a035b362a299d444b77597fe2d1ad1823}{Data\+View}} J\+S\+ON \mbox{\hyperlink{__Promise_8js_abace523389c17bce1848e3a427871700}{Promise}} Generator Generator\+Function Reflect Proxy Intl\textquotesingle{}
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aca1701edd57a0d53c1e3e6356f3ac980}{forbidden\+Identifiers}} = new \mbox{\hyperlink{__Set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}(\`{}\$\{\mbox{\hyperlink{shared_2rollup_8js_abd8068042e3414cd839a7b3e178c6c6c}{reserved\+Words}}\} \$\{\mbox{\hyperlink{shared_2rollup_8js_a05e9c0205a12ba9154de79ec3c07dd1d}{builtins}}\}\`{}.\mbox{\hyperlink{markdown-it_2lib_2rules__inline_2escape_8js_aef677576741e9a1de84a3cb76f80f32f}{split}}(\textquotesingle{} \textquotesingle{}))
+\item 
+const \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a597fff1b393d25af8a007c4f243c5735}{make\+Legal\+Identifier}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_af67f8ade0356d33c8d7ec5338531bcbb}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_af67f8ade0356d33c8d7ec5338531bcbb}} 
+\index{index.js@{index.js}!add@{add}}
+\index{add@{add}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_aca1701edd57a0d53c1e3e6356f3ac980}{forbidden\+Identifiers}} add (\begin{DoxyParamCaption}\item[{\textquotesingle{}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ac6238e9d31916d3a637688672be7aab9}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ac6238e9d31916d3a637688672be7aab9}} 
+\index{index.js@{index.js}!defineProperty@{defineProperty}}
+\index{defineProperty@{defineProperty}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{defineProperty()}{defineProperty()}}
+{\footnotesize\ttfamily Object define\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}}]{,  }\item[{\textquotesingle{}\+\_\+\+\_\+es\+Module\textquotesingle{}}]{,  }\item[{\{ value\+:true \}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a760c09ec35e90bf6cc2a75de6c612930}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a760c09ec35e90bf6cc2a75de6c612930}} 
+\index{index.js@{index.js}!ensureArray@{ensureArray}}
+\index{ensureArray@{ensureArray}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ensureArray()}{ensureArray()}}
+{\footnotesize\ttfamily function ensure\+Array (\begin{DoxyParamCaption}\item[{}]{thing }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a617c025d0ac76900cb855d50c2c29a50}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a617c025d0ac76900cb855d50c2c29a50}} 
+\index{index.js@{index.js}!getMatcherString@{getMatcherString}}
+\index{getMatcherString@{getMatcherString}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getMatcherString()}{getMatcherString()}}
+{\footnotesize\ttfamily function get\+Matcher\+String (\begin{DoxyParamCaption}\item[{}]{id,  }\item[{}]{resolution\+Base }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_af8549066bfc60f4fb8c6a8e7c6e331aa}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_af8549066bfc60f4fb8c6a8e7c6e331aa}} 
+\index{index.js@{index.js}!isArray@{isArray}}
+\index{isArray@{isArray}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isArray()}{isArray()}}
+{\footnotesize\ttfamily function is\+Array (\begin{DoxyParamCaption}\item[{}]{arg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a0168fdef1b89a0b05518871e7612b36d}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a0168fdef1b89a0b05518871e7612b36d}} 
+\index{index.js@{index.js}!serialize@{serialize}}
+\index{serialize@{serialize}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily function serialize (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{indent,  }\item[{}]{base\+Indent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_afedd8ffe2df5e80ac30a804958dfbde4}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_afedd8ffe2df5e80ac30a804958dfbde4}} 
+\index{index.js@{index.js}!serializeArray@{serializeArray}}
+\index{serializeArray@{serializeArray}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{serializeArray()}{serializeArray()}}
+{\footnotesize\ttfamily function serialize\+Array (\begin{DoxyParamCaption}\item[{}]{arr,  }\item[{}]{indent,  }\item[{}]{base\+Indent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a1383bad7ff065fbaa32d2aa6771dff75}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a1383bad7ff065fbaa32d2aa6771dff75}} 
+\index{index.js@{index.js}!serializeObject@{serializeObject}}
+\index{serializeObject@{serializeObject}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{serializeObject()}{serializeObject()}}
+{\footnotesize\ttfamily function serialize\+Object (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{indent,  }\item[{}]{base\+Indent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a8b2db3c002bbbd5ecc0fd6b08e6daa5d}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a8b2db3c002bbbd5ecc0fd6b08e6daa5d}} 
+\index{index.js@{index.js}!stringify@{stringify}}
+\index{stringify@{stringify}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{stringify()}{stringify()}}
+{\footnotesize\ttfamily function stringify (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a4be27501e28afba012dd511d91944301}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a4be27501e28afba012dd511d91944301}} 
+\index{index.js@{index.js}!addExtension@{addExtension}}
+\index{addExtension@{addExtension}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{addExtension}{addExtension}}
+{\footnotesize\ttfamily const add\+Extension}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a4be27501e28afba012dd511d91944301}{addExtension}}(\mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}}, ext = \textcolor{stringliteral}{'.js'}) \{}
+\DoxyCodeLine{    let \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} = `\$\{\mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}}\}`;}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!\mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}.extname(\mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}}))}
+\DoxyCodeLine{        \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} += ext;}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a84f071e55d0dbd052120879d6655a4f2}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a84f071e55d0dbd052120879d6655a4f2}} 
+\index{index.js@{index.js}!attachScopes@{attachScopes}}
+\index{attachScopes@{attachScopes}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{attachScopes}{attachScopes}}
+{\footnotesize\ttfamily const attach\+Scopes}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ad660d4acd70548b75fe24b3664cb2056}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ad660d4acd70548b75fe24b3664cb2056}} 
+\index{index.js@{index.js}!blockDeclarations@{blockDeclarations}}
+\index{blockDeclarations@{blockDeclarations}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{blockDeclarations}{blockDeclarations}}
+{\footnotesize\ttfamily const block\+Declarations}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \textcolor{keyword}{const}: \textcolor{keyword}{true},}
+\DoxyCodeLine{    let: \textcolor{keyword}{true}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a05e9c0205a12ba9154de79ec3c07dd1d}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a05e9c0205a12ba9154de79ec3c07dd1d}} 
+\index{index.js@{index.js}!builtins@{builtins}}
+\index{builtins@{builtins}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{builtins}{builtins}}
+{\footnotesize\ttfamily const builtins = \textquotesingle{}arguments Infinity NaN \mbox{\hyperlink{bluebird_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}} \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}} true false eval uneval \mbox{\hyperlink{underscore_2underscore_8js_abced012dfcd745c6a85b444a248bd7ca}{is\+Finite}} \mbox{\hyperlink{underscore_2underscore_8js_aa955e48ea0dae6ebf4cc608d886863b3}{is\+NaN}} parse\+Float \mbox{\hyperlink{parseInt_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int}} decode\+U\+RI decode\+U\+R\+I\+Component encode\+U\+RI encode\+U\+R\+I\+Component \mbox{\hyperlink{helpers_8js_aa71a9eeac07ee465de4a819eebef88f3}{escape}} \mbox{\hyperlink{helpers_8js_a1ad69e1a95575bddefe7318c0ec34a16}{unescape}} Object \mbox{\hyperlink{shared_2rollup_8js_aa06ea43cf54513222069a6ea4a098d7c}{Function}} Boolean \mbox{\hyperlink{lodash_2toArray_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}} Error Eval\+Error Internal\+Error Range\+Error Reference\+Error Syntax\+Error Type\+Error U\+R\+I\+Error Number Math Date String Reg\+Exp Array Int8\+Array \mbox{\hyperlink{__Uint8Array_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}} Uint8\+Clamped\+Array Int16\+Array Uint16\+Array Int32\+Array Uint32\+Array Float32\+Array Float64\+Array \mbox{\hyperlink{__stackSet_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}} \mbox{\hyperlink{__Set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}} \mbox{\hyperlink{__WeakMap_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}} Weak\+Set S\+I\+MD Array\+Buffer \mbox{\hyperlink{__getTag_8js_a035b362a299d444b77597fe2d1ad1823}{Data\+View}} J\+S\+ON \mbox{\hyperlink{__Promise_8js_abace523389c17bce1848e3a427871700}{Promise}} Generator Generator\+Function Reflect Proxy Intl\textquotesingle{}}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aa29fcce0ddd5cc4cce13d5ab1fc57611}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aa29fcce0ddd5cc4cce13d5ab1fc57611}} 
+\index{index.js@{index.js}!createFilter@{createFilter}}
+\index{createFilter@{createFilter}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createFilter}{createFilter}}
+{\footnotesize\ttfamily const create\+Filter}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ab7959560c0b540766164d5a6a6106fc9}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ab7959560c0b540766164d5a6a6106fc9}} 
+\index{index.js@{index.js}!estreeWalker@{estreeWalker}}
+\index{estreeWalker@{estreeWalker}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{estreeWalker}{estreeWalker}}
+{\footnotesize\ttfamily var estree\+Walker = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ad3eade18d20b8889e35d0afcab73bcfc}{estree}}-\/walker\textquotesingle{})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ab5b7a5cf6e0d1d325ed981c756529ac6}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ab5b7a5cf6e0d1d325ed981c756529ac6}} 
+\index{index.js@{index.js}!extractAssignedNames@{extractAssignedNames}}
+\index{extractAssignedNames@{extractAssignedNames}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{extractAssignedNames}{extractAssignedNames}}
+{\footnotesize\ttfamily const extract\+Assigned\+Names}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ab5b7a5cf6e0d1d325ed981c756529ac6}{extractAssignedNames}}(param) \{}
+\DoxyCodeLine{    \textcolor{keyword}{const} names = [];}
+\DoxyCodeLine{    \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a5f5dc61327ae1645e4095d059f48cef8}{extractors}}[param.type](names, param);}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} names;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a5f5dc61327ae1645e4095d059f48cef8}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a5f5dc61327ae1645e4095d059f48cef8}} 
+\index{index.js@{index.js}!extractors@{extractors}}
+\index{extractors@{extractors}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{extractors}{extractors}}
+{\footnotesize\ttfamily const extractors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \mbox{\hyperlink{es_2shared_2rollup_8js_a6e3353f32201d62d1bda226bd1dd9c28}{ArrayPattern}}(names, param) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} (\textcolor{keyword}{const} element of param.elements) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (element)}
+\DoxyCodeLine{                \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a5f5dc61327ae1645e4095d059f48cef8}{extractors}}[element.type](names, element);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    AssignmentPattern(names, param) \{}
+\DoxyCodeLine{        \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a5f5dc61327ae1645e4095d059f48cef8}{extractors}}[param.left.type](names, param.left);}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{es_2shared_2rollup_8js_a1396bf782d72240efd741f15a04c2ac4}{Identifier}}(names, param) \{}
+\DoxyCodeLine{        names.push(param.name);}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{es_2shared_2rollup_8js_acaab5fac8898ca76afcd47ef3cdf4ef7}{MemberExpression}}() \{ \},}
+\DoxyCodeLine{    \mbox{\hyperlink{es_2shared_2rollup_8js_a8f4645c2089ab17bf03b20a42108da49}{ObjectPattern}}(names, param) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} (\textcolor{keyword}{const} prop of param.properties) \{}
+\DoxyCodeLine{            }
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (prop.type === \textcolor{stringliteral}{'RestElement'}) \{}
+\DoxyCodeLine{                \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a5f5dc61327ae1645e4095d059f48cef8}{extractors}}.RestElement(names, prop);}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{            \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{                \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a5f5dc61327ae1645e4095d059f48cef8}{extractors}}[prop.value.type](names, prop.value);}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{es_2shared_2rollup_8js_add51dd5f6b56e0c41dc9387bfd384177}{RestElement}}(names, param) \{}
+\DoxyCodeLine{        \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a5f5dc61327ae1645e4095d059f48cef8}{extractors}}[param.argument.type](names, param.argument);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aca1701edd57a0d53c1e3e6356f3ac980}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aca1701edd57a0d53c1e3e6356f3ac980}} 
+\index{index.js@{index.js}!forbiddenIdentifiers@{forbiddenIdentifiers}}
+\index{forbiddenIdentifiers@{forbiddenIdentifiers}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{forbiddenIdentifiers}{forbiddenIdentifiers}}
+{\footnotesize\ttfamily const forbidden\+Identifiers = new \mbox{\hyperlink{__Set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}(\`{}\$\{\mbox{\hyperlink{shared_2rollup_8js_abd8068042e3414cd839a7b3e178c6c6c}{reserved\+Words}}\} \$\{\mbox{\hyperlink{shared_2rollup_8js_a05e9c0205a12ba9154de79ec3c07dd1d}{builtins}}\}\`{}.\mbox{\hyperlink{markdown-it_2lib_2rules__inline_2escape_8js_aef677576741e9a1de84a3cb76f80f32f}{split}}(\textquotesingle{} \textquotesingle{}))}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a597fff1b393d25af8a007c4f243c5735}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a597fff1b393d25af8a007c4f243c5735}} 
+\index{index.js@{index.js}!makeLegalIdentifier@{makeLegalIdentifier}}
+\index{makeLegalIdentifier@{makeLegalIdentifier}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{makeLegalIdentifier}{makeLegalIdentifier}}
+{\footnotesize\ttfamily const make\+Legal\+Identifier}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a597fff1b393d25af8a007c4f243c5735}{makeLegalIdentifier}}(\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}) \{}
+\DoxyCodeLine{    let identifier = \mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}}
+\DoxyCodeLine{        .replace(/-\/(\(\backslash\)\mbox{\hyperlink{underscore-min_8js_a46f776ac24bdac837bbbfa1b0b4598ad}{w}})/\mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a73c18c59a39b18382081ec00bb456d43}{g}}, (\mbox{\hyperlink{requizzle_2index_8js_af093e5fb34c1cb891e06da9bf98af093}{\_}}, letter) => letter.toUpperCase())}
+\DoxyCodeLine{        .replace(/[\string^\$\_a-\/zA-\/Z0-\/9]/\mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a73c18c59a39b18382081ec00bb456d43}{g}}, \textcolor{charliteral}{'\_'});}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (/\(\backslash\)\mbox{\hyperlink{markdown-it_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}/.\mbox{\hyperlink{function-bind_2test_2index_8js_a05a671c66aefea124cc08b76ea6d30bb}{test}}(identifier[0]) || \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aca1701edd57a0d53c1e3e6356f3ac980}{forbiddenIdentifiers}}.has(identifier)) \{}
+\DoxyCodeLine{        identifier = `\mbox{\hyperlink{requizzle_2index_8js_af093e5fb34c1cb891e06da9bf98af093}{\_}}\$\{identifier\}`;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} identifier || \textcolor{charliteral}{'\_'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a206f087c73412b9cf81fe743c888c23c}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a206f087c73412b9cf81fe743c888c23c}} 
+\index{index.js@{index.js}!normalizePath@{normalizePath}}
+\index{normalizePath@{normalizePath}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{normalizePath}{normalizePath}}
+{\footnotesize\ttfamily const normalize\+Path}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a206f087c73412b9cf81fe743c888c23c}{normalizePath}}(\mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}}) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}}.split(\mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}.win32.sep).join(\mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}.posix.sep);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aa72e0c8a20e6bcc571d3a1c51846e627}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_aa72e0c8a20e6bcc571d3a1c51846e627}} 
+\index{index.js@{index.js}!path@{path}}
+\index{path@{path}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily var path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a2e84d077bde0d4fe30f2d4afd9bf0473}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_a2e84d077bde0d4fe30f2d4afd9bf0473}} 
+\index{index.js@{index.js}!pm@{pm}}
+\index{pm@{pm}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{pm}{pm}}
+{\footnotesize\ttfamily var pm = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{shared_2rollup_8js_ab94e0a6507d6af3464617b932a6a041a}{picomatch}}\textquotesingle{})}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_abd8068042e3414cd839a7b3e178c6c6c}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_abd8068042e3414cd839a7b3e178c6c6c}} 
+\index{index.js@{index.js}!reservedWords@{reservedWords}}
+\index{reservedWords@{reservedWords}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reservedWords}{reservedWords}}
+{\footnotesize\ttfamily const reserved\+Words = \textquotesingle{}break case class \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a01f0810671e29d79cd35814fa97d3d55}{catch}} const continue debugger \mbox{\hyperlink{modules_2isDataView_8js_aaf00c3ccd15289aa82c7ca696e51a950}{default}} delete do \mbox{\hyperlink{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{underscore-esm-min_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}{export}} extends finally \mbox{\hyperlink{shared_2rollup_8js_aaae048622a923582aa06cdf3bbad2ec9}{for}} function \mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}} \mbox{\hyperlink{underscore_2modules_2underscore_8js_a59be084da8908b7d77ff34b25cd84488}{import}} in instanceof let new \mbox{\hyperlink{browser_2bluebird_8js_a9ba8580b1b7db88f23242b38d0a0ce93}{return}} super switch \mbox{\hyperlink{underscore_2underscore_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}} throw \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_abe4cc9788f52e49485473dc699537388}{try}} typeof var void while with yield enum await implements package protected static interface private public\textquotesingle{}}
+
+\mbox{\Hypertarget{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ae2475e10618961c050dcba04e8c42331}\label{_0drollup_2pluginutils_2dist_2cjs_2index_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+

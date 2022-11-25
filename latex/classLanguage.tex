@@ -1,0 +1,82 @@
+\hypertarget{classLanguage}{}\doxysection{Language Class Reference}
+\label{classLanguage}\index{Language@{Language}}
+
+
+A language object manages parsing and per-\/language \href{https://codemirror.net/6/docs/ref/\#state.EditorState.languageDataAt}{\texttt{ metadata}}.  
+
+
+
+
+Inheritance diagram for Language\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLanguage_a4a185271a9a9807d58c0d382974cc0c5}{constructor}} (\mbox{\hyperlink{resolve_2lib_2core_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, extra\+Extensions=\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construct a language object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLanguage_a24d8413b8d4ec014f7a0c58160bf4e97}{is\+Active\+At}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, pos, side=-\/1)
+\begin{DoxyCompactList}\small\item\em Query whether this language is active at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLanguage_a7f6df7a2fae92c7d95c52f7f32435dbf}{find\+Regions}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}})
+\begin{DoxyCompactList}\small\item\em Find the document regions that were parsed using this language. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classLanguage_a0bd45e426de8004b120c3d8219217321}{allows\+Nesting}} ()
+\begin{DoxyCompactList}\small\item\em Indicates whether this language allows nested languages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A language object manages parsing and per-\/language \href{https://codemirror.net/6/docs/ref/\#state.EditorState.languageDataAt}{\texttt{ metadata}}. 
+
+\mbox{\hyperlink{classParse}{Parse}} data is managed as a \href{https://lezer.codemirror.net}{\texttt{ Lezer}} tree. The class can be used directly, via the \href{https://codemirror.net/6/docs/ref/\#language.LRLanguage}{\texttt{ {\ttfamily L\+R\+Language}}} subclass for \href{https://lezer.codemirror.net/}{\texttt{ Lezer}} LR parsers, or via the \href{https://codemirror.net/6/docs/ref/\#language.StreamLanguage}{\texttt{ {\ttfamily Stream\+Language}}} subclass for stream parsers. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLanguage_a0bd45e426de8004b120c3d8219217321}\label{classLanguage_a0bd45e426de8004b120c3d8219217321}} 
+\index{Language@{Language}!allowsNesting@{allowsNesting}}
+\index{allowsNesting@{allowsNesting}!Language@{Language}}
+\doxysubsubsection{\texorpdfstring{allowsNesting()}{allowsNesting()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Language\+::allows\+Nesting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicates whether this language allows nested languages. 
+
+The default implementation returns true. \mbox{\Hypertarget{classLanguage_a4a185271a9a9807d58c0d382974cc0c5}\label{classLanguage_a4a185271a9a9807d58c0d382974cc0c5}} 
+\index{Language@{Language}!constructor@{constructor}}
+\index{constructor@{constructor}!Language@{Language}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Language\+::constructor (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{parser,  }\item[{}]{extra\+Extensions = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Construct a language object. 
+
+If you need to invoke this directly, first define a data facet with \href{https://codemirror.net/6/docs/ref/\#language.defineLanguageFacet}{\texttt{ {\ttfamily define\+Language\+Facet}}}, and then configure your parser to \href{https://codemirror.net/6/docs/ref/\#language.languageDataProp}{\texttt{ attach}} it to the language\textquotesingle{}s outer syntax node. 
+\begin{DoxyParams}{Parameters}
+{\em data} & The \mbox{[}language data\mbox{]}(\href{https://codemirror.net/6/docs/ref/\#state.EditorState.languageDataAt}{\texttt{ https\+://codemirror.\+net/6/docs/ref/\#state.\+Editor\+State.\+language\+Data\+At}}) facet used for this language. \\
+\hline
+{\em name} & A language name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLanguage_a7f6df7a2fae92c7d95c52f7f32435dbf}\label{classLanguage_a7f6df7a2fae92c7d95c52f7f32435dbf}} 
+\index{Language@{Language}!findRegions@{findRegions}}
+\index{findRegions@{findRegions}!Language@{Language}}
+\doxysubsubsection{\texorpdfstring{findRegions()}{findRegions()}}
+{\footnotesize\ttfamily Language\+::find\+Regions (\begin{DoxyParamCaption}\item[{}]{state }\end{DoxyParamCaption})}
+
+
+
+Find the document regions that were parsed using this language. 
+
+The returned regions will {\itshape include} any nested languages rooted in this language, when those exist. \mbox{\Hypertarget{classLanguage_a24d8413b8d4ec014f7a0c58160bf4e97}\label{classLanguage_a24d8413b8d4ec014f7a0c58160bf4e97}} 
+\index{Language@{Language}!isActiveAt@{isActiveAt}}
+\index{isActiveAt@{isActiveAt}!Language@{Language}}
+\doxysubsubsection{\texorpdfstring{isActiveAt()}{isActiveAt()}}
+{\footnotesize\ttfamily Language\+::is\+Active\+At (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{pos,  }\item[{}]{side = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Query whether this language is active at the given position. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/language/dist/\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

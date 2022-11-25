@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['tag_128',['Tag',['../classTag.html',1,'']]],
-  ['template_129',['Template',['../classTemplate.html',1,'']]],
-  ['textrenderer_130',['TextRenderer',['../classTextRenderer.html',1,'']]],
-  ['tokcontext_131',['TokContext',['../classTokContext.html',1,'']]],
-  ['token_132',['Token',['../classToken.html',1,'']]],
-  ['tokenizer_133',['Tokenizer',['../classTokenizer.html',1,'']]],
-  ['tutorial_134',['Tutorial',['../classTutorial.html',1,'']]]
+  ['magicstring_6335',['MagicString',['../classMagicString.html',1,'']]],
+  ['mappings_6336',['Mappings',['../classMappings.html',1,'']]],
+  ['markdecoration_6337',['MarkDecoration',['../classMarkDecoration.html',1,'']]],
+  ['markview_6338',['MarkView',['../classMarkView.html',1,'']]],
+  ['matchdecorator_6339',['MatchDecorator',['../classMatchDecorator.html',1,'']]],
+  ['measuredheights_6340',['MeasuredHeights',['../classMeasuredHeights.html',1,'']]],
+  ['mixedparse_6341',['MixedParse',['../classMixedParse.html',1,'']]],
+  ['modifier_6342',['Modifier',['../classModifier.html',1,'']]],
+  ['mountedtree_6343',['MountedTree',['../classMountedTree.html',1,'']]],
+  ['mouseselection_6344',['MouseSelection',['../classMouseSelection.html',1,'']]],
+  ['multilineregexpcursor_6345',['MultilineRegExpCursor',['../classMultilineRegExpCursor.html',1,'']]]
 ];

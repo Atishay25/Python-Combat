@@ -1,0 +1,28 @@
+\hypertarget{caller_8js}{}\doxysection{node\+\_\+modules/resolve/lib/caller.js File Reference}
+\label{caller_8js}\index{node\_modules/resolve/lib/caller.js@{node\_modules/resolve/lib/caller.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{caller_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{caller_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{caller_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{caller.js@{caller.js}!exports@{exports}}
+\index{exports@{exports}!caller.js@{caller.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} () \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    var origPrepareStackTrace = Error.prepareStackTrace;}
+\DoxyCodeLine{    Error.prepareStackTrace = \textcolor{keyword}{function} (\mbox{\hyperlink{salty_8js_aea07e28bf8bb82799d8434d63dd4be73}{\_}}, stack) \{ \textcolor{keywordflow}{return} stack; \};}
+\DoxyCodeLine{    var stack = (\textcolor{keyword}{new} Error()).stack;}
+\DoxyCodeLine{    Error.prepareStackTrace = origPrepareStackTrace;}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} stack[2].getFileName();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

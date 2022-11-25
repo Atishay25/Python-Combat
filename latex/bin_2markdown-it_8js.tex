@@ -1,0 +1,97 @@
+\hypertarget{bin_2markdown-it_8js}{}\doxysection{node\+\_\+modules/markdown-\/it/bin/markdown-\/it.js File Reference}
+\label{bin_2markdown-it_8js}\index{node\_modules/markdown-\/it/bin/markdown-\/it.js@{node\_modules/markdown-\/it/bin/markdown-\/it.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{watch-cli_8js_a9aa2fcad8a38fec138d4f956c6f167fb}{cli}} \mbox{\hyperlink{bin_2markdown-it_8js_affd01f3d73b7992dd679cf637d4e6893}{add\+\_\+argument}} (\textquotesingle{}-\/\mbox{\hyperlink{marked_8min_8js_a04f81acaf03681ae51355601026861f4}{v}}\textquotesingle{}, \textquotesingle{}-\/-\/\mbox{\hyperlink{bin_2marked_8js_a6a6a8f7eba6069cf52bb2b09d086f005}{version}}\textquotesingle{}, \{ action\+:\textquotesingle{}\mbox{\hyperlink{bin_2marked_8js_a6a6a8f7eba6069cf52bb2b09d086f005}{version}}\textquotesingle{}, version\+:require(\textquotesingle{}../package.\+json\textquotesingle{}).\mbox{\hyperlink{bin_2marked_8js_a6a6a8f7eba6069cf52bb2b09d086f005}{version}} \})
+\item 
+\mbox{\hyperlink{watch-cli_8js_a9aa2fcad8a38fec138d4f956c6f167fb}{cli}} \mbox{\hyperlink{bin_2markdown-it_8js_a811dd5a9df61cc7e097f191adcc13c33}{add\+\_\+argument}} (\textquotesingle{}-\/-\/no-\/html\textquotesingle{}, \{ help\+:\textquotesingle{}Disable embedded H\+T\+ML\textquotesingle{}, action\+:\textquotesingle{}store\+\_\+true\textquotesingle{} \})
+\item 
+function \mbox{\hyperlink{bin_2markdown-it_8js_aa076e373bc577b7a6bf186c4296ae43e}{read\+File}} (\mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}}, encoding, callback)
+\item 
+\mbox{\hyperlink{bin_2markdown-it_8js_af0383f69ce4527933ed4e4c4519b95e0}{read\+File}} (options.\+file, \textquotesingle{}utf8\textquotesingle{}, function(err, input) \{ var \mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{output}}, md;\mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(err) \{ \mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(err.\+code===\textquotesingle{}E\+N\+O\+E\+NT\textquotesingle{}) \{ \mbox{\hyperlink{shared_2rollup_8js_a8bb803d616ea727eda8da0b54f6eacb2}{console.\+error}}(\textquotesingle{}File not found\+:\textquotesingle{}+options.\+file);process.\+exit(2);\} \mbox{\hyperlink{shared_2rollup_8js_a8bb803d616ea727eda8da0b54f6eacb2}{console.\+error}}(options.\+trace \&\&err.\+stack$\vert$$\vert$err.\+message$\vert$$\vert$String(err));process.\+exit(1);\} md=\mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}..\textquotesingle{})(\{ html\+:!options.\+no\+\_\+html, xhtml\+Out\+:false, typographer\+:options.\+typographer, linkify\+:options.\+linkify \});\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_abe4cc9788f52e49485473dc699537388}{try}} \{ \mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{output}}=\mbox{\hyperlink{renderer_8js_a8002f27286f77f35bfa035efd3754113}{md.\+render}}(input);\} \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a01f0810671e29d79cd35814fa97d3d55}{catch}}(\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}}) \{ \mbox{\hyperlink{shared_2rollup_8js_a8bb803d616ea727eda8da0b54f6eacb2}{console.\+error}}(options.\+trace \&\&e.\+stack$\vert$$\vert$e.\+message$\vert$$\vert$String(\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}}));process.\+exit(1);\} \mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(\mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{options.\+output}}===\textquotesingle{}-\/\textquotesingle{}) \{ process.\+stdout.\+write(\mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{output}});\} \mbox{\hyperlink{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}{else}} \{ fs.\+write\+File\+Sync(\mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{options.\+output}}, \mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{output}});\} \})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{bin_2markdown-it_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{bin_2markdown-it_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}fs\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bin_2markdown-it_8js_a246818e98aa50808458bc446af61deb5}{argparse}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}argparse\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bin_2markdown-it_8js_ae79e6aa2c261be86abdc7b11221d129f}{cli}}
+\item 
+var \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}} = cli.\+parse\+\_\+args()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{bin_2markdown-it_8js_a811dd5a9df61cc7e097f191adcc13c33}\label{bin_2markdown-it_8js_a811dd5a9df61cc7e097f191adcc13c33}} 
+\index{markdown-\/it.js@{markdown-\/it.js}!add\_argument@{add\_argument}}
+\index{add\_argument@{add\_argument}!markdown-\/it.js@{markdown-\/it.js}}
+\doxysubsubsection{\texorpdfstring{add\_argument()}{add\_argument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_a9aa2fcad8a38fec138d4f956c6f167fb}{cli}} add\+\_\+argument (\begin{DoxyParamCaption}\item[{\textquotesingle{}-\/-\/no-\/html\textquotesingle{}}]{,  }\item[{\{ help\+:\textquotesingle{}Disable embedded H\+T\+ML\textquotesingle{}, action\+:\textquotesingle{}store\+\_\+true\textquotesingle{} \}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bin_2markdown-it_8js_affd01f3d73b7992dd679cf637d4e6893}\label{bin_2markdown-it_8js_affd01f3d73b7992dd679cf637d4e6893}} 
+\index{markdown-\/it.js@{markdown-\/it.js}!add\_argument@{add\_argument}}
+\index{add\_argument@{add\_argument}!markdown-\/it.js@{markdown-\/it.js}}
+\doxysubsubsection{\texorpdfstring{add\_argument()}{add\_argument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_a9aa2fcad8a38fec138d4f956c6f167fb}{cli}} add\+\_\+argument (\begin{DoxyParamCaption}\item[{\textquotesingle{}-\/\mbox{\hyperlink{marked_8min_8js_a04f81acaf03681ae51355601026861f4}{v}}\textquotesingle{}}]{,  }\item[{\textquotesingle{}-\/-\/\mbox{\hyperlink{bin_2marked_8js_a6a6a8f7eba6069cf52bb2b09d086f005}{version}}\textquotesingle{}}]{,  }\item[{\{ action\+:\textquotesingle{}\mbox{\hyperlink{bin_2marked_8js_a6a6a8f7eba6069cf52bb2b09d086f005}{version}}\textquotesingle{}, version\+:require(\textquotesingle{}../package.\+json\textquotesingle{}).\mbox{\hyperlink{bin_2marked_8js_a6a6a8f7eba6069cf52bb2b09d086f005}{version}} \}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bin_2markdown-it_8js_aa076e373bc577b7a6bf186c4296ae43e}\label{bin_2markdown-it_8js_aa076e373bc577b7a6bf186c4296ae43e}} 
+\index{markdown-\/it.js@{markdown-\/it.js}!readFile@{readFile}}
+\index{readFile@{readFile}!markdown-\/it.js@{markdown-\/it.js}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily function read\+File (\begin{DoxyParamCaption}\item[{}]{filename,  }\item[{}]{encoding,  }\item[{}]{callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bin_2markdown-it_8js_af0383f69ce4527933ed4e4c4519b95e0}\label{bin_2markdown-it_8js_af0383f69ce4527933ed4e4c4519b95e0}} 
+\index{markdown-\/it.js@{markdown-\/it.js}!readFile@{readFile}}
+\index{readFile@{readFile}!markdown-\/it.js@{markdown-\/it.js}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily read\+File (\begin{DoxyParamCaption}\item[{options.}]{file,  }\item[{\textquotesingle{}utf8\textquotesingle{}}]{,  }\item[{function(err, input) \{ var \mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{output}}, md;\mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(err) \{ \mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(err.\+code===\textquotesingle{}E\+N\+O\+E\+NT\textquotesingle{}) \{ \mbox{\hyperlink{shared_2rollup_8js_a8bb803d616ea727eda8da0b54f6eacb2}{console.\+error}}(\textquotesingle{}File not found\+:\textquotesingle{}+options.\+file);process.\+exit(2);\} \mbox{\hyperlink{shared_2rollup_8js_a8bb803d616ea727eda8da0b54f6eacb2}{console.\+error}}(options.\+trace \&\&err.\+stack$\vert$$\vert$err.\+message$\vert$$\vert$String(err));process.\+exit(1);\} md=\mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}..\textquotesingle{})(\{ html\+:!options.\+no\+\_\+html, xhtml\+Out\+:false, typographer\+:options.\+typographer, linkify\+:options.\+linkify \});\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_abe4cc9788f52e49485473dc699537388}{try}} \{ \mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{output}}=\mbox{\hyperlink{renderer_8js_a8002f27286f77f35bfa035efd3754113}{md.\+render}}(input);\} \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a01f0810671e29d79cd35814fa97d3d55}{catch}}(\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}}) \{ \mbox{\hyperlink{shared_2rollup_8js_a8bb803d616ea727eda8da0b54f6eacb2}{console.\+error}}(options.\+trace \&\&e.\+stack$\vert$$\vert$e.\+message$\vert$$\vert$String(\mbox{\hyperlink{marked_8min_8js_a1be0a9fecd0d04bf52af1f1424d38095}{e}}));process.\+exit(1);\} \mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(\mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{options.\+output}}===\textquotesingle{}-\/\textquotesingle{}) \{ process.\+stdout.\+write(\mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{output}});\} \mbox{\hyperlink{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}{else}} \{ fs.\+write\+File\+Sync(\mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{options.\+output}}, \mbox{\hyperlink{shared_2rollup_8js_a2d8b1877122dee983d7dab8ddda2b881}{output}});\} \}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{bin_2markdown-it_8js_a246818e98aa50808458bc446af61deb5}\label{bin_2markdown-it_8js_a246818e98aa50808458bc446af61deb5}} 
+\index{markdown-\/it.js@{markdown-\/it.js}!argparse@{argparse}}
+\index{argparse@{argparse}!markdown-\/it.js@{markdown-\/it.js}}
+\doxysubsubsection{\texorpdfstring{argparse}{argparse}}
+{\footnotesize\ttfamily var argparse = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}argparse\textquotesingle{})}
+
+\mbox{\Hypertarget{bin_2markdown-it_8js_ae79e6aa2c261be86abdc7b11221d129f}\label{bin_2markdown-it_8js_ae79e6aa2c261be86abdc7b11221d129f}} 
+\index{markdown-\/it.js@{markdown-\/it.js}!cli@{cli}}
+\index{cli@{cli}!markdown-\/it.js@{markdown-\/it.js}}
+\doxysubsubsection{\texorpdfstring{cli}{cli}}
+{\footnotesize\ttfamily var cli}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \mbox{\hyperlink{bin_2markdown-it_8js_a246818e98aa50808458bc446af61deb5}{argparse}}.ArgumentParser(\{}
+\DoxyCodeLine{  prog: \textcolor{stringliteral}{'markdown-\/it'},}
+\DoxyCodeLine{  add\_help: \textcolor{keyword}{true}}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{bin_2markdown-it_8js_aebcdd70130f7e0b00b39cc981ab0bab0}\label{bin_2markdown-it_8js_aebcdd70130f7e0b00b39cc981ab0bab0}} 
+\index{markdown-\/it.js@{markdown-\/it.js}!fs@{fs}}
+\index{fs@{fs}!markdown-\/it.js@{markdown-\/it.js}}
+\doxysubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily var fs = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}fs\textquotesingle{})}
+
+\mbox{\Hypertarget{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}\label{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}} 
+\index{markdown-\/it.js@{markdown-\/it.js}!options@{options}}
+\index{options@{options}!markdown-\/it.js@{markdown-\/it.js}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{underscore-esm-min_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}{export}} options = cli.\+parse\+\_\+args()}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2debounce_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/debounce.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2mixin_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/mixin.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2template_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/template.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2throttle_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/throttle.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2truncate_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/truncate.\+js}}.\end{Desc}
+\mbox{\Hypertarget{bin_2markdown-it_8js_ae2475e10618961c050dcba04e8c42331}\label{bin_2markdown-it_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{markdown-\/it.js@{markdown-\/it.js}!strict@{strict}}
+\index{strict@{strict}!markdown-\/it.js@{markdown-\/it.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+

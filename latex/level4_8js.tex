@@ -1,34 +1,139 @@
-\hypertarget{level4_8js}{}\doxysection{level4/level4.js File Reference}
-\label{level4_8js}\index{level4/level4.js@{level4/level4.js}}
+\hypertarget{level4_8js}{}\doxysection{levels/level4/level4.js File Reference}
+\label{level4_8js}\index{levels/level4/level4.js@{levels/level4/level4.js}}
+
+
+J\+A\+V\+A\+S\+C\+R\+I\+PT F\+OR L\+E\+V\+EL 4.  
+
+
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-document \mbox{\hyperlink{level4_8js_a114c09d3a1ce0ae9dd50d5e080f4ab2c}{ready}} (function() \{ \mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=0;\mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{window.\+dict}}=\{\};\mbox{\hyperlink{level5_8js_a4bac0901fe7708f10d107a766fa3a0f5}{reloaded}}=true;\mbox{\hyperlink{level5_8js_a33f858d8b6bfb266df7f78612b2bde85}{pos\+\_\+x}}=0;\mbox{\hyperlink{level5_8js_ac257f49b93d90b30e9936fd62b833609}{pos\+\_\+y}}=0;var ver=6;var hori=6;var posx=0;var posy=0;var \mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}=0;var num=Math.\+random();if(num$<$ 0.\+5) \{ \mbox{\hyperlink{level4_8js_a9202c6ffdd6c29d04aa0f16f9ae909a4}{arena\+\_\+type}}=1;while(ver !=0) \{ \mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}+2 hori=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}};while(hori !=0) \{ hori=hori -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path horizontal\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posx=posx+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{} gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx -\/ 2)+posy;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} ver=ver -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path vertical\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posy=posy+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{};gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx)+posy -\/ 2;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});hori=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}};posx=posx -\/ 2;while(hori !=0) \{ hori=hori -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path horizontal\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posx=posx -\/ 2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{} gem.\+id=10000+100 $\ast$(posx+2)+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+2+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx+4)+posy;var next=100 $\ast$(posx+2)+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} ver=ver -\/ 1;posx=posx+2 elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path vertical\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posy=posy+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{};gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx)+posy -\/ 2;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} \} else if(num $>$ 0.\+5)\{ \mbox{\hyperlink{level4_8js_a9202c6ffdd6c29d04aa0f16f9ae909a4}{arena\+\_\+type}}=2;while(hori !=0) \{ \mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}+2;ver=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}};while(ver !=0) \{ ver=ver -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path vertical\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posy=posy+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{} gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx)+posy -\/ 2;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} hori=hori -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path horizontal\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posx=posx+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{};gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx -\/ 2)+posy;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});ver=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}};posy=posy -\/ 2;while(ver !=0) \{ ver=ver -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path vertical\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posy=posy -\/ 2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{} gem.\+id=10000+100 $\ast$(posx)+posy+2;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+2+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx)+posy+4;var next=100 $\ast$(posx)+posy+2;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} hori=hori -\/ 1;posy=posy+2 elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path horizontal\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posx=posx+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{};gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx -\/ 2)+posy;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} \} \}) \mbox{\hyperlink{level5_8js_ab41b0e12179ea31b35698fa48399e8d8}{change}}
-\end{DoxyCompactItemize}
+function \mbox{\hyperlink{level4_8js_a09a17e55f6e99aeca0ca34f45e3686fa}{speedup}} ()
+\begin{DoxyCompactList}\small\item\em This function is bind to the increase button it decreases the value of var speed so that animation time is less and hence speed increases finally. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level4_8js_aa04411e336425f2c0ee06a3e0cffd002}{speeddown}} ()
+\begin{DoxyCompactList}\small\item\em This function is bind to the decrease button it increases the value of var speed so that animation time is more and hence speed decreases finally. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level4_8js_af1a71bc0271588ea642af88b0e616a64}{create\+\_\+arena}} ()
+\begin{DoxyCompactList}\small\item\em This function creates the arena. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level4_8js_a5ecb5fb68a67bf16cfc16d6a6bd6fcf9}{walk}} (r)
+\begin{DoxyCompactList}\small\item\em This function controls the movement of warrior based on the input given. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level4_8js_a910aa9987e036f583038e3a11ad3f8f4}{check\+\_\+success}} (code)
+\begin{DoxyCompactList}\small\item\em This function is used for logger message of success or error. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level4_8js_a0c9c3c48752efaf54b967cfd55c821f5}{print\+\_\+stat}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to show print statement in the logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-var \mbox{\hyperlink{level4_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}} = 0
-\item 
+var \mbox{\hyperlink{level4_8js_a3135c549a994c3ddd161e694053e6af8}{total\+\_\+stones}} = 0
+\begin{DoxyCompactList}\small\item\em stores the total number of stones in the path \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level4_8js_a33f858d8b6bfb266df7f78612b2bde85}{pos\+\_\+x}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em stores the X-\/coordinate of warrior \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level4_8js_ac257f49b93d90b30e9936fd62b833609}{pos\+\_\+y}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em stores the Y-\/coordinate of warrior \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level4_8js_a4bac0901fe7708f10d107a766fa3a0f5}{reloaded}} = true
-\item 
-var \mbox{\hyperlink{level4_8js_a6ef3c80bdd4b0298d1f787bce7b4994a}{snowman\+\_\+killed}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em check if reloading was done before or not \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level4_8js_a9202c6ffdd6c29d04aa0f16f9ae909a4}{arena\+\_\+type}} = 0
+\begin{DoxyCompactList}\small\item\em check if arena was of type 1 or 2 \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{level4_8js_a2670abc5bb40c78d003183e0cb263877}{speed}} = 500
+\begin{DoxyCompactList}\small\item\em For the animation speed of the player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{level4_8js_ab2342bebd5d76586819359f53e99339a}{speed\+\_\+dict}} = \{250 \+: \char`\"{}fast\char`\"{}, 500 \+: \char`\"{}medium\char`\"{}, \char`\"{}750\char`\"{} \+: \char`\"{}slow\char`\"{}\}
+\begin{DoxyCompactList}\small\item\em maps speeds in milliseconds to the name corresponding to them. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{level4_8js_ac4188891dcf62e1bb5c5a24e1a709261}{speed\+\_\+show}} = document.\+get\+Element\+By\+Id(\char`\"{}speed\+\_\+\char`\"{})
+\begin{DoxyCompactList}\small\item\em The element in which we have to show speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{level5_8js_ac4188891dcf62e1bb5c5a24e1a709261}{speed\+\_\+show}} \mbox{\hyperlink{level4_8js_aa4bc26b2aa5a0e4bd90ce6931f49e18e}{inner\+H\+T\+ML}} = \mbox{\hyperlink{level5_8js_ab2342bebd5d76586819359f53e99339a}{speed\+\_\+dict}}\mbox{[}\mbox{\hyperlink{welcome_8js_a2670abc5bb40c78d003183e0cb263877}{speed}}\mbox{]}
+\item 
+var \mbox{\hyperlink{level4_8js_acc69707810d1669872f8199f16a0da20}{logger}} = document.\+get\+Element\+By\+Id(\textquotesingle{}\mbox{\hyperlink{level5_8js_a0bdea26f5c183c3dcb8d5501fa452991}{log}}\textquotesingle{})
+\item 
+console \mbox{\hyperlink{level4_8js_a0bdea26f5c183c3dcb8d5501fa452991}{log}}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Function Documentation}
-\mbox{\Hypertarget{level4_8js_a114c09d3a1ce0ae9dd50d5e080f4ab2c}\label{level4_8js_a114c09d3a1ce0ae9dd50d5e080f4ab2c}} 
-\index{level4.js@{level4.js}!ready@{ready}}
-\index{ready@{ready}!level4.js@{level4.js}}
-\doxysubsubsection{\texorpdfstring{ready()}{ready()}}
-{\footnotesize\ttfamily document ready (\begin{DoxyParamCaption}\item[{function() \{ \mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=0;\mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{window.\+dict}}=\{\};\mbox{\hyperlink{level5_8js_a4bac0901fe7708f10d107a766fa3a0f5}{reloaded}}=true;\mbox{\hyperlink{level5_8js_a33f858d8b6bfb266df7f78612b2bde85}{pos\+\_\+x}}=0;\mbox{\hyperlink{level5_8js_ac257f49b93d90b30e9936fd62b833609}{pos\+\_\+y}}=0;var ver=6;var hori=6;var posx=0;var posy=0;var \mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}=0;var num=Math.\+random();if(num$<$ 0.\+5) \{ \mbox{\hyperlink{level4_8js_a9202c6ffdd6c29d04aa0f16f9ae909a4}{arena\+\_\+type}}=1;while(ver !=0) \{ \mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}+2 hori=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}};while(hori !=0) \{ hori=hori -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path horizontal\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posx=posx+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{} gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx -\/ 2)+posy;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} ver=ver -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path vertical\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posy=posy+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{};gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx)+posy -\/ 2;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});hori=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}};posx=posx -\/ 2;while(hori !=0) \{ hori=hori -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path horizontal\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posx=posx -\/ 2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{} gem.\+id=10000+100 $\ast$(posx+2)+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+2+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx+4)+posy;var next=100 $\ast$(posx+2)+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} ver=ver -\/ 1;posx=posx+2 elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path vertical\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posy=posy+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{};gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx)+posy -\/ 2;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} \} else if(num $>$ 0.\+5)\{ \mbox{\hyperlink{level4_8js_a9202c6ffdd6c29d04aa0f16f9ae909a4}{arena\+\_\+type}}=2;while(hori !=0) \{ \mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}}+2;ver=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}};while(ver !=0) \{ ver=ver -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path vertical\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posy=posy+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{} gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx)+posy -\/ 2;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} hori=hori -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path horizontal\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posx=posx+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{};gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx -\/ 2)+posy;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});ver=\mbox{\hyperlink{welcome_8js_a5e25b1d1bed9ab5f3174b76d6a722180}{i}};posy=posy -\/ 2;while(ver !=0) \{ ver=ver -\/ 1;elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path vertical\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posy=posy -\/ 2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{} gem.\+id=10000+100 $\ast$(posx)+posy+2;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+2+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx)+posy+4;var next=100 $\ast$(posx)+posy+2;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} hori=hori -\/ 1;posy=posy+2 elem=document.\+create\+Element(\textquotesingle{}div\textquotesingle{});elem.\+id=100 $\ast$posx+posy;elem.\+class\+Name=\char`\"{}path horizontal\char`\"{};elem.\+style.\+left=posx+\char`\"{}cm\char`\"{};elem.\+style.\+top=posy+\char`\"{}cm\char`\"{};posx=posx+2;if(Math.\+random() $>$ 0.\+6) \{ gem=document.\+create\+Element(\textquotesingle{}img\textquotesingle{});gem.\+src=\char`\"{}../images/diamond.\+png\char`\"{};gem.\+id=10000+100 $\ast$posx+posy;gem.\+class\+Name=\char`\"{}gems\char`\"{};gem.\+style.\+left=posx+\char`\"{}cm\char`\"{};gem.\+style.\+top=posy+\char`\"{}cm\char`\"{};\$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}gem\mbox{]});\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}=\mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}}+1;\} var curr=100 $\ast$(posx -\/ 2)+posy;var next=100 $\ast$posx+posy;if(curr in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}.push(next);\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}curr\mbox{]}=\mbox{[}next\mbox{]};\} if(next in \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}.append\mbox{[}curr\mbox{]};\} else \{ \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}\mbox{[}next\mbox{]}=\mbox{[}curr\mbox{]};\} \$(\textquotesingle{}\#arena\textquotesingle{}).append(\mbox{[}elem\mbox{]});\} \} \}}]{ }\end{DoxyParamCaption})}
+\doxysubsection{Detailed Description}
+J\+A\+V\+A\+S\+C\+R\+I\+PT F\+OR L\+E\+V\+EL 4. 
 
+\begin{DoxyAuthor}{Author}
+Prolific Pythonists 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{level4_8js_a910aa9987e036f583038e3a11ad3f8f4}\label{level4_8js_a910aa9987e036f583038e3a11ad3f8f4}} 
+\index{level4.js@{level4.js}!check\_success@{check\_success}}
+\index{check\_success@{check\_success}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{check\_success()}{check\_success()}}
+{\footnotesize\ttfamily function check\+\_\+success (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+
+
+This function is used for logger message of success or error. 
+
+~\newline
+ final position of warrior and number of lines is checked in this function to check if user have successfully completed task or not. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & code code written by user as a string. This is used to calculate number of lines \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{level4_8js_af1a71bc0271588ea642af88b0e616a64}\label{level4_8js_af1a71bc0271588ea642af88b0e616a64}} 
+\index{level4.js@{level4.js}!create\_arena@{create\_arena}}
+\index{create\_arena@{create\_arena}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{create\_arena()}{create\_arena()}}
+{\footnotesize\ttfamily function create\+\_\+arena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function creates the arena. 
+
+There is code for two different arena we choose a random numberbetweeen 0 and 1 if number is less than 0.\+5 we choose arena\+\_\+type 1 else arena\+\_\+type 2.~\newline
+ For sprite of each path we again choose a randon number and if this number is greater than 0.\+6 we add a diamond at that point. \mbox{\Hypertarget{level4_8js_a0c9c3c48752efaf54b967cfd55c821f5}\label{level4_8js_a0c9c3c48752efaf54b967cfd55c821f5}} 
+\index{level4.js@{level4.js}!print\_stat@{print\_stat}}
+\index{print\_stat@{print\_stat}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{print\_stat()}{print\_stat()}}
+{\footnotesize\ttfamily function print\+\_\+stat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to show print statement in the logger. 
+
+~\newline
+ This function is implemented by overloading console.\+log function to show print statements on logger as well. \mbox{\Hypertarget{level4_8js_aa04411e336425f2c0ee06a3e0cffd002}\label{level4_8js_aa04411e336425f2c0ee06a3e0cffd002}} 
+\index{level4.js@{level4.js}!speeddown@{speeddown}}
+\index{speeddown@{speeddown}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{speeddown()}{speeddown()}}
+{\footnotesize\ttfamily function speeddown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is bind to the decrease button it increases the value of var speed so that animation time is more and hence speed decreases finally. 
+
+\mbox{\Hypertarget{level4_8js_a09a17e55f6e99aeca0ca34f45e3686fa}\label{level4_8js_a09a17e55f6e99aeca0ca34f45e3686fa}} 
+\index{level4.js@{level4.js}!speedup@{speedup}}
+\index{speedup@{speedup}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{speedup()}{speedup()}}
+{\footnotesize\ttfamily function speedup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is bind to the increase button it decreases the value of var speed so that animation time is less and hence speed increases finally. 
+
+\mbox{\Hypertarget{level4_8js_a5ecb5fb68a67bf16cfc16d6a6bd6fcf9}\label{level4_8js_a5ecb5fb68a67bf16cfc16d6a6bd6fcf9}} 
+\index{level4.js@{level4.js}!walk@{walk}}
+\index{walk@{walk}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{walk()}{walk()}}
+{\footnotesize\ttfamily function walk (\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+
+
+This function controls the movement of warrior based on the input given. 
+
+~\newline
+ Exception handling is also done in this function as while moving if warrior steps out of arena alert box is shown 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & r integer determining direction of traversal. 1 =$>$ move\+\_\+up, 2=$>$move\+\_\+down() 3 =$>$ move\+\_\+right() 4=$>$ move\+\_\+left ~\newline
+ \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Variable Documentation}
@@ -38,11 +143,53 @@ var \mbox{\hyperlink{level4_8js_a9202c6ffdd6c29d04aa0f16f9ae909a4}{arena\+\_\+ty
 \doxysubsubsection{\texorpdfstring{arena\_type}{arena\_type}}
 {\footnotesize\ttfamily var arena\+\_\+type = 0}
 
+
+
+check if arena was of type 1 or 2 
+
+\mbox{\Hypertarget{level4_8js_aa4bc26b2aa5a0e4bd90ce6931f49e18e}\label{level4_8js_aa4bc26b2aa5a0e4bd90ce6931f49e18e}} 
+\index{level4.js@{level4.js}!innerHTML@{innerHTML}}
+\index{innerHTML@{innerHTML}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{innerHTML}{innerHTML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{level5_8js_ac4188891dcf62e1bb5c5a24e1a709261}{speed\+\_\+show}} inner\+H\+T\+ML = \mbox{\hyperlink{level5_8js_ab2342bebd5d76586819359f53e99339a}{speed\+\_\+dict}}\mbox{[}\mbox{\hyperlink{welcome_8js_a2670abc5bb40c78d003183e0cb263877}{speed}}\mbox{]}}
+
+\mbox{\Hypertarget{level4_8js_a0bdea26f5c183c3dcb8d5501fa452991}\label{level4_8js_a0bdea26f5c183c3dcb8d5501fa452991}} 
+\index{level4.js@{level4.js}!log@{log}}
+\index{log@{log}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily console log}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (message) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (String(message).includes(\textcolor{stringliteral}{"level1/level1.html\#\_\_main\_\_"})) \{}
+\DoxyCodeLine{            \mbox{\hyperlink{level4_8js_acc69707810d1669872f8199f16a0da20}{logger}}.innerHTML += \textcolor{stringliteral}{"error"} + \textcolor{stringliteral}{'<br />'};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (typeof message == \textcolor{stringliteral}{'object'}) \{}
+\DoxyCodeLine{            \mbox{\hyperlink{level4_8js_acc69707810d1669872f8199f16a0da20}{logger}}.innerHTML += (JSON \&\& JSON.stringify ? JSON.stringify(message) : message) + \textcolor{stringliteral}{'<br />'};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{            \mbox{\hyperlink{level4_8js_acc69707810d1669872f8199f16a0da20}{logger}}.innerHTML += message + \textcolor{stringliteral}{'<br />'}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\})()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{level4_8js_acc69707810d1669872f8199f16a0da20}\label{level4_8js_acc69707810d1669872f8199f16a0da20}} 
+\index{level4.js@{level4.js}!logger@{logger}}
+\index{logger@{logger}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily var logger = document.\+get\+Element\+By\+Id(\textquotesingle{}\mbox{\hyperlink{level5_8js_a0bdea26f5c183c3dcb8d5501fa452991}{log}}\textquotesingle{})}
+
 \mbox{\Hypertarget{level4_8js_a33f858d8b6bfb266df7f78612b2bde85}\label{level4_8js_a33f858d8b6bfb266df7f78612b2bde85}} 
 \index{level4.js@{level4.js}!pos\_x@{pos\_x}}
 \index{pos\_x@{pos\_x}!level4.js@{level4.js}}
 \doxysubsubsection{\texorpdfstring{pos\_x}{pos\_x}}
 {\footnotesize\ttfamily var pos\+\_\+x = 0}
+
+
+
+stores the X-\/coordinate of warrior 
 
 \mbox{\Hypertarget{level4_8js_ac257f49b93d90b30e9936fd62b833609}\label{level4_8js_ac257f49b93d90b30e9936fd62b833609}} 
 \index{level4.js@{level4.js}!pos\_y@{pos\_y}}
@@ -50,21 +197,57 @@ var \mbox{\hyperlink{level4_8js_a9202c6ffdd6c29d04aa0f16f9ae909a4}{arena\+\_\+ty
 \doxysubsubsection{\texorpdfstring{pos\_y}{pos\_y}}
 {\footnotesize\ttfamily var pos\+\_\+y = 0}
 
+
+
+stores the Y-\/coordinate of warrior 
+
 \mbox{\Hypertarget{level4_8js_a4bac0901fe7708f10d107a766fa3a0f5}\label{level4_8js_a4bac0901fe7708f10d107a766fa3a0f5}} 
 \index{level4.js@{level4.js}!reloaded@{reloaded}}
 \index{reloaded@{reloaded}!level4.js@{level4.js}}
 \doxysubsubsection{\texorpdfstring{reloaded}{reloaded}}
 {\footnotesize\ttfamily var reloaded = true}
 
-\mbox{\Hypertarget{level4_8js_a6ef3c80bdd4b0298d1f787bce7b4994a}\label{level4_8js_a6ef3c80bdd4b0298d1f787bce7b4994a}} 
-\index{level4.js@{level4.js}!snowman\_killed@{snowman\_killed}}
-\index{snowman\_killed@{snowman\_killed}!level4.js@{level4.js}}
-\doxysubsubsection{\texorpdfstring{snowman\_killed}{snowman\_killed}}
-{\footnotesize\ttfamily var snowman\+\_\+killed = 0}
 
-\mbox{\Hypertarget{level4_8js_a2bef55933b6664b1d7d760a9334d6c7e}\label{level4_8js_a2bef55933b6664b1d7d760a9334d6c7e}} 
-\index{level4.js@{level4.js}!total\_gems@{total\_gems}}
-\index{total\_gems@{total\_gems}!level4.js@{level4.js}}
-\doxysubsubsection{\texorpdfstring{total\_gems}{total\_gems}}
-{\footnotesize\ttfamily var total\+\_\+gems = 0}
+
+check if reloading was done before or not 
+
+\mbox{\Hypertarget{level4_8js_a2670abc5bb40c78d003183e0cb263877}\label{level4_8js_a2670abc5bb40c78d003183e0cb263877}} 
+\index{level4.js@{level4.js}!speed@{speed}}
+\index{speed@{speed}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily var speed = 500}
+
+
+
+For the animation speed of the player. 
+
+\mbox{\Hypertarget{level4_8js_ab2342bebd5d76586819359f53e99339a}\label{level4_8js_ab2342bebd5d76586819359f53e99339a}} 
+\index{level4.js@{level4.js}!speed\_dict@{speed\_dict}}
+\index{speed\_dict@{speed\_dict}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{speed\_dict}{speed\_dict}}
+{\footnotesize\ttfamily speed\+\_\+dict = \{250 \+: \char`\"{}fast\char`\"{}, 500 \+: \char`\"{}medium\char`\"{}, \char`\"{}750\char`\"{} \+: \char`\"{}slow\char`\"{}\}}
+
+
+
+maps speeds in milliseconds to the name corresponding to them. 
+
+\mbox{\Hypertarget{level4_8js_ac4188891dcf62e1bb5c5a24e1a709261}\label{level4_8js_ac4188891dcf62e1bb5c5a24e1a709261}} 
+\index{level4.js@{level4.js}!speed\_show@{speed\_show}}
+\index{speed\_show@{speed\_show}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{speed\_show}{speed\_show}}
+{\footnotesize\ttfamily const speed\+\_\+show = document.\+get\+Element\+By\+Id(\char`\"{}speed\+\_\+\char`\"{})}
+
+
+
+The element in which we have to show speed. 
+
+\mbox{\Hypertarget{level4_8js_a3135c549a994c3ddd161e694053e6af8}\label{level4_8js_a3135c549a994c3ddd161e694053e6af8}} 
+\index{level4.js@{level4.js}!total\_stones@{total\_stones}}
+\index{total\_stones@{total\_stones}!level4.js@{level4.js}}
+\doxysubsubsection{\texorpdfstring{total\_stones}{total\_stones}}
+{\footnotesize\ttfamily var total\+\_\+stones = 0}
+
+
+
+stores the total number of stones in the path 
 

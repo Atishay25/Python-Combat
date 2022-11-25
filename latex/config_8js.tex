@@ -1,0 +1,84 @@
+\hypertarget{config_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/config.js File Reference}
+\label{config_8js}\index{node\_modules/jsdoc/lib/jsdoc/config.js@{node\_modules/jsdoc/lib/jsdoc/config.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classConfig}{Config}}
+\begin{DoxyCompactList}\small\item\em Represents a J\+S\+Doc application configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{config_8js_a874589ba75f792bf7d93123af7ba2b4e}{merge\+Recurse}} (target, source)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{config_8js_a9d13d03a4f09ccf157d8f70e9eaf0056}{strip\+Bom}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/stripbom\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em @module jsdoc/config \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{config_8js_a310b5c100b01d6bc277c5575c423d0aa}{strip\+Json\+Comments}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{stripbom_8js_af9ac558436e8832dd528450c202d510a}{strip}}-\/json-\/comments\textquotesingle{})
+\item 
+const \mbox{\hyperlink{config_8js_a0961a9082a3c29a502cfedfa440ec325}{defaults}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{config_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{classConfig}{Config}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{config_8js_a874589ba75f792bf7d93123af7ba2b4e}\label{config_8js_a874589ba75f792bf7d93123af7ba2b4e}} 
+\index{config.js@{config.js}!mergeRecurse@{mergeRecurse}}
+\index{mergeRecurse@{mergeRecurse}!config.js@{config.js}}
+\doxysubsubsection{\texorpdfstring{mergeRecurse()}{mergeRecurse()}}
+{\footnotesize\ttfamily function merge\+Recurse (\begin{DoxyParamCaption}\item[{}]{target,  }\item[{}]{source }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{config_8js_a0961a9082a3c29a502cfedfa440ec325}\label{config_8js_a0961a9082a3c29a502cfedfa440ec325}} 
+\index{config.js@{config.js}!defaults@{defaults}}
+\index{defaults@{defaults}!config.js@{config.js}}
+\doxysubsubsection{\texorpdfstring{defaults}{defaults}}
+{\footnotesize\ttfamily const defaults}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    plugins: [],}
+\DoxyCodeLine{    recurseDepth: 10,}
+\DoxyCodeLine{    source: \{}
+\DoxyCodeLine{        includePattern: \textcolor{stringliteral}{'.+\(\backslash\)\(\backslash\).js(doc|x)?\$'},}
+\DoxyCodeLine{        excludePattern: \textcolor{stringliteral}{''}}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    sourceType: \textcolor{stringliteral}{'module'},}
+\DoxyCodeLine{    \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aa7c4e5a86e05e636357c26c839d89dae}{tags}}: \{}
+\DoxyCodeLine{        allowUnknownTags: \textcolor{keyword}{true},}
+\DoxyCodeLine{        dictionaries: [\textcolor{stringliteral}{'jsdoc'}, \textcolor{stringliteral}{'closure'}]}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    templates: \{}
+\DoxyCodeLine{        monospaceLinks: \textcolor{keyword}{false},}
+\DoxyCodeLine{        cleverLinks: \textcolor{keyword}{false}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{config_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{config_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{config.js@{config.js}!exports@{exports}}
+\index{exports@{exports}!config.js@{config.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{classConfig}{Config}}}
+
+\mbox{\Hypertarget{config_8js_a9d13d03a4f09ccf157d8f70e9eaf0056}\label{config_8js_a9d13d03a4f09ccf157d8f70e9eaf0056}} 
+\index{config.js@{config.js}!stripBom@{stripBom}}
+\index{stripBom@{stripBom}!config.js@{config.js}}
+\doxysubsubsection{\texorpdfstring{stripBom}{stripBom}}
+{\footnotesize\ttfamily const strip\+Bom = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/stripbom\textquotesingle{})}
+
+
+
+@module jsdoc/config 
+
+\mbox{\Hypertarget{config_8js_a310b5c100b01d6bc277c5575c423d0aa}\label{config_8js_a310b5c100b01d6bc277c5575c423d0aa}} 
+\index{config.js@{config.js}!stripJsonComments@{stripJsonComments}}
+\index{stripJsonComments@{stripJsonComments}!config.js@{config.js}}
+\doxysubsubsection{\texorpdfstring{stripJsonComments}{stripJsonComments}}
+{\footnotesize\ttfamily const strip\+Json\+Comments = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{stripbom_8js_af9ac558436e8832dd528450c202d510a}{strip}}-\/json-\/comments\textquotesingle{})}
+

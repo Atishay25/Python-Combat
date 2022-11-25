@@ -1,43 +1,70 @@
-\hypertarget{level5_8js}{}\doxysection{level5/level5.js File Reference}
-\label{level5_8js}\index{level5/level5.js@{level5/level5.js}}
+\hypertarget{level5_8js}{}\doxysection{levels/level5/level5.js File Reference}
+\label{level5_8js}\index{levels/level5/level5.js@{levels/level5/level5.js}}
+
+
+J\+A\+V\+A\+S\+C\+R\+I\+PT F\+OR L\+E\+V\+EL 5.  
+
+
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+function \mbox{\hyperlink{level5_8js_af1a71bc0271588ea642af88b0e616a64}{create\+\_\+arena}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to restore the values of the global variables after reload. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level5_8js_a09a17e55f6e99aeca0ca34f45e3686fa}{speedup}} ()
+\begin{DoxyCompactList}\small\item\em This function is bind to the increase button it decreases the value of var speed so that animation time is less and hence speed increases finally. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level5_8js_aa04411e336425f2c0ee06a3e0cffd002}{speeddown}} ()
+\begin{DoxyCompactList}\small\item\em This function is bind to the decrease button it increases the value of var speed so that animation time is more and hence speed decreases finally. \end{DoxyCompactList}\item 
 function \mbox{\hyperlink{level5_8js_a54600586351a080b43155fee6e80e8aa}{weapon}} ()
-\begin{DoxyCompactList}\small\item\em lmao function \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This function checks if the gem is collected or not in order. \end{DoxyCompactList}\item 
 function \mbox{\hyperlink{level5_8js_a9aa99c9dbb8de7809a3697733d09a852}{check\+\_\+success}} ()
-\begin{DoxyCompactList}\small\item\em A\+DD weapn wala. \end{DoxyCompactList}\item 
-function \mbox{\hyperlink{level5_8js_a0c9c3c48752efaf54b967cfd55c821f5}{print\+\_\+stat}} ()
-\begin{DoxyCompactList}\small\item\em A\+DD weapn wala. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em The function checks if the players code is correct or not. \end{DoxyCompactList}\item 
 function \mbox{\hyperlink{level5_8js_a84bcf5bfe8063fd1bd2fa8e56d591cfd}{add\+\_\+weapon}} (px, py, n)
-\begin{DoxyCompactList}\small\item\em A\+DD weapn wala. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function is used to add gems on the arena using the location parameters like px, py provided from brython. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level5_8js_a5ecb5fb68a67bf16cfc16d6a6bd6fcf9}{walk}} (r)
+\begin{DoxyCompactList}\small\item\em This function controls the movement of warrior based on the input given. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{level5_8js_a0c9c3c48752efaf54b967cfd55c821f5}{print\+\_\+stat}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to show print statement in the logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 var \mbox{\hyperlink{level5_8js_ab20bff61ad3609ada756234412a4e33c}{gem\+\_\+found}} = \mbox{[}false, false, false, false, false\mbox{]}
-\item 
-var \mbox{\hyperlink{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}{total\+\_\+gems}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em The list stores info about which gems are collected. \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level5_8js_a33f858d8b6bfb266df7f78612b2bde85}{pos\+\_\+x}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em stores the X-\/coordinate of warrior \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level5_8js_ac257f49b93d90b30e9936fd62b833609}{pos\+\_\+y}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em stores the Y-\/coordinate of warrior \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level5_8js_a4bac0901fe7708f10d107a766fa3a0f5}{reloaded}} = true
-\item 
+\begin{DoxyCompactList}\small\item\em check if reloading was done before or not \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level5_8js_a985fd6403acb067dc86c6a271426ae89}{insequence}} = true
-\item 
+\begin{DoxyCompactList}\small\item\em it stores true if the gems are collected in sequence else false. \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level5_8js_aeaa663a00ea51b99464a4b5f0f6643c2}{id\+\_\+order}} = \mbox{[}$\,$\mbox{]}
-\item 
+\begin{DoxyCompactList}\small\item\em it stores the values as the gems are added to the arena. \end{DoxyCompactList}\item 
 var \mbox{\hyperlink{level5_8js_ae4b896af19aae26b1e5317acf4126807}{index}} = 0
-\item 
-window \mbox{\hyperlink{level5_8js_a37bf353e1618cbf53638b1219eddd197}{dict}} = \{\}
-\item 
-\mbox{\hyperlink{level5_8js_ab41b0e12179ea31b35698fa48399e8d8}{change}}
+\begin{DoxyCompactList}\small\item\em stores the index upto which the gems found are checked while checking in animate part of jquery.~\newline
+This is required since jquery implements animation through queue. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{level5_8js_a2670abc5bb40c78d003183e0cb263877}{speed}} = 500
+\begin{DoxyCompactList}\small\item\em For the animation speed of the player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{level5_8js_ab2342bebd5d76586819359f53e99339a}{speed\+\_\+dict}} = \{250 \+: \char`\"{}fast\char`\"{}, 500 \+: \char`\"{}medium\char`\"{}, \char`\"{}750\char`\"{} \+: \char`\"{}slow\char`\"{}\}
+\begin{DoxyCompactList}\small\item\em maps speeds in milliseconds to the name corresponding to them. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{level5_8js_ac4188891dcf62e1bb5c5a24e1a709261}{speed\+\_\+show}} = document.\+get\+Element\+By\+Id(\char`\"{}speed\+\_\+\char`\"{})
+\begin{DoxyCompactList}\small\item\em The element in which we have to show speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{level5_8js_ac4188891dcf62e1bb5c5a24e1a709261}{speed\+\_\+show}} \mbox{\hyperlink{level5_8js_aa4bc26b2aa5a0e4bd90ce6931f49e18e}{inner\+H\+T\+ML}} = \mbox{\hyperlink{level5_8js_ab2342bebd5d76586819359f53e99339a}{speed\+\_\+dict}}\mbox{[}\mbox{\hyperlink{welcome_8js_a2670abc5bb40c78d003183e0cb263877}{speed}}\mbox{]}
 \item 
 var \mbox{\hyperlink{level5_8js_acc69707810d1669872f8199f16a0da20}{logger}} = document.\+get\+Element\+By\+Id(\textquotesingle{}\mbox{\hyperlink{level5_8js_a0bdea26f5c183c3dcb8d5501fa452991}{log}}\textquotesingle{})
 \item 
 console \mbox{\hyperlink{level5_8js_a0bdea26f5c183c3dcb8d5501fa452991}{log}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+J\+A\+V\+A\+S\+C\+R\+I\+PT F\+OR L\+E\+V\+EL 5. 
+
+\begin{DoxyAuthor}{Author}
+Prolific Pythonists 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2022 
+\end{DoxyDate}
 
 
 \doxysubsection{Function Documentation}
@@ -49,9 +76,10 @@ console \mbox{\hyperlink{level5_8js_a0bdea26f5c183c3dcb8d5501fa452991}{log}}
 
 
 
-A\+DD weapn wala. 
+This function is used to add gems on the arena using the location parameters like px, py provided from brython. 
 
-
+~\newline
+ n is used to indicate the nth gem added. 
 \begin{DoxyParams}{Parameters}
 {\em \{$\ast$\}} & px \\
 \hline
@@ -68,19 +96,19 @@ A\+DD weapn wala.
 
 
 
-A\+DD weapn wala. 
+The function checks if the players code is correct or not. 
 
-check
+~\newline
+ If it is correct then it prints the message and if it is not, it will reload page after 5 second. \mbox{\Hypertarget{level5_8js_af1a71bc0271588ea642af88b0e616a64}\label{level5_8js_af1a71bc0271588ea642af88b0e616a64}} 
+\index{level5.js@{level5.js}!create\_arena@{create\_arena}}
+\index{create\_arena@{create\_arena}!level5.js@{level5.js}}
+\doxysubsubsection{\texorpdfstring{create\_arena()}{create\_arena()}}
+{\footnotesize\ttfamily function create\+\_\+arena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
-\begin{DoxyParams}{Parameters}
-{\em \{$\ast$\}} & px \\
-\hline
-{\em \{$\ast$\}} & py \\
-\hline
-{\em \{$\ast$\}} & n \\
-\hline
-\end{DoxyParams}
+
+This function is used to restore the values of the global variables after reload. 
+
 \mbox{\Hypertarget{level5_8js_a0c9c3c48752efaf54b967cfd55c821f5}\label{level5_8js_a0c9c3c48752efaf54b967cfd55c821f5}} 
 \index{level5.js@{level5.js}!print\_stat@{print\_stat}}
 \index{print\_stat@{print\_stat}!level5.js@{level5.js}}
@@ -89,15 +117,44 @@ check
 
 
 
-A\+DD weapn wala. 
+This function is used to show print statement in the logger. 
+
+~\newline
+ This function is implemented by overloading console.\+log function to show print statements on logger as well. \mbox{\Hypertarget{level5_8js_aa04411e336425f2c0ee06a3e0cffd002}\label{level5_8js_aa04411e336425f2c0ee06a3e0cffd002}} 
+\index{level5.js@{level5.js}!speeddown@{speeddown}}
+\index{speeddown@{speeddown}!level5.js@{level5.js}}
+\doxysubsubsection{\texorpdfstring{speeddown()}{speeddown()}}
+{\footnotesize\ttfamily function speeddown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+This function is bind to the decrease button it increases the value of var speed so that animation time is more and hence speed decreases finally. 
+
+\mbox{\Hypertarget{level5_8js_a09a17e55f6e99aeca0ca34f45e3686fa}\label{level5_8js_a09a17e55f6e99aeca0ca34f45e3686fa}} 
+\index{level5.js@{level5.js}!speedup@{speedup}}
+\index{speedup@{speedup}!level5.js@{level5.js}}
+\doxysubsubsection{\texorpdfstring{speedup()}{speedup()}}
+{\footnotesize\ttfamily function speedup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is bind to the increase button it decreases the value of var speed so that animation time is less and hence speed increases finally. 
+
+\mbox{\Hypertarget{level5_8js_a5ecb5fb68a67bf16cfc16d6a6bd6fcf9}\label{level5_8js_a5ecb5fb68a67bf16cfc16d6a6bd6fcf9}} 
+\index{level5.js@{level5.js}!walk@{walk}}
+\index{walk@{walk}!level5.js@{level5.js}}
+\doxysubsubsection{\texorpdfstring{walk()}{walk()}}
+{\footnotesize\ttfamily function walk (\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+
+
+This function controls the movement of warrior based on the input given. 
+
+~\newline
+ Exception handling is also done in this function as while moving if warrior steps out of arena alert box is shown 
 \begin{DoxyParams}{Parameters}
-{\em \{$\ast$\}} & px \\
-\hline
-{\em \{$\ast$\}} & py \\
-\hline
-{\em \{$\ast$\}} & n \\
+{\em \{int\}} & r integer determining direction of traversal. 1 =$>$ move\+\_\+up, 2=$>$move\+\_\+down() 3 =$>$ move\+\_\+right() 4=$>$ move\+\_\+left ~\newline
+ \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{level5_8js_a54600586351a080b43155fee6e80e8aa}\label{level5_8js_a54600586351a080b43155fee6e80e8aa}} 
@@ -108,37 +165,21 @@ A\+DD weapn wala.
 
 
 
-lmao function 
+This function checks if the gem is collected or not in order. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em \{$\ast$\}} & px \\
-\hline
-{\em \{$\ast$\}} & py \\
-\hline
-{\em \{$\ast$\}} & n \\
-\hline
-\end{DoxyParams}
-
+~\newline
+It sets value of insequence to be true if gems are collected in correct order. 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{level5_8js_ab41b0e12179ea31b35698fa48399e8d8}\label{level5_8js_ab41b0e12179ea31b35698fa48399e8d8}} 
-\index{level5.js@{level5.js}!change@{change}}
-\index{change@{change}!level5.js@{level5.js}}
-\doxysubsubsection{\texorpdfstring{change}{change}}
-{\footnotesize\ttfamily change}
-
-\mbox{\Hypertarget{level5_8js_a37bf353e1618cbf53638b1219eddd197}\label{level5_8js_a37bf353e1618cbf53638b1219eddd197}} 
-\index{level5.js@{level5.js}!dict@{dict}}
-\index{dict@{dict}!level5.js@{level5.js}}
-\doxysubsubsection{\texorpdfstring{dict}{dict}}
-{\footnotesize\ttfamily window dict = \{\}}
-
 \mbox{\Hypertarget{level5_8js_ab20bff61ad3609ada756234412a4e33c}\label{level5_8js_ab20bff61ad3609ada756234412a4e33c}} 
 \index{level5.js@{level5.js}!gem\_found@{gem\_found}}
 \index{gem\_found@{gem\_found}!level5.js@{level5.js}}
 \doxysubsubsection{\texorpdfstring{gem\_found}{gem\_found}}
 {\footnotesize\ttfamily var gem\+\_\+found = \mbox{[}false, false, false, false, false\mbox{]}}
+
+
+
+The list stores info about which gems are collected. 
 
 \mbox{\Hypertarget{level5_8js_aeaa663a00ea51b99464a4b5f0f6643c2}\label{level5_8js_aeaa663a00ea51b99464a4b5f0f6643c2}} 
 \index{level5.js@{level5.js}!id\_order@{id\_order}}
@@ -146,17 +187,36 @@ lmao function
 \doxysubsubsection{\texorpdfstring{id\_order}{id\_order}}
 {\footnotesize\ttfamily var id\+\_\+order = \mbox{[}$\,$\mbox{]}}
 
+
+
+it stores the values as the gems are added to the arena. 
+
 \mbox{\Hypertarget{level5_8js_ae4b896af19aae26b1e5317acf4126807}\label{level5_8js_ae4b896af19aae26b1e5317acf4126807}} 
 \index{level5.js@{level5.js}!index@{index}}
 \index{index@{index}!level5.js@{level5.js}}
 \doxysubsubsection{\texorpdfstring{index}{index}}
 {\footnotesize\ttfamily var index = 0}
 
+
+
+stores the index upto which the gems found are checked while checking in animate part of jquery.~\newline
+This is required since jquery implements animation through queue. 
+
+\mbox{\Hypertarget{level5_8js_aa4bc26b2aa5a0e4bd90ce6931f49e18e}\label{level5_8js_aa4bc26b2aa5a0e4bd90ce6931f49e18e}} 
+\index{level5.js@{level5.js}!innerHTML@{innerHTML}}
+\index{innerHTML@{innerHTML}!level5.js@{level5.js}}
+\doxysubsubsection{\texorpdfstring{innerHTML}{innerHTML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{level5_8js_ac4188891dcf62e1bb5c5a24e1a709261}{speed\+\_\+show}} inner\+H\+T\+ML = \mbox{\hyperlink{level5_8js_ab2342bebd5d76586819359f53e99339a}{speed\+\_\+dict}}\mbox{[}\mbox{\hyperlink{welcome_8js_a2670abc5bb40c78d003183e0cb263877}{speed}}\mbox{]}}
+
 \mbox{\Hypertarget{level5_8js_a985fd6403acb067dc86c6a271426ae89}\label{level5_8js_a985fd6403acb067dc86c6a271426ae89}} 
 \index{level5.js@{level5.js}!insequence@{insequence}}
 \index{insequence@{insequence}!level5.js@{level5.js}}
 \doxysubsubsection{\texorpdfstring{insequence}{insequence}}
 {\footnotesize\ttfamily var insequence = true}
+
+
+
+it stores true if the gems are collected in sequence else false. 
 
 \mbox{\Hypertarget{level5_8js_a0bdea26f5c183c3dcb8d5501fa452991}\label{level5_8js_a0bdea26f5c183c3dcb8d5501fa452991}} 
 \index{level5.js@{level5.js}!log@{log}}
@@ -167,10 +227,7 @@ lmao function
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{= \textcolor{keyword}{function} (message) \{}
-\DoxyCodeLine{        \textcolor{keywordflow}{if}(String(message).includes(\textcolor{stringliteral}{"level1/level1.html\#\_\_main\_\_"}))\{}
-\DoxyCodeLine{            \mbox{\hyperlink{level5_8js_acc69707810d1669872f8199f16a0da20}{logger}}.innerHTML += \textcolor{stringliteral}{"error"} + \textcolor{stringliteral}{'<br />'};}
-\DoxyCodeLine{        \}}
-\DoxyCodeLine{        \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (typeof message == \textcolor{stringliteral}{'object'}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (typeof message == \textcolor{stringliteral}{'object'}) \{}
 \DoxyCodeLine{            \mbox{\hyperlink{level5_8js_acc69707810d1669872f8199f16a0da20}{logger}}.innerHTML += (JSON \&\& JSON.stringify ? JSON.stringify(message) : message) + \textcolor{stringliteral}{'<br />'};}
 \DoxyCodeLine{        \}}
 \DoxyCodeLine{        \textcolor{keywordflow}{else}\{}
@@ -192,11 +249,19 @@ lmao function
 \doxysubsubsection{\texorpdfstring{pos\_x}{pos\_x}}
 {\footnotesize\ttfamily var pos\+\_\+x = 0}
 
+
+
+stores the X-\/coordinate of warrior 
+
 \mbox{\Hypertarget{level5_8js_ac257f49b93d90b30e9936fd62b833609}\label{level5_8js_ac257f49b93d90b30e9936fd62b833609}} 
 \index{level5.js@{level5.js}!pos\_y@{pos\_y}}
 \index{pos\_y@{pos\_y}!level5.js@{level5.js}}
 \doxysubsubsection{\texorpdfstring{pos\_y}{pos\_y}}
 {\footnotesize\ttfamily var pos\+\_\+y = 0}
+
+
+
+stores the Y-\/coordinate of warrior 
 
 \mbox{\Hypertarget{level5_8js_a4bac0901fe7708f10d107a766fa3a0f5}\label{level5_8js_a4bac0901fe7708f10d107a766fa3a0f5}} 
 \index{level5.js@{level5.js}!reloaded@{reloaded}}
@@ -204,9 +269,37 @@ lmao function
 \doxysubsubsection{\texorpdfstring{reloaded}{reloaded}}
 {\footnotesize\ttfamily var reloaded = true}
 
-\mbox{\Hypertarget{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}\label{level5_8js_a2bef55933b6664b1d7d760a9334d6c7e}} 
-\index{level5.js@{level5.js}!total\_gems@{total\_gems}}
-\index{total\_gems@{total\_gems}!level5.js@{level5.js}}
-\doxysubsubsection{\texorpdfstring{total\_gems}{total\_gems}}
-{\footnotesize\ttfamily var total\+\_\+gems = 0}
+
+
+check if reloading was done before or not 
+
+\mbox{\Hypertarget{level5_8js_a2670abc5bb40c78d003183e0cb263877}\label{level5_8js_a2670abc5bb40c78d003183e0cb263877}} 
+\index{level5.js@{level5.js}!speed@{speed}}
+\index{speed@{speed}!level5.js@{level5.js}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily var speed = 500}
+
+
+
+For the animation speed of the player. 
+
+\mbox{\Hypertarget{level5_8js_ab2342bebd5d76586819359f53e99339a}\label{level5_8js_ab2342bebd5d76586819359f53e99339a}} 
+\index{level5.js@{level5.js}!speed\_dict@{speed\_dict}}
+\index{speed\_dict@{speed\_dict}!level5.js@{level5.js}}
+\doxysubsubsection{\texorpdfstring{speed\_dict}{speed\_dict}}
+{\footnotesize\ttfamily speed\+\_\+dict = \{250 \+: \char`\"{}fast\char`\"{}, 500 \+: \char`\"{}medium\char`\"{}, \char`\"{}750\char`\"{} \+: \char`\"{}slow\char`\"{}\}}
+
+
+
+maps speeds in milliseconds to the name corresponding to them. 
+
+\mbox{\Hypertarget{level5_8js_ac4188891dcf62e1bb5c5a24e1a709261}\label{level5_8js_ac4188891dcf62e1bb5c5a24e1a709261}} 
+\index{level5.js@{level5.js}!speed\_show@{speed\_show}}
+\index{speed\_show@{speed\_show}!level5.js@{level5.js}}
+\doxysubsubsection{\texorpdfstring{speed\_show}{speed\_show}}
+{\footnotesize\ttfamily const speed\+\_\+show = document.\+get\+Element\+By\+Id(\char`\"{}speed\+\_\+\char`\"{})}
+
+
+
+The element in which we have to show speed. 
 

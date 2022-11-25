@@ -1,0 +1,68 @@
+\hypertarget{is-builtin-module_2index_8js}{}\doxysection{node\+\_\+modules/is-\/builtin-\/module/index.js File Reference}
+\label{is-builtin-module_2index_8js}\index{node\_modules/is-\/builtin-\/module/index.js@{node\_modules/is-\/builtin-\/module/index.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{is-builtin-module_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+const \mbox{\hyperlink{is-builtin-module_2index_8js_a504846a8fa147225d7b7e50a1a58bc62}{builtin\+Modules}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}builtin-\/modules\textquotesingle{})
+\item 
+const \mbox{\hyperlink{is-builtin-module_2index_8js_a575d57b6492826d1c8135b5c517e1c27}{module\+Set}} = new \mbox{\hyperlink{__Set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}(\mbox{\hyperlink{is-builtin-module_2index_8js_a504846a8fa147225d7b7e50a1a58bc62}{builtin\+Modules}})
+\item 
+const \mbox{\hyperlink{is-builtin-module_2index_8js_a78a75b06a077cbec45ad49d388382ed7}{N\+O\+D\+E\+\_\+\+P\+R\+O\+T\+O\+C\+OL}} = \textquotesingle{}node\+:\textquotesingle{}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{is-builtin-module_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{is-builtin-module_2index_8js_a504846a8fa147225d7b7e50a1a58bc62}\label{is-builtin-module_2index_8js_a504846a8fa147225d7b7e50a1a58bc62}} 
+\index{index.js@{index.js}!builtinModules@{builtinModules}}
+\index{builtinModules@{builtinModules}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{builtinModules}{builtinModules}}
+{\footnotesize\ttfamily const builtin\+Modules = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}builtin-\/modules\textquotesingle{})}
+
+\mbox{\Hypertarget{is-builtin-module_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{is-builtin-module_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= moduleName => \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (typeof moduleName !== \textcolor{stringliteral}{'string'}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{throw} \textcolor{keyword}{new} TypeError(\textcolor{stringliteral}{'Expected a string'});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (moduleName.startsWith(\mbox{\hyperlink{is-builtin-module_2index_8js_a78a75b06a077cbec45ad49d388382ed7}{NODE\_PROTOCOL}})) \{}
+\DoxyCodeLine{        moduleName = moduleName.slice(\mbox{\hyperlink{is-builtin-module_2index_8js_a78a75b06a077cbec45ad49d388382ed7}{NODE\_PROTOCOL}}.length);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{const} slashIndex = moduleName.indexOf(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (slashIndex !== -\/1) \{}
+\DoxyCodeLine{        moduleName = moduleName.slice(0, slashIndex);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{is-builtin-module_2index_8js_a575d57b6492826d1c8135b5c517e1c27}{moduleSet}}.has(moduleName);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{is-builtin-module_2index_8js_a575d57b6492826d1c8135b5c517e1c27}\label{is-builtin-module_2index_8js_a575d57b6492826d1c8135b5c517e1c27}} 
+\index{index.js@{index.js}!moduleSet@{moduleSet}}
+\index{moduleSet@{moduleSet}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{moduleSet}{moduleSet}}
+{\footnotesize\ttfamily const module\+Set = new \mbox{\hyperlink{__Set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}(\mbox{\hyperlink{is-builtin-module_2index_8js_a504846a8fa147225d7b7e50a1a58bc62}{builtin\+Modules}})}
+
+\mbox{\Hypertarget{is-builtin-module_2index_8js_a78a75b06a077cbec45ad49d388382ed7}\label{is-builtin-module_2index_8js_a78a75b06a077cbec45ad49d388382ed7}} 
+\index{index.js@{index.js}!NODE\_PROTOCOL@{NODE\_PROTOCOL}}
+\index{NODE\_PROTOCOL@{NODE\_PROTOCOL}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{NODE\_PROTOCOL}{NODE\_PROTOCOL}}
+{\footnotesize\ttfamily const N\+O\+D\+E\+\_\+\+P\+R\+O\+T\+O\+C\+OL = \textquotesingle{}node\+:\textquotesingle{}}
+
+\mbox{\Hypertarget{is-builtin-module_2index_8js_ae2475e10618961c050dcba04e8c42331}\label{is-builtin-module_2index_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+

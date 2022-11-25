@@ -1,0 +1,111 @@
+\hypertarget{jsdoc_2lib_2jsdoc_2tag_2inline_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/tag/inline.js File Reference}
+\label{jsdoc_2lib_2jsdoc_2tag_2inline_8js}\index{node\_modules/jsdoc/lib/jsdoc/tag/inline.js@{node\_modules/jsdoc/lib/jsdoc/tag/inline.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tag_2inline_8js_a59c5745824fba4b9af259837ec48ba57}{is\+Inline\+Tag}} = (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, tag\+Name) =$>$ reg\+Exp\+Factory(tag\+Name, \textquotesingle{}$^\wedge$\textquotesingle{}, \textquotesingle{}\$\textquotesingle{}).\mbox{\hyperlink{symlinks_8js_a8dae195d0a309bb84d8492dc83448621}{test}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}})
+\begin{DoxyCompactList}\small\item\em Check whether a string is an inline tag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tag_2inline_8js_a9526a9a975d00ee56b7c416eca6ac231}{replace\+Inline\+Tags}}
+\begin{DoxyCompactList}\small\item\em Replace all instances of multiple inline tags with other text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tag_2inline_8js_aaaf5ed73b32b287fb932415f25031068}{replace\+Inline\+Tag}}
+\begin{DoxyCompactList}\small\item\em Replace all instances of an inline tag with other text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tag_2inline_8js_ab6ef1454c9717b3ccd90cf6bff65c57e}{extract\+Inline\+Tag}} = (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, \mbox{\hyperlink{rules_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}) =$>$ \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tag_2inline_8js_aaaf5ed73b32b287fb932415f25031068}{exports.\+replace\+Inline\+Tag}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, \mbox{\hyperlink{rules_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}, (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, \{complete\+Tag\}) =$>$ \mbox{\hyperlink{lodash_2replace_8js_ac8a88090eb903cccf7fd218d14f8a918}{str.\+replace}}(complete\+Tag, \textquotesingle{}\textquotesingle{}))
+\begin{DoxyCompactList}\small\item\em Extract inline tags from a string, replacing them with an empty string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2tag_2inline_8js_ab6ef1454c9717b3ccd90cf6bff65c57e}\label{jsdoc_2lib_2jsdoc_2tag_2inline_8js_ab6ef1454c9717b3ccd90cf6bff65c57e}} 
+\index{inline.js@{inline.js}!extractInlineTag@{extractInlineTag}}
+\index{extractInlineTag@{extractInlineTag}!inline.js@{inline.js}}
+\doxysubsubsection{\texorpdfstring{extractInlineTag}{extractInlineTag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} extract\+Inline\+Tag = (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, \mbox{\hyperlink{rules_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}) =$>$ \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2tag_2inline_8js_aaaf5ed73b32b287fb932415f25031068}{exports.\+replace\+Inline\+Tag}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, \mbox{\hyperlink{rules_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}, (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, \{complete\+Tag\}) =$>$ \mbox{\hyperlink{lodash_2replace_8js_ac8a88090eb903cccf7fd218d14f8a918}{str.\+replace}}(complete\+Tag, \textquotesingle{}\textquotesingle{}))}
+
+
+
+Extract inline tags from a string, replacing them with an empty string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & string -\/ The string from which to extract text. \\
+\hline
+{\em \{?string\}} & tag -\/ The inline tag to extract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{module\+:jsdoc/tag/inline.\+Inline\+Tag\+Result\} The updated string, as well as information about the inline tags that were found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2tag_2inline_8js_a59c5745824fba4b9af259837ec48ba57}\label{jsdoc_2lib_2jsdoc_2tag_2inline_8js_a59c5745824fba4b9af259837ec48ba57}} 
+\index{inline.js@{inline.js}!isInlineTag@{isInlineTag}}
+\index{isInlineTag@{isInlineTag}!inline.js@{inline.js}}
+\doxysubsubsection{\texorpdfstring{isInlineTag}{isInlineTag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} is\+Inline\+Tag = (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, tag\+Name) =$>$ reg\+Exp\+Factory(tag\+Name, \textquotesingle{}$^\wedge$\textquotesingle{}, \textquotesingle{}\$\textquotesingle{}).\mbox{\hyperlink{symlinks_8js_a8dae195d0a309bb84d8492dc83448621}{test}}(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}})}
+
+
+
+Check whether a string is an inline tag. 
+
+You can check for a specific inline tag or for any valid inline tag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & string -\/ The string to check. \\
+\hline
+{\em \{?string\}} & tag\+Name -\/ The inline tag to match. May contain regexp characters. If this parameter is omitted, this method returns {\ttfamily true} for any valid inline tag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} Set to {\ttfamily true} if the string is a valid inline tag or {\ttfamily false} in all other cases. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2tag_2inline_8js_aaaf5ed73b32b287fb932415f25031068}\label{jsdoc_2lib_2jsdoc_2tag_2inline_8js_aaaf5ed73b32b287fb932415f25031068}} 
+\index{inline.js@{inline.js}!replaceInlineTag@{replaceInlineTag}}
+\index{replaceInlineTag@{replaceInlineTag}!inline.js@{inline.js}}
+\doxysubsubsection{\texorpdfstring{replaceInlineTag}{replaceInlineTag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} replace\+Inline\+Tag}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_ac2d6def5709c4c7f89d18e27a9512de8}{string}}, \mbox{\hyperlink{marked_8esm_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}, replacer) => \{}
+\DoxyCodeLine{    \textcolor{keyword}{const} replacers = \{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    replacers[\mbox{\hyperlink{marked_8esm_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}] = replacer;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{markdown-it_2lib_2rules__core_2inline_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}.replaceInlineTags(\textcolor{keywordtype}{string}, replacers);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Replace all instances of an inline tag with other text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & string -\/ The string in which to replace the inline tag. \\
+\hline
+{\em \{string\}} & tag -\/ The name of the inline tag to replace. \\
+\hline
+{\em \{module\+:jsdoc/tag/inline.\+Inline\+Tag\+Replacer\}} & replacer -\/ The function that is used to replace text in the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{module\+:jsdoc/tag/inline.\+Inline\+Tag\+Result\} The updated string, as well as information about the inline tags that were found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2tag_2inline_8js_a9526a9a975d00ee56b7c416eca6ac231}\label{jsdoc_2lib_2jsdoc_2tag_2inline_8js_a9526a9a975d00ee56b7c416eca6ac231}} 
+\index{inline.js@{inline.js}!replaceInlineTags@{replaceInlineTags}}
+\index{replaceInlineTags@{replaceInlineTags}!inline.js@{inline.js}}
+\doxysubsubsection{\texorpdfstring{replaceInlineTags}{replaceInlineTags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} replace\+Inline\+Tags}
+
+
+
+Replace all instances of multiple inline tags with other text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & string -\/ The string in which to replace the inline tags. \\
+\hline
+{\em \{\+Object\}} & replacers -\/ The functions that are used to replace text in the string. The keys must contain tag names (for example, {\ttfamily link}), and the values must contain functions with the type \mbox{\hyperlink{}{module\+:jsdoc/tag/inline.\+Inline\+Tag\+Replacer}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{module\+:jsdoc/tag/inline.\+Inline\+Tag\+Result\} The updated string, as well as information about the inline tags that were found. 
+\end{DoxyReturn}

@@ -1,0 +1,183 @@
+\hypertarget{catharsis_8js}{}\doxysection{node\+\_\+modules/catharsis/catharsis.js File Reference}
+\label{catharsis_8js}\index{node\_modules/catharsis/catharsis.js@{node\_modules/catharsis/catharsis.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCatharsis}{Catharsis}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{catharsis_8js_a243110855a7843c56bc4c5eca5061db3}{get\+Type\+Expression\+Cache}} (\{use\+Cache, \mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}\})
+\item 
+function \mbox{\hyperlink{catharsis_8js_a280e4d7476ad55a45e5c1e9f636302d0}{get\+Parsed\+Type\+Cache}} (\{use\+Cache, links, html\+Safe\})
+\item 
+function \mbox{\hyperlink{catharsis_8js_af4eafe9bed62a1493057fd43d1082692}{get\+Description\+Cache}} (\{use\+Cache, links\})
+\item 
+function \mbox{\hyperlink{catharsis_8js_ac1c8ca38ad6f311341969133778951bd}{can\+Return\+Original\+Expression}} (\mbox{\hyperlink{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}{parsed\+Type}}, \{restringify, html\+Safe, links\})
+\item 
+function \mbox{\hyperlink{catharsis_8js_a3badfc7e31f2e7cba3363bae8324b84c}{prepare\+Frozen\+Object}} (obj, expr, \{\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}\})
+\item 
+function \mbox{\hyperlink{catharsis_8js_ae5ba85304aa12b3b9bf1cc4ad960283d}{cached\+Parse}} (expr, \mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}})
+\item 
+function \mbox{\hyperlink{catharsis_8js_a4731f226211a28dcbdbfc0edbe773f9d}{cached\+Stringify}} (\mbox{\hyperlink{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}{parsed\+Type}}, \mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}})
+\item 
+function \mbox{\hyperlink{catharsis_8js_ab38c61d78549ede0c571944f54af5813}{cached\+Describe}} (\mbox{\hyperlink{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}{parsed\+Type}}, \mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{catharsis_8js_a3a96e405b0f405dfaea25b99c006e437}{describe}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{dist_2markdown-it_8js_a662c374f4ce1edc41f0453f23b596b07}{lib}}/describe\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classCatharsis}{Catharsis}} A parser for Google Closure Compiler type expressions, powered by P\+E\+G.\+js. \end{DoxyCompactList}\item 
+const const \mbox{\hyperlink{catharsis_8js_a4165071c679fe5c29c3c3f92375bfabd}{stringify}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{dist_2markdown-it_8js_a662c374f4ce1edc41f0453f23b596b07}{lib}}/stringify\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Creates a braces string from an A\+ST, or an A\+ST node. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{catharsis_8js_a5c9bcbb97913d94281c3a1227ca1ddff}{type\+Expression\+Cache}}
+\item 
+const \mbox{\hyperlink{catharsis_8js_a13cfe893977d971970543ef36b2ab02d}{parsed\+Type\+Cache}}
+\item 
+const \mbox{\hyperlink{catharsis_8js_a65cf42aab0b09ae90f5fd977bac28be6}{description\+Cache}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{catharsis_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = new \mbox{\hyperlink{classCatharsis}{Catharsis}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{catharsis_8js_ab38c61d78549ede0c571944f54af5813}\label{catharsis_8js_ab38c61d78549ede0c571944f54af5813}} 
+\index{catharsis.js@{catharsis.js}!cachedDescribe@{cachedDescribe}}
+\index{cachedDescribe@{cachedDescribe}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{cachedDescribe()}{cachedDescribe()}}
+{\footnotesize\ttfamily function cached\+Describe (\begin{DoxyParamCaption}\item[{}]{parsed\+Type,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_8js_ae5ba85304aa12b3b9bf1cc4ad960283d}\label{catharsis_8js_ae5ba85304aa12b3b9bf1cc4ad960283d}} 
+\index{catharsis.js@{catharsis.js}!cachedParse@{cachedParse}}
+\index{cachedParse@{cachedParse}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{cachedParse()}{cachedParse()}}
+{\footnotesize\ttfamily function cached\+Parse (\begin{DoxyParamCaption}\item[{}]{expr,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_8js_a4731f226211a28dcbdbfc0edbe773f9d}\label{catharsis_8js_a4731f226211a28dcbdbfc0edbe773f9d}} 
+\index{catharsis.js@{catharsis.js}!cachedStringify@{cachedStringify}}
+\index{cachedStringify@{cachedStringify}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{cachedStringify()}{cachedStringify()}}
+{\footnotesize\ttfamily function cached\+Stringify (\begin{DoxyParamCaption}\item[{}]{parsed\+Type,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_8js_ac1c8ca38ad6f311341969133778951bd}\label{catharsis_8js_ac1c8ca38ad6f311341969133778951bd}} 
+\index{catharsis.js@{catharsis.js}!canReturnOriginalExpression@{canReturnOriginalExpression}}
+\index{canReturnOriginalExpression@{canReturnOriginalExpression}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{canReturnOriginalExpression()}{canReturnOriginalExpression()}}
+{\footnotesize\ttfamily function can\+Return\+Original\+Expression (\begin{DoxyParamCaption}\item[{}]{parsed\+Type,  }\item[{}]{\{restringify, html\+Safe, links\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_8js_af4eafe9bed62a1493057fd43d1082692}\label{catharsis_8js_af4eafe9bed62a1493057fd43d1082692}} 
+\index{catharsis.js@{catharsis.js}!getDescriptionCache@{getDescriptionCache}}
+\index{getDescriptionCache@{getDescriptionCache}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{getDescriptionCache()}{getDescriptionCache()}}
+{\footnotesize\ttfamily function get\+Description\+Cache (\begin{DoxyParamCaption}\item[{}]{\{use\+Cache, links\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_8js_a280e4d7476ad55a45e5c1e9f636302d0}\label{catharsis_8js_a280e4d7476ad55a45e5c1e9f636302d0}} 
+\index{catharsis.js@{catharsis.js}!getParsedTypeCache@{getParsedTypeCache}}
+\index{getParsedTypeCache@{getParsedTypeCache}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{getParsedTypeCache()}{getParsedTypeCache()}}
+{\footnotesize\ttfamily function get\+Parsed\+Type\+Cache (\begin{DoxyParamCaption}\item[{}]{\{use\+Cache, links, html\+Safe\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_8js_a243110855a7843c56bc4c5eca5061db3}\label{catharsis_8js_a243110855a7843c56bc4c5eca5061db3}} 
+\index{catharsis.js@{catharsis.js}!getTypeExpressionCache@{getTypeExpressionCache}}
+\index{getTypeExpressionCache@{getTypeExpressionCache}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{getTypeExpressionCache()}{getTypeExpressionCache()}}
+{\footnotesize\ttfamily function get\+Type\+Expression\+Cache (\begin{DoxyParamCaption}\item[{}]{\{use\+Cache, jsdoc\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_8js_a3badfc7e31f2e7cba3363bae8324b84c}\label{catharsis_8js_a3badfc7e31f2e7cba3363bae8324b84c}} 
+\index{catharsis.js@{catharsis.js}!prepareFrozenObject@{prepareFrozenObject}}
+\index{prepareFrozenObject@{prepareFrozenObject}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{prepareFrozenObject()}{prepareFrozenObject()}}
+{\footnotesize\ttfamily function prepare\+Frozen\+Object (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{expr,  }\item[{}]{\{jsdoc\} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{catharsis_8js_a3a96e405b0f405dfaea25b99c006e437}\label{catharsis_8js_a3a96e405b0f405dfaea25b99c006e437}} 
+\index{catharsis.js@{catharsis.js}!describe@{describe}}
+\index{describe@{describe}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{describe}{describe}}
+{\footnotesize\ttfamily const describe = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{dist_2markdown-it_8js_a662c374f4ce1edc41f0453f23b596b07}{lib}}/describe\textquotesingle{})}
+
+
+
+\mbox{\hyperlink{classCatharsis}{Catharsis}} A parser for Google Closure Compiler type expressions, powered by P\+E\+G.\+js. 
+
+\begin{DoxyAuthor}{Author}
+Jeff Williams \href{mailto:jeffrey.l.williams@gmail.com}{\texttt{ jeffrey.\+l.\+williams@gmail.\+com}} @license M\+IT 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{catharsis_8js_a65cf42aab0b09ae90f5fd977bac28be6}\label{catharsis_8js_a65cf42aab0b09ae90f5fd977bac28be6}} 
+\index{catharsis.js@{catharsis.js}!descriptionCache@{descriptionCache}}
+\index{descriptionCache@{descriptionCache}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{descriptionCache}{descriptionCache}}
+{\footnotesize\ttfamily const description\+Cache}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \mbox{\hyperlink{marked_8esm_8js_a4577dc1b6b515e196385b5f8b19093c1}{normal}}: \textcolor{keyword}{new} \mbox{\hyperlink{__getTag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}()}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{catharsis_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{catharsis_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{catharsis.js@{catharsis.js}!exports@{exports}}
+\index{exports@{exports}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = new \mbox{\hyperlink{classCatharsis}{Catharsis}}()}
+
+\mbox{\Hypertarget{catharsis_8js_a13cfe893977d971970543ef36b2ab02d}\label{catharsis_8js_a13cfe893977d971970543ef36b2ab02d}} 
+\index{catharsis.js@{catharsis.js}!parsedTypeCache@{parsedTypeCache}}
+\index{parsedTypeCache@{parsedTypeCache}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{parsedTypeCache}{parsedTypeCache}}
+{\footnotesize\ttfamily const parsed\+Type\+Cache}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \mbox{\hyperlink{marked_8esm_8js_a4577dc1b6b515e196385b5f8b19093c1}{normal}}: \textcolor{keyword}{new} \mbox{\hyperlink{__getTag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}(),}
+\DoxyCodeLine{    htmlSafe: \textcolor{keyword}{new} \mbox{\hyperlink{__getTag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}()}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{catharsis_8js_a4165071c679fe5c29c3c3f92375bfabd}\label{catharsis_8js_a4165071c679fe5c29c3c3f92375bfabd}} 
+\index{catharsis.js@{catharsis.js}!stringify@{stringify}}
+\index{stringify@{stringify}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{stringify}{stringify}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_aeed07914210aa3343ae22388d40fdedb}{braces}} stringify = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{dist_2markdown-it_8js_a662c374f4ce1edc41f0453f23b596b07}{lib}}/stringify\textquotesingle{})}
+
+
+
+Creates a braces string from an A\+ST, or an A\+ST node. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{const} \mbox{\hyperlink{es_2shared_2watch_8js_aeed07914210aa3343ae22388d40fdedb}{braces}} = \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'braces'});}
+\DoxyCodeLine{let \mbox{\hyperlink{babel-parser_8js_aa13f5590b260a603262918043b3a8410}{ast}} = \mbox{\hyperlink{es_2shared_2watch_8js_aeed07914210aa3343ae22388d40fdedb}{braces}}.parse(\textcolor{stringliteral}{'foo/\{a,b\}/bar'});}
+\DoxyCodeLine{console.log(\mbox{\hyperlink{catharsis_8js_a4165071c679fe5c29c3c3f92375bfabd}{stringify}}(\mbox{\hyperlink{babel-parser_8js_aa13f5590b260a603262918043b3a8410}{ast}}.nodes[2])); \textcolor{comment}{//=> '\{a,b\}'}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & {\ttfamily input} Brace pattern or A\+ST. \\
+\hline
+{\em \{\+Object\}} & {\ttfamily options} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns an array of expanded values. @api public 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catharsis_8js_a5c9bcbb97913d94281c3a1227ca1ddff}\label{catharsis_8js_a5c9bcbb97913d94281c3a1227ca1ddff}} 
+\index{catharsis.js@{catharsis.js}!typeExpressionCache@{typeExpressionCache}}
+\index{typeExpressionCache@{typeExpressionCache}!catharsis.js@{catharsis.js}}
+\doxysubsubsection{\texorpdfstring{typeExpressionCache}{typeExpressionCache}}
+{\footnotesize\ttfamily const type\+Expression\+Cache}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \mbox{\hyperlink{marked_8esm_8js_a4577dc1b6b515e196385b5f8b19093c1}{normal}}: \textcolor{keyword}{new} \mbox{\hyperlink{__getTag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}(),}
+\DoxyCodeLine{    \mbox{\hyperlink{augment_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}: \textcolor{keyword}{new} \mbox{\hyperlink{__getTag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}()}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

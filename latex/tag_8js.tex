@@ -1,0 +1,139 @@
+\hypertarget{tag_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/tag.js File Reference}
+\label{tag_8js}\index{node\_modules/jsdoc/lib/jsdoc/tag.js@{node\_modules/jsdoc/lib/jsdoc/tag.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTag}{Tag}}
+\begin{DoxyCompactList}\small\item\em Highlighting tags are markers that denote a highlighting category. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{tag_8js_a63563d9a99a72552aaed76b48f151226}{must\+Preserve\+Whitespace}} (\mbox{\hyperlink{marked_8min_8js_ace5c8ef4245d8bce80497d1580f59a0a}{text}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a7f4f20a4a61c5cfa4668cb55bc9fd67f}{meta}})
+\item 
+function \mbox{\hyperlink{tag_8js_a25b6dfda1582c944ce3cb948d74431cd}{trim}} (\mbox{\hyperlink{marked_8min_8js_ace5c8ef4245d8bce80497d1580f59a0a}{text}}, \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a7f4f20a4a61c5cfa4668cb55bc9fd67f}{meta}})
+\item 
+function \mbox{\hyperlink{tag_8js_ae6048cc96c89ef35d4e616a841cbe5b4}{add\+Hidden\+Property}} (obj, prop\+Name, prop\+Value)
+\item 
+function \mbox{\hyperlink{tag_8js_a4db0c0560a52a45582799e7648eadc1b}{parse\+Type}} (\{\mbox{\hyperlink{marked_8min_8js_ace5c8ef4245d8bce80497d1580f59a0a}{text}}, original\+Title\}, \{can\+Have\+Name, can\+Have\+Type\}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a7f4f20a4a61c5cfa4668cb55bc9fd67f}{meta}})
+\item 
+function \mbox{\hyperlink{tag_8js_a8fc1ab3d6bf7a7aa85d77b968cd4a23c}{process\+Tag\+Text}} (\mbox{\hyperlink{rules_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}, tag\+Def, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a7f4f20a4a61c5cfa4668cb55bc9fd67f}{meta}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}
+\begin{DoxyCompactList}\small\item\em Functionality related to J\+S\+Doc tags. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{tag_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/path\textquotesingle{})
+\item 
+const \mbox{\hyperlink{tag_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{tag_8js_a1d923cde1d68a3fbde782aa79bb2c4b0}{\+\_\+replace\+Dictionary}}
+\begin{DoxyCompactList}\small\item\em Replace the existing tag dictionary with a new tag dictionary. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{tag_8js_a19c70f54d17b717960040f59bc6d7f6b}{Tag}} = \mbox{\hyperlink{classTag}{Tag}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tag_8js_ae6048cc96c89ef35d4e616a841cbe5b4}\label{tag_8js_ae6048cc96c89ef35d4e616a841cbe5b4}} 
+\index{tag.js@{tag.js}!addHiddenProperty@{addHiddenProperty}}
+\index{addHiddenProperty@{addHiddenProperty}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{addHiddenProperty()}{addHiddenProperty()}}
+{\footnotesize\ttfamily function add\+Hidden\+Property (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{prop\+Name,  }\item[{}]{prop\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tag_8js_a63563d9a99a72552aaed76b48f151226}\label{tag_8js_a63563d9a99a72552aaed76b48f151226}} 
+\index{tag.js@{tag.js}!mustPreserveWhitespace@{mustPreserveWhitespace}}
+\index{mustPreserveWhitespace@{mustPreserveWhitespace}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{mustPreserveWhitespace()}{mustPreserveWhitespace()}}
+{\footnotesize\ttfamily function must\+Preserve\+Whitespace (\begin{DoxyParamCaption}\item[{}]{text,  }\item[{}]{meta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tag_8js_a4db0c0560a52a45582799e7648eadc1b}\label{tag_8js_a4db0c0560a52a45582799e7648eadc1b}} 
+\index{tag.js@{tag.js}!parseType@{parseType}}
+\index{parseType@{parseType}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{parseType()}{parseType()}}
+{\footnotesize\ttfamily function parse\+Type (\begin{DoxyParamCaption}\item[{}]{\{text, original\+Title\},  }\item[{}]{\{can\+Have\+Name, can\+Have\+Type\},  }\item[{}]{meta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tag_8js_a8fc1ab3d6bf7a7aa85d77b968cd4a23c}\label{tag_8js_a8fc1ab3d6bf7a7aa85d77b968cd4a23c}} 
+\index{tag.js@{tag.js}!processTagText@{processTagText}}
+\index{processTagText@{processTagText}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{processTagText()}{processTagText()}}
+{\footnotesize\ttfamily function process\+Tag\+Text (\begin{DoxyParamCaption}\item[{}]{tag,  }\item[{}]{tag\+Def,  }\item[{}]{meta }\end{DoxyParamCaption})}
+
+The value property represents the result of parsing the tag text.\mbox{\Hypertarget{tag_8js_a25b6dfda1582c944ce3cb948d74431cd}\label{tag_8js_a25b6dfda1582c944ce3cb948d74431cd}} 
+\index{tag.js@{tag.js}!trim@{trim}}
+\index{trim@{trim}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily function trim (\begin{DoxyParamCaption}\item[{}]{text,  }\item[{}]{opts,  }\item[{}]{meta }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2trim_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/trim.\+js}}.\end{Desc}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{tag_8js_a1d923cde1d68a3fbde782aa79bb2c4b0}\label{tag_8js_a1d923cde1d68a3fbde782aa79bb2c4b0}} 
+\index{tag.js@{tag.js}!\_replaceDictionary@{\_replaceDictionary}}
+\index{\_replaceDictionary@{\_replaceDictionary}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{\_replaceDictionary}{\_replaceDictionary}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \+\_\+replace\+Dictionary\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{tag_8js_a1d923cde1d68a3fbde782aa79bb2c4b0}{\_replaceDictionary}}(\mbox{\hyperlink{level2_8js_a37bf353e1618cbf53638b1219eddd197}{dict}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}.tag.dictionary = \mbox{\hyperlink{level2_8js_a37bf353e1618cbf53638b1219eddd197}{dict}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Replace the existing tag dictionary with a new tag dictionary. 
+
+Used for testing only. Do not call this method directly. Instead, call \mbox{\hyperlink{tag_8js_a1d923cde1d68a3fbde782aa79bb2c4b0}{module\+:jsdoc/doclet.\+\_\+replace\+Dictionary}}, which also updates this module\textquotesingle{}s tag dictionary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/tag/dictionary.\+Dictionary\}} & dict -\/ The new tag dictionary. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}\label{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}} 
+\index{tag.js@{tag.js}!jsdoc@{jsdoc}}
+\index{jsdoc@{jsdoc}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{jsdoc}{jsdoc}}
+{\footnotesize\ttfamily const jsdoc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/env'}),}
+\DoxyCodeLine{    \mbox{\hyperlink{marked_8esm_8js_a0d13a3c1255c1acf7a0f97f6482ba288}{tag}}: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{plugins_8js_a671c474c4db71ff679e6e322565d6b14}{dictionary}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/tag/dictionary'}),}
+\DoxyCodeLine{        validator: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/tag/validator'}),}
+\DoxyCodeLine{        type: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/tag/type'})}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{tag_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{level1_8js_acc69707810d1669872f8199f16a0da20}{logger}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/util/logger'})}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Functionality related to J\+S\+Doc tags. 
+
+@module jsdoc/tag @requires module\+:jsdoc/env @requires module\+:jsdoc/path @requires module\+:jsdoc/tag/dictionary @requires module\+:jsdoc/tag/validator @requires module\+:jsdoc/tag/type @requires module\+:jsdoc/util/logger @requires module\+:util \mbox{\Hypertarget{tag_8js_a1fdc7709faf62dce60620fb3f9d3453c}\label{tag_8js_a1fdc7709faf62dce60620fb3f9d3453c}} 
+\index{tag.js@{tag.js}!path@{path}}
+\index{path@{path}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily const path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/path\textquotesingle{})}
+
+\mbox{\Hypertarget{tag_8js_a19c70f54d17b717960040f59bc6d7f6b}\label{tag_8js_a19c70f54d17b717960040f59bc6d7f6b}} 
+\index{tag.js@{tag.js}!Tag@{Tag}}
+\index{Tag@{Tag}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{Tag}{Tag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{classTag}{Tag}} = \mbox{\hyperlink{classTag}{Tag}}}
+
+\mbox{\Hypertarget{tag_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}\label{tag_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}} 
+\index{tag.js@{tag.js}!util@{util}}
+\index{util@{util}!tag.js@{tag.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily const util = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})}
+

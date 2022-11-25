@@ -1,0 +1,146 @@
+\hypertarget{catharsis_2bin_2parse_8js}{}\doxysection{node\+\_\+modules/catharsis/bin/parse.js File Reference}
+\label{catharsis_2bin_2parse_8js}\index{node\_modules/catharsis/bin/parse.js@{node\_modules/catharsis/bin/parse.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{catharsis_2bin_2parse_8js_a5d483393835b7f0091e60cf967ded21e}{usage}} ()
+\item 
+function \mbox{\hyperlink{catharsis_2bin_2parse_8js_a1343ee27b8e01853902943cb0ef8d1b5}{done}} (err)
+\item 
+\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} argv \mbox{\hyperlink{catharsis_2bin_2parse_8js_a4e1262e6730f485d44707186df8d60d4}{slice}} (3).\mbox{\hyperlink{watch-cli_8js_a0f159657f82e2367b3a4714307366cb8}{for\+Each}}(arg
+\item 
+\mbox{\hyperlink{catharsis_2bin_2parse_8js_a1e2f2954129713df79b390a684a7b045}{if}} (!\mbox{\hyperlink{catharsis_2bin_2parse_8js_a6447e5e70608212af3b2334396c7d6b0}{type\+Expression}})
+\item 
+\mbox{\hyperlink{catharsis_2bin_2parse_8js_af4152c13a06d002f268af780c0433c3a}{done}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{catharsis_2bin_2parse_8js_a02290082f0074cd615c6249e515d3f58}{catharsis}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}../catharsis\textquotesingle{})
+\item 
+const \mbox{\hyperlink{catharsis_2bin_2parse_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})
+\item 
+const \mbox{\hyperlink{catharsis_2bin_2parse_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+const \mbox{\hyperlink{catharsis_2bin_2parse_8js_ad275df2bde02821ebf94c6da7870a642}{command}} = path.\+basename(process.\+argv\mbox{[}1\mbox{]})
+\item 
+const \mbox{\hyperlink{catharsis_2bin_2parse_8js_a6447e5e70608212af3b2334396c7d6b0}{type\+Expression}} = process.\+argv\mbox{[}2\mbox{]}
+\item 
+const \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}
+\item 
+let \mbox{\hyperlink{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}{parsed\+Type}}
+\item 
+\mbox{\hyperlink{catharsis_2bin_2parse_8js_a0544c3fe466e421738dae463968b70ba}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_af4152c13a06d002f268af780c0433c3a}\label{catharsis_2bin_2parse_8js_af4152c13a06d002f268af780c0433c3a}} 
+\index{parse.js@{parse.js}!done@{done}}
+\index{done@{done}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{done()}{done()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a1343ee27b8e01853902943cb0ef8d1b5}\label{catharsis_2bin_2parse_8js_a1343ee27b8e01853902943cb0ef8d1b5}} 
+\index{parse.js@{parse.js}!done@{done}}
+\index{done@{done}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{done()}{done()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily function done (\begin{DoxyParamCaption}\item[{}]{err }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2next_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/next.\+js}}.\end{Desc}
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a1e2f2954129713df79b390a684a7b045}\label{catharsis_2bin_2parse_8js_a1e2f2954129713df79b390a684a7b045}} 
+\index{parse.js@{parse.js}!if@{if}}
+\index{if@{if}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{!}]{type\+Expression }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a4e1262e6730f485d44707186df8d60d4}\label{catharsis_2bin_2parse_8js_a4e1262e6730f485d44707186df8d60d4}} 
+\index{parse.js@{parse.js}!slice@{slice}}
+\index{slice@{slice}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{slice()}{slice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} argv slice (\begin{DoxyParamCaption}\item[{3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a5d483393835b7f0091e60cf967ded21e}\label{catharsis_2bin_2parse_8js_a5d483393835b7f0091e60cf967ded21e}} 
+\index{parse.js@{parse.js}!usage@{usage}}
+\index{usage@{usage}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{usage()}{usage()}}
+{\footnotesize\ttfamily function usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a02290082f0074cd615c6249e515d3f58}\label{catharsis_2bin_2parse_8js_a02290082f0074cd615c6249e515d3f58}} 
+\index{parse.js@{parse.js}!catharsis@{catharsis}}
+\index{catharsis@{catharsis}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{catharsis}{catharsis}}
+{\footnotesize\ttfamily const catharsis = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}../catharsis\textquotesingle{})}
+
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_ad275df2bde02821ebf94c6da7870a642}\label{catharsis_2bin_2parse_8js_ad275df2bde02821ebf94c6da7870a642}} 
+\index{parse.js@{parse.js}!command@{command}}
+\index{command@{command}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{command}{command}}
+{\footnotesize\ttfamily const command = path.\+basename(process.\+argv\mbox{[}1\mbox{]})}
+
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a0544c3fe466e421738dae463968b70ba}\label{catharsis_2bin_2parse_8js_a0544c3fe466e421738dae463968b70ba}} 
+\index{parse.js@{parse.js}!else@{else}}
+\index{else@{else}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{        \mbox{\hyperlink{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}{parsedType}} = \mbox{\hyperlink{catharsis_2bin_2parse_8js_a02290082f0074cd615c6249e515d3f58}{catharsis}}.parse(\mbox{\hyperlink{catharsis_2bin_2parse_8js_a6447e5e70608212af3b2334396c7d6b0}{typeExpression}}, \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}});}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}.describe) \{}
+\DoxyCodeLine{            \mbox{\hyperlink{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}{parsedType}} = \mbox{\hyperlink{catharsis_2bin_2parse_8js_a02290082f0074cd615c6249e515d3f58}{catharsis}}.describe(\mbox{\hyperlink{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}{parsedType}});}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{catch} (\mbox{\hyperlink{markdownItAnchor_8js_aa148b58b0389c94f179640097c7d7804}{e}}) \{}
+\DoxyCodeLine{        console.error(\mbox{\hyperlink{catharsis_2bin_2parse_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}.format(\textcolor{stringliteral}{'Unable to parse "\%s" (exception follows):'}, \mbox{\hyperlink{catharsis_2bin_2parse_8js_a6447e5e70608212af3b2334396c7d6b0}{typeExpression}}));}
+\DoxyCodeLine{        console.error(\mbox{\hyperlink{markdownItAnchor_8js_aa148b58b0389c94f179640097c7d7804}{e}}.stack || \mbox{\hyperlink{markdownItAnchor_8js_aa148b58b0389c94f179640097c7d7804}{e}}.message);}
+\DoxyCodeLine{        \mbox{\hyperlink{catharsis_2bin_2parse_8js_a1343ee27b8e01853902943cb0ef8d1b5}{done}}(1);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    console.log(JSON.stringify(\mbox{\hyperlink{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}{parsedType}}, \textcolor{keyword}{null}, 2))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}\label{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}} 
+\index{parse.js@{parse.js}!opts@{opts}}
+\index{opts@{opts}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{opts}{opts}}
+{\footnotesize\ttfamily const opts}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \mbox{\hyperlink{catharsis_8js_a3a96e405b0f405dfaea25b99c006e437}{describe}}: \textcolor{keyword}{false},}
+\DoxyCodeLine{    \mbox{\hyperlink{augment_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}: \textcolor{keyword}{false}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}\label{catharsis_2bin_2parse_8js_a98a737d85eafad26cb74651238044e72}} 
+\index{parse.js@{parse.js}!parsedType@{parsedType}}
+\index{parsedType@{parsedType}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{parsedType}{parsedType}}
+{\footnotesize\ttfamily let parsed\+Type}
+
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a1fdc7709faf62dce60620fb3f9d3453c}\label{catharsis_2bin_2parse_8js_a1fdc7709faf62dce60620fb3f9d3453c}} 
+\index{parse.js@{parse.js}!path@{path}}
+\index{path@{path}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily const path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})}
+
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a6447e5e70608212af3b2334396c7d6b0}\label{catharsis_2bin_2parse_8js_a6447e5e70608212af3b2334396c7d6b0}} 
+\index{parse.js@{parse.js}!typeExpression@{typeExpression}}
+\index{typeExpression@{typeExpression}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{typeExpression}{typeExpression}}
+{\footnotesize\ttfamily const type\+Expression = process.\+argv\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{catharsis_2bin_2parse_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}\label{catharsis_2bin_2parse_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}} 
+\index{parse.js@{parse.js}!util@{util}}
+\index{util@{util}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily const util = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})}
+

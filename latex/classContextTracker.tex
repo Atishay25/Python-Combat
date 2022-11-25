@@ -1,0 +1,39 @@
+\hypertarget{classContextTracker}{}\doxysection{Context\+Tracker Class Reference}
+\label{classContextTracker}\index{ContextTracker@{ContextTracker}}
+
+
+\mbox{\hyperlink{classContext}{Context}} trackers are used to track stateful context (such as indentation in the Python grammar, or parent elements in the X\+ML grammar) needed by external tokenizers.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classContextTracker_a20aeb760e0b950d7a2d1fe8c4828910b}{constructor}} (spec)
+\begin{DoxyCompactList}\small\item\em Define a context tracker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classContext}{Context}} trackers are used to track stateful context (such as indentation in the Python grammar, or parent elements in the X\+ML grammar) needed by external tokenizers. 
+
+You declare them in a grammar file as {\ttfamily @context export\+Name from \char`\"{}module\char`\"{}}.
+
+\mbox{\hyperlink{classContext}{Context}} values should be immutable, and can be updated (replaced) on shift or reduce actions.
+
+The export used in a {\ttfamily @context} declaration should be of this type. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classContextTracker_a20aeb760e0b950d7a2d1fe8c4828910b}\label{classContextTracker_a20aeb760e0b950d7a2d1fe8c4828910b}} 
+\index{ContextTracker@{ContextTracker}!constructor@{constructor}}
+\index{constructor@{constructor}!ContextTracker@{ContextTracker}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Context\+Tracker\+::constructor (\begin{DoxyParamCaption}\item[{}]{spec }\end{DoxyParamCaption})}
+
+
+
+Define a context tracker. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@lezer/lr/dist/\mbox{\hyperlink{_0dlezer_2lr_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

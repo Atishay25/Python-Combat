@@ -1,0 +1,120 @@
+\hypertarget{__cloneBuffer_8js}{}\doxysection{node\+\_\+modules/lodash/\+\_\+clone\+Buffer.js File Reference}
+\label{__cloneBuffer_8js}\index{node\_modules/lodash/\_cloneBuffer.js@{node\_modules/lodash/\_cloneBuffer.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__cloneBuffer_8js_a49339c699ee37f28e1fa31ceb4420745}{clone\+Buffer}} (buffer, is\+Deep)
+\begin{DoxyCompactList}\small\item\em Creates a clone of {\ttfamily buffer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__cloneBuffer_8js_a33796d6d1aed1fe6b4c866bfd3867459}{root}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+root\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__cloneBuffer_8js_a77aa11f459fa418af3e7e4ad1b293a9c}{free\+Exports}} = typeof \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} == \textquotesingle{}\mbox{\hyperlink{underscore-esm-min_8js_a943d8486390292c169e81c23653a2d50}{object}}\textquotesingle{} \&\& \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \&\& !exports.\+node\+Type \&\& \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\begin{DoxyCompactList}\small\item\em Detect free variable {\ttfamily exports}. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__cloneBuffer_8js_a97690b5dec24d071e500f8d80651de4d}{free\+Module}} = \mbox{\hyperlink{isBuffer_8js_a77aa11f459fa418af3e7e4ad1b293a9c}{free\+Exports}} \&\& typeof \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} == \textquotesingle{}\mbox{\hyperlink{underscore-esm-min_8js_a943d8486390292c169e81c23653a2d50}{object}}\textquotesingle{} \&\& \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \&\& !module.\+node\+Type \&\& \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}}
+\begin{DoxyCompactList}\small\item\em Detect free variable {\ttfamily module}. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__cloneBuffer_8js_a6a08784a50e4e906653a5618a7b65cc5}{module\+Exports}} = \mbox{\hyperlink{isBuffer_8js_a97690b5dec24d071e500f8d80651de4d}{free\+Module}} \&\& \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{free\+Module.\+exports}} === \mbox{\hyperlink{isBuffer_8js_a77aa11f459fa418af3e7e4ad1b293a9c}{free\+Exports}}
+\begin{DoxyCompactList}\small\item\em Detect the popular Common\+JS extension {\ttfamily module.\+exports}. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__cloneBuffer_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} = \mbox{\hyperlink{isBuffer_8js_a6a08784a50e4e906653a5618a7b65cc5}{module\+Exports}} ? root.\+Buffer \+: \mbox{\hyperlink{bluebird_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}}
+\begin{DoxyCompactList}\small\item\em Built-\/in value references. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__cloneBuffer_8js_a082b1746da90da852ce1cf8a65367bd2}{alloc\+Unsafe}} = \mbox{\hyperlink{isBuffer_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} ? Buffer.\+alloc\+Unsafe \+: \mbox{\hyperlink{bluebird_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__cloneBuffer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__cloneBuffer_8js_a49339c699ee37f28e1fa31ceb4420745}{clone\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__cloneBuffer_8js_a49339c699ee37f28e1fa31ceb4420745}\label{__cloneBuffer_8js_a49339c699ee37f28e1fa31ceb4420745}} 
+\index{\_cloneBuffer.js@{\_cloneBuffer.js}!cloneBuffer@{cloneBuffer}}
+\index{cloneBuffer@{cloneBuffer}!\_cloneBuffer.js@{\_cloneBuffer.js}}
+\doxysubsubsection{\texorpdfstring{cloneBuffer()}{cloneBuffer()}}
+{\footnotesize\ttfamily function clone\+Buffer (\begin{DoxyParamCaption}\item[{}]{buffer,  }\item[{}]{is\+Deep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates a clone of {\ttfamily buffer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Buffer\}} & buffer The buffer to clone. \\
+\hline
+{\em \{boolean\}} & \mbox{[}is\+Deep\mbox{]} Specify a deep clone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Buffer\} Returns the cloned buffer. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__cloneBuffer_8js_a082b1746da90da852ce1cf8a65367bd2}\label{__cloneBuffer_8js_a082b1746da90da852ce1cf8a65367bd2}} 
+\index{\_cloneBuffer.js@{\_cloneBuffer.js}!allocUnsafe@{allocUnsafe}}
+\index{allocUnsafe@{allocUnsafe}!\_cloneBuffer.js@{\_cloneBuffer.js}}
+\doxysubsubsection{\texorpdfstring{allocUnsafe}{allocUnsafe}}
+{\footnotesize\ttfamily var alloc\+Unsafe = \mbox{\hyperlink{isBuffer_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} ? Buffer.\+alloc\+Unsafe \+: \mbox{\hyperlink{bluebird_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}}}
+
+\mbox{\Hypertarget{__cloneBuffer_8js_a6e9de2d16b02dc274208bfcc1914d7f4}\label{__cloneBuffer_8js_a6e9de2d16b02dc274208bfcc1914d7f4}} 
+\index{\_cloneBuffer.js@{\_cloneBuffer.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!\_cloneBuffer.js@{\_cloneBuffer.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily var Buffer = \mbox{\hyperlink{isBuffer_8js_a6a08784a50e4e906653a5618a7b65cc5}{module\+Exports}} ? root.\+Buffer \+: \mbox{\hyperlink{bluebird_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}}}
+
+
+
+Built-\/in value references. 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2isBuffer_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/is\+Buffer.\+js}}.\end{Desc}
+\mbox{\Hypertarget{__cloneBuffer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{__cloneBuffer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{\_cloneBuffer.js@{\_cloneBuffer.js}!exports@{exports}}
+\index{exports@{exports}!\_cloneBuffer.js@{\_cloneBuffer.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__cloneBuffer_8js_a49339c699ee37f28e1fa31ceb4420745}{clone\+Buffer}}}
+
+\mbox{\Hypertarget{__cloneBuffer_8js_a77aa11f459fa418af3e7e4ad1b293a9c}\label{__cloneBuffer_8js_a77aa11f459fa418af3e7e4ad1b293a9c}} 
+\index{\_cloneBuffer.js@{\_cloneBuffer.js}!freeExports@{freeExports}}
+\index{freeExports@{freeExports}!\_cloneBuffer.js@{\_cloneBuffer.js}}
+\doxysubsubsection{\texorpdfstring{freeExports}{freeExports}}
+{\footnotesize\ttfamily var free\+Exports = typeof \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} == \textquotesingle{}\mbox{\hyperlink{underscore-esm-min_8js_a943d8486390292c169e81c23653a2d50}{object}}\textquotesingle{} \&\& \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \&\& !exports.\+node\+Type \&\& \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}}
+
+
+
+Detect free variable {\ttfamily exports}. 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2isBuffer_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/is\+Buffer.\+js}}.\end{Desc}
+\mbox{\Hypertarget{__cloneBuffer_8js_a97690b5dec24d071e500f8d80651de4d}\label{__cloneBuffer_8js_a97690b5dec24d071e500f8d80651de4d}} 
+\index{\_cloneBuffer.js@{\_cloneBuffer.js}!freeModule@{freeModule}}
+\index{freeModule@{freeModule}!\_cloneBuffer.js@{\_cloneBuffer.js}}
+\doxysubsubsection{\texorpdfstring{freeModule}{freeModule}}
+{\footnotesize\ttfamily var free\+Module = \mbox{\hyperlink{isBuffer_8js_a77aa11f459fa418af3e7e4ad1b293a9c}{free\+Exports}} \&\& typeof \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} == \textquotesingle{}\mbox{\hyperlink{underscore-esm-min_8js_a943d8486390292c169e81c23653a2d50}{object}}\textquotesingle{} \&\& \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \&\& !module.\+node\+Type \&\& \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}}}
+
+
+
+Detect free variable {\ttfamily module}. 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2isBuffer_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/is\+Buffer.\+js}}.\end{Desc}
+\mbox{\Hypertarget{__cloneBuffer_8js_a6a08784a50e4e906653a5618a7b65cc5}\label{__cloneBuffer_8js_a6a08784a50e4e906653a5618a7b65cc5}} 
+\index{\_cloneBuffer.js@{\_cloneBuffer.js}!moduleExports@{moduleExports}}
+\index{moduleExports@{moduleExports}!\_cloneBuffer.js@{\_cloneBuffer.js}}
+\doxysubsubsection{\texorpdfstring{moduleExports}{moduleExports}}
+{\footnotesize\ttfamily var module\+Exports = \mbox{\hyperlink{isBuffer_8js_a97690b5dec24d071e500f8d80651de4d}{free\+Module}} \&\& \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{free\+Module.\+exports}} === \mbox{\hyperlink{isBuffer_8js_a77aa11f459fa418af3e7e4ad1b293a9c}{free\+Exports}}}
+
+
+
+Detect the popular Common\+JS extension {\ttfamily module.\+exports}. 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2isBuffer_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/is\+Buffer.\+js}}.\end{Desc}
+\mbox{\Hypertarget{__cloneBuffer_8js_a33796d6d1aed1fe6b4c866bfd3867459}\label{__cloneBuffer_8js_a33796d6d1aed1fe6b4c866bfd3867459}} 
+\index{\_cloneBuffer.js@{\_cloneBuffer.js}!root@{root}}
+\index{root@{root}!\_cloneBuffer.js@{\_cloneBuffer.js}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily var root = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+root\textquotesingle{})}
+

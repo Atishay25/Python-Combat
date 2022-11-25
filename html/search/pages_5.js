@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['python_2dcombat_41',['Python-Combat',['../md_README.html',1,'']]]
+  ['tips_20_26_20tricks_174',['Tips &amp; Tricks',['../md_doxygen-awesome-css_docs_tricks.html',1,'']]],
+  ['todo_20list_175',['Todo List',['../todo.html',1,'']]]
 ];

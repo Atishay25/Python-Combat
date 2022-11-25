@@ -1,0 +1,107 @@
+\hypertarget{schedule_8js}{}\doxysection{node\+\_\+modules/bluebird/js/release/schedule.js File Reference}
+\label{schedule_8js}\index{node\_modules/bluebird/js/release/schedule.js@{node\_modules/bluebird/js/release/schedule.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{schedule_8js_abf33b584aca188df9085ee6b1b630bae}{if}} (\mbox{\hyperlink{bluebird_2js_2release_2util_8js_a2f82b7b857efb4b5b7ae4ccc81de2ef1}{util.\+is\+Node}} \&\&typeof Mutation\+Observer===\char`\"{}undefined\char`\"{})
+\item 
+\mbox{\hyperlink{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{schedule_8js_ab9d1c08dff7caf9c31ee7e5d435c557c}{if}} (typeof \mbox{\hyperlink{schedule_8js_a7e8326bb0225717fc3972a0ba7ae486c}{Native\+Promise}}===\char`\"{}function\char`\"{} \&\&typeof \mbox{\hyperlink{resolve_2example_2async_8js_a1d6645c3b37b9ea8c2893e488262b43e}{Native\+Promise.\+resolve}}===\char`\"{}function\char`\"{})
+\item 
+\mbox{\hyperlink{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{schedule_8js_a2fee3566f885f7e977ff73f7fe331837}{if}} ((typeof Mutation\+Observer !==\char`\"{}undefined\char`\"{}) \&\&!(typeof window !==\char`\"{}undefined\char`\"{} \&\&window.\+navigator \&\&(window.\+navigator.\+standalone$\vert$$\vert$window.\+cordova)) \&\&(\char`\"{}class\+List\char`\"{} in document.\+document\+Element))
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{schedule_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{schedule_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\char`\"{}./util\char`\"{})
+\item 
+var \mbox{\hyperlink{schedule_8js_ae9ec6b21292f79bf8e880fbfb2ab7810}{schedule}}
+\item 
+var \mbox{\hyperlink{schedule_8js_aaf31917d114993705827ce13d0ffb9f4}{no\+Async\+Scheduler}}
+\item 
+var \mbox{\hyperlink{schedule_8js_a7e8326bb0225717fc3972a0ba7ae486c}{Native\+Promise}} = \mbox{\hyperlink{bluebird_2js_2release_2util_8js_a82eb4ce021024548cefa815c97da764b}{util.\+get\+Native\+Promise}}()
+\item 
+\mbox{\hyperlink{schedule_8js_a0544c3fe466e421738dae463968b70ba}{else}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{schedule_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{schedule_8js_ae9ec6b21292f79bf8e880fbfb2ab7810}{schedule}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{schedule_8js_a2fee3566f885f7e977ff73f7fe331837}\label{schedule_8js_a2fee3566f885f7e977ff73f7fe331837}} 
+\index{schedule.js@{schedule.js}!if@{if}}
+\index{if@{if}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}{else}} if (\begin{DoxyParamCaption}\item[{}]{(typeof Mutation\+Observer !==\char`\"{}undefined\char`\"{}) \&\&!(typeof window !==\char`\"{}undefined\char`\"{} \&\& window.\+navigator \&\&(window.\+navigator.\+standalone$\vert$$\vert$window.\+cordova)) \&\&(\char`\"{}class\+List\char`\"{} in document.\+document\+Element) = {\ttfamily =~\char`\"{}undefined\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{schedule_8js_ab9d1c08dff7caf9c31ee7e5d435c557c}\label{schedule_8js_ab9d1c08dff7caf9c31ee7e5d435c557c}} 
+\index{schedule.js@{schedule.js}!if@{if}}
+\index{if@{if}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}{else}} if (\begin{DoxyParamCaption}\item[{typeof}]{Native\+Promise = {\ttfamily ==~\char`\"{}function\char`\"{}~\&\&~typeof~\mbox{\hyperlink{resolve_2example_2async_8js_a1d6645c3b37b9ea8c2893e488262b43e}{Native\+Promise.\+resolve}}~===~\char`\"{}function\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{schedule_8js_abf33b584aca188df9085ee6b1b630bae}\label{schedule_8js_abf33b584aca188df9085ee6b1b630bae}} 
+\index{schedule.js@{schedule.js}!if@{if}}
+\index{if@{if}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bluebird_2js_2release_2util_8js_a2f82b7b857efb4b5b7ae4ccc81de2ef1}{util.\+is\+Node}} \&\&typeof}]{Mutation\+Observer = {\ttfamily ==~\char`\"{}undefined\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{schedule_8js_a0544c3fe466e421738dae463968b70ba}\label{schedule_8js_a0544c3fe466e421738dae463968b70ba}} 
+\index{schedule.js@{schedule.js}!else@{else}}
+\index{else@{else}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{schedule_8js_ae9ec6b21292f79bf8e880fbfb2ab7810}{schedule}} = \mbox{\hyperlink{schedule_8js_aaf31917d114993705827ce13d0ffb9f4}{noAsyncScheduler}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{schedule_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{schedule_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{schedule.js@{schedule.js}!exports@{exports}}
+\index{exports@{exports}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{schedule_8js_ae9ec6b21292f79bf8e880fbfb2ab7810}{schedule}}}
+
+\mbox{\Hypertarget{schedule_8js_a7e8326bb0225717fc3972a0ba7ae486c}\label{schedule_8js_a7e8326bb0225717fc3972a0ba7ae486c}} 
+\index{schedule.js@{schedule.js}!NativePromise@{NativePromise}}
+\index{NativePromise@{NativePromise}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{NativePromise}{NativePromise}}
+{\footnotesize\ttfamily var Native\+Promise = \mbox{\hyperlink{bluebird_2js_2release_2util_8js_a82eb4ce021024548cefa815c97da764b}{util.\+get\+Native\+Promise}}()}
+
+\mbox{\Hypertarget{schedule_8js_aaf31917d114993705827ce13d0ffb9f4}\label{schedule_8js_aaf31917d114993705827ce13d0ffb9f4}} 
+\index{schedule.js@{schedule.js}!noAsyncScheduler@{noAsyncScheduler}}
+\index{noAsyncScheduler@{noAsyncScheduler}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{noAsyncScheduler}{noAsyncScheduler}}
+{\footnotesize\ttfamily var no\+Async\+Scheduler}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function}() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Error(\textcolor{stringliteral}{"No async scheduler available\(\backslash\)u000a\(\backslash\)u000a    See http://goo.gl/MqrFmX\(\backslash\)u000a"});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{schedule_8js_ae9ec6b21292f79bf8e880fbfb2ab7810}\label{schedule_8js_ae9ec6b21292f79bf8e880fbfb2ab7810}} 
+\index{schedule.js@{schedule.js}!schedule@{schedule}}
+\index{schedule@{schedule}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{schedule}{schedule}}
+{\footnotesize\ttfamily var schedule}
+
+\mbox{\Hypertarget{schedule_8js_ae2475e10618961c050dcba04e8c42331}\label{schedule_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{schedule.js@{schedule.js}!strict@{strict}}
+\index{strict@{strict}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+
+\mbox{\Hypertarget{schedule_8js_a8f5b2e09d5197e9d28f6032dff542d44}\label{schedule_8js_a8f5b2e09d5197e9d28f6032dff542d44}} 
+\index{schedule.js@{schedule.js}!util@{util}}
+\index{util@{util}!schedule.js@{schedule.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily var util = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\char`\"{}./util\char`\"{})}
+

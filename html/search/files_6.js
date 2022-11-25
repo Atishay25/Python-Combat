@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sync_2ejs_172',['Sync.js',['../Sync_8js.html',1,'']]],
-  ['sync_2ejs_2ecpp_173',['Sync.js.cpp',['../Sync_8js_8cpp.html',1,'']]]
+  ['subclass_2dexample_2ehpp_111',['subclass-example.hpp',['../subclass-example_8hpp.html',1,'']]]
 ];

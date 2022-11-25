@@ -1,0 +1,62 @@
+\hypertarget{requizzle_2index_8js}{}\doxysection{node\+\_\+modules/requizzle/index.js File Reference}
+\label{requizzle_2index_8js}\index{node\_modules/requizzle/index.js@{node\_modules/requizzle/index.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{requizzle_2index_8js_af093e5fb34c1cb891e06da9bf98af093}{\+\_\+}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{wrapperLodash_8js_aec7e0d4bcde1f5dfdf1ae3c26c2c4c83}{lodash}}\textquotesingle{})
+\item 
+const \mbox{\hyperlink{requizzle_2index_8js_afef34619932b3db569c185f97c709004}{Requizzle}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{dist_2markdown-it_8js_a662c374f4ce1edc41f0453f23b596b07}{lib}}/requizzle\textquotesingle{})
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{requizzle_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\item 
+delete \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}} \mbox{\hyperlink{requizzle_2index_8js_ad0821850d510433f6400adc20ac7ff62}{cache}} \mbox{[}\+\_\+\+\_\+filename\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{requizzle_2index_8js_af093e5fb34c1cb891e06da9bf98af093}\label{requizzle_2index_8js_af093e5fb34c1cb891e06da9bf98af093}} 
+\index{index.js@{index.js}!\_@{\_}}
+\index{\_@{\_}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{\_}{\_}}
+{\footnotesize\ttfamily const \+\_\+ = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{wrapperLodash_8js_aec7e0d4bcde1f5dfdf1ae3c26c2c4c83}{lodash}}\textquotesingle{})}
+
+\mbox{\Hypertarget{requizzle_2index_8js_ad0821850d510433f6400adc20ac7ff62}\label{requizzle_2index_8js_ad0821850d510433f6400adc20ac7ff62}} 
+\index{index.js@{index.js}!cache@{cache}}
+\index{cache@{cache}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{cache}{cache}}
+{\footnotesize\ttfamily delete \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}} cache\mbox{[}\+\_\+\+\_\+filename\mbox{]}}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2memoize_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/memoize.\+js}}.\end{Desc}
+\mbox{\Hypertarget{requizzle_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{requizzle_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} requizzle(\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}) \{}
+\DoxyCodeLine{    let instance;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}} || typeof \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}} !== \textcolor{stringliteral}{'object'}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{throw} \textcolor{keyword}{new} TypeError(\textcolor{stringliteral}{'Requizzle\(\backslash\)'s options parameter must be a non-\/null object.'});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}} = \mbox{\hyperlink{requizzle_2index_8js_af093e5fb34c1cb891e06da9bf98af093}{\_}}.clone(\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}});}
+\DoxyCodeLine{    \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}.parent = \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2es_2index_8js_ae7aa672725f64d8ea8e41d4eeca3adf5}{module}}.parent;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} filepath => \{}
+\DoxyCodeLine{        instance = instance || \textcolor{keyword}{new} \mbox{\hyperlink{requizzle_2index_8js_afef34619932b3db569c185f97c709004}{Requizzle}}(\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} instance.requizzle(filepath);}
+\DoxyCodeLine{    \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{requizzle_2index_8js_afef34619932b3db569c185f97c709004}\label{requizzle_2index_8js_afef34619932b3db569c185f97c709004}} 
+\index{index.js@{index.js}!Requizzle@{Requizzle}}
+\index{Requizzle@{Requizzle}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{Requizzle}{Requizzle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{classRequizzle}{Requizzle}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{dist_2markdown-it_8js_a662c374f4ce1edc41f0453f23b596b07}{lib}}/requizzle\textquotesingle{})}
+

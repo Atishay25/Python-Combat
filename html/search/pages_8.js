@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['graceful_2dfs_158',['graceful-fs',['../md_node_modules_graceful-fs_README.html',1,'']]],
-  ['generating_20typeface_20fonts_159',['Generating Typeface Fonts',['../md_node_modules_jsdoc_templates_default_README.html',1,'']]]
+  ['deprecated_20list_13015',['Deprecated List',['../deprecated.html',1,'']]],
+  ['doxygen_20awesome_13016',['Doxygen Awesome',['../md_doxygen-awesome-css_README.html',1,'']]],
+  ['deepmerge_13017',['deepmerge',['../md_node_modules_deepmerge_readme.html',1,'']]]
 ];

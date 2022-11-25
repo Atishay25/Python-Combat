@@ -1,0 +1,95 @@
+\hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/src/walker.js File Reference}
+\label{jsdoc_2lib_2jsdoc_2src_2walker_8js}\index{node\_modules/jsdoc/lib/jsdoc/src/walker.js@{node\_modules/jsdoc/lib/jsdoc/src/walker.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classWalker}{Walker}}
+\begin{DoxyCompactList}\small\item\em Create a walker that can traverse an A\+ST that is consistent with the Mozilla \mbox{\hyperlink{classParser}{Parser}} A\+PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_a37aa2c89910f650c3ccb107ca08dcc42}{get\+Current\+Scope}} (scopes)
+\item 
+function \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_ac2f7668904aac8fc4ce2cf2efaddbacd}{move\+Leading\+Comments}} (source, target, \mbox{\hyperlink{watch-cli_8js_aa3d11d166996ddb003c33bcfacab9385}{count}})
+\item 
+function \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_ae6cb9e1188678a2f968df4c3ddc2d536}{move\+Trailing\+Comments}} (source, target, \mbox{\hyperlink{watch-cli_8js_aa3d11d166996ddb003c33bcfacab9385}{count}})
+\item 
+function \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_abe3688af4441685364ae75b7d979ea58}{leaf\+Node}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, \mbox{\hyperlink{__parent_8js_ac7ea7836d8d3128c6fcf2725bc233801}{parent}}, \mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, \mbox{\hyperlink{underscore_2underscore_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_a074155f38b7fd150360f6ae12216c040}{astnode}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/src/astnode\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Traversal utilities for A\+S\+Ts that are compatible with the E\+S\+Tree A\+PI. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/logger\textquotesingle{})
+\item 
+const \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_a00a15eea64e6c06826721371906c1870}{Syntax}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/src/syntax\textquotesingle{}).Syntax
+\item 
+const \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_af822e07c22dbb7697bd2633b396939f5}{walkers}} = exports.\+walkers = \{\}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_a9669eaa20076735e6250440001703d61}{Walker}} = \mbox{\hyperlink{classWalker}{Walker}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js_a37aa2c89910f650c3ccb107ca08dcc42}\label{jsdoc_2lib_2jsdoc_2src_2walker_8js_a37aa2c89910f650c3ccb107ca08dcc42}} 
+\index{walker.js@{walker.js}!getCurrentScope@{getCurrentScope}}
+\index{getCurrentScope@{getCurrentScope}!walker.js@{walker.js}}
+\doxysubsubsection{\texorpdfstring{getCurrentScope()}{getCurrentScope()}}
+{\footnotesize\ttfamily function get\+Current\+Scope (\begin{DoxyParamCaption}\item[{}]{scopes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js_abe3688af4441685364ae75b7d979ea58}\label{jsdoc_2lib_2jsdoc_2src_2walker_8js_abe3688af4441685364ae75b7d979ea58}} 
+\index{walker.js@{walker.js}!leafNode@{leafNode}}
+\index{leafNode@{leafNode}!walker.js@{walker.js}}
+\doxysubsubsection{\texorpdfstring{leafNode()}{leafNode()}}
+{\footnotesize\ttfamily function leaf\+Node (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{parent,  }\item[{}]{state,  }\item[{}]{cb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js_ac2f7668904aac8fc4ce2cf2efaddbacd}\label{jsdoc_2lib_2jsdoc_2src_2walker_8js_ac2f7668904aac8fc4ce2cf2efaddbacd}} 
+\index{walker.js@{walker.js}!moveLeadingComments@{moveLeadingComments}}
+\index{moveLeadingComments@{moveLeadingComments}!walker.js@{walker.js}}
+\doxysubsubsection{\texorpdfstring{moveLeadingComments()}{moveLeadingComments()}}
+{\footnotesize\ttfamily function move\+Leading\+Comments (\begin{DoxyParamCaption}\item[{}]{source,  }\item[{}]{target,  }\item[{}]{count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js_ae6cb9e1188678a2f968df4c3ddc2d536}\label{jsdoc_2lib_2jsdoc_2src_2walker_8js_ae6cb9e1188678a2f968df4c3ddc2d536}} 
+\index{walker.js@{walker.js}!moveTrailingComments@{moveTrailingComments}}
+\index{moveTrailingComments@{moveTrailingComments}!walker.js@{walker.js}}
+\doxysubsubsection{\texorpdfstring{moveTrailingComments()}{moveTrailingComments()}}
+{\footnotesize\ttfamily function move\+Trailing\+Comments (\begin{DoxyParamCaption}\item[{}]{source,  }\item[{}]{target,  }\item[{}]{count }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js_a074155f38b7fd150360f6ae12216c040}\label{jsdoc_2lib_2jsdoc_2src_2walker_8js_a074155f38b7fd150360f6ae12216c040}} 
+\index{walker.js@{walker.js}!astnode@{astnode}}
+\index{astnode@{astnode}!walker.js@{walker.js}}
+\doxysubsubsection{\texorpdfstring{astnode}{astnode}}
+{\footnotesize\ttfamily const astnode = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/src/astnode\textquotesingle{})}
+
+
+
+Traversal utilities for A\+S\+Ts that are compatible with the E\+S\+Tree A\+PI. 
+
+@module jsdoc/src/walker \mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js_a7343f0c6712bd65d3d51282ddbf80fe2}\label{jsdoc_2lib_2jsdoc_2src_2walker_8js_a7343f0c6712bd65d3d51282ddbf80fe2}} 
+\index{walker.js@{walker.js}!logger@{logger}}
+\index{logger@{logger}!walker.js@{walker.js}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily const logger = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/logger\textquotesingle{})}
+
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js_a00a15eea64e6c06826721371906c1870}\label{jsdoc_2lib_2jsdoc_2src_2walker_8js_a00a15eea64e6c06826721371906c1870}} 
+\index{walker.js@{walker.js}!Syntax@{Syntax}}
+\index{Syntax@{Syntax}!walker.js@{walker.js}}
+\doxysubsubsection{\texorpdfstring{Syntax}{Syntax}}
+{\footnotesize\ttfamily const Syntax = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/src/syntax\textquotesingle{}).Syntax}
+
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js_a9669eaa20076735e6250440001703d61}\label{jsdoc_2lib_2jsdoc_2src_2walker_8js_a9669eaa20076735e6250440001703d61}} 
+\index{walker.js@{walker.js}!Walker@{Walker}}
+\index{Walker@{Walker}!walker.js@{walker.js}}
+\doxysubsubsection{\texorpdfstring{Walker}{Walker}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{classWalker}{Walker}} = \mbox{\hyperlink{classWalker}{Walker}}}
+
+\mbox{\Hypertarget{jsdoc_2lib_2jsdoc_2src_2walker_8js_af822e07c22dbb7697bd2633b396939f5}\label{jsdoc_2lib_2jsdoc_2src_2walker_8js_af822e07c22dbb7697bd2633b396939f5}} 
+\index{walker.js@{walker.js}!walkers@{walkers}}
+\index{walkers@{walkers}!walker.js@{walker.js}}
+\doxysubsubsection{\texorpdfstring{walkers}{walkers}}
+{\footnotesize\ttfamily walkers\mbox{[}Syntax.\+Yield\+Expression\mbox{]} = exports.\+walkers = \{\}}
+

@@ -1,0 +1,373 @@
+\hypertarget{logger_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.js File Reference}
+\label{logger_8js}\index{node\_modules/jsdoc/lib/jsdoc/util/logger.js@{node\_modules/jsdoc/lib/jsdoc/util/logger.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classLogger}{Logger}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{logger_8js_a5ecb6edeb2e8b63801db5eff837c90b9}{add\+Prefix}} (args, \mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_a44ac5b09a8d6006f5f5ca18fa912e7b2}{prefix}})
+\item 
+function \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}} (\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{fp_2zipWith_8js_a1ba8e806628b2f512d93819d64d86db9}{func}})
+\item 
+function \mbox{\hyperlink{logger_8js_adeca29050a52450322761e3674468239}{print\+To\+Stdout}} (...args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{logger_8js_a837fd8c4f283c94192e740ed456a810e}{Event\+Emitter}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{es_2shared_2watch_8js_a2cdeacbdec4bee21c3808f4dfad87170}{events}}\textquotesingle{}).Event\+Emitter
+\item 
+const \mbox{\hyperlink{logger_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+const \mbox{\hyperlink{logger_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} = \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = new \mbox{\hyperlink{classLogger}{Logger}}()
+\item 
+const \mbox{\hyperlink{logger_8js_a6ba8b1cc0e119fd3bf18d220852ffa7f}{L\+E\+V\+E\+LS}}
+\item 
+const \mbox{\hyperlink{logger_8js_ac562b377cdb7828dd286fc048e6acd1e}{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+E\+V\+EL}} = L\+E\+V\+E\+L\+S.\+W\+A\+RN
+\item 
+let \mbox{\hyperlink{logger_8js_a7935502cba3691633c0dba05697e1101}{log\+Level}} = \mbox{\hyperlink{logger_8js_ac562b377cdb7828dd286fc048e6acd1e}{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+E\+V\+EL}}
+\item 
+const \mbox{\hyperlink{logger_8js_a47fb9a9334f5458b2fcb1895a5636044}{P\+R\+E\+F\+I\+X\+ES}}
+\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_a3907e802b0261425f37d0ce68e7e3c94}{debug}} = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}debug\textquotesingle{}, \mbox{\hyperlink{shared_2loadConfigFile_8js_a660866b39a2b7bd11c9e7ea9afc5e726}{console.\+info}})
+\begin{DoxyCompactList}\small\item\em Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+D\+E\+B\+UG}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_a8cf7b41b1b23c32d0720a2fcba61bd47}{print\+Debug}} = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}\mbox{\hyperlink{logger_8js_a3907e802b0261425f37d0ce68e7e3c94}{debug}}\textquotesingle{}, \mbox{\hyperlink{logger_8js_adeca29050a52450322761e3674468239}{print\+To\+Stdout}})
+\begin{DoxyCompactList}\small\item\em Print a string at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+D\+E\+B\+UG}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_a72d1d342d4dc08ce099a45733f6c2cdb}{error}} = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}error\textquotesingle{}, console.\+error)
+\begin{DoxyCompactList}\small\item\em Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+E\+R\+R\+OR}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_aba1dc001f3f6a9e72303f4435eacd1c2}{fatal}} = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}fatal\textquotesingle{}, \mbox{\hyperlink{shared_2rollup_8js_a8bb803d616ea727eda8da0b54f6eacb2}{console.\+error}})
+\begin{DoxyCompactList}\small\item\em Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+F\+A\+T\+AL}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_a178f8f2174caebc867b4dc8b0d6a4e10}{info}} = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}info\textquotesingle{}, console.\+info)
+\begin{DoxyCompactList}\small\item\em Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+I\+N\+FO}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_a4ab2f96ff7b15657fcc2b65dc0bc642f}{print\+Info}} = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}\mbox{\hyperlink{shared_2loadConfigFile_8js_a660866b39a2b7bd11c9e7ea9afc5e726}{info}}\textquotesingle{}, \mbox{\hyperlink{logger_8js_adeca29050a52450322761e3674468239}{print\+To\+Stdout}})
+\begin{DoxyCompactList}\small\item\em Print a string at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+I\+N\+FO}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_a597500e52e43b81efa94aabf17ef9cd4}{verbose}} = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}verbose\textquotesingle{}, \mbox{\hyperlink{shared_2loadConfigFile_8js_a660866b39a2b7bd11c9e7ea9afc5e726}{console.\+info}})
+\begin{DoxyCompactList}\small\item\em Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+V\+E\+R\+B\+O\+SE}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_a95d51144327c86106204c47b56855df9}{print\+Verbose}} = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}\mbox{\hyperlink{logger_8js_a597500e52e43b81efa94aabf17ef9cd4}{verbose}}\textquotesingle{}, \mbox{\hyperlink{logger_8js_adeca29050a52450322761e3674468239}{print\+To\+Stdout}})
+\begin{DoxyCompactList}\small\item\em Print a string at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+V\+E\+R\+B\+O\+SE}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_a89e0031ecd12bbc2bba57f54c458e94b}{warn}} = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}warn\textquotesingle{}, console.\+warn)
+\begin{DoxyCompactList}\small\item\em Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+W\+A\+RN}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_ad80839ca145239a7e6436a5064b7ab06}{set\+Level}}
+\begin{DoxyCompactList}\small\item\em Set the log level. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} \mbox{\hyperlink{logger_8js_ac961857665715cfd17f25f2d25513d96}{get\+Level}}
+\begin{DoxyCompactList}\small\item\em Get the current log level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{logger_8js_a5ecb6edeb2e8b63801db5eff837c90b9}\label{logger_8js_a5ecb6edeb2e8b63801db5eff837c90b9}} 
+\index{logger.js@{logger.js}!addPrefix@{addPrefix}}
+\index{addPrefix@{addPrefix}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{addPrefix()}{addPrefix()}}
+{\footnotesize\ttfamily function add\+Prefix (\begin{DoxyParamCaption}\item[{}]{args,  }\item[{}]{prefix }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+\mbox{\Hypertarget{logger_8js_adeca29050a52450322761e3674468239}\label{logger_8js_adeca29050a52450322761e3674468239}} 
+\index{logger.js@{logger.js}!printToStdout@{printToStdout}}
+\index{printToStdout@{printToStdout}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{printToStdout()}{printToStdout()}}
+{\footnotesize\ttfamily function print\+To\+Stdout (\begin{DoxyParamCaption}\item[{}]{args }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+\mbox{\Hypertarget{logger_8js_affad7651f345598013901ff0c97d044d}\label{logger_8js_affad7651f345598013901ff0c97d044d}} 
+\index{logger.js@{logger.js}!wrapLogFunction@{wrapLogFunction}}
+\index{wrapLogFunction@{wrapLogFunction}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{wrapLogFunction()}{wrapLogFunction()}}
+{\footnotesize\ttfamily function wrap\+Log\+Function (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{logger_8js_a3907e802b0261425f37d0ce68e7e3c94}\label{logger_8js_a3907e802b0261425f37d0ce68e7e3c94}} 
+\index{logger.js@{logger.js}!debug@{debug}}
+\index{debug@{debug}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} debug = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}debug\textquotesingle{}, \mbox{\hyperlink{shared_2loadConfigFile_8js_a660866b39a2b7bd11c9e7ea9afc5e726}{console.\+info}})}
+
+
+
+Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+D\+E\+B\+UG}}. 
+
+@alias module\+:jsdoc/util/logger.\+debug 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message -\/ The message to log. \\
+\hline
+{\em \{...$\ast$=\}} & values -\/ The values that will replace the message\textquotesingle{}s placeholders. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logger_8js_ac562b377cdb7828dd286fc048e6acd1e}\label{logger_8js_ac562b377cdb7828dd286fc048e6acd1e}} 
+\index{logger.js@{logger.js}!DEFAULT\_LEVEL@{DEFAULT\_LEVEL}}
+\index{DEFAULT\_LEVEL@{DEFAULT\_LEVEL}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_LEVEL}{DEFAULT\_LEVEL}}
+{\footnotesize\ttfamily const D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+E\+V\+EL = L\+E\+V\+E\+L\+S.\+W\+A\+RN}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+\mbox{\Hypertarget{logger_8js_a72d1d342d4dc08ce099a45733f6c2cdb}\label{logger_8js_a72d1d342d4dc08ce099a45733f6c2cdb}} 
+\index{logger.js@{logger.js}!error@{error}}
+\index{error@{error}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} error = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}error\textquotesingle{}, console.\+error)}
+
+
+
+Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+E\+R\+R\+OR}}. 
+
+@alias module\+:jsdoc/util/logger.\+error 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message -\/ The message to log. \\
+\hline
+{\em \{...$\ast$=\}} & values -\/ The values that will replace the message\textquotesingle{}s placeholders. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logger_8js_a837fd8c4f283c94192e740ed456a810e}\label{logger_8js_a837fd8c4f283c94192e740ed456a810e}} 
+\index{logger.js@{logger.js}!EventEmitter@{EventEmitter}}
+\index{EventEmitter@{EventEmitter}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{EventEmitter}{EventEmitter}}
+{\footnotesize\ttfamily const Event\+Emitter = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{es_2shared_2watch_8js_a2cdeacbdec4bee21c3808f4dfad87170}{events}}\textquotesingle{}).Event\+Emitter}
+
+\mbox{\Hypertarget{logger_8js_aba1dc001f3f6a9e72303f4435eacd1c2}\label{logger_8js_aba1dc001f3f6a9e72303f4435eacd1c2}} 
+\index{logger.js@{logger.js}!fatal@{fatal}}
+\index{fatal@{fatal}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{fatal}{fatal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} fatal = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}fatal\textquotesingle{}, \mbox{\hyperlink{shared_2rollup_8js_a8bb803d616ea727eda8da0b54f6eacb2}{console.\+error}})}
+
+
+
+Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+F\+A\+T\+AL}}. 
+
+@alias module\+:jsdoc/util/logger.\+fatal 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message -\/ The message to log. \\
+\hline
+{\em \{...$\ast$=\}} & values -\/ The values that will replace the message\textquotesingle{}s placeholders. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logger_8js_ac961857665715cfd17f25f2d25513d96}\label{logger_8js_ac961857665715cfd17f25f2d25513d96}} 
+\index{logger.js@{logger.js}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{getLevel}{getLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} get\+Level}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function}() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{logger_8js_a7935502cba3691633c0dba05697e1101}{logLevel}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Get the current log level. 
+
+@alias module\+:jsdoc/util/logger.\+get\+Level \begin{DoxyReturn}{Returns}
+\{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+LS\} The current log level. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logger_8js_a178f8f2174caebc867b4dc8b0d6a4e10}\label{logger_8js_a178f8f2174caebc867b4dc8b0d6a4e10}} 
+\index{logger.js@{logger.js}!info@{info}}
+\index{info@{info}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} info = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}info\textquotesingle{}, console.\+info)}
+
+
+
+Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+I\+N\+FO}}. 
+
+@alias module\+:jsdoc/util/logger.\+info 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message -\/ The message to log. \\
+\hline
+{\em \{...$\ast$=\}} & values -\/ The values that will replace the message\textquotesingle{}s placeholders. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logger_8js_a6ba8b1cc0e119fd3bf18d220852ffa7f}\label{logger_8js_a6ba8b1cc0e119fd3bf18d220852ffa7f}} 
+\index{logger.js@{logger.js}!LEVELS@{LEVELS}}
+\index{LEVELS@{LEVELS}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{LEVELS}{LEVELS}}
+{\footnotesize\ttfamily const L\+E\+V\+E\+LS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{logger_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}}.LEVELS = \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    SILENT: 0,}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    FATAL: 10,}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    ERROR: 20,}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    WARN: 30,}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    INFO: 40,}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    DEBUG: 50,}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    VERBOSE: 1000}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+\mbox{\Hypertarget{logger_8js_a7343f0c6712bd65d3d51282ddbf80fe2}\label{logger_8js_a7343f0c6712bd65d3d51282ddbf80fe2}} 
+\index{logger.js@{logger.js}!logger@{logger}}
+\index{logger@{logger}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily const logger = \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = new \mbox{\hyperlink{classLogger}{Logger}}()}
+
+\mbox{\Hypertarget{logger_8js_a7935502cba3691633c0dba05697e1101}\label{logger_8js_a7935502cba3691633c0dba05697e1101}} 
+\index{logger.js@{logger.js}!logLevel@{logLevel}}
+\index{logLevel@{logLevel}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{logLevel}{logLevel}}
+{\footnotesize\ttfamily let log\+Level = \mbox{\hyperlink{logger_8js_ac562b377cdb7828dd286fc048e6acd1e}{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+E\+V\+EL}}}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+\mbox{\Hypertarget{logger_8js_a47fb9a9334f5458b2fcb1895a5636044}\label{logger_8js_a47fb9a9334f5458b2fcb1895a5636044}} 
+\index{logger.js@{logger.js}!PREFIXES@{PREFIXES}}
+\index{PREFIXES@{PREFIXES}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{PREFIXES}{PREFIXES}}
+{\footnotesize\ttfamily const P\+R\+E\+F\+I\+X\+ES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    DEBUG: \textcolor{stringliteral}{'DEBUG: '},}
+\DoxyCodeLine{    ERROR: \textcolor{stringliteral}{'ERROR: '},}
+\DoxyCodeLine{    FATAL: \textcolor{stringliteral}{'FATAL: '},}
+\DoxyCodeLine{    WARN: \textcolor{stringliteral}{'WARNING: '}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+\mbox{\Hypertarget{logger_8js_a8cf7b41b1b23c32d0720a2fcba61bd47}\label{logger_8js_a8cf7b41b1b23c32d0720a2fcba61bd47}} 
+\index{logger.js@{logger.js}!printDebug@{printDebug}}
+\index{printDebug@{printDebug}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{printDebug}{printDebug}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} print\+Debug = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}\mbox{\hyperlink{logger_8js_a3907e802b0261425f37d0ce68e7e3c94}{debug}}\textquotesingle{}, \mbox{\hyperlink{logger_8js_adeca29050a52450322761e3674468239}{print\+To\+Stdout}})}
+
+
+
+Print a string at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+D\+E\+B\+UG}}. 
+
+The string is not terminated by a newline.
+
+@alias module\+:jsdoc/util/logger.\+print\+Debug 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message -\/ The message to log. \\
+\hline
+{\em \{...$\ast$=\}} & values -\/ The values that will replace the message\textquotesingle{}s placeholders. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logger_8js_a4ab2f96ff7b15657fcc2b65dc0bc642f}\label{logger_8js_a4ab2f96ff7b15657fcc2b65dc0bc642f}} 
+\index{logger.js@{logger.js}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{printInfo}{printInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} print\+Info = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}\mbox{\hyperlink{shared_2loadConfigFile_8js_a660866b39a2b7bd11c9e7ea9afc5e726}{info}}\textquotesingle{}, \mbox{\hyperlink{logger_8js_adeca29050a52450322761e3674468239}{print\+To\+Stdout}})}
+
+
+
+Print a string at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+I\+N\+FO}}. 
+
+The string is not terminated by a newline.
+
+@alias module\+:jsdoc/util/logger.\+print\+Info 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message -\/ The message to log. \\
+\hline
+{\em \{...$\ast$=\}} & values -\/ The values that will replace the message\textquotesingle{}s placeholders. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logger_8js_a95d51144327c86106204c47b56855df9}\label{logger_8js_a95d51144327c86106204c47b56855df9}} 
+\index{logger.js@{logger.js}!printVerbose@{printVerbose}}
+\index{printVerbose@{printVerbose}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{printVerbose}{printVerbose}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} print\+Verbose = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}\mbox{\hyperlink{logger_8js_a597500e52e43b81efa94aabf17ef9cd4}{verbose}}\textquotesingle{}, \mbox{\hyperlink{logger_8js_adeca29050a52450322761e3674468239}{print\+To\+Stdout}})}
+
+
+
+Print a string at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+V\+E\+R\+B\+O\+SE}}. 
+
+The string is not terminated by a newline.
+
+@alias module\+:jsdoc/util/logger.\+print\+Verbose 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message -\/ The message to log. \\
+\hline
+{\em \{...$\ast$=\}} & values -\/ The values that will replace the message\textquotesingle{}s placeholders. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logger_8js_ad80839ca145239a7e6436a5064b7ab06}\label{logger_8js_ad80839ca145239a7e6436a5064b7ab06}} 
+\index{logger.js@{logger.js}!setLevel@{setLevel}}
+\index{setLevel@{setLevel}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{setLevel}{setLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} set\+Level}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function}(\mbox{\hyperlink{errors_8js_a0e67986c0e8d7f55cd0c5c9fefd5093d}{level}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{logger_8js_a7935502cba3691633c0dba05697e1101}{logLevel}} = (\mbox{\hyperlink{errors_8js_a0e67986c0e8d7f55cd0c5c9fefd5093d}{level}} !== \mbox{\hyperlink{bluebird_8core_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}}) ? \mbox{\hyperlink{errors_8js_a0e67986c0e8d7f55cd0c5c9fefd5093d}{level}} : \mbox{\hyperlink{logger_8js_ac562b377cdb7828dd286fc048e6acd1e}{DEFAULT\_LEVEL}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Set the log level. 
+
+@alias module\+:jsdoc/util/logger.\+set\+Level 
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S\}} & level -\/ The log level to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logger_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}\label{logger_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}} 
+\index{logger.js@{logger.js}!util@{util}}
+\index{util@{util}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily const util = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})}
+
+\mbox{\Hypertarget{logger_8js_a597500e52e43b81efa94aabf17ef9cd4}\label{logger_8js_a597500e52e43b81efa94aabf17ef9cd4}} 
+\index{logger.js@{logger.js}!verbose@{verbose}}
+\index{verbose@{verbose}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} verbose = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}verbose\textquotesingle{}, \mbox{\hyperlink{shared_2loadConfigFile_8js_a660866b39a2b7bd11c9e7ea9afc5e726}{console.\+info}})}
+
+
+
+Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+V\+E\+R\+B\+O\+SE}}. 
+
+@alias module\+:jsdoc/util/logger.\+verbose 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message -\/ The message to log. \\
+\hline
+{\em \{...$\ast$=\}} & values -\/ The values that will replace the message\textquotesingle{}s placeholders. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logger_8js_a89e0031ecd12bbc2bba57f54c458e94b}\label{logger_8js_a89e0031ecd12bbc2bba57f54c458e94b}} 
+\index{logger.js@{logger.js}!warn@{warn}}
+\index{warn@{warn}!logger.js@{logger.js}}
+\doxysubsubsection{\texorpdfstring{warn}{warn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{default_2publish_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} warn = \mbox{\hyperlink{logger_8js_affad7651f345598013901ff0c97d044d}{wrap\+Log\+Function}}(\textquotesingle{}warn\textquotesingle{}, console.\+warn)}
+
+
+
+Log a message at log level \mbox{\hyperlink{}{module\+:jsdoc/util/logger.\+L\+E\+V\+E\+L\+S.\+W\+A\+RN}}. 
+
+@alias module\+:jsdoc/util/logger.\+warn 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message -\/ The message to log. \\
+\hline
+{\em \{...$\ast$=\}} & values -\/ The values that will replace the message\textquotesingle{}s placeholders. \\
+\hline
+\end{DoxyParams}

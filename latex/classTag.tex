@@ -2,9 +2,111 @@
 \label{classTag}\index{Tag@{Tag}}
 
 
-\doxysubsection{Detailed Description}
-Represents a single doclet tag. 
+Highlighting tags are markers that denote a highlighting category.  
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-node\+\_\+modules/jsdoc/lib/jsdoc/tag.\+js\end{DoxyCompactItemize}
+\mbox{\hyperlink{classTag_acb83aecf58d1a89a3cf1b8f379aba6a3}{constructor}} (\mbox{\hyperlink{underscore_2cjs_2set_8js_ab85fe3255aca16ce11c167a333d8d9b1}{set}}, \mbox{\hyperlink{shared_2rollup_8js_a633f76c2f6070be182949e8d86a51bc6}{base}}, modified)
+\item 
+\mbox{\hyperlink{classTag_a55e74a58596203a4b3c4f877e0ae769a}{constructor}} (tag\+Title, tag\+Body, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a7f4f20a4a61c5cfa4668cb55bc9fd67f}{meta}})
+\begin{DoxyCompactList}\small\item\em Constructs a new tag object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTag_aff2f493f1e3acb57a04aa9468a0c2ae3}{define}} (\mbox{\hyperlink{__parent_8js_ac7ea7836d8d3128c6fcf2725bc233801}{parent}})
+\begin{DoxyCompactList}\small\item\em Define a new tag. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classTag_a0add5135344372e351e245b101d42f8c}{define\+Modifier}} ()
+\begin{DoxyCompactList}\small\item\em Define a tag {\itshape modifier}, which is a function that, given a tag, will return a tag that is a subtag of the original. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Highlighting tags are markers that denote a highlighting category. 
+
+Represents a single doclet tag.
+
+They are \href{\#highlight.styleTags}{\texttt{ associated}} with parts of a syntax tree by a language mode, and then mapped to an actual C\+SS style by a \href{\#highlight.Highlighter}{\texttt{ highlighter}}.
+
+Because syntax tree node types and highlight styles have to be able to talk the same language, Code\+Mirror uses a mostly {\itshape closed} \href{\#highlight.tags}{\texttt{ vocabulary}} of syntax tags (as opposed to traditional open string-\/based systems, which make it hard for highlighting themes to cover all the tokens produced by the various languages).
+
+It {\itshape is} possible to \href{\#highlight.Tag^define}{\texttt{ define}} your own highlighting tags for system-\/internal use (where you control both the language package and the highlighter), but such tags will not be picked up by regular highlighters (though you can derive them from standard tags to allow highlighters to fall back to those). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTag_acb83aecf58d1a89a3cf1b8f379aba6a3}\label{classTag_acb83aecf58d1a89a3cf1b8f379aba6a3}} 
+\index{Tag@{Tag}!constructor@{constructor}}
+\index{constructor@{constructor}!Tag@{Tag}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tag\+::constructor (\begin{DoxyParamCaption}\item[{}]{set,  }\item[{}]{base,  }\item[{}]{modified }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em set} & The set of this tag and all its parent tags, starting with this one itself and sorted in order of decreasing specificity. \\
+\hline
+{\em base} & The base unmodified tag that this one is based on, if it\textquotesingle{}s modified\\
+\hline
+{\em modified} & The modifiers applied to this.\+base \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTag_a55e74a58596203a4b3c4f877e0ae769a}\label{classTag_a55e74a58596203a4b3c4f877e0ae769a}} 
+\index{Tag@{Tag}!constructor@{constructor}}
+\index{constructor@{constructor}!Tag@{Tag}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tag\+::constructor (\begin{DoxyParamCaption}\item[{}]{tag\+Title,  }\item[{}]{tag\+Body,  }\item[{}]{meta }\end{DoxyParamCaption})}
+
+
+
+Constructs a new tag object. 
+
+Calls the tag validator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & tag\+Title \\
+\hline
+{\em \{string=\}} & tag\+Body \\
+\hline
+{\em \{object=\}} & meta \\
+\hline
+\end{DoxyParams}
+The title of the tag (for example, {\ttfamily title} in {\ttfamily @title text}).
+
+The text following the tag (for example, {\ttfamily text} in {\ttfamily @title text}).
+
+Whitespace is trimmed from the tag text as follows\+:
+
+
+\begin{DoxyItemize}
+\item If the tag\textquotesingle{}s {\ttfamily keeps\+Whitespace} option is falsy, all leading and trailing whitespace are removed.
+\item If the tag\textquotesingle{}s {\ttfamily keeps\+Whitespace} option is set to {\ttfamily true}, leading and trailing whitespace are not trimmed, unless the {\ttfamily removes\+Indent} option is also enabled.
+\item If the tag\textquotesingle{}s {\ttfamily removes\+Indent} option is set to {\ttfamily true}, any indentation that is shared by every line in the string is removed. This option is ignored unless {\ttfamily keeps\+Whitespace} is set to {\ttfamily true}.
+\end{DoxyItemize}
+
+{\bfseries{Note}}\+: If the tag text is the name of a symbol, and the symbol\textquotesingle{}s name includes leading or trailing whitespace (for example, the property names in `\{ ' \textquotesingle{}\+: true, \textquotesingle{} foo \textquotesingle{}\+: false \}\`{}), the tag text is not trimmed. Instead, the tag text is wrapped in double quotes to prevent the whitespace from being trimmed.\mbox{\Hypertarget{classTag_aff2f493f1e3acb57a04aa9468a0c2ae3}\label{classTag_aff2f493f1e3acb57a04aa9468a0c2ae3}} 
+\index{Tag@{Tag}!define@{define}}
+\index{define@{define}!Tag@{Tag}}
+\doxysubsubsection{\texorpdfstring{define()}{define()}}
+{\footnotesize\ttfamily static Tag\+::define (\begin{DoxyParamCaption}\item[{}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Define a new tag. 
+
+If {\ttfamily parent} is given, the tag is treated as a sub-\/tag of that parent, and \href{\#highlight.tagHighlighter}{\texttt{ highlighters}} that don\textquotesingle{}t mention this tag will try to fall back to the parent tag (or grandparent tag, etc). \mbox{\Hypertarget{classTag_a0add5135344372e351e245b101d42f8c}\label{classTag_a0add5135344372e351e245b101d42f8c}} 
+\index{Tag@{Tag}!defineModifier@{defineModifier}}
+\index{defineModifier@{defineModifier}!Tag@{Tag}}
+\doxysubsubsection{\texorpdfstring{defineModifier()}{defineModifier()}}
+{\footnotesize\ttfamily static Tag\+::define\+Modifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Define a tag {\itshape modifier}, which is a function that, given a tag, will return a tag that is a subtag of the original. 
+
+Applying the same modifier to a twice tag will return the same value ({\ttfamily m1(t1) == m1(t1)}) and applying multiple modifiers will, regardless or order, produce the same tag ({\ttfamily m1(m2(t1)) == m2(m1(t1))}).
+
+When multiple modifiers are applied to a given base tag, each smaller set of modifiers is registered as a parent, so that for example {\ttfamily m1(m2(m3(t1)))} is a subtype of {\ttfamily m1(m2(t1))}, {\ttfamily m1(m3(t1)}, and so on. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@lezer/highlight/dist/\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js}{index.\+js}}\item 
+node\+\_\+modules/jsdoc/lib/jsdoc/\mbox{\hyperlink{tag_8js}{tag.\+js}}\end{DoxyCompactItemize}

@@ -1,7 +1,86 @@
 \hypertarget{classVisitor}{}\doxysection{Visitor Class Reference}
 \label{classVisitor}\index{Visitor@{Visitor}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVisitor_a03a42391182b2b3327bfcc7accfca8c0}{constructor}} ()
+\item 
+\mbox{\hyperlink{classVisitor_aa6e1f2b677f1e08c63797081a9e788e5}{set\+Parser}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}})
+\begin{DoxyCompactList}\small\item\em Set the parser instance that visitors can use. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVisitor_a768b7c94ec92a6846b3980ccff7612d0}{add\+Ast\+Node\+Visitor}} (visitor)
+\item 
+\mbox{\hyperlink{classVisitor_a07bef19755f9d5035b9f0a0f2f5db7dd}{remove\+Ast\+Node\+Visitor}} (visitor)
+\item 
+\mbox{\hyperlink{classVisitor_a4c916d12c4747b4fcd2549f9e071cd0a}{get\+Ast\+Node\+Visitors}} ()
+\item 
+\mbox{\hyperlink{classVisitor_a1afd2b6cbfb9432d790443856896c96a}{visit}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, \mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}})
+\item 
+\mbox{\hyperlink{classVisitor_a8575091f2c130e99749d897d44047550}{visit\+Node\+Comments}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, \mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, \mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}})
+\item 
+\mbox{\hyperlink{classVisitor_a82a0b1e8aa4b022e0886a436880f81f1}{visit\+Node}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, \mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, \mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVisitor_a768b7c94ec92a6846b3980ccff7612d0}\label{classVisitor_a768b7c94ec92a6846b3980ccff7612d0}} 
+\index{Visitor@{Visitor}!addAstNodeVisitor@{addAstNodeVisitor}}
+\index{addAstNodeVisitor@{addAstNodeVisitor}!Visitor@{Visitor}}
+\doxysubsubsection{\texorpdfstring{addAstNodeVisitor()}{addAstNodeVisitor()}}
+{\footnotesize\ttfamily Visitor\+::add\+Ast\+Node\+Visitor (\begin{DoxyParamCaption}\item[{}]{visitor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classVisitor_a03a42391182b2b3327bfcc7accfca8c0}\label{classVisitor_a03a42391182b2b3327bfcc7accfca8c0}} 
+\index{Visitor@{Visitor}!constructor@{constructor}}
+\index{constructor@{constructor}!Visitor@{Visitor}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Visitor\+::constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classVisitor_a4c916d12c4747b4fcd2549f9e071cd0a}\label{classVisitor_a4c916d12c4747b4fcd2549f9e071cd0a}} 
+\index{Visitor@{Visitor}!getAstNodeVisitors@{getAstNodeVisitors}}
+\index{getAstNodeVisitors@{getAstNodeVisitors}!Visitor@{Visitor}}
+\doxysubsubsection{\texorpdfstring{getAstNodeVisitors()}{getAstNodeVisitors()}}
+{\footnotesize\ttfamily Visitor\+::get\+Ast\+Node\+Visitors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classVisitor_a07bef19755f9d5035b9f0a0f2f5db7dd}\label{classVisitor_a07bef19755f9d5035b9f0a0f2f5db7dd}} 
+\index{Visitor@{Visitor}!removeAstNodeVisitor@{removeAstNodeVisitor}}
+\index{removeAstNodeVisitor@{removeAstNodeVisitor}!Visitor@{Visitor}}
+\doxysubsubsection{\texorpdfstring{removeAstNodeVisitor()}{removeAstNodeVisitor()}}
+{\footnotesize\ttfamily Visitor\+::remove\+Ast\+Node\+Visitor (\begin{DoxyParamCaption}\item[{}]{visitor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classVisitor_aa6e1f2b677f1e08c63797081a9e788e5}\label{classVisitor_aa6e1f2b677f1e08c63797081a9e788e5}} 
+\index{Visitor@{Visitor}!setParser@{setParser}}
+\index{setParser@{setParser}!Visitor@{Visitor}}
+\doxysubsubsection{\texorpdfstring{setParser()}{setParser()}}
+{\footnotesize\ttfamily Visitor\+::set\+Parser (\begin{DoxyParamCaption}\item[{}]{parser }\end{DoxyParamCaption})}
+
+
+
+Set the parser instance that visitors can use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/src/parser.\+Parser\}} & parser -\/ The parser instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVisitor_a1afd2b6cbfb9432d790443856896c96a}\label{classVisitor_a1afd2b6cbfb9432d790443856896c96a}} 
+\index{Visitor@{Visitor}!visit@{visit}}
+\index{visit@{visit}!Visitor@{Visitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily Visitor\+::visit (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classVisitor_a82a0b1e8aa4b022e0886a436880f81f1}\label{classVisitor_a82a0b1e8aa4b022e0886a436880f81f1}} 
+\index{Visitor@{Visitor}!visitNode@{visitNode}}
+\index{visitNode@{visitNode}!Visitor@{Visitor}}
+\doxysubsubsection{\texorpdfstring{visitNode()}{visitNode()}}
+{\footnotesize\ttfamily Visitor\+::visit\+Node (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{parser,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classVisitor_a8575091f2c130e99749d897d44047550}\label{classVisitor_a8575091f2c130e99749d897d44047550}} 
+\index{Visitor@{Visitor}!visitNodeComments@{visitNodeComments}}
+\index{visitNodeComments@{visitNodeComments}!Visitor@{Visitor}}
+\doxysubsubsection{\texorpdfstring{visitNodeComments()}{visitNodeComments()}}
+{\footnotesize\ttfamily Visitor\+::visit\+Node\+Comments (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{parser,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-node\+\_\+modules/jsdoc/lib/jsdoc/src/visitor.\+js\end{DoxyCompactItemize}
+node\+\_\+modules/jsdoc/lib/jsdoc/src/\mbox{\hyperlink{visitor_8js}{visitor.\+js}}\end{DoxyCompactItemize}

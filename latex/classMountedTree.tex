@@ -1,0 +1,38 @@
+\hypertarget{classMountedTree}{}\doxysection{Mounted\+Tree Class Reference}
+\label{classMountedTree}\index{MountedTree@{MountedTree}}
+
+
+A mounted tree, which can be \href{\#common.NodeProp^mounted}{\texttt{ stored}} on a tree node to indicate that parts of its content are represented by another tree.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMountedTree_a0574f62035e9fbb19f806b204a5f5c5d}{constructor}} (tree, overlay, \mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A mounted tree, which can be \href{\#common.NodeProp^mounted}{\texttt{ stored}} on a tree node to indicate that parts of its content are represented by another tree. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMountedTree_a0574f62035e9fbb19f806b204a5f5c5d}\label{classMountedTree_a0574f62035e9fbb19f806b204a5f5c5d}} 
+\index{MountedTree@{MountedTree}!constructor@{constructor}}
+\index{constructor@{constructor}!MountedTree@{MountedTree}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Mounted\+Tree\+::constructor (\begin{DoxyParamCaption}\item[{}]{tree,  }\item[{}]{overlay,  }\item[{}]{parser }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The inner tree. \\
+\hline
+{\em overlay} & If this is null, this tree replaces the entire node (it will be included in the regular iteration instead of its host node). If not, only the given ranges are considered to be covered by this tree. This is used for trees that are mixed in a way that isn\textquotesingle{}t strictly hierarchical. Such mounted trees are only entered by \mbox{[}\`{}resolve\+Inner\`{}\mbox{]}(\#common.\+Tree.\+resolve\+Inner) and \mbox{[}\`{}enter\`{}\mbox{]}(\#common.\+Syntax\+Node.\+enter). \\
+\hline
+{\em parser} & The parser used to create this subtree. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@lezer/common/dist/\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

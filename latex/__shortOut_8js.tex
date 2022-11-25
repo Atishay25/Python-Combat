@@ -1,0 +1,70 @@
+\hypertarget{__shortOut_8js}{}\doxysection{node\+\_\+modules/lodash/\+\_\+short\+Out.js File Reference}
+\label{__shortOut_8js}\index{node\_modules/lodash/\_shortOut.js@{node\_modules/lodash/\_shortOut.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__shortOut_8js_a87fe87ba45990dab11b01d9da1355e1d}{short\+Out}} (\mbox{\hyperlink{fp_2zipWith_8js_a1ba8e806628b2f512d93819d64d86db9}{func}})
+\begin{DoxyCompactList}\small\item\em Creates a function that\textquotesingle{}ll short out and invoke {\ttfamily identity} instead of {\ttfamily func} when it\textquotesingle{}s called {\ttfamily H\+O\+T\+\_\+\+C\+O\+U\+NT} or more times in {\ttfamily H\+O\+T\+\_\+\+S\+P\+AN} milliseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__shortOut_8js_a9f41300db8d1c607685730bae889948f}{H\+O\+T\+\_\+\+C\+O\+U\+NT}} = 800
+\begin{DoxyCompactList}\small\item\em Used to detect hot functions by number of calls within a span of milliseconds. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__shortOut_8js_afb1ad2f6e7f5df02516d60606d8bb71e}{H\+O\+T\+\_\+\+S\+P\+AN}} = 16
+\item 
+var \mbox{\hyperlink{__shortOut_8js_add978aaeb2aa3409155a46903a9afd3b}{native\+Now}} = \mbox{\hyperlink{underscore_2modules_2now_8js_a2c3039050b775d3387ee2766d7a5bd52}{Date.\+now}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__shortOut_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__shortOut_8js_a87fe87ba45990dab11b01d9da1355e1d}{short\+Out}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__shortOut_8js_a87fe87ba45990dab11b01d9da1355e1d}\label{__shortOut_8js_a87fe87ba45990dab11b01d9da1355e1d}} 
+\index{\_shortOut.js@{\_shortOut.js}!shortOut@{shortOut}}
+\index{shortOut@{shortOut}!\_shortOut.js@{\_shortOut.js}}
+\doxysubsubsection{\texorpdfstring{shortOut()}{shortOut()}}
+{\footnotesize\ttfamily function short\+Out (\begin{DoxyParamCaption}\item[{}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates a function that\textquotesingle{}ll short out and invoke {\ttfamily identity} instead of {\ttfamily func} when it\textquotesingle{}s called {\ttfamily H\+O\+T\+\_\+\+C\+O\+U\+NT} or more times in {\ttfamily H\+O\+T\+\_\+\+S\+P\+AN} milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to restrict. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new shortable function. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__shortOut_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{__shortOut_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{\_shortOut.js@{\_shortOut.js}!exports@{exports}}
+\index{exports@{exports}!\_shortOut.js@{\_shortOut.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__shortOut_8js_a87fe87ba45990dab11b01d9da1355e1d}{short\+Out}}}
+
+\mbox{\Hypertarget{__shortOut_8js_a9f41300db8d1c607685730bae889948f}\label{__shortOut_8js_a9f41300db8d1c607685730bae889948f}} 
+\index{\_shortOut.js@{\_shortOut.js}!HOT\_COUNT@{HOT\_COUNT}}
+\index{HOT\_COUNT@{HOT\_COUNT}!\_shortOut.js@{\_shortOut.js}}
+\doxysubsubsection{\texorpdfstring{HOT\_COUNT}{HOT\_COUNT}}
+{\footnotesize\ttfamily var H\+O\+T\+\_\+\+C\+O\+U\+NT = 800}
+
+
+
+Used to detect hot functions by number of calls within a span of milliseconds. 
+
+\mbox{\Hypertarget{__shortOut_8js_afb1ad2f6e7f5df02516d60606d8bb71e}\label{__shortOut_8js_afb1ad2f6e7f5df02516d60606d8bb71e}} 
+\index{\_shortOut.js@{\_shortOut.js}!HOT\_SPAN@{HOT\_SPAN}}
+\index{HOT\_SPAN@{HOT\_SPAN}!\_shortOut.js@{\_shortOut.js}}
+\doxysubsubsection{\texorpdfstring{HOT\_SPAN}{HOT\_SPAN}}
+{\footnotesize\ttfamily var H\+O\+T\+\_\+\+S\+P\+AN = 16}
+
+\mbox{\Hypertarget{__shortOut_8js_add978aaeb2aa3409155a46903a9afd3b}\label{__shortOut_8js_add978aaeb2aa3409155a46903a9afd3b}} 
+\index{\_shortOut.js@{\_shortOut.js}!nativeNow@{nativeNow}}
+\index{nativeNow@{nativeNow}!\_shortOut.js@{\_shortOut.js}}
+\doxysubsubsection{\texorpdfstring{nativeNow}{nativeNow}}
+{\footnotesize\ttfamily var native\+Now = \mbox{\hyperlink{underscore_2modules_2now_8js_a2c3039050b775d3387ee2766d7a5bd52}{Date.\+now}}}
+

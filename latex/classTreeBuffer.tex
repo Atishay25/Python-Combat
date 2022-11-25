@@ -1,0 +1,84 @@
+\hypertarget{classTreeBuffer}{}\doxysection{Tree\+Buffer Class Reference}
+\label{classTreeBuffer}\index{TreeBuffer@{TreeBuffer}}
+
+
+\mbox{\hyperlink{classTree}{Tree}} buffers contain (type, start, end, end\+Index) quads for each node.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTreeBuffer_af698d497dfd74b7077153ea123f10334}{constructor}} (buffer, \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}}, \mbox{\hyperlink{underscore_2cjs_2set_8js_ab85fe3255aca16ce11c167a333d8d9b1}{set}})
+\begin{DoxyCompactList}\small\item\em Create a tree buffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classTreeBuffer_a14e9cc6d8dd19968e86ece5867844ac3}{type}} ()
+\item 
+\mbox{\hyperlink{classTreeBuffer_a612616a3369cf14bbb5a1e5a0ce2de6c}{to\+String}} ()
+\item 
+\mbox{\hyperlink{classTreeBuffer_aadeee06bbe0f2c3ef23c438ea11ba6e5}{child\+String}} (\mbox{\hyperlink{cjs_2index-default_8js_ae4b896af19aae26b1e5317acf4126807}{index}})
+\item 
+\mbox{\hyperlink{classTreeBuffer_ae5b63987d80eb95040f1385b52f98242}{find\+Child}} (start\+Index, end\+Index, dir, pos, side)
+\item 
+\mbox{\hyperlink{classTreeBuffer_a184c440684bc95e05a3cce465d962486}{slice}} (startI, endI, from, to)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classTree}{Tree}} buffers contain (type, start, end, end\+Index) quads for each node. 
+
+In such a buffer, nodes are stored in prefix order (parents before children, with the end\+Index of the parent indicating which children belong to it). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTreeBuffer_aadeee06bbe0f2c3ef23c438ea11ba6e5}\label{classTreeBuffer_aadeee06bbe0f2c3ef23c438ea11ba6e5}} 
+\index{TreeBuffer@{TreeBuffer}!childString@{childString}}
+\index{childString@{childString}!TreeBuffer@{TreeBuffer}}
+\doxysubsubsection{\texorpdfstring{childString()}{childString()}}
+{\footnotesize\ttfamily Tree\+Buffer\+::child\+String (\begin{DoxyParamCaption}\item[{}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTreeBuffer_af698d497dfd74b7077153ea123f10334}\label{classTreeBuffer_af698d497dfd74b7077153ea123f10334}} 
+\index{TreeBuffer@{TreeBuffer}!constructor@{constructor}}
+\index{constructor@{constructor}!TreeBuffer@{TreeBuffer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Tree\+Buffer\+::constructor (\begin{DoxyParamCaption}\item[{}]{buffer,  }\item[{}]{length,  }\item[{}]{set }\end{DoxyParamCaption})}
+
+
+
+Create a tree buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer\textquotesingle{}s content. \\
+\hline
+{\em length} & The total length of the group of nodes in the buffer. \\
+\hline
+{\em set} & The node set used in this buffer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTreeBuffer_ae5b63987d80eb95040f1385b52f98242}\label{classTreeBuffer_ae5b63987d80eb95040f1385b52f98242}} 
+\index{TreeBuffer@{TreeBuffer}!findChild@{findChild}}
+\index{findChild@{findChild}!TreeBuffer@{TreeBuffer}}
+\doxysubsubsection{\texorpdfstring{findChild()}{findChild()}}
+{\footnotesize\ttfamily Tree\+Buffer\+::find\+Child (\begin{DoxyParamCaption}\item[{}]{start\+Index,  }\item[{}]{end\+Index,  }\item[{}]{dir,  }\item[{}]{pos,  }\item[{}]{side }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTreeBuffer_a184c440684bc95e05a3cce465d962486}\label{classTreeBuffer_a184c440684bc95e05a3cce465d962486}} 
+\index{TreeBuffer@{TreeBuffer}!slice@{slice}}
+\index{slice@{slice}!TreeBuffer@{TreeBuffer}}
+\doxysubsubsection{\texorpdfstring{slice()}{slice()}}
+{\footnotesize\ttfamily Tree\+Buffer\+::slice (\begin{DoxyParamCaption}\item[{}]{startI,  }\item[{}]{endI,  }\item[{}]{from,  }\item[{}]{to }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTreeBuffer_a612616a3369cf14bbb5a1e5a0ce2de6c}\label{classTreeBuffer_a612616a3369cf14bbb5a1e5a0ce2de6c}} 
+\index{TreeBuffer@{TreeBuffer}!toString@{toString}}
+\index{toString@{toString}!TreeBuffer@{TreeBuffer}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily Tree\+Buffer\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTreeBuffer_a14e9cc6d8dd19968e86ece5867844ac3}\label{classTreeBuffer_a14e9cc6d8dd19968e86ece5867844ac3}} 
+\index{TreeBuffer@{TreeBuffer}!type@{type}}
+\index{type@{type}!TreeBuffer@{TreeBuffer}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Tree\+Buffer\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@lezer/common/dist/\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

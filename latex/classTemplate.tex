@@ -2,9 +2,101 @@
 \label{classTemplate}\index{Template@{Template}}
 
 
+Underscore template helper.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTemplate_adc76da642dd6f2bdba94de62a8eea979}{constructor}} (filepath)
+\item 
+\mbox{\hyperlink{classTemplate_af13ea1d65ce3bf8c944d03bbe6ce1528}{load}} (file)
+\begin{DoxyCompactList}\small\item\em Loads template from given file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTemplate_a426882e57f771eff9e9fdb4e2b95ef06}{partial}} (file, \mbox{\hyperlink{resolve_2lib_2core_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\begin{DoxyCompactList}\small\item\em Renders template using given data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTemplate_a19c42db078dc713bbcd12953833a777f}{render}} (file, \mbox{\hyperlink{resolve_2lib_2core_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\begin{DoxyCompactList}\small\item\em Renders template with given data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
 \doxysubsection{Detailed Description}
 Underscore template helper. 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTemplate_adc76da642dd6f2bdba94de62a8eea979}\label{classTemplate_adc76da642dd6f2bdba94de62a8eea979}} 
+\index{Template@{Template}!constructor@{constructor}}
+\index{constructor@{constructor}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Template\+::constructor (\begin{DoxyParamCaption}\item[{}]{filepath }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & filepath -\/ Templates directory. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTemplate_af13ea1d65ce3bf8c944d03bbe6ce1528}\label{classTemplate_af13ea1d65ce3bf8c944d03bbe6ce1528}} 
+\index{Template@{Template}!load@{load}}
+\index{load@{load}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily Template\+::load (\begin{DoxyParamCaption}\item[{}]{file }\end{DoxyParamCaption})}
+
+
+
+Loads template from given file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & file -\/ \mbox{\hyperlink{classTemplate}{Template}} filename. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{function\} Returns template closure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTemplate_a426882e57f771eff9e9fdb4e2b95ef06}\label{classTemplate_a426882e57f771eff9e9fdb4e2b95ef06}} 
+\index{Template@{Template}!partial@{partial}}
+\index{partial@{partial}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{partial()}{partial()}}
+{\footnotesize\ttfamily Template\+::partial (\begin{DoxyParamCaption}\item[{}]{file,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+Renders template using given data. 
+
+This is low-\/level function, for rendering full templates use \mbox{\hyperlink{classTemplate_a19c42db078dc713bbcd12953833a777f}{Template.\+render()}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & file -\/ \mbox{\hyperlink{classTemplate}{Template}} filename. \\
+\hline
+{\em \{object\}} & data -\/ \mbox{\hyperlink{classTemplate}{Template}} variables (doesn\textquotesingle{}t have to be object, but passing variables dictionary is best way and most common use). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} Rendered template. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTemplate_a19c42db078dc713bbcd12953833a777f}\label{classTemplate_a19c42db078dc713bbcd12953833a777f}} 
+\index{Template@{Template}!render@{render}}
+\index{render@{render}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily Template\+::render (\begin{DoxyParamCaption}\item[{}]{file,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+Renders template with given data. 
+
+This method automaticaly applies layout if set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & file -\/ \mbox{\hyperlink{classTemplate}{Template}} filename. \\
+\hline
+{\em \{object\}} & data -\/ \mbox{\hyperlink{classTemplate}{Template}} variables (doesn\textquotesingle{}t have to be object, but passing variables dictionary is best way and most common use). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} Rendered template. 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-node\+\_\+modules/jsdoc/lib/jsdoc/template.\+js\end{DoxyCompactItemize}
+node\+\_\+modules/jsdoc/lib/jsdoc/\mbox{\hyperlink{jsdoc_2lib_2jsdoc_2template_8js}{template.\+js}}\end{DoxyCompactItemize}

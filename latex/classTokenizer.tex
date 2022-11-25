@@ -2,11 +2,854 @@
 \label{classTokenizer}\index{Tokenizer@{Tokenizer}}
 
 
+\mbox{\hyperlink{classTokenizer}{Tokenizer}}.  
+
+
+
+
+Inheritance diagram for Tokenizer\+:
+% FIG 0
+
+
+Collaboration diagram for Tokenizer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTokenizer_aecb88379d92cac6010474ff86f1749b8}{constructor}} (\mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}, input)
+\item 
+\mbox{\hyperlink{classTokenizer_a4945957494f82e1d55b29027003e233b}{push\+Token}} (token)
+\item 
+\mbox{\hyperlink{classTokenizer_a47bdb127e09d4b67beb97e7c5d24fe66}{next}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_a968dcd8b21e89eb963d24baa7a66090b}{eat}} (type)
+\item 
+\mbox{\hyperlink{classTokenizer_a8c538362405f74ce924d7203a2dda59c}{match}} (type)
+\item 
+\mbox{\hyperlink{classTokenizer_afac365e9f4d3dd7c4ad1ba884fd6142b}{create\+Lookahead\+State}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}})
+\item 
+\mbox{\hyperlink{classTokenizer_ab5d3c4c7a01fd609ccc89065a5c837ce}{lookahead}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_ac4ac04864efd3040c68917d4a7196cc4}{next\+Token\+Start}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_a67ef4a3952497d659a798b77b5cedbe5}{next\+Token\+Start\+Since}} (pos)
+\item 
+\mbox{\hyperlink{classTokenizer_a20fc8ee3782d59daeca97f3674b6f055}{lookahead\+Char\+Code}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_acb99da843a12d846bd9f1b241b476326}{code\+Point\+At\+Pos}} (pos)
+\item 
+\mbox{\hyperlink{classTokenizer_a239d8a03e2cc847b1b241605f867cddb}{set\+Strict}} (\mbox{\hyperlink{validate_8js_ae2475e10618961c050dcba04e8c42331}{strict}})
+\item 
+\mbox{\hyperlink{classTokenizer_ae0b6d4836971cdf0bcc75487825568e3}{cur\+Context}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_a5bf4e220b8480db06dd112f284c62708}{next\+Token}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_aa4c0936e00f17b70b5bc19feed463dbf}{skip\+Block\+Comment}} (comment\+End)
+\item 
+\mbox{\hyperlink{classTokenizer_a2ca98d101f9c97ab346d23775b63b342}{skip\+Line\+Comment}} (start\+Skip)
+\item 
+\mbox{\hyperlink{classTokenizer_aff85416c29314dae7def2d02b053025e}{skip\+Space}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_a0e71e8d29bada3cef70acf188a730ce0}{finish\+Token}} (type, val)
+\item 
+\mbox{\hyperlink{classTokenizer_a24a5c7931bdf6cf9d640c8fc06ce618e}{replace\+Token}} (type)
+\item 
+\mbox{\hyperlink{classTokenizer_a6be77d1ae8945fcf18671962651a2713}{read\+Token\+\_\+number\+Sign}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_a02ede57cdb0791cad5ab30d2d79a1976}{read\+Token\+\_\+dot}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_aef005ee6145ebc204e165ab885391f30}{read\+Token\+\_\+slash}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_a696b75c05272c0218978d1d80f81b557}{read\+Token\+\_\+interpreter}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_aee53252d32f8b42a0103ec28f2989762}{read\+Token\+\_\+mult\+\_\+modulo}} (\mbox{\hyperlink{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}{code}})
+\item 
+\mbox{\hyperlink{classTokenizer_afbdf533054fe8622c81161a63a492a6f}{read\+Token\+\_\+pipe\+\_\+amp}} (\mbox{\hyperlink{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}{code}})
+\item 
+\mbox{\hyperlink{classTokenizer_acd2bafd4c1b9db4af26447355e505893}{read\+Token\+\_\+caret}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_aa1cd41f03b24e107cc4bca1fefb63176}{read\+Token\+\_\+at\+Sign}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_ac0fa1ce765cf1628e5673788c6c56f2b}{read\+Token\+\_\+plus\+\_\+min}} (\mbox{\hyperlink{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}{code}})
+\item 
+\mbox{\hyperlink{classTokenizer_aa78a01d5ff52f120a07d4e75edbe5213}{read\+Token\+\_\+lt}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_a5a95e028889c18c8211dccd7d65cf03d}{read\+Token\+\_\+gt}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_abe4ab982b1de927c21ac082dccb3ff20}{read\+Token\+\_\+eq\+\_\+excl}} (\mbox{\hyperlink{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}{code}})
+\item 
+\mbox{\hyperlink{classTokenizer_aaa4c382b30d3f3e76d47379438c29013}{read\+Token\+\_\+question}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_a4e05b4933b76a1b386b96fa85936c47d}{get\+Token\+From\+Code}} (\mbox{\hyperlink{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}{code}})
+\item 
+\mbox{\hyperlink{classTokenizer_a081a2095a7a9a83f8610f597aa625afc}{finish\+Op}} (type, \mbox{\hyperlink{underscore-esm-min_8js_a35c142fb6cd5831ec0b28b5ec6d520d6}{size}})
+\item 
+\mbox{\hyperlink{classTokenizer_a6250c27ba4a37ea24a50b60a5c2f1041}{read\+Regexp}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_af3a4b3b328f3fb25e067f4f2d5bf6767}{read\+Int}} (radix, len, force\+Len=false, allow\+Num\+Separator=true)
+\item 
+\mbox{\hyperlink{classTokenizer_ac1ba816fe36f4fab80c7e823df6e6f4c}{read\+Radix\+Number}} (radix)
+\item 
+\mbox{\hyperlink{classTokenizer_a0675be7444a939f8d5bc316f70498cf8}{read\+Number}} (starts\+With\+Dot)
+\item 
+\mbox{\hyperlink{classTokenizer_a972cd89efb516dd3dc20c6ae6816ae6d}{read\+Code\+Point}} (throw\+On\+Invalid)
+\item 
+\mbox{\hyperlink{classTokenizer_a188c807b9beb8b8f51a6fc5da90c2ab3}{read\+String}} (quote)
+\item 
+\mbox{\hyperlink{classTokenizer_a26da7391d71465aa0abc1194e3b64d76}{read\+Template\+Continuation}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_a56cf325ab0328ff90f88a6ebf516d8ef}{read\+Template\+Token}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_ae0b2b77b1648f6bb99b44be0d7b3eb5f}{record\+Strict\+Mode\+Errors}} (to\+Parse\+Error, \{ \mbox{\hyperlink{ruler_8js_a36e526e7d9d36f1ee814010ea75f669d}{at}} \})
+\item 
+\mbox{\hyperlink{classTokenizer_ab6266ae0b5ab00dabae6994db5294f92}{read\+Word1}} (first\+Code)
+\item 
+\mbox{\hyperlink{classTokenizer_abc4b2e2fb5bfd1eb3d066f76d285e5ea}{read\+Word}} (first\+Code)
+\item 
+\mbox{\hyperlink{classTokenizer_a3ac2eca68a76237200041d734ed23ae4}{check\+Keyword\+Escapes}} ()
+\item 
+\mbox{\hyperlink{classTokenizer_aabe7d46914a3128f6d2609523f986cd0}{raise}} (to\+Parse\+Error, raise\+Properties)
+\item 
+\mbox{\hyperlink{classTokenizer_ad65fe66c4e2baebb8aec74cc8791ed3f}{raise\+Overwrite}} (to\+Parse\+Error, raise\+Properties)
+\item 
+\mbox{\hyperlink{classTokenizer_a4ee5c735eb81bae52de53dde51375740}{update\+Context}} (prev\+Type)
+\item 
+\mbox{\hyperlink{classTokenizer_a4d571ab82b969695178bf902114f439f}{unexpected}} (loc, type)
+\item 
+\mbox{\hyperlink{classTokenizer_aa15d8b0b3a31d95e4fbd70aa9f1f544d}{expect\+Plugin}} (plugin\+Name, loc)
+\item 
+\mbox{\hyperlink{classTokenizer_ac6569c9dedaa70c54ed637b18ab0950d}{expect\+One\+Plugin}} (plugin\+Names)
+\item 
+\mbox{\hyperlink{classTokenizer_a84d3a4f42bbe1720c896b6a1a1db5f9b}{error\+Builder}} (\mbox{\hyperlink{shared_2rollup_8js_a8bb803d616ea727eda8da0b54f6eacb2}{error}})
+\item 
+\mbox{\hyperlink{classTokenizer_ab25402e62954fbc9cbcb32181da37f75}{constructor}} (\mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}})
+\item 
+\mbox{\hyperlink{classTokenizer_a6aa22d6cf4edb346e596d5814d2b941c}{space}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}{code}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a1dbdbfd648c97700f87b261d6ed1c249}{fences}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a107787ed3ef9be668200c80c1e076121}{heading}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_aea27e34c5876d6897056baab3e3d3ebe}{hr}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a29f9661a7dbba7ed2c03007d3a56ea8f}{blockquote}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_aaf6c77155c0837a6d3b001a0323c702f}{list}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_ae8e8645426f094213662d9434e8727dc}{html}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a73142efbd16dbc7791f170fd4feb9ef3}{def}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a5295bce783515a9d14c705637ee81a43}{table}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a57b5f89fa417520be3cfeeda47d25f19}{lheading}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a61d0bd585c032ab782882213172f97e3}{paragraph}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a15f6fe21cc83f9396c14bb3195e1e8f8}{text}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a3476c4339ebda3d552ef960469858cfa}{escape}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a6606477faccd6b4dbc034554ee778a60}{tag}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a490f9e220205b50530aca9d41167477e}{link}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_ac64d29dd462b81de2b363e41261d8c53}{reflink}} (src, links)
+\item 
+\mbox{\hyperlink{classTokenizer_a5b0a7b0ac793ef36fab99a997031276a}{em\+Strong}} (src, masked\+Src, prev\+Char=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{classTokenizer_a86d4bda7292994ae32788c931c6e3e7f}{codespan}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_ac7cf77db5e9b635c3505e3cfa8e2b3b2}{br}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a687df2a1a7465700ba6d458e12cd5056}{del}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_aaa05873b3ab565e5ea331a8362b48efe}{autolink}} (src, mangle)
+\item 
+\mbox{\hyperlink{classTokenizer_aea4ec5129175692dfec377a2ca74d2ff}{url}} (src, mangle)
+\item 
+\mbox{\hyperlink{classTokenizer_a7fd022f4d53f270994d3bbdd2b99b695}{inline\+Text}} (src, \mbox{\hyperlink{Lexer_8js_aa865919d4ea60a56adebda7769f2158b}{smartypants}})
+\item 
+\mbox{\hyperlink{classTokenizer_ab25402e62954fbc9cbcb32181da37f75}{constructor}} (\mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}})
+\item 
+\mbox{\hyperlink{classTokenizer_a6aa22d6cf4edb346e596d5814d2b941c}{space}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}{code}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a1dbdbfd648c97700f87b261d6ed1c249}{fences}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a107787ed3ef9be668200c80c1e076121}{heading}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_aea27e34c5876d6897056baab3e3d3ebe}{hr}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a29f9661a7dbba7ed2c03007d3a56ea8f}{blockquote}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_aaf6c77155c0837a6d3b001a0323c702f}{list}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_ae8e8645426f094213662d9434e8727dc}{html}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a73142efbd16dbc7791f170fd4feb9ef3}{def}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a5295bce783515a9d14c705637ee81a43}{table}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a57b5f89fa417520be3cfeeda47d25f19}{lheading}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a61d0bd585c032ab782882213172f97e3}{paragraph}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a15f6fe21cc83f9396c14bb3195e1e8f8}{text}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a3476c4339ebda3d552ef960469858cfa}{escape}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a6606477faccd6b4dbc034554ee778a60}{tag}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a490f9e220205b50530aca9d41167477e}{link}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_ac64d29dd462b81de2b363e41261d8c53}{reflink}} (src, links)
+\item 
+\mbox{\hyperlink{classTokenizer_a5b0a7b0ac793ef36fab99a997031276a}{em\+Strong}} (src, masked\+Src, prev\+Char=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{classTokenizer_a86d4bda7292994ae32788c931c6e3e7f}{codespan}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_ac7cf77db5e9b635c3505e3cfa8e2b3b2}{br}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_a687df2a1a7465700ba6d458e12cd5056}{del}} (src)
+\item 
+\mbox{\hyperlink{classTokenizer_aaa05873b3ab565e5ea331a8362b48efe}{autolink}} (src, mangle)
+\item 
+\mbox{\hyperlink{classTokenizer_aea4ec5129175692dfec377a2ca74d2ff}{url}} (src, mangle)
+\item 
+\mbox{\hyperlink{classTokenizer_a7fd022f4d53f270994d3bbdd2b99b695}{inline\+Text}} (src, \mbox{\hyperlink{Lexer_8js_aa865919d4ea60a56adebda7769f2158b}{smartypants}})
+\end{DoxyCompactItemize}
+
+
 \doxysubsection{Detailed Description}
-\mbox{\hyperlink{classTokenizer}{Tokenizer}} 
+\mbox{\hyperlink{classTokenizer}{Tokenizer}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTokenizer_aaa05873b3ab565e5ea331a8362b48efe}\label{classTokenizer_aaa05873b3ab565e5ea331a8362b48efe}} 
+\index{Tokenizer@{Tokenizer}!autolink@{autolink}}
+\index{autolink@{autolink}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{autolink()}{autolink()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::autolink (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{mangle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aaa05873b3ab565e5ea331a8362b48efe}\label{classTokenizer_aaa05873b3ab565e5ea331a8362b48efe}} 
+\index{Tokenizer@{Tokenizer}!autolink@{autolink}}
+\index{autolink@{autolink}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{autolink()}{autolink()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::autolink (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{mangle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a29f9661a7dbba7ed2c03007d3a56ea8f}\label{classTokenizer_a29f9661a7dbba7ed2c03007d3a56ea8f}} 
+\index{Tokenizer@{Tokenizer}!blockquote@{blockquote}}
+\index{blockquote@{blockquote}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{blockquote()}{blockquote()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::blockquote (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a29f9661a7dbba7ed2c03007d3a56ea8f}\label{classTokenizer_a29f9661a7dbba7ed2c03007d3a56ea8f}} 
+\index{Tokenizer@{Tokenizer}!blockquote@{blockquote}}
+\index{blockquote@{blockquote}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{blockquote()}{blockquote()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::blockquote (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ac7cf77db5e9b635c3505e3cfa8e2b3b2}\label{classTokenizer_ac7cf77db5e9b635c3505e3cfa8e2b3b2}} 
+\index{Tokenizer@{Tokenizer}!br@{br}}
+\index{br@{br}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{br()}{br()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::br (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ac7cf77db5e9b635c3505e3cfa8e2b3b2}\label{classTokenizer_ac7cf77db5e9b635c3505e3cfa8e2b3b2}} 
+\index{Tokenizer@{Tokenizer}!br@{br}}
+\index{br@{br}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{br()}{br()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::br (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a3ac2eca68a76237200041d734ed23ae4}\label{classTokenizer_a3ac2eca68a76237200041d734ed23ae4}} 
+\index{Tokenizer@{Tokenizer}!checkKeywordEscapes@{checkKeywordEscapes}}
+\index{checkKeywordEscapes@{checkKeywordEscapes}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{checkKeywordEscapes()}{checkKeywordEscapes()}}
+{\footnotesize\ttfamily Tokenizer\+::check\+Keyword\+Escapes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}\label{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}} 
+\index{Tokenizer@{Tokenizer}!code@{code}}
+\index{code@{code}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{code()}{code()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::code (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}\label{classTokenizer_a17d6543af6fd5946985062aeeaf240d0}} 
+\index{Tokenizer@{Tokenizer}!code@{code}}
+\index{code@{code}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{code()}{code()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::code (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_acb99da843a12d846bd9f1b241b476326}\label{classTokenizer_acb99da843a12d846bd9f1b241b476326}} 
+\index{Tokenizer@{Tokenizer}!codePointAtPos@{codePointAtPos}}
+\index{codePointAtPos@{codePointAtPos}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{codePointAtPos()}{codePointAtPos()}}
+{\footnotesize\ttfamily Tokenizer\+::code\+Point\+At\+Pos (\begin{DoxyParamCaption}\item[{}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a86d4bda7292994ae32788c931c6e3e7f}\label{classTokenizer_a86d4bda7292994ae32788c931c6e3e7f}} 
+\index{Tokenizer@{Tokenizer}!codespan@{codespan}}
+\index{codespan@{codespan}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{codespan()}{codespan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::codespan (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a86d4bda7292994ae32788c931c6e3e7f}\label{classTokenizer_a86d4bda7292994ae32788c931c6e3e7f}} 
+\index{Tokenizer@{Tokenizer}!codespan@{codespan}}
+\index{codespan@{codespan}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{codespan()}{codespan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::codespan (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ab25402e62954fbc9cbcb32181da37f75}\label{classTokenizer_ab25402e62954fbc9cbcb32181da37f75}} 
+\index{Tokenizer@{Tokenizer}!constructor@{constructor}}
+\index{constructor@{constructor}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Tokenizer\+::constructor (\begin{DoxyParamCaption}\item[{}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ab25402e62954fbc9cbcb32181da37f75}\label{classTokenizer_ab25402e62954fbc9cbcb32181da37f75}} 
+\index{Tokenizer@{Tokenizer}!constructor@{constructor}}
+\index{constructor@{constructor}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Tokenizer\+::constructor (\begin{DoxyParamCaption}\item[{}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aecb88379d92cac6010474ff86f1749b8}\label{classTokenizer_aecb88379d92cac6010474ff86f1749b8}} 
+\index{Tokenizer@{Tokenizer}!constructor@{constructor}}
+\index{constructor@{constructor}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Tokenizer\+::constructor (\begin{DoxyParamCaption}\item[{}]{options,  }\item[{}]{input }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_afac365e9f4d3dd7c4ad1ba884fd6142b}\label{classTokenizer_afac365e9f4d3dd7c4ad1ba884fd6142b}} 
+\index{Tokenizer@{Tokenizer}!createLookaheadState@{createLookaheadState}}
+\index{createLookaheadState@{createLookaheadState}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{createLookaheadState()}{createLookaheadState()}}
+{\footnotesize\ttfamily Tokenizer\+::create\+Lookahead\+State (\begin{DoxyParamCaption}\item[{}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ae0b6d4836971cdf0bcc75487825568e3}\label{classTokenizer_ae0b6d4836971cdf0bcc75487825568e3}} 
+\index{Tokenizer@{Tokenizer}!curContext@{curContext}}
+\index{curContext@{curContext}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{curContext()}{curContext()}}
+{\footnotesize\ttfamily Tokenizer\+::cur\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a73142efbd16dbc7791f170fd4feb9ef3}\label{classTokenizer_a73142efbd16dbc7791f170fd4feb9ef3}} 
+\index{Tokenizer@{Tokenizer}!def@{def}}
+\index{def@{def}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{def()}{def()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::def (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a73142efbd16dbc7791f170fd4feb9ef3}\label{classTokenizer_a73142efbd16dbc7791f170fd4feb9ef3}} 
+\index{Tokenizer@{Tokenizer}!def@{def}}
+\index{def@{def}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{def()}{def()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::def (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a687df2a1a7465700ba6d458e12cd5056}\label{classTokenizer_a687df2a1a7465700ba6d458e12cd5056}} 
+\index{Tokenizer@{Tokenizer}!del@{del}}
+\index{del@{del}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{del()}{del()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::del (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a687df2a1a7465700ba6d458e12cd5056}\label{classTokenizer_a687df2a1a7465700ba6d458e12cd5056}} 
+\index{Tokenizer@{Tokenizer}!del@{del}}
+\index{del@{del}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{del()}{del()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::del (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a968dcd8b21e89eb963d24baa7a66090b}\label{classTokenizer_a968dcd8b21e89eb963d24baa7a66090b}} 
+\index{Tokenizer@{Tokenizer}!eat@{eat}}
+\index{eat@{eat}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{eat()}{eat()}}
+{\footnotesize\ttfamily Tokenizer\+::eat (\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a5b0a7b0ac793ef36fab99a997031276a}\label{classTokenizer_a5b0a7b0ac793ef36fab99a997031276a}} 
+\index{Tokenizer@{Tokenizer}!emStrong@{emStrong}}
+\index{emStrong@{emStrong}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{emStrong()}{emStrong()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::em\+Strong (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{masked\+Src,  }\item[{}]{prev\+Char = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a5b0a7b0ac793ef36fab99a997031276a}\label{classTokenizer_a5b0a7b0ac793ef36fab99a997031276a}} 
+\index{Tokenizer@{Tokenizer}!emStrong@{emStrong}}
+\index{emStrong@{emStrong}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{emStrong()}{emStrong()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::em\+Strong (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{masked\+Src,  }\item[{}]{prev\+Char = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a84d3a4f42bbe1720c896b6a1a1db5f9b}\label{classTokenizer_a84d3a4f42bbe1720c896b6a1a1db5f9b}} 
+\index{Tokenizer@{Tokenizer}!errorBuilder@{errorBuilder}}
+\index{errorBuilder@{errorBuilder}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{errorBuilder()}{errorBuilder()}}
+{\footnotesize\ttfamily Tokenizer\+::error\+Builder (\begin{DoxyParamCaption}\item[{}]{error }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a3476c4339ebda3d552ef960469858cfa}\label{classTokenizer_a3476c4339ebda3d552ef960469858cfa}} 
+\index{Tokenizer@{Tokenizer}!escape@{escape}}
+\index{escape@{escape}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{escape()}{escape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::escape (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a3476c4339ebda3d552ef960469858cfa}\label{classTokenizer_a3476c4339ebda3d552ef960469858cfa}} 
+\index{Tokenizer@{Tokenizer}!escape@{escape}}
+\index{escape@{escape}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{escape()}{escape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::escape (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ac6569c9dedaa70c54ed637b18ab0950d}\label{classTokenizer_ac6569c9dedaa70c54ed637b18ab0950d}} 
+\index{Tokenizer@{Tokenizer}!expectOnePlugin@{expectOnePlugin}}
+\index{expectOnePlugin@{expectOnePlugin}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{expectOnePlugin()}{expectOnePlugin()}}
+{\footnotesize\ttfamily Tokenizer\+::expect\+One\+Plugin (\begin{DoxyParamCaption}\item[{}]{plugin\+Names }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aa15d8b0b3a31d95e4fbd70aa9f1f544d}\label{classTokenizer_aa15d8b0b3a31d95e4fbd70aa9f1f544d}} 
+\index{Tokenizer@{Tokenizer}!expectPlugin@{expectPlugin}}
+\index{expectPlugin@{expectPlugin}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{expectPlugin()}{expectPlugin()}}
+{\footnotesize\ttfamily Tokenizer\+::expect\+Plugin (\begin{DoxyParamCaption}\item[{}]{plugin\+Name,  }\item[{}]{loc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a1dbdbfd648c97700f87b261d6ed1c249}\label{classTokenizer_a1dbdbfd648c97700f87b261d6ed1c249}} 
+\index{Tokenizer@{Tokenizer}!fences@{fences}}
+\index{fences@{fences}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{fences()}{fences()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::fences (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a1dbdbfd648c97700f87b261d6ed1c249}\label{classTokenizer_a1dbdbfd648c97700f87b261d6ed1c249}} 
+\index{Tokenizer@{Tokenizer}!fences@{fences}}
+\index{fences@{fences}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{fences()}{fences()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::fences (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a081a2095a7a9a83f8610f597aa625afc}\label{classTokenizer_a081a2095a7a9a83f8610f597aa625afc}} 
+\index{Tokenizer@{Tokenizer}!finishOp@{finishOp}}
+\index{finishOp@{finishOp}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{finishOp()}{finishOp()}}
+{\footnotesize\ttfamily Tokenizer\+::finish\+Op (\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a0e71e8d29bada3cef70acf188a730ce0}\label{classTokenizer_a0e71e8d29bada3cef70acf188a730ce0}} 
+\index{Tokenizer@{Tokenizer}!finishToken@{finishToken}}
+\index{finishToken@{finishToken}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{finishToken()}{finishToken()}}
+{\footnotesize\ttfamily Tokenizer\+::finish\+Token (\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a4e05b4933b76a1b386b96fa85936c47d}\label{classTokenizer_a4e05b4933b76a1b386b96fa85936c47d}} 
+\index{Tokenizer@{Tokenizer}!getTokenFromCode@{getTokenFromCode}}
+\index{getTokenFromCode@{getTokenFromCode}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{getTokenFromCode()}{getTokenFromCode()}}
+{\footnotesize\ttfamily Tokenizer\+::get\+Token\+From\+Code (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a107787ed3ef9be668200c80c1e076121}\label{classTokenizer_a107787ed3ef9be668200c80c1e076121}} 
+\index{Tokenizer@{Tokenizer}!heading@{heading}}
+\index{heading@{heading}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{heading()}{heading()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::heading (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a107787ed3ef9be668200c80c1e076121}\label{classTokenizer_a107787ed3ef9be668200c80c1e076121}} 
+\index{Tokenizer@{Tokenizer}!heading@{heading}}
+\index{heading@{heading}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{heading()}{heading()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::heading (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aea27e34c5876d6897056baab3e3d3ebe}\label{classTokenizer_aea27e34c5876d6897056baab3e3d3ebe}} 
+\index{Tokenizer@{Tokenizer}!hr@{hr}}
+\index{hr@{hr}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{hr()}{hr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::hr (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aea27e34c5876d6897056baab3e3d3ebe}\label{classTokenizer_aea27e34c5876d6897056baab3e3d3ebe}} 
+\index{Tokenizer@{Tokenizer}!hr@{hr}}
+\index{hr@{hr}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{hr()}{hr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::hr (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ae8e8645426f094213662d9434e8727dc}\label{classTokenizer_ae8e8645426f094213662d9434e8727dc}} 
+\index{Tokenizer@{Tokenizer}!html@{html}}
+\index{html@{html}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{html()}{html()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::html (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ae8e8645426f094213662d9434e8727dc}\label{classTokenizer_ae8e8645426f094213662d9434e8727dc}} 
+\index{Tokenizer@{Tokenizer}!html@{html}}
+\index{html@{html}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{html()}{html()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::html (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a7fd022f4d53f270994d3bbdd2b99b695}\label{classTokenizer_a7fd022f4d53f270994d3bbdd2b99b695}} 
+\index{Tokenizer@{Tokenizer}!inlineText@{inlineText}}
+\index{inlineText@{inlineText}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{inlineText()}{inlineText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::inline\+Text (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{smartypants }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a7fd022f4d53f270994d3bbdd2b99b695}\label{classTokenizer_a7fd022f4d53f270994d3bbdd2b99b695}} 
+\index{Tokenizer@{Tokenizer}!inlineText@{inlineText}}
+\index{inlineText@{inlineText}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{inlineText()}{inlineText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::inline\+Text (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{smartypants }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a57b5f89fa417520be3cfeeda47d25f19}\label{classTokenizer_a57b5f89fa417520be3cfeeda47d25f19}} 
+\index{Tokenizer@{Tokenizer}!lheading@{lheading}}
+\index{lheading@{lheading}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{lheading()}{lheading()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::lheading (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a57b5f89fa417520be3cfeeda47d25f19}\label{classTokenizer_a57b5f89fa417520be3cfeeda47d25f19}} 
+\index{Tokenizer@{Tokenizer}!lheading@{lheading}}
+\index{lheading@{lheading}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{lheading()}{lheading()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::lheading (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a490f9e220205b50530aca9d41167477e}\label{classTokenizer_a490f9e220205b50530aca9d41167477e}} 
+\index{Tokenizer@{Tokenizer}!link@{link}}
+\index{link@{link}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{link()}{link()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::link (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a490f9e220205b50530aca9d41167477e}\label{classTokenizer_a490f9e220205b50530aca9d41167477e}} 
+\index{Tokenizer@{Tokenizer}!link@{link}}
+\index{link@{link}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{link()}{link()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::link (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aaf6c77155c0837a6d3b001a0323c702f}\label{classTokenizer_aaf6c77155c0837a6d3b001a0323c702f}} 
+\index{Tokenizer@{Tokenizer}!list@{list}}
+\index{list@{list}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::list (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aaf6c77155c0837a6d3b001a0323c702f}\label{classTokenizer_aaf6c77155c0837a6d3b001a0323c702f}} 
+\index{Tokenizer@{Tokenizer}!list@{list}}
+\index{list@{list}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::list (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ab5d3c4c7a01fd609ccc89065a5c837ce}\label{classTokenizer_ab5d3c4c7a01fd609ccc89065a5c837ce}} 
+\index{Tokenizer@{Tokenizer}!lookahead@{lookahead}}
+\index{lookahead@{lookahead}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{lookahead()}{lookahead()}}
+{\footnotesize\ttfamily Tokenizer\+::lookahead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a20fc8ee3782d59daeca97f3674b6f055}\label{classTokenizer_a20fc8ee3782d59daeca97f3674b6f055}} 
+\index{Tokenizer@{Tokenizer}!lookaheadCharCode@{lookaheadCharCode}}
+\index{lookaheadCharCode@{lookaheadCharCode}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{lookaheadCharCode()}{lookaheadCharCode()}}
+{\footnotesize\ttfamily Tokenizer\+::lookahead\+Char\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a8c538362405f74ce924d7203a2dda59c}\label{classTokenizer_a8c538362405f74ce924d7203a2dda59c}} 
+\index{Tokenizer@{Tokenizer}!match@{match}}
+\index{match@{match}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily Tokenizer\+::match (\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a47bdb127e09d4b67beb97e7c5d24fe66}\label{classTokenizer_a47bdb127e09d4b67beb97e7c5d24fe66}} 
+\index{Tokenizer@{Tokenizer}!next@{next}}
+\index{next@{next}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily Tokenizer\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a5bf4e220b8480db06dd112f284c62708}\label{classTokenizer_a5bf4e220b8480db06dd112f284c62708}} 
+\index{Tokenizer@{Tokenizer}!nextToken@{nextToken}}
+\index{nextToken@{nextToken}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{nextToken()}{nextToken()}}
+{\footnotesize\ttfamily Tokenizer\+::next\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ac4ac04864efd3040c68917d4a7196cc4}\label{classTokenizer_ac4ac04864efd3040c68917d4a7196cc4}} 
+\index{Tokenizer@{Tokenizer}!nextTokenStart@{nextTokenStart}}
+\index{nextTokenStart@{nextTokenStart}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{nextTokenStart()}{nextTokenStart()}}
+{\footnotesize\ttfamily Tokenizer\+::next\+Token\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a67ef4a3952497d659a798b77b5cedbe5}\label{classTokenizer_a67ef4a3952497d659a798b77b5cedbe5}} 
+\index{Tokenizer@{Tokenizer}!nextTokenStartSince@{nextTokenStartSince}}
+\index{nextTokenStartSince@{nextTokenStartSince}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{nextTokenStartSince()}{nextTokenStartSince()}}
+{\footnotesize\ttfamily Tokenizer\+::next\+Token\+Start\+Since (\begin{DoxyParamCaption}\item[{}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a61d0bd585c032ab782882213172f97e3}\label{classTokenizer_a61d0bd585c032ab782882213172f97e3}} 
+\index{Tokenizer@{Tokenizer}!paragraph@{paragraph}}
+\index{paragraph@{paragraph}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{paragraph()}{paragraph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::paragraph (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a61d0bd585c032ab782882213172f97e3}\label{classTokenizer_a61d0bd585c032ab782882213172f97e3}} 
+\index{Tokenizer@{Tokenizer}!paragraph@{paragraph}}
+\index{paragraph@{paragraph}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{paragraph()}{paragraph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::paragraph (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a4945957494f82e1d55b29027003e233b}\label{classTokenizer_a4945957494f82e1d55b29027003e233b}} 
+\index{Tokenizer@{Tokenizer}!pushToken@{pushToken}}
+\index{pushToken@{pushToken}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{pushToken()}{pushToken()}}
+{\footnotesize\ttfamily Tokenizer\+::push\+Token (\begin{DoxyParamCaption}\item[{}]{token }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aabe7d46914a3128f6d2609523f986cd0}\label{classTokenizer_aabe7d46914a3128f6d2609523f986cd0}} 
+\index{Tokenizer@{Tokenizer}!raise@{raise}}
+\index{raise@{raise}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{raise()}{raise()}}
+{\footnotesize\ttfamily Tokenizer\+::raise (\begin{DoxyParamCaption}\item[{}]{to\+Parse\+Error,  }\item[{}]{raise\+Properties }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ad65fe66c4e2baebb8aec74cc8791ed3f}\label{classTokenizer_ad65fe66c4e2baebb8aec74cc8791ed3f}} 
+\index{Tokenizer@{Tokenizer}!raiseOverwrite@{raiseOverwrite}}
+\index{raiseOverwrite@{raiseOverwrite}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{raiseOverwrite()}{raiseOverwrite()}}
+{\footnotesize\ttfamily Tokenizer\+::raise\+Overwrite (\begin{DoxyParamCaption}\item[{}]{to\+Parse\+Error,  }\item[{}]{raise\+Properties }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a972cd89efb516dd3dc20c6ae6816ae6d}\label{classTokenizer_a972cd89efb516dd3dc20c6ae6816ae6d}} 
+\index{Tokenizer@{Tokenizer}!readCodePoint@{readCodePoint}}
+\index{readCodePoint@{readCodePoint}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readCodePoint()}{readCodePoint()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Code\+Point (\begin{DoxyParamCaption}\item[{}]{throw\+On\+Invalid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_af3a4b3b328f3fb25e067f4f2d5bf6767}\label{classTokenizer_af3a4b3b328f3fb25e067f4f2d5bf6767}} 
+\index{Tokenizer@{Tokenizer}!readInt@{readInt}}
+\index{readInt@{readInt}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readInt()}{readInt()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Int (\begin{DoxyParamCaption}\item[{}]{radix,  }\item[{}]{len,  }\item[{}]{force\+Len = {\ttfamily false},  }\item[{}]{allow\+Num\+Separator = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a0675be7444a939f8d5bc316f70498cf8}\label{classTokenizer_a0675be7444a939f8d5bc316f70498cf8}} 
+\index{Tokenizer@{Tokenizer}!readNumber@{readNumber}}
+\index{readNumber@{readNumber}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readNumber()}{readNumber()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Number (\begin{DoxyParamCaption}\item[{}]{starts\+With\+Dot }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ac1ba816fe36f4fab80c7e823df6e6f4c}\label{classTokenizer_ac1ba816fe36f4fab80c7e823df6e6f4c}} 
+\index{Tokenizer@{Tokenizer}!readRadixNumber@{readRadixNumber}}
+\index{readRadixNumber@{readRadixNumber}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readRadixNumber()}{readRadixNumber()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Radix\+Number (\begin{DoxyParamCaption}\item[{}]{radix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a6250c27ba4a37ea24a50b60a5c2f1041}\label{classTokenizer_a6250c27ba4a37ea24a50b60a5c2f1041}} 
+\index{Tokenizer@{Tokenizer}!readRegexp@{readRegexp}}
+\index{readRegexp@{readRegexp}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readRegexp()}{readRegexp()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Regexp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a188c807b9beb8b8f51a6fc5da90c2ab3}\label{classTokenizer_a188c807b9beb8b8f51a6fc5da90c2ab3}} 
+\index{Tokenizer@{Tokenizer}!readString@{readString}}
+\index{readString@{readString}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readString()}{readString()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+String (\begin{DoxyParamCaption}\item[{}]{quote }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a26da7391d71465aa0abc1194e3b64d76}\label{classTokenizer_a26da7391d71465aa0abc1194e3b64d76}} 
+\index{Tokenizer@{Tokenizer}!readTemplateContinuation@{readTemplateContinuation}}
+\index{readTemplateContinuation@{readTemplateContinuation}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readTemplateContinuation()}{readTemplateContinuation()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Template\+Continuation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a56cf325ab0328ff90f88a6ebf516d8ef}\label{classTokenizer_a56cf325ab0328ff90f88a6ebf516d8ef}} 
+\index{Tokenizer@{Tokenizer}!readTemplateToken@{readTemplateToken}}
+\index{readTemplateToken@{readTemplateToken}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readTemplateToken()}{readTemplateToken()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Template\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aa1cd41f03b24e107cc4bca1fefb63176}\label{classTokenizer_aa1cd41f03b24e107cc4bca1fefb63176}} 
+\index{Tokenizer@{Tokenizer}!readToken\_atSign@{readToken\_atSign}}
+\index{readToken\_atSign@{readToken\_atSign}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_atSign()}{readToken\_atSign()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+at\+Sign (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_acd2bafd4c1b9db4af26447355e505893}\label{classTokenizer_acd2bafd4c1b9db4af26447355e505893}} 
+\index{Tokenizer@{Tokenizer}!readToken\_caret@{readToken\_caret}}
+\index{readToken\_caret@{readToken\_caret}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_caret()}{readToken\_caret()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+caret (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a02ede57cdb0791cad5ab30d2d79a1976}\label{classTokenizer_a02ede57cdb0791cad5ab30d2d79a1976}} 
+\index{Tokenizer@{Tokenizer}!readToken\_dot@{readToken\_dot}}
+\index{readToken\_dot@{readToken\_dot}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_dot()}{readToken\_dot()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+dot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_abe4ab982b1de927c21ac082dccb3ff20}\label{classTokenizer_abe4ab982b1de927c21ac082dccb3ff20}} 
+\index{Tokenizer@{Tokenizer}!readToken\_eq\_excl@{readToken\_eq\_excl}}
+\index{readToken\_eq\_excl@{readToken\_eq\_excl}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_eq\_excl()}{readToken\_eq\_excl()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+eq\+\_\+excl (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a5a95e028889c18c8211dccd7d65cf03d}\label{classTokenizer_a5a95e028889c18c8211dccd7d65cf03d}} 
+\index{Tokenizer@{Tokenizer}!readToken\_gt@{readToken\_gt}}
+\index{readToken\_gt@{readToken\_gt}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_gt()}{readToken\_gt()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+gt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a696b75c05272c0218978d1d80f81b557}\label{classTokenizer_a696b75c05272c0218978d1d80f81b557}} 
+\index{Tokenizer@{Tokenizer}!readToken\_interpreter@{readToken\_interpreter}}
+\index{readToken\_interpreter@{readToken\_interpreter}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_interpreter()}{readToken\_interpreter()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+interpreter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aa78a01d5ff52f120a07d4e75edbe5213}\label{classTokenizer_aa78a01d5ff52f120a07d4e75edbe5213}} 
+\index{Tokenizer@{Tokenizer}!readToken\_lt@{readToken\_lt}}
+\index{readToken\_lt@{readToken\_lt}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_lt()}{readToken\_lt()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+lt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aee53252d32f8b42a0103ec28f2989762}\label{classTokenizer_aee53252d32f8b42a0103ec28f2989762}} 
+\index{Tokenizer@{Tokenizer}!readToken\_mult\_modulo@{readToken\_mult\_modulo}}
+\index{readToken\_mult\_modulo@{readToken\_mult\_modulo}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_mult\_modulo()}{readToken\_mult\_modulo()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+mult\+\_\+modulo (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a6be77d1ae8945fcf18671962651a2713}\label{classTokenizer_a6be77d1ae8945fcf18671962651a2713}} 
+\index{Tokenizer@{Tokenizer}!readToken\_numberSign@{readToken\_numberSign}}
+\index{readToken\_numberSign@{readToken\_numberSign}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_numberSign()}{readToken\_numberSign()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+number\+Sign (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_afbdf533054fe8622c81161a63a492a6f}\label{classTokenizer_afbdf533054fe8622c81161a63a492a6f}} 
+\index{Tokenizer@{Tokenizer}!readToken\_pipe\_amp@{readToken\_pipe\_amp}}
+\index{readToken\_pipe\_amp@{readToken\_pipe\_amp}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_pipe\_amp()}{readToken\_pipe\_amp()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+pipe\+\_\+amp (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ac0fa1ce765cf1628e5673788c6c56f2b}\label{classTokenizer_ac0fa1ce765cf1628e5673788c6c56f2b}} 
+\index{Tokenizer@{Tokenizer}!readToken\_plus\_min@{readToken\_plus\_min}}
+\index{readToken\_plus\_min@{readToken\_plus\_min}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_plus\_min()}{readToken\_plus\_min()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+plus\+\_\+min (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aaa4c382b30d3f3e76d47379438c29013}\label{classTokenizer_aaa4c382b30d3f3e76d47379438c29013}} 
+\index{Tokenizer@{Tokenizer}!readToken\_question@{readToken\_question}}
+\index{readToken\_question@{readToken\_question}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_question()}{readToken\_question()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+question (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aef005ee6145ebc204e165ab885391f30}\label{classTokenizer_aef005ee6145ebc204e165ab885391f30}} 
+\index{Tokenizer@{Tokenizer}!readToken\_slash@{readToken\_slash}}
+\index{readToken\_slash@{readToken\_slash}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readToken\_slash()}{readToken\_slash()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Token\+\_\+slash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_abc4b2e2fb5bfd1eb3d066f76d285e5ea}\label{classTokenizer_abc4b2e2fb5bfd1eb3d066f76d285e5ea}} 
+\index{Tokenizer@{Tokenizer}!readWord@{readWord}}
+\index{readWord@{readWord}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readWord()}{readWord()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Word (\begin{DoxyParamCaption}\item[{}]{first\+Code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ab6266ae0b5ab00dabae6994db5294f92}\label{classTokenizer_ab6266ae0b5ab00dabae6994db5294f92}} 
+\index{Tokenizer@{Tokenizer}!readWord1@{readWord1}}
+\index{readWord1@{readWord1}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readWord1()}{readWord1()}}
+{\footnotesize\ttfamily Tokenizer\+::read\+Word1 (\begin{DoxyParamCaption}\item[{}]{first\+Code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ae0b2b77b1648f6bb99b44be0d7b3eb5f}\label{classTokenizer_ae0b2b77b1648f6bb99b44be0d7b3eb5f}} 
+\index{Tokenizer@{Tokenizer}!recordStrictModeErrors@{recordStrictModeErrors}}
+\index{recordStrictModeErrors@{recordStrictModeErrors}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{recordStrictModeErrors()}{recordStrictModeErrors()}}
+{\footnotesize\ttfamily Tokenizer\+::record\+Strict\+Mode\+Errors (\begin{DoxyParamCaption}\item[{}]{to\+Parse\+Error,  }\item[{}]{\{ at \} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ac64d29dd462b81de2b363e41261d8c53}\label{classTokenizer_ac64d29dd462b81de2b363e41261d8c53}} 
+\index{Tokenizer@{Tokenizer}!reflink@{reflink}}
+\index{reflink@{reflink}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{reflink()}{reflink()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::reflink (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{links }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_ac64d29dd462b81de2b363e41261d8c53}\label{classTokenizer_ac64d29dd462b81de2b363e41261d8c53}} 
+\index{Tokenizer@{Tokenizer}!reflink@{reflink}}
+\index{reflink@{reflink}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{reflink()}{reflink()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::reflink (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{links }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a24a5c7931bdf6cf9d640c8fc06ce618e}\label{classTokenizer_a24a5c7931bdf6cf9d640c8fc06ce618e}} 
+\index{Tokenizer@{Tokenizer}!replaceToken@{replaceToken}}
+\index{replaceToken@{replaceToken}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{replaceToken()}{replaceToken()}}
+{\footnotesize\ttfamily Tokenizer\+::replace\+Token (\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a239d8a03e2cc847b1b241605f867cddb}\label{classTokenizer_a239d8a03e2cc847b1b241605f867cddb}} 
+\index{Tokenizer@{Tokenizer}!setStrict@{setStrict}}
+\index{setStrict@{setStrict}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{setStrict()}{setStrict()}}
+{\footnotesize\ttfamily Tokenizer\+::set\+Strict (\begin{DoxyParamCaption}\item[{}]{strict }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aa4c0936e00f17b70b5bc19feed463dbf}\label{classTokenizer_aa4c0936e00f17b70b5bc19feed463dbf}} 
+\index{Tokenizer@{Tokenizer}!skipBlockComment@{skipBlockComment}}
+\index{skipBlockComment@{skipBlockComment}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{skipBlockComment()}{skipBlockComment()}}
+{\footnotesize\ttfamily Tokenizer\+::skip\+Block\+Comment (\begin{DoxyParamCaption}\item[{}]{comment\+End }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a2ca98d101f9c97ab346d23775b63b342}\label{classTokenizer_a2ca98d101f9c97ab346d23775b63b342}} 
+\index{Tokenizer@{Tokenizer}!skipLineComment@{skipLineComment}}
+\index{skipLineComment@{skipLineComment}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{skipLineComment()}{skipLineComment()}}
+{\footnotesize\ttfamily Tokenizer\+::skip\+Line\+Comment (\begin{DoxyParamCaption}\item[{}]{start\+Skip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aff85416c29314dae7def2d02b053025e}\label{classTokenizer_aff85416c29314dae7def2d02b053025e}} 
+\index{Tokenizer@{Tokenizer}!skipSpace@{skipSpace}}
+\index{skipSpace@{skipSpace}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{skipSpace()}{skipSpace()}}
+{\footnotesize\ttfamily Tokenizer\+::skip\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a6aa22d6cf4edb346e596d5814d2b941c}\label{classTokenizer_a6aa22d6cf4edb346e596d5814d2b941c}} 
+\index{Tokenizer@{Tokenizer}!space@{space}}
+\index{space@{space}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{space()}{space()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::space (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a6aa22d6cf4edb346e596d5814d2b941c}\label{classTokenizer_a6aa22d6cf4edb346e596d5814d2b941c}} 
+\index{Tokenizer@{Tokenizer}!space@{space}}
+\index{space@{space}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{space()}{space()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::space (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a5295bce783515a9d14c705637ee81a43}\label{classTokenizer_a5295bce783515a9d14c705637ee81a43}} 
+\index{Tokenizer@{Tokenizer}!table@{table}}
+\index{table@{table}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{table()}{table()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::table (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a5295bce783515a9d14c705637ee81a43}\label{classTokenizer_a5295bce783515a9d14c705637ee81a43}} 
+\index{Tokenizer@{Tokenizer}!table@{table}}
+\index{table@{table}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{table()}{table()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::table (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a6606477faccd6b4dbc034554ee778a60}\label{classTokenizer_a6606477faccd6b4dbc034554ee778a60}} 
+\index{Tokenizer@{Tokenizer}!tag@{tag}}
+\index{tag@{tag}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{tag()}{tag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::tag (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a6606477faccd6b4dbc034554ee778a60}\label{classTokenizer_a6606477faccd6b4dbc034554ee778a60}} 
+\index{Tokenizer@{Tokenizer}!tag@{tag}}
+\index{tag@{tag}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{tag()}{tag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::tag (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a15f6fe21cc83f9396c14bb3195e1e8f8}\label{classTokenizer_a15f6fe21cc83f9396c14bb3195e1e8f8}} 
+\index{Tokenizer@{Tokenizer}!text@{text}}
+\index{text@{text}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::text (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a15f6fe21cc83f9396c14bb3195e1e8f8}\label{classTokenizer_a15f6fe21cc83f9396c14bb3195e1e8f8}} 
+\index{Tokenizer@{Tokenizer}!text@{text}}
+\index{text@{text}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::text (\begin{DoxyParamCaption}\item[{}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a4d571ab82b969695178bf902114f439f}\label{classTokenizer_a4d571ab82b969695178bf902114f439f}} 
+\index{Tokenizer@{Tokenizer}!unexpected@{unexpected}}
+\index{unexpected@{unexpected}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{unexpected()}{unexpected()}}
+{\footnotesize\ttfamily Tokenizer\+::unexpected (\begin{DoxyParamCaption}\item[{}]{loc,  }\item[{}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_a4ee5c735eb81bae52de53dde51375740}\label{classTokenizer_a4ee5c735eb81bae52de53dde51375740}} 
+\index{Tokenizer@{Tokenizer}!updateContext@{updateContext}}
+\index{updateContext@{updateContext}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{updateContext()}{updateContext()}}
+{\footnotesize\ttfamily Tokenizer\+::update\+Context (\begin{DoxyParamCaption}\item[{}]{prev\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aea4ec5129175692dfec377a2ca74d2ff}\label{classTokenizer_aea4ec5129175692dfec377a2ca74d2ff}} 
+\index{Tokenizer@{Tokenizer}!url@{url}}
+\index{url@{url}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tokenizer\+::url (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{mangle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTokenizer_aea4ec5129175692dfec377a2ca74d2ff}\label{classTokenizer_aea4ec5129175692dfec377a2ca74d2ff}} 
+\index{Tokenizer@{Tokenizer}!url@{url}}
+\index{url@{url}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tokenizer\+::url (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{mangle }\end{DoxyParamCaption})}
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-node\+\_\+modules/@babel/parser/lib/index.\+js\item 
-node\+\_\+modules/marked/lib/marked.\+esm.\+js\item 
-node\+\_\+modules/marked/src/Tokenizer.\+js\end{DoxyCompactItemize}
+node\+\_\+modules/@babel/parser/lib/\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js}{index.\+js}}\item 
+node\+\_\+modules/marked/lib/\mbox{\hyperlink{marked_8esm_8js}{marked.\+esm.\+js}}\item 
+node\+\_\+modules/marked/src/\mbox{\hyperlink{Tokenizer_8js}{Tokenizer.\+js}}\end{DoxyCompactItemize}

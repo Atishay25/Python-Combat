@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="RangeSetBuilder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRangeSetBuilder.html",tooltip="A range set builder is a data structure that helps build up a range set directly, without first alloc..."];
+}

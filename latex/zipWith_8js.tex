@@ -1,0 +1,57 @@
+\hypertarget{zipWith_8js}{}\doxysection{node\+\_\+modules/lodash/zip\+With.js File Reference}
+\label{zipWith_8js}\index{node\_modules/lodash/zipWith.js@{node\_modules/lodash/zipWith.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{zipWith_8js_a034d72bc1d85dd2ca403ea375b9cb718}{base\+Rest}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+base\+Rest\textquotesingle{})
+\item 
+var \mbox{\hyperlink{zipWith_8js_a46e2de0dc5d37ba9dd6c69c63cfdddfa}{unzip\+With}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./unzip\+With\textquotesingle{})
+\item 
+var \mbox{\hyperlink{zipWith_8js_a2f9912a9ff1f00a4bfd2894841f80c86}{zip\+With}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{zipWith_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{zipWith_8js_a2f9912a9ff1f00a4bfd2894841f80c86}{zip\+With}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{zipWith_8js_a034d72bc1d85dd2ca403ea375b9cb718}\label{zipWith_8js_a034d72bc1d85dd2ca403ea375b9cb718}} 
+\index{zipWith.js@{zipWith.js}!baseRest@{baseRest}}
+\index{baseRest@{baseRest}!zipWith.js@{zipWith.js}}
+\doxysubsubsection{\texorpdfstring{baseRest}{baseRest}}
+{\footnotesize\ttfamily var base\+Rest = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+base\+Rest\textquotesingle{})}
+
+\mbox{\Hypertarget{zipWith_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{zipWith_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{zipWith.js@{zipWith.js}!exports@{exports}}
+\index{exports@{exports}!zipWith.js@{zipWith.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{zipWith_8js_a2f9912a9ff1f00a4bfd2894841f80c86}{zip\+With}}}
+
+\mbox{\Hypertarget{zipWith_8js_a46e2de0dc5d37ba9dd6c69c63cfdddfa}\label{zipWith_8js_a46e2de0dc5d37ba9dd6c69c63cfdddfa}} 
+\index{zipWith.js@{zipWith.js}!unzipWith@{unzipWith}}
+\index{unzipWith@{unzipWith}!zipWith.js@{zipWith.js}}
+\doxysubsubsection{\texorpdfstring{unzipWith}{unzipWith}}
+{\footnotesize\ttfamily var unzip\+With = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./unzip\+With\textquotesingle{})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2unzipWith_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/unzip\+With.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2zipWith_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/zip\+With.\+js}}.\end{Desc}
+\mbox{\Hypertarget{zipWith_8js_a2f9912a9ff1f00a4bfd2894841f80c86}\label{zipWith_8js_a2f9912a9ff1f00a4bfd2894841f80c86}} 
+\index{zipWith.js@{zipWith.js}!zipWith@{zipWith}}
+\index{zipWith@{zipWith}!zipWith.js@{zipWith.js}}
+\doxysubsubsection{\texorpdfstring{zipWith}{zipWith}}
+{\footnotesize\ttfamily var zip\+With}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{zipWith_8js_a034d72bc1d85dd2ca403ea375b9cb718}{baseRest}}(\textcolor{keyword}{function}(arrays) \{}
+\DoxyCodeLine{  var \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}} = arrays.length,}
+\DoxyCodeLine{      \mbox{\hyperlink{lodash_2core_8js_a16c1003c9b81bd5802ee771d48cde5d6}{iteratee}} = \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}} > 1 ? arrays[\mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}} -\/ 1] : \mbox{\hyperlink{bluebird_8core_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{lodash_2core_8js_a16c1003c9b81bd5802ee771d48cde5d6}{iteratee}} = typeof \mbox{\hyperlink{lodash_2core_8js_a16c1003c9b81bd5802ee771d48cde5d6}{iteratee}} == \textcolor{stringliteral}{'function'} ? (arrays.pop(), \mbox{\hyperlink{lodash_2core_8js_a16c1003c9b81bd5802ee771d48cde5d6}{iteratee}}) : \mbox{\hyperlink{bluebird_8core_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}};}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \mbox{\hyperlink{zipWith_8js_a46e2de0dc5d37ba9dd6c69c63cfdddfa}{unzipWith}}(arrays, \mbox{\hyperlink{lodash_2core_8js_a16c1003c9b81bd5802ee771d48cde5d6}{iteratee}});}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2zipWith_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/zip\+With.\+js}}.\end{Desc}

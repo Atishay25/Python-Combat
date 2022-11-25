@@ -1,0 +1,413 @@
+\hypertarget{augment_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/augment.js File Reference}
+\label{augment_8js}\index{node\_modules/jsdoc/lib/jsdoc/augment.js@{node\_modules/jsdoc/lib/jsdoc/augment.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSorter}{Sorter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{augment_8js_a0ac7aae463feb510709b4d2f75995b59}{map\+Dependencies}} (\mbox{\hyperlink{cjs_2index-default_8js_ae4b896af19aae26b1e5317acf4126807}{index}}, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a6e9be5601dd7853c834bce7388285c4f}{property\+Name}})
+\item 
+function \mbox{\hyperlink{augment_8js_a8c083e75cf25b8a728f7f1a7a270a74c}{sort}} (dependencies)
+\item 
+function \mbox{\hyperlink{augment_8js_ac854fa1ac84484dcd671835d27d12918}{get\+Members}} (longname, \{\mbox{\hyperlink{cjs_2index-default_8js_ae4b896af19aae26b1e5317acf4126807}{index}}\}, scopes)
+\item 
+function \mbox{\hyperlink{augment_8js_a20c8f56c5adaa24ee5e2e5da11721cdc}{get\+Documented\+Longname}} (longname, \{\mbox{\hyperlink{cjs_2index-default_8js_ae4b896af19aae26b1e5317acf4126807}{index}}\})
+\item 
+function \mbox{\hyperlink{augment_8js_a9dd74271a86ced4a7cfc9ac83ad95608}{add\+Doclet\+Property}} (doclets, prop\+Name, \mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}})
+\item 
+function \mbox{\hyperlink{augment_8js_a7b23983b5f094a44022d83fdf7ad0aa9}{reparent\+Doclet}} (\{longname\}, child)
+\item 
+function \mbox{\hyperlink{augment_8js_a640e484daae1cef055d02d8b263bea7f}{parent\+Is\+Class}} (\{kind\})
+\item 
+function \mbox{\hyperlink{augment_8js_a40c3adabef008fa461903be61b617685}{static\+To\+Instance}} (doclet)
+\item 
+function \mbox{\hyperlink{augment_8js_a00a60bff00da7177129ea5c289342deb}{update\+Added\+Doclets}} (doclet, additions, indexes)
+\begin{DoxyCompactList}\small\item\em Update the list of doclets to be added to another symbol. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{augment_8js_a1566eee7740a42fb20c790ff26d7bf07}{update\+Documented\+Doclets}} (doclet, documented)
+\begin{DoxyCompactList}\small\item\em Update the index of doclets whose {\ttfamily undocumented} property is not {\ttfamily true}. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{augment_8js_a0df81f8da2a49ef09d165231b7e4525f}{update\+Memberof\+Doclets}} (doclet, memberof)
+\begin{DoxyCompactList}\small\item\em Update the index of doclets with a {\ttfamily memberof} value. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{augment_8js_aa51c738867952c86ff6630b80386f043}{explicitly\+Inherits}} (doclets)
+\item 
+function \mbox{\hyperlink{augment_8js_a1e77e8ea6e63bd059d9b833dba8e20cb}{change\+Memberof}} (longname, new\+Memberof)
+\item 
+function \mbox{\hyperlink{augment_8js_a6ba2d96c8f124789e605503b0dad6db1}{get\+Inherited\+Additions}} (doclets, docs, \{documented, memberof\})
+\item 
+function \mbox{\hyperlink{augment_8js_a8545d43c2d841a0b1479dc777dfe3025}{update\+Mixes}} (mixed\+Doclet, mixed\+Longname)
+\item 
+function \mbox{\hyperlink{augment_8js_a4230997dc60eb2f02e425471d14480c8}{get\+Mixed\+In\+Additions}} (mixin\+Doclets, all\+Doclets, \{documented, memberof\})
+\item 
+function \mbox{\hyperlink{augment_8js_addc398c7d1abc0f134e930e55510a662}{update\+Implements}} (impl\+Doclets, implemented\+Longname)
+\item 
+function \mbox{\hyperlink{augment_8js_a7c5434dd7d877cad7ad721846c89c3f9}{get\+Implemented\+Additions}} (impl\+Doclets, all\+Doclets, \{documented, memberof\})
+\item 
+function \mbox{\hyperlink{augment_8js_a08d01b81700ad39b0063a4b991b6ce9e}{augment}} (doclets, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a6e9be5601dd7853c834bce7388285c4f}{property\+Name}}, doclet\+Finder)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{augment_8js_a13f65f2f8b7af67764958f9ca1765cf1}{doop}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/doop\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Provides methods for augmenting the parse results based on their content. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{augment_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}
+\item 
+const \mbox{\hyperlink{augment_8js_a065dce940aaa83aab96e001e5f46d129}{name}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/name\textquotesingle{})
+\item 
+const \mbox{\hyperlink{augment_8js_a5003cc3d54412fd1173126a720e10180}{has\+Own\+Prop}} = \mbox{\hyperlink{underscore_2underscore_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{augment_8js_a1ca87d00bbc0f3c1d0ca7b9c8c85a8a9}{add\+Inherited}}
+\begin{DoxyCompactList}\small\item\em Add doclets to reflect class inheritance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{augment_8js_a34f225f7ca6490470e6741fe8b3b331c}{add\+Mixed\+In}}
+\begin{DoxyCompactList}\small\item\em Add doclets to reflect mixins. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{augment_8js_ac8118378a65d5f0b928637b279b33383}{add\+Implemented}}
+\begin{DoxyCompactList}\small\item\em Add and update doclets to reflect implementations of interfaces. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{augment_8js_afc8783564636e04a5704dafcd08ccb93}{augment\+All}}
+\begin{DoxyCompactList}\small\item\em Add and update doclets to reflect all of the following\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{augment_8js_a9dd74271a86ced4a7cfc9ac83ad95608}\label{augment_8js_a9dd74271a86ced4a7cfc9ac83ad95608}} 
+\index{augment.js@{augment.js}!addDocletProperty@{addDocletProperty}}
+\index{addDocletProperty@{addDocletProperty}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{addDocletProperty()}{addDocletProperty()}}
+{\footnotesize\ttfamily function add\+Doclet\+Property (\begin{DoxyParamCaption}\item[{}]{doclets,  }\item[{}]{prop\+Name,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a08d01b81700ad39b0063a4b991b6ce9e}\label{augment_8js_a08d01b81700ad39b0063a4b991b6ce9e}} 
+\index{augment.js@{augment.js}!augment@{augment}}
+\index{augment@{augment}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{augment()}{augment()}}
+{\footnotesize\ttfamily function augment (\begin{DoxyParamCaption}\item[{}]{doclets,  }\item[{}]{property\+Name,  }\item[{}]{doclet\+Finder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a1e77e8ea6e63bd059d9b833dba8e20cb}\label{augment_8js_a1e77e8ea6e63bd059d9b833dba8e20cb}} 
+\index{augment.js@{augment.js}!changeMemberof@{changeMemberof}}
+\index{changeMemberof@{changeMemberof}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{changeMemberof()}{changeMemberof()}}
+{\footnotesize\ttfamily function change\+Memberof (\begin{DoxyParamCaption}\item[{}]{longname,  }\item[{}]{new\+Memberof }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_aa51c738867952c86ff6630b80386f043}\label{augment_8js_aa51c738867952c86ff6630b80386f043}} 
+\index{augment.js@{augment.js}!explicitlyInherits@{explicitlyInherits}}
+\index{explicitlyInherits@{explicitlyInherits}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{explicitlyInherits()}{explicitlyInherits()}}
+{\footnotesize\ttfamily function explicitly\+Inherits (\begin{DoxyParamCaption}\item[{}]{doclets }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a20c8f56c5adaa24ee5e2e5da11721cdc}\label{augment_8js_a20c8f56c5adaa24ee5e2e5da11721cdc}} 
+\index{augment.js@{augment.js}!getDocumentedLongname@{getDocumentedLongname}}
+\index{getDocumentedLongname@{getDocumentedLongname}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{getDocumentedLongname()}{getDocumentedLongname()}}
+{\footnotesize\ttfamily function get\+Documented\+Longname (\begin{DoxyParamCaption}\item[{}]{longname,  }\item[{}]{\{index\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a7c5434dd7d877cad7ad721846c89c3f9}\label{augment_8js_a7c5434dd7d877cad7ad721846c89c3f9}} 
+\index{augment.js@{augment.js}!getImplementedAdditions@{getImplementedAdditions}}
+\index{getImplementedAdditions@{getImplementedAdditions}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{getImplementedAdditions()}{getImplementedAdditions()}}
+{\footnotesize\ttfamily function get\+Implemented\+Additions (\begin{DoxyParamCaption}\item[{}]{impl\+Doclets,  }\item[{}]{all\+Doclets,  }\item[{}]{\{documented, memberof\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a6ba2d96c8f124789e605503b0dad6db1}\label{augment_8js_a6ba2d96c8f124789e605503b0dad6db1}} 
+\index{augment.js@{augment.js}!getInheritedAdditions@{getInheritedAdditions}}
+\index{getInheritedAdditions@{getInheritedAdditions}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{getInheritedAdditions()}{getInheritedAdditions()}}
+{\footnotesize\ttfamily function get\+Inherited\+Additions (\begin{DoxyParamCaption}\item[{}]{doclets,  }\item[{}]{docs,  }\item[{}]{\{documented, memberof\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_ac854fa1ac84484dcd671835d27d12918}\label{augment_8js_ac854fa1ac84484dcd671835d27d12918}} 
+\index{augment.js@{augment.js}!getMembers@{getMembers}}
+\index{getMembers@{getMembers}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{getMembers()}{getMembers()}}
+{\footnotesize\ttfamily function get\+Members (\begin{DoxyParamCaption}\item[{}]{longname,  }\item[{}]{\{index\},  }\item[{}]{scopes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a4230997dc60eb2f02e425471d14480c8}\label{augment_8js_a4230997dc60eb2f02e425471d14480c8}} 
+\index{augment.js@{augment.js}!getMixedInAdditions@{getMixedInAdditions}}
+\index{getMixedInAdditions@{getMixedInAdditions}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{getMixedInAdditions()}{getMixedInAdditions()}}
+{\footnotesize\ttfamily function get\+Mixed\+In\+Additions (\begin{DoxyParamCaption}\item[{}]{mixin\+Doclets,  }\item[{}]{all\+Doclets,  }\item[{}]{\{documented, memberof\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a0ac7aae463feb510709b4d2f75995b59}\label{augment_8js_a0ac7aae463feb510709b4d2f75995b59}} 
+\index{augment.js@{augment.js}!mapDependencies@{mapDependencies}}
+\index{mapDependencies@{mapDependencies}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{mapDependencies()}{mapDependencies()}}
+{\footnotesize\ttfamily function map\+Dependencies (\begin{DoxyParamCaption}\item[{}]{index,  }\item[{}]{property\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a640e484daae1cef055d02d8b263bea7f}\label{augment_8js_a640e484daae1cef055d02d8b263bea7f}} 
+\index{augment.js@{augment.js}!parentIsClass@{parentIsClass}}
+\index{parentIsClass@{parentIsClass}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{parentIsClass()}{parentIsClass()}}
+{\footnotesize\ttfamily function parent\+Is\+Class (\begin{DoxyParamCaption}\item[{}]{\{kind\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a7b23983b5f094a44022d83fdf7ad0aa9}\label{augment_8js_a7b23983b5f094a44022d83fdf7ad0aa9}} 
+\index{augment.js@{augment.js}!reparentDoclet@{reparentDoclet}}
+\index{reparentDoclet@{reparentDoclet}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{reparentDoclet()}{reparentDoclet()}}
+{\footnotesize\ttfamily function reparent\+Doclet (\begin{DoxyParamCaption}\item[{}]{\{longname\},  }\item[{}]{child }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a8c083e75cf25b8a728f7f1a7a270a74c}\label{augment_8js_a8c083e75cf25b8a728f7f1a7a270a74c}} 
+\index{augment.js@{augment.js}!sort@{sort}}
+\index{sort@{sort}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily function sort (\begin{DoxyParamCaption}\item[{}]{dependencies }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2pullAt_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/pull\+At.\+js}}.\end{Desc}
+\mbox{\Hypertarget{augment_8js_a40c3adabef008fa461903be61b617685}\label{augment_8js_a40c3adabef008fa461903be61b617685}} 
+\index{augment.js@{augment.js}!staticToInstance@{staticToInstance}}
+\index{staticToInstance@{staticToInstance}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{staticToInstance()}{staticToInstance()}}
+{\footnotesize\ttfamily function static\+To\+Instance (\begin{DoxyParamCaption}\item[{}]{doclet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a00a60bff00da7177129ea5c289342deb}\label{augment_8js_a00a60bff00da7177129ea5c289342deb}} 
+\index{augment.js@{augment.js}!updateAddedDoclets@{updateAddedDoclets}}
+\index{updateAddedDoclets@{updateAddedDoclets}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{updateAddedDoclets()}{updateAddedDoclets()}}
+{\footnotesize\ttfamily function update\+Added\+Doclets (\begin{DoxyParamCaption}\item[{}]{doclet,  }\item[{}]{additions,  }\item[{}]{indexes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the list of doclets to be added to another symbol. 
+
+We add only one doclet per longname. For example\+: If {\ttfamily ClassA} inherits from two classes that both use the same method name, {\ttfamily ClassA} gets docs for one method rather than two.
+
+Also, the last symbol wins for any given longname. For example\+: If you write {\ttfamily @extends Class1 @extends Class2}, and both classes have an instance method called {\ttfamily my\+Method}, you get the docs from {\ttfamily Class2\#my\+Method}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & doclet -\/ The doclet to be added. \\
+\hline
+{\em \{\+Array.$<$module\+:jsdoc/doclet.\+Doclet$>$\}} & additions -\/ An array of doclets that will be added to another symbol. \\
+\hline
+{\em \{\+Object.$<$string,number$>$\}} & indexes -\/ A dictionary of indexes into the {\ttfamily additions} array. Each key is a longname, and each value is the index of the longname\textquotesingle{}s doclet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{void\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{augment_8js_a1566eee7740a42fb20c790ff26d7bf07}\label{augment_8js_a1566eee7740a42fb20c790ff26d7bf07}} 
+\index{augment.js@{augment.js}!updateDocumentedDoclets@{updateDocumentedDoclets}}
+\index{updateDocumentedDoclets@{updateDocumentedDoclets}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{updateDocumentedDoclets()}{updateDocumentedDoclets()}}
+{\footnotesize\ttfamily function update\+Documented\+Doclets (\begin{DoxyParamCaption}\item[{}]{doclet,  }\item[{}]{documented }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the index of doclets whose {\ttfamily undocumented} property is not {\ttfamily true}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & doclet -\/ The doclet to be added to the index. \\
+\hline
+{\em \{\+Object.$<$string,Array.$<$module\+:jsdoc/doclet.\+Doclet$>$$>$\}} & documented -\/ The index of doclets whose {\ttfamily undocumented} property is not {\ttfamily true}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{void\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{augment_8js_addc398c7d1abc0f134e930e55510a662}\label{augment_8js_addc398c7d1abc0f134e930e55510a662}} 
+\index{augment.js@{augment.js}!updateImplements@{updateImplements}}
+\index{updateImplements@{updateImplements}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{updateImplements()}{updateImplements()}}
+{\footnotesize\ttfamily function update\+Implements (\begin{DoxyParamCaption}\item[{}]{impl\+Doclets,  }\item[{}]{implemented\+Longname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{augment_8js_a0df81f8da2a49ef09d165231b7e4525f}\label{augment_8js_a0df81f8da2a49ef09d165231b7e4525f}} 
+\index{augment.js@{augment.js}!updateMemberofDoclets@{updateMemberofDoclets}}
+\index{updateMemberofDoclets@{updateMemberofDoclets}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{updateMemberofDoclets()}{updateMemberofDoclets()}}
+{\footnotesize\ttfamily function update\+Memberof\+Doclets (\begin{DoxyParamCaption}\item[{}]{doclet,  }\item[{}]{memberof }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the index of doclets with a {\ttfamily memberof} value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/doclet.\+Doclet\}} & doclet -\/ The doclet to be added to the index. \\
+\hline
+{\em \{\+Object.$<$string,Array.$<$module\+:jsdoc/doclet.\+Doclet$>$$>$\}} & memberof -\/ The index of doclets with a {\ttfamily memberof} value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{void\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{augment_8js_a8545d43c2d841a0b1479dc777dfe3025}\label{augment_8js_a8545d43c2d841a0b1479dc777dfe3025}} 
+\index{augment.js@{augment.js}!updateMixes@{updateMixes}}
+\index{updateMixes@{updateMixes}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{updateMixes()}{updateMixes()}}
+{\footnotesize\ttfamily function update\+Mixes (\begin{DoxyParamCaption}\item[{}]{mixed\+Doclet,  }\item[{}]{mixed\+Longname }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{augment_8js_ac8118378a65d5f0b928637b279b33383}\label{augment_8js_ac8118378a65d5f0b928637b279b33383}} 
+\index{augment.js@{augment.js}!addImplemented@{addImplemented}}
+\index{addImplemented@{addImplemented}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{addImplemented}{addImplemented}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} add\+Implemented}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= doclets => \{}
+\DoxyCodeLine{    \mbox{\hyperlink{augment_8js_a08d01b81700ad39b0063a4b991b6ce9e}{augment}}(doclets, \textcolor{stringliteral}{'implements'}, \mbox{\hyperlink{augment_8js_a7c5434dd7d877cad7ad721846c89c3f9}{getImplementedAdditions}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Add and update doclets to reflect implementations of interfaces. 
+
+For example, if {\ttfamily InterfaceA} has the instance method {\ttfamily my\+Method}, and {\ttfamily ClassA} implements {\ttfamily InterfaceA}, calling this method does the following\+:
+
+
+\begin{DoxyItemize}
+\item Updates {\ttfamily InterfaceA} to indicate that it is implemented by {\ttfamily ClassA}
+\item Updates {\ttfamily InterfaceA\#my\+Method} to indicate that it is implemented by {\ttfamily ClassA\#my\+Method}
+\item Updates {\ttfamily ClassA\#my\+Method} to indicate that it implements {\ttfamily InterfaceA\#my\+Method}
+\end{DoxyItemize}
+
+If {\ttfamily ClassA\#my\+Method} used the {\ttfamily @override} or {\ttfamily @inheritdoc} tag, calling this method would also generate a new doclet that reflects the interface\textquotesingle{}s documentation for {\ttfamily InterfaceA\#my\+Method}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Array.$<$module\+:jsdoc/doclet.\+Doclet$>$\}} & docs -\/ The doclets generated by J\+S\+Doc. \\
+\hline
+{\em \{!\+Object\}} & doclets.\+index -\/ The doclet index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{void\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{augment_8js_a1ca87d00bbc0f3c1d0ca7b9c8c85a8a9}\label{augment_8js_a1ca87d00bbc0f3c1d0ca7b9c8c85a8a9}} 
+\index{augment.js@{augment.js}!addInherited@{addInherited}}
+\index{addInherited@{addInherited}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{addInherited}{addInherited}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} add\+Inherited}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= doclets => \{}
+\DoxyCodeLine{    \mbox{\hyperlink{augment_8js_a08d01b81700ad39b0063a4b991b6ce9e}{augment}}(doclets, \textcolor{stringliteral}{'augments'}, \mbox{\hyperlink{augment_8js_a6ba2d96c8f124789e605503b0dad6db1}{getInheritedAdditions}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Add doclets to reflect class inheritance. 
+
+For example, if {\ttfamily ClassA} has the instance method {\ttfamily my\+Method}, and {\ttfamily ClassB} inherits from {\ttfamily ClassA}, calling this method creates a new doclet for {\ttfamily ClassB\#my\+Method}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Array.$<$module\+:jsdoc/doclet.\+Doclet$>$\}} & doclets -\/ The doclets generated by J\+S\+Doc. \\
+\hline
+{\em \{!\+Object\}} & doclets.\+index -\/ The doclet index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{void\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{augment_8js_a34f225f7ca6490470e6741fe8b3b331c}\label{augment_8js_a34f225f7ca6490470e6741fe8b3b331c}} 
+\index{augment.js@{augment.js}!addMixedIn@{addMixedIn}}
+\index{addMixedIn@{addMixedIn}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{addMixedIn}{addMixedIn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} add\+Mixed\+In}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= doclets => \{}
+\DoxyCodeLine{    \mbox{\hyperlink{augment_8js_a08d01b81700ad39b0063a4b991b6ce9e}{augment}}(doclets, \textcolor{stringliteral}{'mixes'}, \mbox{\hyperlink{augment_8js_a4230997dc60eb2f02e425471d14480c8}{getMixedInAdditions}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Add doclets to reflect mixins. 
+
+When a symbol is mixed into a class, the class\textquotesingle{} version of the mixed-\/in symbol is treated as an instance member.
+
+For example\+:
+
+
+\begin{DoxyItemize}
+\item If {\ttfamily MixinA} has the static method {\ttfamily my\+Method}, and {\ttfamily MixinB} mixes {\ttfamily MixinA}, calling this method creates a new doclet for the static method {\ttfamily Mixin\+B.\+my\+Method}.
+\item If {\ttfamily MixinA} has the static method {\ttfamily my\+Method}, and {\ttfamily ClassA} mixes {\ttfamily MixinA}, calling this method creates a new doclet for the instance method {\ttfamily ClassA\#my\+Method}.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Array.$<$module\+:jsdoc/doclet.\+Doclet$>$\}} & doclets -\/ The doclets generated by J\+S\+Doc. \\
+\hline
+{\em \{!\+Object\}} & doclets.\+index -\/ The doclet index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{void\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{augment_8js_afc8783564636e04a5704dafcd08ccb93}\label{augment_8js_afc8783564636e04a5704dafcd08ccb93}} 
+\index{augment.js@{augment.js}!augmentAll@{augmentAll}}
+\index{augmentAll@{augmentAll}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{augmentAll}{augmentAll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} augment\+All}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= doclets => \{}
+\DoxyCodeLine{    \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.addMixedIn(doclets);}
+\DoxyCodeLine{    \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.addImplemented(doclets);}
+\DoxyCodeLine{    \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.addInherited(doclets);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{_0djsdoc_2salty_2index_8js_a156fe699424c6731f4edbd17fd8802b3}{exports}}.addImplemented(doclets);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Add and update doclets to reflect all of the following\+: 
+
+
+\begin{DoxyItemize}
+\item Inherited classes
+\item Mixins
+\item Interface implementations
+\end{DoxyItemize}
+
+Calling this method is equivalent to calling all other methods exported by this module.
+
+\begin{DoxyReturn}{Returns}
+\{void\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{augment_8js_a13f65f2f8b7af67764958f9ca1765cf1}\label{augment_8js_a13f65f2f8b7af67764958f9ca1765cf1}} 
+\index{augment.js@{augment.js}!doop@{doop}}
+\index{doop@{doop}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{doop}{doop}}
+{\footnotesize\ttfamily const doop = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}/doop\textquotesingle{})}
+
+
+
+Provides methods for augmenting the parse results based on their content. 
+
+@module jsdoc/augment \mbox{\Hypertarget{augment_8js_a5003cc3d54412fd1173126a720e10180}\label{augment_8js_a5003cc3d54412fd1173126a720e10180}} 
+\index{augment.js@{augment.js}!hasOwnProp@{hasOwnProp}}
+\index{hasOwnProp@{hasOwnProp}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{hasOwnProp}{hasOwnProp}}
+{\footnotesize\ttfamily const has\+Own\+Prop = \mbox{\hyperlink{underscore_2underscore_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2templates_2haruki_2publish_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/templates/haruki/publish.\+js}}.\end{Desc}
+\mbox{\Hypertarget{augment_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}\label{augment_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}} 
+\index{augment.js@{augment.js}!jsdoc@{jsdoc}}
+\index{jsdoc@{jsdoc}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{jsdoc}{jsdoc}}
+{\footnotesize\ttfamily const jsdoc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    doclet: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/doclet'})}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{augment_8js_a065dce940aaa83aab96e001e5f46d129}\label{augment_8js_a065dce940aaa83aab96e001e5f46d129}} 
+\index{augment.js@{augment.js}!name@{name}}
+\index{name@{name}!augment.js@{augment.js}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily const name = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{tag_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}/name\textquotesingle{})}
+

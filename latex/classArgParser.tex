@@ -2,14 +2,149 @@
 \label{classArgParser}\index{ArgParser@{ArgParser}}
 
 
+A parser to interpret the key-\/value pairs entered on the command line.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArgParser_a646d5ebf4b74878420e0c51cb3419d86}{constructor}} ()
+\begin{DoxyCompactList}\small\item\em Create an instance of the parser. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArgParser_a49c7d4673a0c939f27ffe1f7e720ecd5}{\+\_\+get\+Option\+By\+Short\+Name}} (\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+\mbox{\hyperlink{classArgParser_a364f7ed563bbc311181e9b73b158b181}{\+\_\+get\+Option\+By\+Long\+Name}} (\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+\mbox{\hyperlink{classArgParser_a57388078930dec34278d3283f05ecca4}{\+\_\+add\+Option}} (option)
+\item 
+\mbox{\hyperlink{classArgParser_ae15d22f500fc01da93f8a4f74a55e085}{add\+Option}} (short\+Name, long\+Name, has\+Value, help\+Text, can\+Have\+Multiple=false, coercer)
+\item 
+\mbox{\hyperlink{classArgParser_a5bf0cb1559117cd98714bd8307c5875b}{help}} ()
+\begin{DoxyCompactList}\small\item\em Generate a summary of all the options with corresponding help text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArgParser_a67d5b4a1a400e878d9b349c646a1a83c}{parse}} (args, \mbox{\hyperlink{underscore_2underscore_8js_a25652520ac081f98103987b0e68544cf}{defaults}})
+\begin{DoxyCompactList}\small\item\em Get the options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArgParser_af327d4ef7cf3d9277a8d7eb5f567f7b1}{add\+Ignored\+Option}} (short\+Name, long\+Name)
+\begin{DoxyCompactList}\small\item\em Provide information about an option that should not cause an error if present, but that is always ignored (for example, an option that was used in previous versions but is no longer supported). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
 \doxysubsection{Detailed Description}
-A parser to interpret the key-\/value pairs entered on the command line.
+A parser to interpret the key-\/value pairs entered on the command line. 
 
 @alias module\+:jsdoc/opts/argparser \begin{Desc}
 \item[Examples]\par
 \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArgParser_a57388078930dec34278d3283f05ecca4}\label{classArgParser_a57388078930dec34278d3283f05ecca4}} 
+\index{ArgParser@{ArgParser}!\_addOption@{\_addOption}}
+\index{\_addOption@{\_addOption}!ArgParser@{ArgParser}}
+\doxysubsubsection{\texorpdfstring{\_addOption()}{\_addOption()}}
+{\footnotesize\ttfamily Arg\+Parser\+::\+\_\+add\+Option (\begin{DoxyParamCaption}\item[{}]{option }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{classArgParser_a364f7ed563bbc311181e9b73b158b181}\label{classArgParser_a364f7ed563bbc311181e9b73b158b181}} 
+\index{ArgParser@{ArgParser}!\_getOptionByLongName@{\_getOptionByLongName}}
+\index{\_getOptionByLongName@{\_getOptionByLongName}!ArgParser@{ArgParser}}
+\doxysubsubsection{\texorpdfstring{\_getOptionByLongName()}{\_getOptionByLongName()}}
+{\footnotesize\ttfamily Arg\+Parser\+::\+\_\+get\+Option\+By\+Long\+Name (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{classArgParser_a49c7d4673a0c939f27ffe1f7e720ecd5}\label{classArgParser_a49c7d4673a0c939f27ffe1f7e720ecd5}} 
+\index{ArgParser@{ArgParser}!\_getOptionByShortName@{\_getOptionByShortName}}
+\index{\_getOptionByShortName@{\_getOptionByShortName}!ArgParser@{ArgParser}}
+\doxysubsubsection{\texorpdfstring{\_getOptionByShortName()}{\_getOptionByShortName()}}
+{\footnotesize\ttfamily Arg\+Parser\+::\+\_\+get\+Option\+By\+Short\+Name (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{classArgParser_af327d4ef7cf3d9277a8d7eb5f567f7b1}\label{classArgParser_af327d4ef7cf3d9277a8d7eb5f567f7b1}} 
+\index{ArgParser@{ArgParser}!addIgnoredOption@{addIgnoredOption}}
+\index{addIgnoredOption@{addIgnoredOption}!ArgParser@{ArgParser}}
+\doxysubsubsection{\texorpdfstring{addIgnoredOption()}{addIgnoredOption()}}
+{\footnotesize\ttfamily Arg\+Parser\+::add\+Ignored\+Option (\begin{DoxyParamCaption}\item[{}]{short\+Name,  }\item[{}]{long\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Provide information about an option that should not cause an error if present, but that is always ignored (for example, an option that was used in previous versions but is no longer supported). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & short\+Name -\/ The short name of the option with a leading hyphen (for example, {\ttfamily -\/v}). \\
+\hline
+{\em \{string\}} & long\+Name -\/ The long name of the option with two leading hyphens (for example, {\ttfamily -\/-\/version}). \\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{classArgParser_ae15d22f500fc01da93f8a4f74a55e085}\label{classArgParser_ae15d22f500fc01da93f8a4f74a55e085}} 
+\index{ArgParser@{ArgParser}!addOption@{addOption}}
+\index{addOption@{addOption}!ArgParser@{ArgParser}}
+\doxysubsubsection{\texorpdfstring{addOption()}{addOption()}}
+{\footnotesize\ttfamily Arg\+Parser\+::add\+Option (\begin{DoxyParamCaption}\item[{}]{short\+Name,  }\item[{}]{long\+Name,  }\item[{}]{has\+Value,  }\item[{}]{help\+Text,  }\item[{}]{can\+Have\+Multiple = {\ttfamily false},  }\item[{}]{coercer }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{classArgParser_a646d5ebf4b74878420e0c51cb3419d86}\label{classArgParser_a646d5ebf4b74878420e0c51cb3419d86}} 
+\index{ArgParser@{ArgParser}!constructor@{constructor}}
+\index{constructor@{constructor}!ArgParser@{ArgParser}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Arg\+Parser\+::constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create an instance of the parser. 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{classArgParser_a5bf0cb1559117cd98714bd8307c5875b}\label{classArgParser_a5bf0cb1559117cd98714bd8307c5875b}} 
+\index{ArgParser@{ArgParser}!help@{help}}
+\index{help@{help}!ArgParser@{ArgParser}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily Arg\+Parser\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generate a summary of all the options with corresponding help text. 
+
+\begin{DoxyReturn}{Returns}
+\{string\} 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{classArgParser_a67d5b4a1a400e878d9b349c646a1a83c}\label{classArgParser_a67d5b4a1a400e878d9b349c646a1a83c}} 
+\index{ArgParser@{ArgParser}!parse@{parse}}
+\index{parse@{parse}!ArgParser@{ArgParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily Arg\+Parser\+::parse (\begin{DoxyParamCaption}\item[{}]{args,  }\item[{}]{defaults }\end{DoxyParamCaption})}
+
+
+
+Get the options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array.$<$string$>$\}} & args An array, like \mbox{[}\textquotesingle{}-\/x\textquotesingle{}, \textquotesingle{}hello\textquotesingle{}\mbox{]} \\
+\hline
+{\em \{\+Object\}} & \mbox{[}defaults=\{\}\mbox{]} An optional collection of default values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} The keys will be the long\+Names, or the short\+Name if no long\+Name is defined for that option. The values will be the values provided, or {\ttfamily true} if the option accepts no value. 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js\end{DoxyCompactItemize}
+node\+\_\+modules/jsdoc/lib/jsdoc/opts/\mbox{\hyperlink{argparser_8js}{argparser.\+js}}\end{DoxyCompactItemize}

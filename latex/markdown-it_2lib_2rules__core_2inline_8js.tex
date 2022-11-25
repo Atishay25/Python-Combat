@@ -1,0 +1,39 @@
+\hypertarget{markdown-it_2lib_2rules__core_2inline_8js}{}\doxysection{node\+\_\+modules/markdown-\/it/lib/rules\+\_\+core/inline.js File Reference}
+\label{markdown-it_2lib_2rules__core_2inline_8js}\index{node\_modules/markdown-\/it/lib/rules\_core/inline.js@{node\_modules/markdown-\/it/lib/rules\_core/inline.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{markdown-it_2lib_2rules__core_2inline_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{markdown-it_2lib_2rules__core_2inline_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{markdown-it_2lib_2rules__core_2inline_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{markdown-it_2lib_2rules__core_2inline_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{inline.js@{inline.js}!exports@{exports}}
+\index{exports@{exports}!inline.js@{inline.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \textcolor{keyword}{inline}(\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}) \{}
+\DoxyCodeLine{  var tokens = \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.tokens, tok, \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}, \mbox{\hyperlink{markdownItAnchor_8js_ae5e71a2600e8891c54854be157cc6626}{l}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  \textcolor{keywordflow}{for} (\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} = 0, \mbox{\hyperlink{markdownItAnchor_8js_ae5e71a2600e8891c54854be157cc6626}{l}} = tokens.length; \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} < \mbox{\hyperlink{markdownItAnchor_8js_ae5e71a2600e8891c54854be157cc6626}{l}}; \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}++) \{}
+\DoxyCodeLine{    tok = tokens[\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}];}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (tok.type === \textcolor{stringliteral}{'inline'}) \{}
+\DoxyCodeLine{      \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.md.inline.parse(tok.content, \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.md, \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.env, tok.children);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{markdown-it_2lib_2rules__core_2inline_8js_ae2475e10618961c050dcba04e8c42331}\label{markdown-it_2lib_2rules__core_2inline_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{inline.js@{inline.js}!strict@{strict}}
+\index{strict@{strict}!inline.js@{inline.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+

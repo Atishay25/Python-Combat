@@ -1,0 +1,99 @@
+\hypertarget{__equalArrays_8js}{}\doxysection{node\+\_\+modules/lodash/\+\_\+equal\+Arrays.js File Reference}
+\label{__equalArrays_8js}\index{node\_modules/lodash/\_equalArrays.js@{node\_modules/lodash/\_equalArrays.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__equalArrays_8js_aa964c3fdcc8e25f0bb031109fdbc45a9}{equal\+Arrays}} (array, other, bitmask, customizer, equal\+Func, stack)
+\begin{DoxyCompactList}\small\item\em A specialized version of {\ttfamily base\+Is\+Equal\+Deep} for arrays with support for partial deep comparisons. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__equalArrays_8js_a6b5df5176e8e6343117f8c9f3769b255}{Set\+Cache}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+\+Set\+Cache\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__equalArrays_8js_acf6cb3ac0ab6ca3320c6e298531797c2}{array\+Some}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+array\+Some\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__equalArrays_8js_a56dd2ab9f4cdee69d8f5eac01e7064bc}{cache\+Has}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+cache\+Has\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__equalArrays_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}{C\+O\+M\+P\+A\+R\+E\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+AG}} = 1
+\begin{DoxyCompactList}\small\item\em Used to compose bitmasks for value comparisons. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__equalArrays_8js_add425400a9c8c88279e4c24a941902ac}{C\+O\+M\+P\+A\+R\+E\+\_\+\+U\+N\+O\+R\+D\+E\+R\+E\+D\+\_\+\+F\+L\+AG}} = 2
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__equalArrays_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{lodash_2core_8js_aa964c3fdcc8e25f0bb031109fdbc45a9}{equal\+Arrays}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__equalArrays_8js_aa964c3fdcc8e25f0bb031109fdbc45a9}\label{__equalArrays_8js_aa964c3fdcc8e25f0bb031109fdbc45a9}} 
+\index{\_equalArrays.js@{\_equalArrays.js}!equalArrays@{equalArrays}}
+\index{equalArrays@{equalArrays}!\_equalArrays.js@{\_equalArrays.js}}
+\doxysubsubsection{\texorpdfstring{equalArrays()}{equalArrays()}}
+{\footnotesize\ttfamily function equal\+Arrays (\begin{DoxyParamCaption}\item[{}]{array,  }\item[{}]{other,  }\item[{}]{bitmask,  }\item[{}]{customizer,  }\item[{}]{equal\+Func,  }\item[{}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A specialized version of {\ttfamily base\+Is\+Equal\+Deep} for arrays with support for partial deep comparisons. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & array The array to compare. \\
+\hline
+{\em \{\+Array\}} & other The other array to compare. \\
+\hline
+{\em \{number\}} & bitmask The bitmask flags. See {\ttfamily base\+Is\+Equal} for more details. \\
+\hline
+{\em \{\+Function\}} & customizer The function to customize comparisons. \\
+\hline
+{\em \{\+Function\}} & equal\+Func The function to determine equivalents of values. \\
+\hline
+{\em \{\+Object\}} & stack Tracks traversed {\ttfamily array} and {\ttfamily other} objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} Returns {\ttfamily true} if the arrays are equivalent, else {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__equalArrays_8js_acf6cb3ac0ab6ca3320c6e298531797c2}\label{__equalArrays_8js_acf6cb3ac0ab6ca3320c6e298531797c2}} 
+\index{\_equalArrays.js@{\_equalArrays.js}!arraySome@{arraySome}}
+\index{arraySome@{arraySome}!\_equalArrays.js@{\_equalArrays.js}}
+\doxysubsubsection{\texorpdfstring{arraySome}{arraySome}}
+{\footnotesize\ttfamily var array\+Some = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+array\+Some\textquotesingle{})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2overSome_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/over\+Some.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2some_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/some.\+js}}.\end{Desc}
+\mbox{\Hypertarget{__equalArrays_8js_a56dd2ab9f4cdee69d8f5eac01e7064bc}\label{__equalArrays_8js_a56dd2ab9f4cdee69d8f5eac01e7064bc}} 
+\index{\_equalArrays.js@{\_equalArrays.js}!cacheHas@{cacheHas}}
+\index{cacheHas@{cacheHas}!\_equalArrays.js@{\_equalArrays.js}}
+\doxysubsubsection{\texorpdfstring{cacheHas}{cacheHas}}
+{\footnotesize\ttfamily var cache\+Has = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+cache\+Has\textquotesingle{})}
+
+\mbox{\Hypertarget{__equalArrays_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}\label{__equalArrays_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}} 
+\index{\_equalArrays.js@{\_equalArrays.js}!COMPARE\_PARTIAL\_FLAG@{COMPARE\_PARTIAL\_FLAG}}
+\index{COMPARE\_PARTIAL\_FLAG@{COMPARE\_PARTIAL\_FLAG}!\_equalArrays.js@{\_equalArrays.js}}
+\doxysubsubsection{\texorpdfstring{COMPARE\_PARTIAL\_FLAG}{COMPARE\_PARTIAL\_FLAG}}
+{\footnotesize\ttfamily var C\+O\+M\+P\+A\+R\+E\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+AG = 1}
+
+
+
+Used to compose bitmasks for value comparisons. 
+
+\mbox{\Hypertarget{__equalArrays_8js_add425400a9c8c88279e4c24a941902ac}\label{__equalArrays_8js_add425400a9c8c88279e4c24a941902ac}} 
+\index{\_equalArrays.js@{\_equalArrays.js}!COMPARE\_UNORDERED\_FLAG@{COMPARE\_UNORDERED\_FLAG}}
+\index{COMPARE\_UNORDERED\_FLAG@{COMPARE\_UNORDERED\_FLAG}!\_equalArrays.js@{\_equalArrays.js}}
+\doxysubsubsection{\texorpdfstring{COMPARE\_UNORDERED\_FLAG}{COMPARE\_UNORDERED\_FLAG}}
+{\footnotesize\ttfamily var C\+O\+M\+P\+A\+R\+E\+\_\+\+U\+N\+O\+R\+D\+E\+R\+E\+D\+\_\+\+F\+L\+AG = 2}
+
+\mbox{\Hypertarget{__equalArrays_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{__equalArrays_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{\_equalArrays.js@{\_equalArrays.js}!exports@{exports}}
+\index{exports@{exports}!\_equalArrays.js@{\_equalArrays.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{lodash_2core_8js_aa964c3fdcc8e25f0bb031109fdbc45a9}{equal\+Arrays}}}
+
+\mbox{\Hypertarget{__equalArrays_8js_a6b5df5176e8e6343117f8c9f3769b255}\label{__equalArrays_8js_a6b5df5176e8e6343117f8c9f3769b255}} 
+\index{\_equalArrays.js@{\_equalArrays.js}!SetCache@{SetCache}}
+\index{SetCache@{SetCache}!\_equalArrays.js@{\_equalArrays.js}}
+\doxysubsubsection{\texorpdfstring{SetCache}{SetCache}}
+{\footnotesize\ttfamily var Set\+Cache = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+\+Set\+Cache\textquotesingle{})}
+

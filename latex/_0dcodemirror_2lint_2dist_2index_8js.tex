@@ -1,0 +1,554 @@
+\hypertarget{_0dcodemirror_2lint_2dist_2index_8js}{}\doxysection{node\+\_\+modules/@codemirror/lint/dist/index.js File Reference}
+\label{_0dcodemirror_2lint_2dist_2index_8js}\index{node\_modules/"@codemirror/lint/dist/index.js@{node\_modules/"@codemirror/lint/dist/index.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSelectedDiagnostic}{Selected\+Diagnostic}}
+\item 
+class \mbox{\hyperlink{classLintState}{Lint\+State}}
+\item 
+class \mbox{\hyperlink{classDiagnosticWidget}{Diagnostic\+Widget}}
+\item 
+class \mbox{\hyperlink{classPanelItem}{Panel\+Item}}
+\item 
+class \mbox{\hyperlink{classLintPanel}{Lint\+Panel}}
+\item 
+class \mbox{\hyperlink{classLintGutterMarker}{Lint\+Gutter\+Marker}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_afbcaf0ae3c592d802c1c5484b2d5bd23}{find\+Diagnostic}} (diagnostics, diagnostic=\mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}, \mbox{\hyperlink{underscore-esm-min_8js_a2c468e06e40b53d836b22d1dd951f719}{after}}=0)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a3aab95bebecf97cca764997d4eae1027}{hide\+Tooltip}} (\mbox{\hyperlink{underscore-umd-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}, tooltip)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a057a31cabcac37b85919434b55037f2e}{maybe\+Enable\+Lint}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, effects)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a2f1f86b4c61b57b290d97beb132f0785}{set\+Diagnostics}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, diagnostics)
+\begin{DoxyCompactList}\small\item\em Returns a transaction spec which updates the current set of diagnostics, and enables the lint extension if if wasn\textquotesingle{}t already active. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a35e9f144fb092c45be01a440092449c6}{diagnostic\+Count}} (\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}})
+\begin{DoxyCompactList}\small\item\em Returns the number of active lint diagnostics in the given state. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a4ebcf2e5d399ecab4bc2653c7084dcb8}{lint\+Tooltip}} (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}, pos, side)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a22370d5e4845cacec7ded080ea9cfa88}{diagnostics\+Tooltip}} (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}, diagnostics)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a217e005db46ed0acf3bf512ca089658c}{linter}} (source, \mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}}=\{\})
+\begin{DoxyCompactList}\small\item\em Given a diagnostic source, this function returns an extension that enables linting with that source. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0d7bc571e270f8b69da4d836d94a3d3e}{force\+Linting}} (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}})
+\begin{DoxyCompactList}\small\item\em Forces any linters \href{https://codemirror.net/6/docs/ref/\#lint.linter}{\texttt{ configured}} to run when the editor is idle to run right away. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_aa310c1aa7f8f5a9d154071c84424a8dd}{assign\+Keys}} (actions)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_aad131184851dc0fbda0ffd6e0cdd3048}{render\+Diagnostic}} (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}, diagnostic, in\+Panel)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a75086783d89f24150151981e14ffb634}{svg}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}{content}}, attrs=\`{}view\+Box=\char`\"{}0 0 40 40\char`\"{}\`{})
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_aae28b9a083b98687ae4840125b365c76}{underline}} (color)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_af08aaadbaed36018abc004d6236ceba9}{track\+Hover\+On}} (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}, marker)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_ac4742e345518d525a6426eef233fade6}{gutter\+Marker\+Mouse\+Over}} (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}, marker, diagnostics)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a589f2bea376552c7cfef073a025b68a9}{markers\+For\+Diagnostics}} (\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a705b54f2abede2e6bc78eb5c96b903aa}{doc}}, diagnostics)
+\item 
+function \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0dc3d0ddb270b5ce19f893c0fdd4f605}{lint\+Gutter}} (\mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}}=\{\})
+\begin{DoxyCompactList}\small\item\em Returns an extension that installs a gutter showing markers for each line that has diagnostics, which can be hovered over to see the diagnostics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{classDecoration}{Decoration}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a8f9685c9bcfedb0b5aac35290cc68e2a}{show\+Panel}}, \mbox{\hyperlink{classEditorView}{Editor\+View}}, \mbox{\hyperlink{classViewPlugin}{View\+Plugin}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_afd3ad1f630e9f70c5714e6b634caa7a6}{hover\+Tooltip}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a51e220ae1864fcf505295c377b239a47}{log\+Exception}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_acd58993de73ca6b1a86917091a7c9a48}{gutter}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a6d76f7cac3dceccd5fb1af4646a780ab}{show\+Tooltip}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_aaef27d7f199512f0917b91bf5f972fdb}{get\+Panel}}, \mbox{\hyperlink{classWidgetType}{Widget\+Type}}, \mbox{\hyperlink{classGutterMarker}{Gutter\+Marker}} \} from \textquotesingle{}@codemirror/\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{underscore_2modules_2underscore_8js_a59be084da8908b7d77ff34b25cd84488}{import}} elt from \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_af6477a15d283189834a3e9cedb535925}{crelt}}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_aa3d1b9153cf1a5979ce7e7cbf6293394}{set\+Diagnostics\+Effect}} = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()
+\begin{DoxyCompactList}\small\item\em The state effect that updates the set of active diagnostics. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a2a9fe480c1fe276c7f8680461bc158cc}{toggle\+Panel}} = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a57f66dcc8174b1d90d8b4e7baa867c9d}{move\+Panel\+Selection}} = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a4505073709af200d85742f356f379597}{lint\+State}}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a05ebe8db0bc23df6884007d49144f036}{active\+Mark}} = \mbox{\hyperlink{classDecoration_ad66f9c0fe8ae70e2251e7e2d8362afb9}{Decoration.\+mark}}(\{ class\+: \char`\"{}cm-\/lint\+Range cm-\/lint\+Range-\/active\char`\"{} \})
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0cb630f5aca8707843608b42e922c40d}{open\+Lint\+Panel}}
+\begin{DoxyCompactList}\small\item\em Command to open and focus the lint panel. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_ae8ca310919030eaafdd10503e5f0aa19}{close\+Lint\+Panel}}
+\begin{DoxyCompactList}\small\item\em Command to close the lint panel, when open. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_af5e3a142136a52af8949ef829ad21826}{next\+Diagnostic}}
+\begin{DoxyCompactList}\small\item\em Move the selection to the next diagnostic. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a815e696b67a0fedc6e0a35be1cc877bb}{lint\+Keymap}}
+\begin{DoxyCompactList}\small\item\em A set of default key bindings for the lint functionality. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a212f603cda2c3df9c15b6660a6aa9be0}{lint\+Plugin}}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0870e1e8a2eb95886886b1829e5d3bf3}{lint\+Config}}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a1bda75c0cb06da442901efa1fb82079c}{base\+Theme}}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a023ebc02f94a71d48f69a9eec72234a9}{lint\+Gutter\+Extension}}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a561bd0fc5d12f751b94475f38c612051}{lint\+Gutter\+Markers}}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_ae62bbf2a14236932512af52124676d1a}{set\+Lint\+Gutter\+Tooltip}} = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a56f0b246063ef54a835df520375c018f}{lint\+Gutter\+Tooltip}}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_ab07312df5177ee86f312879649d415f5}{lint\+Gutter\+Theme}}
+\item 
+const \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a2db1a9dafd7f9925c6082862ae50f77f}{lint\+Gutter\+Config}}
+\item 
+\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}{export}} \{ \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_ae8ca310919030eaafdd10503e5f0aa19}{close\+Lint\+Panel}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a35e9f144fb092c45be01a440092449c6}{diagnostic\+Count}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0d7bc571e270f8b69da4d836d94a3d3e}{force\+Linting}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0dc3d0ddb270b5ce19f893c0fdd4f605}{lint\+Gutter}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a815e696b67a0fedc6e0a35be1cc877bb}{lint\+Keymap}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a217e005db46ed0acf3bf512ca089658c}{linter}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_af5e3a142136a52af8949ef829ad21826}{next\+Diagnostic}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0cb630f5aca8707843608b42e922c40d}{open\+Lint\+Panel}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a2f1f86b4c61b57b290d97beb132f0785}{set\+Diagnostics}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_aa3d1b9153cf1a5979ce7e7cbf6293394}{set\+Diagnostics\+Effect}} \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_aa310c1aa7f8f5a9d154071c84424a8dd}\label{_0dcodemirror_2lint_2dist_2index_8js_aa310c1aa7f8f5a9d154071c84424a8dd}} 
+\index{index.js@{index.js}!assignKeys@{assignKeys}}
+\index{assignKeys@{assignKeys}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{assignKeys()}{assignKeys()}}
+{\footnotesize\ttfamily function assign\+Keys (\begin{DoxyParamCaption}\item[{}]{actions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a35e9f144fb092c45be01a440092449c6}\label{_0dcodemirror_2lint_2dist_2index_8js_a35e9f144fb092c45be01a440092449c6}} 
+\index{index.js@{index.js}!diagnosticCount@{diagnosticCount}}
+\index{diagnosticCount@{diagnosticCount}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{diagnosticCount()}{diagnosticCount()}}
+{\footnotesize\ttfamily function diagnostic\+Count (\begin{DoxyParamCaption}\item[{}]{state }\end{DoxyParamCaption})}
+
+
+
+Returns the number of active lint diagnostics in the given state. 
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a22370d5e4845cacec7ded080ea9cfa88}\label{_0dcodemirror_2lint_2dist_2index_8js_a22370d5e4845cacec7ded080ea9cfa88}} 
+\index{index.js@{index.js}!diagnosticsTooltip@{diagnosticsTooltip}}
+\index{diagnosticsTooltip@{diagnosticsTooltip}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{diagnosticsTooltip()}{diagnosticsTooltip()}}
+{\footnotesize\ttfamily function diagnostics\+Tooltip (\begin{DoxyParamCaption}\item[{}]{view,  }\item[{}]{diagnostics }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_afbcaf0ae3c592d802c1c5484b2d5bd23}\label{_0dcodemirror_2lint_2dist_2index_8js_afbcaf0ae3c592d802c1c5484b2d5bd23}} 
+\index{index.js@{index.js}!findDiagnostic@{findDiagnostic}}
+\index{findDiagnostic@{findDiagnostic}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{findDiagnostic()}{findDiagnostic()}}
+{\footnotesize\ttfamily function find\+Diagnostic (\begin{DoxyParamCaption}\item[{}]{diagnostics,  }\item[{}]{diagnostic = {\ttfamily \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}},  }\item[{}]{after = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a0d7bc571e270f8b69da4d836d94a3d3e}\label{_0dcodemirror_2lint_2dist_2index_8js_a0d7bc571e270f8b69da4d836d94a3d3e}} 
+\index{index.js@{index.js}!forceLinting@{forceLinting}}
+\index{forceLinting@{forceLinting}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{forceLinting()}{forceLinting()}}
+{\footnotesize\ttfamily function force\+Linting (\begin{DoxyParamCaption}\item[{}]{view }\end{DoxyParamCaption})}
+
+
+
+Forces any linters \href{https://codemirror.net/6/docs/ref/\#lint.linter}{\texttt{ configured}} to run when the editor is idle to run right away. 
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_ac4742e345518d525a6426eef233fade6}\label{_0dcodemirror_2lint_2dist_2index_8js_ac4742e345518d525a6426eef233fade6}} 
+\index{index.js@{index.js}!gutterMarkerMouseOver@{gutterMarkerMouseOver}}
+\index{gutterMarkerMouseOver@{gutterMarkerMouseOver}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{gutterMarkerMouseOver()}{gutterMarkerMouseOver()}}
+{\footnotesize\ttfamily function gutter\+Marker\+Mouse\+Over (\begin{DoxyParamCaption}\item[{}]{view,  }\item[{}]{marker,  }\item[{}]{diagnostics }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a3aab95bebecf97cca764997d4eae1027}\label{_0dcodemirror_2lint_2dist_2index_8js_a3aab95bebecf97cca764997d4eae1027}} 
+\index{index.js@{index.js}!hideTooltip@{hideTooltip}}
+\index{hideTooltip@{hideTooltip}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{hideTooltip()}{hideTooltip()}}
+{\footnotesize\ttfamily function hide\+Tooltip (\begin{DoxyParamCaption}\item[{}]{tr,  }\item[{}]{tooltip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a217e005db46ed0acf3bf512ca089658c}\label{_0dcodemirror_2lint_2dist_2index_8js_a217e005db46ed0acf3bf512ca089658c}} 
+\index{index.js@{index.js}!linter@{linter}}
+\index{linter@{linter}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{linter()}{linter()}}
+{\footnotesize\ttfamily function linter (\begin{DoxyParamCaption}\item[{}]{source,  }\item[{}]{config = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+Given a diagnostic source, this function returns an extension that enables linting with that source. 
+
+It will be called whenever the editor is idle (after its content changed). \mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a0dc3d0ddb270b5ce19f893c0fdd4f605}\label{_0dcodemirror_2lint_2dist_2index_8js_a0dc3d0ddb270b5ce19f893c0fdd4f605}} 
+\index{index.js@{index.js}!lintGutter@{lintGutter}}
+\index{lintGutter@{lintGutter}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintGutter()}{lintGutter()}}
+{\footnotesize\ttfamily function lint\+Gutter (\begin{DoxyParamCaption}\item[{}]{config = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+Returns an extension that installs a gutter showing markers for each line that has diagnostics, which can be hovered over to see the diagnostics. 
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a4ebcf2e5d399ecab4bc2653c7084dcb8}\label{_0dcodemirror_2lint_2dist_2index_8js_a4ebcf2e5d399ecab4bc2653c7084dcb8}} 
+\index{index.js@{index.js}!lintTooltip@{lintTooltip}}
+\index{lintTooltip@{lintTooltip}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintTooltip()}{lintTooltip()}}
+{\footnotesize\ttfamily function lint\+Tooltip (\begin{DoxyParamCaption}\item[{}]{view,  }\item[{}]{pos,  }\item[{}]{side }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a589f2bea376552c7cfef073a025b68a9}\label{_0dcodemirror_2lint_2dist_2index_8js_a589f2bea376552c7cfef073a025b68a9}} 
+\index{index.js@{index.js}!markersForDiagnostics@{markersForDiagnostics}}
+\index{markersForDiagnostics@{markersForDiagnostics}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{markersForDiagnostics()}{markersForDiagnostics()}}
+{\footnotesize\ttfamily function markers\+For\+Diagnostics (\begin{DoxyParamCaption}\item[{}]{doc,  }\item[{}]{diagnostics }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a057a31cabcac37b85919434b55037f2e}\label{_0dcodemirror_2lint_2dist_2index_8js_a057a31cabcac37b85919434b55037f2e}} 
+\index{index.js@{index.js}!maybeEnableLint@{maybeEnableLint}}
+\index{maybeEnableLint@{maybeEnableLint}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{maybeEnableLint()}{maybeEnableLint()}}
+{\footnotesize\ttfamily function maybe\+Enable\+Lint (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{effects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_aad131184851dc0fbda0ffd6e0cdd3048}\label{_0dcodemirror_2lint_2dist_2index_8js_aad131184851dc0fbda0ffd6e0cdd3048}} 
+\index{index.js@{index.js}!renderDiagnostic@{renderDiagnostic}}
+\index{renderDiagnostic@{renderDiagnostic}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{renderDiagnostic()}{renderDiagnostic()}}
+{\footnotesize\ttfamily function render\+Diagnostic (\begin{DoxyParamCaption}\item[{}]{view,  }\item[{}]{diagnostic,  }\item[{}]{in\+Panel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a2f1f86b4c61b57b290d97beb132f0785}\label{_0dcodemirror_2lint_2dist_2index_8js_a2f1f86b4c61b57b290d97beb132f0785}} 
+\index{index.js@{index.js}!setDiagnostics@{setDiagnostics}}
+\index{setDiagnostics@{setDiagnostics}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{setDiagnostics()}{setDiagnostics()}}
+{\footnotesize\ttfamily function set\+Diagnostics (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{diagnostics }\end{DoxyParamCaption})}
+
+
+
+Returns a transaction spec which updates the current set of diagnostics, and enables the lint extension if if wasn\textquotesingle{}t already active. 
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a75086783d89f24150151981e14ffb634}\label{_0dcodemirror_2lint_2dist_2index_8js_a75086783d89f24150151981e14ffb634}} 
+\index{index.js@{index.js}!svg@{svg}}
+\index{svg@{svg}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{svg()}{svg()}}
+{\footnotesize\ttfamily function svg (\begin{DoxyParamCaption}\item[{}]{content,  }\item[{}]{attrs = {\ttfamily \`{}viewBox=\char`\"{}0~0~40~40\char`\"{}\`{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_af08aaadbaed36018abc004d6236ceba9}\label{_0dcodemirror_2lint_2dist_2index_8js_af08aaadbaed36018abc004d6236ceba9}} 
+\index{index.js@{index.js}!trackHoverOn@{trackHoverOn}}
+\index{trackHoverOn@{trackHoverOn}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{trackHoverOn()}{trackHoverOn()}}
+{\footnotesize\ttfamily function track\+Hover\+On (\begin{DoxyParamCaption}\item[{}]{view,  }\item[{}]{marker }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_aae28b9a083b98687ae4840125b365c76}\label{_0dcodemirror_2lint_2dist_2index_8js_aae28b9a083b98687ae4840125b365c76}} 
+\index{index.js@{index.js}!underline@{underline}}
+\index{underline@{underline}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{underline()}{underline()}}
+{\footnotesize\ttfamily function underline (\begin{DoxyParamCaption}\item[{}]{color }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a05ebe8db0bc23df6884007d49144f036}\label{_0dcodemirror_2lint_2dist_2index_8js_a05ebe8db0bc23df6884007d49144f036}} 
+\index{index.js@{index.js}!activeMark@{activeMark}}
+\index{activeMark@{activeMark}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{activeMark}{activeMark}}
+{\footnotesize\ttfamily const active\+Mark = \mbox{\hyperlink{classDecoration_ad66f9c0fe8ae70e2251e7e2d8362afb9}{Decoration.\+mark}}(\{ class\+: \char`\"{}cm-\/lint\+Range cm-\/lint\+Range-\/active\char`\"{} \})}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a1bda75c0cb06da442901efa1fb82079c}\label{_0dcodemirror_2lint_2dist_2index_8js_a1bda75c0cb06da442901efa1fb82079c}} 
+\index{index.js@{index.js}!baseTheme@{baseTheme}}
+\index{baseTheme@{baseTheme}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{baseTheme}{baseTheme}}
+{\footnotesize\ttfamily const base\+Theme}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_ae8ca310919030eaafdd10503e5f0aa19}\label{_0dcodemirror_2lint_2dist_2index_8js_ae8ca310919030eaafdd10503e5f0aa19}} 
+\index{index.js@{index.js}!closeLintPanel@{closeLintPanel}}
+\index{closeLintPanel@{closeLintPanel}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{closeLintPanel}{closeLintPanel}}
+{\footnotesize\ttfamily const close\+Lint\+Panel}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}) => \{}
+\DoxyCodeLine{    let field = \mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}.state.field(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a4505073709af200d85742f356f379597}{lintState}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!field || !field.panel)}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{    \mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}.dispatch(\{ effects: \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a2a9fe480c1fe276c7f8680461bc158cc}{togglePanel}}.of(\textcolor{keyword}{false}) \});}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Command to close the lint panel, when open. 
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_af6477a15d283189834a3e9cedb535925}\label{_0dcodemirror_2lint_2dist_2index_8js_af6477a15d283189834a3e9cedb535925}} 
+\index{index.js@{index.js}!crelt@{crelt}}
+\index{crelt@{crelt}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{crelt}{crelt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2modules_2underscore_8js_a59be084da8908b7d77ff34b25cd84488}{import}} elt from crelt}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}\label{_0dcodemirror_2lint_2dist_2index_8js_af44e2d3afd4e0e4d03f637dbb2bce3cd}} 
+\index{index.js@{index.js}!export@{export}}
+\index{export@{export}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{export}{export}}
+{\footnotesize\ttfamily export \{ \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_ae8ca310919030eaafdd10503e5f0aa19}{close\+Lint\+Panel}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a35e9f144fb092c45be01a440092449c6}{diagnostic\+Count}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0d7bc571e270f8b69da4d836d94a3d3e}{force\+Linting}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0dc3d0ddb270b5ce19f893c0fdd4f605}{lint\+Gutter}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a815e696b67a0fedc6e0a35be1cc877bb}{lint\+Keymap}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a217e005db46ed0acf3bf512ca089658c}{linter}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_af5e3a142136a52af8949ef829ad21826}{next\+Diagnostic}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0cb630f5aca8707843608b42e922c40d}{open\+Lint\+Panel}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a2f1f86b4c61b57b290d97beb132f0785}{set\+Diagnostics}}, \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_aa3d1b9153cf1a5979ce7e7cbf6293394}{set\+Diagnostics\+Effect}} \}}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a59be084da8908b7d77ff34b25cd84488}\label{_0dcodemirror_2lint_2dist_2index_8js_a59be084da8908b7d77ff34b25cd84488}} 
+\index{index.js@{index.js}!import@{import}}
+\index{import@{import}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily import \{ \mbox{\hyperlink{classDecoration}{Decoration}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a8f9685c9bcfedb0b5aac35290cc68e2a}{show\+Panel}}, \mbox{\hyperlink{classEditorView}{Editor\+View}}, \mbox{\hyperlink{classViewPlugin}{View\+Plugin}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_afd3ad1f630e9f70c5714e6b634caa7a6}{hover\+Tooltip}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a51e220ae1864fcf505295c377b239a47}{log\+Exception}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_acd58993de73ca6b1a86917091a7c9a48}{gutter}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a6d76f7cac3dceccd5fb1af4646a780ab}{show\+Tooltip}}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_aaef27d7f199512f0917b91bf5f972fdb}{get\+Panel}}, \mbox{\hyperlink{classWidgetType}{Widget\+Type}}, \mbox{\hyperlink{classGutterMarker}{Gutter\+Marker}} \} from \textquotesingle{}@codemirror/\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}\textquotesingle{}}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a0870e1e8a2eb95886886b1829e5d3bf3}\label{_0dcodemirror_2lint_2dist_2index_8js_a0870e1e8a2eb95886886b1829e5d3bf3}} 
+\index{index.js@{index.js}!lintConfig@{lintConfig}}
+\index{lintConfig@{lintConfig}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintConfig}{lintConfig}}
+{\footnotesize\ttfamily const lint\+Config}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classFacet}{Facet}}.\mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}(input) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} Object.assign(\{ sources: input.map(\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} => \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}.source) \}, \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a5fb017965ea522622f83e6cb88ece6e4}{combineConfig}}(input.map(\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} => \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}.config), \{}
+\DoxyCodeLine{            delay: 750,}
+\DoxyCodeLine{            markerFilter: null,}
+\DoxyCodeLine{            tooltipFilter: null}
+\DoxyCodeLine{        \}));}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    enables: \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a212f603cda2c3df9c15b6660a6aa9be0}{lintPlugin}}}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a2db1a9dafd7f9925c6082862ae50f77f}\label{_0dcodemirror_2lint_2dist_2index_8js_a2db1a9dafd7f9925c6082862ae50f77f}} 
+\index{index.js@{index.js}!lintGutterConfig@{lintGutterConfig}}
+\index{lintGutterConfig@{lintGutterConfig}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintGutterConfig}{lintGutterConfig}}
+{\footnotesize\ttfamily const lint\+Gutter\+Config}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classFacet}{Facet}}.\mbox{\hyperlink{classFacet_a4fe323937f1a9d21c67b0d1c2f75ba9f}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{doclet_8js_ac151836247b84a9bdc5660b331e996b1}{combine}}(configs) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{_0dcodemirror_2state_2dist_2index_8js_a5fb017965ea522622f83e6cb88ece6e4}{combineConfig}}(configs, \{}
+\DoxyCodeLine{            hoverTime: 300 ,}
+\DoxyCodeLine{            markerFilter: \textcolor{keyword}{null},}
+\DoxyCodeLine{            tooltipFilter: \textcolor{keyword}{null}}
+\DoxyCodeLine{        \});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a023ebc02f94a71d48f69a9eec72234a9}\label{_0dcodemirror_2lint_2dist_2index_8js_a023ebc02f94a71d48f69a9eec72234a9}} 
+\index{index.js@{index.js}!lintGutterExtension@{lintGutterExtension}}
+\index{lintGutterExtension@{lintGutterExtension}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintGutterExtension}{lintGutterExtension}}
+{\footnotesize\ttfamily const lint\+Gutter\+Extension}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_acd58993de73ca6b1a86917091a7c9a48}{gutter}}(\{}
+\DoxyCodeLine{    \textcolor{keyword}{class}: \textcolor{stringliteral}{"cm-\/gutter-\/lint"},}
+\DoxyCodeLine{    markers: \mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}} => \mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}.state.field(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a561bd0fc5d12f751b94475f38c612051}{lintGutterMarkers}}),}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a561bd0fc5d12f751b94475f38c612051}\label{_0dcodemirror_2lint_2dist_2index_8js_a561bd0fc5d12f751b94475f38c612051}} 
+\index{index.js@{index.js}!lintGutterMarkers@{lintGutterMarkers}}
+\index{lintGutterMarkers@{lintGutterMarkers}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintGutterMarkers}{lintGutterMarkers}}
+{\footnotesize\ttfamily const lint\+Gutter\+Markers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classStateField}{StateField}}.\mbox{\hyperlink{classStateField_a18ad95b275d0fe1d5c2fbb36b7de8f56}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a8a4b672aae08c897677b0da41fe566e0}{create}}() \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{classRangeSet}{RangeSet}}.empty;}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{lodash_2update_8js_ad5c41959cb2a51c3de421af199941cc0}{update}}(markers, \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}) \{}
+\DoxyCodeLine{        markers = markers.map(\mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.changes);}
+\DoxyCodeLine{        let diagnosticFilter = \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.state.facet(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a2db1a9dafd7f9925c6082862ae50f77f}{lintGutterConfig}}).markerFilter;}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} (let effect of \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.effects) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (effect.is(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_aa3d1b9153cf1a5979ce7e7cbf6293394}{setDiagnosticsEffect}})) \{}
+\DoxyCodeLine{                let diagnostics = effect.value;}
+\DoxyCodeLine{                \textcolor{keywordflow}{if} (diagnosticFilter)}
+\DoxyCodeLine{                    diagnostics = diagnosticFilter(diagnostics || []);}
+\DoxyCodeLine{                markers = \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a589f2bea376552c7cfef073a025b68a9}{markersForDiagnostics}}(\mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.state.doc, diagnostics.slice(0));}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} markers;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_ab07312df5177ee86f312879649d415f5}\label{_0dcodemirror_2lint_2dist_2index_8js_ab07312df5177ee86f312879649d415f5}} 
+\index{index.js@{index.js}!lintGutterTheme@{lintGutterTheme}}
+\index{lintGutterTheme@{lintGutterTheme}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintGutterTheme}{lintGutterTheme}}
+{\footnotesize\ttfamily const lint\+Gutter\+Theme}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classEditorView}{EditorView}}.\mbox{\hyperlink{classEditorView_a77c311296519bc9084fa12240120f9b5}{baseTheme}}(\{}
+\DoxyCodeLine{    \textcolor{stringliteral}{".cm-\/gutter-\/lint"}: \{}
+\DoxyCodeLine{        width: \textcolor{stringliteral}{"1.4em"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"\& .cm-\/gutterElement"}: \{}
+\DoxyCodeLine{            \mbox{\hyperlink{argparser_8js_a947f85494fa6439896501273d2bfe9b1}{padding}}: \textcolor{stringliteral}{".2em"}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \textcolor{stringliteral}{".cm-\/lint-\/marker"}: \{}
+\DoxyCodeLine{        width: \textcolor{stringliteral}{"1em"},}
+\DoxyCodeLine{        height: \textcolor{stringliteral}{"1em"}}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \textcolor{stringliteral}{".cm-\/lint-\/marker-\/info"}: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}{content}}: \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a75086783d89f24150151981e14ffb634}{svg}}(`<\mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a3923fb8e80875556fe059fca8642c370}{fill}}=\textcolor{stringliteral}{"\#aaf"} stroke=\textcolor{stringliteral}{"\#77e"} stroke-\/width=\textcolor{stringliteral}{"6"} stroke-\/linejoin=\textcolor{stringliteral}{"round"} \mbox{\hyperlink{markdown-it_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}=\textcolor{stringliteral}{"M5 5L35 5L35 35L5 35Z"}/>`)}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \textcolor{stringliteral}{".cm-\/lint-\/marker-\/warning"}: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}{content}}: \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a75086783d89f24150151981e14ffb634}{svg}}(`<\mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a3923fb8e80875556fe059fca8642c370}{fill}}=\textcolor{stringliteral}{"\#fe8"} stroke=\textcolor{stringliteral}{"\#fd7"} stroke-\/width=\textcolor{stringliteral}{"6"} stroke-\/linejoin=\textcolor{stringliteral}{"round"} \mbox{\hyperlink{markdown-it_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}=\textcolor{stringliteral}{"M20 6L37 35L3 35Z"}/>`),}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \textcolor{stringliteral}{".cm-\/lint-\/marker-\/error:before"}: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a05851bd550313b1856ec529b695911d4}{content}}: \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a75086783d89f24150151981e14ffb634}{svg}}(`<circle cx=\textcolor{stringliteral}{"20"} cy=\textcolor{stringliteral}{"20"} \mbox{\hyperlink{markdown-it_8min_8js_a07c0e0a63b5b484807c0331c78558c9e}{r}}=\textcolor{stringliteral}{"15"} \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a3923fb8e80875556fe059fca8642c370}{fill}}=\textcolor{stringliteral}{"\#f87"} stroke=\textcolor{stringliteral}{"\#f43"} stroke-\/width=\textcolor{stringliteral}{"6"}/>`)}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a56f0b246063ef54a835df520375c018f}\label{_0dcodemirror_2lint_2dist_2index_8js_a56f0b246063ef54a835df520375c018f}} 
+\index{index.js@{index.js}!lintGutterTooltip@{lintGutterTooltip}}
+\index{lintGutterTooltip@{lintGutterTooltip}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintGutterTooltip}{lintGutterTooltip}}
+{\footnotesize\ttfamily const lint\+Gutter\+Tooltip}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classStateField}{StateField}}.\mbox{\hyperlink{classStateField_a18ad95b275d0fe1d5c2fbb36b7de8f56}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a8a4b672aae08c897677b0da41fe566e0}{create}}() \{ \textcolor{keywordflow}{return} \textcolor{keyword}{null}; \},}
+\DoxyCodeLine{    \mbox{\hyperlink{lodash_2update_8js_ad5c41959cb2a51c3de421af199941cc0}{update}}(tooltip, \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (tooltip \&\& \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.docChanged)}
+\DoxyCodeLine{            tooltip = \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a3aab95bebecf97cca764997d4eae1027}{hideTooltip}}(\mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}, tooltip) ? \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}} : Object.assign(Object.assign(\{\}, tooltip), \{ pos: tr.changes.mapPos(tooltip.pos) \});}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.effects.reduce((\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a52b119099ad76203f6bf69c0ab4cc17e}{t}}, \mbox{\hyperlink{markdownItAnchor_8js_aa148b58b0389c94f179640097c7d7804}{e}}) => \mbox{\hyperlink{markdownItAnchor_8js_aa148b58b0389c94f179640097c7d7804}{e}}.is(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_ae62bbf2a14236932512af52124676d1a}{setLintGutterTooltip}}) ? \mbox{\hyperlink{markdownItAnchor_8js_aa148b58b0389c94f179640097c7d7804}{e}}.value : \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a52b119099ad76203f6bf69c0ab4cc17e}{t}}, tooltip);}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    provide: field => \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a6d76f7cac3dceccd5fb1af4646a780ab}{showTooltip}}.from(field)}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a815e696b67a0fedc6e0a35be1cc877bb}\label{_0dcodemirror_2lint_2dist_2index_8js_a815e696b67a0fedc6e0a35be1cc877bb}} 
+\index{index.js@{index.js}!lintKeymap@{lintKeymap}}
+\index{lintKeymap@{lintKeymap}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintKeymap}{lintKeymap}}
+{\footnotesize\ttfamily const lint\+Keymap}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{    \{ key: \textcolor{stringliteral}{"Mod-\/Shift-\/m"}, run: \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a0cb630f5aca8707843608b42e922c40d}{openLintPanel}} \},}
+\DoxyCodeLine{    \{ key: \textcolor{stringliteral}{"F8"}, run: \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_af5e3a142136a52af8949ef829ad21826}{nextDiagnostic}} \}}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+
+
+A set of default key bindings for the lint functionality. 
+
+
+\begin{DoxyItemize}
+\item Ctrl-\/\+Shift-\/m (Cmd-\/\+Shift-\/m on mac\+OS)\+: \href{https://codemirror.net/6/docs/ref/\#lint.openLintPanel}{\texttt{ {\ttfamily open\+Lint\+Panel}}}
+\item F8\+: \href{https://codemirror.net/6/docs/ref/\#lint.nextDiagnostic}{\texttt{ {\ttfamily next\+Diagnostic}}} 
+\end{DoxyItemize}\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a212f603cda2c3df9c15b6660a6aa9be0}\label{_0dcodemirror_2lint_2dist_2index_8js_a212f603cda2c3df9c15b6660a6aa9be0}} 
+\index{index.js@{index.js}!lintPlugin@{lintPlugin}}
+\index{lintPlugin@{lintPlugin}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintPlugin}{lintPlugin}}
+{\footnotesize\ttfamily const lint\+Plugin}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a4505073709af200d85742f356f379597}\label{_0dcodemirror_2lint_2dist_2index_8js_a4505073709af200d85742f356f379597}} 
+\index{index.js@{index.js}!lintState@{lintState}}
+\index{lintState@{lintState}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lintState}{lintState}}
+{\footnotesize\ttfamily const lint\+State}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classStateField}{StateField}}.\mbox{\hyperlink{classStateField_a18ad95b275d0fe1d5c2fbb36b7de8f56}{define}}(\{}
+\DoxyCodeLine{    \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a8a4b672aae08c897677b0da41fe566e0}{create}}() \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classLintState}{LintState}}(\mbox{\hyperlink{classDecoration}{Decoration}}.none, \textcolor{keyword}{null}, \textcolor{keyword}{null});}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{lodash_2update_8js_ad5c41959cb2a51c3de421af199941cc0}{update}}(\mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}, \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.docChanged) \{}
+\DoxyCodeLine{            let mapped = \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.diagnostics.map(\mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.changes), selected = \textcolor{keyword}{null};}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (\mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.selected) \{}
+\DoxyCodeLine{                let selPos = \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.changes.mapPos(\mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.selected.from, 1);}
+\DoxyCodeLine{                selected = \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_afbcaf0ae3c592d802c1c5484b2d5bd23}{findDiagnostic}}(mapped, \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.selected.diagnostic, selPos) || \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_afbcaf0ae3c592d802c1c5484b2d5bd23}{findDiagnostic}}(mapped, \textcolor{keyword}{null}, selPos);}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{            \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}} = \textcolor{keyword}{new} \mbox{\hyperlink{classLintState}{LintState}}(mapped, \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.panel, selected);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} (let effect of \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.effects) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (effect.is(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_aa3d1b9153cf1a5979ce7e7cbf6293394}{setDiagnosticsEffect}})) \{}
+\DoxyCodeLine{                \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}} = \mbox{\hyperlink{classLintState}{LintState}}.\mbox{\hyperlink{classLintState_a0e77099e162e00137849def6fc6c077e}{init}}(effect.value, \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.panel, \mbox{\hyperlink{underscore-min_8js_a5135d5e3c6c1d872ed63e3aaf0eb7e44}{tr}}.state);}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{            \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (effect.is(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a2a9fe480c1fe276c7f8680461bc158cc}{togglePanel}})) \{}
+\DoxyCodeLine{                \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}} = \textcolor{keyword}{new} \mbox{\hyperlink{classLintState}{LintState}}(\mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.diagnostics, effect.value ? \mbox{\hyperlink{classLintPanel}{LintPanel}}.\mbox{\hyperlink{classLintPanel_a4f418b4528249d9f4e021d3cd3020399}{open}} : \textcolor{keyword}{null}, \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.selected);}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{            \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (effect.is(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a57f66dcc8174b1d90d8b4e7baa867c9d}{movePanelSelection}})) \{}
+\DoxyCodeLine{                \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}} = \textcolor{keyword}{new} \mbox{\hyperlink{classLintState}{LintState}}(\mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.diagnostics, \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}.panel, effect.value);}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}};}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    provide: \mbox{\hyperlink{markdown-it_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}} => [\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a8f9685c9bcfedb0b5aac35290cc68e2a}{showPanel}}.from(\mbox{\hyperlink{markdown-it_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}, val => val.panel),}
+\DoxyCodeLine{        \mbox{\hyperlink{classEditorView}{EditorView}}.decorations.from(\mbox{\hyperlink{markdown-it_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}, \mbox{\hyperlink{markdownItAnchor_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}} => \mbox{\hyperlink{markdownItAnchor_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}.diagnostics)]}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a57f66dcc8174b1d90d8b4e7baa867c9d}\label{_0dcodemirror_2lint_2dist_2index_8js_a57f66dcc8174b1d90d8b4e7baa867c9d}} 
+\index{index.js@{index.js}!movePanelSelection@{movePanelSelection}}
+\index{movePanelSelection@{movePanelSelection}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{movePanelSelection}{movePanelSelection}}
+{\footnotesize\ttfamily const move\+Panel\+Selection = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_af5e3a142136a52af8949ef829ad21826}\label{_0dcodemirror_2lint_2dist_2index_8js_af5e3a142136a52af8949ef829ad21826}} 
+\index{index.js@{index.js}!nextDiagnostic@{nextDiagnostic}}
+\index{nextDiagnostic@{nextDiagnostic}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{nextDiagnostic}{nextDiagnostic}}
+{\footnotesize\ttfamily const next\+Diagnostic}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}) => \{}
+\DoxyCodeLine{    let field = \mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}.state.field(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a4505073709af200d85742f356f379597}{lintState}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!field)}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{    let sel = \mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}.state.selection.main, next = field.diagnostics.iter(sel.to + 1);}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!next.value) \{}
+\DoxyCodeLine{        next = field.diagnostics.iter(0);}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (!next.value || next.from == sel.from \&\& next.to == sel.to)}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}.dispatch(\{ selection: \{ anchor: next.from, \mbox{\hyperlink{underscore_2cjs_2index_8js_a21e1bdd4067a83ab98f43bc55c41214c}{head}}: next.to \}, \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a3cae87a540da8a5f8ca2101e81463409}{scrollIntoView}}: \textcolor{keyword}{true} \});}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Move the selection to the next diagnostic. 
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a0cb630f5aca8707843608b42e922c40d}\label{_0dcodemirror_2lint_2dist_2index_8js_a0cb630f5aca8707843608b42e922c40d}} 
+\index{index.js@{index.js}!openLintPanel@{openLintPanel}}
+\index{openLintPanel@{openLintPanel}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{openLintPanel}{openLintPanel}}
+{\footnotesize\ttfamily const open\+Lint\+Panel}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}) => \{}
+\DoxyCodeLine{    let field = \mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}.state.field(\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a4505073709af200d85742f356f379597}{lintState}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!field || !field.panel)}
+\DoxyCodeLine{        \mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}.dispatch(\{ effects: \mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a057a31cabcac37b85919434b55037f2e}{maybeEnableLint}}(\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}.state, [\mbox{\hyperlink{_0dcodemirror_2lint_2dist_2index_8js_a2a9fe480c1fe276c7f8680461bc158cc}{togglePanel}}.of(\textcolor{keyword}{true})]) \});}
+\DoxyCodeLine{    let panel = \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_aaef27d7f199512f0917b91bf5f972fdb}{getPanel}}(\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}, \mbox{\hyperlink{classLintPanel}{LintPanel}}.\mbox{\hyperlink{classLintPanel_a4f418b4528249d9f4e021d3cd3020399}{open}});}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (panel)}
+\DoxyCodeLine{        panel.dom.querySelector(\textcolor{stringliteral}{".cm-\/panel-\/lint ul"}).focus();}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Command to open and focus the lint panel. 
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_aa3d1b9153cf1a5979ce7e7cbf6293394}\label{_0dcodemirror_2lint_2dist_2index_8js_aa3d1b9153cf1a5979ce7e7cbf6293394}} 
+\index{index.js@{index.js}!setDiagnosticsEffect@{setDiagnosticsEffect}}
+\index{setDiagnosticsEffect@{setDiagnosticsEffect}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{setDiagnosticsEffect}{setDiagnosticsEffect}}
+{\footnotesize\ttfamily const set\+Diagnostics\+Effect = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()}
+
+
+
+The state effect that updates the set of active diagnostics. 
+
+Can be useful when writing an extension that needs to track these. \mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_ae62bbf2a14236932512af52124676d1a}\label{_0dcodemirror_2lint_2dist_2index_8js_ae62bbf2a14236932512af52124676d1a}} 
+\index{index.js@{index.js}!setLintGutterTooltip@{setLintGutterTooltip}}
+\index{setLintGutterTooltip@{setLintGutterTooltip}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{setLintGutterTooltip}{setLintGutterTooltip}}
+{\footnotesize\ttfamily const set\+Lint\+Gutter\+Tooltip = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()}
+
+\mbox{\Hypertarget{_0dcodemirror_2lint_2dist_2index_8js_a2a9fe480c1fe276c7f8680461bc158cc}\label{_0dcodemirror_2lint_2dist_2index_8js_a2a9fe480c1fe276c7f8680461bc158cc}} 
+\index{index.js@{index.js}!togglePanel@{togglePanel}}
+\index{togglePanel@{togglePanel}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{togglePanel}{togglePanel}}
+{\footnotesize\ttfamily const toggle\+Panel = \mbox{\hyperlink{classStateEffect_a3d82eba7534049621724ba9bad1091dd}{State\+Effect.\+define}}()}
+

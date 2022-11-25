@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['typewriter_194',['typeWriter',['../welcome_8js.html#a91d5bfa65bb11565dd2c4fb23b16a510',1,'welcome.js']]]
+  ['virtualfunc_134',['virtualfunc',['../classMyLibrary_1_1Example.html#a8431ef1c10c4e2a36302b8e8556514f6',1,'MyLibrary::Example::virtualfunc()'],['../classMyLibrary_1_1SubclassExample.html#a08668a9f16511ad37fb547c985d62764',1,'MyLibrary::SubclassExample::virtualfunc()']]]
 ];

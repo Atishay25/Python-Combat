@@ -1,0 +1,161 @@
+\hypertarget{classParseContext}{}\doxysection{Parse\+Context Class Reference}
+\label{classParseContext}\index{ParseContext@{ParseContext}}
+
+
+A parse context provided to parsers working on the editor content.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classParseContext_a96d7db51c839e960c62caf2d3c7c422b}{constructor}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, \mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, fragments=\mbox{[}$\,$\mbox{]}, tree, tree\+Len, viewport, skipped, schedule\+On)
+\item 
+\mbox{\hyperlink{classParseContext_a1e3f5d91b17c4a9254da4fd7781b96e3}{start\+Parse}} ()
+\item 
+\mbox{\hyperlink{classParseContext_a8614ac234f9231b40b91ce0931446247}{work}} (until, upto)
+\item 
+\mbox{\hyperlink{classParseContext_ad0b7b77e477d29f6855739857d424df0}{take\+Tree}} ()
+\item 
+\mbox{\hyperlink{classParseContext_aea5a1eb2bb2cd4f5546c4a01e742ee7e}{with\+Context}} (\mbox{\hyperlink{markdownItAnchor_8modern_8js_ac5ed353fbf00bc88677677306b18f772}{f}})
+\item 
+\mbox{\hyperlink{classParseContext_a3a8d3d0d7018a3162ac9689d6a4d2162}{without\+Temp\+Skipped}} (fragments)
+\item 
+\mbox{\hyperlink{classParseContext_a7d82a16a2907a3be9fa987cb9607499c}{changes}} (changes, new\+State)
+\item 
+\mbox{\hyperlink{classParseContext_acb94c181d2732e807a7f5a60b30ed4a1}{update\+Viewport}} (viewport)
+\item 
+\mbox{\hyperlink{classParseContext_afccfcecabf322c817ca86160379a639c}{reset}} ()
+\item 
+\mbox{\hyperlink{classParseContext_a9865f559c9d64a1c0d5e5458c2c9c9d4}{skip\+Until\+In\+View}} (from, to)
+\begin{DoxyCompactList}\small\item\em Notify the parse scheduler that the given region was skipped because it wasn\textquotesingle{}t in view, and the parse should be restarted when it comes into view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classParseContext_a9a3ac7892688e978d5726d1c522db6e9}{is\+Done}} (upto)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classParseContext_a4fe123f662befc5dbb58ca37368f868d}{create}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, \mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}, viewport)
+\item 
+static \mbox{\hyperlink{classParseContext_a67b8193d5c31d962be4adb82cecb45d9}{get\+Skipping\+Parser}} (until)
+\begin{DoxyCompactList}\small\item\em Returns a parser intended to be used as placeholder when asynchronously loading a nested parser. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classParseContext_ae1912d1ab1ba69c8f5a422dbf894ba95}{get}} ()
+\begin{DoxyCompactList}\small\item\em Get the context for the current parse, or {\ttfamily null} if no editor parse is in progress. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A parse context provided to parsers working on the editor content. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParseContext_a7d82a16a2907a3be9fa987cb9607499c}\label{classParseContext_a7d82a16a2907a3be9fa987cb9607499c}} 
+\index{ParseContext@{ParseContext}!changes@{changes}}
+\index{changes@{changes}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{changes()}{changes()}}
+{\footnotesize\ttfamily Parse\+Context\+::changes (\begin{DoxyParamCaption}\item[{}]{changes,  }\item[{}]{new\+State }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classParseContext_a96d7db51c839e960c62caf2d3c7c422b}\label{classParseContext_a96d7db51c839e960c62caf2d3c7c422b}} 
+\index{ParseContext@{ParseContext}!constructor@{constructor}}
+\index{constructor@{constructor}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Parse\+Context\+::constructor (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{state,  }\item[{}]{fragments = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{tree,  }\item[{}]{tree\+Len,  }\item[{}]{viewport,  }\item[{}]{skipped,  }\item[{}]{schedule\+On }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The current editor state. \\
+\hline
+{\em fragments} & \mbox{\hyperlink{classTree}{Tree}} fragments that can be reused by incremental re-\/parses. \\
+\hline
+{\em viewport} & The current editor viewport (or some overapproximation thereof). Intended to be used for opportunistically avoiding work (in which case \mbox{[}\`{}skip\+Until\+In\+View\`{}\mbox{]}(\href{https://codemirror.net/6/docs/ref/\#language.ParseContext.skipUntilInView}{\texttt{ https\+://codemirror.\+net/6/docs/ref/\#language.\+Parse\+Context.\+skip\+Until\+In\+View}}) should be called to make sure the parser is restarted when the skipped region becomes visible). \\
+\hline
+{\em schedule\+On} & This is where skipping parsers can register a promise that, when resolved, will schedule a new parse. It is cleared when the parse worker picks up the promise. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParseContext_a4fe123f662befc5dbb58ca37368f868d}\label{classParseContext_a4fe123f662befc5dbb58ca37368f868d}} 
+\index{ParseContext@{ParseContext}!create@{create}}
+\index{create@{create}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static Parse\+Context\+::create (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{state,  }\item[{}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classParseContext_ae1912d1ab1ba69c8f5a422dbf894ba95}\label{classParseContext_ae1912d1ab1ba69c8f5a422dbf894ba95}} 
+\index{ParseContext@{ParseContext}!get@{get}}
+\index{get@{get}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static Parse\+Context\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the context for the current parse, or {\ttfamily null} if no editor parse is in progress. 
+
+\mbox{\Hypertarget{classParseContext_a67b8193d5c31d962be4adb82cecb45d9}\label{classParseContext_a67b8193d5c31d962be4adb82cecb45d9}} 
+\index{ParseContext@{ParseContext}!getSkippingParser@{getSkippingParser}}
+\index{getSkippingParser@{getSkippingParser}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{getSkippingParser()}{getSkippingParser()}}
+{\footnotesize\ttfamily static Parse\+Context\+::get\+Skipping\+Parser (\begin{DoxyParamCaption}\item[{}]{until }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a parser intended to be used as placeholder when asynchronously loading a nested parser. 
+
+It\textquotesingle{}ll skip its input and mark it as not-\/really-\/parsed, so that the next update will parse it again.
+
+When {\ttfamily until} is given, a reparse will be scheduled when that promise resolves. \mbox{\Hypertarget{classParseContext_a9a3ac7892688e978d5726d1c522db6e9}\label{classParseContext_a9a3ac7892688e978d5726d1c522db6e9}} 
+\index{ParseContext@{ParseContext}!isDone@{isDone}}
+\index{isDone@{isDone}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily Parse\+Context\+::is\+Done (\begin{DoxyParamCaption}\item[{}]{upto }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classParseContext_afccfcecabf322c817ca86160379a639c}\label{classParseContext_afccfcecabf322c817ca86160379a639c}} 
+\index{ParseContext@{ParseContext}!reset@{reset}}
+\index{reset@{reset}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily Parse\+Context\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classParseContext_a9865f559c9d64a1c0d5e5458c2c9c9d4}\label{classParseContext_a9865f559c9d64a1c0d5e5458c2c9c9d4}} 
+\index{ParseContext@{ParseContext}!skipUntilInView@{skipUntilInView}}
+\index{skipUntilInView@{skipUntilInView}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{skipUntilInView()}{skipUntilInView()}}
+{\footnotesize\ttfamily Parse\+Context\+::skip\+Until\+In\+View (\begin{DoxyParamCaption}\item[{}]{from,  }\item[{}]{to }\end{DoxyParamCaption})}
+
+
+
+Notify the parse scheduler that the given region was skipped because it wasn\textquotesingle{}t in view, and the parse should be restarted when it comes into view. 
+
+\mbox{\Hypertarget{classParseContext_a1e3f5d91b17c4a9254da4fd7781b96e3}\label{classParseContext_a1e3f5d91b17c4a9254da4fd7781b96e3}} 
+\index{ParseContext@{ParseContext}!startParse@{startParse}}
+\index{startParse@{startParse}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{startParse()}{startParse()}}
+{\footnotesize\ttfamily Parse\+Context\+::start\+Parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classParseContext_ad0b7b77e477d29f6855739857d424df0}\label{classParseContext_ad0b7b77e477d29f6855739857d424df0}} 
+\index{ParseContext@{ParseContext}!takeTree@{takeTree}}
+\index{takeTree@{takeTree}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{takeTree()}{takeTree()}}
+{\footnotesize\ttfamily Parse\+Context\+::take\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classParseContext_acb94c181d2732e807a7f5a60b30ed4a1}\label{classParseContext_acb94c181d2732e807a7f5a60b30ed4a1}} 
+\index{ParseContext@{ParseContext}!updateViewport@{updateViewport}}
+\index{updateViewport@{updateViewport}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{updateViewport()}{updateViewport()}}
+{\footnotesize\ttfamily Parse\+Context\+::update\+Viewport (\begin{DoxyParamCaption}\item[{}]{viewport }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classParseContext_aea5a1eb2bb2cd4f5546c4a01e742ee7e}\label{classParseContext_aea5a1eb2bb2cd4f5546c4a01e742ee7e}} 
+\index{ParseContext@{ParseContext}!withContext@{withContext}}
+\index{withContext@{withContext}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{withContext()}{withContext()}}
+{\footnotesize\ttfamily Parse\+Context\+::with\+Context (\begin{DoxyParamCaption}\item[{}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classParseContext_a3a8d3d0d7018a3162ac9689d6a4d2162}\label{classParseContext_a3a8d3d0d7018a3162ac9689d6a4d2162}} 
+\index{ParseContext@{ParseContext}!withoutTempSkipped@{withoutTempSkipped}}
+\index{withoutTempSkipped@{withoutTempSkipped}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{withoutTempSkipped()}{withoutTempSkipped()}}
+{\footnotesize\ttfamily Parse\+Context\+::without\+Temp\+Skipped (\begin{DoxyParamCaption}\item[{}]{fragments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classParseContext_a8614ac234f9231b40b91ce0931446247}\label{classParseContext_a8614ac234f9231b40b91ce0931446247}} 
+\index{ParseContext@{ParseContext}!work@{work}}
+\index{work@{work}!ParseContext@{ParseContext}}
+\doxysubsubsection{\texorpdfstring{work()}{work()}}
+{\footnotesize\ttfamily Parse\+Context\+::work (\begin{DoxyParamCaption}\item[{}]{until,  }\item[{}]{upto }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/language/dist/\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

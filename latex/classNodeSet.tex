@@ -1,0 +1,52 @@
+\hypertarget{classNodeSet}{}\doxysection{Node\+Set Class Reference}
+\label{classNodeSet}\index{NodeSet@{NodeSet}}
+
+
+A node set holds a collection of node types.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNodeSet_af3b7e7785752c505c9c0ae4037fe1876}{constructor}} (\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a5802f014ed8e96d3a513f114faa91d12}{types}})
+\begin{DoxyCompactList}\small\item\em Create a set with the given types. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNodeSet_a17d5d465db903ae206790a476dc4e77b}{extend}} (...props)
+\begin{DoxyCompactList}\small\item\em Create a copy of this set with some node properties added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A node set holds a collection of node types. 
+
+It is used to compactly represent trees by storing their type ids, rather than a full pointer to the type object, in a numeric array. Each parser \href{\#lr.LRParser.nodeSet}{\texttt{ has}} a node set, and \href{\#common.TreeBuffer}{\texttt{ tree buffers}} can only store collections of nodes from the same set. A set can have a maximum of 2$\ast$$\ast$16 (65536) node types in it, so that the ids fit into 16-\/bit typed array slots. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNodeSet_af3b7e7785752c505c9c0ae4037fe1876}\label{classNodeSet_af3b7e7785752c505c9c0ae4037fe1876}} 
+\index{NodeSet@{NodeSet}!constructor@{constructor}}
+\index{constructor@{constructor}!NodeSet@{NodeSet}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Node\+Set\+::constructor (\begin{DoxyParamCaption}\item[{}]{types }\end{DoxyParamCaption})}
+
+
+
+Create a set with the given types. 
+
+The {\ttfamily id} property of each type should correspond to its position within the array. 
+\begin{DoxyParams}{Parameters}
+{\em types} & The node types in this set, by id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNodeSet_a17d5d465db903ae206790a476dc4e77b}\label{classNodeSet_a17d5d465db903ae206790a476dc4e77b}} 
+\index{NodeSet@{NodeSet}!extend@{extend}}
+\index{extend@{extend}!NodeSet@{NodeSet}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily Node\+Set\+::extend (\begin{DoxyParamCaption}\item[{}]{props }\end{DoxyParamCaption})}
+
+
+
+Create a copy of this set with some node properties added. 
+
+The arguments to this method can be created with \href{\#common.NodeProp.add}{\texttt{ {\ttfamily Node\+Prop.\+add}}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@lezer/common/dist/\mbox{\hyperlink{_0dlezer_2common_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

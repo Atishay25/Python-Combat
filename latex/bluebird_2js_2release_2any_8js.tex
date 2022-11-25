@@ -1,0 +1,48 @@
+\hypertarget{bluebird_2js_2release_2any_8js}{}\doxysection{node\+\_\+modules/bluebird/js/release/any.js File Reference}
+\label{bluebird_2js_2release_2any_8js}\index{node\_modules/bluebird/js/release/any.js@{node\_modules/bluebird/js/release/any.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{bluebird_2js_2release_2any_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{bluebird_2js_2release_2any_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{bluebird_2js_2release_2any_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{bluebird_2js_2release_2any_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{any.js@{any.js}!exports@{exports}}
+\index{exports@{exports}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function}(\mbox{\hyperlink{__getTag_8js_abace523389c17bce1848e3a427871700}{Promise}}) \{}
+\DoxyCodeLine{var SomePromiseArray = \mbox{\hyperlink{__getTag_8js_abace523389c17bce1848e3a427871700}{Promise}}.\_SomePromiseArray;}
+\DoxyCodeLine{\textcolor{keyword}{function} \mbox{\hyperlink{underscore_2cjs_2index_8js_a98c5aa7fba44d76e257182bfcb041250}{any}}(promises) \{}
+\DoxyCodeLine{    var \mbox{\hyperlink{bluebird_2js_2release_2util_8js_ae118f78090c11223ecacb0ab8cfc22f9}{ret}} = \textcolor{keyword}{new} SomePromiseArray(promises);}
+\DoxyCodeLine{    var \mbox{\hyperlink{es_2shared_2watch_8js_a71813ab88fd336a0661178d5bb34e483}{promise}} = \mbox{\hyperlink{bluebird_2js_2release_2util_8js_ae118f78090c11223ecacb0ab8cfc22f9}{ret}}.promise();}
+\DoxyCodeLine{    \mbox{\hyperlink{bluebird_2js_2release_2util_8js_ae118f78090c11223ecacb0ab8cfc22f9}{ret}}.setHowMany(1);}
+\DoxyCodeLine{    \mbox{\hyperlink{bluebird_2js_2release_2util_8js_ae118f78090c11223ecacb0ab8cfc22f9}{ret}}.setUnwrap();}
+\DoxyCodeLine{    \mbox{\hyperlink{bluebird_2js_2release_2util_8js_ae118f78090c11223ecacb0ab8cfc22f9}{ret}}.init();}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{es_2shared_2watch_8js_a71813ab88fd336a0661178d5bb34e483}{promise}};}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{__getTag_8js_abace523389c17bce1848e3a427871700}{Promise}}.any = \textcolor{keyword}{function} (promises) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{underscore_2cjs_2index_8js_a98c5aa7fba44d76e257182bfcb041250}{any}}(promises);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{__getTag_8js_abace523389c17bce1848e3a427871700}{Promise}}.prototype.any = \textcolor{keyword}{function} () \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{underscore_2cjs_2index_8js_a98c5aa7fba44d76e257182bfcb041250}{any}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{bluebird_2js_2release_2any_8js_ae2475e10618961c050dcba04e8c42331}\label{bluebird_2js_2release_2any_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{any.js@{any.js}!strict@{strict}}
+\index{strict@{strict}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+

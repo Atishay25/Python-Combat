@@ -1,0 +1,139 @@
+\hypertarget{fs_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/fs.js File Reference}
+\label{fs_8js}\index{node\_modules/jsdoc/lib/jsdoc/fs.js@{node\_modules/jsdoc/lib/jsdoc/fs.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{fs_8js_a7818e25f0e3f7ac552b70680b933d7ba}{keys}} (\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a3569369cd6a05edf32de460fd4a6bddf}{fs}}).\mbox{\hyperlink{watch-cli_8js_a0f159657f82e2367b3a4714307366cb8}{for\+Each}}(member
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{fs_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}fs\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Extended version of the standard {\ttfamily fs} module. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{fs_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})
+\item 
+const \mbox{\hyperlink{fs_8js_a3d3c4887226cd2038c126eec2e30d1c2}{mkdirp}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}mkdirp\textquotesingle{})
+\item 
+const \mbox{\hyperlink{fs_8js_a400942a536fa39596910b12ba42a028c}{ls}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{fs_8js_ad33d3de38c3a9fe37005e2a9f71038f9}{to\+Dir}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{fs_8js_a7ef247026161fd987aac1c0b85f7a6ea}{mk\+Path}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{fs_8js_a5fe3ef103c9fc7b221ade086bedf5091}{copy\+File\+Sync}}
+\item 
+const \mbox{\hyperlink{fs_8js_a9f746d025172b8b8a699bd68eae1cf18}{always\+Override}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{fs_8js_a7818e25f0e3f7ac552b70680b933d7ba}\label{fs_8js_a7818e25f0e3f7ac552b70680b933d7ba}} 
+\index{fs.js@{fs.js}!keys@{keys}}
+\index{keys@{keys}!fs.js@{fs.js}}
+\doxysubsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily Object keys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a3569369cd6a05edf32de460fd4a6bddf}{fs}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{fs_8js_a9f746d025172b8b8a699bd68eae1cf18}\label{fs_8js_a9f746d025172b8b8a699bd68eae1cf18}} 
+\index{fs.js@{fs.js}!alwaysOverride@{alwaysOverride}}
+\index{alwaysOverride@{alwaysOverride}!fs.js@{fs.js}}
+\doxysubsubsection{\texorpdfstring{alwaysOverride}{alwaysOverride}}
+{\footnotesize\ttfamily const always\+Override}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{'copyFileSync'}: \textcolor{keyword}{true}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{fs_8js_a5fe3ef103c9fc7b221ade086bedf5091}\label{fs_8js_a5fe3ef103c9fc7b221ade086bedf5091}} 
+\index{fs.js@{fs.js}!copyFileSync@{copyFileSync}}
+\index{copyFileSync@{copyFileSync}!fs.js@{fs.js}}
+\doxysubsubsection{\texorpdfstring{copyFileSync}{copyFileSync}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} copy\+File\+Sync}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (inFile, outDir = \textcolor{stringliteral}{''}, fileName) => \{}
+\DoxyCodeLine{    fileName = fileName || \mbox{\hyperlink{fs_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}.basename(inFile);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{fs_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}}.copyFileSync(inFile, \mbox{\hyperlink{fs_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}.join(outDir, fileName));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{fs_8js_a2e47e1f004220675d0fa39b8255bd78f}\label{fs_8js_a2e47e1f004220675d0fa39b8255bd78f}} 
+\index{fs.js@{fs.js}!fs@{fs}}
+\index{fs@{fs}!fs.js@{fs.js}}
+\doxysubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily const fs = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}fs\textquotesingle{})}
+
+
+
+Extended version of the standard {\ttfamily fs} module. 
+
+@module jsdoc/fs \mbox{\Hypertarget{fs_8js_a400942a536fa39596910b12ba42a028c}\label{fs_8js_a400942a536fa39596910b12ba42a028c}} 
+\index{fs.js@{fs.js}!ls@{ls}}
+\index{ls@{ls}!fs.js@{fs.js}}
+\doxysubsubsection{\texorpdfstring{ls}{ls}}
+{\footnotesize\ttfamily const ls}
+
+\mbox{\Hypertarget{fs_8js_a3d3c4887226cd2038c126eec2e30d1c2}\label{fs_8js_a3d3c4887226cd2038c126eec2e30d1c2}} 
+\index{fs.js@{fs.js}!mkdirp@{mkdirp}}
+\index{mkdirp@{mkdirp}!fs.js@{fs.js}}
+\doxysubsubsection{\texorpdfstring{mkdirp}{mkdirp}}
+{\footnotesize\ttfamily const mkdirp = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}mkdirp\textquotesingle{})}
+
+\mbox{\Hypertarget{fs_8js_a7ef247026161fd987aac1c0b85f7a6ea}\label{fs_8js_a7ef247026161fd987aac1c0b85f7a6ea}} 
+\index{fs.js@{fs.js}!mkPath@{mkPath}}
+\index{mkPath@{mkPath}!fs.js@{fs.js}}
+\doxysubsubsection{\texorpdfstring{mkPath}{mkPath}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} mk\+Path}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \_path => \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} ( Array.isArray(\_path) ) \{}
+\DoxyCodeLine{        \_path = \_path.join(\textcolor{stringliteral}{''});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{fs_8js_a3d3c4887226cd2038c126eec2e30d1c2}{mkdirp}}.sync(\_path);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{fs_8js_a1fdc7709faf62dce60620fb3f9d3453c}\label{fs_8js_a1fdc7709faf62dce60620fb3f9d3453c}} 
+\index{fs.js@{fs.js}!path@{path}}
+\index{path@{path}!fs.js@{fs.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily const path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})}
+
+\mbox{\Hypertarget{fs_8js_ad33d3de38c3a9fe37005e2a9f71038f9}\label{fs_8js_ad33d3de38c3a9fe37005e2a9f71038f9}} 
+\index{fs.js@{fs.js}!toDir@{toDir}}
+\index{toDir@{toDir}!fs.js@{fs.js}}
+\doxysubsubsection{\texorpdfstring{toDir}{toDir}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} to\+Dir}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \_path => \{}
+\DoxyCodeLine{    let isDirectory;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \_path = \mbox{\hyperlink{fs_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}.normalize(\_path);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{        isDirectory = \mbox{\hyperlink{fs_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}}.statSync(\_path).isDirectory();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{catch} (\mbox{\hyperlink{markdownItAnchor_8js_aa148b58b0389c94f179640097c7d7804}{e}}) \{}
+\DoxyCodeLine{        isDirectory = \textcolor{keyword}{false};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (isDirectory) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \_path;}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{fs_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}.dirname(\_path);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

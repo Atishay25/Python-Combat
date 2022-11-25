@@ -1,0 +1,71 @@
+\hypertarget{requirepaths_8js}{}\doxysection{node\+\_\+modules/requizzle/lib/wrappers/requirepaths.js File Reference}
+\label{requirepaths_8js}\index{node\_modules/requizzle/lib/wrappers/requirepaths.js@{node\_modules/requizzle/lib/wrappers/requirepaths.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{requirepaths_8js_a34e6953ed7b79f88951f3e4b435bb8b7}{resolve\+Paths}} (\{filepath\}, paths)
+\item 
+function \mbox{\hyperlink{requirepaths_8js_a9310f80094c62bff8ad634c209fc87fe}{require\+Paths}} (parent\+Module, \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{requirepaths_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{requirepaths_8js_a31634b29333291adac330bcbff65b27c}{before}}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{requirepaths_8js_acf82f50a251ec78e890e1f800e5eb9cf}{after}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{requirepaths_8js_a9310f80094c62bff8ad634c209fc87fe}\label{requirepaths_8js_a9310f80094c62bff8ad634c209fc87fe}} 
+\index{requirepaths.js@{requirepaths.js}!requirePaths@{requirePaths}}
+\index{requirePaths@{requirePaths}!requirepaths.js@{requirepaths.js}}
+\doxysubsubsection{\texorpdfstring{requirePaths()}{requirePaths()}}
+{\footnotesize\ttfamily function require\+Paths (\begin{DoxyParamCaption}\item[{}]{parent\+Module,  }\item[{}]{opts }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{requirepaths_8js_a34e6953ed7b79f88951f3e4b435bb8b7}\label{requirepaths_8js_a34e6953ed7b79f88951f3e4b435bb8b7}} 
+\index{requirepaths.js@{requirepaths.js}!resolvePaths@{resolvePaths}}
+\index{resolvePaths@{resolvePaths}!requirepaths.js@{requirepaths.js}}
+\doxysubsubsection{\texorpdfstring{resolvePaths()}{resolvePaths()}}
+{\footnotesize\ttfamily function resolve\+Paths (\begin{DoxyParamCaption}\item[{}]{\{filepath\},  }\item[{}]{paths }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{requirepaths_8js_acf82f50a251ec78e890e1f800e5eb9cf}\label{requirepaths_8js_acf82f50a251ec78e890e1f800e5eb9cf}} 
+\index{requirepaths.js@{requirepaths.js}!after@{after}}
+\index{after@{after}!requirepaths.js@{requirepaths.js}}
+\doxysubsubsection{\texorpdfstring{after}{after}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} after}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{requirepaths_8js_acf82f50a251ec78e890e1f800e5eb9cf}{after}}() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{requirepaths_8js_a31634b29333291adac330bcbff65b27c}\label{requirepaths_8js_a31634b29333291adac330bcbff65b27c}} 
+\index{requirepaths.js@{requirepaths.js}!before@{before}}
+\index{before@{before}!requirepaths.js@{requirepaths.js}}
+\doxysubsubsection{\texorpdfstring{before}{before}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} before}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{requirepaths_8js_a31634b29333291adac330bcbff65b27c}{before}}(targetPath, parentModule, \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}) \{}
+\DoxyCodeLine{    \textcolor{keyword}{const} resolvedPaths = \mbox{\hyperlink{requirepaths_8js_a9310f80094c62bff8ad634c209fc87fe}{requirePaths}}(parentModule, \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} `\mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2es_2index_8js_ae7aa672725f64d8ea8e41d4eeca3adf5}{module}}.paths = \$\{JSON.stringify(resolvedPaths.before)\}.concat(\mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2es_2index_8js_ae7aa672725f64d8ea8e41d4eeca3adf5}{module}}.paths)` +}
+\DoxyCodeLine{        `.concat(\$\{JSON.stringify(resolvedPaths.after)\}); `;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{requirepaths_8js_a1fdc7709faf62dce60620fb3f9d3453c}\label{requirepaths_8js_a1fdc7709faf62dce60620fb3f9d3453c}} 
+\index{requirepaths.js@{requirepaths.js}!path@{path}}
+\index{path@{path}!requirepaths.js@{requirepaths.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily const path = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}path\textquotesingle{})}
+

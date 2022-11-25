@@ -1,0 +1,95 @@
+\hypertarget{classLanguageDescription}{}\doxysection{Language\+Description Class Reference}
+\label{classLanguageDescription}\index{LanguageDescription@{LanguageDescription}}
+
+
+\mbox{\hyperlink{classLanguage}{Language}} descriptions are used to store metadata about languages and to dynamically load them.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLanguageDescription_a163dc19f9ea37c666a3376764413f3a1}{constructor}} (\mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, alias, \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a5b41eeb61ea5ab13034217b4e89b0333}{extensions}}, \mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}}, load\+Func, support=\mbox{\hyperlink{bluebird_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}})
+\item 
+\mbox{\hyperlink{classLanguageDescription_a5b087c045a3c9d001ed3cae5c4843b1f}{load}} ()
+\begin{DoxyCompactList}\small\item\em Start loading the the language. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classLanguageDescription_a6e9b8024eb2031cb34c53727b1cea762}{of}} (spec)
+\begin{DoxyCompactList}\small\item\em Create a language description. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classLanguageDescription_a561be6e9f4061e444cf114c49e002984}{match\+Filename}} (descs, \mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}})
+\begin{DoxyCompactList}\small\item\em Look for a language in the given array of descriptions that matches the filename. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classLanguageDescription_a4638d528d8831dc9f7921971028f9a72}{match\+Language\+Name}} (descs, \mbox{\hyperlink{templateHelper_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, fuzzy=true)
+\begin{DoxyCompactList}\small\item\em Look for a language whose name or alias matches the the given name (case-\/insensitively). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classLanguage}{Language}} descriptions are used to store metadata about languages and to dynamically load them. 
+
+Their main role is finding the appropriate language for a filename or dynamically loading nested parsers. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLanguageDescription_a163dc19f9ea37c666a3376764413f3a1}\label{classLanguageDescription_a163dc19f9ea37c666a3376764413f3a1}} 
+\index{LanguageDescription@{LanguageDescription}!constructor@{constructor}}
+\index{constructor@{constructor}!LanguageDescription@{LanguageDescription}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Language\+Description\+::constructor (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{alias,  }\item[{}]{extensions,  }\item[{}]{filename,  }\item[{}]{load\+Func,  }\item[{}]{support = {\ttfamily \mbox{\hyperlink{bluebird_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of this language. \\
+\hline
+{\em alias} & Alternative names for the mode (lowercased, includes \`{}this.name\`{}). \\
+\hline
+{\em extensions} & File extensions associated with this language. \\
+\hline
+{\em filename} & Optional filename pattern that should be associated with this language. \\
+\hline
+{\em support} & If the language has been loaded, this will hold its value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLanguageDescription_a5b087c045a3c9d001ed3cae5c4843b1f}\label{classLanguageDescription_a5b087c045a3c9d001ed3cae5c4843b1f}} 
+\index{LanguageDescription@{LanguageDescription}!load@{load}}
+\index{load@{load}!LanguageDescription@{LanguageDescription}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily Language\+Description\+::load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start loading the the language. 
+
+Will return a promise that resolves to a \href{https://codemirror.net/6/docs/ref/\#language.LanguageSupport}{\texttt{ {\ttfamily Language\+Support}}} object when the language successfully loads. \mbox{\Hypertarget{classLanguageDescription_a561be6e9f4061e444cf114c49e002984}\label{classLanguageDescription_a561be6e9f4061e444cf114c49e002984}} 
+\index{LanguageDescription@{LanguageDescription}!matchFilename@{matchFilename}}
+\index{matchFilename@{matchFilename}!LanguageDescription@{LanguageDescription}}
+\doxysubsubsection{\texorpdfstring{matchFilename()}{matchFilename()}}
+{\footnotesize\ttfamily static Language\+Description\+::match\+Filename (\begin{DoxyParamCaption}\item[{}]{descs,  }\item[{}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Look for a language in the given array of descriptions that matches the filename. 
+
+Will first match \href{https://codemirror.net/6/docs/ref/\#language.LanguageDescription.filename}{\texttt{ {\ttfamily filename}}} patterns, and then \href{https://codemirror.net/6/docs/ref/\#language.LanguageDescription.extensions}{\texttt{ extensions}}, and return the first language that matches. \mbox{\Hypertarget{classLanguageDescription_a4638d528d8831dc9f7921971028f9a72}\label{classLanguageDescription_a4638d528d8831dc9f7921971028f9a72}} 
+\index{LanguageDescription@{LanguageDescription}!matchLanguageName@{matchLanguageName}}
+\index{matchLanguageName@{matchLanguageName}!LanguageDescription@{LanguageDescription}}
+\doxysubsubsection{\texorpdfstring{matchLanguageName()}{matchLanguageName()}}
+{\footnotesize\ttfamily static Language\+Description\+::match\+Language\+Name (\begin{DoxyParamCaption}\item[{}]{descs,  }\item[{}]{name,  }\item[{}]{fuzzy = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Look for a language whose name or alias matches the the given name (case-\/insensitively). 
+
+If {\ttfamily fuzzy} is true, and no direct matchs is found, this\textquotesingle{}ll also search for a language whose name or alias occurs in the string (for names shorter than three characters, only when surrounded by non-\/word characters). \mbox{\Hypertarget{classLanguageDescription_a6e9b8024eb2031cb34c53727b1cea762}\label{classLanguageDescription_a6e9b8024eb2031cb34c53727b1cea762}} 
+\index{LanguageDescription@{LanguageDescription}!of@{of}}
+\index{of@{of}!LanguageDescription@{LanguageDescription}}
+\doxysubsubsection{\texorpdfstring{of()}{of()}}
+{\footnotesize\ttfamily static Language\+Description\+::of (\begin{DoxyParamCaption}\item[{}]{spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a language description. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/language/dist/\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

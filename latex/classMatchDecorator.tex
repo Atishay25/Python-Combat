@@ -1,0 +1,67 @@
+\hypertarget{classMatchDecorator}{}\doxysection{Match\+Decorator Class Reference}
+\label{classMatchDecorator}\index{MatchDecorator@{MatchDecorator}}
+
+
+Helper class used to make it easier to maintain decorations on visible code that matches a given regular expression.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMatchDecorator_a072ca4413403f52931a6333a54760380}{constructor}} (\mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}})
+\begin{DoxyCompactList}\small\item\em Create a decorator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatchDecorator_a4d2cf6d8081ab69a6797317998017964}{create\+Deco}} (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}})
+\begin{DoxyCompactList}\small\item\em Compute the full set of decorations for matches in the given view\textquotesingle{}s viewport. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatchDecorator_abbd33fa8813452af5f8066db548cb298}{update\+Deco}} (\mbox{\hyperlink{lodash_2update_8js_ad5c41959cb2a51c3de421af199941cc0}{update}}, deco)
+\begin{DoxyCompactList}\small\item\em Update a set of decorations for a view update. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatchDecorator_a84658b06aaf41f9c67b499efdfa0c755}{update\+Range}} (\mbox{\hyperlink{default_2publish_8js_ad9e0c9b2f49c177ce3dcb0d79b4272d4}{view}}, deco, update\+From, update\+To)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class used to make it easier to maintain decorations on visible code that matches a given regular expression. 
+
+To be used in a \href{https://codemirror.net/6/docs/ref/\#view.ViewPlugin}{\texttt{ view plugin}}. Instances of this object represent a matching configuration. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMatchDecorator_a072ca4413403f52931a6333a54760380}\label{classMatchDecorator_a072ca4413403f52931a6333a54760380}} 
+\index{MatchDecorator@{MatchDecorator}!constructor@{constructor}}
+\index{constructor@{constructor}!MatchDecorator@{MatchDecorator}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Match\+Decorator\+::constructor (\begin{DoxyParamCaption}\item[{}]{config }\end{DoxyParamCaption})}
+
+
+
+Create a decorator. 
+
+\mbox{\Hypertarget{classMatchDecorator_a4d2cf6d8081ab69a6797317998017964}\label{classMatchDecorator_a4d2cf6d8081ab69a6797317998017964}} 
+\index{MatchDecorator@{MatchDecorator}!createDeco@{createDeco}}
+\index{createDeco@{createDeco}!MatchDecorator@{MatchDecorator}}
+\doxysubsubsection{\texorpdfstring{createDeco()}{createDeco()}}
+{\footnotesize\ttfamily Match\+Decorator\+::create\+Deco (\begin{DoxyParamCaption}\item[{}]{view }\end{DoxyParamCaption})}
+
+
+
+Compute the full set of decorations for matches in the given view\textquotesingle{}s viewport. 
+
+You\textquotesingle{}ll want to call this when initializing your plugin. \mbox{\Hypertarget{classMatchDecorator_abbd33fa8813452af5f8066db548cb298}\label{classMatchDecorator_abbd33fa8813452af5f8066db548cb298}} 
+\index{MatchDecorator@{MatchDecorator}!updateDeco@{updateDeco}}
+\index{updateDeco@{updateDeco}!MatchDecorator@{MatchDecorator}}
+\doxysubsubsection{\texorpdfstring{updateDeco()}{updateDeco()}}
+{\footnotesize\ttfamily Match\+Decorator\+::update\+Deco (\begin{DoxyParamCaption}\item[{}]{update,  }\item[{}]{deco }\end{DoxyParamCaption})}
+
+
+
+Update a set of decorations for a view update. 
+
+{\ttfamily deco} {\itshape must} be the set of decorations produced by {\itshape this} {\ttfamily \mbox{\hyperlink{classMatchDecorator}{Match\+Decorator}}} for the view state before the update. \mbox{\Hypertarget{classMatchDecorator_a84658b06aaf41f9c67b499efdfa0c755}\label{classMatchDecorator_a84658b06aaf41f9c67b499efdfa0c755}} 
+\index{MatchDecorator@{MatchDecorator}!updateRange@{updateRange}}
+\index{updateRange@{updateRange}!MatchDecorator@{MatchDecorator}}
+\doxysubsubsection{\texorpdfstring{updateRange()}{updateRange()}}
+{\footnotesize\ttfamily Match\+Decorator\+::update\+Range (\begin{DoxyParamCaption}\item[{}]{view,  }\item[{}]{deco,  }\item[{}]{update\+From,  }\item[{}]{update\+To }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/view/dist/\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

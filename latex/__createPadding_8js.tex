@@ -1,0 +1,108 @@
+\hypertarget{__createPadding_8js}{}\doxysection{node\+\_\+modules/lodash/\+\_\+create\+Padding.js File Reference}
+\label{__createPadding_8js}\index{node\_modules/lodash/\_createPadding.js@{node\_modules/lodash/\_createPadding.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__createPadding_8js_a4f22d570064182e4a27981842bfb7fae}{create\+Padding}} (\mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}}, \mbox{\hyperlink{shared_2rollup_8js_a4c5bbee866af47c8c897e715d0f75672}{chars}})
+\begin{DoxyCompactList}\small\item\em Creates the padding for {\ttfamily string} based on {\ttfamily length}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__createPadding_8js_a68f947949955ec151ca479e4d4400d7e}{base\+Repeat}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+base\+Repeat\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__createPadding_8js_ac503fbf1c5358190b56ae27fe8a66dae}{base\+To\+String}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+base\+To\+String\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__createPadding_8js_a5c36b5f0c3b29f6ef7d7e0c0972e2edc}{cast\+Slice}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+cast\+Slice\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__createPadding_8js_aee4627ce490299eb92074c18d3b14ec3}{has\+Unicode}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+has\+Unicode\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__createPadding_8js_a47532bfacc702b2192d8b39a965b545a}{string\+Size}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+string\+Size\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__createPadding_8js_a7af938396a1f31589f8c8a4b598f0b07}{string\+To\+Array}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+string\+To\+Array\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__createPadding_8js_aa01f583eb0c949bf03a5cd8edd603590}{native\+Ceil}} = \mbox{\hyperlink{ceil_8js_a6586cbc801cf66072a3795820fdbd74a}{Math.\+ceil}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__createPadding_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__createPadding_8js_a4f22d570064182e4a27981842bfb7fae}{create\+Padding}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__createPadding_8js_a4f22d570064182e4a27981842bfb7fae}\label{__createPadding_8js_a4f22d570064182e4a27981842bfb7fae}} 
+\index{\_createPadding.js@{\_createPadding.js}!createPadding@{createPadding}}
+\index{createPadding@{createPadding}!\_createPadding.js@{\_createPadding.js}}
+\doxysubsubsection{\texorpdfstring{createPadding()}{createPadding()}}
+{\footnotesize\ttfamily function create\+Padding (\begin{DoxyParamCaption}\item[{}]{length,  }\item[{}]{chars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates the padding for {\ttfamily string} based on {\ttfamily length}. 
+
+The {\ttfamily chars} string is truncated if the number of characters exceeds {\ttfamily length}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & length The padding length. \\
+\hline
+{\em \{string\}} & \mbox{[}chars=\textquotesingle{} \textquotesingle{}\mbox{]} The string used as padding. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} Returns the padding for {\ttfamily string}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__createPadding_8js_a68f947949955ec151ca479e4d4400d7e}\label{__createPadding_8js_a68f947949955ec151ca479e4d4400d7e}} 
+\index{\_createPadding.js@{\_createPadding.js}!baseRepeat@{baseRepeat}}
+\index{baseRepeat@{baseRepeat}!\_createPadding.js@{\_createPadding.js}}
+\doxysubsubsection{\texorpdfstring{baseRepeat}{baseRepeat}}
+{\footnotesize\ttfamily var base\+Repeat = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+base\+Repeat\textquotesingle{})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2repeat_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/repeat.\+js}}.\end{Desc}
+\mbox{\Hypertarget{__createPadding_8js_ac503fbf1c5358190b56ae27fe8a66dae}\label{__createPadding_8js_ac503fbf1c5358190b56ae27fe8a66dae}} 
+\index{\_createPadding.js@{\_createPadding.js}!baseToString@{baseToString}}
+\index{baseToString@{baseToString}!\_createPadding.js@{\_createPadding.js}}
+\doxysubsubsection{\texorpdfstring{baseToString}{baseToString}}
+{\footnotesize\ttfamily var base\+To\+String = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+base\+To\+String\textquotesingle{})}
+
+\mbox{\Hypertarget{__createPadding_8js_a5c36b5f0c3b29f6ef7d7e0c0972e2edc}\label{__createPadding_8js_a5c36b5f0c3b29f6ef7d7e0c0972e2edc}} 
+\index{\_createPadding.js@{\_createPadding.js}!castSlice@{castSlice}}
+\index{castSlice@{castSlice}!\_createPadding.js@{\_createPadding.js}}
+\doxysubsubsection{\texorpdfstring{castSlice}{castSlice}}
+{\footnotesize\ttfamily var cast\+Slice = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+cast\+Slice\textquotesingle{})}
+
+\mbox{\Hypertarget{__createPadding_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{__createPadding_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{\_createPadding.js@{\_createPadding.js}!exports@{exports}}
+\index{exports@{exports}!\_createPadding.js@{\_createPadding.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__createPadding_8js_a4f22d570064182e4a27981842bfb7fae}{create\+Padding}}}
+
+\mbox{\Hypertarget{__createPadding_8js_aee4627ce490299eb92074c18d3b14ec3}\label{__createPadding_8js_aee4627ce490299eb92074c18d3b14ec3}} 
+\index{\_createPadding.js@{\_createPadding.js}!hasUnicode@{hasUnicode}}
+\index{hasUnicode@{hasUnicode}!\_createPadding.js@{\_createPadding.js}}
+\doxysubsubsection{\texorpdfstring{hasUnicode}{hasUnicode}}
+{\footnotesize\ttfamily var has\+Unicode = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+has\+Unicode\textquotesingle{})}
+
+\mbox{\Hypertarget{__createPadding_8js_aa01f583eb0c949bf03a5cd8edd603590}\label{__createPadding_8js_aa01f583eb0c949bf03a5cd8edd603590}} 
+\index{\_createPadding.js@{\_createPadding.js}!nativeCeil@{nativeCeil}}
+\index{nativeCeil@{nativeCeil}!\_createPadding.js@{\_createPadding.js}}
+\doxysubsubsection{\texorpdfstring{nativeCeil}{nativeCeil}}
+{\footnotesize\ttfamily var native\+Ceil = \mbox{\hyperlink{ceil_8js_a6586cbc801cf66072a3795820fdbd74a}{Math.\+ceil}}}
+
+\mbox{\Hypertarget{__createPadding_8js_a47532bfacc702b2192d8b39a965b545a}\label{__createPadding_8js_a47532bfacc702b2192d8b39a965b545a}} 
+\index{\_createPadding.js@{\_createPadding.js}!stringSize@{stringSize}}
+\index{stringSize@{stringSize}!\_createPadding.js@{\_createPadding.js}}
+\doxysubsubsection{\texorpdfstring{stringSize}{stringSize}}
+{\footnotesize\ttfamily var string\+Size = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+string\+Size\textquotesingle{})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2pad_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/pad.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2padEnd_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/pad\+End.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2padStart_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/pad\+Start.\+js}}, \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2size_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/size.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2truncate_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/truncate.\+js}}.\end{Desc}
+\mbox{\Hypertarget{__createPadding_8js_a7af938396a1f31589f8c8a4b598f0b07}\label{__createPadding_8js_a7af938396a1f31589f8c8a4b598f0b07}} 
+\index{\_createPadding.js@{\_createPadding.js}!stringToArray@{stringToArray}}
+\index{stringToArray@{stringToArray}!\_createPadding.js@{\_createPadding.js}}
+\doxysubsubsection{\texorpdfstring{stringToArray}{stringToArray}}
+{\footnotesize\ttfamily var string\+To\+Array = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+string\+To\+Array\textquotesingle{})}
+

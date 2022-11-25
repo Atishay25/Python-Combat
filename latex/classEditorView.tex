@@ -1,0 +1,610 @@
+\hypertarget{classEditorView}{}\doxysection{Editor\+View Class Reference}
+\label{classEditorView}\index{EditorView@{EditorView}}
+
+
+An editor view represents the editor\textquotesingle{}s user interface.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEditorView_a9ea89a5642d090ca39feaa7f4c923406}{constructor}} (\mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}}=\{\})
+\begin{DoxyCompactList}\small\item\em Construct a new view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_ace95995d61f5efd2e140b8f0ff120e64}{state}} ()
+\begin{DoxyCompactList}\small\item\em The current editor state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_aec4c4e54e5047aa1f009d0f7ef468bd6}{viewport}} ()
+\begin{DoxyCompactList}\small\item\em To be able to display large documents without consuming too much memory or overloading the browser, Code\+Mirror only draws the code that is visible (plus a margin around it) to the D\+OM. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a915fed7412c50ff1c1c9ca854c910a73}{visible\+Ranges}} ()
+\begin{DoxyCompactList}\small\item\em When there are, for example, large collapsed ranges in the viewport, its size can be a lot bigger than the actual visible content. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_ab0a4ef555dbea34ddb32475602d68814}{in\+View}} ()
+\begin{DoxyCompactList}\small\item\em Returns false when the editor is entirely scrolled out of view or otherwise hidden. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a787c72ef03ca683febd8f47b132f133c}{composing}} ()
+\begin{DoxyCompactList}\small\item\em Indicates whether the user is currently composing text via \href{https://en.wikipedia.org/wiki/Input_method}{\texttt{ I\+ME}}, and at least one change has been made in the current composition. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a244c6a3054f22b234df6c6511c91517b}{composition\+Started}} ()
+\begin{DoxyCompactList}\small\item\em Indicates whether the user is currently in composing state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a73fc05e22c291747656de39575013a4d}{root}} ()
+\begin{DoxyCompactList}\small\item\em The document or shadow root that the view lives in. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a7024a7ef08b6f24bf16b732ccc878e7a}{win}} ()
+\item 
+\mbox{\hyperlink{classEditorView_a8178fe13a0a7faba3cd0a944aa130c14}{dispatch}} (...input)
+\item 
+\mbox{\hyperlink{classEditorView_a4327a23e67d07b6b2f323204d5c16553}{update}} (transactions)
+\begin{DoxyCompactList}\small\item\em Update the view for the given array of transactions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_ac379231bba230e654bda3512fcd543c7}{set\+State}} (new\+State)
+\begin{DoxyCompactList}\small\item\em Reset the view to the given state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a8b992d5de6b7251e2d0cc6734c2e1d48}{update\+Plugins}} (\mbox{\hyperlink{classEditorView_a4327a23e67d07b6b2f323204d5c16553}{update}})
+\item 
+\mbox{\hyperlink{classEditorView_ac02013f7fc7ca95e316599c387bceab3}{measure}} (flush=true)
+\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a3dd58d98a9d2aac042875361f4ef4102}{theme\+Classes}} ()
+\begin{DoxyCompactList}\small\item\em Get the C\+SS classes for the currently active editor themes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_aaf56dd26b76f3da757c6ebad27e09a3b}{update\+Attrs}} ()
+\item 
+\mbox{\hyperlink{classEditorView_a2e7ac3b8d31a0bba6c3432a44e41c814}{show\+Announcements}} (trs)
+\item 
+\mbox{\hyperlink{classEditorView_a5addae5cddeac3e12cb2c48f37435d45}{mount\+Styles}} ()
+\item 
+\mbox{\hyperlink{classEditorView_a72cac707af527d00b5b41f8870fafd8f}{read\+Measured}} ()
+\item 
+\mbox{\hyperlink{classEditorView_a7a19edd6424903f8314251e074d60550}{request\+Measure}} (request)
+\begin{DoxyCompactList}\small\item\em Schedule a layout measurement, optionally providing callbacks to do custom D\+OM measuring followed by a D\+OM write phase. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a83719d83aaf44ed133a948f72bd16bc5}{plugin}} (plugin)
+\begin{DoxyCompactList}\small\item\em Get the value of a specific plugin, if present. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a3eef5824ec3b8c4e7bc94b63abf4c609}{document\+Top}} ()
+\begin{DoxyCompactList}\small\item\em The top position of the document, in screen coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_adc54a9a2f35ed90f52ecccff7a097ae2}{document\+Padding}} ()
+\begin{DoxyCompactList}\small\item\em Reports the padding above and below the document. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_ad4e848352db0640ebd7cf12f222af448}{element\+At\+Height}} (height)
+\begin{DoxyCompactList}\small\item\em Find the text line or block widget at the given vertical position (which is interpreted as relative to the \href{https://codemirror.net/6/docs/ref/\#view.EditorView.documentTop}{\texttt{ top of the document}}). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a2549b61746f22312f2269bbf867c2239}{line\+Block\+At\+Height}} (height)
+\begin{DoxyCompactList}\small\item\em Find the line block (see \href{https://codemirror.net/6/docs/ref/\#view.EditorView.lineBlockAt}{\texttt{ {\ttfamily line\+Block\+At}}} at the given height, again interpreted relative to the \href{https://codemirror.net/6/docs/ref/\#view.EditorView.documentTop}{\texttt{ top of the document}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a52fb01aeb40f3ce1b38e5abb6a45b68b}{viewport\+Line\+Blocks}} ()
+\begin{DoxyCompactList}\small\item\em Get the extent and vertical position of all \href{https://codemirror.net/6/docs/ref/\#view.EditorView.lineBlockAt}{\texttt{ line blocks}} in the viewport. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_aaed099c1c57ead05c6cf6747c405fb49}{line\+Block\+At}} (pos)
+\begin{DoxyCompactList}\small\item\em Find the line block around the given document position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a7ab3435d7537acf48ce040302552ff48}{content\+Height}} ()
+\begin{DoxyCompactList}\small\item\em The editor\textquotesingle{}s total content height. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a304de95e8de747574e77c4a5cda47a0e}{move\+By\+Char}} (start, forward, by)
+\begin{DoxyCompactList}\small\item\em Move a cursor position by \href{https://codemirror.net/6/docs/ref/\#state.findClusterBreak}{\texttt{ grapheme cluster}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a4a0558cd2e67c0d29b1e5e1aa3a5283a}{move\+By\+Group}} (start, forward)
+\begin{DoxyCompactList}\small\item\em Move a cursor position across the next group of either \href{https://codemirror.net/6/docs/ref/\#state.EditorState.charCategorizer}{\texttt{ letters}} or non-\/letter non-\/whitespace characters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a9c60899ee057298b04cb6f72951dba1b}{move\+To\+Line\+Boundary}} (start, forward, include\+Wrap=true)
+\begin{DoxyCompactList}\small\item\em Move to the next line boundary in the given direction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a9fb82d1c7ebbb68510c145af8842cc8e}{move\+Vertically}} (start, forward, distance)
+\begin{DoxyCompactList}\small\item\em Move a cursor position vertically. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a252ef19a6d6adf5a554b3195c9ec79b2}{dom\+At\+Pos}} (pos)
+\begin{DoxyCompactList}\small\item\em Find the D\+OM parent node and offset (child offset if {\ttfamily node} is an element, character offset when it is a text node) at the given document position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a4ad60db34e50c629e27fe923e16a3983}{pos\+At\+D\+OM}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, offset=0)
+\begin{DoxyCompactList}\small\item\em Find the document position at the given D\+OM node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a2ff256bc78aa1726c2c27976065f6230}{pos\+At\+Coords}} (coords, precise=true)
+\item 
+\mbox{\hyperlink{classEditorView_af5143ef13cb5e8c2c5dcd37b1cffd267}{coords\+At\+Pos}} (pos, side=1)
+\begin{DoxyCompactList}\small\item\em Get the screen coordinates at the given document position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a48fc0e713e309112d8fb09943ff03805}{default\+Character\+Width}} ()
+\begin{DoxyCompactList}\small\item\em The default width of a character in the editor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a088de8d1c21bbf96fefd968a9de0ced4}{default\+Line\+Height}} ()
+\begin{DoxyCompactList}\small\item\em The default height of a line in the editor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_a70d201bea669e16f1b16301fc9d823ca}{text\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em The text direction (\href{https://developer.mozilla.org/en-US/docs/Web/CSS/direction}{\texttt{ {\ttfamily direction}}} C\+SS property) of the editor\textquotesingle{}s content element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_acbc226cd1ceb1cd0017b1e9ca4f64681}{text\+Direction\+At}} (pos)
+\begin{DoxyCompactList}\small\item\em Find the text direction of the block at the given position, as assigned by C\+SS. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_ac453a886aee1436f3ed5662836c1e3f8}{line\+Wrapping}} ()
+\begin{DoxyCompactList}\small\item\em Whether this editor \href{https://codemirror.net/6/docs/ref/\#view.EditorView.lineWrapping}{\texttt{ wraps lines}} (as determined by the \href{https://developer.mozilla.org/en-US/docs/Web/CSS/white-space}{\texttt{ {\ttfamily white-\/space}}} C\+SS property of its content element). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a4b38b5670afdac4b77dde94f7843ab54}{bidi\+Spans}} (line)
+\begin{DoxyCompactList}\small\item\em Returns the bidirectional text structure of the given line (which should be in the current document) as an array of span objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classEditorView_affdf37f47c73b2fe66ff65deb565a633}{has\+Focus}} ()
+\begin{DoxyCompactList}\small\item\em Check whether the editor has focus. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a12dac39ede2ee9fa9910193c574bfd26}{focus}} ()
+\begin{DoxyCompactList}\small\item\em Put focus on the editor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a1d9bd69932298f82ec546cb8dbeccac4}{set\+Root}} (\mbox{\hyperlink{classEditorView_a73fc05e22c291747656de39575013a4d}{root}})
+\begin{DoxyCompactList}\small\item\em Update the \href{https://codemirror.net/6/docs/ref/\#\#view.EditorViewConfig.root}{\texttt{ root}} in which the editor lives. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditorView_a19d54a1f1867fa90bf93ba07e9303441}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Clean up this editor view, removing its element from the document, unregistering event handlers, and notifying plugins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classEditorView_afe6a54f596754d87a069b917ab46bff9}{scroll\+Into\+View}} (pos, \mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}=\{\})
+\begin{DoxyCompactList}\small\item\em Returns an effect that can be \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.effects}{\texttt{ added}} to a transaction to cause it to scroll the given position or range into view. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classEditorView_aa486b85cf2d4d92d4c302224c8f6b7a7}{dom\+Event\+Handlers}} (\mbox{\hyperlink{jsdoc_2plugins_2underscore_8js_a961bd2a6da67c5f825a66f814dac02b8}{handlers}})
+\begin{DoxyCompactList}\small\item\em Returns an extension that can be used to add D\+OM event handlers. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classEditorView_ab2a7d324c7af00f1731fd018b5036bfa}{theme}} (spec, \mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}})
+\begin{DoxyCompactList}\small\item\em Create a theme extension. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classEditorView_a77c311296519bc9084fa12240120f9b5}{base\+Theme}} (spec)
+\begin{DoxyCompactList}\small\item\em Create an extension that adds styles to the base theme. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classEditorView_a8c411168b9baab9f88f0b84704686ccf}{find\+From\+D\+OM}} (dom)
+\begin{DoxyCompactList}\small\item\em Retrieve an editor view instance from the view\textquotesingle{}s D\+OM representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An editor view represents the editor\textquotesingle{}s user interface. 
+
+It holds the editable D\+OM surface, and possibly other elements such as the line number gutter. It handles events and dispatches state transactions for editing actions. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEditorView_a77c311296519bc9084fa12240120f9b5}\label{classEditorView_a77c311296519bc9084fa12240120f9b5}} 
+\index{EditorView@{EditorView}!baseTheme@{baseTheme}}
+\index{baseTheme@{baseTheme}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{baseTheme()}{baseTheme()}}
+{\footnotesize\ttfamily static Editor\+View\+::base\+Theme (\begin{DoxyParamCaption}\item[{}]{spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create an extension that adds styles to the base theme. 
+
+Like with \href{https://codemirror.net/6/docs/ref/\#view.EditorView^theme}{\texttt{ {\ttfamily theme}}}, use {\ttfamily \&} to indicate the place of the editor wrapper element when directly targeting that. You can also use {\ttfamily \&dark} or {\ttfamily \&light} instead to only target editors with a dark or light theme. \mbox{\Hypertarget{classEditorView_a4b38b5670afdac4b77dde94f7843ab54}\label{classEditorView_a4b38b5670afdac4b77dde94f7843ab54}} 
+\index{EditorView@{EditorView}!bidiSpans@{bidiSpans}}
+\index{bidiSpans@{bidiSpans}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{bidiSpans()}{bidiSpans()}}
+{\footnotesize\ttfamily Editor\+View\+::bidi\+Spans (\begin{DoxyParamCaption}\item[{}]{line }\end{DoxyParamCaption})}
+
+
+
+Returns the bidirectional text structure of the given line (which should be in the current document) as an array of span objects. 
+
+The order of these spans matches the \href{https://codemirror.net/6/docs/ref/\#view.EditorView.textDirection}{\texttt{ text direction}}—if that is left-\/to-\/right, the leftmost spans come first, otherwise the rightmost spans come first. \mbox{\Hypertarget{classEditorView_a787c72ef03ca683febd8f47b132f133c}\label{classEditorView_a787c72ef03ca683febd8f47b132f133c}} 
+\index{EditorView@{EditorView}!composing@{composing}}
+\index{composing@{composing}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{composing()}{composing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::composing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicates whether the user is currently composing text via \href{https://en.wikipedia.org/wiki/Input_method}{\texttt{ I\+ME}}, and at least one change has been made in the current composition. 
+
+\mbox{\Hypertarget{classEditorView_a244c6a3054f22b234df6c6511c91517b}\label{classEditorView_a244c6a3054f22b234df6c6511c91517b}} 
+\index{EditorView@{EditorView}!compositionStarted@{compositionStarted}}
+\index{compositionStarted@{compositionStarted}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{compositionStarted()}{compositionStarted()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::composition\+Started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicates whether the user is currently in composing state. 
+
+Note that on some platforms, like Android, this will be the case a lot, since just putting the cursor on a word starts a composition there. \mbox{\Hypertarget{classEditorView_a9ea89a5642d090ca39feaa7f4c923406}\label{classEditorView_a9ea89a5642d090ca39feaa7f4c923406}} 
+\index{EditorView@{EditorView}!constructor@{constructor}}
+\index{constructor@{constructor}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Editor\+View\+::constructor (\begin{DoxyParamCaption}\item[{}]{config = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+Construct a new view. 
+
+You\textquotesingle{}ll want to either provide a {\ttfamily parent} option, or put {\ttfamily view.\+dom} into your document after creating a view, so that the user can see the editor. \mbox{\Hypertarget{classEditorView_a7ab3435d7537acf48ce040302552ff48}\label{classEditorView_a7ab3435d7537acf48ce040302552ff48}} 
+\index{EditorView@{EditorView}!contentHeight@{contentHeight}}
+\index{contentHeight@{contentHeight}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{contentHeight()}{contentHeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::content\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The editor\textquotesingle{}s total content height. 
+
+\mbox{\Hypertarget{classEditorView_af5143ef13cb5e8c2c5dcd37b1cffd267}\label{classEditorView_af5143ef13cb5e8c2c5dcd37b1cffd267}} 
+\index{EditorView@{EditorView}!coordsAtPos@{coordsAtPos}}
+\index{coordsAtPos@{coordsAtPos}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{coordsAtPos()}{coordsAtPos()}}
+{\footnotesize\ttfamily Editor\+View\+::coords\+At\+Pos (\begin{DoxyParamCaption}\item[{}]{pos,  }\item[{}]{side = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Get the screen coordinates at the given document position. 
+
+{\ttfamily side} determines whether the coordinates are based on the element before (-\/1) or after (1) the position (if no element is available on the given side, the method will transparently use another strategy to get reasonable coordinates). \mbox{\Hypertarget{classEditorView_a48fc0e713e309112d8fb09943ff03805}\label{classEditorView_a48fc0e713e309112d8fb09943ff03805}} 
+\index{EditorView@{EditorView}!defaultCharacterWidth@{defaultCharacterWidth}}
+\index{defaultCharacterWidth@{defaultCharacterWidth}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{defaultCharacterWidth()}{defaultCharacterWidth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::default\+Character\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The default width of a character in the editor. 
+
+May not accurately reflect the width of all characters (given variable width fonts or styling of invididual ranges). \mbox{\Hypertarget{classEditorView_a088de8d1c21bbf96fefd968a9de0ced4}\label{classEditorView_a088de8d1c21bbf96fefd968a9de0ced4}} 
+\index{EditorView@{EditorView}!defaultLineHeight@{defaultLineHeight}}
+\index{defaultLineHeight@{defaultLineHeight}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{defaultLineHeight()}{defaultLineHeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::default\+Line\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The default height of a line in the editor. 
+
+May not be accurate for all lines. \mbox{\Hypertarget{classEditorView_a19d54a1f1867fa90bf93ba07e9303441}\label{classEditorView_a19d54a1f1867fa90bf93ba07e9303441}} 
+\index{EditorView@{EditorView}!destroy@{destroy}}
+\index{destroy@{destroy}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily Editor\+View\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clean up this editor view, removing its element from the document, unregistering event handlers, and notifying plugins. 
+
+The view instance can no longer be used after calling this. \mbox{\Hypertarget{classEditorView_a8178fe13a0a7faba3cd0a944aa130c14}\label{classEditorView_a8178fe13a0a7faba3cd0a944aa130c14}} 
+\index{EditorView@{EditorView}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily Editor\+View\+::dispatch (\begin{DoxyParamCaption}\item[{}]{input }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorView_adc54a9a2f35ed90f52ecccff7a097ae2}\label{classEditorView_adc54a9a2f35ed90f52ecccff7a097ae2}} 
+\index{EditorView@{EditorView}!documentPadding@{documentPadding}}
+\index{documentPadding@{documentPadding}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{documentPadding()}{documentPadding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::document\+Padding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reports the padding above and below the document. 
+
+\mbox{\Hypertarget{classEditorView_a3eef5824ec3b8c4e7bc94b63abf4c609}\label{classEditorView_a3eef5824ec3b8c4e7bc94b63abf4c609}} 
+\index{EditorView@{EditorView}!documentTop@{documentTop}}
+\index{documentTop@{documentTop}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{documentTop()}{documentTop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::document\+Top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The top position of the document, in screen coordinates. 
+
+This may be negative when the editor is scrolled down. Points directly to the top of the first line, not above the padding. \mbox{\Hypertarget{classEditorView_a252ef19a6d6adf5a554b3195c9ec79b2}\label{classEditorView_a252ef19a6d6adf5a554b3195c9ec79b2}} 
+\index{EditorView@{EditorView}!domAtPos@{domAtPos}}
+\index{domAtPos@{domAtPos}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{domAtPos()}{domAtPos()}}
+{\footnotesize\ttfamily Editor\+View\+::dom\+At\+Pos (\begin{DoxyParamCaption}\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Find the D\+OM parent node and offset (child offset if {\ttfamily node} is an element, character offset when it is a text node) at the given document position. 
+
+Note that for positions that aren\textquotesingle{}t currently in {\ttfamily visible\+Ranges}, the resulting D\+OM position isn\textquotesingle{}t necessarily meaningful (it may just point before or after a placeholder element). \mbox{\Hypertarget{classEditorView_aa486b85cf2d4d92d4c302224c8f6b7a7}\label{classEditorView_aa486b85cf2d4d92d4c302224c8f6b7a7}} 
+\index{EditorView@{EditorView}!domEventHandlers@{domEventHandlers}}
+\index{domEventHandlers@{domEventHandlers}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{domEventHandlers()}{domEventHandlers()}}
+{\footnotesize\ttfamily static Editor\+View\+::dom\+Event\+Handlers (\begin{DoxyParamCaption}\item[{}]{handlers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an extension that can be used to add D\+OM event handlers. 
+
+The value should be an object mapping event names to handler functions. For any given event, such functions are ordered by extension precedence, and the first handler to return true will be assumed to have handled that event, and no other handlers or built-\/in behavior will be activated for it. These are registered on the \href{https://codemirror.net/6/docs/ref/\#view.EditorView.contentDOM}{\texttt{ content element}}, except for {\ttfamily scroll} handlers, which will be called any time the editor\textquotesingle{}s \href{https://codemirror.net/6/docs/ref/\#view.EditorView.scrollDOM}{\texttt{ scroll element}} or one of its parent nodes is scrolled. \mbox{\Hypertarget{classEditorView_ad4e848352db0640ebd7cf12f222af448}\label{classEditorView_ad4e848352db0640ebd7cf12f222af448}} 
+\index{EditorView@{EditorView}!elementAtHeight@{elementAtHeight}}
+\index{elementAtHeight@{elementAtHeight}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{elementAtHeight()}{elementAtHeight()}}
+{\footnotesize\ttfamily Editor\+View\+::element\+At\+Height (\begin{DoxyParamCaption}\item[{}]{height }\end{DoxyParamCaption})}
+
+
+
+Find the text line or block widget at the given vertical position (which is interpreted as relative to the \href{https://codemirror.net/6/docs/ref/\#view.EditorView.documentTop}{\texttt{ top of the document}}). 
+
+\mbox{\Hypertarget{classEditorView_a8c411168b9baab9f88f0b84704686ccf}\label{classEditorView_a8c411168b9baab9f88f0b84704686ccf}} 
+\index{EditorView@{EditorView}!findFromDOM@{findFromDOM}}
+\index{findFromDOM@{findFromDOM}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{findFromDOM()}{findFromDOM()}}
+{\footnotesize\ttfamily static Editor\+View\+::find\+From\+D\+OM (\begin{DoxyParamCaption}\item[{}]{dom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieve an editor view instance from the view\textquotesingle{}s D\+OM representation. 
+
+\mbox{\Hypertarget{classEditorView_a12dac39ede2ee9fa9910193c574bfd26}\label{classEditorView_a12dac39ede2ee9fa9910193c574bfd26}} 
+\index{EditorView@{EditorView}!focus@{focus}}
+\index{focus@{focus}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily Editor\+View\+::focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Put focus on the editor. 
+
+\mbox{\Hypertarget{classEditorView_affdf37f47c73b2fe66ff65deb565a633}\label{classEditorView_affdf37f47c73b2fe66ff65deb565a633}} 
+\index{EditorView@{EditorView}!hasFocus@{hasFocus}}
+\index{hasFocus@{hasFocus}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{hasFocus()}{hasFocus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::has\+Focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check whether the editor has focus. 
+
+\mbox{\Hypertarget{classEditorView_ab0a4ef555dbea34ddb32475602d68814}\label{classEditorView_ab0a4ef555dbea34ddb32475602d68814}} 
+\index{EditorView@{EditorView}!inView@{inView}}
+\index{inView@{inView}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{inView()}{inView()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::in\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns false when the editor is entirely scrolled out of view or otherwise hidden. 
+
+\mbox{\Hypertarget{classEditorView_aaed099c1c57ead05c6cf6747c405fb49}\label{classEditorView_aaed099c1c57ead05c6cf6747c405fb49}} 
+\index{EditorView@{EditorView}!lineBlockAt@{lineBlockAt}}
+\index{lineBlockAt@{lineBlockAt}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{lineBlockAt()}{lineBlockAt()}}
+{\footnotesize\ttfamily Editor\+View\+::line\+Block\+At (\begin{DoxyParamCaption}\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Find the line block around the given document position. 
+
+A line block is a range delimited on both sides by either a non-\/\href{https://codemirror.net/6/docs/ref/\#view.Decoration^replace}{\texttt{ hidden}} line breaks, or the start/end of the document. It will usually just hold a line of text, but may be broken into multiple textblocks by block widgets. \mbox{\Hypertarget{classEditorView_a2549b61746f22312f2269bbf867c2239}\label{classEditorView_a2549b61746f22312f2269bbf867c2239}} 
+\index{EditorView@{EditorView}!lineBlockAtHeight@{lineBlockAtHeight}}
+\index{lineBlockAtHeight@{lineBlockAtHeight}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{lineBlockAtHeight()}{lineBlockAtHeight()}}
+{\footnotesize\ttfamily Editor\+View\+::line\+Block\+At\+Height (\begin{DoxyParamCaption}\item[{}]{height }\end{DoxyParamCaption})}
+
+
+
+Find the line block (see \href{https://codemirror.net/6/docs/ref/\#view.EditorView.lineBlockAt}{\texttt{ {\ttfamily line\+Block\+At}}} at the given height, again interpreted relative to the \href{https://codemirror.net/6/docs/ref/\#view.EditorView.documentTop}{\texttt{ top of the document}}. 
+
+\mbox{\Hypertarget{classEditorView_ac453a886aee1436f3ed5662836c1e3f8}\label{classEditorView_ac453a886aee1436f3ed5662836c1e3f8}} 
+\index{EditorView@{EditorView}!lineWrapping@{lineWrapping}}
+\index{lineWrapping@{lineWrapping}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{lineWrapping()}{lineWrapping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::line\+Wrapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Whether this editor \href{https://codemirror.net/6/docs/ref/\#view.EditorView.lineWrapping}{\texttt{ wraps lines}} (as determined by the \href{https://developer.mozilla.org/en-US/docs/Web/CSS/white-space}{\texttt{ {\ttfamily white-\/space}}} C\+SS property of its content element). 
+
+\mbox{\Hypertarget{classEditorView_ac02013f7fc7ca95e316599c387bceab3}\label{classEditorView_ac02013f7fc7ca95e316599c387bceab3}} 
+\index{EditorView@{EditorView}!measure@{measure}}
+\index{measure@{measure}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{measure()}{measure()}}
+{\footnotesize\ttfamily Editor\+View\+::measure (\begin{DoxyParamCaption}\item[{}]{flush = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorView_a5addae5cddeac3e12cb2c48f37435d45}\label{classEditorView_a5addae5cddeac3e12cb2c48f37435d45}} 
+\index{EditorView@{EditorView}!mountStyles@{mountStyles}}
+\index{mountStyles@{mountStyles}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{mountStyles()}{mountStyles()}}
+{\footnotesize\ttfamily Editor\+View\+::mount\+Styles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorView_a304de95e8de747574e77c4a5cda47a0e}\label{classEditorView_a304de95e8de747574e77c4a5cda47a0e}} 
+\index{EditorView@{EditorView}!moveByChar@{moveByChar}}
+\index{moveByChar@{moveByChar}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{moveByChar()}{moveByChar()}}
+{\footnotesize\ttfamily Editor\+View\+::move\+By\+Char (\begin{DoxyParamCaption}\item[{}]{start,  }\item[{}]{forward,  }\item[{}]{by }\end{DoxyParamCaption})}
+
+
+
+Move a cursor position by \href{https://codemirror.net/6/docs/ref/\#state.findClusterBreak}{\texttt{ grapheme cluster}}. 
+
+{\ttfamily forward} determines whether the motion is away from the line start, or towards it. In bidirectional text, the line is traversed in visual order, using the editor\textquotesingle{}s \href{https://codemirror.net/6/docs/ref/\#view.EditorView.textDirection}{\texttt{ text direction}}. When the start position was the last one on the line, the returned position will be across the line break. If there is no further line, the original position is returned.
+
+By default, this method moves over a single cluster. The optional {\ttfamily by} argument can be used to move across more. It will be called with the first cluster as argument, and should return a predicate that determines, for each subsequent cluster, whether it should also be moved over. \mbox{\Hypertarget{classEditorView_a4a0558cd2e67c0d29b1e5e1aa3a5283a}\label{classEditorView_a4a0558cd2e67c0d29b1e5e1aa3a5283a}} 
+\index{EditorView@{EditorView}!moveByGroup@{moveByGroup}}
+\index{moveByGroup@{moveByGroup}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{moveByGroup()}{moveByGroup()}}
+{\footnotesize\ttfamily Editor\+View\+::move\+By\+Group (\begin{DoxyParamCaption}\item[{}]{start,  }\item[{}]{forward }\end{DoxyParamCaption})}
+
+
+
+Move a cursor position across the next group of either \href{https://codemirror.net/6/docs/ref/\#state.EditorState.charCategorizer}{\texttt{ letters}} or non-\/letter non-\/whitespace characters. 
+
+\mbox{\Hypertarget{classEditorView_a9c60899ee057298b04cb6f72951dba1b}\label{classEditorView_a9c60899ee057298b04cb6f72951dba1b}} 
+\index{EditorView@{EditorView}!moveToLineBoundary@{moveToLineBoundary}}
+\index{moveToLineBoundary@{moveToLineBoundary}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{moveToLineBoundary()}{moveToLineBoundary()}}
+{\footnotesize\ttfamily Editor\+View\+::move\+To\+Line\+Boundary (\begin{DoxyParamCaption}\item[{}]{start,  }\item[{}]{forward,  }\item[{}]{include\+Wrap = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Move to the next line boundary in the given direction. 
+
+If {\ttfamily include\+Wrap} is true, line wrapping is on, and there is a further wrap point on the current line, the wrap point will be returned. Otherwise this function will return the start or end of the line. \mbox{\Hypertarget{classEditorView_a9fb82d1c7ebbb68510c145af8842cc8e}\label{classEditorView_a9fb82d1c7ebbb68510c145af8842cc8e}} 
+\index{EditorView@{EditorView}!moveVertically@{moveVertically}}
+\index{moveVertically@{moveVertically}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{moveVertically()}{moveVertically()}}
+{\footnotesize\ttfamily Editor\+View\+::move\+Vertically (\begin{DoxyParamCaption}\item[{}]{start,  }\item[{}]{forward,  }\item[{}]{distance }\end{DoxyParamCaption})}
+
+
+
+Move a cursor position vertically. 
+
+When {\ttfamily distance} isn\textquotesingle{}t given, it defaults to moving to the next line (including wrapped lines). Otherwise, {\ttfamily distance} should provide a positive distance in pixels.
+
+When {\ttfamily start} has a \href{https://codemirror.net/6/docs/ref/\#state.SelectionRange.goalColumn}{\texttt{ {\ttfamily goal\+Column}}}, the vertical motion will use that as a target horizontal position. Otherwise, the cursor\textquotesingle{}s own horizontal position is used. The returned cursor will have its goal column set to whichever column was used. \mbox{\Hypertarget{classEditorView_a83719d83aaf44ed133a948f72bd16bc5}\label{classEditorView_a83719d83aaf44ed133a948f72bd16bc5}} 
+\index{EditorView@{EditorView}!plugin@{plugin}}
+\index{plugin@{plugin}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{plugin()}{plugin()}}
+{\footnotesize\ttfamily Editor\+View\+::plugin (\begin{DoxyParamCaption}\item[{}]{plugin }\end{DoxyParamCaption})}
+
+
+
+Get the value of a specific plugin, if present. 
+
+Note that plugins that crash can be dropped from a view, so even when you know you registered a given plugin, it is recommended to check the return value of this method. \mbox{\Hypertarget{classEditorView_a2ff256bc78aa1726c2c27976065f6230}\label{classEditorView_a2ff256bc78aa1726c2c27976065f6230}} 
+\index{EditorView@{EditorView}!posAtCoords@{posAtCoords}}
+\index{posAtCoords@{posAtCoords}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{posAtCoords()}{posAtCoords()}}
+{\footnotesize\ttfamily Editor\+View\+::pos\+At\+Coords (\begin{DoxyParamCaption}\item[{}]{coords,  }\item[{}]{precise = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorView_a4ad60db34e50c629e27fe923e16a3983}\label{classEditorView_a4ad60db34e50c629e27fe923e16a3983}} 
+\index{EditorView@{EditorView}!posAtDOM@{posAtDOM}}
+\index{posAtDOM@{posAtDOM}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{posAtDOM()}{posAtDOM()}}
+{\footnotesize\ttfamily Editor\+View\+::pos\+At\+D\+OM (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{offset = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Find the document position at the given D\+OM node. 
+
+Can be useful for associating positions with D\+OM events. Will raise an error when {\ttfamily node} isn\textquotesingle{}t part of the editor content. \mbox{\Hypertarget{classEditorView_a72cac707af527d00b5b41f8870fafd8f}\label{classEditorView_a72cac707af527d00b5b41f8870fafd8f}} 
+\index{EditorView@{EditorView}!readMeasured@{readMeasured}}
+\index{readMeasured@{readMeasured}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{readMeasured()}{readMeasured()}}
+{\footnotesize\ttfamily Editor\+View\+::read\+Measured (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorView_a7a19edd6424903f8314251e074d60550}\label{classEditorView_a7a19edd6424903f8314251e074d60550}} 
+\index{EditorView@{EditorView}!requestMeasure@{requestMeasure}}
+\index{requestMeasure@{requestMeasure}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{requestMeasure()}{requestMeasure()}}
+{\footnotesize\ttfamily Editor\+View\+::request\+Measure (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+
+
+Schedule a layout measurement, optionally providing callbacks to do custom D\+OM measuring followed by a D\+OM write phase. 
+
+Using this is preferable reading D\+OM layout directly from, for example, an event handler, because it\textquotesingle{}ll make sure measuring and drawing done by other components is synchronized, avoiding unnecessary D\+OM layout computations. \mbox{\Hypertarget{classEditorView_a73fc05e22c291747656de39575013a4d}\label{classEditorView_a73fc05e22c291747656de39575013a4d}} 
+\index{EditorView@{EditorView}!root@{root}}
+\index{root@{root}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{root()}{root()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The document or shadow root that the view lives in. 
+
+\mbox{\Hypertarget{classEditorView_afe6a54f596754d87a069b917ab46bff9}\label{classEditorView_afe6a54f596754d87a069b917ab46bff9}} 
+\index{EditorView@{EditorView}!scrollIntoView@{scrollIntoView}}
+\index{scrollIntoView@{scrollIntoView}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{scrollIntoView()}{scrollIntoView()}}
+{\footnotesize\ttfamily static Editor\+View\+::scroll\+Into\+View (\begin{DoxyParamCaption}\item[{}]{pos,  }\item[{}]{options = {\ttfamily \{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an effect that can be \href{https://codemirror.net/6/docs/ref/\#state.TransactionSpec.effects}{\texttt{ added}} to a transaction to cause it to scroll the given position or range into view. 
+
+\mbox{\Hypertarget{classEditorView_a1d9bd69932298f82ec546cb8dbeccac4}\label{classEditorView_a1d9bd69932298f82ec546cb8dbeccac4}} 
+\index{EditorView@{EditorView}!setRoot@{setRoot}}
+\index{setRoot@{setRoot}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{setRoot()}{setRoot()}}
+{\footnotesize\ttfamily Editor\+View\+::set\+Root (\begin{DoxyParamCaption}\item[{}]{root }\end{DoxyParamCaption})}
+
+
+
+Update the \href{https://codemirror.net/6/docs/ref/\#\#view.EditorViewConfig.root}{\texttt{ root}} in which the editor lives. 
+
+This is only necessary when moving the editor\textquotesingle{}s existing D\+OM to a new window or shadow root. \mbox{\Hypertarget{classEditorView_ac379231bba230e654bda3512fcd543c7}\label{classEditorView_ac379231bba230e654bda3512fcd543c7}} 
+\index{EditorView@{EditorView}!setState@{setState}}
+\index{setState@{setState}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily Editor\+View\+::set\+State (\begin{DoxyParamCaption}\item[{}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Reset the view to the given state. 
+
+(This will cause the entire document to be redrawn and all view plugins to be reinitialized, so you should probably only use it when the new state isn\textquotesingle{}t derived from the old state. Otherwise, use \href{https://codemirror.net/6/docs/ref/\#view.EditorView.dispatch}{\texttt{ {\ttfamily dispatch}}} instead.) \mbox{\Hypertarget{classEditorView_a2e7ac3b8d31a0bba6c3432a44e41c814}\label{classEditorView_a2e7ac3b8d31a0bba6c3432a44e41c814}} 
+\index{EditorView@{EditorView}!showAnnouncements@{showAnnouncements}}
+\index{showAnnouncements@{showAnnouncements}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{showAnnouncements()}{showAnnouncements()}}
+{\footnotesize\ttfamily Editor\+View\+::show\+Announcements (\begin{DoxyParamCaption}\item[{}]{trs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorView_ace95995d61f5efd2e140b8f0ff120e64}\label{classEditorView_ace95995d61f5efd2e140b8f0ff120e64}} 
+\index{EditorView@{EditorView}!state@{state}}
+\index{state@{state}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The current editor state. 
+
+\mbox{\Hypertarget{classEditorView_a70d201bea669e16f1b16301fc9d823ca}\label{classEditorView_a70d201bea669e16f1b16301fc9d823ca}} 
+\index{EditorView@{EditorView}!textDirection@{textDirection}}
+\index{textDirection@{textDirection}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{textDirection()}{textDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::text\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The text direction (\href{https://developer.mozilla.org/en-US/docs/Web/CSS/direction}{\texttt{ {\ttfamily direction}}} C\+SS property) of the editor\textquotesingle{}s content element. 
+
+\mbox{\Hypertarget{classEditorView_acbc226cd1ceb1cd0017b1e9ca4f64681}\label{classEditorView_acbc226cd1ceb1cd0017b1e9ca4f64681}} 
+\index{EditorView@{EditorView}!textDirectionAt@{textDirectionAt}}
+\index{textDirectionAt@{textDirectionAt}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{textDirectionAt()}{textDirectionAt()}}
+{\footnotesize\ttfamily Editor\+View\+::text\+Direction\+At (\begin{DoxyParamCaption}\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Find the text direction of the block at the given position, as assigned by C\+SS. 
+
+If \href{https://codemirror.net/6/docs/ref/\#view.EditorView^perLineTextDirection}{\texttt{ {\ttfamily per\+Line\+Text\+Direction}}} isn\textquotesingle{}t enabled, or the given position is outside of the viewport, this will always return the same as \href{https://codemirror.net/6/docs/ref/\#view.EditorView.textDirection}{\texttt{ {\ttfamily text\+Direction}}}. Note that this may trigger a D\+OM layout. \mbox{\Hypertarget{classEditorView_ab2a7d324c7af00f1731fd018b5036bfa}\label{classEditorView_ab2a7d324c7af00f1731fd018b5036bfa}} 
+\index{EditorView@{EditorView}!theme@{theme}}
+\index{theme@{theme}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{theme()}{theme()}}
+{\footnotesize\ttfamily static Editor\+View\+::theme (\begin{DoxyParamCaption}\item[{}]{spec,  }\item[{}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a theme extension. 
+
+The first argument can be a \href{https://github.com/marijnh/style-mod\#documentation}{\texttt{ {\ttfamily style-\/mod}}} style spec providing the styles for the theme. These will be prefixed with a generated class for the style.
+
+Because the selectors will be prefixed with a scope class, rule that directly match the editor\textquotesingle{}s \href{https://codemirror.net/6/docs/ref/\#view.EditorView.dom}{\texttt{ wrapper element}}—to which the scope class will be added—need to be explicitly differentiated by adding an {\ttfamily \&} to the selector for that element—for example {\ttfamily \&.cm-\/focused}.
+
+When {\ttfamily dark} is set to true, the theme will be marked as dark, which will cause the {\ttfamily \&dark} rules from \href{https://codemirror.net/6/docs/ref/\#view.EditorView^baseTheme}{\texttt{ base themes}} to be used (as opposed to {\ttfamily \&light} when a light theme is active). \mbox{\Hypertarget{classEditorView_a3dd58d98a9d2aac042875361f4ef4102}\label{classEditorView_a3dd58d98a9d2aac042875361f4ef4102}} 
+\index{EditorView@{EditorView}!themeClasses@{themeClasses}}
+\index{themeClasses@{themeClasses}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{themeClasses()}{themeClasses()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::theme\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the C\+SS classes for the currently active editor themes. 
+
+\mbox{\Hypertarget{classEditorView_a4327a23e67d07b6b2f323204d5c16553}\label{classEditorView_a4327a23e67d07b6b2f323204d5c16553}} 
+\index{EditorView@{EditorView}!update@{update}}
+\index{update@{update}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily Editor\+View\+::update (\begin{DoxyParamCaption}\item[{}]{transactions }\end{DoxyParamCaption})}
+
+
+
+Update the view for the given array of transactions. 
+
+This will update the visible document and selection to match the state produced by the transactions, and notify view plugins of the change. You should usually call \href{https://codemirror.net/6/docs/ref/\#view.EditorView.dispatch}{\texttt{ {\ttfamily dispatch}}} instead, which uses this as a primitive. \mbox{\Hypertarget{classEditorView_aaf56dd26b76f3da757c6ebad27e09a3b}\label{classEditorView_aaf56dd26b76f3da757c6ebad27e09a3b}} 
+\index{EditorView@{EditorView}!updateAttrs@{updateAttrs}}
+\index{updateAttrs@{updateAttrs}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{updateAttrs()}{updateAttrs()}}
+{\footnotesize\ttfamily Editor\+View\+::update\+Attrs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorView_a8b992d5de6b7251e2d0cc6734c2e1d48}\label{classEditorView_a8b992d5de6b7251e2d0cc6734c2e1d48}} 
+\index{EditorView@{EditorView}!updatePlugins@{updatePlugins}}
+\index{updatePlugins@{updatePlugins}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{updatePlugins()}{updatePlugins()}}
+{\footnotesize\ttfamily Editor\+View\+::update\+Plugins (\begin{DoxyParamCaption}\item[{}]{update }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEditorView_aec4c4e54e5047aa1f009d0f7ef468bd6}\label{classEditorView_aec4c4e54e5047aa1f009d0f7ef468bd6}} 
+\index{EditorView@{EditorView}!viewport@{viewport}}
+\index{viewport@{viewport}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{viewport()}{viewport()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+To be able to display large documents without consuming too much memory or overloading the browser, Code\+Mirror only draws the code that is visible (plus a margin around it) to the D\+OM. 
+
+This property tells you the extent of the current drawn viewport, in document positions. \mbox{\Hypertarget{classEditorView_a52fb01aeb40f3ce1b38e5abb6a45b68b}\label{classEditorView_a52fb01aeb40f3ce1b38e5abb6a45b68b}} 
+\index{EditorView@{EditorView}!viewportLineBlocks@{viewportLineBlocks}}
+\index{viewportLineBlocks@{viewportLineBlocks}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{viewportLineBlocks()}{viewportLineBlocks()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::viewport\+Line\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the extent and vertical position of all \href{https://codemirror.net/6/docs/ref/\#view.EditorView.lineBlockAt}{\texttt{ line blocks}} in the viewport. 
+
+Positions are relative to the \href{https://codemirror.net/6/docs/ref/\#view.EditorView.documentTop}{\texttt{ top of the document}}; \mbox{\Hypertarget{classEditorView_a915fed7412c50ff1c1c9ca854c910a73}\label{classEditorView_a915fed7412c50ff1c1c9ca854c910a73}} 
+\index{EditorView@{EditorView}!visibleRanges@{visibleRanges}}
+\index{visibleRanges@{visibleRanges}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{visibleRanges()}{visibleRanges()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::visible\+Ranges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+When there are, for example, large collapsed ranges in the viewport, its size can be a lot bigger than the actual visible content. 
+
+Thus, if you are doing something like styling the content in the viewport, it is preferable to only do so for these ranges, which are the subset of the viewport that is actually drawn. \mbox{\Hypertarget{classEditorView_a7024a7ef08b6f24bf16b732ccc878e7a}\label{classEditorView_a7024a7ef08b6f24bf16b732ccc878e7a}} 
+\index{EditorView@{EditorView}!win@{win}}
+\index{win@{win}!EditorView@{EditorView}}
+\doxysubsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Editor\+View\+::win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/view/dist/\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

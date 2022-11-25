@@ -1,0 +1,36 @@
+\hypertarget{escapeHtml_8js}{}\doxysection{node\+\_\+modules/jsdoc/plugins/escape\+Html.js File Reference}
+\label{escapeHtml_8js}\index{node\_modules/jsdoc/plugins/escapeHtml.js@{node\_modules/jsdoc/plugins/escapeHtml.js}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{escapeHtml_8js_a961bd2a6da67c5f825a66f814dac02b8}{handlers}}
+\begin{DoxyCompactList}\small\item\em Escape H\+T\+ML tags in descriptions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{escapeHtml_8js_a961bd2a6da67c5f825a66f814dac02b8}\label{escapeHtml_8js_a961bd2a6da67c5f825a66f814dac02b8}} 
+\index{escapeHtml.js@{escapeHtml.js}!handlers@{handlers}}
+\index{handlers@{handlers}!escapeHtml.js@{escapeHtml.js}}
+\doxysubsubsection{\texorpdfstring{handlers}{handlers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} handlers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    newDoclet(\{doclet\}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (doclet.description) \{}
+\DoxyCodeLine{            doclet.description = doclet.description}
+\DoxyCodeLine{                .replace(/\&/\mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a73c18c59a39b18382081ec00bb456d43}{g}}, \textcolor{stringliteral}{'\&amp;'})}
+\DoxyCodeLine{                .replace(/</\mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a73c18c59a39b18382081ec00bb456d43}{g}}, \textcolor{stringliteral}{'\&lt;'})}
+\DoxyCodeLine{                .replace(/\(\backslash\)\mbox{\hyperlink{markdown-it_8min_8js_a07c0e0a63b5b484807c0331c78558c9e}{r}}\(\backslash\)\mbox{\hyperlink{markdownItAnchor_8js_a3c7365c007156a2a63223e3c9909fbf8}{n}}|\(\backslash\)\mbox{\hyperlink{markdownItAnchor_8js_a3c7365c007156a2a63223e3c9909fbf8}{n}}|\(\backslash\)\mbox{\hyperlink{markdown-it_8min_8js_a07c0e0a63b5b484807c0331c78558c9e}{r}}/\mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a73c18c59a39b18382081ec00bb456d43}{g}}, \textcolor{stringliteral}{'<br>'});}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Escape H\+T\+ML tags in descriptions. 
+
+@module plugins/escape\+Html 

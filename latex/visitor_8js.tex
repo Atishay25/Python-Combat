@@ -1,0 +1,332 @@
+\hypertarget{visitor_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/src/visitor.js File Reference}
+\label{visitor_8js}\index{node\_modules/jsdoc/lib/jsdoc/src/visitor.js@{node\_modules/jsdoc/lib/jsdoc/src/visitor.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSymbolFound}{Symbol\+Found}}
+\item 
+class \mbox{\hyperlink{classJsdocCommentFound}{Jsdoc\+Comment\+Found}}
+\item 
+class \mbox{\hyperlink{classVisitor}{Visitor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{visitor_8js_ab76dc7651e60a96b3c9de63066309634}{get\+Raw\+Comment}} (\{\mbox{\hyperlink{underscore_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}}\})
+\begin{DoxyCompactList}\small\item\em Get the raw comment string for a block comment node. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_a83adce3ac3d350672dbd62b34b1b23bd}{is\+Block\+Comment}} (\{type\})
+\begin{DoxyCompactList}\small\item\em Check whether a comment node represents a block comment. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_a10b2c5460f1296e8e31e64c03dc9b4e5}{get\+Leading\+Jsdoc\+Comment}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}})
+\item 
+function \mbox{\hyperlink{visitor_8js_a80ea15b9d50411d7512c9b9e5667d597}{make\+Vars\+Finisher}} (scope\+Doclet)
+\item 
+function \mbox{\hyperlink{visitor_8js_acda5fea0b16b2f5b72db17a4d0f5a9bb}{get\+Parent\+Doclet\+From\+Event}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, \{doclet\})
+\item 
+function \mbox{\hyperlink{visitor_8js_aab12d6b3190940c48f6b6e2ee943ce25}{make\+Inline\+Params\+Finisher}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}})
+\begin{DoxyCompactList}\small\item\em For function parameters that have inline documentation, create a function that will merge the inline documentation into the function\textquotesingle{}s doclet. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_afe6f8690d4d59ff302e7cd668e175a67}{find\+Rest\+Param}} (params)
+\begin{DoxyCompactList}\small\item\em Given an array of nodes that represent function parameters, find the node for the rest parameter, if any. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_ae35484ffacb58adb7803673b891414ce}{make\+Rest\+Param\+Finisher}} ()
+\begin{DoxyCompactList}\small\item\em For functions that may include a rest parameter, create a function that will automatically update the rest parameter\textquotesingle{}s documentation to indicate that the parameter is repeatable. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_ac5e4f51ceca5f001ebe68bc74c9dbd4a}{find\+Default\+Params}} (params)
+\begin{DoxyCompactList}\small\item\em Given an array of nodes that represent function parameters, find the nodes for the default parameters, if any. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_a92b87da97841dafafb714cf32c62e307}{make\+Default\+Param\+Finisher}} ()
+\begin{DoxyCompactList}\small\item\em For functions that may have at least one parameter with default values, create a function that will automatically add the parameters\textquotesingle{} default values to the function\textquotesingle{}s documentation. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_a29e8e2747d7f29dc284f73a148a681c8}{make\+Constructor\+Finisher}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}})
+\begin{DoxyCompactList}\small\item\em For method definitions that are constructors, create a function that will merge portions of the constructor\textquotesingle{}s doclet into the class\textquotesingle{}s doclet, provided that a doclet exists for the class. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_aa396865802b42dfb2c71fb09b10bfc14}{make\+Async\+Function\+Finisher}} ()
+\begin{DoxyCompactList}\small\item\em Create a function that will add an {\ttfamily async} property to the doclet for async functions. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_a29c53a2b6120b3509c64f453bb18d063}{make\+Private\+Property\+Finisher}} ()
+\begin{DoxyCompactList}\small\item\em Create a function that will mark a doclet as private. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_a4c94453b986b8201a1be8a09466d2291}{make\+Generator\+Finisher}} ()
+\begin{DoxyCompactList}\small\item\em Create a function that will mark a doclet as a generator function. \end{DoxyCompactList}\item 
+function \mbox{\hyperlink{visitor_8js_a6736729a3663dbe55006ed0922e3bb39}{has\+Comments}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}})
+\item 
+function \mbox{\hyperlink{visitor_8js_abc39b9548dc68b18a2b72032afbe55b2}{remove\+Comment\+Delimiters}} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aa4f959ffc63d22c5f91c29e06266fe14}{comment}})
+\item 
+function \mbox{\hyperlink{visitor_8js_a21b159c2856d411f8d7572c05a61be6a}{update\+Comment\+Node}} (comment\+Node, \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aa4f959ffc63d22c5f91c29e06266fe14}{comment}})
+\item 
+function \mbox{\hyperlink{visitor_8js_a2f2cf11e24cd3de7cf03ba8e5028e22b}{track\+Vars}} (\mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, \{enclosing\+Scope\}, \{code, finishers\})
+\item 
+function \mbox{\hyperlink{visitor_8js_a538a3dc372af28b00bfa6871ff866a53}{make\+Symbol\+Found\+Event}} (\mbox{\hyperlink{es_2shared_2watch_8js_ae82a1ee62fff336ee706302d7058daec}{node}}, \mbox{\hyperlink{src_2marked_8js_a90b13f0e8e0573d4c76965e92254adc4}{parser}}, \mbox{\hyperlink{babel-parser_8js_a1f30c0214b185b6cba9f4c3d5115925f}{filename}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{visitor_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}{jsdoc}}
+\begin{DoxyCompactList}\small\item\em @module jsdoc/src/visitor \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{visitor_8js_a00a15eea64e6c06826721371906c1870}{Syntax}} = jsdoc.\+src.\+syntax.\+Syntax
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{visitor_8js_a4c1b439ba91c9912b77134d1bc5f790f}{Visitor}} = \mbox{\hyperlink{classVisitor}{Visitor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{visitor_8js_ac5e4f51ceca5f001ebe68bc74c9dbd4a}\label{visitor_8js_ac5e4f51ceca5f001ebe68bc74c9dbd4a}} 
+\index{visitor.js@{visitor.js}!findDefaultParams@{findDefaultParams}}
+\index{findDefaultParams@{findDefaultParams}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{findDefaultParams()}{findDefaultParams()}}
+{\footnotesize\ttfamily function find\+Default\+Params (\begin{DoxyParamCaption}\item[{}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Given an array of nodes that represent function parameters, find the nodes for the default parameters, if any. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array.$<$\+Object$>$\}} & params -\/ An array of nodes that represent function parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array.$<$\+Object$>$\} The nodes for the default parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_afe6f8690d4d59ff302e7cd668e175a67}\label{visitor_8js_afe6f8690d4d59ff302e7cd668e175a67}} 
+\index{visitor.js@{visitor.js}!findRestParam@{findRestParam}}
+\index{findRestParam@{findRestParam}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{findRestParam()}{findRestParam()}}
+{\footnotesize\ttfamily function find\+Rest\+Param (\begin{DoxyParamCaption}\item[{}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Given an array of nodes that represent function parameters, find the node for the rest parameter, if any. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array.$<$\+Object$>$\}} & params -\/ An array of nodes that represent function parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object?\} The node for the rest parameter. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_a10b2c5460f1296e8e31e64c03dc9b4e5}\label{visitor_8js_a10b2c5460f1296e8e31e64c03dc9b4e5}} 
+\index{visitor.js@{visitor.js}!getLeadingJsdocComment@{getLeadingJsdocComment}}
+\index{getLeadingJsdocComment@{getLeadingJsdocComment}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{getLeadingJsdocComment()}{getLeadingJsdocComment()}}
+{\footnotesize\ttfamily function get\+Leading\+Jsdoc\+Comment (\begin{DoxyParamCaption}\item[{}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{visitor_8js_acda5fea0b16b2f5b72db17a4d0f5a9bb}\label{visitor_8js_acda5fea0b16b2f5b72db17a4d0f5a9bb}} 
+\index{visitor.js@{visitor.js}!getParentDocletFromEvent@{getParentDocletFromEvent}}
+\index{getParentDocletFromEvent@{getParentDocletFromEvent}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{getParentDocletFromEvent()}{getParentDocletFromEvent()}}
+{\footnotesize\ttfamily function get\+Parent\+Doclet\+From\+Event (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{\{doclet\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{visitor_8js_ab76dc7651e60a96b3c9de63066309634}\label{visitor_8js_ab76dc7651e60a96b3c9de63066309634}} 
+\index{visitor.js@{visitor.js}!getRawComment@{getRawComment}}
+\index{getRawComment@{getRawComment}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{getRawComment()}{getRawComment()}}
+{\footnotesize\ttfamily function get\+Raw\+Comment (\begin{DoxyParamCaption}\item[{}]{\{value\} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get the raw comment string for a block comment node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Object\}} & comment -\/ A comment node with {\ttfamily type} and {\ttfamily value} properties. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{visitor_8js_a6736729a3663dbe55006ed0922e3bb39}\label{visitor_8js_a6736729a3663dbe55006ed0922e3bb39}} 
+\index{visitor.js@{visitor.js}!hasComments@{hasComments}}
+\index{hasComments@{hasComments}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{hasComments()}{hasComments()}}
+{\footnotesize\ttfamily function has\+Comments (\begin{DoxyParamCaption}\item[{}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{visitor_8js_a83adce3ac3d350672dbd62b34b1b23bd}\label{visitor_8js_a83adce3ac3d350672dbd62b34b1b23bd}} 
+\index{visitor.js@{visitor.js}!isBlockComment@{isBlockComment}}
+\index{isBlockComment@{isBlockComment}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{isBlockComment()}{isBlockComment()}}
+{\footnotesize\ttfamily function is\+Block\+Comment (\begin{DoxyParamCaption}\item[{}]{\{type\} }\end{DoxyParamCaption})}
+
+
+
+Check whether a comment node represents a block comment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Object\}} & comment -\/ A comment node with {\ttfamily type} and {\ttfamily value} properties. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the comment is a block comment, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_aa396865802b42dfb2c71fb09b10bfc14}\label{visitor_8js_aa396865802b42dfb2c71fb09b10bfc14}} 
+\index{visitor.js@{visitor.js}!makeAsyncFunctionFinisher@{makeAsyncFunctionFinisher}}
+\index{makeAsyncFunctionFinisher@{makeAsyncFunctionFinisher}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{makeAsyncFunctionFinisher()}{makeAsyncFunctionFinisher()}}
+{\footnotesize\ttfamily function make\+Async\+Function\+Finisher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a function that will add an {\ttfamily async} property to the doclet for async functions. 
+
+\begin{DoxyReturn}{Returns}
+\{function\} A function that adds an {\ttfamily async} property to the doclet of async functions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_a29e8e2747d7f29dc284f73a148a681c8}\label{visitor_8js_a29e8e2747d7f29dc284f73a148a681c8}} 
+\index{visitor.js@{visitor.js}!makeConstructorFinisher@{makeConstructorFinisher}}
+\index{makeConstructorFinisher@{makeConstructorFinisher}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{makeConstructorFinisher()}{makeConstructorFinisher()}}
+{\footnotesize\ttfamily function make\+Constructor\+Finisher (\begin{DoxyParamCaption}\item[{}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+For method definitions that are constructors, create a function that will merge portions of the constructor\textquotesingle{}s doclet into the class\textquotesingle{}s doclet, provided that a doclet exists for the class. 
+
+Merging the constructor\textquotesingle{}s documentation allows ES 2015 classes to be documented in a natural way, with separate J\+S\+Doc comments for the class and its constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/src/parser.\+Parser\}} & parser -\/ The J\+S\+Doc parser. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{function\} A function that merges the constructor\textquotesingle{}s doclet into the class\textquotesingle{}s doclet. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_a92b87da97841dafafb714cf32c62e307}\label{visitor_8js_a92b87da97841dafafb714cf32c62e307}} 
+\index{visitor.js@{visitor.js}!makeDefaultParamFinisher@{makeDefaultParamFinisher}}
+\index{makeDefaultParamFinisher@{makeDefaultParamFinisher}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{makeDefaultParamFinisher()}{makeDefaultParamFinisher()}}
+{\footnotesize\ttfamily function make\+Default\+Param\+Finisher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+For functions that may have at least one parameter with default values, create a function that will automatically add the parameters\textquotesingle{} default values to the function\textquotesingle{}s documentation. 
+
+If any default value is already documented, the function\textquotesingle{}s doclet will remain unchanged.
+
+This function is only intended to handle default parameters whose node type is {\ttfamily Syntax.\+Literal} (string, numeric, and boolean literals). This is because more complex default values may include, for example, references to internal variables, which it may not make sense to include in documentation.
+
+\begin{DoxyReturn}{Returns}
+\{function\} A function that updates the function doclet to include the default values of parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_a4c94453b986b8201a1be8a09466d2291}\label{visitor_8js_a4c94453b986b8201a1be8a09466d2291}} 
+\index{visitor.js@{visitor.js}!makeGeneratorFinisher@{makeGeneratorFinisher}}
+\index{makeGeneratorFinisher@{makeGeneratorFinisher}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{makeGeneratorFinisher()}{makeGeneratorFinisher()}}
+{\footnotesize\ttfamily function make\+Generator\+Finisher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a function that will mark a doclet as a generator function. 
+
+\begin{DoxyReturn}{Returns}
+\{function\} A function that marks a doclet as a generator function. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_aab12d6b3190940c48f6b6e2ee943ce25}\label{visitor_8js_aab12d6b3190940c48f6b6e2ee943ce25}} 
+\index{visitor.js@{visitor.js}!makeInlineParamsFinisher@{makeInlineParamsFinisher}}
+\index{makeInlineParamsFinisher@{makeInlineParamsFinisher}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{makeInlineParamsFinisher()}{makeInlineParamsFinisher()}}
+{\footnotesize\ttfamily function make\+Inline\+Params\+Finisher (\begin{DoxyParamCaption}\item[{}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+For function parameters that have inline documentation, create a function that will merge the inline documentation into the function\textquotesingle{}s doclet. 
+
+If the parameter is already documented in the function\textquotesingle{}s doclet, the inline documentation will be ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{module\+:jsdoc/src/parser.\+Parser\}} & parser -\/ The J\+S\+Doc parser. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{function\} A function that merges a parameter\textquotesingle{}s inline documentation into the function\textquotesingle{}s doclet. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_a29c53a2b6120b3509c64f453bb18d063}\label{visitor_8js_a29c53a2b6120b3509c64f453bb18d063}} 
+\index{visitor.js@{visitor.js}!makePrivatePropertyFinisher@{makePrivatePropertyFinisher}}
+\index{makePrivatePropertyFinisher@{makePrivatePropertyFinisher}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{makePrivatePropertyFinisher()}{makePrivatePropertyFinisher()}}
+{\footnotesize\ttfamily function make\+Private\+Property\+Finisher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a function that will mark a doclet as private. 
+
+\begin{DoxyReturn}{Returns}
+\{function\} A function that marks a doclet as private. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_ae35484ffacb58adb7803673b891414ce}\label{visitor_8js_ae35484ffacb58adb7803673b891414ce}} 
+\index{visitor.js@{visitor.js}!makeRestParamFinisher@{makeRestParamFinisher}}
+\index{makeRestParamFinisher@{makeRestParamFinisher}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{makeRestParamFinisher()}{makeRestParamFinisher()}}
+{\footnotesize\ttfamily function make\+Rest\+Param\+Finisher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+For functions that may include a rest parameter, create a function that will automatically update the rest parameter\textquotesingle{}s documentation to indicate that the parameter is repeatable. 
+
+If the parameter is not documented, the function\textquotesingle{}s doclet will remain unchanged.
+
+\begin{DoxyReturn}{Returns}
+\{function\} A function that updates the rest parameter\textquotesingle{}s documentation to indicate that the parameter is repeatable. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visitor_8js_a538a3dc372af28b00bfa6871ff866a53}\label{visitor_8js_a538a3dc372af28b00bfa6871ff866a53}} 
+\index{visitor.js@{visitor.js}!makeSymbolFoundEvent@{makeSymbolFoundEvent}}
+\index{makeSymbolFoundEvent@{makeSymbolFoundEvent}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{makeSymbolFoundEvent()}{makeSymbolFoundEvent()}}
+{\footnotesize\ttfamily function make\+Symbol\+Found\+Event (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{parser,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{visitor_8js_a80ea15b9d50411d7512c9b9e5667d597}\label{visitor_8js_a80ea15b9d50411d7512c9b9e5667d597}} 
+\index{visitor.js@{visitor.js}!makeVarsFinisher@{makeVarsFinisher}}
+\index{makeVarsFinisher@{makeVarsFinisher}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{makeVarsFinisher()}{makeVarsFinisher()}}
+{\footnotesize\ttfamily function make\+Vars\+Finisher (\begin{DoxyParamCaption}\item[{}]{scope\+Doclet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{visitor_8js_abc39b9548dc68b18a2b72032afbe55b2}\label{visitor_8js_abc39b9548dc68b18a2b72032afbe55b2}} 
+\index{visitor.js@{visitor.js}!removeCommentDelimiters@{removeCommentDelimiters}}
+\index{removeCommentDelimiters@{removeCommentDelimiters}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{removeCommentDelimiters()}{removeCommentDelimiters()}}
+{\footnotesize\ttfamily function remove\+Comment\+Delimiters (\begin{DoxyParamCaption}\item[{}]{comment }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{visitor_8js_a2f2cf11e24cd3de7cf03ba8e5028e22b}\label{visitor_8js_a2f2cf11e24cd3de7cf03ba8e5028e22b}} 
+\index{visitor.js@{visitor.js}!trackVars@{trackVars}}
+\index{trackVars@{trackVars}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{trackVars()}{trackVars()}}
+{\footnotesize\ttfamily function track\+Vars (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{\{enclosing\+Scope\},  }\item[{}]{\{code, finishers\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{visitor_8js_a21b159c2856d411f8d7572c05a61be6a}\label{visitor_8js_a21b159c2856d411f8d7572c05a61be6a}} 
+\index{visitor.js@{visitor.js}!updateCommentNode@{updateCommentNode}}
+\index{updateCommentNode@{updateCommentNode}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{updateCommentNode()}{updateCommentNode()}}
+{\footnotesize\ttfamily function update\+Comment\+Node (\begin{DoxyParamCaption}\item[{}]{comment\+Node,  }\item[{}]{comment }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{visitor_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}\label{visitor_8js_ab5e01ae8ecd7dc7d8ede293d47f72cbe}} 
+\index{visitor.js@{visitor.js}!jsdoc@{jsdoc}}
+\index{jsdoc@{jsdoc}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{jsdoc}{jsdoc}}
+{\footnotesize\ttfamily const jsdoc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    doclet: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/doclet'}),}
+\DoxyCodeLine{    \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/name'}),}
+\DoxyCodeLine{    src: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{jsdoc_2lib_2jsdoc_2src_2walker_8js_a074155f38b7fd150360f6ae12216c040}{astnode}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/src/astnode'}),}
+\DoxyCodeLine{        syntax: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/src/syntax'})}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \mbox{\hyperlink{_0drollup_2plugin-node-resolve_2dist_2cjs_2index_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}: \{}
+\DoxyCodeLine{        \mbox{\hyperlink{level1_8js_acc69707810d1669872f8199f16a0da20}{logger}}: \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'jsdoc/util/logger'})}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+@module jsdoc/src/visitor 
+
+\mbox{\Hypertarget{visitor_8js_a00a15eea64e6c06826721371906c1870}\label{visitor_8js_a00a15eea64e6c06826721371906c1870}} 
+\index{visitor.js@{visitor.js}!Syntax@{Syntax}}
+\index{Syntax@{Syntax}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{Syntax}{Syntax}}
+{\footnotesize\ttfamily const Syntax = jsdoc.\+src.\+syntax.\+Syntax}
+
+\mbox{\Hypertarget{visitor_8js_a4c1b439ba91c9912b77134d1bc5f790f}\label{visitor_8js_a4c1b439ba91c9912b77134d1bc5f790f}} 
+\index{visitor.js@{visitor.js}!Visitor@{Visitor}}
+\index{Visitor@{Visitor}!visitor.js@{visitor.js}}
+\doxysubsubsection{\texorpdfstring{Visitor}{Visitor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{classVisitor}{Visitor}} = \mbox{\hyperlink{classVisitor}{Visitor}}}
+

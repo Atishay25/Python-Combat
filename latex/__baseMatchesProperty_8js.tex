@@ -1,0 +1,126 @@
+\hypertarget{__baseMatchesProperty_8js}{}\doxysection{node\+\_\+modules/lodash/\+\_\+base\+Matches\+Property.js File Reference}
+\label{__baseMatchesProperty_8js}\index{node\_modules/lodash/\_baseMatchesProperty.js@{node\_modules/lodash/\_baseMatchesProperty.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__baseMatchesProperty_8js_ac8de5af8f1d5e0ef6c33e874f2d6b7dd}{base\+Matches\+Property}} (\mbox{\hyperlink{shared_2rollup_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, src\+Value)
+\begin{DoxyCompactList}\small\item\em The base implementation of {\ttfamily \+\_\+.\+matches\+Property} which doesn\textquotesingle{}t clone {\ttfamily src\+Value}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__baseMatchesProperty_8js_a8c1986d743948b59494e00293d6be3a7}{base\+Is\+Equal}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+base\+Is\+Equal\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__baseMatchesProperty_8js_a45ac571dc1fe782a18a1d6467cbb2a82}{get}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./get\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__baseMatchesProperty_8js_a050988059f7c22a72dc947f2057938fa}{has\+In}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./has\+In\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__baseMatchesProperty_8js_a2608da1d93121148aa1714b395a0c429}{is\+Key}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+is\+Key\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__baseMatchesProperty_8js_ab1c5bd17af139a20d150011cd19853d2}{is\+Strict\+Comparable}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+is\+Strict\+Comparable\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__baseMatchesProperty_8js_ae8b5f2c4f94433b454936a3e0726bf59}{matches\+Strict\+Comparable}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+matches\+Strict\+Comparable\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__baseMatchesProperty_8js_a7645946286f93e2d4eb13531e86b572c}{to\+Key}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+to\+Key\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__baseMatchesProperty_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}{C\+O\+M\+P\+A\+R\+E\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+AG}} = 1
+\begin{DoxyCompactList}\small\item\em Used to compose bitmasks for value comparisons. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__baseMatchesProperty_8js_add425400a9c8c88279e4c24a941902ac}{C\+O\+M\+P\+A\+R\+E\+\_\+\+U\+N\+O\+R\+D\+E\+R\+E\+D\+\_\+\+F\+L\+AG}} = 2
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__baseMatchesProperty_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__baseMatchesProperty_8js_ac8de5af8f1d5e0ef6c33e874f2d6b7dd}{base\+Matches\+Property}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__baseMatchesProperty_8js_ac8de5af8f1d5e0ef6c33e874f2d6b7dd}\label{__baseMatchesProperty_8js_ac8de5af8f1d5e0ef6c33e874f2d6b7dd}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!baseMatchesProperty@{baseMatchesProperty}}
+\index{baseMatchesProperty@{baseMatchesProperty}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{baseMatchesProperty()}{baseMatchesProperty()}}
+{\footnotesize\ttfamily function base\+Matches\+Property (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{src\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The base implementation of {\ttfamily \+\_\+.\+matches\+Property} which doesn\textquotesingle{}t clone {\ttfamily src\+Value}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & path The path of the property to get. \\
+\hline
+{\em \{$\ast$\}} & src\+Value The value to match. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new spec function. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__baseMatchesProperty_8js_a8c1986d743948b59494e00293d6be3a7}\label{__baseMatchesProperty_8js_a8c1986d743948b59494e00293d6be3a7}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!baseIsEqual@{baseIsEqual}}
+\index{baseIsEqual@{baseIsEqual}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{baseIsEqual}{baseIsEqual}}
+{\footnotesize\ttfamily var base\+Is\+Equal = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+base\+Is\+Equal\textquotesingle{})}
+
+\mbox{\Hypertarget{__baseMatchesProperty_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}\label{__baseMatchesProperty_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!COMPARE\_PARTIAL\_FLAG@{COMPARE\_PARTIAL\_FLAG}}
+\index{COMPARE\_PARTIAL\_FLAG@{COMPARE\_PARTIAL\_FLAG}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{COMPARE\_PARTIAL\_FLAG}{COMPARE\_PARTIAL\_FLAG}}
+{\footnotesize\ttfamily var C\+O\+M\+P\+A\+R\+E\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+AG = 1}
+
+
+
+Used to compose bitmasks for value comparisons. 
+
+\mbox{\Hypertarget{__baseMatchesProperty_8js_add425400a9c8c88279e4c24a941902ac}\label{__baseMatchesProperty_8js_add425400a9c8c88279e4c24a941902ac}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!COMPARE\_UNORDERED\_FLAG@{COMPARE\_UNORDERED\_FLAG}}
+\index{COMPARE\_UNORDERED\_FLAG@{COMPARE\_UNORDERED\_FLAG}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{COMPARE\_UNORDERED\_FLAG}{COMPARE\_UNORDERED\_FLAG}}
+{\footnotesize\ttfamily var C\+O\+M\+P\+A\+R\+E\+\_\+\+U\+N\+O\+R\+D\+E\+R\+E\+D\+\_\+\+F\+L\+AG = 2}
+
+\mbox{\Hypertarget{__baseMatchesProperty_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{__baseMatchesProperty_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!exports@{exports}}
+\index{exports@{exports}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__baseMatchesProperty_8js_ac8de5af8f1d5e0ef6c33e874f2d6b7dd}{base\+Matches\+Property}}}
+
+\mbox{\Hypertarget{__baseMatchesProperty_8js_a45ac571dc1fe782a18a1d6467cbb2a82}\label{__baseMatchesProperty_8js_a45ac571dc1fe782a18a1d6467cbb2a82}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!get@{get}}
+\index{get@{get}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{get}{get}}
+{\footnotesize\ttfamily var get = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./get\textquotesingle{})}
+
+\mbox{\Hypertarget{__baseMatchesProperty_8js_a050988059f7c22a72dc947f2057938fa}\label{__baseMatchesProperty_8js_a050988059f7c22a72dc947f2057938fa}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!hasIn@{hasIn}}
+\index{hasIn@{hasIn}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{hasIn}{hasIn}}
+{\footnotesize\ttfamily var has\+In = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./has\+In\textquotesingle{})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2hasIn_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/has\+In.\+js}}.\end{Desc}
+\mbox{\Hypertarget{__baseMatchesProperty_8js_a2608da1d93121148aa1714b395a0c429}\label{__baseMatchesProperty_8js_a2608da1d93121148aa1714b395a0c429}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!isKey@{isKey}}
+\index{isKey@{isKey}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{isKey}{isKey}}
+{\footnotesize\ttfamily var is\+Key = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+is\+Key\textquotesingle{})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2lodash_2property_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/lodash/property.\+js}}.\end{Desc}
+\mbox{\Hypertarget{__baseMatchesProperty_8js_ab1c5bd17af139a20d150011cd19853d2}\label{__baseMatchesProperty_8js_ab1c5bd17af139a20d150011cd19853d2}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!isStrictComparable@{isStrictComparable}}
+\index{isStrictComparable@{isStrictComparable}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{isStrictComparable}{isStrictComparable}}
+{\footnotesize\ttfamily var is\+Strict\+Comparable = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+is\+Strict\+Comparable\textquotesingle{})}
+
+\mbox{\Hypertarget{__baseMatchesProperty_8js_ae8b5f2c4f94433b454936a3e0726bf59}\label{__baseMatchesProperty_8js_ae8b5f2c4f94433b454936a3e0726bf59}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!matchesStrictComparable@{matchesStrictComparable}}
+\index{matchesStrictComparable@{matchesStrictComparable}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{matchesStrictComparable}{matchesStrictComparable}}
+{\footnotesize\ttfamily var matches\+Strict\+Comparable = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+matches\+Strict\+Comparable\textquotesingle{})}
+
+\mbox{\Hypertarget{__baseMatchesProperty_8js_a7645946286f93e2d4eb13531e86b572c}\label{__baseMatchesProperty_8js_a7645946286f93e2d4eb13531e86b572c}} 
+\index{\_baseMatchesProperty.js@{\_baseMatchesProperty.js}!toKey@{toKey}}
+\index{toKey@{toKey}!\_baseMatchesProperty.js@{\_baseMatchesProperty.js}}
+\doxysubsubsection{\texorpdfstring{toKey}{toKey}}
+{\footnotesize\ttfamily var to\+Key = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+to\+Key\textquotesingle{})}
+

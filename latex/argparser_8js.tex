@@ -1,0 +1,121 @@
+\hypertarget{argparser_8js}{}\doxysection{node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.js File Reference}
+\label{argparser_8js}\index{node\_modules/jsdoc/lib/jsdoc/opts/argparser.js@{node\_modules/jsdoc/lib/jsdoc/opts/argparser.js}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classArgParser}{Arg\+Parser}}
+\begin{DoxyCompactList}\small\item\em A parser to interpret the key-\/value pairs entered on the command line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{argparser_8js_a947f85494fa6439896501273d2bfe9b1}{padding}} (\mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}})
+\item 
+function \mbox{\hyperlink{argparser_8js_af8577a82b980ca4cb125381bc125d41c}{pad\+Left}} (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}})
+\item 
+function \mbox{\hyperlink{argparser_8js_a7b507b9f315c8b1dd3b2acdd9dc0cd3d}{pad\+Right}} (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, \mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{length}})
+\item 
+function \mbox{\hyperlink{argparser_8js_a220601277320c128ef30103e9801640d}{find\+Max\+Length}} (arr)
+\item 
+function \mbox{\hyperlink{argparser_8js_a321f9992bd58dfd2ef0cf396ca4a24ef}{concat\+With\+Max\+Length}} (items, max\+Length)
+\item 
+function \mbox{\hyperlink{argparser_8js_acfce6cb005499840f80b71c17516cad1}{format\+Help\+Info}} (\{names, descriptions\})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{argparser_8js_af093e5fb34c1cb891e06da9bf98af093}{\+\_\+}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2underscore-array-methods_8js_a1f9d2946a42d502ce0e8a04b3f6bd1cb}{underscore}}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classParse}{Parse}} the command line arguments. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{argparser_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+const \mbox{\hyperlink{argparser_8js_a5003cc3d54412fd1173126a720e10180}{has\+Own\+Prop}} = \mbox{\hyperlink{underscore_2underscore_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{argparser_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{classArgParser}{Arg\+Parser}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{argparser_8js_a321f9992bd58dfd2ef0cf396ca4a24ef}\label{argparser_8js_a321f9992bd58dfd2ef0cf396ca4a24ef}} 
+\index{argparser.js@{argparser.js}!concatWithMaxLength@{concatWithMaxLength}}
+\index{concatWithMaxLength@{concatWithMaxLength}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{concatWithMaxLength()}{concatWithMaxLength()}}
+{\footnotesize\ttfamily function concat\+With\+Max\+Length (\begin{DoxyParamCaption}\item[{}]{items,  }\item[{}]{max\+Length }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{argparser_8js_a220601277320c128ef30103e9801640d}\label{argparser_8js_a220601277320c128ef30103e9801640d}} 
+\index{argparser.js@{argparser.js}!findMaxLength@{findMaxLength}}
+\index{findMaxLength@{findMaxLength}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{findMaxLength()}{findMaxLength()}}
+{\footnotesize\ttfamily function find\+Max\+Length (\begin{DoxyParamCaption}\item[{}]{arr }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{argparser_8js_acfce6cb005499840f80b71c17516cad1}\label{argparser_8js_acfce6cb005499840f80b71c17516cad1}} 
+\index{argparser.js@{argparser.js}!formatHelpInfo@{formatHelpInfo}}
+\index{formatHelpInfo@{formatHelpInfo}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{formatHelpInfo()}{formatHelpInfo()}}
+{\footnotesize\ttfamily function format\+Help\+Info (\begin{DoxyParamCaption}\item[{}]{\{names, descriptions\} }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{argparser_8js_a947f85494fa6439896501273d2bfe9b1}\label{argparser_8js_a947f85494fa6439896501273d2bfe9b1}} 
+\index{argparser.js@{argparser.js}!padding@{padding}}
+\index{padding@{padding}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{padding()}{padding()}}
+{\footnotesize\ttfamily function padding (\begin{DoxyParamCaption}\item[{}]{length }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{argparser_8js_af8577a82b980ca4cb125381bc125d41c}\label{argparser_8js_af8577a82b980ca4cb125381bc125d41c}} 
+\index{argparser.js@{argparser.js}!padLeft@{padLeft}}
+\index{padLeft@{padLeft}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{padLeft()}{padLeft()}}
+{\footnotesize\ttfamily function pad\+Left (\begin{DoxyParamCaption}\item[{}]{str,  }\item[{}]{length }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+\mbox{\Hypertarget{argparser_8js_a7b507b9f315c8b1dd3b2acdd9dc0cd3d}\label{argparser_8js_a7b507b9f315c8b1dd3b2acdd9dc0cd3d}} 
+\index{argparser.js@{argparser.js}!padRight@{padRight}}
+\index{padRight@{padRight}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{padRight()}{padRight()}}
+{\footnotesize\ttfamily function pad\+Right (\begin{DoxyParamCaption}\item[{}]{str,  }\item[{}]{length }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}.\end{Desc}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{argparser_8js_af093e5fb34c1cb891e06da9bf98af093}\label{argparser_8js_af093e5fb34c1cb891e06da9bf98af093}} 
+\index{argparser.js@{argparser.js}!\_@{\_}}
+\index{\_@{\_}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{\_}{\_}}
+{\footnotesize\ttfamily const \+\_\+ = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2underscore-array-methods_8js_a1f9d2946a42d502ce0e8a04b3f6bd1cb}{underscore}}\textquotesingle{})}
+
+
+
+\mbox{\hyperlink{classParse}{Parse}} the command line arguments. 
+
+@module jsdoc/opts/argparser \mbox{\Hypertarget{argparser_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{argparser_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{argparser.js@{argparser.js}!exports@{exports}}
+\index{exports@{exports}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{classArgParser}{Arg\+Parser}}}
+
+\mbox{\Hypertarget{argparser_8js_a5003cc3d54412fd1173126a720e10180}\label{argparser_8js_a5003cc3d54412fd1173126a720e10180}} 
+\index{argparser.js@{argparser.js}!hasOwnProp@{hasOwnProp}}
+\index{hasOwnProp@{hasOwnProp}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{hasOwnProp}{hasOwnProp}}
+{\footnotesize\ttfamily const has\+Own\+Prop = \mbox{\hyperlink{underscore_2underscore_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}}
+
+\mbox{\Hypertarget{argparser_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}\label{argparser_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}} 
+\index{argparser.js@{argparser.js}!util@{util}}
+\index{util@{util}!argparser.js@{argparser.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily const util = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}util\textquotesingle{})}
+

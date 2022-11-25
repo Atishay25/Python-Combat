@@ -1,0 +1,709 @@
+\hypertarget{markdown-it_2lib_2index_8js}{}\doxysection{node\+\_\+modules/markdown-\/it/lib/index.js File Reference}
+\label{markdown-it_2lib_2index_8js}\index{node\_modules/markdown-\/it/lib/index.js@{node\_modules/markdown-\/it/lib/index.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{markdown-it_2lib_2index_8js_a4757ab7e0bcdf0023f12a91a0debade0}{validate\+Link}} (\mbox{\hyperlink{rules_8js_a4dcd085fa8468d0a7a47cda1e3d38edf}{url}})
+\item 
+function \mbox{\hyperlink{markdown-it_2lib_2index_8js_a7a022a889dbd7e329a36d4c47719d4bf}{normalize\+Link}} (\mbox{\hyperlink{rules_8js_a4dcd085fa8468d0a7a47cda1e3d38edf}{url}})
+\item 
+function \mbox{\hyperlink{markdown-it_2lib_2index_8js_a1a928aafcea05bb599266c3a51bb8b9d}{normalize\+Link\+Text}} (\mbox{\hyperlink{rules_8js_a4dcd085fa8468d0a7a47cda1e3d38edf}{url}})
+\item 
+function \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} (preset\+Name, \mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}})
+\begin{DoxyCompactList}\small\item\em class Markdown\+It \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_a7b58b8887c6d26e09f79fbacfbda7f53}{utils}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./common/utils\textquotesingle{})
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./helpers\textquotesingle{})
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_aa20bb40d770979206febdc8399a428f4}{Renderer}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./renderer\textquotesingle{})
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_a4005aba793a24d5696f3765927638419}{Parser\+Core}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./parser\+\_\+core\textquotesingle{})
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_a27e04bac1a65baae63285e8cc5b8c186}{Parser\+Block}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./parser\+\_\+block\textquotesingle{})
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_aa5845f1aefae114d2799aeb8951ad645}{Parser\+Inline}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./parser\+\_\+inline\textquotesingle{})
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_a23a1caad8e0609ad050cfeaf35999a23}{Linkify\+It}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}linkify-\/\mbox{\hyperlink{lodash_8min_8js_a53bb00c7767c3df3cdef39d2863ce11f}{it}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_a998e44fe58967e82b0633ff2cf102f54}{mdurl}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}mdurl\textquotesingle{})
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_af21403e87687a3dbac3dfee1440bd946}{punycode}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}punycode\textquotesingle{})
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}}
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_aec2cdf7f8939204924528c287a96934e}{B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+\_\+\+RE}} = /$^\wedge$(vbscript$\vert$javascript$\vert$file$\vert$\mbox{\hyperlink{resolve_2lib_2core_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})\+:/
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_a5cbf6e13f2e2b7e0ad156395e6769823}{G\+O\+O\+D\+\_\+\+D\+A\+T\+A\+\_\+\+RE}} = /$^\wedge$data\+:image\textbackslash{}/(gif$\vert$png$\vert$jpeg$\vert$webp)
+\item 
+var \mbox{\hyperlink{markdown-it_2lib_2index_8js_a2403fd25881ab7699db9a2402599bd81}{R\+E\+C\+O\+D\+E\+\_\+\+H\+O\+S\+T\+N\+A\+M\+E\+\_\+\+F\+OR}} = \mbox{[} \textquotesingle{}http\+:\textquotesingle{}, \textquotesingle{}https\+:\textquotesingle{}, \textquotesingle{}mailto\+:\textquotesingle{} \mbox{]}
+\item 
+\mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_a46a3ad468d38a71c4902149caead023e}{set}}
+\begin{DoxyCompactList}\small\item\em chainable Markdown\+It.\+set(options) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_a49846ccda5a89c82f868de79d89d5827}{configure}}
+\begin{DoxyCompactList}\small\item\em chainable, internal Markdown\+It.\+configure(presets) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_a44f74913494bbd4bd28f3ede02e96fe4}{enable}}
+\begin{DoxyCompactList}\small\item\em chainable Markdown\+It.\+enable(list, ignore\+Invalid) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_a736049e9a07bb2eca60b0ab8eb0ddd2c}{disable}}
+\begin{DoxyCompactList}\small\item\em chainable Markdown\+It.\+disable(list, ignore\+Invalid) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_ae9e1b73cbf7f6e93a0c8bf0da56811b8}{use}}
+\begin{DoxyCompactList}\small\item\em chainable Markdown\+It.\+use(plugin, params) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_a0b3d47f88fd68c8beb23a7d74a419999}{parse}}
+\begin{DoxyCompactList}\small\item\em internal Markdown\+It.\+parse(src, env) -\/$>$ Array \end{DoxyCompactList}\item 
+\mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_aa24bf11c50e20f7ff6563d43f77bcf9a}{render}}
+\begin{DoxyCompactList}\small\item\em Markdown\+It.\+render(src \mbox{[}, env\mbox{]}) -\/$>$ String. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_a4cb37f60badac55bc835101360fe2715}{parse\+Inline}}
+\begin{DoxyCompactList}\small\item\em internal Markdown\+It.\+parse\+Inline(src, env) -\/$>$ Array \end{DoxyCompactList}\item 
+\mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_ad93066a521e59204fc38c1c77a551dc8}{render\+Inline}}
+\begin{DoxyCompactList}\small\item\em Markdown\+It.\+render\+Inline(src \mbox{[}, env\mbox{]}) -\/$>$ String. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{markdown-it_2lib_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}\label{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}} 
+\index{index.js@{index.js}!MarkdownIt@{MarkdownIt}}
+\index{MarkdownIt@{MarkdownIt}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MarkdownIt()}{MarkdownIt()}}
+{\footnotesize\ttfamily function Markdown\+It (\begin{DoxyParamCaption}\item[{}]{preset\+Name,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+
+
+class Markdown\+It 
+
+Main parser/renderer class.
+
+\label{markdown-it_2lib_2index_8js_autotoc_md1323}%
+\Hypertarget{markdown-it_2lib_2index_8js_autotoc_md1323}%
+\doxysubparagraph*{Usage}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{// node.js, "classic" way:}
+\DoxyCodeLine{var MarkdownIt = require('markdown-\/it'),}
+\DoxyCodeLine{    md = new MarkdownIt();}
+\DoxyCodeLine{var result = md.render('\# markdown-\/it rulezz!');}
+\DoxyCodeLine{}
+\DoxyCodeLine{// node.js, the same, but with sugar:}
+\DoxyCodeLine{var md = require('markdown-\/it')();}
+\DoxyCodeLine{var result = md.render('\# markdown-\/it rulezz!');}
+\DoxyCodeLine{}
+\DoxyCodeLine{// browser without AMD, added to "window" on script load}
+\DoxyCodeLine{// Note, there are no dash.}
+\DoxyCodeLine{var md = window.markdownit();}
+\DoxyCodeLine{var result = md.render('\# markdown-\/it rulezz!');}
+\end{DoxyCode}
+
+
+Single line rendering, without paragraph wrap\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var md = require('markdown-\/it')();}
+\DoxyCodeLine{var result = md.renderInline('\_\_markdown-\/it\_\_ rulezz!');}
+\end{DoxyCode}
+ new \mbox{\hyperlink{lib_2jsdoc_2util_2markdown_8js_a9bb038ec346f24c740de74494c96126b}{Markdown\+It(\mbox{[}preset\+Name, options\mbox{]})}}
+\begin{DoxyItemize}
+\item preset\+Name (String)\+: optional, {\ttfamily commonmark} / {\ttfamily zero}
+\item options (Object)
+\end{DoxyItemize}
+
+Creates parser instanse with given config. Can be called without {\ttfamily new}.
+
+\label{markdown-it_2lib_2index_8js_autotoc_md1324}%
+\Hypertarget{markdown-it_2lib_2index_8js_autotoc_md1324}%
+\doxysubparagraph*{preset\+Name}
+
+Markdown\+It provides named presets as a convenience to quickly enable/disable active syntax rules and options for common use cases.
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/markdown-it/markdown-it/blob/master/lib/presets/commonmark.js}{\texttt{ \char`\"{}commonmark\char`\"{}}} -\/ configures parser to strict \href{http://commonmark.org/}{\texttt{ Common\+Mark}} mode.
+\item \href{https://github.com/markdown-it/markdown-it/blob/master/lib/presets/default.js}{\texttt{ default}} -\/ similar to G\+FM, used when no preset name given. Enables all available rules, but still without html, typographer \& autolinker.
+\item \href{https://github.com/markdown-it/markdown-it/blob/master/lib/presets/zero.js}{\texttt{ \char`\"{}zero\char`\"{}}} -\/ all rules disabled. Useful to quickly setup your config via {\ttfamily .\mbox{\hyperlink{markdown-it_2lib_2index_8js_a44f74913494bbd4bd28f3ede02e96fe4}{enable()}}}. For example, when you need only {\ttfamily bold} and {\ttfamily italic} markup and nothing else.
+\end{DoxyItemize}
+
+\label{markdown-it_2lib_2index_8js_autotoc_md1325}%
+\Hypertarget{markdown-it_2lib_2index_8js_autotoc_md1325}%
+\doxysubparagraph*{options\+:}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{html}} -\/ {\ttfamily false}. Set {\ttfamily true} to enable H\+T\+ML tags in source. Be careful! That\textquotesingle{}s not safe! You may need external sanitizer to protect output from X\+SS. It\textquotesingle{}s better to extend features via plugins, instead of enabling H\+T\+ML.
+\item {\bfseries{xhtml\+Out}} -\/ {\ttfamily false}. Set {\ttfamily true} to add \textquotesingle{}/\textquotesingle{} when closing single tags ({\ttfamily $<$br /$>$}). This is needed only for full Common\+Mark compatibility. In real world you will need H\+T\+ML output.
+\item {\bfseries{breaks}} -\/ {\ttfamily false}. Set {\ttfamily true} to convert {\ttfamily \textbackslash{}n} in paragraphs into {\ttfamily $<$br$>$}.
+\item {\bfseries{lang\+Prefix}} -\/ {\ttfamily language-\/}. C\+SS language class prefix for fenced blocks. Can be useful for external highlighters.
+\item {\bfseries{linkify}} -\/ {\ttfamily false}. Set {\ttfamily true} to autoconvert U\+R\+L-\/like text to links.
+\item {\bfseries{typographer}} -\/ {\ttfamily false}. Set {\ttfamily true} to enable \href{https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/replacements.js}{\texttt{ some language-\/neutral replacement}} + quotes beautification (smartquotes).
+\item {\bfseries{quotes}} -\/ {\ttfamily “”‘’}, String or Array. Double + single quotes replacement pairs, when typographer enabled and smartquotes on. For example, you can use `\textquotesingle{}«»„“'{\ttfamily for Russian,}\textquotesingle{}„“‚‘\textquotesingle{}{\ttfamily for German, and }\mbox{[}\textquotesingle{}«\textbackslash{}x\+A0\textquotesingle{}, \textquotesingle{}\textbackslash{}x\+A0»\textquotesingle{}, \textquotesingle{}‹\textbackslash{}x\+A0\textquotesingle{}, \textquotesingle{}\textbackslash{}x\+A0›\textquotesingle{}\mbox{]}{\ttfamily for French (including nbsp).}
+\item {\ttfamily \+\_\+\+\_\+highlight\+\_\+\+\_\+ -\/}null{\ttfamily . Highlighter function for fenced code blocks. Highlighter}function (str, lang)\`{} should return escaped H\+T\+ML. It can also return empty string if the source was not changed and should be escaped externaly. If result starts with $<$pre... internal wrapper is skipped.
+\end{DoxyItemize}
+
+\label{markdown-it_2lib_2index_8js_autotoc_md1326}%
+\Hypertarget{markdown-it_2lib_2index_8js_autotoc_md1326}%
+\doxysubparagraph*{Example}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{// commonmark mode}
+\DoxyCodeLine{var md = require('markdown-\/it')('commonmark');}
+\DoxyCodeLine{}
+\DoxyCodeLine{// default mode}
+\DoxyCodeLine{var md = require('markdown-\/it')();}
+\DoxyCodeLine{}
+\DoxyCodeLine{// enable everything}
+\DoxyCodeLine{var md = require('markdown-\/it')(\{}
+\DoxyCodeLine{  html: true,}
+\DoxyCodeLine{  linkify: true,}
+\DoxyCodeLine{  typographer: true}
+\DoxyCodeLine{\});}
+\end{DoxyCode}
+
+
+\label{markdown-it_2lib_2index_8js_autotoc_md1327}%
+\Hypertarget{markdown-it_2lib_2index_8js_autotoc_md1327}%
+\doxysubparagraph*{Syntax highlighting}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var hljs = \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'highlight.js'}) \textcolor{comment}{// https://highlightjs.org/}}
+\DoxyCodeLine{}
+\DoxyCodeLine{var md = \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}('\mbox{\hyperlink{readme_8js_a1f2a5a833c7c6434ca1f1e5ad66188c9}{markdown}}-\/\mbox{\hyperlink{lodash_8min_8js_a53bb00c7767c3df3cdef39d2863ce11f}{it}}')(\{}
+\DoxyCodeLine{  highlight: \textcolor{keyword}{function} (\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, lang) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (lang \&\& hljs.getLanguage(lang)) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} hljs.highlight(\mbox{\hyperlink{es5_8js_a4b51116586e045b14ad1d8196b125b26}{str}}, \{ \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a8e3024ff2e483bdb2873c89354bba85a}{language}}: lang, ignoreIllegals: \textcolor{keyword}{true} \}).\mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}};}
+\DoxyCodeLine{      \} \textcolor{keywordflow}{catch} (\_\_) \{\}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \textcolor{stringliteral}{''}; \textcolor{comment}{// use external default escaping}}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\});}
+\end{DoxyCode}
+
+
+Or with full wrapper override (if you need assign class to \`{}
+\begin{DoxyPre}`):\end{DoxyPre}
+
+
+
+\begin{DoxyPre}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var hljs = require('highlight.js') // https://highlightjs.org/}
+\DoxyCodeLine{}
+\DoxyCodeLine{// Actual default values}
+\DoxyCodeLine{var md = require('markdown-\/it')(\{}
+\DoxyCodeLine{  highlight: function (str, lang) \{}
+\DoxyCodeLine{    if (lang \&\& hljs.getLanguage(lang)) \{}
+\DoxyCodeLine{      try \{}
+\DoxyCodeLine{        return '<pre class="hljs"><code>' +}
+\DoxyCodeLine{               hljs.highlight(str, \{ language: lang, ignoreIllegals: true \}).value +}
+\DoxyCodeLine{               '</code></pre>';}
+\DoxyCodeLine{      \} catch (\_\_) \{\}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\});}
+\end{DoxyCode}
+
+\end{DoxyPre}
+Markdown\+It\+::inline -\/$>$ Parser\+Inline
+
+Instance of \mbox{[}\mbox{[}Parser\+Inline\mbox{]}\mbox{]}. You may need it to add new rules when writing plugins. For simple rules control use \mbox{[}\mbox{[}Markdown\+It.\+disable\mbox{]}\mbox{]} and \mbox{[}\mbox{[}Markdown\+It.\+enable\mbox{]}\mbox{]}.
+
+Markdown\+It\+::block -\/$>$ Parser\+Block
+
+Instance of \mbox{[}\mbox{[}Parser\+Block\mbox{]}\mbox{]}. You may need it to add new rules when writing plugins. For simple rules control use \mbox{[}\mbox{[}Markdown\+It.\+disable\mbox{]}\mbox{]} and \mbox{[}\mbox{[}Markdown\+It.\+enable\mbox{]}\mbox{]}.
+
+Markdown\+It\+::core -\/$>$ Core
+
+Instance of \mbox{[}\mbox{[}Core\mbox{]}\mbox{]} chain executor. You may need it to add new rules when writing plugins. For simple rules control use \mbox{[}\mbox{[}Markdown\+It.\+disable\mbox{]}\mbox{]} and \mbox{[}\mbox{[}Markdown\+It.\+enable\mbox{]}\mbox{]}.
+
+Markdown\+It\+::renderer -\/$>$ \mbox{\hyperlink{classRenderer}{Renderer}}
+
+Instance of \mbox{[}\mbox{[}\mbox{\hyperlink{classRenderer}{Renderer}}\mbox{]}\mbox{]}. Use it to modify output look. Or to add rendering rules for new token types, generated by plugins.
+
+\label{index.js_autotoc_md1328}%
+\Hypertarget{index.js_autotoc_md1328}%
+\doxysubparagraph*{Example}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var md = require('markdown-\/it')();}
+\DoxyCodeLine{}
+\DoxyCodeLine{function myToken(tokens, idx, options, env, self) \{}
+\DoxyCodeLine{  //...}
+\DoxyCodeLine{  return result;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{md.renderer.rules['my\_token'] = myToken}
+\end{DoxyCode}
+
+
+See \mbox{[}\mbox{[}\mbox{\hyperlink{classRenderer}{Renderer}}\mbox{]}\mbox{]} docs and \href{https://github.com/markdown-it/markdown-it/blob/master/lib/renderer.js}{\texttt{ source code}}.
+
+Markdown\+It\+::linkify -\/$>$ Linkify\+It
+
+\href{https://github.com/markdown-it/linkify-it}{\texttt{ linkify-\/it}} instance. Used by \href{https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/linkify.js}{\texttt{ linkify}} rule.
+
+Markdown\+It\+::validate\+Link(url) -\/$>$ Boolean
+
+Link validation function. Common\+Mark allows too much in links. By default we disable {\ttfamily javascript\+:}, {\ttfamily vbscript\+:}, {\ttfamily file\+:} schemas, and almost all {\ttfamily data\+:...} schemas except some embedded image types.
+
+You can change this behaviour\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var md = require('markdown-\/it')();}
+\DoxyCodeLine{// enable everything}
+\DoxyCodeLine{md.validateLink = function () \{ return true; \}}
+\end{DoxyCode}
+
+
+Markdown\+It\+::normalize\+Link(url) -\/$>$ String
+
+Function used to encode link url to a machine-\/readable format, which includes url-\/encoding, punycode, etc.
+
+Markdown\+It\+::normalize\+Link\+Text(url) -\/$>$ String
+
+Function used to decode link url to a human-\/readable format\`{}
+
+Markdown\+It\+::utils -\/$>$ utils
+
+Assorted utility functions, useful to write plugins. See details \href{https://github.com/markdown-it/markdown-it/blob/master/lib/common/utils.js}{\texttt{ here}}.
+
+Markdown\+It\+::helpers -\/$>$ helpers
+
+Link components parser functions, useful to write plugins. See details \href{https://github.com/markdown-it/markdown-it/blob/master/lib/helpers}{\texttt{ here}}.\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a7a022a889dbd7e329a36d4c47719d4bf}\label{markdown-it_2lib_2index_8js_a7a022a889dbd7e329a36d4c47719d4bf}} 
+\index{index.js@{index.js}!normalizeLink@{normalizeLink}}
+\index{normalizeLink@{normalizeLink}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{normalizeLink()}{normalizeLink()}}
+{\footnotesize\ttfamily function normalize\+Link (\begin{DoxyParamCaption}\item[{}]{url }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a1a928aafcea05bb599266c3a51bb8b9d}\label{markdown-it_2lib_2index_8js_a1a928aafcea05bb599266c3a51bb8b9d}} 
+\index{index.js@{index.js}!normalizeLinkText@{normalizeLinkText}}
+\index{normalizeLinkText@{normalizeLinkText}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{normalizeLinkText()}{normalizeLinkText()}}
+{\footnotesize\ttfamily function normalize\+Link\+Text (\begin{DoxyParamCaption}\item[{}]{url }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a4757ab7e0bcdf0023f12a91a0debade0}\label{markdown-it_2lib_2index_8js_a4757ab7e0bcdf0023f12a91a0debade0}} 
+\index{index.js@{index.js}!validateLink@{validateLink}}
+\index{validateLink@{validateLink}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{validateLink()}{validateLink()}}
+{\footnotesize\ttfamily function validate\+Link (\begin{DoxyParamCaption}\item[{}]{url }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_aec2cdf7f8939204924528c287a96934e}\label{markdown-it_2lib_2index_8js_aec2cdf7f8939204924528c287a96934e}} 
+\index{index.js@{index.js}!BAD\_PROTO\_RE@{BAD\_PROTO\_RE}}
+\index{BAD\_PROTO\_RE@{BAD\_PROTO\_RE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{BAD\_PROTO\_RE}{BAD\_PROTO\_RE}}
+{\footnotesize\ttfamily var B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+\_\+\+RE = /$^\wedge$(vbscript$\vert$javascript$\vert$file$\vert$\mbox{\hyperlink{resolve_2lib_2core_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})\+:/}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}\label{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}} 
+\index{index.js@{index.js}!config@{config}}
+\index{config@{config}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily var config}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{default}: \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a9ca6d84ffa268869ab310f485a976fb0}{require}}(\textcolor{stringliteral}{'./presets/default'}),}
+\DoxyCodeLine{  \mbox{\hyperlink{dist_2markdown-it_8js_a0707beb1f42f9e4f667118eda3195ccd}{zero}}: \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a9ca6d84ffa268869ab310f485a976fb0}{require}}(\textcolor{stringliteral}{'./presets/zero'}),}
+\DoxyCodeLine{  \mbox{\hyperlink{dist_2markdown-it_8js_a3741bb4e9c2496cdb7bdb6f5d520eb29}{commonmark}}: \mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a9ca6d84ffa268869ab310f485a976fb0}{require}}(\textcolor{stringliteral}{'./presets/commonmark'})}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a49846ccda5a89c82f868de79d89d5827}\label{markdown-it_2lib_2index_8js_a49846ccda5a89c82f868de79d89d5827}} 
+\index{index.js@{index.js}!configure@{configure}}
+\index{configure@{configure}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{configure}{configure}}
+{\footnotesize\ttfamily \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} configure}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (presets) \{}
+\DoxyCodeLine{  var \textcolor{keyword}{self} = \textcolor{keyword}{this}, presetName;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (\mbox{\hyperlink{markdown-it_2lib_2index_8js_a7b58b8887c6d26e09f79fbacfbda7f53}{utils}}.isString(presets)) \{}
+\DoxyCodeLine{    presetName = presets;}
+\DoxyCodeLine{    presets = \mbox{\hyperlink{markdown-it_2lib_2index_8js_aeac120c9ce32d189166215752b0b1a76}{config}}[presetName];}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!presets) \{ \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Error(\textcolor{stringliteral}{'Wrong `markdown-\/it` preset "'} + presetName + \textcolor{stringliteral}{'", check name'}); \}}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (!presets) \{ \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Error(\textcolor{stringliteral}{'Wrong `markdown-\/it` preset, can\(\backslash\)'t be empty'}); \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (presets.options) \{ \textcolor{keyword}{self}.set(presets.options); \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (presets.components) \{}
+\DoxyCodeLine{    Object.keys(presets.components).forEach(\textcolor{keyword}{function} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (presets.components[\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}].rules) \{}
+\DoxyCodeLine{        self[name].ruler.enableOnly(presets.components[name].rules);}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{      \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a00abaed589fb515ffa31186cb4be29ea}{if}} (presets.components[\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}].rules2) \{}
+\DoxyCodeLine{        self[name].ruler2.enableOnly(presets.components[name].rules2);}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+chainable, internal Markdown\+It.\+configure(presets) 
+
+Batch load of all options and compenent settings. This is internal method, and you probably will not need it. But if you will -\/ see available presets and data structure \href{https://github.com/markdown-it/markdown-it/tree/master/lib/presets}{\texttt{ here}}
+
+We strongly recommend to use presets instead of direct config loads. That will give better compatibility with next versions. \mbox{\Hypertarget{markdown-it_2lib_2index_8js_a736049e9a07bb2eca60b0ab8eb0ddd2c}\label{markdown-it_2lib_2index_8js_a736049e9a07bb2eca60b0ab8eb0ddd2c}} 
+\index{index.js@{index.js}!disable@{disable}}
+\index{disable@{disable}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{disable}{disable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} disable}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (\mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}}, ignoreInvalid) \{}
+\DoxyCodeLine{  var \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (!Array.isArray(\mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}})) \{ \mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}} = [ \mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}} ]; \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'core'}, \textcolor{stringliteral}{'block'}, \textcolor{stringliteral}{'inline'} ].forEach(\textcolor{keyword}{function} (\mbox{\hyperlink{underscore_2cjs_2index_8js_ae5caeb5e6e230464cc2e58d683334cf8}{chain}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} = \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}}.concat(\textcolor{keyword}{this}[\mbox{\hyperlink{underscore_2cjs_2index_8js_ae5caeb5e6e230464cc2e58d683334cf8}{chain}}].ruler.disable(\mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}}, \textcolor{keyword}{true}));}
+\DoxyCodeLine{  \}, \textcolor{keyword}{this});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} = \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}}.concat(this.\textcolor{keyword}{inline}.ruler2.disable(\mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}}, \textcolor{keyword}{true}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{  var missed = \mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}}.filter(\textcolor{keyword}{function} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}) \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}}.indexOf(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}) < 0; \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (missed.length \&\& !ignoreInvalid) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Error(\textcolor{stringliteral}{'MarkdownIt. Failed to disable unknown rule(s): '} + missed);}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+chainable Markdown\+It.\+disable(list, ignore\+Invalid) 
+
+
+\begin{DoxyItemize}
+\item list (String$\vert$\+Array)\+: rule name or list of rule names to disable.
+\item ignore\+Invalid (Boolean)\+: set {\ttfamily true} to ignore errors when rule not found.
+\end{DoxyItemize}
+
+The same as \mbox{[}\mbox{[}Markdown\+It.\+enable\mbox{]}\mbox{]}, but turn specified rules off. \mbox{\Hypertarget{markdown-it_2lib_2index_8js_a44f74913494bbd4bd28f3ede02e96fe4}\label{markdown-it_2lib_2index_8js_a44f74913494bbd4bd28f3ede02e96fe4}} 
+\index{index.js@{index.js}!enable@{enable}}
+\index{enable@{enable}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{enable}{enable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} enable}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (\mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}}, ignoreInvalid) \{}
+\DoxyCodeLine{  var \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (!Array.isArray(\mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}})) \{ \mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}} = [ \mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}} ]; \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'core'}, \textcolor{stringliteral}{'block'}, \textcolor{stringliteral}{'inline'} ].forEach(\textcolor{keyword}{function} (\mbox{\hyperlink{underscore_2cjs_2index_8js_ae5caeb5e6e230464cc2e58d683334cf8}{chain}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} = \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}}.concat(\textcolor{keyword}{this}[\mbox{\hyperlink{underscore_2cjs_2index_8js_ae5caeb5e6e230464cc2e58d683334cf8}{chain}}].ruler.enable(\mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}}, \textcolor{keyword}{true}));}
+\DoxyCodeLine{  \}, \textcolor{keyword}{this});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}} = \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}}.concat(this.\textcolor{keyword}{inline}.ruler2.enable(\mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}}, \textcolor{keyword}{true}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{  var missed = \mbox{\hyperlink{marked_8esm_8js_a838ad2978db9ec9d326e5f53d64aea69}{list}}.filter(\textcolor{keyword}{function} (\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}) \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{underscore_2cjs_2index_8js_a308299d3fff9c8eaffd8cec41df5d89b}{result}}.indexOf(\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_a45f002f0c79e5a0f57efb7fbeb573071}{name}}) < 0; \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (missed.length \&\& !ignoreInvalid) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Error(\textcolor{stringliteral}{'MarkdownIt. Failed to enable unknown rule(s): '} + missed);}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+chainable Markdown\+It.\+enable(list, ignore\+Invalid) 
+
+
+\begin{DoxyItemize}
+\item list (String$\vert$\+Array)\+: rule name or list of rule names to enable
+\item ignore\+Invalid (Boolean)\+: set {\ttfamily true} to ignore errors when rule not found.
+\end{DoxyItemize}
+
+Enable list or rules. It will automatically find appropriate components, containing rules with given names. If rule not found, and {\ttfamily ignore\+Invalid} not set -\/ throws exception.
+
+\label{markdown-it_2lib_2index_8js_autotoc_md1330}%
+\Hypertarget{markdown-it_2lib_2index_8js_autotoc_md1330}%
+\doxysubparagraph*{Example}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var md = require('markdown-\/it')()}
+\DoxyCodeLine{            .enable(['sub', 'sup'])}
+\DoxyCodeLine{            .disable('smartquotes');}
+\end{DoxyCode}
+ \mbox{\Hypertarget{markdown-it_2lib_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{markdown-it_2lib_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}}}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a5cbf6e13f2e2b7e0ad156395e6769823}\label{markdown-it_2lib_2index_8js_a5cbf6e13f2e2b7e0ad156395e6769823}} 
+\index{index.js@{index.js}!GOOD\_DATA\_RE@{GOOD\_DATA\_RE}}
+\index{GOOD\_DATA\_RE@{GOOD\_DATA\_RE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{GOOD\_DATA\_RE}{GOOD\_DATA\_RE}}
+{\footnotesize\ttfamily var G\+O\+O\+D\+\_\+\+D\+A\+T\+A\+\_\+\+RE = /$^\wedge$data\+:image\textbackslash{}/(gif$\vert$png$\vert$jpeg$\vert$webp)}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}\label{markdown-it_2lib_2index_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}} 
+\index{index.js@{index.js}!helpers@{helpers}}
+\index{helpers@{helpers}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{helpers}{helpers}}
+{\footnotesize\ttfamily var helpers = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./helpers\textquotesingle{})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a23a1caad8e0609ad050cfeaf35999a23}\label{markdown-it_2lib_2index_8js_a23a1caad8e0609ad050cfeaf35999a23}} 
+\index{index.js@{index.js}!LinkifyIt@{LinkifyIt}}
+\index{LinkifyIt@{LinkifyIt}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{LinkifyIt}{LinkifyIt}}
+{\footnotesize\ttfamily var Linkify\+It = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}linkify-\/\mbox{\hyperlink{lodash_8min_8js_a53bb00c7767c3df3cdef39d2863ce11f}{it}}\textquotesingle{})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a998e44fe58967e82b0633ff2cf102f54}\label{markdown-it_2lib_2index_8js_a998e44fe58967e82b0633ff2cf102f54}} 
+\index{index.js@{index.js}!mdurl@{mdurl}}
+\index{mdurl@{mdurl}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{mdurl}{mdurl}}
+{\footnotesize\ttfamily var mdurl = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}mdurl\textquotesingle{})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a0b3d47f88fd68c8beb23a7d74a419999}\label{markdown-it_2lib_2index_8js_a0b3d47f88fd68c8beb23a7d74a419999}} 
+\index{index.js@{index.js}!parse@{parse}}
+\index{parse@{parse}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{parse}{parse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} parse}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (src, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (typeof src !== \textcolor{stringliteral}{'string'}) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Error(\textcolor{stringliteral}{'Input data should be a String'});}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  var \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}} = \textcolor{keyword}{new} this.\mbox{\hyperlink{resolve_2index_8js_a1d32fc2c5055ee167c2f6e958834c1b0}{core}}.State(src, \textcolor{keyword}{this}, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  this.\mbox{\hyperlink{resolve_2index_8js_a1d32fc2c5055ee167c2f6e958834c1b0}{core}}.process(state);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.tokens;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+internal Markdown\+It.\+parse(src, env) -\/$>$ Array 
+
+
+\begin{DoxyItemize}
+\item src (String)\+: source string
+\item env (Object)\+: environment sandbox
+\end{DoxyItemize}
+
+\mbox{\hyperlink{classParse}{Parse}} input string and return list of block tokens (special token type \char`\"{}inline\char`\"{} will contain list of inline tokens). You should not call this method directly, until you write custom renderer (for example, to produce A\+ST).
+
+{\ttfamily env} is used to pass data between \char`\"{}distributed\char`\"{} rules and return additional metadata like reference info, needed for the renderer. It also can be used to inject data in specific cases. Usually, you will be ok to pass {\ttfamily \{\}}, and then pass updated object to renderer. \mbox{\Hypertarget{markdown-it_2lib_2index_8js_a4cb37f60badac55bc835101360fe2715}\label{markdown-it_2lib_2index_8js_a4cb37f60badac55bc835101360fe2715}} 
+\index{index.js@{index.js}!parseInline@{parseInline}}
+\index{parseInline@{parseInline}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{parseInline}{parseInline}}
+{\footnotesize\ttfamily \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} parse\+Inline}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (src, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}) \{}
+\DoxyCodeLine{  var \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}} = \textcolor{keyword}{new} this.\mbox{\hyperlink{resolve_2index_8js_a1d32fc2c5055ee167c2f6e958834c1b0}{core}}.State(src, \textcolor{keyword}{this}, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.inlineMode = \textcolor{keyword}{true};}
+\DoxyCodeLine{  this.\mbox{\hyperlink{resolve_2index_8js_a1d32fc2c5055ee167c2f6e958834c1b0}{core}}.process(state);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}.tokens;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+internal Markdown\+It.\+parse\+Inline(src, env) -\/$>$ Array 
+
+
+\begin{DoxyItemize}
+\item src (String)\+: source string
+\item env (Object)\+: environment sandbox
+\end{DoxyItemize}
+
+The same as \mbox{[}\mbox{[}Markdown\+It.\+parse\mbox{]}\mbox{]} but skip all block rules. It returns the block tokens list with the single {\ttfamily inline} element, containing parsed inline tokens in {\ttfamily children} property. Also updates {\ttfamily env} object. \mbox{\Hypertarget{markdown-it_2lib_2index_8js_a27e04bac1a65baae63285e8cc5b8c186}\label{markdown-it_2lib_2index_8js_a27e04bac1a65baae63285e8cc5b8c186}} 
+\index{index.js@{index.js}!ParserBlock@{ParserBlock}}
+\index{ParserBlock@{ParserBlock}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ParserBlock}{ParserBlock}}
+{\footnotesize\ttfamily var Parser\+Block = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./parser\+\_\+block\textquotesingle{})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a4005aba793a24d5696f3765927638419}\label{markdown-it_2lib_2index_8js_a4005aba793a24d5696f3765927638419}} 
+\index{index.js@{index.js}!ParserCore@{ParserCore}}
+\index{ParserCore@{ParserCore}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ParserCore}{ParserCore}}
+{\footnotesize\ttfamily var Parser\+Core = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./parser\+\_\+core\textquotesingle{})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_aa5845f1aefae114d2799aeb8951ad645}\label{markdown-it_2lib_2index_8js_aa5845f1aefae114d2799aeb8951ad645}} 
+\index{index.js@{index.js}!ParserInline@{ParserInline}}
+\index{ParserInline@{ParserInline}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ParserInline}{ParserInline}}
+{\footnotesize\ttfamily var Parser\+Inline = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./parser\+\_\+inline\textquotesingle{})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_af21403e87687a3dbac3dfee1440bd946}\label{markdown-it_2lib_2index_8js_af21403e87687a3dbac3dfee1440bd946}} 
+\index{index.js@{index.js}!punycode@{punycode}}
+\index{punycode@{punycode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{punycode}{punycode}}
+{\footnotesize\ttfamily var punycode = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}punycode\textquotesingle{})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_a2403fd25881ab7699db9a2402599bd81}\label{markdown-it_2lib_2index_8js_a2403fd25881ab7699db9a2402599bd81}} 
+\index{index.js@{index.js}!RECODE\_HOSTNAME\_FOR@{RECODE\_HOSTNAME\_FOR}}
+\index{RECODE\_HOSTNAME\_FOR@{RECODE\_HOSTNAME\_FOR}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{RECODE\_HOSTNAME\_FOR}{RECODE\_HOSTNAME\_FOR}}
+{\footnotesize\ttfamily var R\+E\+C\+O\+D\+E\+\_\+\+H\+O\+S\+T\+N\+A\+M\+E\+\_\+\+F\+OR = \mbox{[} \textquotesingle{}http\+:\textquotesingle{}, \textquotesingle{}https\+:\textquotesingle{}, \textquotesingle{}mailto\+:\textquotesingle{} \mbox{]}}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_aa24bf11c50e20f7ff6563d43f77bcf9a}\label{markdown-it_2lib_2index_8js_aa24bf11c50e20f7ff6563d43f77bcf9a}} 
+\index{index.js@{index.js}!render@{render}}
+\index{render@{render}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{render}{render}}
+{\footnotesize\ttfamily \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} render}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (src, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}) \{}
+\DoxyCodeLine{  \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}} = \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}} || \{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} this.renderer.render(this.\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_a6fd05206266746979959a2bac1f80a2b}{parse}}(src, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}), this.\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Markdown\+It.\+render(src \mbox{[}, env\mbox{]}) -\/$>$ String. 
+
+
+\begin{DoxyItemize}
+\item src (String)\+: source string
+\item env (Object)\+: environment sandbox
+\end{DoxyItemize}
+
+Render markdown string into html. It does all magic for you \+:).
+
+{\ttfamily env} can be used to inject additional metadata ({\ttfamily \{\}} by default). But you will not need it with high probability. See also comment in \mbox{[}\mbox{[}Markdown\+It.\+parse\mbox{]}\mbox{]}. \mbox{\Hypertarget{markdown-it_2lib_2index_8js_aa20bb40d770979206febdc8399a428f4}\label{markdown-it_2lib_2index_8js_aa20bb40d770979206febdc8399a428f4}} 
+\index{index.js@{index.js}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{Renderer}{Renderer}}
+{\footnotesize\ttfamily var \mbox{\hyperlink{classRenderer}{Renderer}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./renderer\textquotesingle{})}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_ad93066a521e59204fc38c1c77a551dc8}\label{markdown-it_2lib_2index_8js_ad93066a521e59204fc38c1c77a551dc8}} 
+\index{index.js@{index.js}!renderInline@{renderInline}}
+\index{renderInline@{renderInline}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{renderInline}{renderInline}}
+{\footnotesize\ttfamily \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} render\+Inline}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (src, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}) \{}
+\DoxyCodeLine{  \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}} = \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}} || \{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} this.renderer.render(this.\mbox{\hyperlink{markdown-it_2lib_2index_8js_a4cb37f60badac55bc835101360fe2715}{parseInline}}(src, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}}), this.\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}, \mbox{\hyperlink{jsdoc_8js_a7b87b42fd0377b1321e3e77dacfc9af0}{env}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Markdown\+It.\+render\+Inline(src \mbox{[}, env\mbox{]}) -\/$>$ String. 
+
+
+\begin{DoxyItemize}
+\item src (String)\+: source string
+\item env (Object)\+: environment sandbox
+\end{DoxyItemize}
+
+Similar to \mbox{[}\mbox{[}Markdown\+It.\+render\mbox{]}\mbox{]} but for single paragraph content. \mbox{\hyperlink{classResult}{Result}} will N\+OT be wrapped into {\ttfamily $<$p$>$} tags. \mbox{\Hypertarget{markdown-it_2lib_2index_8js_a46a3ad468d38a71c4902149caead023e}\label{markdown-it_2lib_2index_8js_a46a3ad468d38a71c4902149caead023e}} 
+\index{index.js@{index.js}!set@{set}}
+\index{set@{set}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{set}{set}}
+{\footnotesize\ttfamily \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} set}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}) \{}
+\DoxyCodeLine{  \mbox{\hyperlink{markdown-it_2lib_2index_8js_a7b58b8887c6d26e09f79fbacfbda7f53}{utils}}.assign(this.\mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}, \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}});}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+chainable Markdown\+It.\+set(options) 
+
+Set parser options (in the same format as in constructor). Probably, you will never need it, but you can change options after constructor call.
+
+\label{markdown-it_2lib_2index_8js_autotoc_md1329}%
+\Hypertarget{markdown-it_2lib_2index_8js_autotoc_md1329}%
+\doxysubparagraph*{Example}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var md = require('markdown-\/it')()}
+\DoxyCodeLine{            .set(\{ html: true, breaks: true \})}
+\DoxyCodeLine{            .set(\{ typographer, true \});}
+\end{DoxyCode}
+
+
+{\bfseries{Note\+:}} To achieve the best possible performance, don\textquotesingle{}t modify a {\ttfamily markdown-\/it} instance options on the fly. If you need multiple configurations it\textquotesingle{}s best to create multiple instances and initialize each with separate config. \mbox{\Hypertarget{markdown-it_2lib_2index_8js_ae2475e10618961c050dcba04e8c42331}\label{markdown-it_2lib_2index_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+
+\mbox{\Hypertarget{markdown-it_2lib_2index_8js_ae9e1b73cbf7f6e93a0c8bf0da56811b8}\label{markdown-it_2lib_2index_8js_ae9e1b73cbf7f6e93a0c8bf0da56811b8}} 
+\index{index.js@{index.js}!use@{use}}
+\index{use@{use}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{use}{use}}
+{\footnotesize\ttfamily \mbox{\hyperlink{markdown-it_2lib_2index_8js_a39a8280bbc91dffecb5bc7a7fd8681df}{Markdown\+It}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} use}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a43b7a606f4b3f0c86f2f3ed5066658dc}{plugin}} ) \{}
+\DoxyCodeLine{  var args = [ \mbox{\hyperlink{umd_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}} ].concat(Array.prototype.slice.call(arguments, 1));}
+\DoxyCodeLine{  \mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a43b7a606f4b3f0c86f2f3ed5066658dc}{plugin}}.apply(\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a43b7a606f4b3f0c86f2f3ed5066658dc}{plugin}}, args);}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+chainable Markdown\+It.\+use(plugin, params) 
+
+Load specified plugin with given params into current parser instance. It\textquotesingle{}s just a sugar to call {\ttfamily plugin(md, params)} with curring.
+
+\label{markdown-it_2lib_2index_8js_autotoc_md1331}%
+\Hypertarget{markdown-it_2lib_2index_8js_autotoc_md1331}%
+\doxysubparagraph*{Example}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var iterator = require('markdown-\/it-\/for-\/inline');}
+\DoxyCodeLine{var md = require('markdown-\/it')()}
+\DoxyCodeLine{            .use(iterator, 'foo\_replace', 'text', function (tokens, idx) \{}
+\DoxyCodeLine{              tokens[idx].content = tokens[idx].content.replace(/foo/g, 'bar');}
+\DoxyCodeLine{            \});}
+\end{DoxyCode}
+ \mbox{\Hypertarget{markdown-it_2lib_2index_8js_a7b58b8887c6d26e09f79fbacfbda7f53}\label{markdown-it_2lib_2index_8js_a7b58b8887c6d26e09f79fbacfbda7f53}} 
+\index{index.js@{index.js}!utils@{utils}}
+\index{utils@{utils}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily var utils = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./common/utils\textquotesingle{})}
+

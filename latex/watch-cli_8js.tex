@@ -1,0 +1,522 @@
+\hypertarget{watch-cli_8js}{}\doxysection{node\+\_\+modules/rollup/dist/shared/watch-\/cli.js File Reference}
+\label{watch-cli_8js}\index{node\_modules/rollup/dist/shared/watch-\/cli.js@{node\_modules/rollup/dist/shared/watch-\/cli.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{watch-cli_8js_a089c407f17b528072cbaea17b97ff783}{define\+Property}} (\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, Symbol.\+to\+String\+Tag, \{ value\+:\textquotesingle{}\mbox{\hyperlink{requizzle_8js_a2c348358c1db4bb5136855f7f31e1157}{Module}}\textquotesingle{} \})
+\item 
+\mbox{\hyperlink{watch-cli_8js_a7a82e63f2e1336bf91b63de38b0057cd}{require}} (\textquotesingle{}\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a3569369cd6a05edf32de460fd4a6bddf}{fs}}\textquotesingle{})
+\item 
+function \mbox{\hyperlink{watch-cli_8js_aef829c227f43e0b036bfeb9966ec7c68}{time\+Zone}} (date=new Date())
+\item 
+function \mbox{\hyperlink{watch-cli_8js_a326ba3d092e83752eb40ceac82e90c3e}{date\+Time}} (\mbox{\hyperlink{src_2marked_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}=\{\})
+\item 
+function \mbox{\hyperlink{watch-cli_8js_ac4b822b1ca50e72f14bb955675e9455a}{require\+Signals}} ()
+\item 
+\mbox{\hyperlink{watch-cli_8js_a6ad9d253a9f078e9ed0059dd9c8cd88e}{if}} (!\mbox{\hyperlink{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}{process\+Ok}}(\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} \$1))
+\item 
+\mbox{\hyperlink{watch-cli_8js_aa196f47afdf7ef2ce446c0a5d664b83d}{if}} (typeof \mbox{\hyperlink{watch-cli_8js_af14209005e00bb4cd9eda6f9486a23f9}{EE}} !==\textquotesingle{}function\textquotesingle{})
+\item 
+\mbox{\hyperlink{watch-cli_8js_ad90b8ace7a8f36bcd555f4d6dfc5c8d0}{if}} (\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} \$1.\+\_\+\+\_\+signal\+\_\+exit\+\_\+emitter\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{watch-cli_8js_a069e89e3905e75a5a8ae5f291aa33bbb}{if}} (!emitter.\+infinite)
+\item 
+\mbox{\hyperlink{watch-cli_8js_a32af1b7053903057257c1898ba01d00d}{signals}} \mbox{\hyperlink{watch-cli_8js_a0f159657f82e2367b3a4714307366cb8}{for\+Each}} (function(sig) \{ \mbox{\hyperlink{watch-cli_8js_a3248bfe5ebf86dd3a0153e16fe72dc2c}{sig\+Listeners}}\mbox{[}sig\mbox{]}=function listener() \{ \mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(!\mbox{\hyperlink{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}{process\+Ok}}(\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{rollup.\+commonjs\+Global.\+process}})) \{ \mbox{\hyperlink{browser_2bluebird_8js_a9ba8580b1b7db88f23242b38d0a0ce93}{return}} \} var listeners=\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} \$1.listeners(sig);\mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(\mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{listeners.\+length}}===\mbox{\hyperlink{watch-cli_8js_aa3d11d166996ddb003c33bcfacab9385}{emitter.\+count}}) \{ \mbox{\hyperlink{watch-cli_8js_a0c6d136a9ccfdad98faec81e3892dc04}{unload}}();\mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}}(\textquotesingle{}exit\textquotesingle{}, \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}, sig);\mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}}(\textquotesingle{}afterexit\textquotesingle{}, \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}, sig);\mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(\mbox{\hyperlink{watch-cli_8js_a1ad6eb1c7b36bdb89149042003c144d3}{is\+Win}} \&\&sig===\textquotesingle{}S\+I\+G\+H\+UP\textquotesingle{}) \{ sig=\textquotesingle{}S\+I\+G\+I\+NT\textquotesingle{};\} \mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} \$1.kill(\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} \$1.pid, sig);\} \};\})
+\item 
+function \mbox{\hyperlink{watch-cli_8js_a77f83a31de8b4886df4a2ee0f9f0d9aa}{get\+Reset\+Screen}} (configs, allow\+Clear\+Screen)
+\item 
+function \mbox{\hyperlink{watch-cli_8js_a76d386d41c81d9311bd3c115611b09ce}{extract\+Watch\+Hooks}} (\mbox{\hyperlink{_0dcodemirror_2commands_2dist_2index_8js_a110e227853f23b12391bcc2f067ea013}{command}})
+\item 
+function \mbox{\hyperlink{watch-cli_8js_a46d79bb27b9a859fcf85d1dcb8abced6}{create\+Watch\+Hooks}} (\mbox{\hyperlink{_0dcodemirror_2commands_2dist_2index_8js_a110e227853f23b12391bcc2f067ea013}{command}})
+\item 
+function \mbox{\hyperlink{resolve_2test_2resolver_8js_a8a58c0ef8ca44edf99e5325df2dcf083}{async}} \mbox{\hyperlink{watch-cli_8js_a32f24542753937f6bb3e45b5481d527f}{watch}} (\mbox{\hyperlink{_0dcodemirror_2commands_2dist_2index_8js_a110e227853f23b12391bcc2f067ea013}{command}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{watch-cli_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+const \mbox{\hyperlink{watch-cli_8js_a6454c117cee5284a16409f4b8ce6e7cd}{node\+\_\+fs}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}node\+:fs\textquotesingle{})
+\item 
+const \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}node\+:process\textquotesingle{})
+\item 
+const \mbox{\hyperlink{watch-cli_8js_ae872217e7a6a99a9333d9302b00ca36d}{index}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{index.\+js}}\textquotesingle{})
+\item 
+const \mbox{\hyperlink{watch-cli_8js_a9aa2fcad8a38fec138d4f956c6f167fb}{cli}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}../bin/\mbox{\hyperlink{shared_2watch_8js_a9d59e9be3e151be6eb812319b32a07a4}{rollup}}\textquotesingle{})
+\item 
+const \mbox{\hyperlink{watch-cli_8js_a9d59e9be3e151be6eb812319b32a07a4}{rollup}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{rollup.\+js}}\textquotesingle{})
+\item 
+const \mbox{\hyperlink{watch-cli_8js_a9ca6d84ffa268869ab310f485a976fb0}{require}} = require(\textquotesingle{}\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}}\textquotesingle{})
+\item 
+const \mbox{\hyperlink{watch-cli_8js_a732f0b410fe467a19bb1e4f8a71bfee9}{load\+Config\+File\+\_\+js}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{load\+Config\+File.\+js}}\textquotesingle{})
+\item 
+const \mbox{\hyperlink{watch-cli_8js_a7b05adb89f9c5d0ff0d45804bfdb931a}{node\+\_\+child\+\_\+process}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}node\+:child\+\_\+process\textquotesingle{})
+\item 
+var \mbox{\hyperlink{watch-cli_8js_ae40f2a9919d27206444f3f995d2612b8}{signal\+Exit}} = \{exports\+: \{\}\}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a32af1b7053903057257c1898ba01d00d}{signals}} = \{exports\+: \{\}\}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a41a5d237daef8e6fd756c4acaccd555e}{has\+Required\+Signals}}
+\item 
+const \mbox{\hyperlink{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}{process\+Ok}}
+\item 
+\mbox{\hyperlink{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}{else}}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a1ad6eb1c7b36bdb89149042003c144d3}{is\+Win}} = /$^\wedge$win/\mbox{\hyperlink{symlinks_8js_a8dae195d0a309bb84d8492dc83448621}{i.\+test}}(process\$1.\+platform)
+\item 
+var \mbox{\hyperlink{watch-cli_8js_af14209005e00bb4cd9eda6f9486a23f9}{EE}} = require\$\$0\$1
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}
+\item 
+\mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}} \mbox{\hyperlink{watch-cli_8js_aa3d11d166996ddb003c33bcfacab9385}{count}} = 0
+\item 
+\mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}} \mbox{\hyperlink{watch-cli_8js_a3446366a995eadbff8ec385e0e466a60}{emitted}} = \{\}
+\item 
+\mbox{\hyperlink{watch-cli_8js_ae40f2a9919d27206444f3f995d2612b8}{signal\+Exit}} \mbox{\hyperlink{watch-cli_8js_a08b8b616c608ca81c6083b7b6614795f}{exports}}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a0c6d136a9ccfdad98faec81e3892dc04}{unload}}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a3248bfe5ebf86dd3a0153e16fe72dc2c}{sig\+Listeners}} = \{\}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a98ddf0165d47a36ea87907afb47b846d}{loaded}} = false
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a2cee060379173510336d9b08928f4824}{load}}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_ac2d08c69d5b525d6e0162a7868372d36}{original\+Process\+Really\+Exit}} = process\$1.\+really\+Exit
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a69a6b35333153ab426d26ab9fb920b10}{process\+Really\+Exit}}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_ad12c92f7a387a214e30eb999edf50ccc}{original\+Process\+Emit}} = \mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{process\$1.\+emit}}
+\item 
+var \mbox{\hyperlink{watch-cli_8js_a47c922db461098fa6d52007dc61625ff}{process\+Emit}}
+\item 
+const \mbox{\hyperlink{watch-cli_8js_a9c83254d1daa6406203a6750746b847e}{C\+L\+E\+A\+R\+\_\+\+S\+C\+R\+E\+EN}} = \textquotesingle{}\textbackslash{}u001\+Bc\textquotesingle{}
+\item 
+\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{watch-cli_8js_a9e6450b4a6ca59c8f1c798fd83c52ba6}{watch}} = watch
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{watch-cli_8js_a46d79bb27b9a859fcf85d1dcb8abced6}\label{watch-cli_8js_a46d79bb27b9a859fcf85d1dcb8abced6}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!createWatchHooks@{createWatchHooks}}
+\index{createWatchHooks@{createWatchHooks}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{createWatchHooks()}{createWatchHooks()}}
+{\footnotesize\ttfamily function create\+Watch\+Hooks (\begin{DoxyParamCaption}\item[{}]{command }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_a326ba3d092e83752eb40ceac82e90c3e}\label{watch-cli_8js_a326ba3d092e83752eb40ceac82e90c3e}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!dateTime@{dateTime}}
+\index{dateTime@{dateTime}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{dateTime()}{dateTime()}}
+{\footnotesize\ttfamily function date\+Time (\begin{DoxyParamCaption}\item[{}]{options = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_a089c407f17b528072cbaea17b97ff783}\label{watch-cli_8js_a089c407f17b528072cbaea17b97ff783}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!defineProperty@{defineProperty}}
+\index{defineProperty@{defineProperty}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{defineProperty()}{defineProperty()}}
+{\footnotesize\ttfamily Object define\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}}]{,  }\item[{Symbol.}]{to\+String\+Tag,  }\item[{\{ value\+:\textquotesingle{}\mbox{\hyperlink{requizzle_8js_a2c348358c1db4bb5136855f7f31e1157}{Module}}\textquotesingle{} \}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_a76d386d41c81d9311bd3c115611b09ce}\label{watch-cli_8js_a76d386d41c81d9311bd3c115611b09ce}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!extractWatchHooks@{extractWatchHooks}}
+\index{extractWatchHooks@{extractWatchHooks}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{extractWatchHooks()}{extractWatchHooks()}}
+{\footnotesize\ttfamily function extract\+Watch\+Hooks (\begin{DoxyParamCaption}\item[{}]{command }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_a0f159657f82e2367b3a4714307366cb8}\label{watch-cli_8js_a0f159657f82e2367b3a4714307366cb8}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!forEach@{forEach}}
+\index{forEach@{forEach}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{forEach()}{forEach()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_a32af1b7053903057257c1898ba01d00d}{signals}} for\+Each (\begin{DoxyParamCaption}\item[{function(sig) \{ \mbox{\hyperlink{watch-cli_8js_a3248bfe5ebf86dd3a0153e16fe72dc2c}{sig\+Listeners}}\mbox{[}sig\mbox{]}=function listener() \{ \mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(!\mbox{\hyperlink{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}{process\+Ok}}(\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{rollup.\+commonjs\+Global.\+process}})) \{ \mbox{\hyperlink{browser_2bluebird_8js_a9ba8580b1b7db88f23242b38d0a0ce93}{return}} \} var listeners=\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} \$1.listeners(sig);\mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(\mbox{\hyperlink{queue_8js_a5e4b24095b8e4d5c1dc42a0215f7139b}{listeners.\+length}}===\mbox{\hyperlink{watch-cli_8js_aa3d11d166996ddb003c33bcfacab9385}{emitter.\+count}}) \{ \mbox{\hyperlink{watch-cli_8js_a0c6d136a9ccfdad98faec81e3892dc04}{unload}}();\mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}}(\textquotesingle{}exit\textquotesingle{}, \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}, sig);\mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}}(\textquotesingle{}afterexit\textquotesingle{}, \mbox{\hyperlink{node__modules_2jsdoc_2templates_2default_2static_2scripts_2prettify_2lang-css_8js_a712f068179549a1823d12e2a3f517001}{null}}, sig);\mbox{\hyperlink{underscore_2underscore_8js_a2b466d4ba611c8440226ef256752dd5a}{if}}(\mbox{\hyperlink{watch-cli_8js_a1ad6eb1c7b36bdb89149042003c144d3}{is\+Win}} \&\&sig===\textquotesingle{}S\+I\+G\+H\+UP\textquotesingle{}) \{ sig=\textquotesingle{}S\+I\+G\+I\+NT\textquotesingle{};\} \mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} \$1.kill(\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} \$1.pid, sig);\} \};\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_a77f83a31de8b4886df4a2ee0f9f0d9aa}\label{watch-cli_8js_a77f83a31de8b4886df4a2ee0f9f0d9aa}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!getResetScreen@{getResetScreen}}
+\index{getResetScreen@{getResetScreen}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{getResetScreen()}{getResetScreen()}}
+{\footnotesize\ttfamily function get\+Reset\+Screen (\begin{DoxyParamCaption}\item[{}]{configs,  }\item[{}]{allow\+Clear\+Screen }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_a069e89e3905e75a5a8ae5f291aa33bbb}\label{watch-cli_8js_a069e89e3905e75a5a8ae5f291aa33bbb}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!if@{if}}
+\index{if@{if}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{!emitter.}]{infinite }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_a6ad9d253a9f078e9ed0059dd9c8cd88e}\label{watch-cli_8js_a6ad9d253a9f078e9ed0059dd9c8cd88e}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!if@{if}}
+\index{if@{if}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{!}]{process\+Okprocess \$1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_ad90b8ace7a8f36bcd555f4d6dfc5c8d0}\label{watch-cli_8js_ad90b8ace7a8f36bcd555f4d6dfc5c8d0}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!if@{if}}
+\index{if@{if}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plugins_2markdown_8js_ae0fb10806499a90fc03f74eece2246ae}{process}} \$1.}]{\+\_\+\+\_\+signal\+\_\+exit\+\_\+emitter\+\_\+\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_aa196f47afdf7ef2ce446c0a5d664b83d}\label{watch-cli_8js_aa196f47afdf7ef2ce446c0a5d664b83d}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!if@{if}}
+\index{if@{if}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{}]{typeof E\+E ! = {\ttfamily =~\textquotesingle{}function\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_a7a82e63f2e1336bf91b63de38b0057cd}\label{watch-cli_8js_a7a82e63f2e1336bf91b63de38b0057cd}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!require@{require}}
+\index{require@{require}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{require()}{require()}}
+{\footnotesize\ttfamily require (\begin{DoxyParamCaption}\item[{\textquotesingle{}\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_a3569369cd6a05edf32de460fd4a6bddf}{fs}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_ac4b822b1ca50e72f14bb955675e9455a}\label{watch-cli_8js_ac4b822b1ca50e72f14bb955675e9455a}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!requireSignals@{requireSignals}}
+\index{requireSignals@{requireSignals}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{requireSignals()}{requireSignals()}}
+{\footnotesize\ttfamily function require\+Signals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_aef829c227f43e0b036bfeb9966ec7c68}\label{watch-cli_8js_aef829c227f43e0b036bfeb9966ec7c68}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!timeZone@{timeZone}}
+\index{timeZone@{timeZone}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{timeZone()}{timeZone()}}
+{\footnotesize\ttfamily function time\+Zone (\begin{DoxyParamCaption}\item[{}]{date = {\ttfamily new~Date()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watch-cli_8js_a32f24542753937f6bb3e45b5481d527f}\label{watch-cli_8js_a32f24542753937f6bb3e45b5481d527f}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!watch@{watch}}
+\index{watch@{watch}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{watch()}{watch()}}
+{\footnotesize\ttfamily function \mbox{\hyperlink{resolve_2test_2resolver_8js_a8a58c0ef8ca44edf99e5325df2dcf083}{async}} watch (\begin{DoxyParamCaption}\item[{}]{command }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{watch-cli_8js_a9c83254d1daa6406203a6750746b847e}\label{watch-cli_8js_a9c83254d1daa6406203a6750746b847e}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!CLEAR\_SCREEN@{CLEAR\_SCREEN}}
+\index{CLEAR\_SCREEN@{CLEAR\_SCREEN}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{CLEAR\_SCREEN}{CLEAR\_SCREEN}}
+{\footnotesize\ttfamily const C\+L\+E\+A\+R\+\_\+\+S\+C\+R\+E\+EN = \textquotesingle{}\textbackslash{}u001\+Bc\textquotesingle{}}
+
+\mbox{\Hypertarget{watch-cli_8js_a9aa2fcad8a38fec138d4f956c6f167fb}\label{watch-cli_8js_a9aa2fcad8a38fec138d4f956c6f167fb}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!cli@{cli}}
+\index{cli@{cli}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{cli}{cli}}
+{\footnotesize\ttfamily const cli = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}../bin/\mbox{\hyperlink{shared_2watch_8js_a9d59e9be3e151be6eb812319b32a07a4}{rollup}}\textquotesingle{})}
+
+\mbox{\Hypertarget{watch-cli_8js_aa3d11d166996ddb003c33bcfacab9385}\label{watch-cli_8js_aa3d11d166996ddb003c33bcfacab9385}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!count@{count}}
+\index{count@{count}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}} count = 0}
+
+\mbox{\Hypertarget{watch-cli_8js_af14209005e00bb4cd9eda6f9486a23f9}\label{watch-cli_8js_af14209005e00bb4cd9eda6f9486a23f9}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!EE@{EE}}
+\index{EE@{EE}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{EE}{EE}}
+{\footnotesize\ttfamily var EE = require\$\$0\$1}
+
+\mbox{\Hypertarget{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}\label{watch-cli_8js_a0544c3fe466e421738dae463968b70ba}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!else@{else}}
+\index{else@{else}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  var \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a5e95655c9188700b16a5488897cecb90}{assert}} = \mbox{\hyperlink{watch-cli_8js_a9ca6d84ffa268869ab310f485a976fb0}{require}}\$\$0}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}\label{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!emit@{emit}}
+\index{emit@{emit}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{emit}{emit}}
+{\footnotesize\ttfamily var emit}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}} (event, code, signal) \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (\mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}.emitted[event]) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{return}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}.emitted[event] = \textcolor{keyword}{true};}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}.emit(event, code, signal);}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{watch-cli_8js_a3446366a995eadbff8ec385e0e466a60}\label{watch-cli_8js_a3446366a995eadbff8ec385e0e466a60}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!emitted@{emitted}}
+\index{emitted@{emitted}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{emitted}{emitted}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}} emitted = \{\}}
+
+\mbox{\Hypertarget{watch-cli_8js_a844e5e9f0779622677046cd161025957}\label{watch-cli_8js_a844e5e9f0779622677046cd161025957}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!emitter@{emitter}}
+\index{emitter@{emitter}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{emitter}{emitter}}
+{\footnotesize\ttfamily var emitter}
+
+\mbox{\Hypertarget{watch-cli_8js_a08b8b616c608ca81c6083b7b6614795f}\label{watch-cli_8js_a08b8b616c608ca81c6083b7b6614795f}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!exports@{exports}}
+\index{exports@{exports}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_ae40f2a9919d27206444f3f995d2612b8}{signal\+Exit}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (\mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}, \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}) \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!\mbox{\hyperlink{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}{processOk}}(\mbox{\hyperlink{watch-cli_8js_a9d59e9be3e151be6eb812319b32a07a4}{rollup}}.commonjsGlobal.process)) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{return} \textcolor{keyword}{function} () \{\}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \mbox{\hyperlink{resolve_2test_2resolver_2multirepo_2packages_2package-a_2index_8js_a5e95655c9188700b16a5488897cecb90}{assert}}.equal(typeof \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}}, \textcolor{stringliteral}{'function'}, \textcolor{stringliteral}{'a callback must be provided for exit handler'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (\mbox{\hyperlink{watch-cli_8js_a98ddf0165d47a36ea87907afb47b846d}{loaded}} === \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{      \mbox{\hyperlink{watch-cli_8js_a2cee060379173510336d9b08928f4824}{load}}();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    var ev = \textcolor{stringliteral}{'exit'};}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (\mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}} \&\& \mbox{\hyperlink{catharsis_2bin_2parse_8js_ab0ff07ba233223b1d32000392ac9b0ea}{opts}}.alwaysLast) \{}
+\DoxyCodeLine{      ev = \textcolor{stringliteral}{'afterexit'};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    var \textcolor{keyword}{remove} = \textcolor{keyword}{function} () \{}
+\DoxyCodeLine{      \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}.removeListener(ev, \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}});}
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (\mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}.listeners(\textcolor{stringliteral}{'exit'}).length === 0 \&\&}
+\DoxyCodeLine{          \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}.listeners(\textcolor{stringliteral}{'afterexit'}).length === 0) \{}
+\DoxyCodeLine{        \mbox{\hyperlink{watch-cli_8js_a0c6d136a9ccfdad98faec81e3892dc04}{unload}}();}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{    \};}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}.on(ev, \mbox{\hyperlink{cjs_2__cb_8js_a56804b0cffccf8c318e39ad14919bf86}{cb}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \textcolor{keyword}{remove}}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{watch-cli_8js_a41a5d237daef8e6fd756c4acaccd555e}\label{watch-cli_8js_a41a5d237daef8e6fd756c4acaccd555e}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!hasRequiredSignals@{hasRequiredSignals}}
+\index{hasRequiredSignals@{hasRequiredSignals}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{hasRequiredSignals}{hasRequiredSignals}}
+{\footnotesize\ttfamily var has\+Required\+Signals}
+
+\mbox{\Hypertarget{watch-cli_8js_ae872217e7a6a99a9333d9302b00ca36d}\label{watch-cli_8js_ae872217e7a6a99a9333d9302b00ca36d}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!index@{index}}
+\index{index@{index}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily const index = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{index.\+js}}\textquotesingle{})}
+
+\mbox{\Hypertarget{watch-cli_8js_a1ad6eb1c7b36bdb89149042003c144d3}\label{watch-cli_8js_a1ad6eb1c7b36bdb89149042003c144d3}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!isWin@{isWin}}
+\index{isWin@{isWin}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{isWin}{isWin}}
+{\footnotesize\ttfamily var is\+Win = /$^\wedge$win/\mbox{\hyperlink{symlinks_8js_a8dae195d0a309bb84d8492dc83448621}{i.\+test}}(process\$1.\+platform)}
+
+\mbox{\Hypertarget{watch-cli_8js_a2cee060379173510336d9b08928f4824}\label{watch-cli_8js_a2cee060379173510336d9b08928f4824}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!load@{load}}
+\index{load@{load}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{load}{load}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_ae40f2a9919d27206444f3f995d2612b8}{signal\+Exit}} \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} load}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{watch-cli_8js_a2cee060379173510336d9b08928f4824}{load}} () \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (\mbox{\hyperlink{watch-cli_8js_a98ddf0165d47a36ea87907afb47b846d}{loaded}} || !\mbox{\hyperlink{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}{processOk}}(\mbox{\hyperlink{watch-cli_8js_a9d59e9be3e151be6eb812319b32a07a4}{rollup}}.commonjsGlobal.process)) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{return}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a98ddf0165d47a36ea87907afb47b846d}{loaded}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}.count += 1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a32af1b7053903057257c1898ba01d00d}{signals}} = \mbox{\hyperlink{watch-cli_8js_a32af1b7053903057257c1898ba01d00d}{signals}}.filter(\textcolor{keyword}{function} (sig) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{        \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.on(sig, \mbox{\hyperlink{watch-cli_8js_a3248bfe5ebf86dd3a0153e16fe72dc2c}{sigListeners}}[sig]);}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \textcolor{keyword}{true}}
+\DoxyCodeLine{      \} \textcolor{keywordflow}{catch} (\mbox{\hyperlink{underscore-min_8js_a37e1dcd1d70227fc79919b159473b0b3}{er}}) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \textcolor{keyword}{false}}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.emit = \mbox{\hyperlink{watch-cli_8js_a47c922db461098fa6d52007dc61625ff}{processEmit}};}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.reallyExit = \mbox{\hyperlink{watch-cli_8js_a69a6b35333153ab426d26ab9fb920b10}{processReallyExit}};}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{watch-cli_8js_a732f0b410fe467a19bb1e4f8a71bfee9}\label{watch-cli_8js_a732f0b410fe467a19bb1e4f8a71bfee9}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!loadConfigFile\_js@{loadConfigFile\_js}}
+\index{loadConfigFile\_js@{loadConfigFile\_js}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{loadConfigFile\_js}{loadConfigFile\_js}}
+{\footnotesize\ttfamily const load\+Config\+File\+\_\+js = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{load\+Config\+File.\+js}}\textquotesingle{})}
+
+\mbox{\Hypertarget{watch-cli_8js_a98ddf0165d47a36ea87907afb47b846d}\label{watch-cli_8js_a98ddf0165d47a36ea87907afb47b846d}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!loaded@{loaded}}
+\index{loaded@{loaded}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{loaded}{loaded}}
+{\footnotesize\ttfamily var loaded = false}
+
+\mbox{\Hypertarget{watch-cli_8js_a7b05adb89f9c5d0ff0d45804bfdb931a}\label{watch-cli_8js_a7b05adb89f9c5d0ff0d45804bfdb931a}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!node\_child\_process@{node\_child\_process}}
+\index{node\_child\_process@{node\_child\_process}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{node\_child\_process}{node\_child\_process}}
+{\footnotesize\ttfamily const node\+\_\+child\+\_\+process = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}node\+:child\+\_\+process\textquotesingle{})}
+
+\mbox{\Hypertarget{watch-cli_8js_a6454c117cee5284a16409f4b8ce6e7cd}\label{watch-cli_8js_a6454c117cee5284a16409f4b8ce6e7cd}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!node\_fs@{node\_fs}}
+\index{node\_fs@{node\_fs}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{node\_fs}{node\_fs}}
+{\footnotesize\ttfamily const node\+\_\+fs = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}node\+:fs\textquotesingle{})}
+
+\mbox{\Hypertarget{watch-cli_8js_ad12c92f7a387a214e30eb999edf50ccc}\label{watch-cli_8js_ad12c92f7a387a214e30eb999edf50ccc}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!originalProcessEmit@{originalProcessEmit}}
+\index{originalProcessEmit@{originalProcessEmit}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{originalProcessEmit}{originalProcessEmit}}
+{\footnotesize\ttfamily var original\+Process\+Emit = \mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{process\$1.\+emit}}}
+
+\mbox{\Hypertarget{watch-cli_8js_ac2d08c69d5b525d6e0162a7868372d36}\label{watch-cli_8js_ac2d08c69d5b525d6e0162a7868372d36}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!originalProcessReallyExit@{originalProcessReallyExit}}
+\index{originalProcessReallyExit@{originalProcessReallyExit}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{originalProcessReallyExit}{originalProcessReallyExit}}
+{\footnotesize\ttfamily var original\+Process\+Really\+Exit = process\$1.\+really\+Exit}
+
+\mbox{\Hypertarget{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}\label{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!process@{process}}
+\index{process@{process}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{process}{process}}
+{\footnotesize\ttfamily var process = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}node\+:process\textquotesingle{})}
+
+\mbox{\Hypertarget{watch-cli_8js_a47c922db461098fa6d52007dc61625ff}\label{watch-cli_8js_a47c922db461098fa6d52007dc61625ff}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!processEmit@{processEmit}}
+\index{processEmit@{processEmit}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{processEmit}{processEmit}}
+{\footnotesize\ttfamily var process\+Emit}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{watch-cli_8js_a47c922db461098fa6d52007dc61625ff}{processEmit}} (ev, arg) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (ev === \textcolor{stringliteral}{'exit'} \&\& \mbox{\hyperlink{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}{processOk}}(\mbox{\hyperlink{watch-cli_8js_a9d59e9be3e151be6eb812319b32a07a4}{rollup}}.commonjsGlobal.process)) \{}
+\DoxyCodeLine{      }
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (arg !== \mbox{\hyperlink{bluebird_8core_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}}) \{}
+\DoxyCodeLine{        \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.exitCode = arg;}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{      var \mbox{\hyperlink{bluebird_2js_2release_2util_8js_ae118f78090c11223ecacb0ab8cfc22f9}{ret}} = \mbox{\hyperlink{watch-cli_8js_ad12c92f7a387a214e30eb999edf50ccc}{originalProcessEmit}}.apply(\textcolor{keyword}{this}, arguments);}
+\DoxyCodeLine{      }
+\DoxyCodeLine{      \mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}}(\textcolor{stringliteral}{'exit'}, \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.exitCode, \textcolor{keyword}{null});}
+\DoxyCodeLine{      }
+\DoxyCodeLine{      \mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}}(\textcolor{stringliteral}{'afterexit'}, \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.exitCode, \textcolor{keyword}{null});}
+\DoxyCodeLine{      }
+\DoxyCodeLine{      \textcolor{keywordflow}{return} \mbox{\hyperlink{bluebird_2js_2release_2util_8js_ae118f78090c11223ecacb0ab8cfc22f9}{ret}}}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{return} \mbox{\hyperlink{watch-cli_8js_ad12c92f7a387a214e30eb999edf50ccc}{originalProcessEmit}}.apply(\textcolor{keyword}{this}, arguments)}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}\label{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!processOk@{processOk}}
+\index{processOk@{processOk}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{processOk}{processOk}}
+{\footnotesize\ttfamily const process\+Ok}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (\mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}} \&\&}
+\DoxyCodeLine{    typeof \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}} === \textcolor{stringliteral}{'object'} \&\&}
+\DoxyCodeLine{    typeof \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}.removeListener === \textcolor{stringliteral}{'function'} \&\&}
+\DoxyCodeLine{    typeof \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}.emit === \textcolor{stringliteral}{'function'} \&\&}
+\DoxyCodeLine{    typeof \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}.reallyExit === \textcolor{stringliteral}{'function'} \&\&}
+\DoxyCodeLine{    typeof \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}.listeners === \textcolor{stringliteral}{'function'} \&\&}
+\DoxyCodeLine{    typeof \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}.kill === \textcolor{stringliteral}{'function'} \&\&}
+\DoxyCodeLine{    typeof \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}.pid === \textcolor{stringliteral}{'number'} \&\&}
+\DoxyCodeLine{    typeof \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}.on === \textcolor{stringliteral}{'function'}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{watch-cli_8js_a69a6b35333153ab426d26ab9fb920b10}\label{watch-cli_8js_a69a6b35333153ab426d26ab9fb920b10}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!processReallyExit@{processReallyExit}}
+\index{processReallyExit@{processReallyExit}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{processReallyExit}{processReallyExit}}
+{\footnotesize\ttfamily var process\+Really\+Exit}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{watch-cli_8js_a69a6b35333153ab426d26ab9fb920b10}{processReallyExit}} (code) \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!\mbox{\hyperlink{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}{processOk}}(\mbox{\hyperlink{watch-cli_8js_a9d59e9be3e151be6eb812319b32a07a4}{rollup}}.commonjsGlobal.process)) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{return}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.exitCode = code ||  0;}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}}(\textcolor{stringliteral}{'exit'}, \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.exitCode, \textcolor{keyword}{null});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a22ff35609996e4f9131714220cb11d94}{emit}}(\textcolor{stringliteral}{'afterexit'}, \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.exitCode, \textcolor{keyword}{null});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_ac2d08c69d5b525d6e0162a7868372d36}{originalProcessReallyExit}}.call(\mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1, \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.exitCode);}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{watch-cli_8js_a9ca6d84ffa268869ab310f485a976fb0}\label{watch-cli_8js_a9ca6d84ffa268869ab310f485a976fb0}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!require@{require}}
+\index{require@{require}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{require}{require}}
+{\footnotesize\ttfamily const require = require(\textquotesingle{}\mbox{\hyperlink{_0dbabel_2parser_2lib_2index_8js_ab23d5c128ef9b6d5bdd7ab7033c5e5e7}{assert}}\textquotesingle{})}
+
+\mbox{\Hypertarget{watch-cli_8js_a9d59e9be3e151be6eb812319b32a07a4}\label{watch-cli_8js_a9d59e9be3e151be6eb812319b32a07a4}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!rollup@{rollup}}
+\index{rollup@{rollup}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{rollup}{rollup}}
+{\footnotesize\ttfamily const rollup = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\mbox{\hyperlink{underscore_2modules_2zip_8js_af0c9fe4aa528313b3bc87dac209dcb7e}{rollup.\+js}}\textquotesingle{})}
+
+\mbox{\Hypertarget{watch-cli_8js_a3248bfe5ebf86dd3a0153e16fe72dc2c}\label{watch-cli_8js_a3248bfe5ebf86dd3a0153e16fe72dc2c}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!sigListeners@{sigListeners}}
+\index{sigListeners@{sigListeners}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{sigListeners}{sigListeners}}
+{\footnotesize\ttfamily var sig\+Listeners = \{\}}
+
+\mbox{\Hypertarget{watch-cli_8js_ae40f2a9919d27206444f3f995d2612b8}\label{watch-cli_8js_ae40f2a9919d27206444f3f995d2612b8}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!signalExit@{signalExit}}
+\index{signalExit@{signalExit}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{signalExit}{signalExit}}
+{\footnotesize\ttfamily var signal\+Exit = \{exports\+: \{\}\}}
+
+\mbox{\Hypertarget{watch-cli_8js_a32af1b7053903057257c1898ba01d00d}\label{watch-cli_8js_a32af1b7053903057257c1898ba01d00d}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!signals@{signals}}
+\index{signals@{signals}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{signals}{signals}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_ae40f2a9919d27206444f3f995d2612b8}{signal\+Exit}} \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} signals = \{exports\+: \{\}\}}
+
+\mbox{\Hypertarget{watch-cli_8js_ae2475e10618961c050dcba04e8c42331}\label{watch-cli_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!strict@{strict}}
+\index{strict@{strict}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+
+\mbox{\Hypertarget{watch-cli_8js_a0c6d136a9ccfdad98faec81e3892dc04}\label{watch-cli_8js_a0c6d136a9ccfdad98faec81e3892dc04}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!unload@{unload}}
+\index{unload@{unload}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{unload}{unload}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watch-cli_8js_ae40f2a9919d27206444f3f995d2612b8}{signal\+Exit}} \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} unload}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} \mbox{\hyperlink{watch-cli_8js_a0c6d136a9ccfdad98faec81e3892dc04}{unload}} () \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!\mbox{\hyperlink{watch-cli_8js_a98ddf0165d47a36ea87907afb47b846d}{loaded}} || !\mbox{\hyperlink{watch-cli_8js_aba136785be96e15d806eaf9af4be322c}{processOk}}(\mbox{\hyperlink{watch-cli_8js_a9d59e9be3e151be6eb812319b32a07a4}{rollup}}.commonjsGlobal.process)) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{return}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a98ddf0165d47a36ea87907afb47b846d}{loaded}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a32af1b7053903057257c1898ba01d00d}{signals}}.forEach(\textcolor{keyword}{function} (sig) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{        \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.removeListener(sig, \mbox{\hyperlink{watch-cli_8js_a3248bfe5ebf86dd3a0153e16fe72dc2c}{sigListeners}}[sig]);}
+\DoxyCodeLine{      \} \textcolor{keywordflow}{catch} (\mbox{\hyperlink{underscore-min_8js_a37e1dcd1d70227fc79919b159473b0b3}{er}}) \{\}}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.emit = \mbox{\hyperlink{watch-cli_8js_ad12c92f7a387a214e30eb999edf50ccc}{originalProcessEmit}};}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}\$1.reallyExit = \mbox{\hyperlink{watch-cli_8js_ac2d08c69d5b525d6e0162a7868372d36}{originalProcessReallyExit}};}
+\DoxyCodeLine{    \mbox{\hyperlink{watch-cli_8js_a844e5e9f0779622677046cd161025957}{emitter}}.count -\/= 1;}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{watch-cli_8js_a9e6450b4a6ca59c8f1c798fd83c52ba6}\label{watch-cli_8js_a9e6450b4a6ca59c8f1c798fd83c52ba6}} 
+\index{watch-\/cli.js@{watch-\/cli.js}!watch@{watch}}
+\index{watch@{watch}!watch-\/cli.js@{watch-\/cli.js}}
+\doxysubsubsection{\texorpdfstring{watch}{watch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2cjs_2zip_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} watch = watch}
+

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['conf_157',['conf',['../namespaceconf.html',1,'']]]
+  ['mylibrary_94',['MyLibrary',['../namespaceMyLibrary.html',1,'']]]
 ];

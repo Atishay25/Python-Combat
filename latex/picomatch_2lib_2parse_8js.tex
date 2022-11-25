@@ -1,0 +1,208 @@
+\hypertarget{picomatch_2lib_2parse_8js}{}\doxysection{node\+\_\+modules/picomatch/lib/parse.js File Reference}
+\label{picomatch_2lib_2parse_8js}\index{node\_modules/picomatch/lib/parse.js@{node\_modules/picomatch/lib/parse.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{picomatch_2lib_2parse_8js_a2591664844aa5b0eb49f12019e94ce54}{decrement}} (\textquotesingle{}\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_aeed07914210aa3343ae22388d40fdedb}{braces}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{picomatch_2lib_2parse_8js_a6a8e0aec4020f998e1b58a9c7d455c70}{if}} (opts.\+strict\+Slashes !==true \&\&(prev.\+type===\textquotesingle{}star\textquotesingle{}$\vert$$\vert$prev.\+type===\textquotesingle{}\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_acd4bdbbdf8e46a0d3b19ba6d68bfc604}{bracket}}\textquotesingle{}))
+\item 
+\mbox{\hyperlink{picomatch_2lib_2parse_8js_a7c5363fca50f8f3b829e00a377417d6f}{if}} (state.\+backtrack===true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{picomatch_2lib_2parse_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+const \mbox{\hyperlink{picomatch_2lib_2parse_8js_a022e926a40defc4294368e708a7e2372}{utils}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./utils\textquotesingle{})
+\item 
+const const \mbox{\hyperlink{picomatch_2lib_2parse_8js_a1359aa2334f96ca56227ce3accb6593f}{expand\+Range}}
+\begin{DoxyCompactList}\small\item\em Constants. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{picomatch_2lib_2parse_8js_a843bff23ab1706b262fa10c8f8f58286}{syntax\+Error}}
+\begin{DoxyCompactList}\small\item\em Create the message for a syntax error. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{picomatch_2lib_2parse_8js_acb4cf70b040105b213ab0dc040e707c7}{parse}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classParse}{Parse}} the given input string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}} \mbox{\hyperlink{picomatch_2lib_2parse_8js_a2d8b1877122dee983d7dab8ddda2b881}{output}} = \mbox{\hyperlink{shared_2rollup_8js_a9a6d71238a95be6166e463c9bbd79db8}{utils.\+escape\+Last}}(state.\+output, \textquotesingle{}\{\textquotesingle{})
+\item 
+\mbox{\hyperlink{browser_2bluebird_8js_a9ba8580b1b7db88f23242b38d0a0ce93}{return}} \mbox{\hyperlink{picomatch_2lib_2parse_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}}
+\item 
+\mbox{\hyperlink{astbuilder_8js_af54c3a37dd7c9d1d5d78e9a16fc4694d}{parse}} \mbox{\hyperlink{picomatch_2lib_2parse_8js_a804e94e5287383a7cff31b8dbf6b985f}{fastpaths}}
+\begin{DoxyCompactList}\small\item\em Fast paths for creating regular expressions for common glob patterns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{picomatch_2lib_2parse_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{astbuilder_8js_af54c3a37dd7c9d1d5d78e9a16fc4694d}{parse}}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ picomatch}\par
+{\em Creates a matcher function from one or more glob patterns.
+
+The returned function takes a string to match as its first argument, and returns true if the string is a match. The returned matcher function also takes a boolean as the second argument that, when true, returns an object with additional information.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{const} \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2es_2index_8js_a320c9c394b662237be25653cf0ecf4f4}{picomatch}} = \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'picomatch'});}
+\DoxyCodeLine{\textcolor{comment}{// picomatch(glob[, options]);}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{const} \mbox{\hyperlink{picomatch_8js_aeb1e16ab84300f77d76bd3841ce712f6}{isMatch}} = \mbox{\hyperlink{_0drollup_2pluginutils_2dist_2es_2index_8js_a320c9c394b662237be25653cf0ecf4f4}{picomatch}}(\textcolor{stringliteral}{'*.!(*a)'});}
+\DoxyCodeLine{console.log(\mbox{\hyperlink{picomatch_8js_aeb1e16ab84300f77d76bd3841ce712f6}{isMatch}}(\textcolor{stringliteral}{'a.a'})); \textcolor{comment}{//=> false}}
+\DoxyCodeLine{console.log(\mbox{\hyperlink{picomatch_8js_aeb1e16ab84300f77d76bd3841ce712f6}{isMatch}}(\textcolor{stringliteral}{'a.b'})); \textcolor{comment}{//=> true}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String$\vert$\+Array\}} & {\ttfamily globs} One or more glob patterns. \\
+\hline
+{\em \{\+Object=\}} & {\ttfamily options} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function=\} Returns a matcher function. @api public 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{picomatch_2lib_2parse_8js_a73ac84decd55f6799d1df05404255e6e}{constants}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./constants\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Picomatch constants. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_a2591664844aa5b0eb49f12019e94ce54}\label{picomatch_2lib_2parse_8js_a2591664844aa5b0eb49f12019e94ce54}} 
+\index{parse.js@{parse.js}!decrement@{decrement}}
+\index{decrement@{decrement}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily decrement (\begin{DoxyParamCaption}\item[{\textquotesingle{}\mbox{\hyperlink{rollup_2dist_2shared_2index_8js_aeed07914210aa3343ae22388d40fdedb}{braces}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_a6a8e0aec4020f998e1b58a9c7d455c70}\label{picomatch_2lib_2parse_8js_a6a8e0aec4020f998e1b58a9c7d455c70}} 
+\index{parse.js@{parse.js}!if@{if}}
+\index{if@{if}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{}]{opts.\+strict\+Slashes ! = {\ttfamily =~true~\&\&~(prev.type~===~\textquotesingle{}star\textquotesingle{}~$\vert$$\vert$~prev.type~===~\textquotesingle{}\mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_acd4bdbbdf8e46a0d3b19ba6d68bfc604}{bracket}}\textquotesingle{})} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_a7c5363fca50f8f3b829e00a377417d6f}\label{picomatch_2lib_2parse_8js_a7c5363fca50f8f3b829e00a377417d6f}} 
+\index{parse.js@{parse.js}!if@{if}}
+\index{if@{if}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{state.}]{backtrack = {\ttfamily ==~true} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_a73ac84decd55f6799d1df05404255e6e}\label{picomatch_2lib_2parse_8js_a73ac84decd55f6799d1df05404255e6e}} 
+\index{parse.js@{parse.js}!constants@{constants}}
+\index{constants@{constants}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{constants}{constants}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_ab94e0a6507d6af3464617b932a6a041a}{picomatch}} constants = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./constants\textquotesingle{})}
+
+
+
+Picomatch constants. 
+
+\begin{DoxyReturn}{Returns}
+\{Object\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_a1359aa2334f96ca56227ce3accb6593f}\label{picomatch_2lib_2parse_8js_a1359aa2334f96ca56227ce3accb6593f}} 
+\index{parse.js@{parse.js}!expandRange@{expandRange}}
+\index{expandRange@{expandRange}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{expandRange}{expandRange}}
+{\footnotesize\ttfamily const const expand\+Range}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (args, \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}) => \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (typeof \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}.expandRange === \textcolor{stringliteral}{'function'}) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}}.expandRange(...args, \mbox{\hyperlink{bin_2markdown-it_8js_a14d7068fe04a78458c0b19f26a4f10d8}{options}});}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  args.sort();}
+\DoxyCodeLine{  \textcolor{keyword}{const} \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}} = `[\$\{args.join(\textcolor{charliteral}{'-\/'})\}]`;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keyword}{new} RegExp(\mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}});}
+\DoxyCodeLine{  \} \textcolor{keywordflow}{catch} (ex) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} args.map(\mbox{\hyperlink{markdown-it_8min_8js_afc3dd12de12777f6e20b4c93b7e7cb96}{v}} => \mbox{\hyperlink{picomatch_2lib_2parse_8js_a022e926a40defc4294368e708a7e2372}{utils}}.escapeRegex(\mbox{\hyperlink{markdown-it_8min_8js_afc3dd12de12777f6e20b4c93b7e7cb96}{v}})).join(\textcolor{stringliteral}{'..'});}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \mbox{\hyperlink{underscore_2cjs_2underscore_8js_a738fb422b606e29df69a21e5af814373}{value}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Constants. 
+
+Helpers \mbox{\Hypertarget{picomatch_2lib_2parse_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{picomatch_2lib_2parse_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{parse.js@{parse.js}!exports@{exports}}
+\index{exports@{exports}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{astbuilder_8js_af54c3a37dd7c9d1d5d78e9a16fc4694d}{parse}}}
+
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_a804e94e5287383a7cff31b8dbf6b985f}\label{picomatch_2lib_2parse_8js_a804e94e5287383a7cff31b8dbf6b985f}} 
+\index{parse.js@{parse.js}!fastpaths@{fastpaths}}
+\index{fastpaths@{fastpaths}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{fastpaths}{fastpaths}}
+{\footnotesize\ttfamily \mbox{\hyperlink{astbuilder_8js_af54c3a37dd7c9d1d5d78e9a16fc4694d}{parse}} fastpaths}
+
+
+
+Fast paths for creating regular expressions for common glob patterns. 
+
+This can significantly speed up processing and has very little downside impact when none of the fast paths match. \mbox{\Hypertarget{picomatch_2lib_2parse_8js_a2d8b1877122dee983d7dab8ddda2b881}\label{picomatch_2lib_2parse_8js_a2d8b1877122dee983d7dab8ddda2b881}} 
+\index{parse.js@{parse.js}!output@{output}}
+\index{output@{output}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}{state}} output = \mbox{\hyperlink{shared_2rollup_8js_a9a6d71238a95be6166e463c9bbd79db8}{utils.\+escape\+Last}}(state.\+output, \textquotesingle{}\{\textquotesingle{})}
+
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_acb4cf70b040105b213ab0dc040e707c7}\label{picomatch_2lib_2parse_8js_acb4cf70b040105b213ab0dc040e707c7}} 
+\index{parse.js@{parse.js}!parse@{parse}}
+\index{parse@{parse}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{parse}{parse}}
+{\footnotesize\ttfamily const parse}
+
+
+
+\mbox{\hyperlink{classParse}{Parse}} the given input string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & input \\
+\hline
+{\em \{\+Object\}} & options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}\label{picomatch_2lib_2parse_8js_a8cbfe76ff58d058c8f56dffc4f3675aa}} 
+\index{parse.js@{parse.js}!state@{state}}
+\index{state@{state}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{browser_2bluebird_8js_a9ba8580b1b7db88f23242b38d0a0ce93}{return}} state}
+
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_ae2475e10618961c050dcba04e8c42331}\label{picomatch_2lib_2parse_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{parse.js@{parse.js}!strict@{strict}}
+\index{strict@{strict}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_a843bff23ab1706b262fa10c8f8f58286}\label{picomatch_2lib_2parse_8js_a843bff23ab1706b262fa10c8f8f58286}} 
+\index{parse.js@{parse.js}!syntaxError@{syntaxError}}
+\index{syntaxError@{syntaxError}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{syntaxError}{syntaxError}}
+{\footnotesize\ttfamily const syntax\+Error}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (type, char) => \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} `Missing \$\{type\}: \textcolor{stringliteral}{"\$\{char\}"} -\/ \mbox{\hyperlink{dist_2markdown-it_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)\$\{char\}"} to \mbox{\hyperlink{linkify-it_2index_8js_aa9709f631a6baa3e6637446437f84651}{match}} \mbox{\hyperlink{_0dlezer_2highlight_2dist_2index_8js_aaa3be9b88dbcfdd6d6b483b3a590b3c6}{literal}} characters`;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Create the message for a syntax error. 
+
+\mbox{\Hypertarget{picomatch_2lib_2parse_8js_a022e926a40defc4294368e708a7e2372}\label{picomatch_2lib_2parse_8js_a022e926a40defc4294368e708a7e2372}} 
+\index{parse.js@{parse.js}!utils@{utils}}
+\index{utils@{utils}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily const utils = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./utils\textquotesingle{})}
+

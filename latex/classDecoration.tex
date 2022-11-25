@@ -1,0 +1,123 @@
+\hypertarget{classDecoration}{}\doxysection{Decoration Class Reference}
+\label{classDecoration}\index{Decoration@{Decoration}}
+
+
+A decoration provides information on how to draw or style a piece of content.  
+
+
+
+
+Inheritance diagram for Decoration\+:
+% FIG 0
+
+
+Collaboration diagram for Decoration\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDecoration_ab9a71d5fa3c49f020895fe3dea01a89a}{constructor}} (\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js_a1cf5ae5a4268c1bc1362a6ac0a06f1ab}{start\+Side}}, end\+Side, \mbox{\hyperlink{classDecoration_abfd119302472049d4208b13ac4d69b16}{widget}}, spec)
+\item 
+\mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} \mbox{\hyperlink{classDecoration_a8c9546d7bfdbc581dcb61d873480f711}{height\+Relevant}} ()
+\item 
+\mbox{\hyperlink{classDecoration_a928578310100de9d361ba8d7699bfb6b}{has\+Height}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classDecoration_ad66f9c0fe8ae70e2251e7e2d8362afb9}{mark}} (spec)
+\begin{DoxyCompactList}\small\item\em Create a mark decoration, which influences the styling of the content in its range. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classDecoration_abfd119302472049d4208b13ac4d69b16}{widget}} (spec)
+\begin{DoxyCompactList}\small\item\em Create a widget decoration, which displays a D\+OM element at the given position. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classDecoration_a25936eec4d3a22b971ceec0ab4a50177}{replace}} (spec)
+\begin{DoxyCompactList}\small\item\em Create a replace decoration which replaces the given range with a widget, or simply hides it. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classDecoration_a155f51f9da780fd91267ea291f49aec9}{line}} (spec)
+\begin{DoxyCompactList}\small\item\em Create a line decoration, which can add D\+OM attributes to the line starting at the given position. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classDecoration_a37ea49585fd566663ee3ad2c1a09d333}{set}} (of, \mbox{\hyperlink{augment_8js_a8c083e75cf25b8a728f7f1a7a270a74c}{sort}}=false)
+\begin{DoxyCompactList}\small\item\em Build a \href{https://codemirror.net/6/docs/ref/\#view.DecorationSet}{\texttt{ {\ttfamily Decoration\+Set}}} from the given decorated range or ranges. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A decoration provides information on how to draw or style a piece of content. 
+
+You\textquotesingle{}ll usually use it wrapped in a \href{https://codemirror.net/6/docs/ref/\#state.Range}{\texttt{ {\ttfamily Range}}}, which adds a start and end position. @nonabstract 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDecoration_ab9a71d5fa3c49f020895fe3dea01a89a}\label{classDecoration_ab9a71d5fa3c49f020895fe3dea01a89a}} 
+\index{Decoration@{Decoration}!constructor@{constructor}}
+\index{constructor@{constructor}!Decoration@{Decoration}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily Decoration\+::constructor (\begin{DoxyParamCaption}\item[{}]{start\+Side,  }\item[{}]{end\+Side,  }\item[{}]{widget,  }\item[{}]{spec }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em spec} & The config object used to create this decoration. You can include additional properties in there to store metadata about your decoration. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDecoration_a928578310100de9d361ba8d7699bfb6b}\label{classDecoration_a928578310100de9d361ba8d7699bfb6b}} 
+\index{Decoration@{Decoration}!hasHeight@{hasHeight}}
+\index{hasHeight@{hasHeight}!Decoration@{Decoration}}
+\doxysubsubsection{\texorpdfstring{hasHeight()}{hasHeight()}}
+{\footnotesize\ttfamily Decoration\+::has\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDecoration_a8c9546d7bfdbc581dcb61d873480f711}\label{classDecoration_a8c9546d7bfdbc581dcb61d873480f711}} 
+\index{Decoration@{Decoration}!heightRelevant@{heightRelevant}}
+\index{heightRelevant@{heightRelevant}!Decoration@{Decoration}}
+\doxysubsubsection{\texorpdfstring{heightRelevant()}{heightRelevant()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{underscore_2underscore_8js_a4a366fea90a1544455e36c295510ebd4}{get}} Decoration\+::height\+Relevant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDecoration_a155f51f9da780fd91267ea291f49aec9}\label{classDecoration_a155f51f9da780fd91267ea291f49aec9}} 
+\index{Decoration@{Decoration}!line@{line}}
+\index{line@{line}!Decoration@{Decoration}}
+\doxysubsubsection{\texorpdfstring{line()}{line()}}
+{\footnotesize\ttfamily static Decoration\+::line (\begin{DoxyParamCaption}\item[{}]{spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a line decoration, which can add D\+OM attributes to the line starting at the given position. 
+
+\mbox{\Hypertarget{classDecoration_ad66f9c0fe8ae70e2251e7e2d8362afb9}\label{classDecoration_ad66f9c0fe8ae70e2251e7e2d8362afb9}} 
+\index{Decoration@{Decoration}!mark@{mark}}
+\index{mark@{mark}!Decoration@{Decoration}}
+\doxysubsubsection{\texorpdfstring{mark()}{mark()}}
+{\footnotesize\ttfamily static Decoration\+::mark (\begin{DoxyParamCaption}\item[{}]{spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a mark decoration, which influences the styling of the content in its range. 
+
+Nested mark decorations will cause nested D\+OM elements to be created. Nesting order is determined by precedence of the \href{https://codemirror.net/6/docs/ref/\#view.EditorView^decorations}{\texttt{ facet}}, with the higher-\/precedence decorations creating the inner D\+OM nodes. Such elements are split on line boundaries and on the boundaries of lower-\/precedence decorations. \mbox{\Hypertarget{classDecoration_a25936eec4d3a22b971ceec0ab4a50177}\label{classDecoration_a25936eec4d3a22b971ceec0ab4a50177}} 
+\index{Decoration@{Decoration}!replace@{replace}}
+\index{replace@{replace}!Decoration@{Decoration}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily static Decoration\+::replace (\begin{DoxyParamCaption}\item[{}]{spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a replace decoration which replaces the given range with a widget, or simply hides it. 
+
+\mbox{\Hypertarget{classDecoration_a37ea49585fd566663ee3ad2c1a09d333}\label{classDecoration_a37ea49585fd566663ee3ad2c1a09d333}} 
+\index{Decoration@{Decoration}!set@{set}}
+\index{set@{set}!Decoration@{Decoration}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily static Decoration\+::set (\begin{DoxyParamCaption}\item[{}]{of,  }\item[{}]{sort = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build a \href{https://codemirror.net/6/docs/ref/\#view.DecorationSet}{\texttt{ {\ttfamily Decoration\+Set}}} from the given decorated range or ranges. 
+
+If the ranges aren\textquotesingle{}t already sorted, pass {\ttfamily true} for {\ttfamily sort} to make the library sort them for you. \mbox{\Hypertarget{classDecoration_abfd119302472049d4208b13ac4d69b16}\label{classDecoration_abfd119302472049d4208b13ac4d69b16}} 
+\index{Decoration@{Decoration}!widget@{widget}}
+\index{widget@{widget}!Decoration@{Decoration}}
+\doxysubsubsection{\texorpdfstring{widget()}{widget()}}
+{\footnotesize\ttfamily static Decoration\+::widget (\begin{DoxyParamCaption}\item[{}]{spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a widget decoration, which displays a D\+OM element at the given position. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node\+\_\+modules/@codemirror/view/dist/\mbox{\hyperlink{_0dcodemirror_2view_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

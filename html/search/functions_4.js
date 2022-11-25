@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['link_183',['link',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#aec039b7d7236d939a04fd9e93440512c',1,'link(or bind by name) to the interfaces of:&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#aec039b7d7236d939a04fd9e93440512c',1,'link(or bind by name) to the interfaces of:&#160;Apache-License-2.0.txt']]],
-  ['load_184',['load',['../namespaceSync.html#ada025aec0d74f9a14d7cee2632d5f8d3',1,'Sync']]]
+  ['snowman_5fkill_53',['snowman_kill',['../level3_8js.html#ac158a6e98cf2ad12e47aa6f92f37b725',1,'level3.js']]],
+  ['speeddown_54',['speeddown',['../level1_8js.html#aa04411e336425f2c0ee06a3e0cffd002',1,'speeddown():&#160;level1.js'],['../level2_8js.html#aa04411e336425f2c0ee06a3e0cffd002',1,'speeddown():&#160;level2.js'],['../level3_8js.html#aa04411e336425f2c0ee06a3e0cffd002',1,'speeddown():&#160;level3.js'],['../level4_8js.html#aa04411e336425f2c0ee06a3e0cffd002',1,'speeddown():&#160;level4.js'],['../level5_8js.html#aa04411e336425f2c0ee06a3e0cffd002',1,'speeddown():&#160;level5.js']]],
+  ['speedup_55',['speedup',['../level1_8js.html#a09a17e55f6e99aeca0ca34f45e3686fa',1,'speedup():&#160;level1.js'],['../level2_8js.html#a09a17e55f6e99aeca0ca34f45e3686fa',1,'speedup():&#160;level2.js'],['../level3_8js.html#a09a17e55f6e99aeca0ca34f45e3686fa',1,'speedup():&#160;level3.js'],['../level4_8js.html#a09a17e55f6e99aeca0ca34f45e3686fa',1,'speedup():&#160;level4.js'],['../level5_8js.html#a09a17e55f6e99aeca0ca34f45e3686fa',1,'speedup():&#160;level5.js']]]
 ];

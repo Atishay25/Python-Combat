@@ -1,0 +1,113 @@
+\hypertarget{parser__core_8js}{}\doxysection{node\+\_\+modules/markdown-\/it/lib/parser\+\_\+core.js File Reference}
+\label{parser__core_8js}\index{node\_modules/markdown-\/it/lib/parser\_core.js@{node\_modules/markdown-\/it/lib/parser\_core.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{parser__core_8js_a54007c437be4abf021b0d716ebeba771}{Core}} ()
+\begin{DoxyCompactList}\small\item\em new \mbox{\hyperlink{parser__core_8js_a54007c437be4abf021b0d716ebeba771}{Core()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} \mbox{\hyperlink{parser__core_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\begin{DoxyCompactList}\small\item\em internal class Core \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{parser__core_8js_ae52b224cca585cb5ce6279585569b790}{Ruler}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./ruler\textquotesingle{})
+\item 
+var \mbox{\hyperlink{parser__core_8js_a6dc78dee3da987ae2c506086d1086e81}{\+\_\+rules}}
+\item 
+\mbox{\hyperlink{parser__core_8js_a54007c437be4abf021b0d716ebeba771}{Core}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{parser__core_8js_a12de43439a1796b80bf8c1a3d8f7ea35}{process}}
+\begin{DoxyCompactList}\small\item\em Core.\+process(state) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{parser__core_8js_a54007c437be4abf021b0d716ebeba771}{Core}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{parser__core_8js_ae7b4cbcca59e5936504ca8d09d338606}{State}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./rules\+\_\+core/state\+\_\+core\textquotesingle{})
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{parser__core_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{parser__core_8js_a54007c437be4abf021b0d716ebeba771}{Core}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{parser__core_8js_a54007c437be4abf021b0d716ebeba771}\label{parser__core_8js_a54007c437be4abf021b0d716ebeba771}} 
+\index{parser\_core.js@{parser\_core.js}!Core@{Core}}
+\index{Core@{Core}!parser\_core.js@{parser\_core.js}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}}
+{\footnotesize\ttfamily function Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+new \mbox{\hyperlink{parser__core_8js_a54007c437be4abf021b0d716ebeba771}{Core()}} 
+
+Core\+::ruler -\/$>$ Ruler
+
+\mbox{[}\mbox{[}Ruler\mbox{]}\mbox{]} instance. Keep configuration of core rules.
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{parser__core_8js_a6dc78dee3da987ae2c506086d1086e81}\label{parser__core_8js_a6dc78dee3da987ae2c506086d1086e81}} 
+\index{parser\_core.js@{parser\_core.js}!\_rules@{\_rules}}
+\index{\_rules@{\_rules}!parser\_core.js@{parser\_core.js}}
+\doxysubsubsection{\texorpdfstring{\_rules}{\_rules}}
+{\footnotesize\ttfamily var \+\_\+rules}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'normalize'},      \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_core/normalize'})      ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'block'},          \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_core/block'})          ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'inline'},         \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_core/inline'})         ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'linkify'},        \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_core/linkify'})        ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'replacements'},   \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_core/replacements'})   ],}
+\DoxyCodeLine{  [ \textcolor{stringliteral}{'smartquotes'},    \mbox{\hyperlink{dist_2markdown-it_8js_a4b4eb847520ff4e45de16db801e26133}{require}}(\textcolor{stringliteral}{'./rules\_core/smartquotes'})    ]}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{parser__core_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{parser__core_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{parser\_core.js@{parser\_core.js}!exports@{exports}}
+\index{exports@{exports}!parser\_core.js@{parser\_core.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{parser__core_8js_a54007c437be4abf021b0d716ebeba771}{Core}}}
+
+\mbox{\Hypertarget{parser__core_8js_a12de43439a1796b80bf8c1a3d8f7ea35}\label{parser__core_8js_a12de43439a1796b80bf8c1a3d8f7ea35}} 
+\index{parser\_core.js@{parser\_core.js}!process@{process}}
+\index{process@{process}!parser\_core.js@{parser\_core.js}}
+\doxysubsubsection{\texorpdfstring{process}{process}}
+{\footnotesize\ttfamily var process}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}}) \{}
+\DoxyCodeLine{  var \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}, \mbox{\hyperlink{markdownItAnchor_8js_ae5e71a2600e8891c54854be157cc6626}{l}}, rules;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  rules = this.ruler.getRules(\textcolor{stringliteral}{''});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{for} (\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} = 0, \mbox{\hyperlink{markdownItAnchor_8js_ae5e71a2600e8891c54854be157cc6626}{l}} = rules.length; \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}} < \mbox{\hyperlink{markdownItAnchor_8js_ae5e71a2600e8891c54854be157cc6626}{l}}; \mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}++) \{}
+\DoxyCodeLine{    rules[\mbox{\hyperlink{levels_2level1_2out_2scripts_2prettify_2lang-css_8js_aa9f639ad441faa68bcc131d5ee61a787}{i}}](\mbox{\hyperlink{_0dcodemirror_2language_2dist_2index_8js_a9c9547f1942d13b63294a645805217f4}{state}});}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Core.\+process(state) 
+
+Executes core chain rules. \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2opts_2argparser_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/opts/argparser.\+js}}, and \mbox{\hyperlink{_2home_2atishayjain_2CS251_2Python-Combat_2node_modules_2jsdoc_2lib_2jsdoc_2util_2logger_8js-example}{/home/atishayjain/\+C\+S251/\+Python-\/\+Combat/node\+\_\+modules/jsdoc/lib/jsdoc/util/logger.\+js}}.\end{Desc}
+\mbox{\Hypertarget{parser__core_8js_ae52b224cca585cb5ce6279585569b790}\label{parser__core_8js_ae52b224cca585cb5ce6279585569b790}} 
+\index{parser\_core.js@{parser\_core.js}!Ruler@{Ruler}}
+\index{Ruler@{Ruler}!parser\_core.js@{parser\_core.js}}
+\doxysubsubsection{\texorpdfstring{Ruler}{Ruler}}
+{\footnotesize\ttfamily var Ruler = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./ruler\textquotesingle{})}
+
+\mbox{\Hypertarget{parser__core_8js_ae7b4cbcca59e5936504ca8d09d338606}\label{parser__core_8js_ae7b4cbcca59e5936504ca8d09d338606}} 
+\index{parser\_core.js@{parser\_core.js}!State@{State}}
+\index{State@{State}!parser\_core.js@{parser\_core.js}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily \mbox{\hyperlink{parser__core_8js_a54007c437be4abf021b0d716ebeba771}{Core}} \mbox{\hyperlink{wrapperLodash_8js_ae07a24b9237d93a82e7e0aeb67eecca0}{prototype}} \mbox{\hyperlink{classState}{State}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./rules\+\_\+core/state\+\_\+core\textquotesingle{})}
+
+\mbox{\Hypertarget{parser__core_8js_ae2475e10618961c050dcba04e8c42331}\label{parser__core_8js_ae2475e10618961c050dcba04e8c42331}} 
+\index{parser\_core.js@{parser\_core.js}!strict@{strict}}
+\index{strict@{strict}!parser\_core.js@{parser\_core.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2marked_8js_afdc31efea6eaa6cb360d780f8fd31efa}{use}} strict}
+
+
+
+internal class Core 
+
+Top-\/level rules executor. Glues block/inline parsers and does intermediate transformations. 

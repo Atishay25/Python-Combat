@@ -1,0 +1,142 @@
+\hypertarget{__mergeData_8js}{}\doxysection{node\+\_\+modules/lodash/\+\_\+merge\+Data.js File Reference}
+\label{__mergeData_8js}\index{node\_modules/lodash/\_mergeData.js@{node\_modules/lodash/\_mergeData.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__mergeData_8js_a4a62a59a56c8d75ede1cf1982ad5b8a6}{merge\+Data}} (\mbox{\hyperlink{resolve_2lib_2core_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, source)
+\begin{DoxyCompactList}\small\item\em Merges the function metadata of {\ttfamily source} into {\ttfamily data}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__mergeData_8js_a2e07da70ab418d94f84e369abaa8bba1}{compose\+Args}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+compose\+Args\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__mergeData_8js_abee421777982e61ecb3352465f49253e}{compose\+Args\+Right}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+compose\+Args\+Right\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__mergeData_8js_aa38f94a8d897185ab7cee46830152053}{replace\+Holders}} = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+replace\+Holders\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__mergeData_8js_a97565ec4b3b69b3806d7b7111e51cff7}{P\+L\+A\+C\+E\+H\+O\+L\+D\+ER}} = \textquotesingle{}\+\_\+\+\_\+lodash\+\_\+placeholder\+\_\+\+\_\+\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Used as the internal argument placeholder. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__mergeData_8js_ab98eb5e7eed254945468646b5f58dd7b}{W\+R\+A\+P\+\_\+\+B\+I\+N\+D\+\_\+\+F\+L\+AG}} = 1
+\begin{DoxyCompactList}\small\item\em Used to compose bitmasks for function metadata. \end{DoxyCompactList}\item 
+var \mbox{\hyperlink{__mergeData_8js_a259833d85de00fb18f81f28827ad5805}{W\+R\+A\+P\+\_\+\+B\+I\+N\+D\+\_\+\+K\+E\+Y\+\_\+\+F\+L\+AG}} = 2
+\item 
+var \mbox{\hyperlink{__mergeData_8js_aa70bca8f2f48efd63a063fb786e041f5}{W\+R\+A\+P\+\_\+\+C\+U\+R\+R\+Y\+\_\+\+B\+O\+U\+N\+D\+\_\+\+F\+L\+AG}} = 4
+\item 
+var \mbox{\hyperlink{__mergeData_8js_a350fa23c4209353fbb29a8377a4c864b}{W\+R\+A\+P\+\_\+\+C\+U\+R\+R\+Y\+\_\+\+F\+L\+AG}} = 8
+\item 
+var \mbox{\hyperlink{__mergeData_8js_a0185dc8955e27f0944206348b9221caa}{W\+R\+A\+P\+\_\+\+A\+R\+Y\+\_\+\+F\+L\+AG}} = 128
+\item 
+var \mbox{\hyperlink{__mergeData_8js_a74cfa1901d15e8c1c445badf4c1d4216}{W\+R\+A\+P\+\_\+\+R\+E\+A\+R\+G\+\_\+\+F\+L\+AG}} = 256
+\item 
+var \mbox{\hyperlink{__mergeData_8js_ad5c2a8404a49d6437835b22dd9dd37c8}{native\+Min}} = \mbox{\hyperlink{underscore-esm-min_8js_acba5242b829e6bcf001dee9be91506ab}{Math.\+min}}
+\item 
+\mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__mergeData_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__mergeData_8js_a4a62a59a56c8d75ede1cf1982ad5b8a6}{merge\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__mergeData_8js_a4a62a59a56c8d75ede1cf1982ad5b8a6}\label{__mergeData_8js_a4a62a59a56c8d75ede1cf1982ad5b8a6}} 
+\index{\_mergeData.js@{\_mergeData.js}!mergeData@{mergeData}}
+\index{mergeData@{mergeData}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{mergeData()}{mergeData()}}
+{\footnotesize\ttfamily function merge\+Data (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Merges the function metadata of {\ttfamily source} into {\ttfamily data}. 
+
+Merging metadata reduces the number of wrappers used to invoke a function. This is possible because methods like {\ttfamily \+\_\+.\+bind}, {\ttfamily \+\_\+.\+curry}, and {\ttfamily \+\_\+.\+partial} may be applied regardless of execution order. Methods like {\ttfamily \+\_\+.\+ary} and {\ttfamily \+\_\+.\+rearg} modify function arguments, making the order in which they are executed important, preventing the merging of metadata. However, we make an exception for a safe combined case where curried functions have {\ttfamily \+\_\+.\+ary} and or {\ttfamily \+\_\+.\+rearg} applied.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & data The destination metadata. \\
+\hline
+{\em \{\+Array\}} & source The source metadata. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns {\ttfamily data}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__mergeData_8js_a2e07da70ab418d94f84e369abaa8bba1}\label{__mergeData_8js_a2e07da70ab418d94f84e369abaa8bba1}} 
+\index{\_mergeData.js@{\_mergeData.js}!composeArgs@{composeArgs}}
+\index{composeArgs@{composeArgs}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{composeArgs}{composeArgs}}
+{\footnotesize\ttfamily var compose\+Args = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+compose\+Args\textquotesingle{})}
+
+\mbox{\Hypertarget{__mergeData_8js_abee421777982e61ecb3352465f49253e}\label{__mergeData_8js_abee421777982e61ecb3352465f49253e}} 
+\index{\_mergeData.js@{\_mergeData.js}!composeArgsRight@{composeArgsRight}}
+\index{composeArgsRight@{composeArgsRight}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{composeArgsRight}{composeArgsRight}}
+{\footnotesize\ttfamily var compose\+Args\+Right = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+compose\+Args\+Right\textquotesingle{})}
+
+\mbox{\Hypertarget{__mergeData_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\label{__mergeData_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}} 
+\index{\_mergeData.js@{\_mergeData.js}!exports@{exports}}
+\index{exports@{exports}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \mbox{\hyperlink{shared_2rollup_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__mergeData_8js_a4a62a59a56c8d75ede1cf1982ad5b8a6}{merge\+Data}}}
+
+\mbox{\Hypertarget{__mergeData_8js_ad5c2a8404a49d6437835b22dd9dd37c8}\label{__mergeData_8js_ad5c2a8404a49d6437835b22dd9dd37c8}} 
+\index{\_mergeData.js@{\_mergeData.js}!nativeMin@{nativeMin}}
+\index{nativeMin@{nativeMin}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{nativeMin}{nativeMin}}
+{\footnotesize\ttfamily var native\+Min = \mbox{\hyperlink{underscore-esm-min_8js_acba5242b829e6bcf001dee9be91506ab}{Math.\+min}}}
+
+\mbox{\Hypertarget{__mergeData_8js_a97565ec4b3b69b3806d7b7111e51cff7}\label{__mergeData_8js_a97565ec4b3b69b3806d7b7111e51cff7}} 
+\index{\_mergeData.js@{\_mergeData.js}!PLACEHOLDER@{PLACEHOLDER}}
+\index{PLACEHOLDER@{PLACEHOLDER}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{PLACEHOLDER}{PLACEHOLDER}}
+{\footnotesize\ttfamily var P\+L\+A\+C\+E\+H\+O\+L\+D\+ER = \textquotesingle{}\+\_\+\+\_\+lodash\+\_\+placeholder\+\_\+\+\_\+\textquotesingle{}}
+
+
+
+Used as the internal argument placeholder. 
+
+\mbox{\Hypertarget{__mergeData_8js_aa38f94a8d897185ab7cee46830152053}\label{__mergeData_8js_aa38f94a8d897185ab7cee46830152053}} 
+\index{\_mergeData.js@{\_mergeData.js}!replaceHolders@{replaceHolders}}
+\index{replaceHolders@{replaceHolders}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{replaceHolders}{replaceHolders}}
+{\footnotesize\ttfamily var replace\+Holders = \mbox{\hyperlink{underscore_2cjs_2template_8js_a4c4e3dc199708a27fe2190ba59cdacd9}{require}}(\textquotesingle{}./\+\_\+replace\+Holders\textquotesingle{})}
+
+\mbox{\Hypertarget{__mergeData_8js_a0185dc8955e27f0944206348b9221caa}\label{__mergeData_8js_a0185dc8955e27f0944206348b9221caa}} 
+\index{\_mergeData.js@{\_mergeData.js}!WRAP\_ARY\_FLAG@{WRAP\_ARY\_FLAG}}
+\index{WRAP\_ARY\_FLAG@{WRAP\_ARY\_FLAG}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_ARY\_FLAG}{WRAP\_ARY\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+A\+R\+Y\+\_\+\+F\+L\+AG = 128}
+
+\mbox{\Hypertarget{__mergeData_8js_ab98eb5e7eed254945468646b5f58dd7b}\label{__mergeData_8js_ab98eb5e7eed254945468646b5f58dd7b}} 
+\index{\_mergeData.js@{\_mergeData.js}!WRAP\_BIND\_FLAG@{WRAP\_BIND\_FLAG}}
+\index{WRAP\_BIND\_FLAG@{WRAP\_BIND\_FLAG}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_BIND\_FLAG}{WRAP\_BIND\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+B\+I\+N\+D\+\_\+\+F\+L\+AG = 1}
+
+
+
+Used to compose bitmasks for function metadata. 
+
+\mbox{\Hypertarget{__mergeData_8js_a259833d85de00fb18f81f28827ad5805}\label{__mergeData_8js_a259833d85de00fb18f81f28827ad5805}} 
+\index{\_mergeData.js@{\_mergeData.js}!WRAP\_BIND\_KEY\_FLAG@{WRAP\_BIND\_KEY\_FLAG}}
+\index{WRAP\_BIND\_KEY\_FLAG@{WRAP\_BIND\_KEY\_FLAG}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_BIND\_KEY\_FLAG}{WRAP\_BIND\_KEY\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+B\+I\+N\+D\+\_\+\+K\+E\+Y\+\_\+\+F\+L\+AG = 2}
+
+\mbox{\Hypertarget{__mergeData_8js_aa70bca8f2f48efd63a063fb786e041f5}\label{__mergeData_8js_aa70bca8f2f48efd63a063fb786e041f5}} 
+\index{\_mergeData.js@{\_mergeData.js}!WRAP\_CURRY\_BOUND\_FLAG@{WRAP\_CURRY\_BOUND\_FLAG}}
+\index{WRAP\_CURRY\_BOUND\_FLAG@{WRAP\_CURRY\_BOUND\_FLAG}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_CURRY\_BOUND\_FLAG}{WRAP\_CURRY\_BOUND\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+C\+U\+R\+R\+Y\+\_\+\+B\+O\+U\+N\+D\+\_\+\+F\+L\+AG = 4}
+
+\mbox{\Hypertarget{__mergeData_8js_a350fa23c4209353fbb29a8377a4c864b}\label{__mergeData_8js_a350fa23c4209353fbb29a8377a4c864b}} 
+\index{\_mergeData.js@{\_mergeData.js}!WRAP\_CURRY\_FLAG@{WRAP\_CURRY\_FLAG}}
+\index{WRAP\_CURRY\_FLAG@{WRAP\_CURRY\_FLAG}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_CURRY\_FLAG}{WRAP\_CURRY\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+C\+U\+R\+R\+Y\+\_\+\+F\+L\+AG = 8}
+
+\mbox{\Hypertarget{__mergeData_8js_a74cfa1901d15e8c1c445badf4c1d4216}\label{__mergeData_8js_a74cfa1901d15e8c1c445badf4c1d4216}} 
+\index{\_mergeData.js@{\_mergeData.js}!WRAP\_REARG\_FLAG@{WRAP\_REARG\_FLAG}}
+\index{WRAP\_REARG\_FLAG@{WRAP\_REARG\_FLAG}!\_mergeData.js@{\_mergeData.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_REARG\_FLAG}{WRAP\_REARG\_FLAG}}
+{\footnotesize\ttfamily var W\+R\+A\+P\+\_\+\+R\+E\+A\+R\+G\+\_\+\+F\+L\+AG = 256}
+
