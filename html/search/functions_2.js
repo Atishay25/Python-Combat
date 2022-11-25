@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ready_32',['ready',['../level5_8js.html#a28dac899ef9933ed9fa917bb213547dc',1,'level5.js']]]
+  ['irrevocable_181',['irrevocable',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#ae34e019b5e27919170b4aa7cdd324200',1,'irrevocable(except as stated in this section) patent license to make:&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#ae34e019b5e27919170b4aa7cdd324200',1,'irrevocable(except as stated in this section) patent license to make:&#160;Apache-License-2.0.txt']]]
 ];

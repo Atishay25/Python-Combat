@@ -2,14 +2,9 @@ var title = "Python Combat";
 var i = 0;
 var speed = 150;
 
-/**
- * Return the ratio of the inline text length of the links in an element to
- * the inline text length of the entire element.
- * @file welcome.js
- * @param {Node} node - Types or not: either works.
- * @throws {PartyError|Hearty} Multiple types work fine.
- * @returns {Number} Types and descriptions are both supported.
- */
+/// @file Sync.js
+/// @function typeWriter
+/// Module for loading and storing data
 function typeWriter() {
     if (i < title.length) {
         document.getElementById("heading").innerHTML += title.charAt(i);

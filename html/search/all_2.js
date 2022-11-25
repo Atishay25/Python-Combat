@@ -1,4 +1,14 @@
 var searchData=
 [
-  ['ready_3',['ready',['../level5_8js.html#a28dac899ef9933ed9fa917bb213547dc',1,'level5.js']]]
+  ['change_10',['change',['../level5_8js.html#ab41b0e12179ea31b35698fa48399e8d8',1,'level5.js']]],
+  ['charge_11',['charge',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a84a21d115bb384bf97843ff4342c2e26',1,'charge():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a84a21d115bb384bf97843ff4342c2e26',1,'charge():&#160;Apache-License-2.0.txt']]],
+  ['check_5fsuccess_12',['check_success',['../level5_8js.html#a9aa99c9dbb8de7809a3697733d09a852',1,'level5.js']]],
+  ['code_13',['code',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a99101f1111e3615a81e34012de5a239b',1,'code():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a99101f1111e3615a81e34012de5a239b',1,'code():&#160;Apache-License-2.0.txt']]],
+  ['conditions_14',['conditions',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a1ad91ee7eb3d92d6c76f97dbad84b012',1,'conditions():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a1ad91ee7eb3d92d6c76f97dbad84b012',1,'conditions():&#160;Apache-License-2.0.txt']]],
+  ['conf_15',['conf',['../namespaceconf.html',1,'']]],
+  ['conf_2epy_16',['conf.py',['../conf_8py.html',1,'']]],
+  ['contribution_17',['Contribution',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#af1ffb05e3f15ab9543a769fe63c1fe43',1,'Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity(including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work const itutes direct or contributory patent infringement:&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#af1ffb05e3f15ab9543a769fe63c1fe43',1,'Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity(including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work const itutes direct or contributory patent infringement:&#160;Apache-License-2.0.txt']]],
+  ['copyright_18',['copyright',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a57f6ea84cb044ebe0704c5e3aa48e9ad',1,'copyright():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a57f6ea84cb044ebe0704c5e3aa48e9ad',1,'copyright():&#160;Apache-License-2.0.txt'],['../namespaceconf.html#a33fa97cf51dcb25970fbf53f10159589',1,'conf.copyright()']]],
+  ['create_5farena_19',['create_arena',['../level1_8js.html#af1a71bc0271588ea642af88b0e616a64',1,'level1.js']]],
+  ['create_5fmap_20',['create_map',['../level2_8js.html#a6277d2b1fe8535ca71fd5c16cad55034',1,'level2.js']]]
 ];

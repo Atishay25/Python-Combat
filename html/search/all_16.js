@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['tag_81',['Tag',['../classTag.html',1,'']]],
-  ['template_82',['Template',['../classTemplate.html',1,'']]],
-  ['textrenderer_83',['TextRenderer',['../classTextRenderer.html',1,'']]],
-  ['tokcontext_84',['TokContext',['../classTokContext.html',1,'']]],
-  ['token_85',['Token',['../classToken.html',1,'']]],
-  ['tokenizer_86',['Tokenizer',['../classTokenizer.html',1,'']]],
-  ['tutorial_87',['Tutorial',['../classTutorial.html',1,'']]]
+  ['weapon_149',['weapon',['../level5_8js.html#a54600586351a080b43155fee6e80e8aa',1,'level5.js']]],
+  ['welcome_2ejs_150',['welcome.js',['../welcome_8js.html',1,'']]],
+  ['whole_151',['whole',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a10cf6dee05e6659880b39e81ad558b53',1,'whole():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a10cf6dee05e6659880b39e81ad558b53',1,'whole():&#160;Apache-License-2.0.txt']]],
+  ['work_152',['work',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a614be97c4dfc1228ddea941d28165f01',1,'work(an example is provided in the Appendix below). &quot;Derivative Works&quot; shall mean any work:&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a614be97c4dfc1228ddea941d28165f01',1,'work(an example is provided in the Appendix below). &quot;Derivative Works&quot; shall mean any work:&#160;Apache-License-2.0.txt'],['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#ab5513a0874dcccd8ea863035302d567b',1,'Work():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#ab5513a0874dcccd8ea863035302d567b',1,'Work():&#160;Apache-License-2.0.txt'],['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a942c6a33f64f7656f027800c9dbf57e5',1,'Work(and each Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS:&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a942c6a33f64f7656f027800c9dbf57e5',1,'Work(and each Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS:&#160;Apache-License-2.0.txt']]],
+  ['works_153',['Works',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#ae6e9c70e1e8c69fb4a7103bf81b9de01',1,'Works():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#ae6e9c70e1e8c69fb4a7103bf81b9de01',1,'Works():&#160;Apache-License-2.0.txt']]],
+  ['worldwide_154',['worldwide',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#afa54bcfc543ad3c95e8c8068c1a74213',1,'worldwide():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#afa54bcfc543ad3c95e8c8068c1a74213',1,'worldwide():&#160;Apache-License-2.0.txt']]],
+  ['writeline_155',['writeLine',['../doxygen_8js.html#ad5ec89e177d56176c0096abebaba4157',1,'doxygen.js']]],
+  ['writing_156',['writing',['../level1_2out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a92a2795743e2b9ff1713e0b56d9a9dae',1,'writing():&#160;Apache-License-2.0.txt'],['../out_2scripts_2prettify_2Apache-License-2_80_8txt.html#a92a2795743e2b9ff1713e0b56d9a9dae',1,'writing():&#160;Apache-License-2.0.txt']]]
 ];

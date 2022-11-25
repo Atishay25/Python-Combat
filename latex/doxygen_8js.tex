@@ -1,0 +1,197 @@
+\hypertarget{doxygen_8js}{}\doxysection{doxygen.\+js File Reference}
+\label{doxygen_8js}\index{doxygen.js@{doxygen.js}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} ()
+\item 
+function \mbox{\hyperlink{doxygen_8js_ad5ec89e177d56176c0096abebaba4157}{write\+Line}} (line)
+\item 
+\mbox{\hyperlink{doxygen_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs}} \mbox{\hyperlink{doxygen_8js_a4e208c4a5ea6286a6c64d059f03969e1}{read\+File}} (process.\+argv\mbox{[}2\mbox{]}, \textquotesingle{}utf8\textquotesingle{}, function(err, data) \{ var lines=data.\+split(\textquotesingle{}\textbackslash{}n\textquotesingle{});var comment=/$^\wedge$\textbackslash{}s $\ast$\textbackslash{}/\textbackslash{}/\textbackslash{} var directive=/@(\textbackslash{}w+)\textbackslash{}s+(.$\ast$)\$/;var inside=false;var section=new \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}}();lines.\+for\+Each(function(line) \{ if(line.\+match(comment)) \{ var d=line.\+match(directive);if(d) \{ var handle=Section.\+prototype\mbox{[}\textquotesingle{}handle\+\_\+\textquotesingle{}+d\mbox{[}1\mbox{]}\mbox{]}$\vert$$\vert$\mbox{\hyperlink{doxygen_8js_a2bf59fb89cb9cb88399cd2b447d777fb}{Section.\+prototype.\+handle\+\_\+line}};handle.\+call(section, line);\} else \{ \mbox{\hyperlink{doxygen_8js_a2bf59fb89cb9cb88399cd2b447d777fb}{section.\+handle\+\_\+line}}(line);\} inside=true;\} else if(inside) \{ \mbox{\hyperlink{doxygen_8js_ad5ec89e177d56176c0096abebaba4157}{write\+Line}}(\mbox{\hyperlink{doxygen_8js_a085c4893943fa85da62835c21161d591}{section.\+Generate}}());inside=false;section=new \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}}();\} \});\})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{doxygen_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs}}
+\item 
+var \mbox{\hyperlink{doxygen_8js_affea7e61106a6a9da029c8af702aaf20}{type}} = /$^\wedge$(\textbackslash{}s+)\textbackslash{}/\textbackslash{}/\textbackslash{}/\textbackslash{}s+@param\textbackslash{}s+\{(\textbackslash{}w$\ast$)\}\textbackslash{}s+(.+?)(\textbackslash{}s+.$\ast$)\$/
+\item 
+var \mbox{\hyperlink{doxygen_8js_a9577b5cc54fa04bbb8fa6050e1ade3af}{param}} = /$^\wedge$(\textbackslash{}s+)\textbackslash{}/\textbackslash{}/\textbackslash{}/\textbackslash{}s+@param\textbackslash{}s+(.+?)\textbackslash{}s/
+\item 
+var \mbox{\hyperlink{doxygen_8js_a4ec57d8bb11cfc24711e8024acbfe209}{result\+Type}} = /$^\wedge$(\textbackslash{}s+)\textbackslash{}/\textbackslash{}/\textbackslash{}/\textbackslash{}s+@return\textbackslash{}s+\{(\textbackslash{}w+)\}(\textbackslash{}s+.$\ast$)\$/
+\item 
+\mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype \mbox{\hyperlink{doxygen_8js_a707646e352fa6c9fc38032ac148e66ff}{handle\+\_\+function}}
+\item 
+\mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype \mbox{\hyperlink{doxygen_8js_a3d6505368d593cd8abb443a418ad33b0}{handle\+\_\+param}}
+\item 
+\mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype \mbox{\hyperlink{doxygen_8js_a2df526fa9dde3ba3d1902be86292e40d}{handle\+\_\+return}}
+\item 
+\mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype \mbox{\hyperlink{doxygen_8js_a085c4893943fa85da62835c21161d591}{Generate}}
+\item 
+\mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype \mbox{\hyperlink{doxygen_8js_a2bf59fb89cb9cb88399cd2b447d777fb}{handle\+\_\+line}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{doxygen_8js_a4e208c4a5ea6286a6c64d059f03969e1}\label{doxygen_8js_a4e208c4a5ea6286a6c64d059f03969e1}} 
+\index{doxygen.js@{doxygen.js}!readFile@{readFile}}
+\index{readFile@{readFile}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{doxygen_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs}} read\+File (\begin{DoxyParamCaption}\item[{process.}]{argv\mbox{[}2\mbox{]},  }\item[{\textquotesingle{}utf8\textquotesingle{}}]{,  }\item[{function(err, data) \{ var lines=data.\+split(\textquotesingle{}\textbackslash{}n\textquotesingle{});var comment=/$^\wedge$\textbackslash{}s $\ast$\textbackslash{}/\textbackslash{}/\textbackslash{} var directive=/@(\textbackslash{}w+)\textbackslash{}s+(.$\ast$)\$/;var inside=false;var section=new \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}}();lines.\+for\+Each(function(line) \{ if(line.\+match(comment)) \{ var d=line.\+match(directive);if(d) \{ var handle=Section.\+prototype\mbox{[}\textquotesingle{}handle\+\_\+\textquotesingle{}+d\mbox{[}1\mbox{]}\mbox{]}$\vert$$\vert$\mbox{\hyperlink{doxygen_8js_a2bf59fb89cb9cb88399cd2b447d777fb}{Section.\+prototype.\+handle\+\_\+line}};handle.\+call(section, line);\} else \{ \mbox{\hyperlink{doxygen_8js_a2bf59fb89cb9cb88399cd2b447d777fb}{section.\+handle\+\_\+line}}(line);\} inside=true;\} else if(inside) \{ \mbox{\hyperlink{doxygen_8js_ad5ec89e177d56176c0096abebaba4157}{write\+Line}}(\mbox{\hyperlink{doxygen_8js_a085c4893943fa85da62835c21161d591}{section.\+Generate}}());inside=false;section=new \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}}();\} \});\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}\label{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}} 
+\index{doxygen.js@{doxygen.js}!Section@{Section}}
+\index{Section@{Section}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{Section()}{Section()}}
+{\footnotesize\ttfamily function Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxygen_8js_ad5ec89e177d56176c0096abebaba4157}\label{doxygen_8js_ad5ec89e177d56176c0096abebaba4157}} 
+\index{doxygen.js@{doxygen.js}!writeLine@{writeLine}}
+\index{writeLine@{writeLine}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{writeLine()}{writeLine()}}
+{\footnotesize\ttfamily function write\+Line (\begin{DoxyParamCaption}\item[{}]{line }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{doxygen_8js_aebcdd70130f7e0b00b39cc981ab0bab0}\label{doxygen_8js_aebcdd70130f7e0b00b39cc981ab0bab0}} 
+\index{doxygen.js@{doxygen.js}!fs@{fs}}
+\index{fs@{fs}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily var fs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= require(\textcolor{stringliteral}{'fs'})}
+\DoxyCodeLine{}
+\DoxyCodeLine{var functionName = /\string^\(\backslash\)s+\(\backslash\)/\(\backslash\)/\(\backslash\)/\(\backslash\)s+@function\(\backslash\)s+(.*)\$/}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doxygen_8js_a085c4893943fa85da62835c21161d591}\label{doxygen_8js_a085c4893943fa85da62835c21161d591}} 
+\index{doxygen.js@{doxygen.js}!Generate@{Generate}}
+\index{Generate@{Generate}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{Generate}{Generate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype Generate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} () \{}
+\DoxyCodeLine{    var doc = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{    this.namespaces.forEach(\textcolor{keyword}{function} (\textcolor{keyword}{namespace}) \{}
+\DoxyCodeLine{        doc.push(\textcolor{stringliteral}{'namespace '} + \textcolor{keyword}{namespace} + \textcolor{stringliteral}{' \{\(\backslash\)n'});}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    this.comments.forEach(\textcolor{keyword}{function} (c) \{}
+\DoxyCodeLine{        doc.push(c);}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    var args = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{    this.args.forEach(\textcolor{keyword}{function} (argument) \{}
+\DoxyCodeLine{        args.push(argument.type + \textcolor{charliteral}{' '} + argument.name);}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (this.name) \{}
+\DoxyCodeLine{        doc.push(this.result + \textcolor{charliteral}{' '} + this.name + \textcolor{charliteral}{'('} + args.join(\textcolor{stringliteral}{', '}) + \textcolor{stringliteral}{');'});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    this.namespaces.forEach(\textcolor{keyword}{function} (\textcolor{keyword}{namespace}) \{}
+\DoxyCodeLine{            doc.push(\textcolor{stringliteral}{'\}\(\backslash\)n'});}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} doc.join(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doxygen_8js_a707646e352fa6c9fc38032ac148e66ff}\label{doxygen_8js_a707646e352fa6c9fc38032ac148e66ff}} 
+\index{doxygen.js@{doxygen.js}!handle\_function@{handle\_function}}
+\index{handle\_function@{handle\_function}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{handle\_function}{handle\_function}}
+{\footnotesize\ttfamily \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype handle\+\_\+function}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (line) \{}
+\DoxyCodeLine{    this.namespaces = line.match(functionName)[1].split(\textcolor{charliteral}{'.'}) || [];}
+\DoxyCodeLine{    this.name = this.namespaces.pop();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doxygen_8js_a2bf59fb89cb9cb88399cd2b447d777fb}\label{doxygen_8js_a2bf59fb89cb9cb88399cd2b447d777fb}} 
+\index{doxygen.js@{doxygen.js}!handle\_line@{handle\_line}}
+\index{handle\_line@{handle\_line}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{handle\_line}{handle\_line}}
+{\footnotesize\ttfamily \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype handle\+\_\+line}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (line) \{}
+\DoxyCodeLine{    this.comments.push(line);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doxygen_8js_a3d6505368d593cd8abb443a418ad33b0}\label{doxygen_8js_a3d6505368d593cd8abb443a418ad33b0}} 
+\index{doxygen.js@{doxygen.js}!handle\_param@{handle\_param}}
+\index{handle\_param@{handle\_param}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{handle\_param}{handle\_param}}
+{\footnotesize\ttfamily \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype handle\+\_\+param}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (line) \{}
+\DoxyCodeLine{    var paramType = \textcolor{stringliteral}{'Object'};}
+\DoxyCodeLine{    var name = \textcolor{stringliteral}{''};}
+\DoxyCodeLine{    var m = line.match(\mbox{\hyperlink{doxygen_8js_affea7e61106a6a9da029c8af702aaf20}{type}});}
+\DoxyCodeLine{    var r = line;}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (m) \{}
+\DoxyCodeLine{        paramType = m[2];}
+\DoxyCodeLine{        name = m[3];}
+\DoxyCodeLine{        r = m[1] + \textcolor{stringliteral}{'}}
+\DoxyCodeLine{\textcolor{stringliteral}{    \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{    else \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        m = line.match(param);}}
+\DoxyCodeLine{\textcolor{stringliteral}{        name = m[2];}}
+\DoxyCodeLine{\textcolor{stringliteral}{    \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{    this.args.push(\{name: name, type: paramType\});}}
+\DoxyCodeLine{\textcolor{stringliteral}{    this.comments.push(r);}}
+\DoxyCodeLine{\textcolor{stringliteral}{\}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doxygen_8js_a2df526fa9dde3ba3d1902be86292e40d}\label{doxygen_8js_a2df526fa9dde3ba3d1902be86292e40d}} 
+\index{doxygen.js@{doxygen.js}!handle\_return@{handle\_return}}
+\index{handle\_return@{handle\_return}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{handle\_return}{handle\_return}}
+{\footnotesize\ttfamily \mbox{\hyperlink{doxygen_8js_a0820811cefb0ace1886fffb02434d54b}{Section}} prototype handle\+\_\+return}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{function} (line) \{}
+\DoxyCodeLine{    this.result = \textcolor{stringliteral}{'undefined'};}
+\DoxyCodeLine{    var m = line.match(\mbox{\hyperlink{doxygen_8js_a4ec57d8bb11cfc24711e8024acbfe209}{resultType}});}
+\DoxyCodeLine{    var r = line;}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (m) \{}
+\DoxyCodeLine{        this.result = m[2];}
+\DoxyCodeLine{        r = m[1] + \textcolor{stringliteral}{'}}
+\DoxyCodeLine{\textcolor{stringliteral}{    \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{    this.comments.push(r);}}
+\DoxyCodeLine{\textcolor{stringliteral}{\}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doxygen_8js_a9577b5cc54fa04bbb8fa6050e1ade3af}\label{doxygen_8js_a9577b5cc54fa04bbb8fa6050e1ade3af}} 
+\index{doxygen.js@{doxygen.js}!param@{param}}
+\index{param@{param}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily var param = /$^\wedge$(\textbackslash{}s+)\textbackslash{}/\textbackslash{}/\textbackslash{}/\textbackslash{}s+@param\textbackslash{}s+(.+?)\textbackslash{}s/}
+
+\mbox{\Hypertarget{doxygen_8js_a4ec57d8bb11cfc24711e8024acbfe209}\label{doxygen_8js_a4ec57d8bb11cfc24711e8024acbfe209}} 
+\index{doxygen.js@{doxygen.js}!resultType@{resultType}}
+\index{resultType@{resultType}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{resultType}{resultType}}
+{\footnotesize\ttfamily var result\+Type = /$^\wedge$(\textbackslash{}s+)\textbackslash{}/\textbackslash{}/\textbackslash{}/\textbackslash{}s+@return\textbackslash{}s+\{(\textbackslash{}w+)\}(\textbackslash{}s+.$\ast$)\$/}
+
+\mbox{\Hypertarget{doxygen_8js_affea7e61106a6a9da029c8af702aaf20}\label{doxygen_8js_affea7e61106a6a9da029c8af702aaf20}} 
+\index{doxygen.js@{doxygen.js}!type@{type}}
+\index{type@{type}!doxygen.js@{doxygen.js}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily var type = /$^\wedge$(\textbackslash{}s+)\textbackslash{}/\textbackslash{}/\textbackslash{}/\textbackslash{}s+@param\textbackslash{}s+\{(\textbackslash{}w$\ast$)\}\textbackslash{}s+(.+?)(\textbackslash{}s+.$\ast$)\$/}
+

@@ -5,3 +5,4 @@
 *.toc
 
 node_modules/
+doxygen-awesome-css/
