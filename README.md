@@ -3,6 +3,7 @@ A Web Platform that allows individuals to learn python programming in an enjoyab
 
 The Combat is hosted at https://prolific-pythonists.netlify.app/
 
+The Documentation is hosted at https://python-combat-documentation.netlify.app/
 ## Instructions
 - Click on **Start** button on the home page to start the **Combat**
 - Choose the level which you want to play. There are 5 levels in the game
