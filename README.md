@@ -59,7 +59,7 @@ The warrior has decided to repeat the history of his ancestor **Thanos**. He is 
   - Dynamic Configuration of Arena at each level
   - Each battle sets up a different placements of objects on reloading, that is it is Dynamically sets itself (**Bonus part**)
   - Each Battle fought on different arena settings with a unique Theme and underlying Programming concept
-- Used **Doxygen** for Report and Documentation. For Documentation of the Project, refer to the index.html file in html folder of this Project.
+- Used **Doxygen** for Report and Documentation. For Documentation of the Project, refer to the index.html file in html folder of this Project. For viewing the documentation, please download the html.zip and latex.zip files, unzip them and open index.html in html folder.
 ## Extra Features
 - **Hint** Button at every level to assist the user with some help
 - A **Tutorial** at start of every level to teach some basic part of Programming concept that is being used in the level
