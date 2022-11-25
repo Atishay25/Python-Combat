@@ -1,11 +1,3 @@
-//gem_id == 50000 means final position reached
-//gem_id == 30000 means wrong path taken
-//gem_id == 10000 means take above path
-//gem_id == 20000 means take below path
-
-/**
- * @file level5.js
- */
 var gem_found = [false, false, false, false, false];
 var total_gems = 0;
 var pos_x = 0;
@@ -14,8 +6,34 @@ var reloaded = true;
 var insequence = true;
 var id_order = [];
 var index = 0;
+var speed = 500;
+speed_dict = {250 : "fast", 500 : "medium", "750" : "slow"};
+const speed_show = document.getElementById("speed_");
+speed_show.innerHTML = speed_dict[speed];
 window.dict = {};
 
+function speedup(){
+    if(speed == 500){
+        speed = 250;
+    }
+    else if(speed == 750){
+        speed = 500;
+    }
+    speed_show.innerHTML = speed_dict[speed];
+}
+
+function speeddown(){
+    if(speed == 500){
+        speed = 750;
+    }
+    else if(speed == 250){
+        speed = 500;
+    }
+    speed_show.innerHTML = speed_dict[speed];
+}
+$(document).ready(function () {
+    
+})
 /**
  * @brief lmao function
  * @param {*} px 
@@ -132,10 +150,10 @@ change = {
             if (pos_y + 2 <= 14) {
                 // var found = false;
                 pos_y = pos_y + 2;
-                $('#player').animate({ top: '+=2cm' })
+                $('#player').animate({ top: '+=2cm' }, speed)
             }
             else if (reloaded) {
-                $('#player').animate({ top : "+=0cm" },
+                $('#player').animate({ top : "+=0cm" }, speed,
                     function(){
                     alert("Dont player out of arena");
                     window.location.reload();
@@ -150,10 +168,10 @@ change = {
             if (pos_y - 2 >= 0) {
                 var found = false;
                 pos_y = pos_y - 2;
-                $('#player').animate({ top: '-=2cm' });
+                $('#player').animate({ top: '-=2cm' }, speed);
             }
             else if (reloaded) {
-                $('#player').animate({ top : "+=0cm" },
+                $('#player').animate({ top : "+=0cm" }, speed,
                 function(){
                     alert("Dont player out of arena");
                     window.location.reload();
@@ -168,11 +186,11 @@ change = {
             if (pos_x + 2 <= 14) {
                 var found = false;
                 pos_x = pos_x + 2;
-                $('#player').animate({ left: '+=2cm' });
+                $('#player').animate({ left: '+=2cm' }, speed);
                 
             }
             else if (reloaded) {
-                $('#player').animate({ top : "+=0cm" },
+                $('#player').animate({ top : "+=0cm" }, speed,
                     function(){
                         alert("Dont player out of arena");
                         window.location.reload();
@@ -187,11 +205,11 @@ change = {
             if (pos_x - 2 >= 0) {
                 var found = false;
                 pos_x = pos_x - 2;
-                $('#player').animate({ left: '-=2cm' });
+                $('#player').animate({ left: '-=2cm' }, speed);
                 
             }
             else if (reloaded) {
-                $('#player').animate({ top : "+=0cm" },
+                $('#player').animate({ top : "+=0cm" }, speed,
                     function(){
                         alert("Dont player out of arena");
                         window.location.reload();
@@ -219,7 +237,7 @@ function weapon(){
     }
     id_order.push((i+1)*10000 + pos_x*100 + pos_y);
     if(JSON.stringify(document.getElementById((i+1)*10000 + pos_x*100 + pos_y)) != "null"){
-        $("#player").animate({top : "+=0cm"}, 
+        $("#player").animate({top : "+=0cm"}, speed, 
             function(){
                 let weapon_ = "#" + id_order[index];
                 index++;
