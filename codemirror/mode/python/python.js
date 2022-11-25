@@ -31,7 +31,7 @@
                         "repr", "reversed", "round", "set", "setattr", "slice",
                         "sorted", "staticmethod", "str", "sum", "super", "tuple",
                         "type", "vars", "zip", "__import__", "NotImplemented",
-                        "Ellipsis", "__debug__","move_down()","move_right()","move_left()","move_up()","get_direction()"];
+                        "Ellipsis", "__debug__","move_down()","move_right()","move_left()","move_up()","get_direction()","collect_stone()","coordinates","kill_snowman()"];
   CodeMirror.registerHelper("hintWords", "python", commonKeywords.concat(commonBuiltins).concat(["exec", "print"]));
 
   function top(state) {
