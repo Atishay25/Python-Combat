@@ -47,12 +47,9 @@ The warrior has decided to repeat the history of his ancestor **Thanos**. He is 
 | Infinity Stone           | Space Stone   |
 | Arena  | Universe Arena |
 
-## Features 
+## Essential Features 
 - 5 Levels with different programming concepts to battle 
 - **Logger** with success/failure messages and ``print`` statements for debugging
-- **Hint** Button at every level to assist the user with some help
-- A **Tutorial** at start of every level to teach some basic part of Programming concept that is being used in the level
-- A Modal Box at start of each level to fascinate user through an underlying story theme so as to keep the user's interest along with Coding 
 - **Code Editor**
   - Used [Code Mirror](https://codemirror.net/) Library for creating a Code editor
   - Syntax highlighting using Code Mirror Themes, modes and several Addons for different Programming languages
@@ -60,9 +57,18 @@ The warrior has decided to repeat the history of his ancestor **Thanos**. He is 
   - Suggestions/Auto-completions using CodeMirror Hints 
 - **Arena**
   - Dynamic Configuration of Arena at each level
-  - Each battle sets up a different placements of objects on reloading, that is it is Dynamically sets itself
+  - Each battle sets up a different placements of objects on reloading, that is it is Dynamically sets itself (**Bonus part**)
   - Each Battle fought on different arena settings with a unique Theme and underlying Programming concept
-- Used **Doxygen** for Report and Documentation
-
+- Used **Doxygen** for Report and Documentation. For Documentation of the Project, refer to the index.html file in html folder of this Project.
+## Extra Features
+- **Hint** Button at every level to assist the user with some help
+- A **Tutorial** at start of every level to teach some basic part of Programming concept that is being used in the level
+- A Modal Box at start of each level that explains a storyfied theme of the level to user. This is made to fascinate user through an underlying story theme so as to keep the user's interest along with Coding 
+- An **Animation Speed** Button in each level to control speed of the warrior's moves. Using it, the Speed can be made
+  - Slow
+  - Medium
+  - Fast
+- Used [doxygen-awesome-css](https://github.com/jothepro/doxygen-awesome-css) theme for more elegant and nice Documentation of the Project.
 ***
 <p align="center">Created with :heart: by <a href="http://www.cse.iitb.ac.in/~atishay">Atishay</a>, <a href="http://www.cse.iitb.ac.in/~meghgohil">Megh</a> & <a href="http://www.cse.iitb.ac.in/~avadhootjadhav"> Avadhoot</a></p>
+<p align="center"><a href="https://prolific-pythonists.netlify.app/">Team Prolific Pythonsists</a></p>
