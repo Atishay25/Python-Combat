@@ -17,11 +17,13 @@
 
 </head>
 
-<body>
-    <center>
-        <h1 class="heading">LEVEL 4</h1>
-    </center>
-    <br><br>
+<body style="background-image: url(../images/level4/violet_bg.jpg)">
+  <center>
+    <h1 class="heading1" style="color:aliceblue">Welcome to Level 4</h1>
+    <br>
+    <h3 class="heading3" style="color:aliceblue">Power of Functions</h3>
+</center>
+    <hr style=" border: 3px solid aliceblue;">
     <div id="demo" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -49,40 +51,63 @@
       </div>
 
       <br>
-        <div class="text-center">
-            <div class="center">
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button id="start_button" class="btn btn-primary btn-lg btn-block" type="button " data-bs-toggle="modal"
-                        data-bs-target="#Modal1">
-                        PLAY NOW </button>
-                </div>
+      <div class="text-center" style="padding-bottom: 20px;">
+        <div class="center">
+            <div class="d-grid gap-2 col-5 mx-auto">
+                <button id="start_button" class="btn btn-primary btn-lg btn-block" type="button " data-bs-toggle="modal"
+                    data-bs-target="#Modal1">
+                    PLAY NOW </button>
             </div>
+        </div>
+    </div>
+    <div class="text-center" style="padding-bottom: 20px;">
+      <div class="center">
+          <div class="d-grid gap-2 col-5 mx-auto">
+            <a type="button" class="btn btn-danger btn-lg btn-block" href="../../index.html"
+            role="button">BACK TO HOME</a>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: rgb(153, 50, 153)">
+                <h5 class="modal-title" id="exampleModalLabel">LEVEL-4 :: POWER OF FUNCTIONS</h5>
+            </div>
+            <div id="change-hobbies" class="modal-body center" style="background-image: url(../images/level4/modal_bg.jpg)">
+                <h3 style="text-align:center;">The Power Stone</h3>
+                <img src="../images/power.png" class="modal-image imag-responsive center">
+                <h4 style="text-align:center;">
+                  It's about Drive, It's about Power!</h4>
+                  <li>
+                    Warrior is in search of the Ultimate Power, but confused with contraint set for achieving it
+                  </li>
+                  <li>
+                    He's stuck in a Maze to go forward, but has no clue how to move further 
+                  </li>
+                  <li>
+                    He is analyzing the symmentry of the maze and trying to figure out how to go forward
+                  </li>
+                  <li>
+                    Having learnt the Power of Functions, assist the warrior to collect the Real Power.
+                  </li>
+            </div>
+            <div class="modal-footer justify-content-between" style="background-color: rgb(153, 50, 153);">
+                <a type="button" id="bk-btn" class="btn btn-success" href="level4.html"
+                    role="button">START
+                    COMBAT</a>
+                    <a type="button" id="bk-btn" class="btn btn-success" href="level4_tut.html"
+                    role="button">BACK TO TUTORIAL</a>
+    
+            </div>
+                
         </div>
 
 
-        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">LEVEL-1 :: VARIABLES</h5>
-                    </div>
-                    <div id="change-hobbies" class="modal-body">
-                        <br><br><br><br><br><br><br><br><br><br>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <a type="button" id="bk-btn" class="btn btn-success" href="level4.html"
-                            role="button">START
-                            COMBAT</a>
-                            <a type="button" id="bk-btn" class="btn btn-success" href="../index.html"
-                            role="button">BACK TO HOME</a>
-            
-                    </div>
-                        
-                </div>
-
-
-                </div>
-            </div>
+        </div>
+    </div>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

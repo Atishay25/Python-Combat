@@ -1,35 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Eagle+Lake&family=Nabla&display=swap');
+@import url('https://fonts.cdnfonts.com/css/nintendo-ds-bios');
 .carousel {
-    width:60%;
-    height:420px;
+    width:70%;
+    height:500px;
     margin: 0 auto;
 }
 
 .imgSlide {
     width: 100%;
     margin: 0 auto;
-    height:420px;
+    height:500px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 body{
-    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-
+.btn{
+    font-family: 'Nintendo DS BIOS', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 600;
+}
 .heading1{
     font-family: 'Eagle Lake', cursive;
-    font-size: 500%;
-    color: white;
+    font-size: 300%;
+    color: black;
+    padding-top: 20px;
 }
 
 .heading3{
     font-family: 'Eagle Lake', cursive;
-    font-size: 300%;
-    color: white;
+    font-size: 200%;
+    color: black;
 }
 
 /* Thick red border */
 hr{
-    border: 4px solid white;
+    border: 3px solid  black;
 }
 
 h1{
@@ -52,16 +68,17 @@ h1{
 
 .modal-header,
 .modal-footer{
-    background-color: black;
-    color:aqua
+    background-color: rgb(76, 181, 76);
+    color:rgb(16, 22, 22)
 }
 #bk-btn{
     background-color: black;
     color:aqua;
 }
 li{
-    color:blueviolet;
+    color:rgb(0, 0, 0);
     font-size: large;
+    font-weight: 500;
 }
 
 .line-numbers{

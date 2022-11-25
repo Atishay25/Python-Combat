@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nabla&display=swap');
 @import url('https://fonts.cdnfonts.com/css/nintendo-ds-bios');
 #arena{
-    background: url("../images/arr.jpg")no-repeat;
+    background: url("../images/level1/arena_bg.jpg")no-repeat;
     height:13.3cm;
     width:13.3cm;
     border: 5px solid black;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    left:50px;
-    top:-50px;
+    left:0px;
+    top:10px;
     z-index: 0;
 }
 .gems{
     width: 1cm;
     height: 1cm;
-    /* background: url("../../images/gems.png") no-repeat; */
+    /* background: url("../images/time.png") no-repeat; */
     z-index: 10;
     position: absolute;
 }
@@ -23,17 +23,17 @@
     position:absolute;
     width:1cm;
     height: 3cm;
-    background: url("../images/vert.png") no-repeat;
+    background: url("../images/level1/vert.png") no-repeat;
     z-index: 1;
-    border: 1.1px solid black;
+    /* border: 1.1px solid black; */
 }
 .horizontal{
     position: absolute;
     width:3cm;
     height:1cm;
-    background: url("../images/hor.png") no-repeat;
+    background: url("../images/level1/hor.png") no-repeat;
     z-index: 1;
-    border: 1.1px solid black;
+    /* border: 1.1px solid black; */
 }
 #player{
     height: 1cm;
@@ -43,7 +43,7 @@
 }
 
 body {
-    background-image: url('../images/green_bg.jpg');
+    background-image: url('../images/bg_arena_editor7.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -59,8 +59,8 @@ body {
 .description{
     font-family: 'Nintendo DS BIOS', sans-serif;
     word-spacing: 5px;
-    color:rgb(48, 10, 36);
-    font-size: 22px;
+    color:rgb(84, 65, 51);
+    font-size: 25px;
     font-weight: 500;
 }
 

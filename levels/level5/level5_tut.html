@@ -17,35 +17,33 @@
 
 </head>
 
-<body>
-    <center>
-        <h1 class="heading">Level 5 : Lists</h1>
-    </center>
-    <br><br>
+<body style="background-image: url(../images/level5/tut5_bg.jpg)">
+  <center>
+    <h1 class="heading1" style="color:whitesmoke;">Welcome to Level 5</h1>
+    <br>
+    <h3 class="heading3" style="color:whitesmoke;">Using lists in Python</h3>
+</center>
+    <hr style=" border: 3px solid whitesmoke;">
     <div id="demo" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
           <li data-target="#demo" data-slide-to="1"></li>
           <li data-target="#demo" data-slide-to="2"></li>
           <li data-target="#demo" data-slide-to="3"></li>
-          <li data-target="#demo" data-slide-to="4"></li>
     
         </ul>
         <div class="carousel-inner" id="slides">
           <div class="carousel-item active ">
-            <img src="../images/Picture1.png" alt="slide one" class="imgSlide">
+            <img src="../images/level5/tut5_1.jpg" alt="slide one" class="imgSlide">
           </div>
           <div class="carousel-item">
-            <img src="../images/Picture2.png" alt="slide two" class="imgSlide">
+            <img src="../images/level5/tut5_2.jpg" alt="slide two" class="imgSlide">
           </div>
           <div class="carousel-item">
-            <img src="../images/Picture3.png" alt="slide three" class="imgSlide">
+            <img src="../images/level5/tut5_3.jpg" alt="slide three" class="imgSlide">
           </div>
           <div class="carousel-item">
-            <img src="../images/Picture4.png" alt="slide four" class="imgSlide">
-          </div>
-          <div class="carousel-item">
-            <img src="../images/Picture5.png" alt="slide five" class="imgSlide">
+            <img src="../images/level5/tut5_4.jpg" alt="slide four" class="imgSlide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -57,39 +55,69 @@
       </div>
 
       <br>
-        <div class="text-center">
-            <div class="center">
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button id="start_button" class="btn btn-danger btn-lg btn-block" type="button " data-bs-toggle="modal"
-                        data-bs-target="#Modal1">
-                        PLAY NOW </button>
-                </div>
+      <div class="text-center" style="padding-bottom: 20px;">
+        <div class="center">
+            <div class="d-grid gap-2 col-5 mx-auto">
+                <button id="start_button" class="btn btn-primary btn-lg btn-block" type="button " data-bs-toggle="modal"
+                    data-bs-target="#Modal1">
+                    PLAY NOW </button>
             </div>
+        </div>
+    </div>
+    <div class="text-center" style="padding-bottom: 20px;">
+      <div class="center">
+          <div class="d-grid gap-2 col-5 mx-auto">
+            <a type="button" class="btn btn-danger btn-lg btn-block" href="../../index.html"
+            role="button">BACK TO HOME</a>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:rgb(0, 183, 255)">
+                <h5 class="modal-title" id="exampleModalLabel">LEVEL-5 :: TRAVERSE THE SPACE</h5>
+            </div>
+            <div id="change-hobbies" class="modal-body center" style="background-image: url(../images/level5/modal_blue_bg.jpg)">
+                <h3 style="text-align:center;">The Space Stone</h3>
+                <img src="../images/space.png" class="modal-image imag-responsive center">
+                <h4 style="text-align:center;">
+                  All the Space is yours, win the battle if you can!</h4>
+                  <li>
+                    The last level, no bounds to the warrior's moves, he can move wherever he wants
+                  </li>
+                  <li>
+                    But, this game is not easy as it seems. There are some objects that he has to collect
+                  </li>
+                  <li>
+                    There is a specific order in which these objects should be collected to reveal Space Stone
+                  </li>
+                  <li>
+                    If not collected in that particular order, the warrior will fail to become the Lord of Universe
+                  </li>
+                  <li>
+                    Well, its you who can help the warrior in inspecting the order of the objects to explore
+                  </li>
+                  <li>
+                    So, Help him using the Python list knowledge that you learnt <a style="color:rgb(96, 93, 93); font-size: small;">(as the order is hidden in a list)</a>
+                  </li>
+            </div>
+            <div class="modal-footer justify-content-between" style="background-color: rgb(0, 183, 255);">
+                <a type="button" id="bk-btn" class="btn btn-success" href="level5.html"
+                    role="button">START
+                    COMBAT</a>
+                    <a type="button" id="bk-btn" class="btn btn-success" href="level5_tut.html"
+                    role="button">BACK TO TUTORIAL</a>
+    
+            </div>
+                
         </div>
 
 
-        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">LEVEL-1 :: VARIABLES</h5>
-                    </div>
-                    <div id="change-hobbies" class="modal-body">
-                        <br><br><br><br><br><br><br><br><br><br>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <a type="button" id="bk-btn" class="btn btn-success" href="level5.html"
-                            role="button">START
-                            COMBAT</a>
-                            <a type="button" id="bk-btn" class="btn btn-success" href="../index.html"
-                            role="button">BACK TO HOME</a>
-                    </div>
-                        
-                </div>
-
-
-                </div>
-            </div>
+        </div>
+    </div>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

@@ -19,14 +19,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="level1.css" />
-    <script src="../../codemirror/lib/codemirror.js"></script>
-    <link href="../../codemirror/lib/codemirror.css" rel="stylesheet" />
-    <script src="../../codemirror/mode/python/python.js"></script>
-    <link href="../../codemirror/theme/monokai.css" rel="stylesheet" />
-    <script src="../../codemirror/addon/hint/show-hint.js"></script>
-    <script src="../../codemirror/addon/edit/closebrackets.js"></script>
-    <script src="../../codemirror/addon/hint/css-hint.js"></script>
-    <link href="../../codemirror/addon/hint/show-hint.css" rel="stylesheet" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <link href="../codemirror/lib/codemirror.css" rel="stylesheet" />
+    <script src="../codemirror/mode/python/python.js"></script>
+    <link href="../codemirror/theme/monokai.css" rel="stylesheet" />
+    <script src="../codemirror/addon/hint/show-hint.js"></script>
+    <script src="../codemirror/addon/edit/closebrackets.js"></script>
+    <script src="../codemirror/addon/hint/css-hint.js"></script>
+    <link href="../codemirror/addon/hint/show-hint.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -66,113 +66,157 @@
               res = document['log_']
               res.innerHTML += error_msg + "<br />";
 
-              #error_msg = 'line no : '
-              #for i in s:
-              #    print(i)
-              #number = s[3]
-              #error = s[-2]
-              #print(number, error)
-              #y = [s for s in re.findall(r'-?\d+\.?\d*', number)]
-              #error_msg += y[0]
-              #error_msg = error_msg + "\n" + error
-              #alert(error_msg)
 
       def move_up():
-          v = window.change.surface(2)
+          window.walk(2)
       def move_down():
-          v = window.change.surface(1)
+          window.walk(1)
       def move_left():
-          v = window.change.surface(4)
+          window.walk(4)
       def move_right():
-          v = window.change.surface(3)
+          window.walk(3)
 
       document['button-addon2'].bind("click", mult)
     </script>
-    <div class="container-fluid" style="width: 100%">
+    <div class="container-fluid">
       <!-- row 1 -->
       <div class="row">
-        <div class="col">
-          <h1 id="heading" style="top: 50%; left: 50%">Level 1</h1>
-		  <h2>Collect the Diamonds</h2>
+        <div class="col-sm-12 col-md-12">
+          <center>
+          <h1 id="heading" style="top: 50%; left: 50%; min-width: auto;">
+            Level 1
+          </h1>
+        </center>
         </div>
-		<div class="card col" style="width: 18rem; background-color: forestgreen;">
-			<div class="card-body">
-				          <!-- Level description -->
-						
-			  <h5 class="card-title description">TASKS</h5>
-			  <p class="card-text description">	1. Using move_up, move_down, move_right, move_left reach the end.
-				<br />
-				2. While going through path player collects gems so create a
-				variable named gems_collected(dont use any other name or task will
-				fail), and assign it value equal to total gems collected. <br/></p>
-				<h5 class="card-title description">RULES</h5>
-				<p class="card-text description">
-					1. Do not try move out of path else the game will reload.
-				  </p>
-			</div>
-		  </div>
+        <div class="col-sm-12 col-md-12" style="background: url(../images/alert1.jpg); background-size: cover; border: 3px solid rgb(52, 44, 38);">
+          <!-- Level description -->
+          <h2 style="font-family: 'Nintendo DS BIOS', sans-serif; font-weight: 600;">Tasks</h2>
+          <p class="description">1. Using move_up, move_down, move_right, move_left reach the end.
+            <br />
+            2. While going through path player collects gems so create a
+            variable named gems_collected dont use any other name or task will
+            fail), and assign it value equal to total gems collected. <br/>
+          </p>
+          <h2 style="font-family: 'Nintendo DS BIOS', sans-serif; font-weight: 600;">Rules</h2>
+          <p class="description">1. Do not try move out of path else the game will reload. <br>
+          </p>
+        </div>
+      </div>
       <!-- row 2 -->
       <div class="row">
         <div class="col">
           <!-- <center> -->
-          <div id="arena">
-            <img
-              id="player"
-              style="left: 0cm; top: 0cm"
-              src="../images/warrior.png"
-            />
+          <div class="row">
+            <div class="col">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page">
+                    <h4>Arena</h4>
+                  </a>
+                </li>
+              </ul>
+              <div id="arena">
+                <img id="player" style="left: 0cm; top: 0cm;" src="../images/warrior.png">
+              </div>
+            </div>
           </div>
+          <div class="row" style="max-width: 15.3cm;">
+            <h4 class="m-2" style="color:aqua; text-align: center;">Animation Speed</h4>
+            <div class="col">
+              <div class="align-self-center m-3 ">
+                <button type="button" class="btn btn-success" onclick="speedup()">
+                  <h5>Increase</h5>
+                </button>
+              </div>
+            </div>  
+            <div class="col">
+              <div class="align-self-center description" style="font-size:50px; color: aquamarine; text-align: center;" id="speed_"></div>
+            </div>
+  
+            <div class="col">
+              <div class="align-self-center m-3 ">
+                <button type="button" class="btn btn-success" onclick="speeddown()">
+                  <h5>Decrease</h5>
+                </button>
+              </div>
+            </div>  
+          </div>
+          
           <!-- </center> -->
         </div>
-        <div class="col">
-          <section class="input">
+        <div class="col" >
+          <section class="input" style="width:max-content;">
             <ul class="nav nav-tabs">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page">
                   <h4>Code Editor</h4>
                 </a>
               </li>
-			  <div class="align-self-center">
-				<button type="button" class="btn btn-success" id="button-addon2">
-				  <h5>Run</h5>
-				</button>
-			  </div>
-			  <div class="dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  Dropdown button
-				</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				  <a class="dropdown-item" href="#">Action</a>
-				  <a class="dropdown-item" href="#">Another action</a>
-				  <a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			  </div>
             </ul>
-            <div>
+            <div  style="border: 3px solid aqua;">
               <textarea id="line-input" name=""></textarea>
             </div>
             <div class="mb-3">
-              <input class="form-control" type="file" id="myFile" />
+              <input class="form-control" type="file" id="myFile">
             </div>
+            <div class="row">
+              <div class="align-self-left m-3 col-3">
+                <button type="button" class="btn btn-success" id="button-addon2">
+                  <h5>Run</h5>
+                </button>
+              </div>
+              <div class="align-self-right m-3 col-3">
+                <button type="button" class="btn btn-success" id="button-addon2" data-bs-toggle="modal" data-bs-target="#Modal1">
+                  <h5>HINT</h5>
+                </button>
+              </div>
+            </div>
+          <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">HINT</h5>
+                      </div>
+                      <div id="change-hobbies" class="modal-body">
+                          <br><br><br>
+                      Count number of gems on the path and assign that value to the variable. <br>
+                      Another way is that increment the number of gems when you encounter it.
+                      <br><br><br>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" id = "bk-btn" class="btn btn-success" data-bs-dismiss="modal">back</button>
+              
+                      </div>
+                  </div>
+              </div>
+          </div>
           </section>
         </div>
       </div>
-	  
-      <center><h4 style="color: rgb(0, 0, 0)">LOGGER</h4></center>
-
+      <br><br><br>
+      <center><h4 style="color: rgb(76, 75, 75); font-size: 50px; background: url(../images/alert.png); background-size: cover;" class="description">LOGGER</h4></center>
+      
       <!-- row 3 -->
       <div class="row">
         <!-- column 1 code editor -->
         <div class="col">
           <!-- column 2 containing logger -->
-          <div class="output" style="overflow: scroll; height: 300px">
-            <br /><br />
-
-            <h3 id="result"></h3>
-            <p class="description" id="log"></p>
-            <p class="descriptions" id="log_" style="color: white"></p>
-            <br /><br />
+          <div class ="output" style="overflow: scroll; height: 300px; background: rgb(67, 65, 65); border: 2px solid skyblue;">
+            <br><br>
+            
+            <h3 id="result" style="color: white;"></h3>
+            <p class="description" id="log" style="color: white;"></p>
+            <p class="descriptions" id="log_" style="color: red;"></p>
+            <br><br>
           </div>
+        </div>
+  
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <a href="../level2/level2_tut.html" class="btn btn-success" tabindex="-1" role="button">LEVEL 2</a>
         </div>
       </div>
     </div>
@@ -182,102 +226,88 @@
       attrs: {
         color: ["red", "green", "blue", "purple", "white", "black", "yellow"],
         size: ["large", "medium", "small"],
-        description: null,
+        description: null
       },
-      children: [],
+      children: []
     };
+  
     var tags = {
       "!top": ["top"],
       "!attrs": {
         id: null,
-        class: ["A", "B", "C"],
+        class: ["A", "B", "C"]
       },
       top: {
         attrs: {
           lang: ["en", "de", "fr", "nl"],
-          freeform: null,
+          freeform: null
         },
-        children: ["animal", "plant"],
+        children: ["animal", "plant"]
       },
       animal: {
         attrs: {
           name: null,
-          isduck: ["yes", "no"],
+          isduck: ["yes", "no"]
         },
-        children: ["wings", "feet", "body", "head", "tail"],
+        children: ["wings", "feet", "body", "head", "tail"]
       },
       plant: {
         attrs: { name: null },
-        children: ["leaves", "stem", "flowers"],
+        children: ["leaves", "stem", "flowers"]
       },
-      wings: dummy,
-      feet: dummy,
-      body: dummy,
-      head: dummy,
-      tail: dummy,
-      leaves: dummy,
-      stem: dummy,
-      flowers: dummy,
+      wings: dummy, feet: dummy, body: dummy, head: dummy, tail: dummy,
+      leaves: dummy, stem: dummy, flowers: dummy
     };
     function completeAfter(cm, pred) {
       var cur = cm.getCursor();
-      if (!pred || pred())
-        setTimeout(function () {
-          if (!cm.state.completionActive)
-            cm.showHint({ completeSingle: false });
-        }, 100);
+      if (!pred || pred()) setTimeout(function () {
+        if (!cm.state.completionActive)
+          cm.showHint({ completeSingle: false });
+      }, 100);
       return CodeMirror.Pass;
     }
-
+  
     function completeIfAfterLt(cm) {
       return completeAfter(cm, function () {
         var cur = cm.getCursor();
         return cm.getRange(CodeMirror.Pos(cur.line, cur.ch - 1), cur) == "<";
       });
     }
-
+  
     function completeIfInTag(cm) {
       return completeAfter(cm, function () {
         var tok = cm.getTokenAt(cm.getCursor());
-        if (
-          tok.type == "string" &&
-          (!/['"]/.test(tok.string.charAt(tok.string.length - 1)) ||
-            tok.string.length == 1)
-        )
-          return false;
+        if (tok.type == "string" && (!/['"]/.test(tok.string.charAt(tok.string.length - 1)) || tok.string.length == 1)) return false;
         var inner = CodeMirror.innerMode(cm.getMode(), tok.state).state;
         return inner.tagName;
       });
     }
-    var editor = CodeMirror.fromTextArea(
-      document.getElementById("line-input"),
-      {
-        mode: {
-          name: "python",
-          singleLineStringErrors: false,
-        },
-        theme: "monokai",
-        lineNumbers: true,
-        indentUnit: 4,
-        autoCloseBrackets: true,
-        matchBrackets: true,
-        extraKeys: {
-          "'m'": completeAfter,
-          "'g'": completeAfter,
-          "'/'": completeIfAfterLt,
-          "' '": completeIfInTag,
-          "'='": completeIfInTag,
-          "Ctrl-Space": "autocomplete",
-        },
-        hintOptions: { schemaInfo: tags },
-      }
-    );
-
-    editor.setSize("720", "350");
+    var editor = CodeMirror.fromTextArea(document.getElementById('line-input'), {
+      mode: {
+        name: "python",
+        singleLineStringErrors: false
+      },
+      theme: "monokai",
+      lineNumbers: true,
+      indentUnit: 4,
+      autoCloseBrackets: true,
+      matchBrackets: true,
+      extraKeys: {
+        "'m'": completeAfter,
+        "'k'": completeAfter,
+        "'/'": completeIfAfterLt,
+        "' '": completeIfInTag,
+        "'='": completeIfInTag,
+        "Ctrl-Space": "autocomplete"
+      },
+      hintOptions: { schemaInfo: tags }
+    });
+  
+    editor.setSize("600", "575");
     editor.setValue(``);
     function showCode() {
       var text = editor.getValue();
-      return text;
+      return text
     }
     // var file = document.getElementById("myFile").files[0];
     // console.log(file);
@@ -287,13 +317,13 @@
     //     textArea.value = e.target.result;
     // };
     // reader.readAsText(file);
-    document.getElementById("myFile").addEventListener("change", function () {
+    document.getElementById('myFile').addEventListener('change', function () {
       var fr = new FileReader();
       fr.onload = function () {
         editor.setValue(fr.result);
-      };
+      }
       fr.readAsText(this.files[0]);
-    });
+    })
   </script>
   <script src="level1.js"></script>
 </html>
