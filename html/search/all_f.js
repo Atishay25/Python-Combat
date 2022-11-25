@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['readme_2emd_60',['README.md',['../doxygen-awesome-css_2README_8md.html',1,'(Global Namespace)'],['../README_8md.html',1,'(Global Namespace)']]],
-  ['red_61',['red',['../namespaceMyLibrary.html#a79a9f4bbb675f6c082b09249c5a95ceda82b4a54f6fbf39698c2a6982d75f4f0c',1,'MyLibrary']]],
-  ['registerlanghandler_62',['registerLangHandler',['../lang-css_8js.html#a94e72a43fcd0bd023d0dac93bfb7b2b0',1,'registerLangHandler(PR.createSimpleLexer([[&quot;pln&quot;,/^[\t\n\f\r]+/, null,&quot; \t\r\n&quot;]],[[&quot;str&quot;,/^&quot;(?:[^\n\f\r&quot;\\]|\\(?:\r\n?|\n|\f)|\\[\S\s]) *&quot;/,null],[&quot;str&quot;,/^&apos;(?:[^\n\f\r&apos;\\]|\\(?:\r\n?|\n|\f)|\\[\S\s])*&apos;/,null],[&quot;lang-css-str&quot;,/^url\(([^&quot;&apos;)] *)\)/i]:&#160;lang-css.js'],['../lang-css_8js.html#aab39a1759a8e8faca3108eb4dbf99e85',1,'registerLangHandler(PR.createSimpleLexer([],[[&quot;kwd&quot;,/^-?(?:[_a-z]|\\[\da-f]+?)(?:[\w-]|\\\\[\da-f]+?) */i]]),[&quot;css-kw&quot;]):&#160;lang-css.js']]],
-  ['reloaded_63',['reloaded',['../level1_8js.html#a4bac0901fe7708f10d107a766fa3a0f5',1,'reloaded():&#160;level1.js'],['../level2_8js.html#a4bac0901fe7708f10d107a766fa3a0f5',1,'reloaded():&#160;level2.js'],['../level3_8js.html#a4bac0901fe7708f10d107a766fa3a0f5',1,'reloaded():&#160;level3.js'],['../level4_8js.html#a4bac0901fe7708f10d107a766fa3a0f5',1,'reloaded():&#160;level4.js'],['../level5_8js.html#a4bac0901fe7708f10d107a766fa3a0f5',1,'reloaded():&#160;level5.js']]]
-];

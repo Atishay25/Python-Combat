@@ -25,14 +25,16 @@ var NAVTREE =
   [ "Python Combat", "index.html", [
     [ "Python-Combat", "md_README.html", [
       [ "Instructions", "md_README.html#autotoc_md1", null ],
-      [ "Levels", "md_README.html#autotoc_md2", [
-        [ "Level 1 - Collect the Diamonds", "md_README.html#autotoc_md3", null ],
-        [ "Level 2 - Key to Success", "md_README.html#autotoc_md4", null ],
-        [ "Level 3 - Loop made easy", "md_README.html#autotoc_md5", null ],
-        [ "Level 4 -", "md_README.html#autotoc_md6", null ],
-        [ "Level 5 -", "md_README.html#autotoc_md7", null ]
+      [ "Theme", "md_README.html#autotoc_md2", null ],
+      [ "Levels", "md_README.html#autotoc_md3", [
+        [ "Level 1 - Moving Across Time", "md_README.html#autotoc_md4", null ],
+        [ "Level 2 - Key To Success", "md_README.html#autotoc_md5", null ],
+        [ "Level 3 - A Soul, For A Soul", "md_README.html#autotoc_md6", null ],
+        [ "Level 4 - Power Of Functions", "md_README.html#autotoc_md7", null ],
+        [ "Level 5 - Traverse The Space", "md_README.html#autotoc_md8", null ]
       ] ],
-      [ "Features", "md_README.html#autotoc_md8", null ]
+      [ "Essential Features", "md_README.html#autotoc_md9", null ],
+      [ "Extra Features", "md_README.html#autotoc_md10", null ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
