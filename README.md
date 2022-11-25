@@ -15,10 +15,11 @@ The Combat is hosted at https://prolific-pythonists.netlify.app/
 The warrior has decided to repeat the history of his ancestor **Thanos**. He is on his way to collect all the Six [Infinity Stones](https://marvelcinematicuniverse.fandom.com/wiki/Infinity_Stones) and become the Supreme Power in Universe. But, He is intelligent and calm. He is not going to wipe out half the Universe, instead use the stones powers for well being of it. You are his friend from Earth to help him in his Journey. Each level awaits a infinity stone on success. You along with the warrior already have the mind stone with you. So, use it to collect the rest of the 5 stones and help the warrior for achieveing his aim.
 ## Levels
 ### Level 1 - Moving Across Time
-| S.N.        | Topic                        |
+|    Level 1    | Moving Across Time                        |
 | ------------- | ------------- |
-| 1           | HTML,CSS and Java Script     |
-| 2           | Bash Basics, Git, Markdown   |
+| Programming Concept      | Python Variables     |
+| Infinity Stone           | Time Stone   |
+| Arena  | Traning/Grassy Arena |
 
 ### Level 2 - Key to Success
 - Conditional statements in Python

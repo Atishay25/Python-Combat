@@ -2,7 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/nintendo-ds-bios');
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 #arena{
-    background: url("../images/level5/arena_bg.jpg") no-repeat;
+    background: url("../images/level5/space-black.png") no-repeat;
     background-size: cover;
     height: 15.3cm;
     width: 15.3cm;

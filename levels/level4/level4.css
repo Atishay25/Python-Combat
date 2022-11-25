@@ -53,15 +53,15 @@
 }
 
 body {
-    background-image: url('../images/bg_arena_editor7.jpg');
+    background-image: url('../images/play-bg.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 #heading{
-    font-family: 'Nabla', cursive;
-    color: rgb(252, 238, 231);
+    font-family: 'Squada One', cursive;
+    color: rgb(0, 0, 0);
     font-size: 90px;
     margin-bottom: 50px;
 }
