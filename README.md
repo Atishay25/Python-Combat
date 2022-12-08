@@ -60,7 +60,7 @@ The warrior has decided to repeat the history of his ancestor **Thanos**. He is 
   - Dynamic Configuration of Arena at each level
   - Each battle sets up a different placements of objects on reloading, that is it is Dynamically sets itself (**Bonus part**)
   - Each Battle fought on different arena settings with a unique Theme and underlying Programming concept
-- Used **Doxygen** for Report and Documentation. For Documentation of the Project, refer to the index.html file in html folder of this Project. For viewing the documentation, please download the html.zip and latex.zip files, unzip them and open index.html in html folder.
+- Used **Doxygen** for Report and Documentation. For Documentation of the Project, refer to the index.html file in html folder of this Project or just click [here](https://python-combat-documentation.netlify.app/md_readme) to view it
 ## Extra Features
 - **Hint** Button at every level to assist the user with some help
 - A **Tutorial** at start of every level to teach some basic part of Programming concept that is being used in the level
@@ -72,4 +72,4 @@ The warrior has decided to repeat the history of his ancestor **Thanos**. He is 
 - Used [doxygen-awesome-css](https://github.com/jothepro/doxygen-awesome-css) theme for more elegant and nice Documentation of the Project.
 ***
 <p align="center">Created with :heart: by <a href="http://www.cse.iitb.ac.in/~atishay">Atishay</a>, <a href="http://www.cse.iitb.ac.in/~meghgohil">Megh</a> & <a href="http://www.cse.iitb.ac.in/~avadhootjadhav"> Avadhoot</a></p>
-<p align="center"><a href="https://prolific-pythonists.netlify.app/">Team Prolific Pythonsists</a></p>
+<p align="center"><a href="https://prolific-pythonists.netlify.app/">Team Prolific Pythonists</a></p>
